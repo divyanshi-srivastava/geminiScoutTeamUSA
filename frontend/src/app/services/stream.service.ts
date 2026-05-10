@@ -140,7 +140,8 @@ export class StreamService {
       this.state.setActiveQuestion({
         feedback: data.feedback || '',
         question: data.question,
-        options: data.options || []
+        options: data.options || [],
+        readyToProceed: data.ready_to_proceed === true
       });
     } else {
       // Defensive Parser: Fallback to plain text

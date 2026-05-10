@@ -65,6 +65,19 @@ import { MetricsComponent } from './metrics.component';
             *ngIf="!q.options || q.options.length === 0"
             (submitted)="onAnswer($event)">
           </app-text-input>
+
+          <!-- Ready CTA — only shown when narrator has enough context -->
+          <div class="ready-divider" *ngIf="q.readyToProceed">
+            <span class="divider-line"></span>
+            <span class="divider-label">or</span>
+            <span class="divider-line"></span>
+          </div>
+          <button
+            class="btn-ready"
+            *ngIf="q.readyToProceed"
+            (click)="onReadyToScout()">
+            Show me my results →
+          </button>
         </div>
 
         <!-- Loading Indicator -->
@@ -176,6 +189,45 @@ import { MetricsComponent } from './metrics.component';
       50% { opacity: 1; transform: scale(1.5); }
     }
 
+    /* ── Ready CTA ── */
+    .ready-divider {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 1.5rem 0 1rem;
+    }
+    .divider-line {
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.07);
+    }
+    .divider-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.2);
+      text-transform: uppercase;
+    }
+    .btn-ready {
+      width: 100%;
+      padding: 0.9rem 1.5rem;
+      background: transparent;
+      border: 1px solid rgba(197, 164, 78, 0.35);
+      border-radius: 0.5rem;
+      color: #c5a44e;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    .btn-ready:hover {
+      background: rgba(197, 164, 78, 0.08);
+      border-color: #c5a44e;
+      box-shadow: 0 0 16px rgba(197, 164, 78, 0.15);
+    }
+
     /* ── Disclaimer ── */
     .card-disclaimer {
       margin-top: 3rem;
@@ -192,36 +244,38 @@ import { MetricsComponent } from './metrics.component';
       display: flex;
       align-items: center;
       gap: 0.85rem;
-      padding: 0.75rem 1.25rem;
+      padding: 0.85rem 1.25rem;
       margin-bottom: 1.25rem;
-      background: rgba(197, 164, 78, 0.06);
-      border: 1px solid rgba(197, 164, 78, 0.2);
+      background: linear-gradient(135deg, #c5a44e 0%, #e3ce6f 60%, #c5a44e 100%);
+      border: none;
       border-radius: 0.75rem;
+      box-shadow: 0 4px 20px rgba(197, 164, 78, 0.35);
     }
     .era-icon { font-size: 1.1rem; flex-shrink: 0; }
     .era-text {
       display: flex;
       flex-direction: column;
-      gap: 0.15rem;
+      gap: 0.1rem;
       flex: 1;
     }
     .era-label {
       font-size: 0.5rem;
       font-weight: 900;
       letter-spacing: 0.2em;
-      color: rgba(197, 164, 78, 0.5);
+      color: rgba(0, 0, 0, 0.5);
     }
     .era-destination {
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: rgba(255, 255, 255, 0.85);
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: rgba(0, 0, 0, 0.85);
     }
     .era-stage {
       font-size: 0.55rem;
-      font-weight: 800;
+      font-weight: 900;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       flex-shrink: 0;
+      color: rgba(0, 0, 0, 0.6) !important;
     }
   `]
 })
@@ -263,8 +317,9 @@ export class InterviewComponent implements OnDestroy {
   startNarrative() {
     this.sub?.unsubscribe();
     this.state.setLoading(true);
+    const g = this.state.metrics.gender;
     this.state.addUserTrace(
-      `I'm ${this.state.metrics.height}cm, ${this.state.metrics.weight}kg, born ${this.state.metrics.birthYear}.`
+      `I'm ${this.state.metrics.height}cm, ${this.state.metrics.weight}kg, born ${this.state.metrics.birthYear}${g ? `, gender: ${g}` : ''}.`
     );
     const body = {
       story: 'Initial metrics provided.',
@@ -272,6 +327,7 @@ export class InterviewComponent implements OnDestroy {
       height_cm: this.state.metrics.height,
       weight_kg: this.state.metrics.weight,
       birth_year: this.state.metrics.birthYear,
+      gender: g || null,
       conversation_history: [],
       is_ready_to_scout: false
     };
@@ -303,6 +359,7 @@ export class InterviewComponent implements OnDestroy {
         height_cm: this.state.metrics.height,
         weight_kg: this.state.metrics.weight,
         birth_year: this.state.metrics.birthYear,
+        gender: this.state.metrics.gender || null,
         conversation_history: this.state.getHistory(),
         is_ready_to_scout: true,
         target_game_year: eraYear,
@@ -316,12 +373,9 @@ export class InterviewComponent implements OnDestroy {
       return;
     }
 
-    // ── Normal interview mode ──
-    const isReady = answer.trim().startsWith('[READY]');
-    const traceLabel = isReady
-      ? "I'm ready — show me my results."
-      : `I chose: "${answer.length > 80 ? answer.substring(0, 80) + '…' : answer}"`;
-    this.state.addUserTrace(traceLabel);
+    // ── Normal interview answer ──
+    const label = answer.length > 80 ? answer.substring(0, 80) + '…' : answer;
+    this.state.addUserTrace(`I chose: "${label}"`);
 
     const body = {
       story: answer,
@@ -329,9 +383,42 @@ export class InterviewComponent implements OnDestroy {
       height_cm: this.state.metrics.height,
       weight_kg: this.state.metrics.weight,
       birth_year: this.state.metrics.birthYear,
+      gender: this.state.metrics.gender || null,
       conversation_history: this.state.getHistory(),
-      is_ready_to_scout: isReady
+      is_ready_to_scout: false
     };
+
+    this.sub = this.stream.consume(body).subscribe({
+      complete: () => this.state.setLoading(false),
+      error: ()   => this.state.setLoading(false)
+    });
+  }
+
+  onReadyToScout() {
+    this.sub?.unsubscribe();
+    this.state.setLoading(true);
+    this.state.addUserTrace("I'm ready — show me my results.");
+
+    const eraYear = this.state.activeEraYear;
+    if (eraYear !== null) {
+      this.state.setActiveEraYear(null);
+    }
+
+    const body: any = {
+      story: '',
+      session_id: this.state.sessionId,
+      height_cm: this.state.metrics.height,
+      weight_kg: this.state.metrics.weight,
+      birth_year: this.state.metrics.birthYear,
+      gender: this.state.metrics.gender || null,
+      conversation_history: this.state.getHistory(),
+      is_ready_to_scout: true
+    };
+
+    if (eraYear !== null) {
+      body['target_game_year'] = eraYear;
+      body['era_history'] = this.state.getEraHistory();
+    }
 
     this.sub = this.stream.consume(body).subscribe({
       complete: () => this.state.setLoading(false),

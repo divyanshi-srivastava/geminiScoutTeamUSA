@@ -38,6 +38,7 @@ export interface Question {
   feedback?: string;
   question: string;
   options: string[];
+  readyToProceed?: boolean;
 }
 
 export interface ConversationTurn {
@@ -49,6 +50,7 @@ export interface Metrics {
   height: number | null;
   weight: number | null;
   birthYear: number | null;
+  gender?: 'M' | 'F' | null;
 }
 
 /** Specific Chunk Types for SSE Streaming */

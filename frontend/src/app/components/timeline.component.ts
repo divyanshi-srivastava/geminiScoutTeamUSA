@@ -210,6 +210,7 @@ export class TimelineComponent implements OnDestroy {
     this.sub?.unsubscribe();
     this.activeYear = game.year;
     this.infoOpen = false;
+    this.state.timelineBannerDismissed = true;
 
     this.state.setActiveEraYear(game.year);
     this.state.addUserTrace(`I'm jumping to The ${game.year} Games — I'd be ${game.year - (this.state.metrics.birthYear || 2000)} years old. ${this.getLifeStageLabel(game.year)} stage.`);

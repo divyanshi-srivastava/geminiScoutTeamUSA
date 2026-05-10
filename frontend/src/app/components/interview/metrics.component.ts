@@ -44,6 +44,16 @@ import { StateService } from '../../services/state.service';
         </div>
       </div>
 
+      <!-- Gender (optional) -->
+      <div class="gender-row">
+        <span class="gender-label">Gender <small>optional — improves archetype matching</small></span>
+        <div class="gender-pills">
+          <button class="gender-pill" [class.active]="gender === 'M'" (click)="setGender('M')">Male</button>
+          <button class="gender-pill" [class.active]="gender === 'F'" (click)="setGender('F')">Female</button>
+          <button class="gender-pill" [class.active]="gender === null" (click)="setGender(null)">Prefer not to say</button>
+        </div>
+      </div>
+
       <p class="age-warning" *ngIf="ageWarning">{{ ageWarning }}</p>
 
       <button class="btn-gold submit-btn" (click)="submit()" [disabled]="currentAge < 16">
@@ -86,6 +96,55 @@ import { StateService } from '../../services/state.service';
     .age-warning { font-size: 0.75rem; color: #e8a04a; text-align: center; margin: 0; }
     .submit-btn { margin-top: 1rem; padding: 1.25rem; font-size: 0.9rem; letter-spacing: 0.15em; }
     .submit-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    .gender-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .gender-label {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.4);
+    }
+    .gender-label small {
+      font-size: 0.6rem;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0;
+      color: rgba(255,255,255,0.2);
+      margin-left: 0.4rem;
+    }
+    .gender-pills {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .gender-pill {
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: transparent;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.72rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      font-family: inherit;
+    }
+    .gender-pill:hover {
+      border-color: rgba(197,164,78,0.4);
+      color: rgba(255,255,255,0.7);
+    }
+    .gender-pill.active {
+      border-color: #c5a44e;
+      background: rgba(197,164,78,0.1);
+      color: #c5a44e;
+    }
   `]
 })
 export class MetricsComponent {
@@ -95,6 +154,7 @@ export class MetricsComponent {
   heightInches = 70;
   weightLbs = 175;
   birthYear = 1995;
+  gender: 'M' | 'F' | null = null;
 
   formatHeight(totalInches: number): string {
     const feet = Math.floor(totalInches / 12);
@@ -113,12 +173,17 @@ export class MetricsComponent {
     return null;
   }
 
+  setGender(val: 'M' | 'F' | null) {
+    this.gender = val;
+  }
+
   submit() {
     if (this.currentAge < 16) return;
     this.state.setMetrics({
       height: Math.round(this.heightInches * 2.54),
       weight: Math.round(this.weightLbs * 0.453592),
-      birthYear: this.birthYear
+      birthYear: this.birthYear,
+      gender: this.gender
     });
     this.completed.emit();
   }

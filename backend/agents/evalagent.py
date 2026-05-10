@@ -28,6 +28,7 @@ async def call_eval(
     conversation_history: list,
     final_result_json: str,
     target_game_year: int | None = None,
+    gender: str | None = None,
 ) -> dict | None:
     """
     Calls the eval LLM with the full pipeline context.
@@ -62,7 +63,9 @@ async def call_eval(
     prompt = (
         time_travel_header
         + f"BIOMETRIC PROFILE\n"
-        f"Height: {height_cm}cm | Weight: {weight_kg}kg | Current age: {current_age or 'unknown'} | Age at evaluation: {age}\n\n"
+        f"Height: {height_cm}cm | Weight: {weight_kg}kg | Age at evaluation: {age}"
+        + (f" | Gender: {gender}" if gender else "")
+        + f"\n\n"
         f"CONVERSATION HISTORY\n{history_text or '(no history provided)'}\n\n"
         f"FINAL PIPELINE RESULT (compliance-approved JSON)\n{final_result_json}\n\n"
         "Now evaluate this scouting report and return your JSON score."

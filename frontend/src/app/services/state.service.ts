@@ -31,6 +31,9 @@ export class StateService {
   /** The Games year the user is currently time-traveling to, or null if not in time travel mode. */
   activeEraYear: number | null = null;
 
+  /** True once the user has dismissed or engaged with the timeline banner — never shows again. */
+  timelineBannerDismissed = false;
+
   /** The Games year of the most recently displayed time travel result (for era banner in report). */
   traveledYear: number | null = null;
 
@@ -74,6 +77,7 @@ export class StateService {
     this.loadingSub.next(false);
     this.narrativeBridgeSub.next(null);
     this.evalResultSub.next(null);
+    this.activeEraYear = null;
     this.resultSub.next(result);
   }
 
@@ -110,9 +114,10 @@ export class StateService {
     this.loadingSub.next(false);
     this.metricsSetSub.next(false);
     this.narrativeBridgeSub.next(null);
-    this.metrics = { height: null, weight: null, birthYear: null };
+    this.metrics = { height: null, weight: null, birthYear: null, gender: null };
     this.activeEraYear = null;
     this.traveledYear = null;
+    this.timelineBannerDismissed = false;
     this.eraHistoryMap.clear();
     this.sessionId = crypto.randomUUID();
   }

@@ -65,9 +65,10 @@ def _build_system_header(request: StoryRequest) -> str:
         mode = "INTERVIEW"
 
     header = f"[SYSTEM: MODE | {mode}]\n"
+    gender_str = f" | Gender: {request.gender}" if request.gender else ""
     header += (
         f"[SYSTEM: BIOMETRIC_DATA | Height: {request.height_cm}cm "
-        f"| Weight: {request.weight_kg}kg | Age: {user_age}]\n"
+        f"| Weight: {request.weight_kg}kg | Age: {user_age}{gender_str}]\n"
     )
 
     if request.target_game_year and request.birth_year:
@@ -118,11 +119,11 @@ def _quick_summary(agent_name: str, content: str, question_num: int = 0) -> str:
             if isinstance(data, dict) and data.get("question"):
                 q_label = f"Q{question_num}: " if question_num else ""
                 feedback = data.get("feedback", "")
-                has_ready = any("[READY]" in str(o) for o in data.get("options", []))
+                ready = data.get("ready_to_proceed", False)
                 return (
                     f"{q_label}Question: \"{data['question'][:100]}\" | "
                     f"Feedback given: \"{feedback[:60]}\" | "
-                    f"[READY] option offered: {'yes' if has_ready else 'no'}"
+                    f"Ready-to-proceed offered: {'yes' if ready else 'no'}"
                 )
         if agent_name == "compliance_agent":
             if isinstance(data, list) and data:
@@ -269,8 +270,18 @@ async def event_generator(request: StoryRequest):
         yield _sse({"type": result_type, "response": final_response_text})
         await asyncio.sleep(0.01)
 
-        # ── Eval Agent — runs only after a full scouting pass ──
-        if mode == "SCOUTING":
+        # ── Detect scouting result even when mode is INTERVIEW (supervisor ordering bug) ──
+        _is_scouting_result = mode == "SCOUTING"
+        if not _is_scouting_result:
+            try:
+                _d = json.loads(final_response_text)
+                if isinstance(_d, list) and len(_d) > 0 and "matched_profile_id" in _d[0]:
+                    _is_scouting_result = True
+            except Exception:
+                pass
+
+        # ── Eval Agent — runs after any confirmed scouting result ──
+        if _is_scouting_result:
             yield _trace("eval_agent", "Thought", detail="I'm reviewing the pipeline's archetype match quality, narrative personalization, and compliance integrity.")
             await asyncio.sleep(0.05)
             eval_result = await call_eval(
@@ -280,6 +291,7 @@ async def event_generator(request: StoryRequest):
                 conversation_history=request.conversation_history,
                 final_result_json=final_response_text,
                 target_game_year=request.target_game_year,
+                gender=request.gender,
             )
             if eval_result:
                 yield _sse({"type": "eval", "result": eval_result})

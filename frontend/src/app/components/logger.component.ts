@@ -179,7 +179,8 @@ export class LoggerComponent implements AfterViewChecked {
 
   formatAgent(name: string): string {
     if (name === 'user') return 'USER';
-    return name.replace('_agent', '').replace('_', ' ');
+    if (name === 'system') return 'APP';
+    return name.replace('_agent', '').replace(/_/g, ' ');
   }
 
   ngAfterViewChecked() {

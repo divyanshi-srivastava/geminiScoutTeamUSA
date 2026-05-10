@@ -25,6 +25,7 @@ class StoryRequest(BaseModel):
     height_cm: Optional[float] = None
     weight_kg: Optional[float] = None
     birth_year: Optional[int] = None
+    gender: Optional[str] = None  # "M", "F", or None (skipped)
 
     # ── Stateful Conversation Fields ──
     conversation_history: List[ConversationTurn] = []

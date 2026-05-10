@@ -6,29 +6,74 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div class="chip-grid">
+    <div class="option-list">
       <button
         *ngFor="let option of options"
-        class="chip btn-gold"
+        class="option-row"
         [disabled]="chosen !== null"
         [class.chosen]="chosen === option"
         (click)="pick(option)">
-        {{ option }}
+        <span class="option-marker"></span>
+        <span class="option-text">{{ option }}</span>
       </button>
     </div>
   `,
   styles: [`
-    .chip-grid { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1rem; }
-    .chip {
-      padding: 0.75rem 1.5rem;
-      font-size: 0.85rem;
-      letter-spacing: 0.04em;
-      border-radius: 99px;
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    .option-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 1.25rem;
     }
-    .chip.chosen {
-      box-shadow: 0 0 0 2px #c5a44e, 0 4px 20px rgba(197, 164, 78, 0.4);
-      transform: scale(1.05);
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      width: 100%;
+      padding: 0.85rem 1rem;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 0.5rem;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.18s ease;
+      font-family: inherit;
+    }
+    .option-row:hover:not(:disabled) {
+      background: rgba(197,164,78,0.06);
+      border-color: rgba(197,164,78,0.25);
+    }
+    .option-row.chosen {
+      background: rgba(197,164,78,0.08);
+      border-color: #c5a44e;
+    }
+    .option-row:disabled:not(.chosen) {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .option-marker {
+      flex-shrink: 0;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(197,164,78,0.4);
+      margin-top: 2px;
+      transition: all 0.18s ease;
+    }
+    .option-row.chosen .option-marker {
+      background: #c5a44e;
+      border-color: #c5a44e;
+      box-shadow: 0 0 8px rgba(197,164,78,0.5);
+    }
+    .option-text {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.45;
+    }
+    .option-row.chosen .option-text {
+      color: #e3ce6f;
+      font-weight: 600;
     }
   `]
 })

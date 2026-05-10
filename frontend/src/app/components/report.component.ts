@@ -4,8 +4,6 @@ import { StateService } from '../services/state.service';
 import { EvalResult, ScoutingResult } from '../models';
 import { map } from 'rxjs/operators';
 
-// Module-level flag — survives component re-mount, resets only on full page reload
-let timeTravelBannerDismissed = false;
 
 @Component({
   selector: 'app-report',
@@ -550,10 +548,11 @@ let timeTravelBannerDismissed = false;
       display: flex;
       align-items: flex-start;
       gap: 1.5rem;
-      padding: 1.5rem 2rem;
-      background: rgba(197, 164, 78, 0.05);
-      border: 1px solid rgba(197, 164, 78, 0.25);
+      padding: 1.25rem 1.75rem;
+      background: linear-gradient(135deg, #c5a44e 0%, #e3ce6f 60%, #c5a44e 100%);
+      border: none;
       border-radius: 0.75rem;
+      box-shadow: 0 4px 24px rgba(197, 164, 78, 0.35);
       animation: bannerIn 0.5s ease both;
     }
     @keyframes bannerIn {
@@ -567,13 +566,13 @@ let timeTravelBannerDismissed = false;
       font-size: 0.6rem;
       font-weight: 900;
       letter-spacing: 0.35em;
-      color: rgba(197, 164, 78, 0.85);
-      margin-bottom: 0.5rem;
+      color: rgba(0, 0, 0, 0.6);
+      margin-bottom: 0.4rem;
     }
 
     .tt-banner-text {
       font-size: 0.82rem;
-      color: rgba(255,255,255,0.55);
+      color: rgba(0, 0, 0, 0.72);
       line-height: 1.65;
       margin: 0;
     }
@@ -583,9 +582,9 @@ let timeTravelBannerDismissed = false;
       font-size: 0.5rem;
       font-weight: 900;
       letter-spacing: 0.18em;
-      color: rgba(255,255,255,0.25);
-      background: none;
-      border: 1px solid rgba(255,255,255,0.1);
+      color: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(0, 0, 0, 0.15);
       border-radius: 0.4rem;
       padding: 0.35rem 0.75rem;
       cursor: pointer;
@@ -594,8 +593,8 @@ let timeTravelBannerDismissed = false;
       margin-top: 0.15rem;
     }
     .tt-banner-close:hover {
-      color: rgba(255,255,255,0.5);
-      border-color: rgba(255,255,255,0.2);
+      background: rgba(0, 0, 0, 0.14);
+      color: rgba(0, 0, 0, 0.75);
     }
   `]
 })
@@ -608,7 +607,7 @@ export class ReportComponent implements OnInit, OnDestroy {
   evalResult$ = this.state.evalResult$;
 
   ngOnInit() {
-    if (!timeTravelBannerDismissed) {
+    if (!this.state.timelineBannerDismissed) {
       this.bannerTimer = setTimeout(() => { this.showBanner = true; }, 3500);
     }
   }
@@ -619,7 +618,7 @@ export class ReportComponent implements OnInit, OnDestroy {
 
   dismissBanner() {
     this.showBanner = false;
-    timeTravelBannerDismissed = true;
+    this.state.timelineBannerDismissed = true;
   }
 
   get traveledYear(): number | null { return this.state.traveledYear; }
