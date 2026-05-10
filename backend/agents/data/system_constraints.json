@@ -1,0 +1,23 @@
+{
+    "scouting_limits": {
+        "min_age": 16,
+        "max_age": 55,
+        "default_peak_start": 20,
+        "default_peak_end": 32
+    },
+    "physical_sanity_checks": {
+        "height_cm": [
+            120,
+            220
+        ],
+        "weight_kg": [
+            40,
+            200
+        ]
+    },
+    "temporal_rules": {
+        "timeline_start_year": 1984,
+        "timeline_end_year": 2032,
+        "logic": "User Age = (Game Year - Birth Year). If Age < min_age, return 'Ineligible: Youth Phase'. If Age > max_age, return 'Ineligible: Legacy/Coach Phase'."
+    }
+}

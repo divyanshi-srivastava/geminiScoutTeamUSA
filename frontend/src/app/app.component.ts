@@ -9,6 +9,7 @@ import { ReportComponent } from './components/report.component';
 import { TimelineComponent } from './components/timeline.component';
 import { HeaderComponent } from './components/header.component';
 import { FooterComponent } from './components/footer.component';
+import { FactRotatorComponent } from './components/fact-rotator.component';
 import { APP_STRINGS, PROJECT_LINKS } from '../constants';
 
 @Component({
@@ -20,8 +21,9 @@ import { APP_STRINGS, PROJECT_LINKS } from '../constants';
     LoggerComponent, 
     ReportComponent, 
     TimelineComponent, 
-    HeaderComponent, 
-    FooterComponent
+    HeaderComponent,
+    FooterComponent,
+    FactRotatorComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

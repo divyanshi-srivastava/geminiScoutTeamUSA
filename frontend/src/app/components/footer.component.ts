@@ -14,9 +14,9 @@ import { APP_STRINGS, PROJECT_LINKS } from '../../constants';
       
       <p class="footer-data">
         Historical sporting data provided by the
-        <a [href]="LINKS.HISTORICAL_RECORDS" target="_blank">Kaggle Paralympic Games Dataset </a>
-        and <a [href]="LINKS.KAGGE_DATA" target="_blank">120 Years of Olympic History. </a>
-        All rights to the "The Games" terminology respected under fair-use for athletic prospecting research.
+        <a [href]="LINKS.HISTORICAL_RECORDS" target="_blank">Kaggle Adaptive Sport Records Dataset </a>
+        and <a [href]="LINKS.KAGGE_DATA" target="_blank">Kaggle Historical Sport Records. </a>
+        Dataset usage under fair-use for non-commercial athletic prospecting research.
       </p>
 
       <p class="footer-copyright">

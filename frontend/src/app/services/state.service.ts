@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { ConversationTurn, Question, TraceEvent, Profile, Metrics, ScoutingResult } from '../models';
+import { ConversationTurn, Question, TraceEvent, Metrics, ScoutingResult } from '../models';
 
 export type AppState = 'LANDING' | 'INTERVIEW' | 'SCOUTING' | 'RESULT';
 
@@ -60,6 +60,20 @@ export class StateService {
     this.loadingSub.next(false);
     this.narrativeBridgeSub.next(null);
     this.resultSub.next(result);
+  }
+
+  clearTraces() {
+    this.tracesSub.next([]);
+  }
+
+  addUserTrace(detail: string) {
+    this.addTrace({
+      type: 'trace',
+      agent: 'user',
+      event: 'UserAction',
+      timestamp: new Date().toLocaleTimeString(),
+      detail
+    });
   }
 
   addTrace(trace: TraceEvent) {

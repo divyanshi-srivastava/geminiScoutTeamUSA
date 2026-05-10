@@ -189,7 +189,11 @@ export class InterviewComponent implements OnDestroy {
   private sub?: Subscription;
 
   startNarrative() {
+    this.sub?.unsubscribe();
     this.state.setLoading(true);
+    this.state.addUserTrace(
+      `Submitted physical stats — Height: ${this.state.metrics.height}cm, Weight: ${this.state.metrics.weight}kg, Born: ${this.state.metrics.birthYear}`
+    );
     const body = {
       story: 'Initial metrics provided.',
       height_cm: this.state.metrics.height,
@@ -206,8 +210,15 @@ export class InterviewComponent implements OnDestroy {
   }
 
   onAnswer(answer: string) {
+    this.sub?.unsubscribe();
     this.state.setLoading(true);
     this.state.addTurn({ role: 'user', content: answer });
+
+    const isReady = answer.trim().startsWith('[READY]');
+    const traceLabel = isReady
+      ? 'Ready to see results — triggering full scouting pipeline'
+      : `Selected: "${answer.length > 80 ? answer.substring(0, 80) + '…' : answer}"`;
+    this.state.addUserTrace(traceLabel);
 
     const body = {
       story: answer,
@@ -215,7 +226,7 @@ export class InterviewComponent implements OnDestroy {
       weight_kg: this.state.metrics.weight,
       birth_year: this.state.metrics.birthYear,
       conversation_history: this.state.getHistory(),
-      is_ready_to_scout: false
+      is_ready_to_scout: isReady
     };
 
     this.sub = this.stream.consume(body).subscribe({

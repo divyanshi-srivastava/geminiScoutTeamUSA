@@ -2,7 +2,7 @@ import os
 from google.adk import Agent
 
 AGENTS_DIR = os.path.dirname(os.path.abspath(__file__))
-SCOUT_MODEL = "gemini-2.5-pro"
+MODEL = "gemini-3.1-flash-lite"
 
 try:
     with open(os.path.join(AGENTS_DIR, "instructions", "logger.md"), "r") as f:
@@ -14,5 +14,5 @@ logger_agent = Agent(
     name="logger_agent",
     description="The Trace: Real-time narrator of the orchestration pipeline.",
     instruction=_instruction,
-    model=SCOUT_MODEL,
+    model=MODEL,
 )

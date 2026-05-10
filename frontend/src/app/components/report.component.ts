@@ -10,53 +10,69 @@ import { map } from 'rxjs/operators';
   imports: [CommonModule],
   template: `
     <div class="report-container animate-fade-in-up" *ngIf="view$ | async as v">
-      
-      <!-- ── SCOUT VERDICT SUMMARY ── -->
+
+      <!-- ── SCOUT VERDICT (Human Narrative Only) ── -->
       <header class="verdict-summary glass-card">
         <span class="summary-label">SCOUT VERDICT</span>
         <p class="summary-text">{{ v.summaryVerdict }}</p>
       </header>
 
+      <!-- ── PATHWAY CARDS (Visual / No Prose) ── -->
       <div class="archetypes-grid">
-        <!-- ── OLYMPIC PATHWAY ── -->
+
         <div class="archetype-card glass-card-elevated">
-          <div class="card-type-label">OLYMPIC PATHWAY</div>
-          
-          <div class="badge-row" *ngIf="v.olympic.life_stage">
-            <span class="life-stage-badge">{{ v.olympic.life_stage }}</span>
-          </div>
-
-          <h1 class="archetype-name text-gradient-usa">
-            {{ v.olympic.matched_profile_name }}
-          </h1>
-
-          <p class="pathway-discipline" *ngIf="v.olympicPathway">
-            {{ v.olympicPathway }}
-          </p>
-
-          <div class="verdict-box">
-            <p>{{ v.olympicVerdict }}</p>
+          <div class="card-type-label">ELITE SPORT PATHWAY</div>
+          <div class="card-body">
+            <span class="life-stage-badge" *ngIf="v.olympic.life_stage">
+              {{ v.olympic.life_stage }}
+            </span>
+            <h2 class="archetype-name text-gradient-usa">
+              {{ v.olympic.matched_profile_name }}
+            </h2>
+            <p class="pathway-discipline" *ngIf="v.olympicPathway">
+              {{ v.olympicPathway }}
+            </p>
           </div>
         </div>
 
-        <!-- ── PARALYMPIC PATHWAY ── -->
         <div class="archetype-card glass-card-elevated">
-          <div class="card-type-label">PARALYMPIC PATHWAY</div>
-          
-          <div class="badge-row" *ngIf="v.paralympic.life_stage">
-            <span class="life-stage-badge">{{ v.paralympic.life_stage }}</span>
+          <div class="card-type-label">ADAPTIVE SPORT PATHWAY</div>
+          <div class="card-body">
+            <span class="life-stage-badge adaptive-badge" *ngIf="v.paralympic.life_stage">
+              {{ v.paralympic.life_stage }}
+            </span>
+            <h2 class="archetype-name text-gradient-usa">
+              {{ v.paralympic.matched_profile_name }}
+            </h2>
+            <p class="pathway-discipline" *ngIf="v.paralympicPathway">
+              {{ v.paralympicPathway }}
+            </p>
           </div>
+        </div>
 
-          <h1 class="archetype-name text-gradient-usa">
-            {{ v.paralympic.matched_profile_name }}
-          </h1>
+      </div>
 
-          <p class="pathway-discipline" *ngIf="v.paralympicPathway">
-            {{ v.paralympicPathway }}
-          </p>
+      <!-- ── JUDGE'S VAULT ── -->
+      <div class="vault-section">
+        <button class="vault-toggle" (click)="toggleVault()">
+          <span class="vault-chevron">{{ vaultOpen ? '▲' : '▼' }}</span>
+          <span class="vault-title">VIEW TECHNICAL ORCHESTRATION &amp; REASONING</span>
+          <span class="vault-hint">{{ vaultOpen ? 'COLLAPSE' : 'EXPAND' }}</span>
+        </button>
 
-          <div class="verdict-box">
-            <p>{{ v.paralympicVerdict }}</p>
+        <div class="vault-body" [class.open]="vaultOpen">
+          <div class="vault-content">
+            <div class="vault-header">// STANDING PATHWAY — FULL ANALYSIS</div>
+            <pre class="vault-text">{{ v.standingAnalysis }}</pre>
+
+            <div class="vault-header vault-sep">// ADAPTIVE PATHWAY — FULL ANALYSIS</div>
+            <pre class="vault-text">{{ v.adaptiveAnalysis }}</pre>
+
+            <div class="vault-footer">
+              // Agent trace &amp; SSE events logged in Mission Control sidebar.<br>
+              // Physical profile matched via Euclidean distance across 12 archetype centroids.<br>
+              // Pipeline: supervisor_agent → scout_agent → narrator_agent → compliance_agent
+            </div>
           </div>
         </div>
       </div>
@@ -66,6 +82,7 @@ import { map } from 'rxjs/operators';
           START A NEW JOURNEY
         </button>
       </div>
+
     </div>
   `,
   styles: [`
@@ -98,86 +115,172 @@ import { map } from 'rxjs/operators';
       margin: 0 auto;
     }
 
-    /* ── Grid ── */
+    /* ── Pathway Cards ── */
     .archetypes-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
-      align-items: stretch;
+      margin-bottom: 2rem;
     }
-
     @media (max-width: 900px) {
       .archetypes-grid { grid-template-columns: 1fr; }
     }
 
     .archetype-card {
-      padding: 4rem 3rem 3rem;
+      padding: 3.5rem 2.5rem 2.5rem;
       position: relative;
       display: flex;
       flex-direction: column;
-      height: 100%;
+      align-items: center;
     }
 
     .card-type-label {
       position: absolute;
-      top: 1.5rem;
+      top: 1.25rem;
       left: 0;
       right: 0;
       text-align: center;
-      font-size: 0.65rem;
+      font-size: 0.6rem;
       font-weight: 900;
       letter-spacing: 0.4em;
-      color: rgba(255,255,255,0.3);
+      color: rgba(255,255,255,0.25);
       text-transform: uppercase;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.85rem;
+      width: 100%;
+      padding-top: 0.5rem;
     }
 
     .life-stage-badge {
       display: inline-block;
       font-size: 0.6rem;
       font-weight: 800;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: #c5a44e;
       background: rgba(197, 164, 78, 0.1);
-      border: 1px solid rgba(197, 164, 78, 0.2);
-      padding: 0.25rem 0.75rem;
+      border: 1px solid rgba(197, 164, 78, 0.25);
+      padding: 0.25rem 0.85rem;
       border-radius: 99px;
-      margin-bottom: 1.5rem;
+    }
+    .adaptive-badge {
+      color: #60a5fa;
+      background: rgba(96, 165, 250, 0.08);
+      border-color: rgba(96, 165, 250, 0.2);
     }
 
     .archetype-name {
-      font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
       font-weight: 900;
       letter-spacing: -0.02em;
       line-height: 1.1;
-      margin-bottom: 1rem;
-      text-align: center;
+      margin: 0;
     }
 
     .pathway-discipline {
-      text-align: center;
       font-size: 0.7rem;
       font-weight: 800;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: rgba(197, 164, 78, 0.6);
-      margin-bottom: 2rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      margin: 0;
     }
 
-    .verdict-box {
+    /* ── Judge's Vault ── */
+    .vault-section {
+      margin-bottom: 2.5rem;
+      border-radius: 0.75rem;
+      border: 1px solid rgba(74, 222, 128, 0.1);
+      overflow: hidden;
+    }
+
+    .vault-toggle {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.5rem;
+      background: rgba(0, 8, 0, 0.5);
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .vault-toggle:hover { background: rgba(0, 16, 0, 0.6); }
+
+    .vault-chevron {
+      font-size: 0.55rem;
+      color: rgba(74, 222, 128, 0.5);
+    }
+    .vault-title {
+      flex: 1;
       text-align: left;
-      color: rgba(255,255,255,0.7);
-      line-height: 1.7;
-      font-size: 0.95rem;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      color: rgba(74, 222, 128, 0.6);
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .vault-hint {
+      font-size: 0.55rem;
+      letter-spacing: 0.1em;
+      color: rgba(74, 222, 128, 0.25);
+      font-family: 'Courier New', Courier, monospace;
     }
 
+    .vault-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.55s ease;
+    }
+    .vault-body.open { max-height: 3000px; }
+
+    .vault-content {
+      padding: 1.5rem;
+      background: rgba(0, 8, 0, 0.7);
+      border-top: 1px solid rgba(74, 222, 128, 0.08);
+    }
+
+    .vault-header {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: rgba(74, 222, 128, 0.7);
+      margin-bottom: 0.75rem;
+    }
+    .vault-sep { margin-top: 2rem; }
+
+    .vault-text {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.78rem;
+      line-height: 1.75;
+      color: rgba(74, 222, 128, 0.5);
+      white-space: pre-wrap;
+      word-break: break-word;
+      margin: 0;
+    }
+
+    .vault-footer {
+      margin-top: 1.75rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(74, 222, 128, 0.07);
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.58rem;
+      line-height: 1.9;
+      color: rgba(74, 222, 128, 0.22);
+    }
+
+    /* ── Action Row ── */
     .action-row {
-      margin-top: 4rem;
+      margin-top: 2.5rem;
       text-align: center;
     }
-
     .restart-btn {
       padding: 1.25rem 3rem;
       font-size: 0.85rem;
@@ -187,11 +290,8 @@ import { map } from 'rxjs/operators';
 })
 export class ReportComponent {
   private state = inject(StateService);
+  vaultOpen = false;
 
-  /**
-   * Transforms the raw ScoutingResult into a deduplicated view model.
-   * Detects duplicate verdicts and provides fallback text.
-   */
   view$ = this.state.result$.pipe(
     map(res => {
       if (!res) return null;
@@ -200,46 +300,28 @@ export class ReportComponent {
   );
 
   private buildViewModel(res: ScoutingResult) {
-    const isDuplicateVerdict = res.olympic.scout_verdict === res.paralympic.scout_verdict;
-    const isDuplicateName = res.olympic.matched_profile_name === res.paralympic.matched_profile_name;
+    const isDuplicateName =
+      res.olympic.matched_profile_name === res.paralympic.matched_profile_name;
 
     return {
-      // Top summary — always use the olympic verdict as the primary analysis
       summaryVerdict: res.overall_narrative || res.olympic.scout_verdict,
 
-      // Olympic card
       olympic: res.olympic,
       olympicPathway: res.olympic.pathway_standing || null,
-      olympicVerdict: this.truncateForCard(res.olympic.scout_verdict),
 
-      // Paralympic card — detect duplication and provide fallback
       paralympic: {
         ...res.paralympic,
-        matched_profile_name: isDuplicateName 
-          ? res.paralympic.matched_profile_name 
-          : res.paralympic.matched_profile_name
+        matched_profile_name: isDuplicateName
+          ? `${res.paralympic.matched_profile_name} — Adaptive`
+          : res.paralympic.matched_profile_name,
       },
       paralympicPathway: res.paralympic.pathway_adaptive || null,
-      paralympicVerdict: isDuplicateVerdict
-        ? 'Discovering your Paralympic potential — a secondary analysis tailored to adaptive disciplines is being prepared based on your physical profile.'
-        : this.truncateForCard(res.paralympic.scout_verdict),
+
+      standingAnalysis: res.olympic.scout_verdict,
+      adaptiveAnalysis: res.paralympic.scout_verdict,
     };
   }
 
-  /** 
-   * For the cards: keep the verdict short and technical. 
-   * The full narrative was already shown in the summary.
-   */
-  private truncateForCard(verdict: string): string {
-    if (!verdict) return '';
-    // If the verdict is very long (likely a narrative), trim it
-    if (verdict.length > 400) {
-      return verdict.substring(0, 397) + '…';
-    }
-    return verdict;
-  }
-
-  restart() {
-    this.state.reset();
-  }
+  toggleVault() { this.vaultOpen = !this.vaultOpen; }
+  restart() { this.state.reset(); }
 }

@@ -1,0 +1,394 @@
+[
+  {
+    "year": 1924,
+    "city": "Chamonix",
+    "season": "Winter",
+    "vibe": "The Birth of Winter Excellence",
+    "parity_note": "Traditional Games (Pre-Paralympic Era)"
+  },
+  {
+    "year": 1924,
+    "city": "Paris",
+    "season": "Summer",
+    "vibe": "The Return of the City of Light",
+    "parity_note": "Traditional Games (Pre-Paralympic Era)"
+  },
+  {
+    "year": 1928,
+    "city": "St. Moritz",
+    "season": "Winter",
+    "vibe": "The Alpine Awakening",
+    "parity_note": "Traditional Games (Pre-Paralympic Era)"
+  },
+  {
+    "year": 1928,
+    "city": "Amsterdam",
+    "season": "Summer",
+    "vibe": "The Universal Flame",
+    "parity_note": "Traditional Games (Pre-Paralympic Era)"
+  },
+  {
+    "year": 1932,
+    "city": "Lake Placid",
+    "season": "Winter",
+    "vibe": "The Great North American Debut",
+    "parity_note": "Traditional Games (Pre-Paralympic Era)"
+  },
+  {
+    "year": 1932,
+    "city": "Los Angeles",
+    "season": "Summer",
+    "vibe": "The Sunset Strip Spectacle",
+    "parity_note": "Traditional Games (Pre-Paralympic Era)"
+  },
+  {
+    "year": 1936,
+    "city": "Garmisch-Partenkirchen",
+    "season": "Winter",
+    "vibe": "The Peaks of Precision",
+    "parity_note": "Traditional Games (Pre-Paralympic Era)"
+  },
+  {
+    "year": 1936,
+    "city": "Berlin",
+    "season": "Summer",
+    "vibe": "The Iron Will",
+    "parity_note": "Traditional Games (Pre-Paralympic Era)"
+  },
+  {
+    "year": 1948,
+    "city": "St. Moritz",
+    "season": "Winter",
+    "vibe": "The Post-War Peace on Ice",
+    "parity_note": "Traditional Games (Pre-Paralympic Era)"
+  },
+  {
+    "year": 1948,
+    "city": "London",
+    "season": "Summer",
+    "vibe": "The Austerity Rebirth",
+    "parity_note": "Traditional Games (Pre-Paralympic Era)"
+  },
+  {
+    "year": 1952,
+    "city": "Oslo",
+    "season": "Winter",
+    "vibe": "The Nordic Soul",
+    "parity_note": "Traditional Games (Pre-Paralympic Era)"
+  },
+  {
+    "year": 1952,
+    "city": "Helsinki",
+    "season": "Summer",
+    "vibe": "The Midnight Sun Spirit",
+    "parity_note": "Traditional Games (Pre-Paralympic Era)"
+  },
+  {
+    "year": 1956,
+    "city": "Cortina d'Ampezzo",
+    "season": "Winter",
+    "vibe": "The Dolomite Elegance",
+    "parity_note": "Traditional Games (Pre-Paralympic Era)"
+  },
+  {
+    "year": 1956,
+    "city": "Melbourne",
+    "season": "Summer",
+    "vibe": "The Friendly Games Down Under",
+    "parity_note": "Traditional Games (Pre-Paralympic Era)"
+  },
+  {
+    "year": 1960,
+    "city": "Squaw Valley",
+    "season": "Winter",
+    "vibe": "The Technicolor Frontier",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1960,
+    "city": "Rome",
+    "season": "Summer",
+    "vibe": "The Eternal City's Modern Pulse",
+    "parity_note": "Includes both the Olympic and Paralympic cycles (First Official Paralympics)"
+  },
+  {
+    "year": 1964,
+    "city": "Innsbruck",
+    "season": "Winter",
+    "vibe": "The Tyrolean Triumph",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1964,
+    "city": "Tokyo",
+    "season": "Summer",
+    "vibe": "The Rising Sun Reborn",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1968,
+    "city": "Grenoble",
+    "season": "Winter",
+    "vibe": "The Modern Winter Spark",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1968,
+    "city": "Mexico City",
+    "season": "Summer",
+    "vibe": "The High Altitude Revolution",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1972,
+    "city": "Sapporo",
+    "season": "Winter",
+    "vibe": "The Snowy Horizon",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1972,
+    "city": "Munich",
+    "season": "Summer",
+    "vibe": "The Radiant Unity",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1976,
+    "city": "Innsbruck",
+    "season": "Winter",
+    "vibe": "The Double Tyrolean Welcome",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1976,
+    "city": "Montreal",
+    "season": "Summer",
+    "vibe": "The Architectural Dream",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1980,
+    "city": "Lake Placid",
+    "season": "Winter",
+    "vibe": "The Miracle on Ice",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1980,
+    "city": "Moscow",
+    "season": "Summer",
+    "vibe": "The Red Square Might",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1984,
+    "city": "Sarajevo",
+    "season": "Winter",
+    "vibe": "The Balkan Brotherhood",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1984,
+    "city": "Los Angeles",
+    "season": "Summer",
+    "vibe": "The Hollywood Renaissance",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1988,
+    "city": "Calgary",
+    "season": "Winter",
+    "vibe": "The Cowboy Spirit on Ice",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1988,
+    "city": "Seoul",
+    "season": "Summer",
+    "vibe": "The Tiger's Leap",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1992,
+    "city": "Albertville",
+    "season": "Winter",
+    "vibe": "The Savoyard Symphony",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1992,
+    "city": "Barcelona",
+    "season": "Summer",
+    "vibe": "The Mediterranean Masterpiece",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1994,
+    "city": "Lillehammer",
+    "season": "Winter",
+    "vibe": "The Purest Winter Tale",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1996,
+    "city": "Atlanta",
+    "season": "Summer",
+    "vibe": "The Centennial Celebration",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 1998,
+    "city": "Nagano",
+    "season": "Winter",
+    "vibe": "The Harmonious Nature",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2000,
+    "city": "Sydney",
+    "season": "Summer",
+    "vibe": "The Millennium Spirit",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2002,
+    "city": "Salt Lake City",
+    "season": "Winter",
+    "vibe": "The Mountain Resolve",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2004,
+    "city": "Athens",
+    "season": "Summer",
+    "vibe": "The Homecoming",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2006,
+    "city": "Turin",
+    "season": "Winter",
+    "vibe": "The Passion Lives Here",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2008,
+    "city": "Beijing",
+    "season": "Summer",
+    "vibe": "The Dragon's Emergence",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2010,
+    "city": "Vancouver",
+    "season": "Winter",
+    "vibe": "With Glowing Hearts",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2012,
+    "city": "London",
+    "season": "Summer",
+    "vibe": "The Inclusive Legacy",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2014,
+    "city": "Sochi",
+    "season": "Winter",
+    "vibe": "The Subtropical Sub-zero",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2016,
+    "city": "Rio de Janeiro",
+    "season": "Summer",
+    "vibe": "The Carnival of Achievement",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2018,
+    "city": "PyeongChang",
+    "season": "Winter",
+    "vibe": "The Peace Pipeline",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2020,
+    "city": "Tokyo",
+    "season": "Summer",
+    "vibe": "The Digital Rebirth",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2022,
+    "city": "Beijing",
+    "season": "Winter",
+    "vibe": "The Dual City Vision",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2024,
+    "city": "Paris",
+    "season": "Summer",
+    "vibe": "The Wide Open Games",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2026,
+    "city": "Milano Cortina",
+    "season": "Winter",
+    "vibe": "The Glamour and the Grind",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2028,
+    "city": "Los Angeles",
+    "season": "Summer",
+    "vibe": "The Cinematic Frontier",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2030,
+    "city": "French Alps",
+    "season": "Winter",
+    "vibe": "The Sustainable Summit",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2032,
+    "city": "Brisbane",
+    "season": "Summer",
+    "vibe": "The Sunshine State Shine",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2034,
+    "city": "Salt Lake City",
+    "season": "Winter",
+    "vibe": "The Great Salt Return",
+    "parity_note": "Includes both the Olympic and Paralympic cycles"
+  },
+  {
+    "year": 2036,
+    "city": "Ahmedabad",
+    "season": "Summer",
+    "vibe": "The Vibrant Bharat Ascent",
+    "parity_note": "Includes both the Olympic and Paralympic cycles (Projected Host)"
+  },
+  {
+    "year": 2040,
+    "city": "Doha",
+    "season": "Summer",
+    "vibe": "The Desert Innovation",
+    "parity_note": "Includes both the Olympic and Paralympic cycles (Projected Host)"
+  },
+  {
+    "year": 2044,
+    "city": "Istanbul",
+    "season": "Summer",
+    "vibe": "The Bridge of Continents",
+    "parity_note": "Includes both the Olympic and Paralympic cycles (Projected Host)"
+  }
+]

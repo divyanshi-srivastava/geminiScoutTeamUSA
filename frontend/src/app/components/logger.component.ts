@@ -16,6 +16,7 @@ import { StateService } from '../services/state.service';
       <div class="trace-scroll" #scrollContainer>
         <div *ngFor="let t of traces$ | async; let i = index"
              class="trace-row"
+             [attr.data-event]="t.event"
              [style.animation-delay]="i * 50 + 'ms'">
           <div class="row-meta">
             <span class="ts">{{ t.timestamp }}</span>
@@ -35,11 +36,12 @@ import { StateService } from '../services/state.service';
   styles: [`
     .logger-panel {
       background: #020617;
-      height: 100%;
-      border-left: 1px solid rgba(255,255,255,0.06);
+      border-radius: 0.75rem;
+      border: 1px solid rgba(255,255,255,0.06);
       display: flex;
       flex-direction: column;
       font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
+      overflow: hidden;
     }
 
     /* Header */
@@ -67,21 +69,17 @@ import { StateService } from '../services/state.service';
     }
 
     /* Trace List */
-    .trace-scroll { 
-      flex: 1; 
-      overflow-y: auto; 
+    .trace-scroll {
+      max-height: 800px;
+      overflow-y: auto;
       padding: 1rem 1.25rem;
       scrollbar-width: thin;
-      scrollbar-color: rgba(197, 164, 78, 0.2) transparent;
+      scrollbar-color: rgba(197, 164, 78, 0.25) transparent;
     }
-    .trace-scroll::-webkit-scrollbar {
-      width: 4px;
-    }
-    .trace-scroll::-webkit-scrollbar-track {
-      background: transparent;
-    }
+    .trace-scroll::-webkit-scrollbar { width: 4px; }
+    .trace-scroll::-webkit-scrollbar-track { background: transparent; }
     .trace-scroll::-webkit-scrollbar-thumb {
-      background: rgba(197, 164, 78, 0.2);
+      background: rgba(197, 164, 78, 0.25);
       border-radius: 10px;
     }
 
@@ -108,18 +106,38 @@ import { StateService } from '../services/state.service';
       border-radius: 3px;
       background: rgba(255,255,255,0.04);
     }
-    .agent-tag[data-agent*="scout"]      { color: #60a5fa; }
+    .agent-tag[data-agent*="scout"]      { color: #c5a44e; background: rgba(197,164,78,0.08); border: 1px solid rgba(197,164,78,0.15); }
     .agent-tag[data-agent*="narrator"]   { color: #e3ce6f; }
-    .agent-tag[data-agent*="compliance"] { color: #f87171; }
+    .agent-tag[data-agent*="compliance"] { color: #f87171; background: rgba(248,113,113,0.06); border: 1px solid rgba(248,113,113,0.12); }
     .agent-tag[data-agent*="supervisor"] { color: #a78bfa; }
     .agent-tag[data-agent*="logger"]     { color: #34d399; }
     .agent-tag[data-agent*="system"]     { color: #94a3b8; font-style: italic; }
+    .agent-tag[data-agent="user"]        { color: #a5f3fc; background: rgba(165,243,252,0.06); border: 1px solid rgba(165,243,252,0.12); }
 
     .row-body {
-      color: rgba(255,255,255,0.7);
-      font-size: 0.78rem;
-      line-height: 1.5;
+      color: rgba(255,255,255,0.65);
+      font-size: 0.76rem;
+      line-height: 1.55;
       margin: 0;
+    }
+
+    /* Final agent output */
+    .trace-row[data-event="Thought"] .row-body {
+      color: rgba(255,255,255,0.82);
+    }
+    .trace-row[data-event="Thought"] {
+      border-left-color: rgba(52, 211, 153, 0.3);
+    }
+
+    /* Thinking tokens — dimmer, italic, indented to feel like internal monologue */
+    .trace-row[data-event="Thinking"] {
+      border-left-color: rgba(255,255,255,0.04);
+      padding-left: 1.25rem;
+    }
+    .trace-row[data-event="Thinking"] .row-body {
+      color: rgba(255,255,255,0.35);
+      font-style: italic;
+      font-size: 0.7rem;
     }
 
     .empty-state {
@@ -142,6 +160,7 @@ export class LoggerComponent implements AfterViewChecked {
   @ViewChild('scrollContainer') private scrollRef!: ElementRef;
 
   formatAgent(name: string): string {
+    if (name === 'user') return 'USER';
     return name.replace('_agent', '').replace('_', ' ');
   }
 
@@ -149,6 +168,6 @@ export class LoggerComponent implements AfterViewChecked {
     try {
       const el = this.scrollRef.nativeElement;
       el.scrollTop = el.scrollHeight;
-    } catch {}
+    } catch { }
   }
 }

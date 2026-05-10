@@ -37,14 +37,16 @@ import { StateService } from '../../services/state.service';
         <div class="metric-card">
           <div class="metric-header">
             <label>Birth Year</label>
-            <span class="metric-value">{{ birthYear }}</span>
+            <span class="metric-value">{{ birthYear }} <small>age {{ currentAge }}</small></span>
           </div>
-          <input type="range" min="1950" max="2020" [(ngModel)]="birthYear" class="gold-range">
-          <div class="range-labels"><span>1950</span><span>2020</span></div>
+          <input type="range" min="1950" max="2010" [(ngModel)]="birthYear" class="gold-range">
+          <div class="range-labels"><span>1950</span><span>2010</span></div>
         </div>
       </div>
 
-      <button class="btn-gold submit-btn" (click)="submit()">
+      <p class="age-warning" *ngIf="ageWarning">{{ ageWarning }}</p>
+
+      <button class="btn-gold submit-btn" (click)="submit()" [disabled]="currentAge < 16">
         LOCK IN METRICS
       </button>
     </div>
@@ -81,7 +83,9 @@ import { StateService } from '../../services/state.service';
 
     .range-labels { display: flex; justify-content: space-between; font-size: 0.6rem; font-weight: 700; color: rgba(255,255,255,0.2); text-transform: uppercase; }
 
+    .age-warning { font-size: 0.75rem; color: #e8a04a; text-align: center; margin: 0; }
     .submit-btn { margin-top: 1rem; padding: 1.25rem; font-size: 0.9rem; letter-spacing: 0.15em; }
+    .submit-btn:disabled { opacity: 0.4; cursor: not-allowed; }
   `]
 })
 export class MetricsComponent {
@@ -98,10 +102,22 @@ export class MetricsComponent {
     return `${feet}' ${inches}"`;
   }
 
+  get currentAge(): number {
+    return new Date().getFullYear() - this.birthYear;
+  }
+
+  get ageWarning(): string | null {
+    const age = this.currentAge;
+    if (age < 16) return 'You must be at least 16 to be scouted.';
+    if (age > 55) return 'Our scouting model covers ages 16–55. Results may be less precise.';
+    return null;
+  }
+
   submit() {
+    if (this.currentAge < 16) return;
     this.state.setMetrics({
-      height: Math.round(this.heightInches * 2.54), // cm
-      weight: Math.round(this.weightLbs * 0.453592), // kg
+      height: Math.round(this.heightInches * 2.54),
+      weight: Math.round(this.weightLbs * 0.453592),
       birthYear: this.birthYear
     });
     this.completed.emit();

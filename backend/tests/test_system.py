@@ -8,7 +8,7 @@ sys.path.insert(0, BACKEND_DIR)
 
 os.environ.setdefault("GOOGLE_GENAI_USE_ENTERPRISE", "true")
 os.environ.setdefault("GOOGLE_CLOUD_PROJECT", "geminiscoutteamusa")
-os.environ.setdefault("GOOGLE_CLOUD_LOCATION", "us-central1")
+os.environ.setdefault("GOOGLE_CLOUD_LOCATION", "global")
 
 _creds_path = os.path.join(BACKEND_DIR, "scout-credentials.json")
 if os.path.isfile(_creds_path):

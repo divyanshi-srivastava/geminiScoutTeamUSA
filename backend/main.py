@@ -17,7 +17,7 @@ from fastapi.middleware.cors import CORSMiddleware
 # Locally, set them in your shell or .env before starting.
 os.environ.setdefault("GOOGLE_GENAI_USE_ENTERPRISE", "true")
 os.environ.setdefault("GOOGLE_CLOUD_PROJECT", "geminiscoutteamusa")
-os.environ.setdefault("GOOGLE_CLOUD_LOCATION", "us-central1")
+os.environ.setdefault("GOOGLE_CLOUD_LOCATION", "global")
 
 # Local-only: point to the service-account key file.
 _creds_path = os.path.join(
@@ -73,23 +73,15 @@ async def analyze_story(request: StoryRequest):
     Mode is determined by request.is_ready_to_scout:
       - INTERVIEW: Narrator generates next question (with compliance review)
       - SCOUTING:  Full pipeline Scout → Narrator → Compliance (Logger as sidecar)
+    Errors during streaming are handled inside event_generator and emitted as
+    SSE error events — a try/except here cannot catch them.
     """
-    try:
-        return StreamingResponse(
-            event_generator(request),
-            media_type="text/event-stream",
-            headers={
-                "Cache-Control": "no-cache",
-                "Connection": "keep-alive",
-                "X-Accel-Buffering": "no",
-            },
-        )
-    except Exception as e:
-        logger.error(f"ERROR: {str(e)}", exc_info=True)
-        import json
-
-        async def error_gen():
-            yield f"data: {json.dumps({'type': 'error', 'detail': str(e)})}\n\n"
-            yield "data: [DONE]\n\n"
-
-        return StreamingResponse(error_gen(), media_type="text/event-stream")
+    return StreamingResponse(
+        event_generator(request),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "X-Accel-Buffering": "no",
+        },
+    )

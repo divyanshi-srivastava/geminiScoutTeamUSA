@@ -1,13 +1,16 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Subscription } from 'rxjs';
 import { StateService } from '../services/state.service';
 import { StreamService } from '../services/stream.service';
+import gamesManifestData from '../../assets/data/games_manifest.json';
 
 interface GameEntry {
   year: number;
   city: string;
   season: string;
   vibe: string;
+  parity_note?: string;
 }
 
 @Component({
@@ -78,24 +81,16 @@ interface GameEntry {
     .game-city { font-size: 0.55rem; color: rgba(255,255,255,0.35); }
   `]
 })
-export class TimelineComponent {
+export class TimelineComponent implements OnDestroy {
   private state = inject(StateService);
   private stream = inject(StreamService);
+  private sub?: Subscription;
 
   /** Subset of games_manifest.json that the user is eligible for. */
   eligibleGames: GameEntry[] = [];
   activeYear: number | null = null;
 
-  /** Full games manifest (embedded for frontend use). */
-  private readonly gamesManifest: GameEntry[] = [
-    { year: 2024, city: 'Paris',         season: 'Summer', vibe: 'The Wide Open Games' },
-    { year: 2026, city: 'Milano Cortina', season: 'Winter', vibe: 'The Glamour and the Grind' },
-    { year: 2028, city: 'Los Angeles',    season: 'Summer', vibe: 'The Cinematic Frontier' },
-    { year: 2030, city: 'French Alps',    season: 'Winter', vibe: 'The Sustainable Summit' },
-    { year: 2032, city: 'Brisbane',       season: 'Summer', vibe: 'The Sunshine State Shine' },
-    { year: 2034, city: 'Salt Lake City', season: 'Winter', vibe: 'The Great Salt Return' },
-    { year: 2036, city: 'Ahmedabad',      season: 'Summer', vibe: 'The Vibrant Bharat Ascent' },
-  ];
+  private readonly gamesManifest: GameEntry[] = gamesManifestData as GameEntry[];
 
   constructor() {
     // Calculate eligible games based on user's birth year
@@ -121,6 +116,7 @@ export class TimelineComponent {
   }
 
   travelTo(game: GameEntry) {
+    this.sub?.unsubscribe();
     this.activeYear = game.year;
 
     const body = {
@@ -134,6 +130,12 @@ export class TimelineComponent {
     };
 
     this.state.setAppState('SCOUTING');
-    this.stream.consume(body).subscribe();
+    this.sub = this.stream.consume(body).subscribe({
+      error: () => this.state.setAppState('RESULT')
+    });
+  }
+
+  ngOnDestroy() {
+    this.sub?.unsubscribe();
   }
 }

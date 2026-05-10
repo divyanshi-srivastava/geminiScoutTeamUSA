@@ -1,0 +1,424 @@
+[
+  {
+    "id": 1,
+    "name": "The Agile Dynamo",
+    "adm_stage": "Stage 3: Train & Compete",
+    "peak_range": [
+      14,
+      24
+    ],
+    "keywords": [
+      "balance",
+      "rotational",
+      "nimble",
+      "reflexes",
+      "compact"
+    ],
+    "centroids": {
+      "age": 19.4,
+      "height_cm": 154.5,
+      "weight_kg": 46.8
+    },
+    "pathways": {
+      "standing": "Elite Artistic Gymnastics",
+      "adaptive": "Elite Adaptive Swimming (e.g., Women's 100 m Freestyle S6)"
+    },
+    "scout_narrative": {
+      "tone": "Energetic, Nimble, Resilient",
+      "life_hustle": "Navigating a crowded morning subway commute or constantly dodging scattered toys is stealth training for spatial awareness and rapid reflexes.",
+      "verdict": "Your compact strength and agility are associated with elite rotational velocity and maneuverability, mirroring the explosive aquatic agility that earned Team USA Gold in the Women's 100 m Freestyle S6 at the 2000 Sydney Games. Source: Katie Press / IPC Historical Dataset"
+    },
+    "related_legacy_tags": [
+      "Swimming",
+      "Alpine Skiing",
+      "Snowboard",
+      "Table Tennis"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "The Endurance Engine",
+    "adm_stage": "Stage 3: Train & Compete",
+    "peak_range": [
+      20,
+      35
+    ],
+    "keywords": [
+      "stamina",
+      "aerobic",
+      "relentless",
+      "pacing",
+      "lean"
+    ],
+    "centroids": {
+      "age": 23.8,
+      "height_cm": 163.4,
+      "weight_kg": 55.4
+    },
+    "pathways": {
+      "standing": "Elite Distance Running",
+      "adaptive": "Elite Wheelchair Racing (e.g., Women's Marathon T54)"
+    },
+    "scout_narrative": {
+      "tone": "Relentless, Paced, Driven",
+      "life_hustle": "Grinding through back-to-back meetings or wrangling toddlers from dawn to dusk is stealth training for deep-reserve stamina.",
+      "verdict": "Your lean efficiency is associated with an aerobic baseline that outlasts the pack, channeling the deep-reserve stamina that secured Team USA Gold in the Women's Marathon T54 at the 2012 London Games. Source: Katie Press / IPC Historical Dataset"
+    },
+    "related_legacy_tags": [
+      "Athletics",
+      "Cross-Country",
+      "Cycling",
+      "Triathlon"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "The Precision Veteran",
+    "adm_stage": "Stage 3: Train & Compete",
+    "peak_range": [
+      25,
+      50
+    ],
+    "keywords": [
+      "focus",
+      "stability",
+      "calm",
+      "steady",
+      "breathing"
+    ],
+    "centroids": {
+      "age": 34.4,
+      "height_cm": 168.6,
+      "weight_kg": 60.9
+    },
+    "pathways": {
+      "standing": "Elite Marksmanship (Rifle/Pistol)",
+      "adaptive": "Elite Target Precision (e.g., Archery Men's FITA Round Open)"
+    },
+    "scout_narrative": {
+      "tone": "Focused, Calm, Strategic",
+      "life_hustle": "Maintaining absolute focus while balancing a chaotic family budget or executing a flawless presentation is stealth training for heart-rate control.",
+      "verdict": "Your mature poise is associated with a stability profile built for absolute precision, reflecting the pinpoint focus that won Team USA Gold in the 1960 Rome Games Men's FITA Round Open. Source: Katie Press / IPC Historical Dataset"
+    },
+    "related_legacy_tags": [
+      "Archery",
+      "Snooker",
+      "Dartchery",
+      "Boccia",
+      "Lawn Bowls",
+      "Shooting"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "The Explosive Sprinter",
+    "adm_stage": "Stage 3: Train & Compete",
+    "peak_range": [
+      18,
+      28
+    ],
+    "keywords": [
+      "fast-twitch",
+      "power",
+      "acceleration",
+      "decisive",
+      "burst"
+    ],
+    "centroids": {
+      "age": 22.3,
+      "height_cm": 170.3,
+      "weight_kg": 63.0
+    },
+    "pathways": {
+      "standing": "Elite 100m/200m Sprints",
+      "adaptive": "Elite Ambulatory Sprints (e.g., Men's 100 m T44)"
+    },
+    "scout_narrative": {
+      "tone": "Dynamic, Decisive, Fierce",
+      "life_hustle": "Sprinting to catch a train or instantly lunging to catch a falling glass is stealth training for fast-twitch kinetic power.",
+      "verdict": "Your optimal balance and quick-strike capability are associated with dominating high-velocity pathways, echoing the explosive fast-twitch kinetic power that captured Team USA Gold in the Men's 100 m T44 at the 2004 Athens Games. Source: Katie Press / IPC Historical Dataset"
+    },
+    "related_legacy_tags": [
+      "Athletics",
+      "Cycling"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "The Airborne Leaper",
+    "adm_stage": "Stage 3: Train & Compete",
+    "peak_range": [
+      19,
+      29
+    ],
+    "keywords": [
+      "vertical",
+      "extension",
+      "leverage",
+      "elevation",
+      "spring"
+    ],
+    "centroids": {
+      "age": 23.3,
+      "height_cm": 179.7,
+      "weight_kg": 67.5
+    },
+    "pathways": {
+      "standing": "Elite High Jump",
+      "adaptive": "Elite Standing High Jump (e.g., Men's High Jump T47)"
+    },
+    "scout_narrative": {
+      "tone": "Graceful, Calculated, Fearless",
+      "life_hustle": "Reaching the top shelf in a grocery store or stretching to hang curtains is stealth training for maximizing your vertical extension.",
+      "verdict": "Your tall, lean leverage is associated with clearing record heights through superior center-of-gravity management, capturing the same fearless elevation that won Team USA Gold in the Men's High Jump T47 at the 2016 Rio Games. Source: Katie Press / IPC Historical Dataset"
+    },
+    "related_legacy_tags": [
+      "Athletics",
+      "Wheelchair Basketball",
+      "Volleyball"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "The Leverage Grappler",
+    "adm_stage": "Stage 3: Train & Compete",
+    "peak_range": [
+      20,
+      32
+    ],
+    "keywords": [
+      "core",
+      "grounded",
+      "grip",
+      "mechanical-advantage",
+      "torque"
+    ],
+    "centroids": {
+      "age": 24.7,
+      "height_cm": 173.5,
+      "weight_kg": 74.6
+    },
+    "pathways": {
+      "standing": "Elite Wrestling",
+      "adaptive": "Elite Powerlifting (e.g., Men's +100 kg)"
+    },
+    "scout_narrative": {
+      "tone": "Grounded, Unyielding, Tactical",
+      "life_hustle": "Carrying heavy groceries up stairs in one trip or wrestling a large dog into a tub is stealth training for mechanical dominance.",
+      "verdict": "Your compact, dense power is associated with physical supremacy and unyielding core leverage, reflecting the grounded mechanical dominance that earned Team USA Gold in the Men's +100 kg Powerlifting event at the 2000 Sydney Games. Source: Katie Press / IPC Historical Dataset"
+    },
+    "related_legacy_tags": [
+      "Powerlifting",
+      "Weightlifting",
+      "Judo"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "The Versatile Decathlete",
+    "adm_stage": "Stage 3: Train & Compete",
+    "peak_range": [
+      21,
+      31
+    ],
+    "keywords": [
+      "all-rounder",
+      "tenacity",
+      "hybrid",
+      "adaptable",
+      "multi-discipline"
+    ],
+    "centroids": {
+      "age": 23.3,
+      "height_cm": 184.2,
+      "weight_kg": 78.4
+    },
+    "pathways": {
+      "standing": "Elite Decathlon",
+      "adaptive": "Elite Multi-Discipline Athletics (e.g., Men's Pentathlon P44)"
+    },
+    "scout_narrative": {
+      "tone": "Adaptable, Tenacious, Well-Rounded",
+      "life_hustle": "Pivoting from home repairs to helping with homework to cooking is stealth training for multi-discipline mental and physical agility.",
+      "verdict": "Your balanced, adaptable proportions are associated with the versatile profile of a multi-sport champion, mirroring the hybrid tenacity that won Team USA Gold in the Men's Pentathlon P44 at the 2008 Beijing Games. Source: Katie Press / IPC Historical Dataset"
+    },
+    "related_legacy_tags": [
+      "Athletics",
+      "Biathlon",
+      "Triathlon"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "The Aquatic Propeller",
+    "adm_stage": "Stage 3: Train & Compete",
+    "peak_range": [
+      18,
+      27
+    ],
+    "keywords": [
+      "wingspan",
+      "hydrodynamic",
+      "reach",
+      "rhythmic",
+      "fluid"
+    ],
+    "centroids": {
+      "age": 24.2,
+      "height_cm": 191.5,
+      "weight_kg": 87.9
+    },
+    "pathways": {
+      "standing": "Elite Swimming",
+      "adaptive": "Elite Adaptive Swimming (e.g., Men's 400 m Freestyle S10)"
+    },
+    "scout_narrative": {
+      "tone": "Fluid, Rhythmic, Powerful",
+      "life_hustle": "Gliding through an overloaded inbox or carrying laundry with wide, sweeping strides is stealth training for movement efficiency.",
+      "verdict": "Your height and upper-body wingspan are associated with world-class reach and rhythmic propulsion, driving the hydrodynamic efficiency that secured Team USA Gold in the Men's 400 m Freestyle S10 at the 2012 London Games. Source: Katie Press / IPC Historical Dataset"
+    },
+    "related_legacy_tags": [
+      "Swimming",
+      "Rowing",
+      "Canoe"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "The Pacing Powerhouse",
+    "adm_stage": "Stage 3: Train & Compete",
+    "peak_range": [
+      24,
+      40
+    ],
+    "keywords": [
+      "pulling",
+      "rhythm",
+      "steady-output",
+      "synchronized",
+      "endurance"
+    ],
+    "centroids": {
+      "age": 34.1,
+      "height_cm": 180.7,
+      "weight_kg": 74.2
+    },
+    "pathways": {
+      "standing": "Elite Rowing",
+      "adaptive": "Elite Adaptive Rowing (e.g., Mixed Coxed Four LTAMix4+)"
+    },
+    "scout_narrative": {
+      "tone": "Methodical, Unstoppable, Synergistic",
+      "life_hustle": "Shoveling heavy snow with rhythmic precision or hitting repetitive work quotas is stealth training for synchronized pulling power.",
+      "verdict": "Your mature, solid frame is associated with the exact physical endurance needed for elite watercraft propulsion, reflecting the unstoppable synchronized pulling power that won Team USA Silver in the Mixed Coxed Four LTAMix4+ at the 2016 Rio Games. Source: Katie Press / IPC Historical Dataset"
+    },
+    "related_legacy_tags": [
+      "Rowing",
+      "Para Ice Hockey",
+      "Cycling"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "The Kinetic Driver",
+    "adm_stage": "Stage 3: Train & Compete",
+    "peak_range": [
+      22,
+      35
+    ],
+    "keywords": [
+      "momentum",
+      "initial-force",
+      "launch",
+      "heavy-load",
+      "stability"
+    ],
+    "centroids": {
+      "age": 30.5,
+      "height_cm": 182.6,
+      "weight_kg": 91.4
+    },
+    "pathways": {
+      "standing": "Elite Bobsleigh / Push sports",
+      "adaptive": "Elite Seated Throws (e.g., Men's Discus Throw F56)"
+    },
+    "scout_narrative": {
+      "tone": "Explosive, Steadfast, Bold",
+      "life_hustle": "Pushing a stalled car or launching a heavy stroller up a steep hill is stealth training for generating massive initial force.",
+      "verdict": "Your stable, high-mass physique is associated with a kinetic powerhouse profile capable of massive energy transfer, embodying the explosive launch mechanics that won Team USA Gold in the Men's Discus Throw F56 at the 1996 Atlanta Games. Source: Katie Press / IPC Historical Dataset"
+    },
+    "related_legacy_tags": [
+      "Athletics",
+      "Wheelchair Rugby",
+      "Snowboard"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "The Aerial Defender",
+    "adm_stage": "Stage 3: Train & Compete",
+    "peak_range": [
+      19,
+      32
+    ],
+    "keywords": [
+      "height",
+      "court-vision",
+      "dominance",
+      "wingspan",
+      "commanding"
+    ],
+    "centroids": {
+      "age": 26.4,
+      "height_cm": 195.7,
+      "weight_kg": 102.5
+    },
+    "pathways": {
+      "standing": "Elite Basketball",
+      "adaptive": "Elite Wheelchair Basketball (e.g., Men's Tournament)"
+    },
+    "scout_narrative": {
+      "tone": "Imposing, Visionary, Commanding",
+      "life_hustle": "Navigating a dense crowd with eyes above the masses or managing complex projects is stealth training for court vision.",
+      "verdict": "Your exceptional height and reach are associated with spatial dominance and a commanding physical presence, matching the visionary court command that drove Team USA to Gold in the Men's Wheelchair Basketball Tournament at the 2016 Rio Games. Source: Katie Press / IPC Historical Dataset"
+    },
+    "related_legacy_tags": [
+      "Wheelchair Basketball",
+      "Volleyball"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "The Apex Thrower",
+    "adm_stage": "Stage 3: Train & Compete",
+    "peak_range": [
+      23,
+      40
+    ],
+    "keywords": [
+      "mass",
+      "force",
+      "anchored",
+      "heavy-transfer",
+      "resolute"
+    ],
+    "centroids": {
+      "age": 27.5,
+      "height_cm": 188.3,
+      "weight_kg": 128.8
+    },
+    "pathways": {
+      "standing": "Elite Field Athletics (Discus/Shot Put)",
+      "adaptive": "Elite Seated Shot Put (e.g., Women's Shot Put C3)"
+    },
+    "scout_narrative": {
+      "tone": "Anchored, Forceful, Resolute",
+      "life_hustle": "Hauling bags of mulch or single-handedly moving furniture is stealth training for sheer, grounded energy transfer.",
+      "verdict": "Your formidable mass and stable foundation are associated with absolute kinetic supremacy in throwing disciplines, echoing the resolute force that secured Team USA Gold in the Women's Shot Put C3 at the 1988 Seoul Games. Source: Katie Press / IPC Historical Dataset"
+    },
+    "related_legacy_tags": [
+      "Athletics",
+      "Goalball"
+    ]
+  }
+]

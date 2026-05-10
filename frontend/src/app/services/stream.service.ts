@@ -1,38 +1,26 @@
 import { Injectable, NgZone } from '@angular/core';
 import { Observable } from 'rxjs';
 import { StateService } from './state.service';
-import { Question, Profile, ScoutChunk, ScoutingResult } from '../models';
+import { Profile, ScoutChunk, ScoutingResult } from '../models';
 import { environment } from '../../environments/environment';
 
-/**
- * Local pathway manifest for enriching single-profile Scout results
- * with distinct Olympic/Paralympic disciplines.
- */
-const PATHWAY_MANIFEST: Record<number, { standing: string; adaptive: string }> = {
-  1:  { standing: 'Elite Artistic Gymnastics', adaptive: 'Elite Adaptive Swimming (e.g., Women\'s 100 m Freestyle S6)' },
-  2:  { standing: 'Elite Distance Running', adaptive: 'Elite Wheelchair Racing (e.g., Women\'s Marathon T54)' },
-  3:  { standing: 'Elite Sprint / Jumping', adaptive: 'Elite Para Athletics (e.g., Long Jump T64)' },
-  4:  { standing: 'Elite Swimming', adaptive: 'Elite Para Swimming (e.g., 100 m Breaststroke SB14)' },
-  5:  { standing: 'Elite Court / Racket Sports', adaptive: 'Elite Wheelchair Tennis' },
-  6:  { standing: 'Elite Wrestling / Grappling', adaptive: 'Elite Para Judo / Powerlifting' },
-  7:  { standing: 'Elite Throwing / Field Events', adaptive: 'Elite Para Shot Put (e.g., F57)' },
-  8:  { standing: 'Elite Rowing / Paddling', adaptive: 'Elite Para Rowing (e.g., PR3 Mixed Coxed Four)' },
-  9:  { standing: 'Elite Combat Sports', adaptive: 'Elite Wheelchair Fencing' },
-  10: { standing: 'Elite Team Ball Sports', adaptive: 'Elite Wheelchair Basketball / Sitting Volleyball' },
-  11: { standing: 'Elite Cycling', adaptive: 'Elite Para Cycling (Handcycling)' },
-  12: { standing: 'Elite Winter Sports', adaptive: 'Elite Para Alpine Skiing' },
-};
 
 @Injectable({
   providedIn: 'root'
 })
 export class StreamService {
+  private pendingResultTimer?: ReturnType<typeof setTimeout>;
+
   constructor(
     private zone: NgZone,
     private state: StateService
   ) {}
 
   consume(body: any): Observable<void> {
+    if (this.pendingResultTimer) {
+      clearTimeout(this.pendingResultTimer);
+      this.pendingResultTimer = undefined;
+    }
     const url = `${environment.apiUrl}/scout`;
 
     return new Observable(observer => {
@@ -114,7 +102,7 @@ export class StreamService {
    * them to handleResult() instead of rendering them as questions.
    */
   private handleInterview(raw: string): void {
-    const data = this.extractJson<any>(raw);
+    const data = this.extractJson(raw);
 
     // ── Discriminated Parsing ──
     if (this.looksLikeResult(data)) {
@@ -129,8 +117,9 @@ export class StreamService {
       this.state.setNarrativeBridge(
         'The Narrator is weaving your Team USA legacy from the data...'
       );
-      // Delay the result transition so the bridge is visible
-      setTimeout(() => {
+      // Delay the result transition so the bridge is visible; store handle for cleanup
+      this.pendingResultTimer = setTimeout(() => {
+        this.pendingResultTimer = undefined;
         this.zone.run(() => this.handleResult(raw));
       }, 2500);
       return;
@@ -194,47 +183,15 @@ export class StreamService {
    * from the local pathway_manifest.
    */
   private handleResult(raw: string): void {
-    const data = this.extractJson<any>(raw);
+    const data = this.extractJson(raw);
     
     let result: ScoutingResult;
 
     if (Array.isArray(data) && data.length > 0) {
-      // Two distinct profiles from backend (or fallback if only one provided)
       result = {
-        olympic: this.enrichProfile(data[0], 'standing'),
-        paralympic: this.enrichProfile(data[1] || data[0], 'adaptive'),
-        overall_narrative: 'Your physical metrics and narrative history reveal two powerful pathways for your Team USA legacy.'
-      };
-    } else if (data && (data.olympic || data.primary || data.archetypes)) {
-      // Structured ScoutingResult from backend
-      result = {
-        olympic: this.enrichProfile(data.olympic || data.primary || data.archetypes?.[0], 'standing'),
-        paralympic: this.enrichProfile(data.paralympic || data.secondary || data.archetypes?.[1] || data.olympic || data.primary, 'adaptive'),
-        overall_narrative: data.overall_narrative || data.narrative || 'A comprehensive analysis of your athletic potential.'
-      };
-    } else if (data && data.matched_profile_name && data.scout_verdict) {
-      // Single profile from Scout Agent — split into Olympic + Paralympic
-      const enriched = this.enrichProfile(data);
-      const manifestEntry = PATHWAY_MANIFEST[data.matched_profile_id];
-
-      const olympicProfile: Profile = {
-        ...enriched,
-        pathway_standing: manifestEntry?.standing || enriched.pathway_standing,
-      };
-
-      const paralympicProfile: Profile = {
-        ...enriched,
-        matched_profile_name: enriched.matched_profile_name,
-        scout_verdict: manifestEntry?.adaptive 
-          ? `Your physical profile aligns with ${manifestEntry.adaptive}. This adaptive discipline leverages the same core strengths identified in your archetype — demonstrating that elite athletic potential exists across all pathways.`
-          : enriched.scout_verdict,
-        pathway_adaptive: manifestEntry?.adaptive || enriched.pathway_adaptive,
-      };
-
-      result = {
-        olympic: olympicProfile,
-        paralympic: paralympicProfile,
-        overall_narrative: enriched.scout_verdict
+        olympic: this.enrichProfile(data[0]),
+        paralympic: this.enrichProfile(data[1] || data[0]),
+        overall_narrative: data[0]?.scout_verdict || ''
       };
     } else {
       // Defensive Parser
@@ -263,12 +220,7 @@ export class StreamService {
     this.state.setAppState('RESULT');
   }
 
-  /**
-   * Enriches a raw profile from the Scout Agent with pathway data
-   * from the local pathway_manifest.json.
-   * `preferredPathway` specifies whether we want the standing or adaptive discipline string.
-   */
-  private enrichProfile(profile: any, preferredPathway?: 'standing' | 'adaptive'): Profile {
+  private enrichProfile(profile: any): Profile {
     if (!profile) {
       return {
         matched_profile_id: 0,
@@ -277,17 +229,13 @@ export class StreamService {
         life_stage: 'Elite Peak'
       };
     }
-
-    const manifestEntry = PATHWAY_MANIFEST[profile.matched_profile_id];
-    
-    // Default to enriching both, but if preferredPathway is passed, make sure it is set.
     return {
       matched_profile_id: profile.matched_profile_id || 0,
       matched_profile_name: profile.matched_profile_name || 'Your Archetype',
       scout_verdict: profile.scout_verdict || '',
       life_stage: profile.life_stage || 'Elite Peak',
-      pathway_standing: profile.pathway_standing || manifestEntry?.standing || undefined,
-      pathway_adaptive: profile.pathway_adaptive || manifestEntry?.adaptive || undefined,
+      pathway_standing: profile.pathway_standing || undefined,
+      pathway_adaptive: profile.pathway_adaptive || undefined,
     };
   }
 
@@ -295,7 +243,7 @@ export class StreamService {
    * Robust JSON extractor: handles raw JSON, markdown-fenced JSON,
    * nested JSON within prose text, and arrays of JSON objects.
    */
-  private extractJson<T>(raw: string): any {
+  private extractJson(raw: string): any {
     // 1. Try direct parse
     try {
       return JSON.parse(raw);
