@@ -264,7 +264,7 @@ export class InterviewComponent implements OnDestroy {
     this.sub?.unsubscribe();
     this.state.setLoading(true);
     this.state.addUserTrace(
-      `Submitted physical stats — Height: ${this.state.metrics.height}cm, Weight: ${this.state.metrics.weight}kg, Born: ${this.state.metrics.birthYear}`
+      `I'm ${this.state.metrics.height}cm, ${this.state.metrics.weight}kg, born ${this.state.metrics.birthYear}.`
     );
     const body = {
       story: 'Initial metrics provided.',
@@ -292,7 +292,7 @@ export class InterviewComponent implements OnDestroy {
     if (eraYear !== null) {
       // ── Time Travel mode: any answer triggers a full re-scout with age override ──
       const shortAnswer = answer.length > 120 ? answer.substring(0, 120) + '…' : answer;
-      this.state.addUserTrace(`Era answer for ${eraYear}: "${shortAnswer}"`);
+      this.state.addUserTrace(`My answer for The ${eraYear} Games: "${shortAnswer}"`);
       this.state.saveEraAnswer(eraYear, shortAnswer);
       this.state.setActiveEraYear(null);
       this.state.setAppState('SCOUTING');
@@ -319,8 +319,8 @@ export class InterviewComponent implements OnDestroy {
     // ── Normal interview mode ──
     const isReady = answer.trim().startsWith('[READY]');
     const traceLabel = isReady
-      ? 'Ready to see results — triggering full scouting pipeline'
-      : `Selected: "${answer.length > 80 ? answer.substring(0, 80) + '…' : answer}"`;
+      ? "I'm ready — show me my results."
+      : `I chose: "${answer.length > 80 ? answer.substring(0, 80) + '…' : answer}"`;
     this.state.addUserTrace(traceLabel);
 
     const body = {

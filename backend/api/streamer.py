@@ -16,36 +16,13 @@ from google.adk.sessions import InMemorySessionService
 from google.genai import types
 
 from agents.supervisoragent import supervisor_agent
-from agents.loggeragent import call_logger
+from agents.loggeragent import call_logger, call_compliance_diff
 from agents.evalagent import call_eval
 from api.models import StoryRequest
 
 logger = logging.getLogger("scout-streamer")
 
 session_service = InMemorySessionService()
-
-# ── Agent "started" messages — mode-aware, emitted once per request per agent ──
-_AGENT_STARTED_INTERVIEW = {
-    "narrator_agent":   "Reviewing conversation history. Generating next question...",
-    "compliance_agent": "Question received. Checking for forbidden brand terms...",
-}
-_AGENT_STARTED_TRAVEL = {
-    "narrator_agent":   "Reading era context and conversation history. Drafting era-bridging question...",
-    "compliance_agent": "Era question received. Checking language for compliance...",
-}
-_AGENT_STARTED_SCOUTING = {
-    "scout_agent":      "Biometrics received. Scanning 12 athletic archetypes for closest match...",
-    "narrator_agent":   "Archetype match confirmed. Weaving interview answers into personal narrative...",
-    "compliance_agent": "Narrative received. Running IOC brand and parity compliance review...",
-}
-
-def _agent_started_msg(agent: str, mode: str) -> str | None:
-    if mode == "INTERVIEW":
-        return _AGENT_STARTED_INTERVIEW.get(agent)
-    if mode == "TIME_TRAVEL_INTERVIEW":
-        return _AGENT_STARTED_TRAVEL.get(agent)
-    return _AGENT_STARTED_SCOUTING.get(agent)
-
 
 def _sse(data: dict | str) -> str:
     if isinstance(data, dict):
@@ -192,6 +169,8 @@ async def event_generator(request: StoryRequest):
         _last_text_parts: list[str] = []
         _seen_agents: set[str] = set()
         _agent_thoughts: dict[str, str] = {}  # accumulated thought tokens per agent
+        _event_sequence: list[str] = []  # ordered stream of agent event authors for diagnosis
+        _narrator_raw_output: str = ""  # narrator's pre-compliance draft, for before/after diff
 
         async for event in runner.run_async(
             user_id=request.user_id,
@@ -199,6 +178,10 @@ async def event_generator(request: StoryRequest):
             new_message=message,
         ):
             event_author = getattr(event, "author", None)
+
+            # Record every event for post-loop ordering diagnosis
+            if event_author:
+                _event_sequence.append(event_author)
 
             # Extract content — split thought tokens from final text
             content_text = ""
@@ -231,25 +214,24 @@ async def event_generator(request: StoryRequest):
                 yield _trace(event_author, "Thinking", detail=snippet)
                 await asyncio.sleep(0.05)
 
-            # Emit mode-aware "activated" trace the FIRST time each sub-agent appears
+            # Track first appearance of each agent (used to guard synthetic traces)
             if event_author and event_author not in _seen_agents:
                 _seen_agents.add(event_author)
-                start_msg = _agent_started_msg(event_author, mode)
-                if start_msg:
-                    yield _trace(event_author, "Thought", detail=start_msg)
-                    await asyncio.sleep(0.05)
 
             if not content_text:
                 continue
 
             if event_author in ("scout_agent", "narrator_agent", "compliance_agent"):
                 _last_text_parts = [content_text]
+                # Capture narrator's raw pre-compliance draft for before/after diff
+                if event_author == "narrator_agent":
+                    _narrator_raw_output = content_text
                 # Call logger directly — interprets accumulated thoughts + output
                 thoughts = _agent_thoughts.get(event_author, "")
                 summary = _quick_summary(event_author, content_text, _question_num)
-                logger_text = await call_logger(event_author, thoughts, summary)
+                logger_text = await call_logger(event_author, thoughts, summary, mode=mode)
                 if logger_text:
-                    yield _trace("logger_agent", "Thought", detail=logger_text)
+                    yield _trace(event_author, "Thought", detail=logger_text)
                     await asyncio.sleep(0.05)
 
             else:
@@ -258,13 +240,38 @@ async def event_generator(request: StoryRequest):
 
         final_response_text = "".join(_last_text_parts)
 
+        # ── Diagnostic: log event stream order to diagnose agent execution sequencing ──
+        logger.info(
+            "ADK event sequence [mode=%s]: %s",
+            mode,
+            " → ".join(_event_sequence) if _event_sequence else "(empty)",
+        )
+
+        # ── Compliance synthetic trace ──
+        # The supervisor copies compliance's output verbatim as its final response,
+        # so compliance never appears as event_author in the runner stream.
+        # We emit its trace explicitly here using the final output (which IS compliance's work).
+        compliance_summary = _quick_summary("compliance_agent", final_response_text, _question_num)
+        compliance_logger = await call_logger("compliance_agent", "", compliance_summary, mode=mode)
+        if compliance_logger:
+            yield _trace("compliance_agent", "Thought", detail=compliance_logger)
+            await asyncio.sleep(0.03)
+        # ── Before/after diff — green if clean pass, red if changes were made ──
+        if _narrator_raw_output:
+            is_clean = _narrator_raw_output.strip() == final_response_text.strip()
+            diff_text = await call_compliance_diff(_narrator_raw_output, final_response_text)
+            if diff_text:
+                event_type = "Approved" if is_clean else "Changed"
+                yield _trace("compliance_agent", event_type, detail=diff_text)
+                await asyncio.sleep(0.03)
+
         result_type = "interview" if mode in ("INTERVIEW", "TIME_TRAVEL_INTERVIEW") else "result"
         yield _sse({"type": result_type, "response": final_response_text})
         await asyncio.sleep(0.01)
 
         # ── Eval Agent — runs only after a full scouting pass ──
         if mode == "SCOUTING":
-            yield _trace("eval_agent", "Thought", detail="Pipeline complete. Authenticator reviewing archetype match quality, narrative personalization, and compliance integrity...")
+            yield _trace("eval_agent", "Thought", detail="I'm reviewing the pipeline's archetype match quality, narrative personalization, and compliance integrity.")
             await asyncio.sleep(0.05)
             eval_result = await call_eval(
                 height_cm=request.height_cm,

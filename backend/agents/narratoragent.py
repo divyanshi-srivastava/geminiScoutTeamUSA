@@ -16,7 +16,7 @@ narrator_agent = Agent(
     generate_content_config=types.GenerateContentConfig(
         thinking_config=types.ThinkingConfig(
             include_thoughts=True,
-            thinking_budget=2048,
+            thinking_budget=4096,
         )
     ),
 )

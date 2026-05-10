@@ -20,7 +20,10 @@ interface GameEntry {
   template: `
     <nav class="timeline-bar glass-card" *ngIf="eligibleGames.length > 0">
       <div class="bar-header">
-        <span class="bar-label">TIME TRAVEL</span>
+        <div class="bar-label-group">
+          <span class="bar-label">TIME TRAVEL</span>
+          <button class="info-btn" (click)="infoOpen = !infoOpen" [class.active]="infoOpen" type="button">?</button>
+        </div>
         <div class="life-stage-legend">
           <span class="legend-dot" style="background:#34d399"></span><span class="legend-text">Rising Star</span>
           <span class="legend-dot" style="background:#facc15"></span><span class="legend-text">Elite Peak</span>
@@ -28,17 +31,19 @@ interface GameEntry {
           <span class="legend-dot" style="background:#a78bfa"></span><span class="legend-text">Legacy</span>
         </div>
       </div>
+
+      <div class="info-tooltip" *ngIf="infoOpen">
+        Each year shown is a Games you would have been between 16 and 55 years old — your full competitive window. Select any year to have the Scouts re-evaluate your profile at that age. Your answers and physical data stay the same; only the age changes.
+      </div>
+
       <div class="games-scroll">
         <button
           *ngFor="let g of eligibleGames"
           class="game-pill"
           [class.active]="g.year === activeYear"
           [style.borderColor]="getPhaseColor(g.year)"
-          [style.--stage-color]="getPhaseColor(g.year)"
           (click)="travelTo(g)">
           <span class="game-year">{{ g.year }}</span>
-          <span class="game-city">{{ g.city }}</span>
-          <span class="game-stage" [style.color]="getPhaseColor(g.year)">{{ getLifeStageLabel(g.year) }}</span>
         </button>
       </div>
     </nav>
@@ -59,12 +64,51 @@ interface GameEntry {
       gap: 1rem;
     }
 
+    .bar-label-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
     .bar-label {
       font-size: 0.55rem;
       font-weight: 900;
       letter-spacing: 0.2em;
       color: rgba(255,255,255,0.25);
       white-space: nowrap;
+    }
+
+    .info-btn {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.04);
+      color: rgba(255,255,255,0.3);
+      font-size: 0.5rem;
+      font-weight: 900;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s;
+      padding: 0;
+      line-height: 1;
+    }
+    .info-btn:hover, .info-btn.active {
+      background: rgba(197,164,78,0.1);
+      border-color: rgba(197,164,78,0.35);
+      color: rgba(197,164,78,0.8);
+    }
+
+    .info-tooltip {
+      font-size: 0.65rem;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.6;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 0.5rem;
+      padding: 0.75rem 1rem;
     }
 
     .life-stage-legend {
@@ -89,16 +133,22 @@ interface GameEntry {
       display: flex;
       gap: 0.5rem;
       overflow-x: auto;
-      padding: 0.25rem 0;
+      padding: 0.25rem 0 0.5rem;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255,255,255,0.1) transparent;
     }
-    .games-scroll::-webkit-scrollbar { height: 0; }
+    .games-scroll::-webkit-scrollbar { height: 3px; }
+    .games-scroll::-webkit-scrollbar-track { background: transparent; }
+    .games-scroll::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.1);
+      border-radius: 99px;
+    }
 
     .game-pill {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      gap: 0.1rem;
-      padding: 0.5rem 0.85rem;
+      justify-content: center;
+      padding: 0.45rem 0.9rem;
       border-radius: 0.5rem;
       background: rgba(255,255,255,0.03);
       border: 1px solid rgba(255,255,255,0.08);
@@ -113,15 +163,6 @@ interface GameEntry {
       box-shadow: 0 0 12px rgba(197, 164, 78, 0.12);
     }
     .game-year { font-size: 0.75rem; font-weight: 800; color: white; }
-    .game-city { font-size: 0.52rem; color: rgba(255,255,255,0.35); }
-    .game-stage {
-      font-size: 0.48rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      opacity: 0.85;
-      margin-top: 0.1rem;
-    }
   `]
 })
 export class TimelineComponent implements OnDestroy {
@@ -129,14 +170,13 @@ export class TimelineComponent implements OnDestroy {
   private stream = inject(StreamService);
   private sub?: Subscription;
 
-  /** Subset of games_manifest.json that the user is eligible for. */
   eligibleGames: GameEntry[] = [];
   activeYear: number | null = null;
+  infoOpen = false;
 
   private readonly gamesManifest: GameEntry[] = gamesManifestData as GameEntry[];
 
   constructor() {
-    // Calculate eligible games based on user's birth year
     const birthYear = this.state.metrics.birthYear;
     if (birthYear) {
       this.eligibleGames = this.gamesManifest.filter(g => {
@@ -144,7 +184,6 @@ export class TimelineComponent implements OnDestroy {
         return age >= 16 && age <= 55;
       });
     } else {
-      // Fallback: show upcoming games
       this.eligibleGames = this.gamesManifest;
     }
   }
@@ -170,11 +209,10 @@ export class TimelineComponent implements OnDestroy {
   travelTo(game: GameEntry) {
     this.sub?.unsubscribe();
     this.activeYear = game.year;
+    this.infoOpen = false;
 
-    // Set era context in state — interview component reads this to show the banner
-    // and to know that any answer should trigger a full re-scout
     this.state.setActiveEraYear(game.year);
-    this.state.addUserTrace(`Time traveling to The ${game.year} Games · ${this.getLifeStageLabel(game.year)}`);
+    this.state.addUserTrace(`I'm jumping to The ${game.year} Games — I'd be ${game.year - (this.state.metrics.birthYear || 2000)} years old. ${this.getLifeStageLabel(game.year)} stage.`);
 
     const body = {
       story: '',
@@ -184,7 +222,7 @@ export class TimelineComponent implements OnDestroy {
       birth_year: this.state.metrics.birthYear,
       conversation_history: this.state.getHistory(),
       target_game_year: game.year,
-      is_ready_to_scout: false,  // Triggers TIME_TRAVEL_INTERVIEW — Narrator asks one question first
+      is_ready_to_scout: false,
       era_history: this.state.getEraHistory()
     };
 

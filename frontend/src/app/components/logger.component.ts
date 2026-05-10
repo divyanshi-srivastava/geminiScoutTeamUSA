@@ -10,7 +10,7 @@ import { StateService } from '../services/state.service';
     <div class="logger-panel">
       <div class="header">
         <div class="live-dot"></div>
-        <h3>ORCHESTRATION TRACE</h3>
+        <h3>Orchestration Trace for Judges</h3>
       </div>
 
       <div class="trace-scroll" #scrollContainer>
@@ -52,14 +52,17 @@ import { StateService } from '../services/state.service';
       align-items: center;
       gap: 0.6rem;
     }
+
     .live-dot {
       width: 7px; height: 7px;
       background: #22c55e;
       border-radius: 50%;
       box-shadow: 0 0 6px #22c55e;
       animation: blink 2s ease-in-out infinite;
+      flex-shrink: 0;
     }
     @keyframes blink { 0%,100%{ opacity:1 } 50%{ opacity:0.3 } }
+
     h3 {
       font-size: 0.6rem;
       font-weight: 900;
@@ -111,6 +114,7 @@ import { StateService } from '../services/state.service';
     .agent-tag[data-agent*="compliance"] { color: #f87171; background: rgba(248,113,113,0.06); border: 1px solid rgba(248,113,113,0.12); }
     .agent-tag[data-agent*="supervisor"] { color: #a78bfa; }
     .agent-tag[data-agent*="logger"]     { color: #34d399; }
+    .agent-tag[data-agent*="eval"]       { color: #c5a44e; background: rgba(197,164,78,0.06); border: 1px solid rgba(197,164,78,0.15); }
     .agent-tag[data-agent*="system"]     { color: #94a3b8; font-style: italic; }
     .agent-tag[data-agent="user"]        { color: #a5f3fc; background: rgba(165,243,252,0.06); border: 1px solid rgba(165,243,252,0.12); }
 
@@ -121,15 +125,9 @@ import { StateService } from '../services/state.service';
       margin: 0;
     }
 
-    /* Final agent output */
-    .trace-row[data-event="Thought"] .row-body {
-      color: rgba(255,255,255,0.82);
-    }
-    .trace-row[data-event="Thought"] {
-      border-left-color: rgba(52, 211, 153, 0.3);
-    }
+    .trace-row[data-event="Thought"] .row-body { color: rgba(255,255,255,0.82); }
+    .trace-row[data-event="Thought"] { border-left-color: rgba(52, 211, 153, 0.3); }
 
-    /* Thinking tokens — dimmer, italic, indented to feel like internal monologue */
     .trace-row[data-event="Thinking"] {
       border-left-color: rgba(255,255,255,0.04);
       padding-left: 1.25rem;
@@ -138,6 +136,26 @@ import { StateService } from '../services/state.service';
       color: rgba(255,255,255,0.35);
       font-style: italic;
       font-size: 0.7rem;
+    }
+
+    .trace-row[data-event="Changed"] {
+      border-left-color: rgba(248, 113, 113, 0.5);
+      background: rgba(248, 113, 113, 0.04);
+      border-radius: 0 4px 4px 0;
+    }
+    .trace-row[data-event="Changed"] .row-body {
+      color: rgba(248, 113, 113, 0.9);
+      font-size: 0.72rem;
+    }
+
+    .trace-row[data-event="Approved"] {
+      border-left-color: rgba(52, 211, 153, 0.4);
+      background: rgba(52, 211, 153, 0.03);
+      border-radius: 0 4px 4px 0;
+    }
+    .trace-row[data-event="Approved"] .row-body {
+      color: rgba(52, 211, 153, 0.75);
+      font-size: 0.72rem;
     }
 
     .empty-state {

@@ -33,6 +33,7 @@ export class AppComponent implements OnDestroy {
   private stream = inject(StreamService);
 
   appState$ = this.state.appState$;
+  sidebarCollapsed = false;
   private sub?: Subscription;
 
   readonly STRINGS = APP_STRINGS;

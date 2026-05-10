@@ -1,15 +1,29 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StateService } from '../services/state.service';
 import { EvalResult, ScoutingResult } from '../models';
 import { map } from 'rxjs/operators';
+
+// Module-level flag — survives component re-mount, resets only on full page reload
+let timeTravelBannerDismissed = false;
 
 @Component({
   selector: 'app-report',
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div class="report-container animate-fade-in-up" *ngIf="view$ | async as v">
+    <ng-container *ngIf="view$ | async as v">
+
+    <!-- ── TIME TRAVEL DISCOVERY BANNER ── -->
+    <div class="tt-banner" *ngIf="showBanner">
+      <div class="tt-banner-body">
+        <div class="tt-banner-headline">THE TIMELINE IS LIVE.</div>
+        <p class="tt-banner-text">This report captures who you are today. But your body would tell a different story at every stage of a career. Select any year in the timeline above to have the Scouts re-evaluate you at that age — Rising Star, Elite Peak, Veteran, or Legacy. Each jump is a fresh analysis.</p>
+      </div>
+      <button class="tt-banner-close" (click)="dismissBanner()" type="button">DISMISS</button>
+    </div>
+
+    <div class="report-container animate-fade-in-up">
 
       <!-- ── ERA BANNER (Time Travel only) ── -->
       <div class="era-result-banner animate-fade-in" *ngIf="traveledYear">
@@ -20,7 +34,7 @@ import { map } from 'rxjs/operators';
 
       <!-- ── SCOUT VERDICT (Human Narrative Only) ── -->
       <header class="verdict-summary glass-card">
-        <span class="summary-label">SCOUT VERDICT</span>
+        <span class="summary-label">Gemini Scout Verdict</span>
         <p class="summary-text">{{ v.summaryVerdict }}</p>
       </header>
 
@@ -152,13 +166,9 @@ import { map } from 'rxjs/operators';
         </div>
       </div>
 
-      <div class="action-row">
-        <button class="btn-gold restart-btn" (click)="restart()">
-          START A NEW JOURNEY
-        </button>
-      </div>
-
     </div>
+
+    </ng-container>
   `,
   styles: [`
     .report-container {
@@ -533,23 +543,84 @@ import { map } from 'rxjs/operators';
       50%       { opacity: 1;   transform: scale(1.5); }
     }
 
-    /* ── Action Row ── */
-    .action-row {
-      margin-top: 2.5rem;
-      text-align: center;
+    /* ── Time Travel Discovery Banner ── */
+    .tt-banner {
+      max-width: 1100px;
+      margin: 0 auto 2rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      padding: 1.5rem 2rem;
+      background: rgba(197, 164, 78, 0.05);
+      border: 1px solid rgba(197, 164, 78, 0.25);
+      border-radius: 0.75rem;
+      animation: bannerIn 0.5s ease both;
     }
-    .restart-btn {
-      padding: 1.25rem 3rem;
-      font-size: 0.85rem;
+    @keyframes bannerIn {
+      from { opacity: 0; transform: translateY(-12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .tt-banner-body { flex: 1; }
+
+    .tt-banner-headline {
+      font-size: 0.6rem;
       font-weight: 900;
+      letter-spacing: 0.35em;
+      color: rgba(197, 164, 78, 0.85);
+      margin-bottom: 0.5rem;
+    }
+
+    .tt-banner-text {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    .tt-banner-close {
+      flex-shrink: 0;
+      font-size: 0.5rem;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      color: rgba(255,255,255,0.25);
+      background: none;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 0.4rem;
+      padding: 0.35rem 0.75rem;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+      margin-top: 0.15rem;
+    }
+    .tt-banner-close:hover {
+      color: rgba(255,255,255,0.5);
+      border-color: rgba(255,255,255,0.2);
     }
   `]
 })
-export class ReportComponent {
+export class ReportComponent implements OnInit, OnDestroy {
   private state = inject(StateService);
   vaultOpen = false;
+  showBanner = false;
+  private bannerTimer?: ReturnType<typeof setTimeout>;
 
   evalResult$ = this.state.evalResult$;
+
+  ngOnInit() {
+    if (!timeTravelBannerDismissed) {
+      this.bannerTimer = setTimeout(() => { this.showBanner = true; }, 3500);
+    }
+  }
+
+  ngOnDestroy() {
+    clearTimeout(this.bannerTimer);
+  }
+
+  dismissBanner() {
+    this.showBanner = false;
+    timeTravelBannerDismissed = true;
+  }
 
   get traveledYear(): number | null { return this.state.traveledYear; }
 
@@ -615,9 +686,9 @@ export class ReportComponent {
 
   evalDimensions(ev: EvalResult) {
     const dims = [
-      { label: 'AUTHENTICITY',        score: ev.authenticity.score,    reasoning: ev.authenticity.reasoning },
-      { label: 'PERSONALIZATION',     score: ev.personalization.score,  reasoning: ev.personalization.reasoning },
-      { label: 'PATHWAY DISTINCTNESS', score: ev.distinctness.score,   reasoning: ev.distinctness.reasoning },
+      { label: 'AUTHENTICITY', score: ev.authenticity.score, reasoning: ev.authenticity.reasoning },
+      { label: 'PERSONALIZATION', score: ev.personalization.score, reasoning: ev.personalization.reasoning },
+      { label: 'PATHWAY DISTINCTNESS', score: ev.distinctness.score, reasoning: ev.distinctness.reasoning },
     ];
     if (ev.life_stage_coherence) {
       dims.push({ label: 'LIFE STAGE COHERENCE ⏳', score: ev.life_stage_coherence.score, reasoning: ev.life_stage_coherence.reasoning });
@@ -626,5 +697,4 @@ export class ReportComponent {
   }
 
   toggleVault() { this.vaultOpen = !this.vaultOpen; }
-  restart() { this.state.reset(); }
 }

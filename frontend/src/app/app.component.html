@@ -94,8 +94,14 @@
     </main>
 
     <!-- Mission Control Sidebar (visible during interview/scouting/result) -->
-    <aside class="sidebar" *ngIf="(appState$ | async) !== 'LANDING'">
-      <app-logger></app-logger>
+    <aside class="sidebar" [class.sidebar-collapsed]="sidebarCollapsed" *ngIf="(appState$ | async) !== 'LANDING'">
+      <button class="sidebar-tab" (click)="sidebarCollapsed = !sidebarCollapsed" type="button">
+        <span class="sidebar-tab-chevron">{{ sidebarCollapsed ? '◀' : '▶' }}</span>
+        <span class="sidebar-tab-label">For JUDGES</span>
+      </button>
+      <div class="sidebar-content">
+        <app-logger></app-logger>
+      </div>
     </aside>
   </div>
 
