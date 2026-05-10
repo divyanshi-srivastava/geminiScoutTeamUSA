@@ -18,6 +18,9 @@ compliance_agent = Agent(
     instruction=_compliance_instruction,
     model=MODEL,
     generate_content_config=types.GenerateContentConfig(
-        thinking_config=types.ThinkingConfig(include_thoughts=True)
+        thinking_config=types.ThinkingConfig(
+            include_thoughts=True,
+            thinking_budget=1024,
+        )
     ),
 )

@@ -1,7 +1,7 @@
 import { Injectable, NgZone } from '@angular/core';
 import { Observable } from 'rxjs';
 import { StateService } from './state.service';
-import { Profile, ScoutChunk, ScoutingResult } from '../models';
+import { EvalChunk, Profile, ScoutChunk, ScoutingResult } from '../models';
 import { environment } from '../../environments/environment';
 
 
@@ -74,6 +74,12 @@ export class StreamService {
    * based on its `type` field.
    */
   private dispatch(chunk: ScoutChunk): void {
+    if (chunk.type === 'trace') {
+      console.log(`%c[${chunk.timestamp}] ${chunk.agent.toUpperCase()} | ${chunk.event}`, 'color: #c5a44e; font-weight: bold', chunk.detail || '');
+    } else {
+      console.log(`%c[SSE] ${chunk.type}`, 'color: #60a5fa; font-weight: bold', chunk);
+    }
+
     switch (chunk.type) {
       case 'trace':
         this.state.addTrace(chunk);
@@ -85,6 +91,10 @@ export class StreamService {
 
       case 'result':
         this.handleResult(chunk.response);
+        break;
+
+      case 'eval':
+        this.state.setEvalResult((chunk as EvalChunk).result);
         break;
 
       case 'error':

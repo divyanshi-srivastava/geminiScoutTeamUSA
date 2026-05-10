@@ -7,7 +7,6 @@ Supports two modes:
 Both modes use the same SSE format, [DONE] signal, and async flush logic.
 """
 import json
-import re
 import asyncio
 import datetime
 import logging
@@ -17,28 +16,35 @@ from google.adk.sessions import InMemorySessionService
 from google.genai import types
 
 from agents.supervisoragent import supervisor_agent
+from agents.loggeragent import call_logger
+from agents.evalagent import call_eval
 from api.models import StoryRequest
 
 logger = logging.getLogger("scout-streamer")
 
 session_service = InMemorySessionService()
 
-# ── Agent "started" messages — emitted once when each agent first appears ──
-_AGENT_STARTED = {
-    "scout_agent":      "Received biometrics. Scanning 12 athletic archetypes for closest match...",
-    "narrator_agent":   "Archetype data received. Crafting your personal story from interview answers...",
-    "compliance_agent": "Narrative received. Running IOC brand and language compliance review...",
+# ── Agent "started" messages — mode-aware, emitted once per request per agent ──
+_AGENT_STARTED_INTERVIEW = {
+    "narrator_agent":   "Reviewing conversation history. Generating next question...",
+    "compliance_agent": "Question received. Checking for forbidden brand terms...",
+}
+_AGENT_STARTED_TRAVEL = {
+    "narrator_agent":   "Reading era context and conversation history. Drafting era-bridging question...",
+    "compliance_agent": "Era question received. Checking language for compliance...",
+}
+_AGENT_STARTED_SCOUTING = {
+    "scout_agent":      "Biometrics received. Scanning 12 athletic archetypes for closest match...",
+    "narrator_agent":   "Archetype match confirmed. Weaving interview answers into personal narrative...",
+    "compliance_agent": "Narrative received. Running IOC brand and parity compliance review...",
 }
 
-# ── [TAG] prefix parser for logger agent output ──
-_LOGGER_TAG_MAP = {
-    "SCOUT":      "scout_agent",
-    "NARRATOR":   "narrator_agent",
-    "COMPLIANCE": "compliance_agent",
-    "SUPERVISOR": "supervisor_agent",
-    "LOGGER":     "logger_agent",
-}
-_LOGGER_LINE_RE = re.compile(r"^\[([A-Z]+)\]\s*(.+)$")
+def _agent_started_msg(agent: str, mode: str) -> str | None:
+    if mode == "INTERVIEW":
+        return _AGENT_STARTED_INTERVIEW.get(agent)
+    if mode == "TIME_TRAVEL_INTERVIEW":
+        return _AGENT_STARTED_TRAVEL.get(agent)
+    return _AGENT_STARTED_SCOUTING.get(agent)
 
 
 def _sse(data: dict | str) -> str:
@@ -59,21 +65,50 @@ def _trace(agent: str, event: str, detail: str | None = None) -> str:
     return _sse(payload)
 
 
+def _get_life_stage(age: int) -> str:
+    if age < 20:   return "Rising Star"
+    if age <= 32:  return "Elite Peak"
+    if age <= 45:  return "Veteran"
+    return "Legacy"
+
+
 def _build_system_header(request: StoryRequest) -> str:
     user_age = (
         datetime.datetime.now().year - request.birth_year
         if request.birth_year
         else 25
     )
-    mode = "SCOUTING" if request.is_ready_to_scout else "INTERVIEW"
+
+    # Mode resolution: time travel mini-interview takes priority
+    if request.target_game_year and not request.is_ready_to_scout:
+        mode = "TIME_TRAVEL_INTERVIEW"
+    elif request.is_ready_to_scout:
+        mode = "SCOUTING"
+    else:
+        mode = "INTERVIEW"
+
     header = f"[SYSTEM: MODE | {mode}]\n"
     header += (
         f"[SYSTEM: BIOMETRIC_DATA | Height: {request.height_cm}cm "
         f"| Weight: {request.weight_kg}kg | Age: {user_age}]\n"
     )
+
     if request.target_game_year and request.birth_year:
         age_at_game = request.target_game_year - request.birth_year
-        header += f"[SYSTEM: AGE_OVERRIDE | {age_at_game} (at The {request.target_game_year} Games)]\n"
+        life_stage = _get_life_stage(age_at_game)
+        header += (
+            f"[SYSTEM: TIME_TRAVEL | Destination: The {request.target_game_year} Games "
+            f"| User age at destination: {age_at_game} | Life stage: {life_stage}]\n"
+        )
+        if request.is_ready_to_scout:
+            header += f"[SYSTEM: AGE_OVERRIDE | {age_at_game} (at The {request.target_game_year} Games)]\n"
+
+    if hasattr(request, 'era_history') and request.era_history:
+        header += "[SYSTEM: ERA_HISTORY]\n"
+        for year, summary in request.era_history.items():
+            header += f"  {year} Games: {summary}\n"
+        header += "[END ERA_HISTORY]\n"
+
     if request.conversation_history:
         header += "\n[SYSTEM: CONVERSATION_HISTORY]\n"
         for turn in request.conversation_history:
@@ -83,65 +118,58 @@ def _build_system_header(request: StoryRequest) -> str:
     return header
 
 
-# ── Per-agent content summarizers ──
-
-def _summarize_scout(content: str) -> str:
+def _quick_summary(agent_name: str, content: str, question_num: int = 0) -> str:
+    """Extract key facts from agent output to feed the logger as context."""
     try:
         data = json.loads(content)
-        if isinstance(data, list) and data:
+        if agent_name == "scout_agent" and isinstance(data, list) and data:
             p1 = data[0]
-            p2 = data[1] if len(data) > 1 else p1
-            name1 = p1.get("matched_profile_name", "Unknown")
-            path1 = p1.get("pathway_standing", "standing sport")
-            name2 = p2.get("matched_profile_name", name1)
-            path2 = p2.get("pathway_adaptive", "adaptive sport")
-            if name1 == name2:
-                return f"Best match: {name1}. Standing → {path1}. Adaptive → {path2}."
-            return f"Standing: {name1} ({path1}). Adaptive: {name2} ({path2})."
+            p2 = data[1] if len(data) > 1 else data[0]
+            return (
+                f"Standing match: {p1.get('matched_profile_name')} | "
+                f"pathway: {p1.get('pathway_standing')} | "
+                f"Adaptive match: {p2.get('matched_profile_name')} | "
+                f"pathway: {p2.get('pathway_adaptive')}"
+            )
+        if agent_name == "narrator_agent":
+            if isinstance(data, list) and data:
+                v = data[0].get("scout_verdict", "")
+                return (
+                    f"Narratives written for: {data[0].get('matched_profile_name')}. "
+                    f"Verdict preview: {v[:120]}"
+                )
+            if isinstance(data, dict) and data.get("question"):
+                q_label = f"Q{question_num}: " if question_num else ""
+                feedback = data.get("feedback", "")
+                has_ready = any("[READY]" in str(o) for o in data.get("options", []))
+                return (
+                    f"{q_label}Question: \"{data['question'][:100]}\" | "
+                    f"Feedback given: \"{feedback[:60]}\" | "
+                    f"[READY] option offered: {'yes' if has_ready else 'no'}"
+                )
+        if agent_name == "compliance_agent":
+            if isinstance(data, list) and data:
+                names = [p.get("matched_profile_name", "?") for p in data]
+                return f"Compliance approved {len(data)} profiles: {names}"
+            if isinstance(data, dict) and data.get("question"):
+                return (
+                    f"Question approved: \"{data['question'][:80]}\" | "
+                    f"Options: {len(data.get('options', []))}"
+                )
     except Exception:
         pass
-    return "Archetype analysis complete. Passing data to Narrator."
-
-
-def _summarize_narrator(content: str) -> str:
-    try:
-        data = json.loads(content)
-        if isinstance(data, list) and data:
-            name = data[0].get("matched_profile_name", "your archetype")
-            return f"Story written for {name}. Standing and adaptive narratives complete."
-        if isinstance(data, dict) and data.get("question"):
-            q = data["question"]
-            short = q[:70].rstrip() + ("..." if len(q) > 70 else "")
-            return f'Question drafted: "{short}"'
-    except Exception:
-        pass
-    return "Narrative complete. Passing to Compliance for review."
-
-
-def _summarize_compliance(content: str) -> str:
-    try:
-        data = json.loads(content)
-        if isinstance(data, list):
-            return "Clean pass — both pathway narratives approved. IOC standards verified."
-        if isinstance(data, dict) and data.get("question"):
-            return "Interview question approved. Safe for user display."
-    except Exception:
-        pass
-    return "Compliance review complete."
+    return content[:300]
 
 
 async def event_generator(request: StoryRequest):
-    mode = "SCOUTING" if request.is_ready_to_scout else "INTERVIEW"
+    if request.target_game_year and not request.is_ready_to_scout:
+        mode = "TIME_TRAVEL_INTERVIEW"
+    elif request.is_ready_to_scout:
+        mode = "SCOUTING"
+    else:
+        mode = "INTERVIEW"
 
     try:
-        # ── Supervisor intro ──
-        if mode == "INTERVIEW":
-            intro = "Pipeline active. Supervisor delegating to Narrator Agent for next question."
-        else:
-            intro = "Scouting pipeline active. Supervisor delegating: Scout → Narrator → Compliance."
-        yield _trace("supervisor_agent", "Thought", detail=intro)
-        await asyncio.sleep(0.01)
-
         runner = Runner(
             app_name="scout_app",
             agent=supervisor_agent,
@@ -156,8 +184,14 @@ async def event_generator(request: StoryRequest):
             parts=[types.Part(text=system_header + user_text)],
         )
 
+        # Count how many narrator turns are already in history to label questions
+        _question_num = sum(
+            1 for t in request.conversation_history if t.role == "narrator"
+        ) + 1
+
         _last_text_parts: list[str] = []
         _seen_agents: set[str] = set()
+        _agent_thoughts: dict[str, str] = {}  # accumulated thought tokens per agent
 
         async for event in runner.run_async(
             user_id=request.user_id,
@@ -178,20 +212,29 @@ async def event_generator(request: StoryRequest):
                     else:
                         content_text += p.text
 
-            # Emit thinking trace (truncated) for sub-agents that have thinking enabled
-            if thought_text and event_author and event_author not in (
-                "supervisor_agent", "logger_agent", None
-            ):
+            # Accumulate thoughts per agent for logger
+            if thought_text and event_author:
+                _agent_thoughts[event_author] = (
+                    _agent_thoughts.get(event_author, "") + thought_text
+                )
+
+            # Suppress scout events entirely during TIME_TRAVEL_INTERVIEW —
+            # if scout fires it means the supervisor misrouted; hide it from judges
+            if mode == "TIME_TRAVEL_INTERVIEW" and event_author == "scout_agent":
+                continue
+
+            # Emit truncated thinking trace for the UI (dim italic rows)
+            if thought_text and event_author and event_author not in ("supervisor_agent", None):
                 snippet = thought_text.strip()[:180]
                 if len(thought_text.strip()) > 180:
                     snippet += "…"
                 yield _trace(event_author, "Thinking", detail=snippet)
                 await asyncio.sleep(0.05)
 
-            # Emit "activated" trace the FIRST time each sub-agent appears
+            # Emit mode-aware "activated" trace the FIRST time each sub-agent appears
             if event_author and event_author not in _seen_agents:
                 _seen_agents.add(event_author)
-                start_msg = _AGENT_STARTED.get(event_author)
+                start_msg = _agent_started_msg(event_author, mode)
                 if start_msg:
                     yield _trace(event_author, "Thought", detail=start_msg)
                     await asyncio.sleep(0.05)
@@ -199,37 +242,15 @@ async def event_generator(request: StoryRequest):
             if not content_text:
                 continue
 
-            if event_author == "logger_agent":
-                # Parse [AGENT] prefixed lines into per-agent traces
-                for raw_line in content_text.splitlines():
-                    line = raw_line.strip()
-                    if not line:
-                        continue
-                    m = _LOGGER_LINE_RE.match(line)
-                    if m:
-                        tag = m.group(1)
-                        text = m.group(2).strip()
-                        agent_key = _LOGGER_TAG_MAP.get(tag, "logger_agent")
-                    else:
-                        agent_key = "logger_agent"
-                        text = line
-                    yield _trace(agent_key, "Thought", detail=text)
+            if event_author in ("scout_agent", "narrator_agent", "compliance_agent"):
+                _last_text_parts = [content_text]
+                # Call logger directly — interprets accumulated thoughts + output
+                thoughts = _agent_thoughts.get(event_author, "")
+                summary = _quick_summary(event_author, content_text, _question_num)
+                logger_text = await call_logger(event_author, thoughts, summary)
+                if logger_text:
+                    yield _trace("logger_agent", "Thought", detail=logger_text)
                     await asyncio.sleep(0.05)
-
-            elif event_author == "scout_agent":
-                _last_text_parts = [content_text]
-                yield _trace("scout_agent", "Thought", detail=_summarize_scout(content_text))
-                await asyncio.sleep(0.05)
-
-            elif event_author == "narrator_agent":
-                _last_text_parts = [content_text]
-                yield _trace("narrator_agent", "Thought", detail=_summarize_narrator(content_text))
-                await asyncio.sleep(0.05)
-
-            elif event_author == "compliance_agent":
-                _last_text_parts = [content_text]
-                yield _trace("compliance_agent", "Thought", detail=_summarize_compliance(content_text))
-                await asyncio.sleep(0.05)
 
             else:
                 # Supervisor or unattributed — take-last for final response, no trace
@@ -237,9 +258,25 @@ async def event_generator(request: StoryRequest):
 
         final_response_text = "".join(_last_text_parts)
 
-        result_type = "interview" if mode == "INTERVIEW" else "result"
+        result_type = "interview" if mode in ("INTERVIEW", "TIME_TRAVEL_INTERVIEW") else "result"
         yield _sse({"type": result_type, "response": final_response_text})
         await asyncio.sleep(0.01)
+
+        # ── Eval Agent — runs only after a full scouting pass ──
+        if mode == "SCOUTING":
+            yield _trace("eval_agent", "Thought", detail="Pipeline complete. Authenticator reviewing archetype match quality, narrative personalization, and compliance integrity...")
+            await asyncio.sleep(0.05)
+            eval_result = await call_eval(
+                height_cm=request.height_cm,
+                weight_kg=request.weight_kg,
+                birth_year=request.birth_year,
+                conversation_history=request.conversation_history,
+                final_result_json=final_response_text,
+                target_game_year=request.target_game_year,
+            )
+            if eval_result:
+                yield _sse({"type": "eval", "result": eval_result})
+                await asyncio.sleep(0.01)
 
         yield "data: [DONE]\n\n"
 

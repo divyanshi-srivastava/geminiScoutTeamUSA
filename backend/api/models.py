@@ -30,8 +30,9 @@ class StoryRequest(BaseModel):
     conversation_history: List[ConversationTurn] = []
     is_ready_to_scout: bool = False
 
-    # ── Time-Travel Field ──
+    # ── Time-Travel Fields ──
     target_game_year: Optional[int] = None
+    era_history: Optional[dict] = None  # {year: summary_string}
 
 
 class AgentEventTrace(BaseModel):

@@ -72,4 +72,25 @@ export interface ErrorChunk {
   detail: string;
 }
 
-export type ScoutChunk = TraceChunk | InterviewChunk | ResultChunk | ErrorChunk;
+/** Structured evaluation from the Eval Agent ("The Authenticator") */
+export interface EvalDimension {
+  score: number;
+  reasoning: string;
+}
+
+export interface EvalResult {
+  overall: number;
+  summary: string;
+  authenticity: EvalDimension;
+  personalization: EvalDimension;
+  distinctness: EvalDimension;
+  life_stage_coherence?: EvalDimension;
+  compliance: { passed: boolean; note: string };
+}
+
+export interface EvalChunk {
+  type: 'eval';
+  result: EvalResult;
+}
+
+export type ScoutChunk = TraceChunk | InterviewChunk | ResultChunk | ErrorChunk | EvalChunk;

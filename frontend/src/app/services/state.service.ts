@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { ConversationTurn, Question, TraceEvent, Metrics, ScoutingResult } from '../models';
+import { ConversationTurn, EvalResult, Question, TraceEvent, Metrics, ScoutingResult } from '../models';
 
-export type AppState = 'LANDING' | 'INTERVIEW' | 'SCOUTING' | 'RESULT';
+export type AppState = 'LANDING' | 'INTERVIEW' | 'SCOUTING' | 'RESULT' | 'TIME_TRAVEL_INTERVIEW';
 
 @Injectable({
   providedIn: 'root'
@@ -13,9 +13,13 @@ export class StateService {
   private activeQuestionSub = new BehaviorSubject<Question | null>(null);
   private tracesSub = new BehaviorSubject<TraceEvent[]>([]);
   private resultSub = new BehaviorSubject<ScoutingResult | null>(null);
+  private evalResultSub = new BehaviorSubject<EvalResult | null>(null);
   private loadingSub = new BehaviorSubject<boolean>(false);
   private metricsSetSub = new BehaviorSubject<boolean>(false);
   private narrativeBridgeSub = new BehaviorSubject<string | null>(null);
+
+  /** Unique session ID — regenerated on every new interview so ADK session state never bleeds across runs. */
+  sessionId: string = crypto.randomUUID();
 
   /** User-entered physical metrics, populated during the interview. */
   metrics: Metrics = {
@@ -24,12 +28,22 @@ export class StateService {
     birthYear: null
   };
 
+  /** The Games year the user is currently time-traveling to, or null if not in time travel mode. */
+  activeEraYear: number | null = null;
+
+  /** The Games year of the most recently displayed time travel result (for era banner in report). */
+  traveledYear: number | null = null;
+
+  /** Era-specific answers accumulated across time travel jumps. Maps year → user's answer summary. */
+  private eraHistoryMap: Map<number, string> = new Map();
+
   // ── Public Observables ──
   appState$   = this.appStateSub.asObservable();
   history$    = this.historySub.asObservable();
   activeQuestion$ = this.activeQuestionSub.asObservable();
   traces$     = this.tracesSub.asObservable();
   result$     = this.resultSub.asObservable();
+  evalResult$ = this.evalResultSub.asObservable();
   loading$    = this.loadingSub.asObservable();
   metricsSet$ = this.metricsSetSub.asObservable();
   narrativeBridge$ = this.narrativeBridgeSub.asObservable();
@@ -59,7 +73,12 @@ export class StateService {
     this.activeQuestionSub.next(null);
     this.loadingSub.next(false);
     this.narrativeBridgeSub.next(null);
+    this.evalResultSub.next(null);
     this.resultSub.next(result);
+  }
+
+  setEvalResult(eval_result: EvalResult) {
+    this.evalResultSub.next(eval_result);
   }
 
   clearTraces() {
@@ -87,10 +106,15 @@ export class StateService {
     this.activeQuestionSub.next(null);
     this.tracesSub.next([]);
     this.resultSub.next(null);
+    this.evalResultSub.next(null);
     this.loadingSub.next(false);
     this.metricsSetSub.next(false);
     this.narrativeBridgeSub.next(null);
     this.metrics = { height: null, weight: null, birthYear: null };
+    this.activeEraYear = null;
+    this.traveledYear = null;
+    this.eraHistoryMap.clear();
+    this.sessionId = crypto.randomUUID();
   }
 
   setMetrics(data: Metrics) {
@@ -105,5 +129,26 @@ export class StateService {
   /** Snapshot for building the next POST body. */
   getHistory(): ConversationTurn[] {
     return this.historySub.value;
+  }
+
+  // ── Time Travel ──
+
+  setActiveEraYear(year: number | null) {
+    this.activeEraYear = year;
+    if (year !== null) {
+      this.traveledYear = year;
+    }
+  }
+
+  saveEraAnswer(year: number, answerSummary: string) {
+    this.eraHistoryMap.set(year, answerSummary);
+  }
+
+  /** Returns era history as a plain object for JSON serialization in the POST body. */
+  getEraHistory(): Record<number, string> | null {
+    if (this.eraHistoryMap.size === 0) return null;
+    const obj: Record<number, string> = {};
+    this.eraHistoryMap.forEach((summary, year) => { obj[year] = summary; });
+    return obj;
   }
 }

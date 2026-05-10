@@ -14,6 +14,16 @@ import { MetricsComponent } from './metrics.component';
   template: `
     <div class="interview-wrap animate-fade-in-up">
       
+      <!-- ── TIME TRAVEL ERA BANNER ── -->
+      <div class="era-banner animate-fade-in" *ngIf="activeEraYear">
+        <div class="era-icon">⏳</div>
+        <div class="era-text">
+          <span class="era-label">TIME TRAVEL ACTIVE</span>
+          <span class="era-destination">The {{ activeEraYear }} Games · Age {{ ageAtEra }}</span>
+        </div>
+        <span class="era-stage" [style.color]="eraStageColor">{{ eraStageLabel }}</span>
+      </div>
+
       <!-- ── STEP 1: Physical Metrics ── -->
       <div class="interview-card glass-card-elevated" *ngIf="!(metricsSet$ | async)">
         <app-metrics (completed)="startNarrative()"></app-metrics>
@@ -176,6 +186,43 @@ import { MetricsComponent } from './metrics.component';
       border-top: 1px solid rgba(255,255,255,0.06);
       padding-top: 1.5rem;
     }
+
+    /* ── Era Banner ── */
+    .era-banner {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.75rem 1.25rem;
+      margin-bottom: 1.25rem;
+      background: rgba(197, 164, 78, 0.06);
+      border: 1px solid rgba(197, 164, 78, 0.2);
+      border-radius: 0.75rem;
+    }
+    .era-icon { font-size: 1.1rem; flex-shrink: 0; }
+    .era-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+      flex: 1;
+    }
+    .era-label {
+      font-size: 0.5rem;
+      font-weight: 900;
+      letter-spacing: 0.2em;
+      color: rgba(197, 164, 78, 0.5);
+    }
+    .era-destination {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.85);
+    }
+    .era-stage {
+      font-size: 0.55rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
   `]
 })
 export class InterviewComponent implements OnDestroy {
@@ -188,6 +235,31 @@ export class InterviewComponent implements OnDestroy {
   narrativeBridge$ = this.state.narrativeBridge$;
   private sub?: Subscription;
 
+  get activeEraYear(): number | null { return this.state.activeEraYear; }
+
+  get ageAtEra(): number | null {
+    if (!this.state.activeEraYear || !this.state.metrics.birthYear) return null;
+    return this.state.activeEraYear - this.state.metrics.birthYear;
+  }
+
+  get eraStageLabel(): string {
+    const age = this.ageAtEra;
+    if (age === null) return '';
+    if (age < 20)  return 'Rising Star';
+    if (age <= 32) return 'Elite Peak';
+    if (age <= 45) return 'Veteran';
+    return 'Legacy';
+  }
+
+  get eraStageColor(): string {
+    const age = this.ageAtEra;
+    if (age === null) return '#c5a44e';
+    if (age < 20)  return '#34d399';
+    if (age <= 32) return '#facc15';
+    if (age <= 45) return '#60a5fa';
+    return '#a78bfa';
+  }
+
   startNarrative() {
     this.sub?.unsubscribe();
     this.state.setLoading(true);
@@ -196,6 +268,7 @@ export class InterviewComponent implements OnDestroy {
     );
     const body = {
       story: 'Initial metrics provided.',
+      session_id: this.state.sessionId,
       height_cm: this.state.metrics.height,
       weight_kg: this.state.metrics.weight,
       birth_year: this.state.metrics.birthYear,
@@ -214,6 +287,36 @@ export class InterviewComponent implements OnDestroy {
     this.state.setLoading(true);
     this.state.addTurn({ role: 'user', content: answer });
 
+    const eraYear = this.state.activeEraYear;
+
+    if (eraYear !== null) {
+      // ── Time Travel mode: any answer triggers a full re-scout with age override ──
+      const shortAnswer = answer.length > 120 ? answer.substring(0, 120) + '…' : answer;
+      this.state.addUserTrace(`Era answer for ${eraYear}: "${shortAnswer}"`);
+      this.state.saveEraAnswer(eraYear, shortAnswer);
+      this.state.setActiveEraYear(null);
+      this.state.setAppState('SCOUTING');
+
+      const body = {
+        story: answer,
+        session_id: this.state.sessionId,
+        height_cm: this.state.metrics.height,
+        weight_kg: this.state.metrics.weight,
+        birth_year: this.state.metrics.birthYear,
+        conversation_history: this.state.getHistory(),
+        is_ready_to_scout: true,
+        target_game_year: eraYear,
+        era_history: this.state.getEraHistory()
+      };
+
+      this.sub = this.stream.consume(body).subscribe({
+        complete: () => this.state.setLoading(false),
+        error: ()   => { this.state.setLoading(false); this.state.setAppState('RESULT'); }
+      });
+      return;
+    }
+
+    // ── Normal interview mode ──
     const isReady = answer.trim().startsWith('[READY]');
     const traceLabel = isReady
       ? 'Ready to see results — triggering full scouting pipeline'
@@ -222,6 +325,7 @@ export class InterviewComponent implements OnDestroy {
 
     const body = {
       story: answer,
+      session_id: this.state.sessionId,
       height_cm: this.state.metrics.height,
       weight_kg: this.state.metrics.weight,
       birth_year: this.state.metrics.birthYear,
