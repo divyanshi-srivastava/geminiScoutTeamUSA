@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+/* ────────────────────────────────────────
+   Tailwind v4 Theme: Team USA (Navy/Gold/White)
+   ──────────────────────────────────────── */
+@theme {
+  --color-navy-950: #050b1a;
+  --color-navy-900: #0a1128;
+  --color-navy-800: #0f1b3d;
+  --color-navy-700: #162552;
+  --color-navy-600: #1d2f67;
+  --color-navy-500: #24397c;
+
+  --color-gold-600: #b8933f;
+  --color-gold-500: #c5a44e;
+  --color-gold-400: #d4b95e;
+  --color-gold-300: #e3ce6f;
+  --color-gold-200: #f0e0a0;
+
+  --color-usa-red: #b31942;
+  --color-usa-blue: #0a3161;
+
+  --font-family-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* ────────────────────────────────────────
+   Base layer
+   ──────────────────────────────────────── */
+@layer base {
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(160deg, #050b1a 0%, #0a1128 30%, #0f1b3d 70%, #0a1128 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+/* ────────────────────────────────────────
+   Custom Utilities
+   ──────────────────────────────────────── */
+@layer utilities {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.25rem;
+    box-shadow:
+      0 8px 32px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .glass-card-elevated {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    border: 1px solid rgba(197, 164, 78, 0.15);
+    border-radius: 1.5rem;
+    box-shadow:
+      0 12px 40px rgba(0, 0, 0, 0.4),
+      0 0 80px rgba(197, 164, 78, 0.04),
+      inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #e3ce6f 0%, #c5a44e 50%, #d4b95e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-usa {
+    background: linear-gradient(135deg, #ffffff 0%, #d4b95e 50%, #c5a44e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .letter-u {
+    color: #ef4444;
+    -webkit-text-fill-color: #ef4444;
+    background: none;
+  }
+
+  .letter-s {
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
+    background: none;
+  }
+
+  .letter-a {
+    color: #3b82f6;
+    -webkit-text-fill-color: #3b82f6;
+    background: none;
+  }
+
+  .btn-gold {
+    background: linear-gradient(135deg, #c5a44e 0%, #d4b95e 50%, #c5a44e 100%);
+    color: #0a1128;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.875rem;
+    box-shadow:
+      0 4px 16px rgba(197, 164, 78, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+  }
+
+  .btn-gold:hover:not(:disabled) {
+    background: linear-gradient(135deg, #d4b95e 0%, #e3ce6f 50%, #d4b95e 100%);
+    box-shadow:
+      0 6px 24px rgba(197, 164, 78, 0.45),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+  }
+
+  .btn-gold:active:not(:disabled) {
+    transform: scale(0.97) translateY(0);
+  }
+
+  .btn-gold:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+  }
+
+  .animate-pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s linear infinite;
+    background-size: 200% 100%;
+  }
+}
+
+/* ────────────────────────────────────────
+   Keyframes
+   ──────────────────────────────────────── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulseGlow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(197, 164, 78, 0.15);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(197, 164, 78, 0.3);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ────────────────────────────────────────
+   Slider Styling (Range Input)
+   ──────────────────────────────────────── */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(197, 164, 78, 0.2) 0%, rgba(197, 164, 78, 0.4) 100%);
+  outline: none;
+  transition: background 0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d4b95e, #c5a44e);
+  box-shadow: 0 2px 8px rgba(197, 164, 78, 0.5), 0 0 0 3px rgba(197, 164, 78, 0.15);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 2px 12px rgba(197, 164, 78, 0.7), 0 0 0 5px rgba(197, 164, 78, 0.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d4b95e, #c5a44e);
+  box-shadow: 0 2px 8px rgba(197, 164, 78, 0.5);
+  cursor: pointer;
+  border: none;
+}
+
+/* ────────────────────────────────────────
+   Textarea Styling
+   ──────────────────────────────────────── */
+textarea {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+textarea:focus {
+  border-color: rgba(197, 164, 78, 0.5) !important;
+  box-shadow: 0 0 0 3px rgba(197, 164, 78, 0.1) !important;
+}
+
+/* ────────────────────────────────────────
+   Scrollbar
+   ──────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(197, 164, 78, 0.3);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(197, 164, 78, 0.5);
+}

@@ -1,0 +1,103 @@
+<div class="app-shell">
+  <!-- Ambient Background Glow -->
+  <div class="ambient-glow">
+    <div class="glow-orb-gold"></div>
+    <div class="glow-orb-navy"></div>
+  </div>
+
+  <!-- ═══ HEADER (Modular) ═══ -->
+  <app-header></app-header>
+
+  <!-- ═══ MAIN CONTENT ═══ -->
+  <div class="content-area">
+    <main class="main-stage">
+
+      <!-- ── 1. LANDING ── -->
+      <section *ngIf="(appState$ | async) === 'LANDING'" class="landing-view animate-fade-in-up">
+
+        <!-- Hero Title -->
+        <h2 class="hero-title">
+          Gemini Scout:<br>
+          <span class="hero-gold text-gradient-gold">
+            Your Team
+            <span class="letter-u">U</span><span class="letter-s">S</span><span class="letter-a">A</span>
+            Legacy
+          </span>
+        </h2>
+
+        <p class="hero-subtitle">
+          {{ STRINGS.SUBTITLE }}
+        </p>
+
+        <!-- Step Icons -->
+        <div class="steps-row">
+          <div class="step-item">
+            <div class="step-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                </path>
+              </svg>
+            </div>
+            <span class="step-label">{{ STRINGS.STEP_1 }}</span>
+          </div>
+
+          <div class="step-arrow">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </div>
+
+          <div class="step-item">
+            <div class="step-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z">
+                </path>
+              </svg>
+            </div>
+            <span class="step-label">{{ STRINGS.STEP_2 }}</span>
+          </div>
+        </div>
+
+        <p class="safety-privacy">
+          <strong class="privacy-highlight">YOUR PRIVACY IS OUR PRIORITY.</strong>
+          {{ STRINGS.PRIVACY_NOTE }}
+        </p>
+
+        <!-- CTA Button -->
+        <div class="cta-wrap">
+          <div class="cta-glow"></div>
+          <button (click)="startInterview()" class="cta-btn btn-gold">
+            Start Your Scouting Journey
+          </button>
+        </div>
+
+      </section>
+
+      <!-- ── 2. INTERVIEW ── -->
+      <app-interview *ngIf="(appState$ | async) === 'INTERVIEW'"></app-interview>
+
+      <!-- ── 3. SCOUTING (Loading) ── -->
+      <section *ngIf="(appState$ | async) === 'SCOUTING'" class="scouting-view animate-fade-in">
+        <div class="scouting-spinner"></div>
+        <h2 class="scouting-title">Analyzing Your Story</h2>
+        <p class="scouting-sub">Agent Active</p>
+      </section>
+
+      <!-- ── 4. RESULT ── -->
+      <section *ngIf="(appState$ | async) === 'RESULT'" class="result-view animate-fade-in">
+        <app-timeline></app-timeline>
+        <app-report></app-report>
+      </section>
+
+    </main>
+
+    <!-- Mission Control Sidebar (visible during interview/scouting/result) -->
+    <aside class="sidebar" *ngIf="(appState$ | async) !== 'LANDING'">
+      <app-logger></app-logger>
+    </aside>
+  </div>
+
+  <!-- ═══ FOOTER (Modular) ═══ -->
+  <app-footer></app-footer>
+</div>
