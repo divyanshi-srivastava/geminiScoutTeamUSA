@@ -1,0 +1,74 @@
+<svg width="800" height="700" viewBox="0 0 800 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="700" rx="20" fill="#0F172A"/>
+  
+  <!-- Definitions for Gradients and Markers -->
+  <defs>
+    <linearGradient id="gold_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#EAB308"/>
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#EAB308"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="24" font-weight="900" letter-spacing="0.1em">LIVING LEGACY ORCHESTRATION</text>
+  <text x="400" y="65" text-anchor="middle" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12" font-weight="500" letter-spacing="0.2em">STATEFUL MULTI-AGENT DECISION TREE</text>
+
+  <!-- Start Node -->
+  <rect x="300" y="100" width="200" height="50" rx="10" fill="#1E293B" stroke="#EAB308" stroke-width="2"/>
+  <text x="400" y="130" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="14" font-weight="700">Request Arrives</text>
+
+  <!-- Connector -->
+  <line x1="400" y1="150" x2="400" y2="190" stroke="#EAB308" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Decision Node -->
+  <path d="M400 200 L500 240 L400 280 L300 240 Z" fill="#1E293B" stroke="#FACC15" stroke-width="2"/>
+  <text x="400" y="235" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="11" font-weight="800">IS READY</text>
+  <text x="400" y="250" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="11" font-weight="800">TO SCOUT?</text>
+
+  <!-- Interview Branch (Left) -->
+  <path d="M300 240 Q150 240 150 320" fill="none" stroke="#64748B" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="210" y="230" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12" font-weight="700">NO (INTERVIEW)</text>
+
+  <rect x="50" y="320" width="200" height="40" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+  <text x="150" y="345" text-anchor="middle" fill="#CBD5E1" font-family="Inter, sans-serif" font-size="12">Narrator generates question</text>
+  
+  <line x1="150" y1="360" x2="150" y2="390" stroke="#334155" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <rect x="50" y="390" width="200" height="40" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+  <text x="150" y="415" text-anchor="middle" fill="#CBD5E1" font-family="Inter, sans-serif" font-size="12">Compliance verifies safety</text>
+
+  <line x1="150" y1="430" x2="150" y2="460" stroke="#334155" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <rect x="50" y="460" width="200" height="40" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+  <text x="150" y="485" text-anchor="middle" fill="#CBD5E1" font-family="Inter, sans-serif" font-size="12">Logger Agent traces</text>
+
+  <line x1="150" y1="500" x2="150" y2="530" stroke="#EAB308" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="150" y="560" text-anchor="middle" fill="#FACC15" font-family="Inter, sans-serif" font-size="13" font-weight="900" letter-spacing="0.05em">RETURN QUESTION</text>
+
+  <!-- Scouting Branch (Right) -->
+  <path d="M500 240 Q650 240 650 320" fill="none" stroke="#EAB308" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="560" y="230" fill="#FACC15" font-family="Inter, sans-serif" font-size="12" font-weight="700">YES (SCOUTING)</text>
+
+  <rect x="550" y="320" width="200" height="40" rx="8" fill="#1E293B" stroke="#EAB308" stroke-width="1.5"/>
+  <text x="650" y="345" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="12" font-weight="600">Scout matches archetype</text>
+
+  <line x1="650" y1="360" x2="650" y2="390" stroke="#EAB308" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <rect x="550" y="390" width="200" height="40" rx="8" fill="#1E293B" stroke="#EAB308" stroke-width="1.5"/>
+  <text x="650" y="415" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="12" font-weight="600">Narrator crafts story</text>
+
+  <line x1="650" y1="430" x2="650" y2="460" stroke="#EAB308" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <rect x="550" y="460" width="200" height="40" rx="8" fill="#1E293B" stroke="#EAB308" stroke-width="1.5"/>
+  <text x="650" y="485" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="12" font-weight="600">Compliance reviews NIL</text>
+
+  <line x1="650" y1="500" x2="650" y2="530" stroke="#EAB308" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <rect x="550" y="530" width="200" height="40" rx="8" fill="#1E293B" stroke="#EAB308" stroke-width="1.5"/>
+  <text x="650" y="555" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="12" font-weight="600">Logger Agent traces</text>
+
+  <line x1="650" y1="570" x2="650" y2="600" stroke="#EAB308" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="650" y="630" text-anchor="middle" fill="#FACC15" font-family="Inter, sans-serif" font-size="13" font-weight="900" letter-spacing="0.05em">RETURN LEGACY REPORT</text>
+
+  <!-- Footer -->
+  <text x="400" y="680" text-anchor="middle" fill="#475569" font-family="Inter, sans-serif" font-size="10" font-weight="500" letter-spacing="0.1em">© 2026 GEMINI SCOUT | POWERED BY GOOGLE CLOUD</text>
+</svg>
