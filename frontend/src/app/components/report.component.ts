@@ -692,6 +692,9 @@ export class ReportComponent implements OnInit, OnDestroy {
     if (ev.life_stage_coherence) {
       dims.push({ label: 'LIFE STAGE COHERENCE ⏳', score: ev.life_stage_coherence.score, reasoning: ev.life_stage_coherence.reasoning });
     }
+    if (ev.interview_quality) {
+      dims.push({ label: 'INTERVIEW QUALITY', score: ev.interview_quality.score, reasoning: ev.interview_quality.reasoning });
+    }
     return dims;
   }
 

@@ -17,7 +17,7 @@ if os.path.isfile(_creds_path):
 from google.adk import Runner  # noqa: E402
 from google.adk.sessions import InMemorySessionService  # noqa: E402
 from google.genai import types  # noqa: E402
-from agents.supervisoragent import supervisor_agent  # noqa: E402
+from agents.pipeline import scouting_pipeline  # noqa: E402
 
 
 async def test_scout():
@@ -28,11 +28,16 @@ async def test_scout():
     )
     print(f"Testing with story: {story}\n")
 
+    session_service = InMemorySessionService()
+    await session_service.create_session(
+        app_name="scout_app", user_id="test_user", session_id="test_session"
+    )
+
     runner = Runner(
         app_name="scout_app",
-        agent=supervisor_agent,
-        session_service=InMemorySessionService(),
-        auto_create_session=True,
+        agent=scouting_pipeline,
+        session_service=session_service,
+        auto_create_session=False,
     )
 
     message = types.Content(

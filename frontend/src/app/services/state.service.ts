@@ -69,8 +69,10 @@ export class StateService {
 
   setActiveQuestion(question: Question) {
     this.activeQuestionSub.next(question);
-    // Record the narrator's question in conversation history
-    this.addTurn({ role: 'narrator', content: question.question });
+    const optionsText = question.options?.length
+      ? `\nOptions: [${question.options.join(' | ')}]`
+      : '';
+    this.addTurn({ role: 'narrator', content: question.question + optionsText });
   }
 
   setResult(result: ScoutingResult) {

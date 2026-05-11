@@ -89,6 +89,7 @@ export interface EvalResult {
   personalization: EvalDimension;
   distinctness: EvalDimension;
   life_stage_coherence?: EvalDimension;
+  interview_quality?: EvalDimension;
   compliance: { passed: boolean; note: string };
 }
 

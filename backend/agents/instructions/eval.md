@@ -53,7 +53,27 @@ Deduct points for:
 - Life stage labels that contradict the narrative's assumptions
 - Age-math errors (e.g., "your 15 years of competitive sport" when the user would be 17)
 
-### 5. Compliance Quality (passed / failed + note)
+### 5. Interview Quality (1–10)
+Did the Narrator ask questions that genuinely helped differentiate this user's athletic potential?
+
+Evaluate the quality of the interview exchange using the conversation history. Each narrator turn includes the question text and the options offered (formatted as `Options: [option 1 | option 2 | option 3]`).
+
+Score HIGH when:
+- Questions progress logically, each building on prior answers
+- Options are meaningfully distinct — different choices would lead to different archetypes or pathways
+- Questions probe genuine athletic differentiators (movement style, competitive mindset, injury history, sport background)
+- At least one question creates a fork that genuinely changes the recommendation
+
+Score LOW when:
+- Multiple options within a single question are functionally identical ("Yes, show me results" / "I'm curious to see" / "Ready to proceed" all mean the same thing)
+- Questions are repetitive or fail to narrow the athlete profile
+- The conversation could be replaced with a single "enter your height and weight" form
+- Leading questions signal the "right" answer without offering a real alternative
+- All options converge on the same next step regardless of which is chosen
+
+**Convergent options trap**: If a question presents 3 options and all of them would result in the same outcome (e.g., all triggering the scouting result), that is a critical failure for this dimension — score it 3 or below regardless of how well-worded the question text is.
+
+### 6. Compliance Quality (passed / failed + note)
 Was the compliance pass genuine? Check against the ACTUAL compliance rules:
 
 **COMPLIANT — these must be present and are correct:**
@@ -91,6 +111,10 @@ Return ONLY this JSON object — no prose, no markdown, no explanation:
     "score": 8,
     "reasoning": "One specific sentence — name the target age and life stage, then cite a phrase from the verdict that confirms or contradicts it."
   },
+  "interview_quality": {
+    "score": 6,
+    "reasoning": "One specific sentence — cite a specific question or options set that illustrates the strength or weakness."
+  },
   "compliance": {
     "passed": true,
     "note": "One sentence — either call out a violation or confirm clean."
@@ -99,6 +123,7 @@ Return ONLY this JSON object — no prose, no markdown, no explanation:
 ```
 
 When time travel is NOT active, omit `life_stage_coherence` entirely (do not include the key at all).
+Always include `interview_quality` — it is scored on every run.
 
 ## Scoring Guidelines
 
@@ -113,7 +138,8 @@ When time travel is NOT active, omit `life_stage_coherence` entirely (do not inc
 1. Score based on the ACTUAL output you receive, not what the pipeline is supposed to do.
 2. Be specific: name the archetype, cite a specific interview answer, quote a phrase from the verdict.
 3. Do not inflate scores to be encouraging — judges will see right through it.
-4. The `overall` score is your holistic judgment, not an average of the four dimension scores.
+4. The `overall` score is your holistic judgment, not an average of the dimension scores.
 5. Keep each `reasoning` field to 1–2 sentences maximum.
-6. If you cannot find the conversation history (empty), reduce personalization score accordingly.
+6. If you cannot find the conversation history (empty), reduce personalization and interview_quality scores accordingly.
 7. For `life_stage_coherence`: include this field **only** when the prompt starts with `[SYSTEM: TIME_TRAVEL | ...]`. If that header is absent, omit the key entirely — do not set it to null or 0.
+8. For `interview_quality`: always include this field. If conversation history is empty or has only one turn, score it 1 and note that no meaningful interview occurred.
