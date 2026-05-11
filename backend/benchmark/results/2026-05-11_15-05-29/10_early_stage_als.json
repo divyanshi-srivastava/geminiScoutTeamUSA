@@ -1,0 +1,249 @@
+{
+  "persona_id": "10_early_stage_als",
+  "persona_label": "Early-stage ALS \u2014 former competitive tennis player",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 78,
+    "birth_year": 1981,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you best characterize your relationship with physical movement and your history in high-performance athletics to this point?\nOptions: [I am a lifelong competitor, with a history of consistent, structured training and discipline. | I am a late-bloomer, having only recently discovered a serious passion for intentional, high-intensity training. | I am returning to the arena after a significant hiatus, looking to rebuild my foundation and reclaim my physical potential.]"
+    },
+    {
+      "role": "user",
+      "content": "I am a lifelong competitor, with a history of consistent, structured training and discipline."
+    },
+    {
+      "role": "narrator",
+      "content": "Given that deep-rooted history, where does your focus currently lie? Are you seeking to push the boundaries of your raw physiological output, or are you more interested in mastering a highly specific, technical skill set?\nOptions: [Total output and intensity: Prioritizing raw power and peak capacity. | Technical mastery and nuance: Focusing on the subtle mechanics and strategic refinement of a discipline. | Versatility and fluid adaptability: Training for a broad, multifaceted athletic competency.]"
+    },
+    {
+      "role": "user",
+      "content": "Technical mastery and nuance: Focusing on the subtle mechanics and strategic refinement of a discipline."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the flow of mastering these technical nuances, do you find your focus is best sharpened by the solitary, meditative pursuit of individual perfection, or does the competitive interaction and dynamic strategy within a team environment push your standards to their limit?\nOptions: [Solitary focus: Deep, meditative individual practice where I control every variable. | Team synergy: Dynamic exchange and strategic feedback within a collaborative environment. | Adaptive mentorship: Engaging in a role where I refine my craft by leading and competing alongside others.]"
+    },
+    {
+      "role": "user",
+      "content": "Solitary focus: Deep, meditative individual practice where I control every variable."
+    },
+    {
+      "role": "narrator",
+      "content": "To help me map the final stage of your sporting journey, how do you define success in your practice: is it the internal satisfaction of a perfect execution, the objective measurement of a personal best, or the mastery of a complex, evolving strategy?\nOptions: [Internal aesthetic perfection: The pure satisfaction of executing a movement or skill with absolute technical flawlessness. | Objective metric progression: The cold, hard reality of beating previous data points and tracking incremental performance gains. | Strategic complexity: The mental satisfaction of solving a high-level puzzle or mastering a discipline that demands constant tactical evolution.]"
+    },
+    {
+      "role": "user",
+      "content": "Internal aesthetic perfection: The pure satisfaction of executing a movement or skill with absolute technical flawlessness."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "At 178cm and 78kg, you occupy a space where power meets precision\u2014the ideal structural centroid for an Edge Carver. Throughout your lifelong journey of structured training, you have cultivated a discipline that demands more than mere output; you require the internal quietude that only comes when you are completely in sync with the environment. When you stand at the starting gate of The Games, the world narrows down to the edge of your blade or ski. Every transition is an exercise in aesthetic perfection, a singular movement where your balance and gravitational pull align in a fleeting, perfect arc.\n\nYour history of consistent practice has prepared you for this moment, where you no longer compete solely against the field, but against the ideal of the movement itself. You find solace in the solitude of the mountain, where the only objective is the flawless execution of high-speed technical maneuvers. This pathway is not just about reaching the finish line; it is about the mastery of the curve and the refinement of a technical signature that is uniquely your own, proving that your lifelong commitment to high-performance athletics provides a foundation for sustained excellence well into your fifth decade."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "While the Edge Carver finds freedom in external kinetic velocity, the Steady Hand pathway calls you into a world of profound, absolute stillness. This trajectory utilizes the Archery Men's FITA Round Open classification, which supports athletes who rely on consistent, independent technical control, focusing on core stability and repetitive accuracy in an open format. Here, your physical density becomes a strategic asset; your 78kg frame provides a grounded, immovable anchor against environmental variables and the mental pressure inherent in The Games.\n\nThis adaptive path shifts your focus from high-velocity maneuvers to the microscopic alignment of your respiratory rhythm and fine motor control. You are not chasing speed; you are chasing the exact center of a target, refining your breath until it serves the arrow\u2019s trajectory. By utilizing the discipline you have built throughout your athletic history, you turn this technical challenge into a meditation on consistency. It represents a striking contrast to your more dynamic pursuits, offering a landscape where the smallest, most deliberate adjustment to your posture or focus defines the difference between a master and a novice."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A high-quality scouting report that effectively maps the user's desire for solitary, aesthetic technical mastery to two highly distinct but appropriate athletic pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The 178cm/78kg frame provides a solid, balanced center of gravity suitable for an Edge Carver, and the archetype beautifully matches the user's deep focus on technical perfection."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts explicitly integrate the user's preference for 'solitary focus' and 'internal aesthetic perfection' into the narrative framing of both sports."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The pathways offer a brilliant contrast between the high-speed kinetic control of the Edge Carver and the profound, anchored stillness of the Steady Hand."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions logically narrow the athlete's psychological profile, with the final fork between 'internal aesthetic perfection' and 'objective metric progression' providing meaningful differentiation."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with proper use of 'The Games' and valid adaptive classification terminology."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 1996,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "When you think back to that specific chapter in 1996, how were you engaging with your athletic training? Was it part of a formal, team-based environment, or were you already carving out your own path through independent, self-directed discipline?\nOptions: [Anchored in a formal school or youth club program with coaches and teammates. | A solitary pursuit: I spent my afternoons training alone, obsessively refining my own technique. | A hybrid approach: Balancing team commitments with a significant amount of independent, self-directed practice.]"
+        },
+        {
+          "role": "user",
+          "content": "A solitary pursuit: I spent my afternoons training alone, obsessively refining my own technique."
+        },
+        {
+          "role": "narrator",
+          "content": "As you look back to your body at 15, heading into the intensity of that era, how were you experiencing your physical development\u2014was it a time of explosive growth and boundless energy, or were you focused on stabilizing and perfecting the architecture of your movement before adding more load?\nOptions: [Explosive growth: I felt my body changing rapidly and needed to channel that raw, surging energy. | Architectural stability: I felt a deep need to master the control and precision of my movement before increasing the intensity. | Adaptive resilience: I was navigating the specific physical challenges of a growth-heavy period by focusing on durability.]"
+        },
+        {
+          "role": "user",
+          "content": "Architectural stability: I felt a deep need to master the control and precision of my movement before increasing the intensity."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 15, you were in a formative, self-directed chapter, prioritizing autonomous mastery over institutional team environments as you carved out your own identity.",
+        "physical_context": "Your training was defined by architectural stability, focusing on the meticulous refinement and control of your movement mechanics rather than rushing into explosive load-bearing.",
+        "athletic_engagement": "You maintained a high-intensity, solitary schedule of daily training, obsessive in your pursuit of technical perfection.",
+        "signals": [
+          "active_training",
+          "peak_fitness",
+          "student_era",
+          "competitive"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 13,
+          "matched_profile_name": "Edge Carver",
+          "pathway_standing": "Alpine Skiing / Speed Skating",
+          "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+          "scout_verdict": "At 15 years old during The Atlanta 1996 Games, your physical architecture of 178cm and 78kg provides the ideal leverage for high-velocity technical mastery. Your drive for autonomous, self-directed mastery finds its peak expression here; you treat the mountain as a blank canvas where every turn is a deliberate, aesthetic decision. This path demands a relentless obsession with the subtle interaction between your center of gravity and the terrain, rewarding the solitary hours you have spent refining your technical approach away from the distractions of the crowd.\n\nIn the adaptive pathway, your discipline finds a rigorous expression through the sit-ski classification for athletes with lower-limb impairments who maintain full functional trunk control. This rigorous setting is defined by the high-octane requirements of the sport, where your ability to balance and maneuver at extreme speeds using only your upper body and core becomes the primary focus of your technical refinement. Your history of consistent, high-intensity training becomes your greatest asset, as this category relies on an incredibly deep, instinctive connection between the athlete's trunk movement and the specific mechanics of the equipment, turning your physical discipline into a seamless extension of the mountain\u2019s geometry. You will find that this environment demands the same level of meditative, solitary preparation you have always practiced, offering a competitive sport pathway where precision and structural integrity define the limits of what is possible. By mastering the delicate equilibrium required to navigate terrain with speed and accuracy, you are not just participating; you are engaging in a sophisticated pursuit of technical excellence that rivals any other form of competitive engagement, demanding everything your 15-year-old self has been building toward in your commitment to autonomous mastery."
+        },
+        {
+          "matched_profile_id": 3,
+          "matched_profile_name": "Steady Hand",
+          "pathway_standing": "Marksmanship (Rifle/Pistol)",
+          "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+          "scout_verdict": "While the world outside moves with chaotic speed, you have carved out a space of absolute stillness. At 15, your development is defined by an uncanny capacity for respiratory regulation and total physiological silence. The 'Steady Hand' profile is not merely about hitting a target; it is about the cold, meditative satisfaction of total execution. In the context of The Atlanta 1996 Games, your dedication to technical perfection shifts from the kinetic to the cerebral, where your success is measured not by how fast you move, but by your ability to erase all external variables until only the focus remains.\n\nYour adaptive expression, the FITA Round Open archery classification, demands a different manifestation of your solitary ambition. Here, you are not battling gravity or friction, but the internal rhythm of your own heart. This discipline rewards the exact type of internal aesthetic perfection you crave\u2014a perfect release, a perfect follow-through. By utilizing the specific mechanics allowed within the FITA adaptive framework, you turn your 78kg frame into a stable, unmoving foundation. It is the ultimate expression of the 'Steady Hand' ethos: achieving absolute consistency in an environment that allows for no errors, mirroring the meticulous, self-directed chapter of your life where you refined every movement until it was flawless. This pursuit requires a profound level of focus that is entirely unique, allowing you to treat your body as a high-precision instrument that demands constant, thoughtful calibration to achieve a state of true flow within a competitive sport pathway."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "An excellent scouting report that accurately translates the user's preference for solitary, aesthetic technical mastery into two highly distinct athletic pathways.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "The 178cm/78kg build provides realistic leverage for Alpine Skiing and stability for Marksmanship, aligning perfectly with the 'Edge Carver' and 'Steady Hand' technical archetypes."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The verdicts directly incorporate the user's specific interview choices, weaving 'autonomous, self-directed mastery' and 'internal aesthetic perfection' deeply into the sport narratives."
+        },
+        "distinctness": {
+          "score": 9,
+          "reasoning": "The pathways contrast beautifully, offering one option focused on high-speed kinetic mastery and another focused on absolute physiological stillness."
+        },
+        "life_stage_coherence": {
+          "score": 8,
+          "reasoning": "The narrative appropriately frames the 15-year-old user as being in a 'Rising Star' developmental stage, noting 'At 15, your development is defined by' rather than treating them as a finished veteran."
+        },
+        "interview_quality": {
+          "score": 7,
+          "reasoning": "The questions successfully drill down into specific psychological drivers, featuring distinct options that clearly separate solitary aesthetic technicians from metric-driven power athletes."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Properly formats 'The Atlanta 1996 Games' and avoids any restricted terminology or NIL violations."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2008,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "How has the foundational discipline of your younger self shifted to meet the demands of this 2008 peak? Are you still refining those same mechanics, or has the intensity of your high-performance athletic pathway forced you to evolve your approach?\nOptions: [Refining the core: I have doubled down on my original technical foundation, stripping away every excess movement to achieve absolute efficiency. | Expanding the complexity: I have layered intense, modern physical demands onto my existing technical base to reach a new ceiling of performance. | Reinventing the movement: I have drastically overhauled my training philosophy to meet the specific tactical and physical pressures of this elite era.]"
+        },
+        {
+          "role": "user",
+          "content": "Refining the core: I have doubled down on my original technical foundation, stripping away every excess movement to achieve absolute efficiency."
+        },
+        {
+          "role": "narrator",
+          "content": "In the lead-up to those Games, what was the most significant external pressure\u2014be it professional, social, or familial\u2014that you had to deliberately filter out to maintain that intense, solitary focus on your craft?\nOptions: [Professional navigation: Balancing the rigorous demands of a career or advanced studies alongside the total intensity of my training. | Social expectations: The mounting pressure from family and peers to transition toward a 'standard' life path rather than continuing my athletic journey. | Internal legacy: The silent, driving pressure to validate the autonomous vision of mastery I first set for myself at 15.]"
+        },
+        {
+          "role": "user",
+          "content": "Internal legacy: The silent, driving pressure to validate the autonomous vision of mastery I first set for myself at 15."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 27, in the lead-up to The Beijing 2008 Games, you are operating as a disciplined architect of your own performance, filtering out external noise to honor the autonomous vision of mastery you first cultivated at 15.",
+        "physical_context": "You are in a state of peak technical efficiency, having spent years stripping away excess to ensure your body functions as a perfectly refined extension of your intent.",
+        "athletic_engagement": "You are fully committed to a solitary, meditative pursuit of technical flawlessness, prioritizing the internal aesthetic of movement over external metrics.",
+        "signals": [
+          "peak_fitness",
+          "competitive",
+          "active_training"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 3,
+          "matched_profile_name": "Steady Hand",
+          "pathway_standing": "Marksmanship (Rifle/Pistol)",
+          "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+          "scout_verdict": "At 27, standing on the threshold of The Beijing 2008 Games, your trajectory reflects the culmination of a decade spent refining your internal environment. You have moved past the raw curiosity of your youth to become a precise architect of your own focus. Marksmanship offers the ultimate laboratory for your lifelong commitment to technical flawlessness, where your 178cm, 78kg frame provides the rock-solid foundation necessary to quiet the nervous system and achieve absolute stillness.\n\nIn this discipline, your disdain for external validation in favor of internal aesthetic perfection becomes a competitive edge. While others are consumed by the volatility of the arena, you treat each shot as a meditative iteration of the control you first championed at 15. The Beijing 2008 Games represent the moment your solitary dedication turns into a singular point of impact, demonstrating that true mastery is not found in the loudness of the competition, but in the silence between heartbeats.\n\nFor the adaptive pathway in target precision, your focus remains identical: the marriage of stillness and mechanical precision. By navigating the specific technical requirements of adaptive archery, you utilize your internal control to manage equipment and environmental variables with absolute discipline. This pursuit demands the same dedication to internal aesthetic perfection, where the rhythm of your movement is refined through constant, meditative practice. Like the standing discipline, this pathway offers a space where you remain an autonomous master of your own performance, proving that true success is defined by the flawlessness of the process."
+        },
+        {
+          "matched_profile_id": 13,
+          "matched_profile_name": "Edge Carver",
+          "pathway_standing": "Alpine Skiing / Speed Skating",
+          "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+          "scout_verdict": "At The Beijing 2008 Games, your standing path in alpine skiing or speed skating channels your expertise into the unforgiving language of gravity and momentum. This discipline demands a mechanical, analytical precision that you have cultivated since age 15, applying it to the physics of edge engagement and constant deceleration control. You are not waiting for the perfect moment\u2014you are generating it through fluid, technical adjustments on the mountain or the track, proving that your mastery of movement is as potent in motion as it is in total repose.\n\nThe adaptive pathway, specifically the LW12 classification in adaptive alpine skiing, serves as a visceral extension of your technical rigor. Utilizing a sit-ski to navigate high-velocity terrain, you are required to master complex mechanical nuances and center-of-gravity shifts that align perfectly with your lifelong pursuit of movement mechanics. By focusing on the intricate physics of your equipment and the subtle interplay between speed and control, you translate your search for internal perfection into the raw, wind-swept reality of high-speed performance. Both pathways demand the same high-level strategic evolution, ensuring your legacy is defined by your command over the environment and your unwavering internal aesthetic."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A very strong scouting report that excellently translates the user's psychological drivers into fitting archetypes, featuring highly coherent life-stage integration.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "The user's average build (178cm/78kg) and explicitly stated desire for solitary, aesthetic flawlessness align perfectly with the Steady Hand archetype and the demands of marksmanship."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The verdict deeply integrates the user's specific interview choices, actively incorporating phrases like 'internal aesthetic perfection' and 'solitary dedication' into the narrative."
+        },
+        "distinctness": {
+          "score": 6,
+          "reasoning": "While the adaptive sports selected are distinct from the standing ones, the adaptive narrative for Target Precision heavily repeats the same phrases and themes from the standing Marksmanship verdict."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "The narrative perfectly captures the 27-year-old 'Elite Peak' stage by describing the user as having 'moved past the raw curiosity of your youth' to reach the 'culmination of a decade' of practice."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions successfully drilled down from general athletic background to highly specific psychological differentiators, offering distinct, non-overlapping options."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean output with proper formatting for 'The Beijing 2008 Games' and no restricted trademark violations."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

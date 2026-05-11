@@ -8,7 +8,7 @@ import logging
 from google import genai
 from google.genai import types
 
-MODEL = "gemini-2.5-pro-preview-05-06"
+MODEL = "gemini-3.1-pro-preview"
 
 _client: genai.Client | None = None
 logger = logging.getLogger("benchmark.master_evaluator")

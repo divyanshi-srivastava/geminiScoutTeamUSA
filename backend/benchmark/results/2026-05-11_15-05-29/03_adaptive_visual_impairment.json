@@ -1,0 +1,224 @@
+{
+  "persona_id": "03_adaptive_visual_impairment",
+  "persona_label": "Adaptive athlete \u2014 partial visual impairment",
+  "biometrics": {
+    "height_cm": 181,
+    "weight_kg": 83,
+    "birth_year": 1998,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe your current relationship with movement and training\u2014is it the absolute center of your daily routine, or more of a focused, periodic pursuit for specific challenges?\nOptions: [A core daily commitment: My life revolves around a strict, ongoing training schedule. | Event-focused: I cycle my intensity to peak for specific goals or seasons. | Consistent habit: I maintain a high-performance standard as a fundamental part of my lifestyle.]"
+    },
+    {
+      "role": "user",
+      "content": "A core daily commitment: My life revolves around a strict, ongoing training schedule."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "At 181cm and 83kg, you possess the structural density that acts as a natural anchor for technical precision. Your unwavering commitment to a daily training rhythm provides the perfect foundation for the singular focus required to succeed in the high-stakes environment of the Los Angeles 2028 Games, where every fraction of a millimeter defines the podium.\n\nIn the adaptive pathway, you would find yourself at the Archery Men's FITA Round Open. This category facilitates competition for athletes whose physical profile requires specialized equipment or specific positioning, such as those with lower-limb functional needs who compete from a stable base. Your established habit of methodical, repetitive training translates directly here, where the ability to manage your breathing and heart rate under extreme pressure is the true measure of a champion."
+    },
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "Your physique reveals a high-output engine built for total athletic versatility rather than isolated movement. By channelling your core daily training habit into the decathlon, you are preparing to test the absolute limits of your power-to-weight ratio across ten distinct disciplines. The challenge here is not just physical, but one of pacing and recovery, demanding a lifestyle dedicated to constant, rigorous self-optimization.\n\nThis shift towards multi-discipline mastery is mirrored in the Pentathlon P44. The P44 classification is designated for ambulatory athletes with a lower-limb impairment who compete in a standing capacity. In this arena, your daily commitment would pivot toward the art of efficiency; you must balance the explosive burst required for jumping and throwing with the sustained, grinding endurance needed to dominate the track portions of the pentathlon, proving that your capacity for development is as wide as the sport itself."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "A solid report that creatively maps the user's build to contrasting athletic domains, though limited by a very brief and superficial interview.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "Mapping an 181cm, 83kg frame to the 'Swiss Army' Decathlon profile fits a versatile, powerful build perfectly, and the reasoning for Marksmanship ('structural density') is plausible."
+    },
+    "personalization": {
+      "score": 7,
+      "reasoning": "The scout directly incorporates the user's sole interview answer regarding their 'core daily commitment' and applies it to the specific training demands of each sport."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways introduce specific classifications like P44 and offer distinct tactical challenges, such as efficiency and pacing, compared to the standing options."
+    },
+    "interview_quality": {
+      "score": 3,
+      "reasoning": "The interview consists of a single question where all options are merely slight variations of 'I train regularly', offering very little true differentiation of athletic potential."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution, correctly using the permitted 'Los Angeles 2028 Games' format without any restricted trademark violations."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2024,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you approached The Paris 2024 Games, how were you managing the demands of life outside the gym? Were you singularly focused on the arena, or balancing significant external pressures?\nOptions: [Laser focus: Nothing existed outside of my sporting journey and training blocks. | The balancing act: Managing demanding career milestones or studies alongside training. | Transition phase: Navigating a major personal or professional shift during those months.]"
+        },
+        {
+          "role": "user",
+          "content": "The balancing act: Managing demanding career milestones or studies alongside training."
+        },
+        {
+          "role": "narrator",
+          "content": "Looking back at that era heading into The Paris 2024 Games, how was your body treating you? Did you feel physically invincible, or was that period more about navigating the nuances of recovery and smart, high-efficiency training?\nOptions: [Peak conditioning: My body was in a state of flow, thriving under the pressure and heavy training volume. | The recovery grind: I was managing fatigue and small, nagging issues, forcing me to prioritize efficiency over brute force. | Technical adaptation: I had to shift my focus toward precision and tactical awareness to compensate for limited recovery time.]"
+        },
+        {
+          "role": "user",
+          "content": "The recovery grind: I was managing fatigue and small, nagging issues, forcing me to prioritize efficiency over brute force."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "The user was navigating the intense dual pressure of high-performance athletics and professional career milestones, requiring strict discipline to maintain their output.",
+        "physical_context": "The body was managed through a 'recovery grind,' necessitating a pivot toward tactical efficiency and smart load management rather than brute-force intensity.",
+        "athletic_engagement": "Training remained a non-negotiable core daily commitment, serving as the bedrock of their life even amidst demanding professional obligations.",
+        "signals": [
+          "active_training",
+          "recovery_mode",
+          "career_shift"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 3,
+          "matched_profile_name": "Steady Hand",
+          "pathway_standing": "Marksmanship (Rifle/Pistol)",
+          "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+          "scout_verdict": "At 26 years old, standing at 181cm and 83kg, you enter The Paris 2024 Games at the exact intersection of professional maturity and physical peak. Your commitment to training as a non-negotiable daily anchor amidst a high-pressure career finds its ultimate expression here. This pathway demands not just physical output, but an absolute mastery over the physiological 'recovery grind'\u2014using your breath and heart rate as instruments of control to maintain composure when the stakes of your professional life spill over into the arena.\n\nThe Target Precision pathway, specifically the Men's FITA Round Open, is designed for athletes who demonstrate the functional ability to compete at the highest level of stability and aim. By leveraging your disciplined frame and the tactical efficiency you\u2019ve cultivated, this discipline rewards the 'Steady Hand' who views a split-second pause not as a break, but as a tactical advantage. It is a pursuit where your ability to find stillness amidst the noise of a career-heavy lifestyle becomes your greatest competitive asset."
+        },
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Marksmanship (Rifle/Pistol)",
+          "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+          "scout_verdict": "If your first path is about finding silence in the storm, this is about finding flow in the resistance. Shifting from the static precision of the range to the unrelenting cadence of the road, the Handcycling H3 class provides a secondary dimension that fully utilizes your deep aerobic engine. The H3 classification, specifically designed for athletes with lower-limb impairment who demonstrate significant core stability requirements for a hand-cranked configuration, demands a unique integration of upper-body power and mechanical efficiency\u2014a perfect match for someone who has learned to manage their total energy expenditure with surgical care.\n\nAt 26, this is your laboratory for sustainable intensity. While your career demands constant, high-level cognitive focus, this path asks for something entirely different: the ability to lock into a rhythmic grind and maintain it through the late-stage fatigue of The Paris 2024 Games. It is here, pushing the gears against the tarmac, that you reconcile your drive for professional achievement with the pure, mechanical joy of endurance, proving that true power lies in the consistency of the rhythm you maintain when the pressure is at its highest."
+        }
+      ],
+      "eval_result": {
+        "overall": 3,
+        "summary": "A structurally flawed report that hallucinates personal background details, suffers from an extremely poor interview phase, and bizarrely duplicates the standing sport pathway across two completely different archetypes.",
+        "authenticity": {
+          "score": 4,
+          "reasoning": "While the biometrics (181cm/83kg) are plausible for general athletes, listing 'Marksmanship' as the standing pathway for a 'Road Machine' aerobic endurance profile makes no logical sense."
+        },
+        "personalization": {
+          "score": 4,
+          "reasoning": "The narrative acknowledges the user's 'daily commitment' answer, but heavily hallucinates a 'high-pressure career' and professional struggles that were never mentioned in the single interview turn."
+        },
+        "distinctness": {
+          "score": 3,
+          "reasoning": "Although the adaptive pathways are distinct (Archery vs. Handcycling), the standing pathway is inexplicably identical ('Marksmanship') for both the Steady Hand and Road Machine archetypes."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Targeting the Elite Peak stage at age 26, the verdict perfectly captures this era with phrases like 'the exact intersection of professional maturity and physical peak'."
+        },
+        "interview_quality": {
+          "score": 2,
+          "reasoning": "The interview consisted of only one generic question about training frequency, failing entirely to probe genuine athletic differentiators or create meaningful branching paths."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Appropriately uses 'The Paris 2024 Games' without using restricted Olympic terminology or violating NIL rules."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2032,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "How has your relationship with the 'recovery grind' evolved over these eight years? Has your training philosophy shifted from the sheer output of your younger years toward a more nuanced, sustainable mastery of your physical state?\nOptions: [Refining the Engine: I focus on extreme technical precision to maximize performance while minimizing physiological strain. | The Veteran's Resilience: I\u2019ve embraced a 'slower-but-stronger' philosophy that prioritizes durability and smart, high-yield intensity. | Adapting the Load: I\u2019ve shifted my training toward recovery-heavy, low-impact methodologies that keep me ready for elite-level competition.]"
+        },
+        {
+          "role": "user",
+          "content": "Adapting the Load: I\u2019ve shifted my training toward recovery-heavy, low-impact methodologies that keep me ready for elite-level competition."
+        },
+        {
+          "role": "narrator",
+          "content": "As you prepare for this final, high-yield competitive arc, what is life outside of training asking of you? How are you balancing the intensity required for The Brisbane 2032 Games with your broader professional and personal landscape?\nOptions: [Professional Leadership: I am balancing the high-performance athletics pathway with a demanding career, using my sport as a foundation for discipline. | The Mentor\u2019s Path: I am integrating my athletic journey with coaching and guiding the next generation, blending my pursuit with my role as a leader. | Simplified Focus: I have intentionally pared back external obligations to prioritize this singular chapter, treating The Brisbane 2032 Games as my primary mission.]"
+        },
+        {
+          "role": "user",
+          "content": "Simplified Focus: I have intentionally pared back external obligations to prioritize this singular chapter, treating The Brisbane 2032 Games as my primary mission."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 34, you have intentionally pared back external professional and social obligations, positioning The Brisbane 2032 Games as the singular, defining mission of this life chapter.",
+        "physical_context": "Your physical state is defined by a mastery of 'Adapting the Load,' utilizing recovery-heavy, low-impact methodologies to sustain elite-level output without the wear of high-impact repetition.",
+        "athletic_engagement": "You maintain a core daily commitment to your training, viewing this period as a final, high-yield competitive arc where every session is calibrated for maximum performance.",
+        "signals": [
+          "active_training",
+          "peak_fitness",
+          "major_life_event"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 3,
+          "matched_profile_name": "Steady Hand",
+          "pathway_standing": "Marksmanship (Rifle/Pistol)",
+          "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+          "scout_verdict": "At 34, you have entered a life chapter defined by the shedding of external noise, allowing you to pour your focus into the singular pursuit of excellence at The Brisbane 2032 Games. Your 181cm, 83kg frame provides the ideal, grounded foundation for the unwavering stillness required in top-tier marksmanship. You have traded brute-force intensity for a tactical mastery of the internal state, an evolution that transforms your daily, disciplined training into a weaponized form of mental and physical control.\n\nIn the adaptive realm, your path moves toward the intense focus of precision archery disciplines. These events, which are central to the competitive sport pathway for athletes with specific physical profiles, demand an extraordinary synthesis of core stability and fine motor control. Here, your 'Adapting the Load' methodology is essential; it is not about the volume of the draw, but the absolute, repeatable precision of the release. Your commitment to high-yield, low-impact training ensures you arrive at the firing line with a nervous system primed for the micro-adjustments that separate a champion from the field."
+        },
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+          "scout_verdict": "The road is your canvas, and at 34, you have refined your artistry to a level of cold, tactical efficiency. By paring back your professional and social obligations, you have cleared the path to treat your training for The Brisbane 2032 Games as the central mission of your life. Your 181cm frame is a natural engine for endurance, and your history of high-performance commitment has built an aerobic reservoir that makes you a formidable presence in any long-distance peloton. You aren't just training; you are calibrating a machine for the ultimate veteran campaign.\n\nTransitioning to the adaptive pathway of hand-cycling, you find a secondary dimension of your endurance capacity. This is not a shift away from intensity, but a pivot into a more specialized, high-efficiency cardio modality. Hand-cycling rewards the exact same tactical pacing and load management you have spent your career refining. By applying your disciplined daily approach, you leverage your upper-body mechanics to maintain speeds and rhythms that turn the road into a theatre of strategic dominance, proving that competitive excellence is defined by the depth of your focus."
+        }
+      ],
+      "eval_result": {
+        "overall": 5,
+        "summary": "The report effectively captures the veteran life stage and offers plausible archetype matches, but suffers from severe hallucination in personalization due to an excessively short one-question interview.",
+        "authenticity": {
+          "score": 6,
+          "reasoning": "At 181cm and 83kg, the user is slightly heavy for elite climbing or triathlon, though suitable for flat-stage cycling, while marksmanship easily accommodates this solid, grounded build."
+        },
+        "personalization": {
+          "score": 4,
+          "reasoning": "The narrative hallucinates an 'Adapting the Load methodology' and claims the user is 'paring back professional and social obligations,' none of which were mentioned in their single interview answer."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The adaptive pathways offer strong, distinct mechanical alternatives, intelligently translating endurance into upper-body handcycling and precision into adaptive archery."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Targeting age 34 at the Veteran stage, the verdict brilliantly reflects this with phrases like 'traded brute-force intensity for a tactical mastery' and 'ultimate veteran campaign.'"
+        },
+        "interview_quality": {
+          "score": 3,
+          "reasoning": "The interview was only a single turn long, failing to probe any genuine athletic differentiators, movement styles, or physical history before jumping to a conclusion."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean compliance, correctly utilizing 'The Brisbane 2032 Games' and avoiding any restricted terms or real athlete names."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

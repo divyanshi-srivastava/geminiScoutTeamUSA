@@ -1,0 +1,240 @@
+{
+  "persona_id": "08_above_knee_amputee_sprinter",
+  "persona_label": "Above-knee amputee \u2014 para-sprinter",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 73,
+    "birth_year": 2000,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our conversation, how would you describe your historical approach to high-performance athletics and physical development?\nOptions: [Tactical team environments that rely on coordination, strategy, and collective performance. | Individual disciplines emphasizing raw explosive power, speed, and immediate physical output. | Endurance-driven challenges focusing on cardiovascular capacity, grit, and sustained pacing.]"
+    },
+    {
+      "role": "user",
+      "content": "Individual disciplines emphasizing raw explosive power, speed, and immediate physical output."
+    },
+    {
+      "role": "narrator",
+      "content": "When you look at your current training habits, what does your typical week look like in terms of how you structure your intensity?\nOptions: [Structured, coach-led cycles focused on specific explosive metrics and technical refinement. | Self-directed, high-intensity intervals that I fit into my daily schedule whenever possible. | Experimental and variable; I prefer testing my limits through different modalities and spontaneous high-effort bursts.]"
+    },
+    {
+      "role": "user",
+      "content": "Structured, coach-led cycles focused on specific explosive metrics and technical refinement."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking ahead, what defines the core 'why' behind your current pursuit of high-performance athletics?\nOptions: [Chasing competitive titles and proving myself against the best in the arena. | Seeking to master complex mechanical skills and push the boundaries of my own physical capacity. | Building a sustainable legacy of high-performance movement and long-term athletic health.]"
+    },
+    {
+      "role": "user",
+      "content": "Chasing competitive titles and proving myself against the best in the arena."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "Your 175cm frame is a finely tuned instrument built for the explosive demands of the 100m and 200m tracks. At 26, your commitment to rigorous, coach-led cycles provides the exact technical foundation needed to master the drive phase and maintain high-velocity mechanics. When you step into the blocks at The Games, you are not just running; you are executing a precise kinetic sequence that turns raw potential into immediate, world-class acceleration, perfectly suited for a competitive seeker who measures success in milliseconds.\n\nIn the adaptive pathway, specifically the T44 classification, your journey takes on a higher technical dimension. T44 designates ambulatory athletes with a lower-limb impairment who compete with specialized carbon-fiber prosthetics, requiring exceptional core stability and rhythmic coordination. For an athlete like you, who thrives on structured, repeatable intensity, this pathway demands that you master the complex synergy between your body and the hardware. It transforms your desire to prove yourself into a pursuit of biomechanical mastery, where every sprint becomes an expression of how efficiently you can channel your explosive power through the blade."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's 100 kg)",
+      "scout_verdict": "If your speed defines your potential, your tactical intelligence defines your dominance. Wrestling allows you to move away from the linear demands of the track and into a domain where your 73kg build becomes an asset for leverage, weight distribution, and grounded combat. Your expressed hunger for competitive titles finds a new home here, where each match is a game of physical chess requiring you to dictate the pace, exploit your opponent\u2019s shifting center of gravity, and apply force in tight, chaotic environments.\n\nBy contrast, shifting this same intensity into Powerlifting offers a singular focus on controlled, maximal output. This is the art of applying force against stationary resistance\u2014a test of discipline that rewards the 'structured cycles' you have cultivated in your training. Unlike the reactive, combat-oriented world of the mat, this pathway demands a deep, meditative precision in the squat, bench, and deadlift. It pivots your athletic profile toward total physical sovereignty, where the challenge is not against an opponent, but the absolute limit of your structural integrity, allowing you to build the kind of legacy that is measured in pure, unadulterated strength at The Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "The report provides a highly personalized narrative that aligns well with the user's explosive athletic profile, but it stumbles on the technical accuracy of the secondary adaptive pathway.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While the standing pathways perfectly match a 175cm/73kg explosive athlete, the adaptive Powerlifting pathway mistakenly recommends the 100kg weight class and includes squats and deadlifts, which are not contested in Para Powerlifting."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts excellently integrate the user's specific interview choices, directly connecting their 'structured, coach-led cycles' and hunger for 'competitive titles' to the physical demands of the sports."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The pathways offer clear contrasts, particularly in the Mat Technician profile where the reactive chaos of wrestling is distinctly juxtaposed against the absolute, static force production of powerlifting."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The interview progresses logically from historical approach to daily structure and core motivation, offering functionally distinct options that clearly differentiate the athlete's psychological and physical profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with no prohibited terms used, appropriately utilizing 'The Games' as a compliant placeholder."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2024,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "When you think back to your life and training setup leading into the Paris 2024 Games, which of these best describes your world at that time?\nOptions: [Fully immersed in a singular, high-performance center, living and breathing training with one dedicated team. | Juggling the intensity of elite training alongside other significant life commitments, such as academic pursuits or a professional career. | Navigating a nomadic training lifestyle, frequently traveling to different hubs to push boundaries with various coaching perspectives.]"
+        },
+        {
+          "role": "user",
+          "content": "Fully immersed in a singular, high-performance center, living and breathing training with one dedicated team."
+        },
+        {
+          "role": "narrator",
+          "content": "Thinking back to that specific chapter in Paris, how was your body treating you? Were you navigating a period of peak health and momentum, or were you managing the wear and tear that often comes with such an intense, coach-led environment?\nOptions: [Peak physical condition; I felt indestructible and was hitting all my personal performance benchmarks. | Managing recurring physical stress; I was balancing training intensity with the need for recovery and injury prevention. | In a state of transition or recovery; I was working through a specific physical hurdle or returning to form just in time for the Games.]"
+        },
+        {
+          "role": "user",
+          "content": "Managing recurring physical stress; I was balancing training intensity with the need for recovery and injury prevention."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "Deeply embedded within a singular, elite high-performance center, living in a closed ecosystem where every resource was focused on the team's singular competitive goal.",
+        "physical_context": "Navigating the fine line between pushing for explosive peak performance and managing the chronic physical stress of a high-load, coach-led regimen.",
+        "athletic_engagement": "Fully immersed in a professionalized training environment leading into The Paris 2024 Games, prioritizing strict technical refinement and structural durability.",
+        "signals": [
+          "active_training",
+          "competitive",
+          "injury_mentioned",
+          "recovery_mode"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 4,
+          "matched_profile_name": "Block Starter",
+          "pathway_standing": "100m/200m Sprints",
+          "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+          "scout_verdict": "In the hallowed atmosphere of the elite training center leading into The Paris 2024 Games, your 175cm, 73kg frame has become a finely tuned engine for explosive velocity. Your dedication to structured, coach-led cycles has allowed you to master the brutal mechanics of the start\u2014the moment where raw power meets technical precision. At 24, you are operating at the height of your physical potential, channeling every ounce of intensity into the pursuit of competitive perfection. You understand that in the 100m/200m sprints, the difference between the podium and the rest of the pack is measured in milliseconds, and your commitment to this high-performance pathway reflects your relentless desire to prove yourself in the arena.\n\nYour adaptive secondary expression through T44 ambulatory sprints provides a vital continuation of this explosive legacy. The T44 classification specifically covers athletes with a lower-limb impairment who compete while standing, requiring a unique integration of gait cycle mechanics and prosthetic-assisted propulsion. For an athlete of your caliber, this pathway transforms your mastery of linear acceleration into a demonstration of biomechanical adaptation. It is not merely about running; it is about harmonizing your body\u2019s explosive output with the technical demands of adaptive equipment, ensuring that your pursuit of competitive titles remains as sharp and formidable as it was on the track."
+        },
+        {
+          "matched_profile_id": 6,
+          "matched_profile_name": "Mat Technician",
+          "pathway_standing": "Wrestling",
+          "pathway_adaptive": "Powerlifting (e.g., Men's 100 kg)",
+          "scout_verdict": "Within the high-pressure ecosystem of your training center, you have developed a reputation as a master of the mat\u2014a technician who views combat not as chaos, but as a complex physical equation to be solved. As you prepare for The Paris 2024 Games, your 24-year-old physique is defined by its durability and tactical intelligence. You thrive on the intimacy of one-on-one competition, where your ability to dictate pace, control core stability, and execute structural leverage makes you a terrifying opponent. Your journey is defined by the grit to sustain high-load physical challenges, pushing beyond the threshold where others typically fatigue.\n\nTo complement this dominance, your adaptive pathway in powerlifting at the 100kg class shifts your focus from reactive combat to the pure, crushing manifestation of force. Powerlifting here demands a level of ground-based mechanical control that mirrors your wrestling foundation, emphasizing the absolute stabilization of your structure under massive load. While your wrestling profile focuses on the strategic destruction of an opponent's balance, this adaptive pathway refines your capacity for controlled, sustained power, turning your body into an immovable object. It is a profound departure from the dynamic movement of the mat, instead rewarding the tactical patience and core-bracing prowess that you have honed over years of rigorous, coach-led development."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "The report effectively integrates the user's interview responses and life stage into a compelling narrative, though it contains a slight weight class mismatch in the second profile.",
+        "authenticity": {
+          "score": 7,
+          "reasoning": "The 'Block Starter' archetype perfectly matches the user's 175cm/73kg frame and explosive preference, but the second profile recommends the 100kg powerlifting class for a 73kg athlete, which is a physical mismatch."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The verdict explicitly incorporates the user's exact biometrics and their specific interview choices, such as their preference for 'structured, coach-led cycles' and 'chasing competitive titles'."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The pathways in the second profile offer a highly distinct comparison, contrasting the reactive, dynamic combat of Wrestling with the static, ground-based mechanical control of Powerlifting."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "The Elite Peak life stage is perfectly captured for the 24-year-old user with the phrase 'operating at the height of your physical potential'."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The narrator provided strong, distinct options that meaningfully separated team, endurance, and explosive athletes, followed by good inquiries into training structure and competitive mindset."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean; correctly uses 'The Paris 2024 Games' without any unauthorized standalone Olympic/Paralympic terms."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2032,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you head into this specific chapter of your career, how has your approach to managing your physical engine evolved since those intensive, coach-led days in 2024?\nOptions: [Prioritizing 'precision-load' training, focusing on movement quality and recovery to maintain peak output for longer. | Doubling down on explosive power, refining my technical efficiency to ensure my top-end speed remains superior to the field. | Shifting toward tactical mastery, using my deep understanding of the competitive arena to out-strategize younger challengers.]"
+        },
+        {
+          "role": "user",
+          "content": "Doubling down on explosive power, refining my technical efficiency to ensure my top-end speed remains superior to the field."
+        },
+        {
+          "role": "narrator",
+          "content": "As you prepare for The Brisbane 2032 Games, how has your life outside the training environment evolved to support this sustained pursuit of explosive dominance?\nOptions: [I have integrated my professional career and athletic goals, creating a streamlined, multi-faceted daily rhythm. | I have leaned heavily into a mentorship role, where my personal training benefits from the wisdom I pass down to younger athletes. | I have simplified my environment entirely, prioritizing isolation and complete focus on the final goal of the 2032 games.]"
+        },
+        {
+          "role": "user",
+          "content": "I have simplified my environment entirely, prioritizing isolation and complete focus on the final goal of the 2032 games."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "The user has transitioned from a highly managed, team-based environment in 2024 to a strictly disciplined, monastic period of self-imposed isolation to focus exclusively on their final peak at the Brisbane 2032 Games.",
+        "physical_context": "The user is doubling down on explosive power and technical refinement, moving beyond the raw load of their earlier years into a more precise, high-efficiency phase of their athletic career.",
+        "athletic_engagement": "Operating at an elite, competitive level with a singular, laser-focused commitment to their athletic journey.",
+        "signals": [
+          "peak_fitness",
+          "competitive",
+          "active_training"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 4,
+          "matched_profile_name": "Block Starter",
+          "pathway_standing": "100m/200m Sprints",
+          "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+          "scout_verdict": "At 32, you have successfully shed the high-noise environment of your 2024 team-based training, stepping into a season of monastic clarity that suits your pursuit of competitive titles. Your 175cm, 73kg frame is the perfect engine for the high-velocity requirements of the 100m and 200m sprints, where every millisecond counts toward your final peak at The Brisbane 2032 Games. Your transition to this focused, coach-led regimen has sharpened your explosive start mechanics, moving them from raw force to refined, high-efficiency power.\n\nIn the adaptive category, your profile aligns with the T44 classification, which designates ambulatory athletes with a lower-limb impairment who compete in a standing position. This path demands the very same fast-twitch dominance you have cultivated throughout your career. By leveraging your maturity and the disciplined intensity of your current life stage, you are not merely preparing to participate; you are refining a singular, explosive toolset designed to dominate the starting blocks in Brisbane."
+        },
+        {
+          "matched_profile_id": 13,
+          "matched_profile_name": "Edge Carver",
+          "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+          "scout_verdict": "While the track demands raw explosive power, your foray into technical alpine movement represents a necessary, contrasting expression of your athletic capacity. Here, the focus shifts from the linear force of the sprint to the complex, gear-reliant physics of the mountain. This path requires a specialized type of spatial intelligence, grounding your intense, competitive energy into the split-second decisions required at extreme velocities.\n\nThis is best represented by the LW12 classification, which includes athletes with a lower-limb impairment who compete using a sit-ski, placing immense demand on core control and upper-body precision to maintain stability at speed. Unlike the explosive, singular rhythm of your sprint training, this technical path challenges you to master the nuances of edge control and descent geometry. It acts as the perfect counterbalance to your monastic training, offering a high-stakes, gear-dependent environment where your matured discipline translates into superior technical agility."
+        }
+      ],
+      "eval_result": {
+        "overall": 7,
+        "summary": "The report effectively maps the user's biometric and explosive training profile to highly distinct track and alpine archetypes, though it suffers from a minor hallucination regarding their athletic history.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "A 175cm, 73kg frame is an incredibly realistic build for a male sprinter, and the Block Starter archetype perfectly mirrors the user's self-reported focus on raw explosive power and speed."
+        },
+        "personalization": {
+          "score": 5,
+          "reasoning": "While the narrative incorporates the user's desire for 'competitive titles' and a 'coach-led regimen', it incorrectly assumes they transitioned away from 'team-based training' despite the user stating their history was in individual disciplines."
+        },
+        "distinctness": {
+          "score": 9,
+          "reasoning": "The pathways are exceptionally distinct, contrasting the linear, fast-twitch track environment of ambulatory sprints with the gear-dependent, spatial intelligence required for Para-Alpine sit-skiing."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Targeting age 32 (Elite Peak), the verdict appropriately emphasizes 'leveraging your maturity' and 'matured discipline' rather than raw developmental potential, fitting the timeframe perfectly."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The narrator asked strong, differentiating questions that logically separated explosive athletes from endurance ones, and competitive mentalities from mastery-driven ones."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean execution with correct 'The Brisbane 2032 Games' formatting and no unauthorized terminology or NIL violations."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

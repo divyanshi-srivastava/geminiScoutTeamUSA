@@ -8,9 +8,15 @@ Usage (from the backend/ directory):
     python -m benchmark.run_benchmark
     python -m benchmark.run_benchmark --url http://localhost:8000
     python -m benchmark.run_benchmark --persona 03_adaptive_visual_impairment
+    python -m benchmark.run_benchmark --regenerate latest
+    python -m benchmark.run_benchmark --regenerate 2026-05-11_15-05-29
 
 The backend server must be running before you start the benchmark.
 Each run appends one line to benchmark/results/history.jsonl for trend tracking.
+
+`--regenerate` re-runs the master evaluator on an already-completed run's
+per-persona JSONs and rewrites report.md / summary.json in place — useful for
+iterating on the master prompt or report formatting without re-running personas.
 """
 import os
 import sys
@@ -193,6 +199,111 @@ async def _run(backend_url: str, personas: list, results_dir: str, parallel: int
     return report_md
 
 
+def _resolve_run_dir(run_ref: str, results_dir: str) -> str:
+    """Resolve a run reference (timestamp, 'latest', or path) to an absolute directory."""
+    if run_ref == "latest":
+        candidates = [
+            d for d in glob.glob(os.path.join(results_dir, "*"))
+            if os.path.isdir(d) and os.path.isfile(os.path.join(d, "summary.json"))
+        ]
+        if not candidates:
+            raise FileNotFoundError(f"No completed run directories found in {results_dir}")
+        return max(candidates, key=os.path.getmtime)
+
+    if os.path.isdir(run_ref):
+        return os.path.abspath(run_ref)
+
+    candidate = os.path.join(results_dir, run_ref)
+    if os.path.isdir(candidate):
+        return candidate
+
+    raise FileNotFoundError(
+        f"Could not resolve run '{run_ref}' as a path, timestamp, or 'latest' under {results_dir}"
+    )
+
+
+def _load_run_results(run_dir: str) -> list:
+    """Load all per-persona result JSONs from a completed run directory."""
+    files = sorted(
+        f for f in glob.glob(os.path.join(run_dir, "*.json"))
+        if os.path.basename(f) != "summary.json"
+    )
+    if not files:
+        raise FileNotFoundError(
+            f"No per-persona result files found in {run_dir}. "
+            "A completed run must have <persona_id>.json files alongside summary.json."
+        )
+    results = []
+    for f in files:
+        with open(f) as fp:
+            results.append(json.load(fp))
+    return results
+
+
+async def _regenerate(run_dir: str) -> None:
+    """Re-run the master evaluator on an existing run and rewrite report.md + summary.json."""
+    results = _load_run_results(run_dir)
+    run_ts = os.path.basename(os.path.normpath(run_dir))
+
+    logger.info("")
+    logger.info("╔══════════════════════════════════════════════╗")
+    logger.info("║  REGENERATING MASTER REPORT                  ║")
+    logger.info("╚══════════════════════════════════════════════╝")
+    logger.info("  Run dir       : %s", run_dir)
+    logger.info("  Persona files : %d", len(results))
+    logger.info("")
+
+    successful = [r for r in results if not r.get("error") and r.get("eval_result")]
+    if not successful:
+        logger.warning("No successful persona results — skipping master evaluator LLM call")
+        master = {
+            "pipeline_score": None,
+            "run_summary": "All personas failed or returned no eval.",
+            "strengths": [], "weaknesses": [],
+            "critical_issues": [], "suggested_improvements": [],
+            "dimension_analysis": {},
+        }
+    else:
+        master = await generate_master_report(successful)
+
+    # Preserve existing summary fields (backend_url, rounds, etc.) when present.
+    summary_path = os.path.join(run_dir, "summary.json")
+    summary: dict = {}
+    if os.path.isfile(summary_path):
+        try:
+            with open(summary_path) as f:
+                summary = json.load(f)
+        except (json.JSONDecodeError, OSError) as e:
+            logger.warning("Could not read existing summary.json (%s); writing fresh.", e)
+
+    summary["run_timestamp"] = run_ts
+    summary["persona_count"] = summary.get("persona_count", len({r.get("persona_id") for r in results}))
+    summary["total_runs"] = summary.get("total_runs", len(results))
+    summary["success_count"] = len(successful)
+    summary["master"] = master
+    summary["results"] = results
+    summary["regenerated_at"] = datetime.datetime.now().isoformat(timespec="seconds")
+
+    with open(summary_path, "w") as f:
+        json.dump(summary, f, indent=2, default=str)
+
+    report_md = generate_markdown_report(results, master, run_ts)
+    report_path = os.path.join(run_dir, "report.md")
+    with open(report_path, "w") as f:
+        f.write(report_md)
+
+    ps = master.get("pipeline_score")
+    logger.info("")
+    logger.info("╔══════════════════════════════════════════════╗")
+    score_line = f"  Pipeline score: {ps:.1f} / 10" if ps is not None else "  Pipeline score: N/A"
+    logger.info("║  %-44s║", score_line)
+    logger.info("╠══════════════════════════════════════════════╣")
+    logger.info("║  report.md   → regenerated                   ║")
+    logger.info("║  summary.json→ updated                       ║")
+    logger.info("╚══════════════════════════════════════════════╝")
+    logger.info("  → %s", report_path)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Gemini Scout Pipeline Benchmark",
@@ -223,7 +334,18 @@ def main() -> None:
         "--rounds", type=int, default=1,
         help="How many times to run each persona (default 1). Each round gets different narrator questions.",
     )
+    parser.add_argument(
+        "--regenerate", default=None, metavar="RUN",
+        help="Re-run the master evaluator on an existing run and rewrite report.md + summary.json. "
+             "Accepts a timestamp (e.g. '2026-05-11_15-05-29'), 'latest', or a full path. "
+             "No backend / persona runs are performed.",
+    )
     args = parser.parse_args()
+
+    if args.regenerate:
+        run_dir = _resolve_run_dir(args.regenerate, args.results)
+        asyncio.run(_regenerate(run_dir))
+        return
 
     os.makedirs(args.results, exist_ok=True)
     personas = _load_personas(args.personas, filter_id=args.persona)

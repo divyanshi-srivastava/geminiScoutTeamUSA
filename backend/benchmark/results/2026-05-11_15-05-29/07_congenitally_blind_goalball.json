@@ -1,0 +1,225 @@
+{
+  "persona_id": "07_congenitally_blind_goalball",
+  "persona_label": "Congenitally blind \u2014 goalball and tandem cycling",
+  "biometrics": {
+    "height_cm": 165,
+    "weight_kg": 60,
+    "birth_year": 1992,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, how would you best describe your current relationship with training and daily movement?\nOptions: [Structured and consistent: I follow a rigorous, goal-oriented training program for specific results. | Adaptive and rhythmic: My training flows intentionally around my professional and personal life commitments. | Exploratory and varied: I prefer rotating between different modalities to keep my physical capabilities challenged in new ways.]"
+    },
+    {
+      "role": "user",
+      "content": "Structured and consistent: I follow a rigorous, goal-oriented training program for specific results."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the middle of a training block, what is the primary physical quality you aim to sharpen?\nOptions: [Explosive power and rapid reactivity: I prioritize speed and high-intensity, short-duration outputs. | Sustained endurance and aerobic capacity: I focus on consistency and performance over long-duration efforts. | Technical precision and control: I dedicate my sessions to mastering complex patterns and spatial accuracy.]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and rapid reactivity: I prioritize speed and high-intensity, short-duration outputs."
+    },
+    {
+      "role": "narrator",
+      "content": "What is the primary driving force behind your commitment to this intense level of training?\nOptions: [Competitive achievement: I am driven to rank, win, and test my limits against the best in the field. | Physiological mastery: My motivation lies in refining my body's efficiency and breaking my own personal performance barriers. | Advocacy and inspiration: I train to use my physical journey as a foundation to represent and inspire others within the sporting community.]"
+    },
+    {
+      "role": "user",
+      "content": "Competitive achievement: I am driven to rank, win, and test my limits against the best in the field."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+      "scout_verdict": "At 165cm and 60kg, you possess a frame optimized for the pure, kinetic violence of the starting blocks. Your dedication to a structured, high-intensity training regimen allows you to channel every ounce of potential into explosive acceleration. As you approach the upcoming Games, your 34 years provide a decisive advantage in experience; you no longer train just to move, but to dismantle the gap between yourself and the competition, turning your natural fast-twitch capacity into a weapon on the track.\n\nIn the adaptive pathway, your match is the T44 classification, which includes ambulatory athletes who compete standing with a lower-limb impairment. This path demands a unique integration of mechanics and power, as the body must compensate for asymmetry through supreme core stability and explosive force production. Your focus on speed and reactivity aligns perfectly with the technical requirement to maintain high-velocity mechanics while navigating the unique demands of the T44 start. It is here that your internal drive\u2014the hunger to test your limits against the best\u2014finds its most visceral expression, allowing you to turn your physical profile into a defining feature of your race."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Women's FITA Round Open)",
+      "scout_verdict": "Your sprint training demands explosive output, but your 'Steady Hand' profile reveals a necessary and sophisticated counter-balance. While your track work relies on the firing of fast-twitch fibers, this archetype leverages your capacity for extreme psychological stillness and spatial control. Transitioning from the high-octane environment of the track to the quiet focus of marksmanship allows you to refine your competitive temperament, ensuring that your intensity is not just raw, but surgical. At 34, you have the patience to command your nervous system, a key asset when the goal is absolute precision.\n\nThis secondary expression is further realized in the Archery Women's FITA Round Open, which tests technical mastery and mental endurance under pressure. This discipline requires you to harmonize your entire physical frame to hold a consistent, repeatable posture against the tension of the bow. Unlike the explosive sprint start, this requires a mastery of fine motor skills and breath control, providing the ideal intellectual and physiological contrast to your sprint discipline. By engaging this pathway, you transform your competitive drive from a purely athletic race into a battle of nerves and technical perfection, ensuring you remain a formidable force regardless of the discipline."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, highly personalized scouting report that excellently integrates the user's biometrics and interview responses into a compelling narrative.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "A 165cm, 60kg frame is highly plausible for an explosive sprint profile, and the 'Block Starter' archetype directly reflects the user's focus on rapid reactivity."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The scout verdict seamlessly weaves in the user's specific biometrics, age, and stated desire for 'competitive achievement' and 'structured' training."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways offer genuine physiological insights, particularly the explanation of how T44 sprint mechanics require supreme core stability to compensate for asymmetry."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The question probing the primary physical quality (Explosive vs Endurance vs Precision) creates a strong, meaningful fork that directly determines the archetype mapping."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly uses 'the upcoming Games' and avoids restricted trademarked terms."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2012,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "What did your daily life look like at 20? Were you balancing intense competitive training with other life pursuits, or was your world entirely centered on the training cycle during that chapter?\nOptions: [Dual-track focus: I was balancing university studies while pushing my physical limits in high-performance athletics. | Dedicated professional pathway: My life was entirely consumed by the training regime and the quest for podium-level results. | Formative transition: I was navigating major life changes and using my sporting journey as an anchor during a period of personal growth.]"
+        },
+        {
+          "role": "user",
+          "content": "Dual-track focus: I was balancing university studies while pushing my physical limits in high-performance athletics."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "The London 2012 Games era was defined by the high-stakes balancing act of pursuing academic excellence at university while simultaneously navigating the rigors of an elite, high-performance training pathway.",
+        "physical_context": "Your physical chapter was characterized by a focus on explosive power and rapid reactivity, with your body primed for peak, high-intensity competition.",
+        "athletic_engagement": "You were fully immersed in the competitive ecosystem, prioritizing performance goals and rigorous testing of your physical limits.",
+        "signals": [
+          "active_training",
+          "competitive",
+          "student_era",
+          "peak_fitness"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 4,
+          "matched_profile_name": "Block Starter",
+          "pathway_standing": "100m/200m Sprints",
+          "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+          "scout_verdict": "At 20 years old, heading into The London 2012 Games, your 165cm and 60kg frame is a masterpiece of kinetic efficiency. Your commitment to structured, goal-oriented training has forged a nervous system capable of near-instantaneous reactivity, a trait essential for the explosive acceleration required at the start of the 100m. You thrive in the high-stakes pressure of the university circuit, turning every training session into a calculated battle against the clock.\n\nIn your adaptive pathway, this intensity is channeled through the T44 classification. T44 denotes ambulatory athletes with a lower-limb impairment who compete standing; for you, it represents a unique challenge of maintaining stability while unleashing maximum fast-twitch force. Your history of intense, high-intensity output finds its ultimate expression here, where every millisecond in the blocks determines your standing among the elite competitors at The London 2012 Games."
+        },
+        {
+          "matched_profile_id": 6,
+          "matched_profile_name": "Mat Technician",
+          "pathway_standing": "Wrestling",
+          "pathway_adaptive": "Powerlifting (e.g., Women's 67 kg)",
+          "scout_verdict": "While your sprint pathway is built on velocity, your Mat Technician profile reveals a different, yet equally vital, dimension of your physical identity: raw, dense strength. At The London 2012 Games, this pathway highlights your capacity for extreme core stability and tactical control. Rather than focusing on rapid acceleration, this discipline relies on the meticulous refinement of your body\u2019s efficiency under heavy, sustained load, mirroring your internal drive for physiological mastery.\n\nYour success in powerlifting\u2014within the context of strength-dominant competition\u2014is anchored by your disciplined approach to training. This is a battle of precision and technical accuracy, where every lift is a study in maintaining perfect form against immense resistance. It represents the grounding, tactical side of your competitive nature, proving that your reach for excellence at The London 2012 Games is not just about moving fast, but about commanding your space with absolute, unwavering force."
+        }
+      ],
+      "eval_result": {
+        "overall": 6,
+        "summary": "The report provides a solid physical match for the user's explosive profile, but mistakenly references an unchosen interview option in the second verdict, undermining the personalization.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "A 165cm, 60kg frame is highly plausible for a female Block Starter, and the archetype perfectly aligns with her focus on explosive power and rapid reactivity."
+        },
+        "personalization": {
+          "score": 4,
+          "reasoning": "While the first verdict integrates her answers well, the second incorrectly claims an internal drive for 'physiological mastery,' which was an option she explicitly bypassed in favor of 'competitive achievement.'"
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The two archetypes present a stark, meaningful contrast between track velocity (Block Starter) and raw, static strength (Mat Technician / Powerlifting)."
+        },
+        "life_stage_coherence": {
+          "score": 8,
+          "reasoning": "Targeting age 20 at The London 2012 Games, the narrative appropriately places her in the high-stakes 'university circuit,' which fits an early Elite Peak life stage."
+        },
+        "interview_quality": {
+          "score": 6,
+          "reasoning": "The questions logically progressed from training style to physical focus and motivation, but the options were standard and somewhat predictable."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean execution, correctly formatting 'The London 2012 Games' without any restricted terminology or NIL violations."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2024,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you reflect on that specific chapter leading into The Paris 2024 Games, how would you describe the primary 'life anchor' that dictated your training rhythm during that period?\nOptions: [Singular focus: My entire life rhythm was meticulously structured around the specific requirements of my training cycle. | The balancing act: I was advancing a high-pressure professional career while maintaining my competitive standard, requiring precise time management. | The transition period: I was navigating a significant life shift\u2014such as a relocation or a new personal milestone\u2014that forced me to refine how I approached my physical routine.]"
+        },
+        {
+          "role": "user",
+          "content": "Singular focus: My entire life rhythm was meticulously structured around the specific requirements of my training cycle."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "The Paris 2024 chapter was defined by a singular, unyielding focus on the training cycle, where the demands of competitive excellence took complete precedence over other professional or personal anchors.",
+        "physical_context": "Training was characterized by an unwavering intensity, maintaining the legacy of explosive power and rapid reactivity established in earlier stages of your sporting journey.",
+        "athletic_engagement": "Full-time athlete, entirely dedicated to the high-performance athletics pathway with a singular goal of competitive achievement.",
+        "signals": [
+          "active_training",
+          "competitive",
+          "peak_fitness"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 4,
+          "matched_profile_name": "Block Starter",
+          "pathway_standing": "100m/200m Sprints",
+          "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+          "scout_verdict": "At 32, heading into The Paris 2024 Games, your profile embodies the relentless discipline of an athlete who has spent years perfecting a structured and consistent training regimen. Standing at 165cm and 60kg, you possess a compact, high-velocity frame that translates perfectly into the explosive kinetic chain required for the track. Your commitment to rapid reactivity\u2014honed over a decade of high-performance athletics\u2014allows you to dominate the initial acceleration phase where split seconds define the margin of victory.\n\nIn the ambulatory T44 category, which covers athletes with lower-limb impairments who compete standing, your physiological profile is a masterclass in efficiency. Because you maintain a focus on raw, explosive output, the T44 discipline allows you to channel your power into a technical sprint start that capitalizes on your specific body mechanics. At The Paris 2024 Games, your ability to convert your drive for competitive achievement into a singular, high-intensity performance makes you a formidable contender in the sprint field."
+        },
+        {
+          "matched_profile_id": 10,
+          "matched_profile_name": "Launch Force",
+          "pathway_standing": "Bobsleigh / Push Sports",
+          "pathway_adaptive": "Seated Throws (e.g., Women's Discus Throw F56)",
+          "scout_verdict": "Your journey to The Paris 2024 Games has evolved from the raw, high-intensity speed of the track to the nuanced, technical demand of field-based mechanics. While your foundation remains rooted in explosive power, this pathway requires you to pivot toward precision and spatial control, shifting your competitive achievement focus from the speed of the sprint to the perfect execution of a technical throw. Your compact 165cm, 60kg build provides a center of gravity that is ideal for the rotational mechanics required in field events.\n\nSpecifically, the F56 classification\u2014which includes athletes who compete from a seated position and rely heavily on upper-body and trunk stability\u2014offers a new arena for your athletic growth. Unlike the full-body reactive demands of a standard sprint, the F56 discipline demands a shift toward sustained, controlled force application. Your transition to this pathway is driven by your mastery over body efficiency, requiring you to coordinate complex patterns under pressure to launch the implement. At The Paris 2024 Games, this pathway celebrates your ability to adapt your explosive athletic history into a display of clinical, high-stakes tactical precision."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A strong, highly personalized scouting report that accurately leverages the user's compact biometrics and explosive focus, appropriately framed for an athlete in their elite peak.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "The user's compact 165cm/60kg frame perfectly suits the high power-to-weight ratio demanded by the Block Starter archetype."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The narrative explicitly weaves in the user's selected traits, tying 'rapid reactivity' and 'competitive achievement' directly to their physiological mechanics."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The report provides an excellent contrast between the raw kinetic chain of ambulatory sprinting and the sustained, controlled force application of seated throws."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "At age 32 in the Elite Peak stage, phrases like 'honed over a decade of high-performance athletics' perfectly capture an established, prime competitor."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions successfully probe genuine athletic differentiators, particularly the choice between explosive power, endurance, and precision which distinctly forks the potential archetypes."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean execution with correct 'The Paris 2024 Games' terminology and no prohibited terms or references."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

@@ -1,0 +1,239 @@
+{
+  "persona_id": "01_young_female_swimmer",
+  "persona_label": "Young female swimmer",
+  "biometrics": {
+    "height_cm": 172,
+    "weight_kg": 62,
+    "birth_year": 2009,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe the way you have primarily engaged with physical challenges up until now?\nOptions: [Competitive team sports that rely on tactical coordination and social dynamics | Individual endurance or technical disciplines that require internal focus and repetitive mastery | Outdoor adventure and exploration-based activities that demand navigation and variable problem-solving]"
+    },
+    {
+      "role": "user",
+      "content": "Individual endurance or technical disciplines that require internal focus and repetitive mastery"
+    },
+    {
+      "role": "narrator",
+      "content": "Reflecting on your physical style, which of these movement patterns feels most aligned with how your body naturally excels?\nOptions: [Explosive power and high-velocity bursts | Sustained rhythmic endurance and long-duration pacing | Technical precision and control of complex, rhythmic patterns]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained rhythmic endurance and long-duration pacing"
+    },
+    {
+      "role": "narrator",
+      "content": "To better understand your high-performance athletics journey, how do you currently integrate your training into your daily life?\nOptions: [Rigid, high-intensity structure that dictates my daily schedule. | Fluid integration that shifts based on my current environment and energy levels. | Occasional, intensive training blocks balanced with other academic and personal commitments.]"
+    },
+    {
+      "role": "user",
+      "content": "Rigid, high-intensity structure that dictates my daily schedule."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 8,
+      "matched_profile_name": "Streamline",
+      "pathway_standing": "Swimming",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Women's 400 m Freestyle S10)",
+      "scout_verdict": "At 172cm and 62kg, your physical foundation is a masterclass in efficiency. Your preference for sustained rhythmic endurance is your greatest asset here; you possess the rare ability to internalize the repetitive cadence of the lane, making you a natural for the grueling aerobic demands of the 400m freestyle. Your rigid, high-intensity training structure ensures that every stroke is calibrated for minimal drag and maximum propulsion, turning the water into your most reliable training partner.\n\nIn the adaptive pathway, the S10 classification recognizes your capacity for technical mastery despite minimal impairment to range or coordination. This category demands a level of precision that matches your disciplined, structured approach to daily training. Your journey is not about working around the classification, but leveraging the way your body navigates the water to maintain that internal, fluid rhythm that keeps you ahead of the pack when the final lap arrives at The Games."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "While your endurance is exceptional, the 'Edge Carver' archetype calls for a pivot toward the cognitive intensity of high-speed technical precision. Your affinity for internal focus suggests you thrive when the world narrows down to the line you are carving. Whether on the mountain or the ice, your success comes from your ability to enter a flow state where your rigid, structured training habits allow you to make split-second adjustments with absolute, calculated composure.\n\nThe LW12 adaptive pathway serves as a profound test of your core engagement and kinetic intelligence. In this classification, athletes compete in a sit-ski, where the machine becomes an extension of the body, requiring intense postural control and a refined sense of balance. This is not about endurance alone; it is about the mastery of forces in a downhill environment where your focus and the ability to hold a perfect, aggressive line define the difference between a podium finish and a tactical error. It transforms your desire for mastery into a high-stakes, high-speed reality."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A very strong scouting report that effectively connects the user's biometrics and interview answers to highly plausible sports and classifications.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The user's biometrics (172cm, 62kg) are an excellent fit for the Streamline (Swimming) archetype, and the connection to their stated rhythmic endurance preference is highly credible."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative directly weaves in the user's specific interview responses, explicitly referencing their 'rigid, high-intensity training structure' and 'sustained rhythmic endurance'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways offer genuine depth, particularly the description of the LW12 sit-ski classification which accurately highlights the need for core engagement and kinetic intelligence."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The interview questions successfully narrow down the user's psychological and physiological profile with distinct options that avoid the convergent options trap."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean. No unauthorized terms or NIL violations detected."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2032,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you stand on the threshold of The Brisbane 2032 Games, how have you balanced the demands of your rigorous athletic development with the other roles you inhabit in your life?\nOptions: [Full-time professional athlete, dedicating every waking hour to maximizing physical and technical output. | Dual-pathway athlete, successfully integrating high-performance training with a rigorous academic or professional career. | Community-focused athlete, blending my personal training journey with leadership or advisory roles within my sporting club.]"
+        },
+        {
+          "role": "user",
+          "content": "Dual-pathway athlete, successfully integrating high-performance training with a rigorous academic or professional career."
+        },
+        {
+          "role": "narrator",
+          "content": "As you approach The Brisbane 2032 Games at 23, what has been the defining shift in your environment\u2014have you had to narrow your professional or academic focus to protect your training hours, or has this synthesis of two worlds actually acted as a catalyst for your athletic growth?\nOptions: [I have narrowed my professional focus to prioritize recovery and volume. | The duality sustains me; keeping my mind active outside of training keeps me sharper on the track. | I have shifted my environment entirely to support a more centralized, high-intensity training base.]"
+        },
+        {
+          "role": "user",
+          "content": "The duality sustains me; keeping my mind active outside of training keeps me sharper on the track."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 23, heading into The Brisbane 2032 Games, you are successfully navigating a dual-pathway life that harmonizes high-performance athletic rigor with demanding professional or academic pursuits.",
+        "physical_context": "Your body has been conditioned through a rigid, high-intensity structure that favors long-duration endurance and sustained rhythmic output.",
+        "athletic_engagement": "You are currently operating at a peak intensity, utilizing your intellectual commitments to keep your competitive focus sharp and your recovery balanced.",
+        "signals": [
+          "active_training",
+          "peak_fitness"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 8,
+          "matched_profile_name": "Streamline",
+          "pathway_standing": "Swimming",
+          "pathway_adaptive": "Adaptive Swimming (e.g., Women's 400 m Freestyle S10)",
+          "scout_verdict": "At 23, your commitment to a rigid, high-intensity training structure has sculpted a physicality perfectly suited for the rhythmic demands of the pool. In the standing pathway, your 172cm frame creates a hydrodynamic profile that minimizes drag, allowing you to sustain high-velocity output over the course of a grueling event at The Brisbane 2032 Games. Your preference for internal focus and repetitive mastery aligns with the mental discipline required to hold a perfect stroke count under extreme fatigue.\n\nFor your adaptive pathway, you fall into the S10 classification, which encompasses swimmers who maintain a high degree of swimming efficiency. Because the water acts as a neutral medium, your ability to integrate complex, repetitive technical patterns becomes the deciding factor. Your journey to The Brisbane 2032 Games here is defined by fluidity and the absolute control of your center of mass, translating your intense academic and physical rigor into a seamless, underwater pursuit of peak performance."
+        },
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+          "scout_verdict": "On the open road, your capacity for sustained output takes on a mechanical edge. Where the pool required hydrodynamic grace, the cycling pathway at The Brisbane 2032 Games demands a relentless, data-driven application of torque and power-to-weight efficiency. Your experience balancing high-intensity, structured training with demanding professional commitments is exactly what fuels this archetype\u2014one that thrives on the technical challenge of optimizing every pedal stroke to maintain maximum velocity through shifting environments.\n\nIn your adaptive pathway, you are classified under H3, which serves athletes with impaired lower-limb function who compete using a handcycle. In this discipline, the focus shifts from legs to the kinetic power of the core, shoulders, and arms. This provides a distinct contrast to your standing discipline, emphasizing raw explosive endurance over pure rhythmic grace. By leveraging your existing aerobic engine and your habit of treating movement as a rigid, scheduled commitment, you transform your handcycle into a high-performance instrument, proving that your dedication to peak fitness is a versatile tool capable of dominating the tarmac at The Brisbane 2032 Games."
+        }
+      ],
+      "eval_result": {
+        "overall": 7,
+        "summary": "The scouting report provides highly authentic and distinct pathways for an endurance athlete, but falters slightly by hallucinating interview responses regarding academic and professional commitments.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "The user's 172cm, 62kg frame and preference for rhythmic pacing perfectly fit both the 'Streamline' (Swimming) and 'Road Machine' (Cycling) endurance archetypes."
+        },
+        "personalization": {
+          "score": 5,
+          "reasoning": "The verdict incorporates the user's focus on rigid training but incorrectly references 'academic' and 'professional commitments', which belong to unselected interview options."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The pathways offer a clear contrast between the hydrodynamic, full-body rhythm of swimming and the mechanical, torque-driven focus of road cycling and handcycling."
+        },
+        "life_stage_coherence": {
+          "score": 8,
+          "reasoning": "The language accurately reflects an Elite Peak athlete at age 23, focusing on 'peak performance' and 'maximum velocity' rather than early-stage potential."
+        },
+        "interview_quality": {
+          "score": 7,
+          "reasoning": "The interview questions effectively probed physical engagement style, movement patterns, and training integration with distinct, meaningful options that shaped the endurance profile."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean compliance with correct usage of 'The Brisbane 2032 Games' and no prohibited terms."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2040,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "What is the primary landscape of your life that supports your preparation for this cycle?\nOptions: [A leadership or professional role that requires intense cognitive focus and high-level strategic planning. | Significant personal or family commitments that demand immense resilience and master-level multitasking. | A singular, unwavering dedication to athletic perfection and the technical refinement of my discipline.]"
+        },
+        {
+          "role": "user",
+          "content": "A singular, unwavering dedication to athletic perfection and the technical refinement of my discipline."
+        },
+        {
+          "role": "narrator",
+          "content": "Looking back over the decade that has brought you to this elite peak, what has been the most significant shift in how your body responds to your high-performance athletic demands?\nOptions: [Shifting toward specialized, high-load endurance protocols to optimize my long-term metabolic efficiency. | Refining my technical precision to allow for higher-intensity tactical surges within my sustained, long-duration efforts. | Adapting my physiological and recovery approach to specifically excel under the intense environmental demands of The Doha 2040 Games.]"
+        },
+        {
+          "role": "user",
+          "content": "Refining my technical precision to allow for higher-intensity tactical surges within my sustained, long-duration efforts."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "Moving from the dual-career demands of the Brisbane era to a singular, professionalized focus on athletic perfection, you have structured your entire life around reaching this peak at 31.",
+        "physical_context": "Your body has evolved from a base of raw, rhythmic endurance to a more nuanced state capable of high-intensity tactical surges woven into a sustained, long-duration discipline.",
+        "athletic_engagement": "Operating at the pinnacle of high-performance athletics, you are refining your technical execution to navigate the unique environmental demands of The Doha 2040 Games.",
+        "signals": [
+          "active_training",
+          "peak_fitness",
+          "competitive"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 8,
+          "matched_profile_name": "Streamline",
+          "pathway_standing": "Swimming",
+          "pathway_adaptive": "Adaptive Swimming (e.g., Women's 400 m Freestyle S10)",
+          "scout_verdict": "At 31, standing at 172cm and 62kg, you bring a level of seasoned focus that defined your journey since the Brisbane era. Your lean frame and efficient reach are perfectly calibrated for the hydrodynamic demands of the pool, where every stroke is a testament to the years of disciplined, rhythmic endurance you have cultivated. As you prepare for The Doha 2040 Games, your internal mastery transforms the water into a space of pure, singular expression, moving away from the dual-career noise of your twenties into a state of total athletic immersion.\n\nIn the adaptive pathway, the S10 classification\u2014which designates swimmers with a minimal impairment, often relating to limited mobility in one limb or the loss of a foot\u2014becomes the lens through which your technical precision shines. For you, this is not a limitation but a specific physical reality that mandates an even greater reliance on your core symmetry and stroke cadence. By refining your rotation to compensate for your unique biomechanical profile, you transform your rhythmic endurance into a lethal, sustained velocity. At The Doha 2040 Games, you aren't just competing; you are demonstrating the absolute efficiency of a body that has spent a decade learning how to translate internal will into seamless, high-velocity movement."
+        },
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+          "scout_verdict": "The transition from the fluid, contained environment of the pool to the raw, tactical exposure of the road marks your evolution from a technician of rhythm to a strategist of power. Your 172cm, 62kg frame, hardened by years of rigid training schedules, is built for the sustained aerobic grind of high-performance cycling. Entering The Doha 2040 Games, you find your strength in the ability to hold a threshold intensity that would break a less-disciplined athlete, turning your long-duration commitment into a distinct competitive advantage on the open road.\n\nIn the H3 handcycling classification, intended for athletes with significant impairment in lower limb function who utilize a reclined bike position, your focus shifts to the upper-body engagement and core-driven power transfer that define this category. Unlike the fluid repetitions of the water, the H3 pathway demands an intense, isometric stability and the ability to navigate varying terrain with precise mechanical control. This creates a fascinating contrast to your aquatic background: where the pool emphasized your ability to glide, the road requires you to forcefully drive your momentum through technical hand-crank cycles. At The Doha 2040 Games, this pathway rewards your transition to a singular, high-intensity focus, allowing you to weaponize your endurance in a discipline that demands grit, strategy, and constant, aggressive adaptation to the race environment."
+        }
+      ],
+      "eval_result": {
+        "overall": 9,
+        "summary": "An exceptional scouting report that beautifully weaves the user's interview answers, biometric profile, and target age into a coherent, highly specific narrative.",
+        "authenticity": {
+          "score": 9,
+          "reasoning": "The user's height and weight (172cm, 62kg) are highly plausible for both endurance swimming and road cycling, accurately reflecting the 'Streamline' and 'Road Machine' archetypes."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The verdict explicitly utilizes the user's interview choices, specifically integrating their 'rigid training schedules' and 'rhythmic endurance' into the athletic assessment."
+        },
+        "distinctness": {
+          "score": 9,
+          "reasoning": "The adaptive pathways offer deep technical insight, contrasting the minimal impairment S10 swimming classification with the upper-body dominated H3 handcycling category in meaningful ways."
+        },
+        "life_stage_coherence": {
+          "score": 10,
+          "reasoning": "Targeting age 31 at the 2040 Games, the narrative perfectly captures the 'Elite Peak' stage with highly appropriate phrases like 'seasoned focus' and 'moving away from the dual-career noise of your twenties'."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The interview relies on three solid, logical forks that successfully narrow down the athlete's psychological approach, movement style, and daily commitment with distinct options."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean compliance pass; correctly utilizes 'The Doha 2040 Games' and successfully avoids all restricted terminology."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

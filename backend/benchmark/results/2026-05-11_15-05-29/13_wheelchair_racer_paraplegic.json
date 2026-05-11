@@ -1,0 +1,256 @@
+{
+  "persona_id": "13_wheelchair_racer_paraplegic",
+  "persona_label": "T4 paraplegic \u2014 wheelchair racer and basketball player",
+  "biometrics": {
+    "height_cm": 163,
+    "weight_kg": 55,
+    "birth_year": 2004,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe your primary orientation toward movement and training in your current sporting journey?\nOptions: [Explosive power and rapid speed | Sustained endurance and rhythmic pacing | Precision, control, and technical mastery]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and rapid speed"
+    },
+    {
+      "role": "narrator",
+      "content": "Looking at your background in high-performance athletics, how has your preferred training environment shaped your approach to these bursts of intensity?\nOptions: [Structured team environments that rely on rapid tactical reactions | Individual coaching focused on pure physical peak performance | Independent training with a focus on self-driven milestones]"
+    },
+    {
+      "role": "user",
+      "content": "Structured team environments that rely on rapid tactical reactions"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the heat of a high-stakes competition, which role gives you the greatest sense of purpose and fulfillment?\nOptions: [Being the primary engine of attack, driving the momentum and forcing the pace | Operating as the tactical anchor, anticipating shifts to protect the play or capitalize on gaps | Functioning as a versatile disruptor, constantly adapting to keep the opposition off-balance]"
+    },
+    {
+      "role": "user",
+      "content": "Being the primary engine of attack, driving the momentum and forcing the pace"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+      "scout_verdict": "On the track, your 163cm frame isn't just stature\u2014it is a coiled spring. Your preference for explosive power makes you the ultimate force when the starting gun fires at The 2028 Games. In the standing discipline, your trajectory is defined by pure, raw velocity, where your ability to drive momentum from the first step establishes you as a frontrunner capable of dismantling the field in the first fifty meters.\n\nIn the T44 pathway, which encompasses athletes with lower-limb impairments who compete standing, your narrative shifts from pure raw force to a refined mastery of energy return. Here, the prosthetic acts as an extension of your kinetic chain, requiring a heightened level of coordination and technical precision. Your performance is no longer just about the output of your muscles, but how you harmonize with the mechanical response of your equipment, turning every stride into a seamless transition of power. You prove that at 22, your athletic potential is defined by how you command the straightaway with absolute technical focus."
+    },
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Women's Tournament)",
+      "scout_verdict": "On the court, you operate as the heartbeat of the offense. Your stature allows for rapid changes in direction, and your mindset of being the 'primary engine of attack' means you don't just participate in the game; you dictate the tempo. Whether you are cutting to the hoop or setting up the play, you force the opposition into a defensive scramble, utilizing your quick-twitch reflexes to generate momentum that your team relies on to break open tight contests at The 2028 Games.\n\nIn the adaptive pathway, specifically within the tactical environment of wheelchair basketball, your role undergoes a distinct transformation into an exercise in high-level maneuverability and upper-body precision. In this classification, success hinges on your ability to use the chair as a tactical tool, pivoting and accelerating to control the court\u2019s flow. Unlike the standing game, where your power is vertical, here your strength is found in your lateral agility and your ability to maintain intense focus while managing the technical complexity of the court. You become the ultimate tactical anchor, using your speed to create space and forcing opponents to react to your calculated, aggressive navigation."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly personalized and authentic scouting report that accurately reflects both the physical biometrics and the user's specific interview responses.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "A 163cm, 55kg frame pairs perfectly with the 'Block Starter' and 'Net Presence' archetypes, reflecting the high power-to-weight ratio needed for both sprinting and a fast-paced basketball guard."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts weave in the user's exact height and age, while directly referencing their interview choices like being the 'primary engine of attack' and preference for 'explosive power'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways offer excellent mechanical and tactical contrasts, such as highlighting the shift from vertical power to lateral chair maneuverability in Wheelchair Basketball."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asked excellent, distinct questions that successfully narrowed down physical attributes, training environments, and competitive mentalities with mutually exclusive options."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass with correct use of 'The 2028 Games' and no standalone restricted terms."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2028,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you were building toward that peak, what did your daily life look like outside of the training grounds\u2014was your focus entirely on your sport, or were you navigating major life milestones like a career change or relocating to a new city?\nOptions: [Full-time athlete focused purely on the competitive circuit | Balancing elite training with intensive academic or early-career professional commitments | Relocating to a new city to join a specific high-performance team environment]"
+        },
+        {
+          "role": "user",
+          "content": "Full-time athlete focused purely on the competitive circuit"
+        },
+        {
+          "role": "narrator",
+          "content": "As you prepared for that level of competition, what was the defining physical challenge of that training chapter, and how was your body responding to the intensity of your role as an engine of attack?\nOptions: [Managing the cumulative fatigue of constant explosive output to maintain peak speed. | Refining my neuromuscular coordination to ensure every burst of power was surgically precise. | Balancing the extreme metabolic demands of a packed tournament schedule with rapid recovery.]"
+        },
+        {
+          "role": "user",
+          "content": "Managing the cumulative fatigue of constant explosive output to maintain peak speed."
+        },
+        {
+          "role": "narrator",
+          "content": "How was your body handling the toll of being the constant, explosive force during that final build-up to the competition?\nOptions: [It was a season of refined endurance, where I learned to turn explosive fatigue into sustained power. | It was a period of rigorous monitoring, focusing heavily on injury prevention to ensure I could maintain those high-intensity bursts. | It was a phase of aggressive adaptation, pushing my body's limits to increase my ceiling for power and speed.]"
+        },
+        {
+          "role": "user",
+          "content": "It was a phase of aggressive adaptation, pushing my body's limits to increase my ceiling for power and speed."
+        },
+        {
+          "role": "narrator",
+          "content": "At that specific stage of your career, with your full focus dedicated to the competitive circuit, how did the intensity of that constant, high-stakes preparation influence the way you structured your life outside of the training grounds?\nOptions: [Living within a centralized high-performance hub where every daily rhythm was synced with the team's goals. | Operating from a private, controlled training base, allowing me to manage every variable of my recovery and environment. | Navigating the immense public and personal expectations of building toward a major home-turf competition.]"
+        },
+        {
+          "role": "user",
+          "content": "Operating from a private, controlled training base, allowing me to manage every variable of my recovery and environment."
+        },
+        {
+          "role": "narrator",
+          "content": "What was the most significant driver for locking yourself into that private, isolated training cycle during that pivotal build-up to The LA28 Games?\nOptions: [The need for hyper-specific technical refinement that a general team setting couldn't provide. | The necessity of total recovery management to sustain my role as the team's primary explosive engine. | The drive to build a singular, unbreakable psychological focus to navigate the pressures of competition.]"
+        },
+        {
+          "role": "user",
+          "content": "The necessity of total recovery management to sustain my role as the team's primary explosive engine."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": null,
+      "scouting_result": [
+        {
+          "matched_profile_id": 4,
+          "matched_profile_name": "Block Starter",
+          "pathway_standing": "100m/200m Sprints",
+          "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+          "scout_verdict": "At 24 years old, standing on the track at The LA28 Games, your 163cm, 55kg frame serves as the ultimate expression of kinetic efficiency. Your desire to be the engine of attack finds its purest form in the high-intensity burst of the 100m and 200m sprints, where every millisecond is dictated by raw, explosive power. You possess the precise physical profile to convert stored tension into instantaneous speed, making you a formidable contender as you drive the momentum from the starting blocks to the finish line.\n\nIn the adaptive pathway, you face the track through the T44 classification, which categorizes athletes with lower-limb impairment who compete standing. Here, your biomechanical mastery becomes even more critical; you must balance your natural explosive speed with the technical demands of navigating the track while managing your unique physical foundation. This pathway honors your drive for singular, aggressive performance, asking you to refine your explosive output into a rhythmic, high-performance display of strength under the pressure of the global stage."
+        },
+        {
+          "matched_profile_id": 11,
+          "matched_profile_name": "Net Presence",
+          "pathway_standing": "Basketball",
+          "pathway_adaptive": "Wheelchair Basketball (e.g., Women's Tournament)",
+          "scout_verdict": "Your competitive spirit is not limited to the solo lane; it is deeply rooted in the structured complexity of team environments. As you prepare for The LA28 Games, this profile highlights your role as a tactical anchor\u2014the player who sees the entire court as a series of fluid patterns. Your 163cm, 55kg frame provides the agility required to navigate heavy traffic, shifting your focus from pure sprint output to the intricate, intellectual dance of team-based maneuvering and rapid tactical reactions.\n\nIn the adaptive setting of wheelchair basketball, you utilize your athletic intuition to control the flow of the game, acting as a disruptor who anticipates the opposition's shift before it occurs. This sport requires a different application of your strength\u2014coordination, spatial awareness, and the ability to sustain effort across the entire duration of a match. You are no longer just an engine driving forward; you are the architect of the play, using your tactical intelligence to ensure your squad dictates the tempo and finds success through collective cohesion rather than individual velocity."
+        }
+      ],
+      "eval_result": {
+        "overall": 7,
+        "summary": "A strong scouting report with excellent personalization and interview structure, though the second archetype is a slight physical mismatch for the user's height.",
+        "authenticity": {
+          "score": 6,
+          "reasoning": "While the 163cm/55kg profile is a perfect, authentic fit for a 'Block Starter' in sprints, applying the 'Net Presence' archetype to a 5'4\" athlete is a notable mismatch."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The verdicts expertly weave the user's exact interview phrases like 'engine of attack' and 'structured team environments' directly into the athletic analysis."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The adaptive pathways offer genuine sport-specific insight, properly contrasting the biomechanical demands of T44 sprints with the spatial awareness needed for wheelchair basketball."
+        },
+        "life_stage_coherence": {
+          "score": 7,
+          "reasoning": "At 24 (Elite Peak), framing the athlete as possessing 'biomechanical mastery' and being the 'ultimate expression of kinetic efficiency' correctly reflects prime competitive language."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The narrator asks distinct, meaningful questions that genuinely fork the athlete's profile between physical traits, training environments, and competitive mentalities."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean compliance pass with proper use of 'The LA28 Games' and no trademark or NIL violations."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2036,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "How has the evolution of your life's landscape at 32 shifted your perspective on high-performance athletics compared to your early years?\nOptions: [Transitioning into a leadership role, balancing mentorship of the team with your own explosive output. | Refining your approach to prioritize surgical, precision-based impact over pure volume of effort. | Integrating a more holistic, recovery-conscious lifestyle to sustain your signature, high-intensity bursts.]"
+        },
+        {
+          "role": "user",
+          "content": "Transitioning into a leadership role, balancing mentorship of the team with your own explosive output."
+        },
+        {
+          "role": "narrator",
+          "content": "As you navigate your 32nd year heading into The Ahmedabad 2036 Games, how does your life outside of high-performance athletics demand your energy and focus?\nOptions: [A demanding professional career path requiring precise time management alongside training | Deepening family responsibilities that bring a new sense of grounding and perspective | Community-focused initiatives or mentorship roles that integrate directly with your competitive life]"
+        },
+        {
+          "role": "user",
+          "content": "A demanding professional career path requiring precise time management alongside training"
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 32, the user is successfully navigating the intersection of a demanding professional career and high-performance athletics, where time management has become their greatest discipline.",
+        "physical_context": "Maintaining elite explosive capacity and speed while balancing the cognitive load of a professional career, showing resilience and peak physical maturity.",
+        "athletic_engagement": "High-intensity, team-focused competitive engagement, acting as a tactical leader and engine of attack.",
+        "signals": [
+          "active_training",
+          "competitive",
+          "peak_fitness",
+          "career_shift"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 6,
+          "matched_profile_name": "Mat Technician",
+          "pathway_standing": "Wrestling",
+          "pathway_adaptive": "Powerlifting (e.g., Women's 67 kg)",
+          "scout_verdict": "At The Ahmedabad 2036 Games, your journey as a Mat Technician is defined by a decade of accumulated tactical maturity. Your 163cm, 55kg frame is not merely a set of biometrics; it is a precision instrument, offering the high-torque leverage required to dictate the rhythm of a match. Having mastered the art of balancing a demanding professional career with the brutal demands of high-performance athletics, you bring a level of focus that is uniquely your own. You have evolved from a raw, explosive athlete into a surgical operator.\n\nIn the intense, structured environment of the wrestling mat, you are the ultimate engine of attack. Your ability to anticipate the opposition's shifts\u2014a skill honed through your professional life's cognitive challenges\u2014allows you to apply force exactly where it is needed most. At 32, you operate with a calm intensity, turning your technical experience into a force multiplier that systematically dismantles the competition, proving that true power on the mat comes from the perfect synthesis of density, strategy, and timing."
+        },
+        {
+          "matched_profile_id": 4,
+          "matched_profile_name": "Block Starter",
+          "pathway_standing": "100m/200m Sprints",
+          "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+          "scout_verdict": "As you step onto the track at The Ahmedabad 2036 Games, you transition from the close-quarters combat of the wrestling mat to the raw, kinetic velocity of the Block Starter. This pathway utilizes the T44 classification, which includes ambulatory athletes with lower-limb impairment who compete standing, celebrating the unique biomechanical power you generate. Where wrestling demands ground-based resistance, the T44 sprint profile requires a masterful exploitation of explosive fast-twitch response, channeling your internal fire into pure, straight-line acceleration.\n\nThis secondary expression of your athleticism highlights the contrast between the tactical patience of the mat and the volatile, split-second demands of the track. After years of functioning as an engine of attack in high-stakes team environments, the singular, explosive departure from the blocks provides a vital physical release. Your training at 32 reflects an athlete who has optimized their body for extreme velocity; by leaning into this adaptive pathway, you transform your competitive engine from a force of persistent pressure into a sudden, undeniable burst of speed that leaves the field behind."
+        }
+      ],
+      "eval_result": {
+        "overall": 7,
+        "summary": "The scouting report delivers a strong Elite Peak narrative that fits the physical biometrics well, though it struggles slightly to reconcile the user's preference for team environments with the individual sports selected.",
+        "authenticity": {
+          "score": 7,
+          "reasoning": "A 163cm, 55kg frame perfectly aligns with the wrestling weight classes, though assigning two individual sports contradicts the user's stated preference for team environments."
+        },
+        "personalization": {
+          "score": 6,
+          "reasoning": "It successfully integrates the 'engine of attack' phrase from the interview, but hallucinates a detail about 'balancing a demanding professional career' that was never discussed."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The two profiles offer excellent contrast, comparing the ground-based, tactical resistance of wrestling with the explosive, straight-line velocity of T44 sprints."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "For a 32-year-old in their Elite Peak, phrases like 'decade of accumulated tactical maturity' and having 'optimized their body' hit the exact right tone of seasoned mastery."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions logically narrow down the athlete's profile by providing distinct forks for movement style, training environment, and tactical role."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean output with proper use of 'The Ahmedabad 2036 Games' and no IP or trademark violations."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

@@ -1,0 +1,249 @@
+{
+  "persona_id": "06_hostile_ex_boxer",
+  "persona_label": "Hostile ex-boxer \u2014 distrusts Olympics and AI",
+  "biometrics": {
+    "height_cm": 183,
+    "weight_kg": 87,
+    "birth_year": 1995,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To help us determine where you thrive best, how would you describe your current relationship with high-performance athletics?\nOptions: [Full-time dedication: I structure my entire life around rigorous training and high-stakes competition. | Integrated discipline: I maintain a precise, consistent training regimen alongside a professional career. | Strategic exploration: I am rediscovering my physical limits and looking for a new, focused challenge.]"
+    },
+    {
+      "role": "user",
+      "content": "Full-time dedication: I structure my entire life around rigorous training and high-stakes competition."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking at your training history, where do you find your body naturally gravitates when you push toward your absolute limits?\nOptions: [Explosive power and high-velocity anaerobic bursts | Sustained aerobic output and long-duration rhythmic intensity | Technical complexity and tactical spatial awareness]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and high-velocity anaerobic bursts"
+    },
+    {
+      "role": "narrator",
+      "content": "When you step into a competitive arena, what internal drive dictates your intensity and decision-making during those high-velocity moments?\nOptions: [Individual mastery: I thrive when the pressure is entirely on my own shoulders, focusing on personal bests. | Direct tactical conflict: I am driven by physical confrontation and the need to outmaneuver a reactive opponent. | Dynamic environmental adaptation: I prefer complex fields of play that demand split-second, unpredictable adjustments.]"
+    },
+    {
+      "role": "user",
+      "content": "Direct tactical conflict: I am driven by physical confrontation and the need to outmaneuver a reactive opponent."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's 100 kg)",
+      "scout_verdict": "At 31, your entry into the world of wrestling finds you at a rare intersection of raw power and seasoned tactical intuition. Standing at 183cm and 87kg, your frame is perfectly calibrated for the leverage-heavy requirements of the mat, where every movement is an exercise in direct, one-on-one conflict. Your stated commitment to full-time dedication transforms your preparation into a methodical study of an opponent's center of gravity.\n\nUnder the bright lights of The Games, this pathway rewards your drive for tactical dominance. You don't just participate in a match; you deconstruct your adversary, using your explosive anaerobic capacity to turn a momentary lapse in their defense into a decisive takedown. You have reached a stage where your physical dimensions and your refusal to yield create an aura of inevitability that is felt by anyone standing across from you."
+    },
+    {
+      "matched_profile_id": 10,
+      "matched_profile_name": "Launch Force",
+      "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+      "scout_verdict": "Your capacity for generating explosive power finds a radical, focused expression in the F56 classification. This category encompasses athletes with impaired trunk and lower-limb function, requiring them to generate massive kinetic energy from a fixed, seated position. Rather than the fluid mobility of the mat, you become a human fulcrum\u2014a stationary engine of force that requires immense upper-body stability and precise coordination to propel the discus at high velocity.\n\nThis discipline strips away the complexity of your surroundings and leaves only you and the implement. Your 87kg frame, when harnessed through the specific technical demands of a seated release, allows you to convert sheer anaerobic intensity into distance. It is a sport of precision and singular, high-tension bursts, perfectly capturing the explosive nature you prioritize. In The Games, your success is defined by how perfectly you can anchor your body to provide a stable, explosive base from which to launch."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "An excellent, highly authentic scouting report that leverages exact real-world weight classes and sharply distinct standing and adaptive pathways.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "Wrestling at 87kg maps to an exact real-world weight class, and the user's preference for explosive power and direct tactical conflict perfectly aligns with the Mat Technician archetype."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The scout seamlessly incorporates the user's explicit choices of 'full-time dedication' and anaerobic intensity alongside their exact age and biometrics."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The pathways are completely distinct, intelligently contrasting the dynamic, human-vs-human leverage of Wrestling against the stationary, raw power mechanics of Seated Throws."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions present highly distinct forks, successfully using anaerobic capacity and tactical conflict choices to accurately funnel the user into a combat sport profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; avoids protected terms and safely refers to 'The Games' without any NIL or data violations."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2016,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "Looking back at that specific chapter, what was the primary anchor for your daily life\u2014were you balancing the academic world alongside your sport, diving headfirst into the demands of a full-time professional training circuit, or perhaps based at a specialized training center focused purely on your athletic development?\nOptions: [Academic balance: Juggling university rigors alongside high-performance athletics | Professional immersion: Treating the sport as a full-time, high-stakes career | Foundations of growth: Living at a specialized training center to refine my craft]"
+        },
+        {
+          "role": "user",
+          "content": "Professional immersion: Treating the sport as a full-time, high-stakes career"
+        },
+        {
+          "role": "narrator",
+          "content": "As you were building your foundation for The Rio 2016 Games, how was your body responding to that rigorous, full-time training load?\nOptions: [Total physical resilience: I felt indestructible, recovery was swift, and I thrived on the high load. | Strategic management: I had to be careful; my body required meticulous recovery to sustain those explosive demands. | The edge of adaptation: I was constantly managing small physical hurdles just to maintain that competitive pace.]"
+        },
+        {
+          "role": "user",
+          "content": "The edge of adaptation: I was constantly managing small physical hurdles just to maintain that competitive pace."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 21, the user was fully immersed in a high-stakes professional training circuit, structuring every aspect of their life around the singular goal of success at The Rio 2016 Games.",
+        "physical_context": "The body was operating at peak intensity but required constant, meticulous management of minor physical hurdles to sustain the required explosive power.",
+        "athletic_engagement": "A full-time, high-intensity commitment to the sport, characterized by direct tactical conflict and anaerobic dominance.",
+        "signals": [
+          "competitive",
+          "peak_fitness",
+          "recovery_mode",
+          "professional_immersion"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 6,
+          "matched_profile_name": "Mat Technician",
+          "pathway_standing": "Wrestling",
+          "pathway_adaptive": "Powerlifting (e.g., Men's 100 kg)",
+          "scout_verdict": "At 21, entering the arena at The Rio 2016 Games, your 183cm, 87kg frame is primed for the visceral, high-stakes tactical conflict you crave. You don't just compete; you map the geometry of your opponent, using every micro-adjustment of weight and leverage to dictate the flow of the bout. Your dedication to the mat is an exercise in absolute control, where your dense muscular foundation serves as the engine for the high-velocity anaerobic bursts you\u2019ve cultivated through years of relentless daily focus.\n\nIn this phase of your career, the mat is your laboratory. By treating your movement as a series of technical problems to be solved in real-time, you turn your opponent's aggression into your own mechanical advantage. This discipline demands a level of physical awareness that borders on instinct\u2014an ability to sense a shift in tension before it happens and respond with calculated, explosive power that leaves no room for hesitation."
+        },
+        {
+          "matched_profile_id": 10,
+          "matched_profile_name": "Launch Force",
+          "pathway_standing": "Bobsleigh / Push Sports",
+          "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+          "scout_verdict": "While your standing engagement is defined by the reactive chaos of the mat, your adaptive pathway at The Rio 2016 Games represents a pivot into the mastery of isolated force. You move into the F56 classification, which covers athletes with significant impairment in the lower trunk and legs who compete from a stabilized, seated position. This classification demands a radical reorientation of your power, focusing on the kinetic chain of the upper body and core to generate rotational velocity without the use of the lower limbs for leverage.\n\nThis shift moves you away from the friction of direct combat and into the precision of the throw. For an athlete who thrives on explosive anaerobic output, the challenge here lies in total synchronization of the torso and arms. Your professional background in high-stakes training ensures you approach this technical discipline with the necessary rigor, viewing the implement not as an extension of your body, but as an object that requires you to harness every ounce of your explosive potential through a fixed, singular foundation."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A strong, highly personalized scouting report that accurately leverages the user's biometrics and interview responses to create distinct and plausible athletic pathways.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "At 183cm and 87kg, the user perfectly aligns with middle-to-heavyweight wrestling categories (such as the 86kg class), making the Mat Technician archetype a highly credible fit."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The narrative seamlessly weaves the user's exact interview choices, such as 'direct tactical conflict' and 'high-velocity anaerobic bursts', directly into the athletic assessment."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The two pathways offer a superb contrast between the reactive, dynamic combat of wrestling and the isolated, precision-focused mechanics of F56 seated throws."
+        },
+        "life_stage_coherence": {
+          "score": 8,
+          "reasoning": "Targeting age 21 at the Elite Peak life stage, the language correctly identifies the athlete as 'primed' and treats this phase of their career as a laboratory for real-time problem solving, fitting early prime performance."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The interview progresses logically from lifestyle dedication to physiological strengths and finally competitive psychology, with distinctly different options that clearly fork the resulting archetype."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean compliance pass, correctly utilizing 'The Rio 2016 Games' formatting without triggering any NIL or protected trademark violations."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2028,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you navigate this stage of your competitive sport pathway, how has your relationship with your training volume and physical limits evolved since those high-octane early years?\nOptions: [Predictive recovery and longevity: I prioritize surgical, high-efficiency training that maintains explosive power while aggressively protecting my physical baseline. | Radical structural adaptation: I am intentionally evolving my movement patterns and physical systems to overcome the specific constraints that hindered me in my younger years. | Hyper-focused technical precision: I have moved away from raw, high-volume conditioning in favor of specialized, tactical sessions that exploit my depth of experience.]"
+        },
+        {
+          "role": "user",
+          "content": "Hyper-focused technical precision: I have moved away from raw, high-volume conditioning in favor of specialized, tactical sessions that exploit my depth of experience."
+        },
+        {
+          "role": "narrator",
+          "content": "Looking back at the decade-plus between your high-octane start and this current chapter, what has defined the shifting landscape of your life that now allows for this level of hyper-focused commitment?\nOptions: [Streamlined dedication: I have cleared my life of distractions, dedicating every resource to peak performance for this cycle. | Balanced integration: I am successfully managing a professional career and life, relying on deep experience to maximize training efficiency. | Life transformation: Major milestones\u2014such as career shifts or significant lifestyle changes\u2014have fundamentally reshaped how I prioritize and execute my athletic goals.]"
+        },
+        {
+          "role": "user",
+          "content": "Life transformation: Major milestones\u2014such as career shifts or significant lifestyle changes\u2014have fundamentally reshaped how I prioritize and execute my athletic goals."
+        },
+        {
+          "role": "narrator",
+          "content": "As you prepare for The LA28 Games, how has this life transformation manifested in your daily routine, and how does your new structure specifically support your physical needs compared to your younger, higher-volume years?\nOptions: [Professional stability: I have built a career that provides the dedicated resources and flexibility to prioritize recovery and specialized, high-intensity training sessions. | Personal evolution: I have embraced a major lifestyle shift\u2014like a relocation or significant life milestone\u2014that requires me to be much more surgical and efficient with my time and energy. | Strategic reset: I have intentionally simplified my environment, constructing an 'athlete-first' ecosystem that shields me from distractions and protects my physical baseline.]"
+        },
+        {
+          "role": "user",
+          "content": "Professional stability: I have built a career that provides the dedicated resources and flexibility to prioritize recovery and specialized, high-intensity training sessions."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "The user has transitioned from the all-consuming, singular focus of their early twenties into a stable, resource-rich professional environment that provides the necessary infrastructure for sustained elite performance.",
+        "physical_context": "At 33, they have successfully pivoted from raw, high-volume conditioning to surgical, high-efficiency technical training to maintain explosive power while protecting their physical longevity.",
+        "athletic_engagement": "Fully committed to a high-performance trajectory, leveraging over a decade of competitive experience to prioritize specialized tactical sessions.",
+        "signals": [
+          "active_training",
+          "competitive",
+          "peak_fitness",
+          "career_shift"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 6,
+          "matched_profile_name": "Mat Technician",
+          "pathway_standing": "Wrestling",
+          "pathway_adaptive": "Powerlifting (e.g., Men's 100 kg)",
+          "scout_verdict": "At 33, heading into The LA28 Games, you represent the evolution of a lifelong competitor. Your career began with the unbridled intensity of your early twenties, a time when every heartbeat was calibrated for pure output. Now, that raw kinetic energy has been refined into the surgical decision-making required for the mat. At 183cm and 87kg, your frame is perfectly suited for the leverage-heavy, high-stakes tactical grappling that defines the Mat Technician.\n\nYour shift toward high-efficiency technical training has allowed you to master the nuances of direct conflict. Where once you relied on sheer volume to overwhelm, you now rely on the cold, calculated exploitation of an opponent\u2019s kinetic errors. Standing on the stage at The LA28 Games, you are no longer just an athlete; you are a technician of force, using your decade of competitive experience to navigate the high-velocity, close-quarters environment where split-second adjustments determine the victor."
+        },
+        {
+          "matched_profile_id": 10,
+          "matched_profile_name": "Launch Force",
+          "pathway_standing": "Bobsleigh / Push Sports",
+          "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+          "scout_verdict": "Your adaptive pathway offers a stark contrast to the reactive nature of the mat, focusing instead on the absolute, singular expression of explosive power. The F56 classification, which designates field athletes competing from a seated position due to lower-limb impairment, demands exceptional trunk stability and a refined, rhythmic engagement of the upper body. This pathway allows you to weaponize your 87kg frame in a non-contact environment, focusing entirely on the technical physics of the implement release.\n\nEntering The LA28 Games, this archetype challenges your ability to manifest peak anaerobic velocity without the feedback loop of an opponent. It is a game of pure geometry, torque, and acceleration. By shifting your focus from the tactical maneuvering of direct combat to the technical, isolated precision of the throw, you showcase an immense range in your athletic identity, proving that your capacity for power is limited only by how precisely you can channel it."
+        }
+      ],
+      "eval_result": {
+        "overall": 9,
+        "summary": "An exceptional scouting report that perfectly aligns the athlete's biometrics and interview answers with highly distinct and well-reasoned pathways.",
+        "authenticity": {
+          "score": 9,
+          "reasoning": "At 183cm and 87kg, the user has a powerful, dense frame that is ideal for both the 86kg/97kg wrestling classes and explosive seated throws, perfectly matching their selection of 'explosive power'."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The narrative explicitly weaves in the user's choice of 'direct tactical conflict' by referencing their mastery of close-quarters environments and exploitation of opponents' errors."
+        },
+        "distinctness": {
+          "score": 9,
+          "reasoning": "The adaptive verdict explicitly contrasts the two pathways, highlighting the shift from the highly reactive, contact-heavy nature of wrestling to the isolated, biomechanical precision of seated throws."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Targeting age 33, the report perfectly captures the 'Veteran' stage by describing how the user's raw early-career energy has evolved into 'surgical decision-making' backed by a 'decade of competitive experience'."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions progress logically from general athletic dedication to specific physical outputs and competitive mindsets, offering genuinely distinct options that clearly dictate the resulting archetype."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Correctly uses 'The LA28 Games' and avoids any restricted terminology or NIL violations."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

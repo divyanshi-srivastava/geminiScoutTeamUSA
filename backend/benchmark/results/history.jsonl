@@ -10,3 +10,4 @@
 {"timestamp": "2026-05-10_22-13-25", "pipeline_score": 6.5, "persona_count": 15, "rounds": 3, "total_runs": 45, "success_count": 43, "authenticity": 6.6, "personalization": 7.7, "interview_quality": 7.7, "distinctness": 6.5}
 {"timestamp": "2026-05-10_22-30-08", "pipeline_score": 7.4, "persona_count": 15, "rounds": 3, "total_runs": 45, "success_count": 45, "authenticity": 7.6, "personalization": 8.0, "interview_quality": 7.6, "distinctness": 8.2}
 {"timestamp": "2026-05-11_11-46-41", "pipeline_score": 7.4, "persona_count": 15, "rounds": 1, "total_runs": 15, "success_count": 15, "authenticity": 7.7, "personalization": 8.1, "interview_quality": 7.5, "distinctness": 8.0}
+{"timestamp": "2026-05-11_15-05-29", "pipeline_score": null, "persona_count": 15, "rounds": 1, "total_runs": 15, "success_count": 15, "authenticity": 7.5, "personalization": 7.9, "interview_quality": 6.8, "distinctness": 8.2, "life_stage_coherence_tt": 8.4}

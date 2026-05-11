@@ -1,0 +1,249 @@
+{
+  "persona_id": "14_deaf_sprinter",
+  "persona_label": "Profoundly deaf \u2014 competitive 400m sprinter",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 76,
+    "birth_year": 2001,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To help me understand the foundation of your movement, tell me about how you have typically engaged with high-performance athletics so far. What has been your primary focus?\nOptions: [Individual discipline focused on precision and technical mastery | Explosive, high-intensity team-based competition | Sustained, rhythmic endurance and long-distance challenges]"
+    },
+    {
+      "role": "user",
+      "content": "Individual discipline focused on precision and technical mastery"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are locked into those technical sequences, what environment brings out the best in your performance?\nOptions: [The controlled, predictable environment of a facility where I can isolate every variable | Dynamic, changing outdoor environments that force me to adapt my technique to the elements | A collaborative setting with a mentor and peers providing constant, real-time technical feedback]"
+    },
+    {
+      "role": "user",
+      "content": "The controlled, predictable environment of a facility where I can isolate every variable"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep in that controlled training flow, what is the primary catalyst that pushes you to exceed your previous performance benchmarks?\nOptions: [The relentless pursuit of perfect, repeatable technical metrics and data-driven precision | The mental fortitude required to sustain high-volume, repetitive sessions without any degradation in form | The analytical challenge of isolating and correcting micro-inefficiencies in my movement patterns]"
+    },
+    {
+      "role": "user",
+      "content": "The relentless pursuit of perfect, repeatable technical metrics and data-driven precision"
+    },
+    {
+      "role": "narrator",
+      "content": "With a clear picture of your focus on technical mastery and analytical precision now established, we are prepared to move into the final phase of your profile synthesis."
+    },
+    {
+      "role": "user",
+      "content": "I am ready to prove that my sub-46 second times speak louder than any starting pistol ever could."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "At 25 years old, you stand at a career-defining precipice where raw explosive potential meets the rigorous discipline of the track. Your 178cm, 76kg frame is a machine tuned for the instantaneous release of kinetic energy, a vital asset for the 100m and 200m sprints. Your confidence in your speed metrics signals an elite capacity for fast-twitch recruitment that makes you a formidable contender as you look toward The 2028 Games.\n\nIn the adaptive pathway, you represent an ambulatory sprinting classification for athletes who compete using specialized prosthetic technology. For an athlete of your profile, this category is about the harmonious marriage of carbon-fiber dynamics and human output. Your commitment to technical precision ensures that every stride is not just an exertion of force, but a calculated, repeatable micro-adjustment designed to maximize terminal velocity. This journey will demand you master the interface between your physiology and the adaptive hardware, turning your existing sprinting prowess into a specialized, high-performance craft that defies limitations on the world stage."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "Where others see the chaos of the track, you find clarity in the stillness of the shooting range or the archer\u2019s line. Your internal drive for data-driven precision finds its perfect expression here, far from the explosive velocity of the sprints. By focusing on the micro-adjustments of your posture, breathing, and trigger discipline, you transform from a sprinter into a tactician, ensuring that every movement is as efficient as the last. This is the analytical pursuit of consistency, where your ability to isolate and correct inefficiencies becomes your greatest weapon.\n\nIn the target precision pathway, which encompasses athletes with various physical impairments who compete under international standards, your role shifts to one of complete, controlled mastery. Here, your success is measured in the millimeter-perfect consistency of your shot cycle. You will leverage your technical background to manage external variables\u2014wind, tension, and equipment tuning\u2014against the absolute stillness of your own body. As you train for The 2028 Games, this profile allows you to apply your intellectual rigor to a high-focus environment, where the outcome is determined entirely by the depth of your concentration and the grace of your technical execution."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The scouting report provides solid, distinct narratives and effectively uses the interview data, but fails a basic reality check by associating a 'sub-46 second' time with 100m/200m sprints instead of the 400m.",
+    "authenticity": {
+      "score": 4,
+      "reasoning": "While the physical biometrics fit, the AI mapped a 'sub-46 second' time to 100m/200m sprints, which is mathematically absurd for those distances and reveals a lack of real-world track knowledge."
+    },
+    "personalization": {
+      "score": 7,
+      "reasoning": "The scout effectively weaves the user's specific interview focus on 'data-driven precision' and 'repeatable micro-adjustments' into both archetype narratives."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The standing and adaptive pathways are clearly differentiated, with the adaptive sprint profile specifically exploring the unique mechanics of carbon-fiber prosthetic dynamics."
+    },
+    "interview_quality": {
+      "score": 6,
+      "reasoning": "The questions successfully drilled down into the user's training environment, though the options in the third question were highly convergent, all essentially offering variations of technical perfection."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Correctly uses the approved 'The 2028 Games' format and avoids all restricted trademark terminology."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2024,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you were preparing for those Games, how were you balancing the demands of your personal life\u2014perhaps your career or studies\u2014with the relentless, data-driven nature of your training?\nOptions: [I was fully immersed in a professional training environment, treating my athletic pathway as my sole career focus. | I was balancing training with university studies, using the mental discipline of my degree to fuel my analytical approach to the track. | I was navigating a transition, moving into a new city or role, which forced me to find focus amidst significant external change.]"
+        },
+        {
+          "role": "user",
+          "content": "I was balancing training with university studies, using the mental discipline of my degree to fuel my analytical approach to the track."
+        },
+        {
+          "role": "narrator",
+          "content": "At 23, as you were deep in that pursuit of perfection leading into Paris 2024, how was your body treating you? Was this a chapter of peak resilience where you felt you could push the load indefinitely, or one where you had to balance that intensity against the realities of fatigue?\nOptions: [My body felt bulletproof, thriving on the high-frequency intensity and the constant, repetitive load. | I had to be incredibly calculated with my recovery, managing subtle markers of physical strain to prevent burnout. | It was a period of constant, evolving adaptation, where every micro-adjustment to my training load felt like a deliberate experiment.]"
+        },
+        {
+          "role": "user",
+          "content": "I had to be incredibly calculated with my recovery, managing subtle markers of physical strain to prevent burnout."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 23, you were balancing the high-level intellectual rigor of university studies with the relentless demands of a sub-46 second track schedule.",
+        "physical_context": "You were in a phase of hyper-vigilant recovery, treating your body as a precision instrument that required careful management of strain to avoid burnout.",
+        "athletic_engagement": "Your engagement was intensely competitive, defined by a scientific, data-driven approach to optimizing speed and technical efficiency.",
+        "signals": [
+          "active_training",
+          "competitive",
+          "peak_fitness",
+          "student_era"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 4,
+          "matched_profile_name": "Block Starter",
+          "pathway_standing": "100m/200m Sprints",
+          "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+          "scout_verdict": "At 23, standing at the edge of the track in The Paris 2024 Games, your 178cm, 76kg frame is an engine built for one singular purpose: explosive, high-velocity acceleration. Your history of sub-46 second performances is a testament to the scientific rigor you apply to your training, balancing the intellectual demands of your university studies with the relentless pursuit of track efficiency. You view the starting blocks not merely as a launchpad, but as a laboratory where your analytical focus on movement patterns creates a distinct competitive edge.\n\nIn your adaptive pathway, competing as a lower-limb limb-difference athlete\u2014a classification for ambulatory athletes who compete standing\u2014you demonstrate that your physical power is matched by an extraordinary ability to adapt. Your success here is rooted in your capacity to treat your body as a precision instrument, managing the unique biomechanical requirements of this entry with the same data-driven meticulousness you bring to your sprint form. Your journey at The Paris 2024 Games is defined by this rare ability to turn mechanical necessity into a highly-refined, explosive advantage."
+        },
+        {
+          "matched_profile_id": 3,
+          "matched_profile_name": "Steady Hand",
+          "pathway_standing": "Marksmanship (Rifle/Pistol)",
+          "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+          "scout_verdict": "Away from the concussive intensity of the sprint track, your pursuit of excellence finds a new, disciplined home in marksmanship. At The Paris 2024 Games, the ferocity of your competitive spirit shifts from the kinetic output of your limbs to the absolute stillness of your nervous system. You thrive in the controlled, predictable environment of the range, an arena that perfectly rewards your preference for isolating variables and eliminating every unnecessary fluctuation in your performance.\n\nFor your adaptive pathway, Target Precision provides a canvas for your analytical mind. This profile is not about raw pace, but about the hyper-vigilant management of your internal state\u2014an extension of the rigorous recovery protocols you perfected during your student years. Where the sprint requires explosive force, this pathway demands the quiet, repeatable technical mastery you have refined through thousands of hours of data-driven practice. It is the same discipline you used to dissect your sprint movement patterns, now manifested in the calm, steady hand that remains unshakable under the high-pressure lights of the games."
+        }
+      ],
+      "eval_result": {
+        "overall": 7,
+        "summary": "The report provides a highly authentic athletic mapping for the user's biometrics and stated capabilities, though the interview questions failed to offer sufficiently distinct narrative forks.",
+        "authenticity": {
+          "score": 9,
+          "reasoning": "The 'Block Starter' archetype perfectly matches a 178cm/76kg frame for sprinting, and credibly integrates the user's self-reported sub-46 second times."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "Successfully weaves in the user's exact 'sub-46 second' detail and 'controlled, predictable environment' preference, though it slightly hallucinates a detail about 'university studies'."
+        },
+        "distinctness": {
+          "score": 7,
+          "reasoning": "The adaptive pathways offer specific classifications (T44, FITA Open) and touch on biomechanical adaptation, but rely heavily on the same analytical framing as the standing pathways."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Targeting age 23 (Elite Peak), the verdict appropriately describes an established competitor with a 'history of sub-46 second performances' rather than a novice or veteran."
+        },
+        "interview_quality": {
+          "score": 5,
+          "reasoning": "Question 3 falls into the convergent options trap, offering choices between 'data-driven precision' and 'isolating micro-inefficiencies' which lead to functionally identical analytical profiles."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean execution with correct use of 'The Paris 2024 Games' and no standalone Olympic or Paralympic terms."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2032,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you\u2019ve moved from those intense university years into this stage of your career, how has your relationship with the 'mental load' of your high-performance athletics evolved?\nOptions: [I have shifted to a full-time, singular focus on the track, allowing for deeper immersion than I could ever achieve as a student. | I have integrated my professional career with my training, using the discipline of my work to sharpen my focus on the track. | I have intentionally simplified my life outside of the sport, making my training environment the absolute center of my world to maximize efficiency.]"
+        },
+        {
+          "role": "user",
+          "content": "I have intentionally simplified my life outside of the sport, making my training environment the absolute center of my world to maximize efficiency."
+        },
+        {
+          "role": "narrator",
+          "content": "As you prepare for this next chapter, how would you describe your physical state and the way your body is currently responding to your high-intensity demands?\nOptions: [I have shifted my priority toward recovery and longevity, meticulously managing my output to ensure I can sustain peak performance. | I am still pushing the absolute limits of intensity, utilizing more calculated, higher-load training blocks than I ever did in my early twenties. | I am focusing on refining the sheer efficiency of my movement, aiming to gain speed by eliminating every micro-inefficiency rather than just increasing raw volume.]"
+        },
+        {
+          "role": "user",
+          "content": "I am still pushing the absolute limits of intensity, utilizing more calculated, higher-load training blocks than I ever did in my early twenties."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "The user has systematically stripped away professional and academic distractions to ensure their training environment functions as the singular, optimized center of their world.",
+        "physical_context": "At 31, they have evolved into a more disciplined, high-output athlete, managing significantly higher-load, calculated training blocks with a greater focus on pure intensity than in their university-era foundations.",
+        "athletic_engagement": "Their engagement is absolute, characterized by a transition from the multifaceted pressures of their youth to a state of total, singular dedication to competitive excellence.",
+        "signals": [
+          "active_training",
+          "peak_fitness",
+          "competitive"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 4,
+          "matched_profile_name": "Block Starter",
+          "pathway_standing": "100m/200m Sprints",
+          "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+          "scout_verdict": "At 31, your physical architecture of 178cm and 76kg has been refined into a vessel of pure, high-output kinetic energy. Moving past the university-era hyper-vigilance of your 2024 training, you have entered a stage of singular focus where every millisecond is scrutinized. Standing at the blocks in The Brisbane 2032 Games, you embody the explosive archetype, transforming raw, data-driven intensity into a singular, devastating propulsion from the start line.\n\nIn your adaptive expression, you compete under the T44 classification, which includes ambulatory athletes who compete standing with lower-limb impairment. Your journey from a student-athlete balancing academic rigor to a master of high-intensity explosive performance finds its ultimate realization here; your body, calibrated through years of calculated strain, turns the technical constraints of your impairment into a unique, balanced mechanical advantage. You are not just sprinting; you are rewriting the physics of the drive phase, ensuring that your pursuit of elite-level performance is matched by a technical mastery that leaves the competition behind at the first thirty meters."
+        },
+        {
+          "matched_profile_id": 3,
+          "matched_profile_name": "Steady Hand",
+          "pathway_standing": "Marksmanship (Rifle/Pistol)",
+          "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+          "scout_verdict": "While the track demands your explosion, the range demands your absolute silence. Here, at The Brisbane 2032 Games, you trade the volatility of the sprint for the absolute, crystalline clarity of the marksmanship circuit. This path satisfies your deep-seated requirement for a controlled, predictable environment where you can isolate every variable. You are no longer the athlete fighting the clock; you are the athlete who has successfully conquered their own internal rhythm, finding stillness in the micro-adjustments of your breath and grip.\n\nIn the adaptive realm of Archery FITA Round Open, you engage in a discipline that demands supreme technical refinement, regardless of physical classification. This environment rewards your analytical mindset\u2014the same rigor you applied to your early track data is now projected onto the windage and the target's center. By shifting from the explosive kinetic output of your sprint training to this environment of profound mental and physical stability, you prove that your greatness is defined by your ability to command your own state of being. Whether you are aiming at a target in a facility or focusing on the release of a bow, you are the architect of your own perfect sequence."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "The report provides a highly coherent and personalized elite-peak narrative, effectively utilizing the user's interview focus on technical precision and metrics.",
+        "authenticity": {
+          "score": 7,
+          "reasoning": "The Steady Hand archetype perfectly aligns with the user's preference for isolating variables in controlled facilities, though the Block Starter archetype clashes slightly with the 'controlled facility' preference despite fitting the user's 'sub-46' hint."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The verdict seamlessly weaves in the user's exact biometrics and explicitly references their stated desire for a 'controlled, predictable environment' to isolate variables."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The standing and adaptive pathways offer distinct competitive angles, specifically exploring mechanical nuances like the physics of the T44 drive phase versus the stillness of an Archery release."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Targeting age 31 at the Elite Peak stage, the narrative accurately reflects a seasoned competitor by noting they have moved past 'university-era hyper-vigilance' into a stage of singular, refined focus."
+        },
+        "interview_quality": {
+          "score": 6,
+          "reasoning": "While the first two questions branch effectively, the third question's options ('perfect, repeatable technical metrics' vs 'correcting micro-inefficiencies') are too functionally similar and converge on the same analytical outcome."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "The report is clean, accurately using the required 'The Brisbane 2032 Games' formatting without any trademark or NIL violations."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

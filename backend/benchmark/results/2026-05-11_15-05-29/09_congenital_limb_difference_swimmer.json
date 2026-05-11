@@ -1,0 +1,248 @@
+{
+  "persona_id": "09_congenital_limb_difference_swimmer",
+  "persona_label": "Congenital limb difference \u2014 adaptive swimmer",
+  "biometrics": {
+    "height_cm": 168,
+    "weight_kg": 63,
+    "birth_year": 1997,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe the athletic foundation you\u2019ve built over the years? What kind of training has dominated your physical lifestyle?\nOptions: [Endurance and sustained aerobic capacity | Explosive power and high-intensity interval work | Technical skill, agility, and precision movement]"
+    },
+    {
+      "role": "user",
+      "content": "Endurance and sustained aerobic capacity"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep into your training, which environment helps you sustain that intensity and focus?\nOptions: [Solitary, long-distance pursuit focusing on internal rhythm and mental discipline | Team-based training environments requiring tactical synchronization and shared effort | Direct competitive racing environments where external challengers dictate the pace]"
+    },
+    {
+      "role": "user",
+      "content": "Solitary, long-distance pursuit focusing on internal rhythm and mental discipline"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep in the heart of a long-distance effort, what serves as the primary engine of your progress?\nOptions: [Sheer mental grit, pushing past the threshold when the body demands rest | Mathematical precision, focusing on heart rate management and cadence to sustain a flow state | Strategic preservation, balancing immediate output against long-term metabolic recovery]"
+    },
+    {
+      "role": "user",
+      "content": "Mathematical precision, focusing on heart rate management and cadence to sustain a flow state"
+    },
+    {
+      "role": "narrator",
+      "content": "I have a clear picture of how you approach your high-performance athletics, from your preference for solitary rhythm to your focus on physiological precision. I'm ready to map your potential pathway."
+    },
+    {
+      "role": "user",
+      "content": "Let's get to work; I'm ready to see where my times stack up against the national standards."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "At 168cm and 63kg, your physiology is a finely tuned instrument perfectly balanced for the road. You do not just ride; you calculate, treating every stretch of tarmac as a data-driven laboratory where your preference for solitary rhythm and cadence becomes a superpower. At 29, you are in the ideal window of peak aerobic efficiency, ready to command the pace with the mathematical precision you bring to every training session.\n\nFor your adaptive pathway, the H3 classification\u2014designated for athletes with impairment affecting lower limb function\u2014allows you to channel that same intensity into a recumbent handcycle. This is not about merely turning cranks; it is about maintaining a high-output flow state that mirrors your standing performance. In the heat of The Games, your ability to remain solitary and focused amidst the race will be the defining trait that separates you from the field."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Women's FITA Round Open)",
+      "scout_verdict": "While your engine thrives on endurance, there is a second dimension to your character defined by stillness and profound mental discipline. You have identified heart-rate management as your core strength; this is the hallmark of the marksman. Transitioning from the aerobic grind to the calculated, surgical focus of the range allows you to leverage that 'flow state' not through speed, but through the absolute suppression of external noise and physiological tremor.\n\nIn the adaptive pathway, your discipline finds a home in Archery under the FITA Round Open classification, which welcomes athletes with physical impairments who exhibit elite stability and control. Here, your focus shifts from the sustained rhythm of a race to the singular, high-stakes moment of release. By mastering the stillness between heartbeats, you translate the same mathematical rigor you once applied to your cadence into the precise mechanical mastery required to secure a medal at The Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly personalized and creative scouting report that cleverly connects the user's endurance background to both cycling and precision sports.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The 'Road Machine' archetype perfectly fits the 168cm/63kg biometrics, and the pivot to marksmanship via heart-rate control is an authentic high-performance sports science insight."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts weave the user's specific interview choices, such as 'mathematical precision' and 'heart-rate management', deeply into the narrative."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The standing and adaptive pathways offer specific, distinct sporting contexts, accurately citing classifications like Handcycling H3 and Archery FITA Open."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions logically progressed from a general athletic foundation to specific environmental preferences and internal psychological drivers, offering genuinely distinct forks."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "The report correctly avoids restricted terms, utilizing safe descriptors like 'The Games' without any NIL or scoring violations."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2020,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "What was the dominant structure of your life as you approached that era?\nOptions: [Immersed in full-time academic studies and collegiate competition | Transitioning into the professional working world while maintaining a rigorous training cycle | Dedication to full-time, independent high-performance athletics]"
+        },
+        {
+          "role": "user",
+          "content": "Transitioning into the professional working world while maintaining a rigorous training cycle"
+        },
+        {
+          "role": "narrator",
+          "content": "As you navigated the professional world at 23, how did your body handle the compounding stress of a new career and the rigors of your training?\nOptions: [My body adapted well; the routine of professional life provided a stable anchor for my training consistency. | It was a delicate act; I had to meticulously manage my recovery and shift my training to off-peak hours to keep my momentum. | The shift caused significant physical fatigue; I had to abandon high-volume sessions for more targeted, recovery-conscious approaches.]"
+        },
+        {
+          "role": "user",
+          "content": "My body adapted well; the routine of professional life provided a stable anchor for my training consistency."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 23, she was successfully bridging the gap between a new professional career and a rigorous high-performance training regimen.",
+        "physical_context": "Her body exhibited high adaptability, using the predictability of her professional schedule to anchor her training consistency and maintain peak performance levels.",
+        "athletic_engagement": "Maintained a high-performance, endurance-focused engagement characterized by solitary, precision-based technical work.",
+        "signals": [
+          "active_training",
+          "peak_fitness",
+          "career_shift"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 13,
+          "matched_profile_name": "Edge Carver",
+          "pathway_standing": "Alpine Skiing / Speed Skating",
+          "pathway_adaptive": "Para-Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+          "scout_verdict": "At 23, standing at 168cm and 63kg, you entered The Tokyo 2020 Games era with a frame that acted as a vessel for pure, high-speed efficiency. Your training during this period was characterized by a mathematical commitment to cadence, transforming your physical movements into a predictable, high-performance rhythm. This analytical approach allowed you to master the intricate edge control required for technical speed sports, where your ability to hold a flow state meant the difference between a podium finish and the rest of the pack. You thrived on the solitude of these technical pathways, treating every turn like an equation you were destined to solve.\n\nFor the LW12 classification\u2014covering athletes with lower-limb impairments who compete using a sit-ski\u2014this precision takes on an even more profound significance. Because you lack the traditional use of lower-limb leverage, the core-to-ski connection becomes the absolute bridge for your internal rhythm. Your prior dedication to solitary, analytical training ensures that every weight shift through your torso translates directly into velocity. In this adaptive discipline, your ability to remain calm and rhythmic under the pressure of a high-speed descent allows you to maintain the perfect line, effectively turning your sit-ski into a high-performance instrument of speed."
+        },
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+          "scout_verdict": "As you navigated the intersection of a new professional career and a rigorous training schedule at 23, the solitary nature of long-distance cycling became the ultimate anchor for your performance. Your involvement in The Tokyo 2020 Games era saw you morph into a true machine of the road, where your endurance was built not through chaos, but through the granular optimization of your cardiovascular system. You treated every long-duration effort as a laboratory, focusing on heart rate management and cadence to sustain a meditative flow state that eclipsed the mental exhaustion of your professional work life.\n\nThis methodical focus finds a natural evolution in the H3 classification\u2014an adaptive category for athletes with significant lower-limb impairment who utilize a handcycle. Here, your transition to the cycle becomes an exercise in upper-body endurance and tactical energy distribution. By applying the same analytical, rhythm-focused approach you used in your earlier endurance training, you transform the handcycle into an extension of your own tactical will. Rather than just brute force, you utilize precision-based cardiovascular management to conserve energy for strategic surges, ensuring that you maintain peak efficiency through every kilometer of the race."
+        }
+      ],
+      "eval_result": {
+        "overall": 7,
+        "summary": "The report provides a strong, detailed scouting analysis that integrates the user's preference for endurance and precision, though it improperly hallucinates a professional career backstory not present in the interview.",
+        "authenticity": {
+          "score": 7,
+          "reasoning": "The Road Machine archetype is a perfect fit for a 168cm/63kg endurance athlete focused on cadence, though Edge Carver is slightly less aligned with pure long-distance aerobic capacity."
+        },
+        "personalization": {
+          "score": 5,
+          "reasoning": "It effectively incorporates the user's focus on heart rate and cadence, but inexplicably invents a narrative about balancing 'a new professional career' which the user never mentioned."
+        },
+        "distinctness": {
+          "score": 9,
+          "reasoning": "The adaptive pathways offer excellent, specific biomechanical insights, such as the core-to-ski connection for LW12 and the tactical upper-body energy distribution for H3, distinct from the standing profiles."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Appropriately treats the 23-year-old user as being in their Elite Peak during 'The Tokyo 2020 Games era', emphasizing established prime performance and efficiency rather than early-career development."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The narrator asked strong, progressive questions that effectively narrowed down the athlete's psychological and physiological drivers using distinct, non-convergent options."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Perfect adherence to 'The Tokyo 2020 Games' formatting and no IP or NIL violations."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2028,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "In this current chapter leading up to Los Angeles, how has the intersection of your professional responsibilities and your training demands evolved?\nOptions: [Transitioning into a leadership or mentoring role that allows for more flexible, deep-focus training blocks. | Scaling an intensive professional project that requires balancing high-stakes work with the discipline of my established routine. | Navigating a major life pivot that has recalibrated how I value movement and daily exertion.]"
+        },
+        {
+          "role": "user",
+          "content": "Transitioning into a leadership or mentoring role that allows for more flexible, deep-focus training blocks."
+        },
+        {
+          "role": "narrator",
+          "content": "As you navigate this new, more flexible training structure, how has your physical approach adapted\u2014are you utilizing that extra time to expand your overall aerobic volume, or are you narrowing your focus toward extreme efficiency, precision, and metabolic preservation?\nOptions: [Expanding volume capacity to push the thresholds of my endurance further. | Refining intensity and technical precision to maximize my efficiency in every session. | Prioritizing recovery-driven training to ensure peak resilience for the long-distance demands of the Games.]"
+        },
+        {
+          "role": "user",
+          "content": "Refining intensity and technical precision to maximize my efficiency in every session."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 31, she is transitioning into leadership and mentoring roles, which provides the flexibility needed to dedicate high-quality, deep-focus blocks to her high-performance athletics.",
+        "physical_context": "Her body is currently tuned for extreme efficiency, prioritizing metabolic precision and refined intensity over mere volume to maintain her endurance baseline.",
+        "athletic_engagement": "Deeply committed to a solitary, rhythm-based training regimen that favors mathematical cadence and internal discipline.",
+        "signals": [
+          "active_training",
+          "peak_fitness",
+          "career_shift"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+          "scout_verdict": "At 168cm and 63kg, your stature at 31 serves as the perfect chassis for the high-cadence demands of The LA28 Games. Your years of honing mathematical precision translate into a dominant proficiency in the H3 handcycling classification, where athletes with impairment in the lower trunk and lower limbs rely on refined upper-body power and aerodynamic efficiency. You are not just riding; you are integrating your physiology into the machine\u2019s geometry, finding that specific flow state where heart rate and mechanical output converge into seamless, sustainable speed.\n\nWith your transition into leadership, you have applied the same structured, analytical approach to your recovery and training blocks as you do to your professional life. This pathway allows you to exploit your natural capacity for sustained aerobic output, turning long hours of solitary, rhythmic work into a technical advantage that will be a defining feature of your performance on the road at The LA28 Games."
+        },
+        {
+          "matched_profile_id": 2,
+          "matched_profile_name": "Long Haul",
+          "pathway_standing": "Distance Running",
+          "pathway_adaptive": "Wheelchair Racing (e.g., Women's Marathon T54)",
+          "scout_verdict": "While the cycle demands technical precision, the marathon track demands a different kind of internal fortitude. Here, your endurance baseline finds a home in T54 wheelchair racing\u2014a class for athletes with impairment in the lower trunk and legs who possess full functional use of their arms and shoulders to generate explosive, sustained propulsion. Your ability to tap into deep-reserve stamina, which you have cultivated through years of solitary, rhythm-heavy training, allows you to manage the metabolic cost of long-duration competition with a composure few can match.\n\nAt 31, your physical chapter is defined by efficiency, and this discipline rewards that shift. You are not fighting the distance; you are navigating it with the same measured intensity that has defined your athletic journey. As you stand on the precipice of The LA28 Games, your focus on internal discipline and physiological economy ensures that when the final miles demand everything, you possess the structural and mental clarity to pace your effort with surgical precision, separating the field through pure, refined resolve."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A strong and highly tailored scouting report that effectively utilizes the user's specific answers about endurance and mathematical precision, mapping perfectly to an age-appropriate peak performance profile.",
+        "authenticity": {
+          "score": 9,
+          "reasoning": "At 168cm and 63kg, the user's BMI of 22.3 perfectly aligns with the physiological demands of the 'Road Machine' and 'Long Haul' endurance archetypes."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The verdicts expertly weave in the user's exact interview selections, explicitly referencing 'mathematical precision,' 'flow state,' and 'solitary, rhythmic work.'"
+        },
+        "distinctness": {
+          "score": 7,
+          "reasoning": "While both pathways focus on seated endurance adaptive sports (Handcycling and Wheelchair Racing), the narratives successfully contrast the mechanical geometry of cycling with the raw internal fortitude of the marathon."
+        },
+        "life_stage_coherence": {
+          "score": 8,
+          "reasoning": "Targeting the Elite Peak stage at age 31, the narrative accurately frames this era by noting 'your physical chapter is defined by efficiency,' fitting perfectly for an established endurance athlete."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions provide a logical funnel, successfully moving from broad athletic foundations to specific psychological drivers like mathematical precision versus mental grit."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Passed cleanly with the correct 'The LA28 Games' formatting and no NIL or precise timing violations."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

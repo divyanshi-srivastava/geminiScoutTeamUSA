@@ -1,0 +1,225 @@
+{
+  "persona_id": "02_tall_power_athlete",
+  "persona_label": "Tall male power athlete",
+  "biometrics": {
+    "height_cm": 196,
+    "weight_kg": 103,
+    "birth_year": 2002,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, how would you characterize the movement background that has defined your physical development up to this point?\nOptions: [Explosive, high-intensity team sports where raw power and immediate reaction speed are the core focus. | Technical and precision-oriented individual disciplines that demand extreme motor control and calm under pressure. | Sustained endurance and long-form physical output, prioritizing pacing and metabolic efficiency over short bursts.]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive, high-intensity team sports where raw power and immediate reaction speed are the core focus."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "scout_verdict": "At 196cm and 103kg, you occupy the court not just as a player, but as a gravitational center. Your background in high-intensity team sport translates perfectly to the hardwood, where your reach and mass make you a dominant force in aerial play. You thrive on the immediate, high-stakes decisions that define the flow of a match, utilizing your physical stature to control the pace and dictate defensive rotations at the Brisbane 2032 Games.\n\nIn the adaptive pathway, your expertise in court-side strategy is pushed into a new, high-octane dimension. Wheelchair basketball requires a unique synergy between rapid, precise chair maneuvers and the explosive upper-body force you have refined throughout your sporting journey. At 24, you are at the perfect stage to translate your natural presence into a masterclass of tactical command, ensuring your team maintains its pressure on the floor at the Brisbane 2032 Games."
+    },
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+      "scout_verdict": "If the court represents the broad strategy of team play, the throwing circle is where you find the raw expression of your physical density. Your 103kg frame is primed for explosive torque, allowing you to generate massive velocity in a short, intense window of kinetic energy. Here, the focus shifts from the fluid team-based dynamics of your background to the singular, precise pursuit of maximum distance and mechanical efficiency as you prepare for the Brisbane 2032 Games.\n\nYour adaptive pathway leads to the seated shot put, specifically within the C3 classification, which is designed for athletes who compete from a fixed seated position. This discipline challenges you to abandon the momentum of a full-body run-up and instead focus entirely on core-driven stabilization and localized explosive power. In this environment, your strength becomes a study in technical precision, requiring you to channel your entire force output through a restricted kinetic chain to deliver the implement with surgical accuracy at the Brisbane 2032 Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The scout verdicts are strong and well-aligned with the user's massive physical frame, but the pipeline failed to conduct a complete interview, relying on a single question to determine the pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "At 196cm and 103kg, the user possesses the immense frame and mass that perfectly align with both the throwing circle (Iron Shoulder) and the basketball court (Net Presence)."
+    },
+    "personalization": {
+      "score": 7,
+      "reasoning": "The narrative directly incorporates the user's chosen background in 'high-intensity team sport' and weaves their exact height and weight into the tactical analysis."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two pathways are highly distinct; the seated shot put adaptive description offers genuine mechanical insight regarding core stabilization that contrasts beautifully with the wheelchair basketball analysis."
+    },
+    "interview_quality": {
+      "score": 1,
+      "reasoning": "The conversation history contains only a single turn, meaning no meaningful interview occurred to progressively narrow and differentiate the user's athletic profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance with correct formatting for 'the Brisbane 2032 Games' and no restricted trademarked terms."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2028,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "When you visualize yourself at 26, approaching The LA28 Games, what does the primary structure of your daily life look like\u2014are you fully committed to a dedicated training lifestyle, balancing high-performance needs with external career demands, or navigating a significant transition to reach this level?\nOptions: [Full-time professional: My life is dedicated entirely to training, recovery, and tactical refinement. | High-performance hybrid: I am balancing my elite training regimen with professional work or academic commitments. | Strategic redirection: I am actively relocating or shifting my environment to prioritize this push toward the top-tier athletic pathway.]"
+        },
+        {
+          "role": "user",
+          "content": "Strategic redirection: I am actively relocating or shifting my environment to prioritize this push toward the top-tier athletic pathway."
+        },
+        {
+          "role": "narrator",
+          "content": "How has your body been responding to the physical toll of this move\u2014are you finding yourself in a phase of immediate, robust readiness, managing some necessary recovery, or perhaps focusing on a fundamental physical restructuring to prep for your debut at The LA28 Games?\nOptions: [Robust physical readiness: My systems are primed, and I've used the move to sharpen my focus for peak intensity. | Recovery and adaptation: The shift has introduced new stressors, and I'm currently prioritizing restorative work to address accumulated training wear. | Structural rebuilding: I am using this window to refine my movement mechanics and build a more resilient foundation for the demands of the Games.]"
+        },
+        {
+          "role": "user",
+          "content": "Structural rebuilding: I am using this window to refine my movement mechanics and build a more resilient foundation for the demands of the Games."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 26, the user is mid-strategic redirection, having relocated to a new environment to prioritize their commitment to a top-tier athletic pathway.",
+        "physical_context": "Currently engaged in a rigorous phase of structural rebuilding to refine movement mechanics and establish long-term physical resilience.",
+        "athletic_engagement": "Highly focused and intentional, shifting from raw explosive intensity toward a calculated, optimized foundation for The LA28 Games.",
+        "signals": [
+          "structural_rebuilding",
+          "relocation",
+          "peak_fitness",
+          "competitive"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 11,
+          "matched_profile_name": "Net Presence",
+          "pathway_standing": "Basketball",
+          "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+          "scout_verdict": "At 196cm and 103kg, your physical profile acts as an anchor for any team dynamic. Your history in explosive, high-intensity sports has hard-wired you for the split-second decision-making required on the court. As you navigate your relocation and prioritize your development for The LA28 Games, your ability to dominate space provides an immediate tactical edge, allowing you to control the rhythm of play with both defensive gravity and offensive vision.\n\nTransitioning into the adaptive sphere of this pathway, your role shifts from mere physical imposition to becoming the kinetic engine of the team. Wheelchair basketball demands a unique orchestration of upper-body power and core stability to manage the court. Here, your stature becomes an asset of reach and leverage, transforming your explosive background into fluid, tactical maneuvers that split defenses. Your current phase of structural rebuilding is perfectly aligned with the mechanical demands of this discipline, as you refine how you translate raw power through the chair to gain a competitive advantage on the floor at The LA28 Games."
+        },
+        {
+          "matched_profile_id": 6,
+          "matched_profile_name": "Mat Technician",
+          "pathway_standing": "Wrestling",
+          "pathway_adaptive": "Powerlifting (e.g., Men's 100 kg)",
+          "scout_verdict": "Your foundation in high-intensity team sports offers a specialized springboard for the mat. Wrestling rewards your explosive reactivity, allowing you to turn a wrestling bout into a game of controlled pressure and immediate force application. In this environment, your physical development isn't just about output\u2014it's about the precision of your centers of gravity and the speed with which you can reset your defensive stance during the rigorous training cycles leading up to The LA28 Games.\n\nIn the adaptive discipline of powerlifting, the narrative pivots from fluid movement to the pure, technical mastery of force generation. This is where your current focus on structural rebuilding finds its highest purpose: isolating and strengthening the kinetic chains that underpin your entire athletic identity. By mastering the meticulous technical requirements of each lift, you turn your 103kg frame into a vessel of refined, calculated power. It is a distinct, inward-facing challenge that demands a disciplined, cerebral approach to physical resilience, ensuring that when you arrive at The LA28 Games, your body is an optimized machine forged through intentional, high-force development."
+        }
+      ],
+      "eval_result": {
+        "overall": 4,
+        "summary": "While the biometric matches are strong, the scouting report hallucinates user context not present in the interview, severely damaging its personalization and coherence.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "A height of 196cm and weight of 103kg is an excellent, plausible fit for both a basketball forward and a heavyweight wrestler or powerlifter."
+        },
+        "personalization": {
+          "score": 2,
+          "reasoning": "The verdict hallucinates that the user is navigating a 'relocation' and undergoing 'structural rebuilding', neither of which were mentioned in the single-question interview."
+        },
+        "distinctness": {
+          "score": 7,
+          "reasoning": "The second pathway pairing (Wrestling vs Powerlifting) provides genuinely distinct athletic angles, while the basketball pathways effectively contrast kinetic differences between standing and seated play."
+        },
+        "life_stage_coherence": {
+          "score": 5,
+          "reasoning": "Targeting age 26 (Elite Peak), the narrative inexplicably focuses on 'structural rebuilding' and 'prioritizing your development', which sounds more like a recovering or younger athlete than someone in their prime."
+        },
+        "interview_quality": {
+          "score": 3,
+          "reasoning": "The interview consisted of only a single question, failing to meaningfully probe the athlete's psychological or detailed physical profile beyond a basic multiple-choice movement background."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "The output successfully uses the required 'The LA28 Games' terminology and avoids restricted terms."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2036,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you navigate this veteran chapter, how has your physical relationship with high-intensity movement evolved after a decade of prioritizing structural integrity and precise mechanics?\nOptions: [I've leaned into strength maintenance, leveraging my physical stature to act as a force-multiplier on the field. | I\u2019ve shifted focus toward tactical awareness and efficiency, refining my movement to maintain precision amidst the game's intensity. | I\u2019ve pivoted to a hybrid conditioning model that prioritizes longevity, ensuring I can still deliver the explosive, powerful bursts I\u2019ve always relied on.]"
+        },
+        {
+          "role": "user",
+          "content": "I\u2019ve pivoted to a hybrid conditioning model that prioritizes longevity, ensuring I can still deliver the explosive, powerful bursts I\u2019ve always relied on."
+        },
+        {
+          "role": "narrator",
+          "content": "With the horizon of the Ahmedabad 2036 Games approaching, how has your life beyond the training facility\u2014perhaps a shift in your career, new responsibilities, or the evolution of your role as a veteran mentor\u2014shaped the intensity you bring to this final chapter?\nOptions: [I am embracing a mentorship role, using my experience to guide the next generation while keeping my own competitive fire sharp. | I am balancing a demanding career transition, which requires me to be surgical and hyper-efficient with the time I dedicate to my training. | I am leaning into the psychological and tactical complexities of the sport, using my vast repository of experience to dominate through anticipation rather than just pure physical output.]"
+        },
+        {
+          "role": "user",
+          "content": "I am leaning into the psychological and tactical complexities of the sport, using my vast repository of experience to dominate through anticipation rather than just pure physical output."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "Transitioning from a performer defined by physical output to a veteran tactician, successfully balancing demanding professional responsibilities with the strategic focus required for a final competitive campaign at the Ahmedabad 2036 Games.",
+        "physical_context": "A sophisticated, mature physical state managed through a hybrid training model that protects structural integrity while preserving the explosive burst capability developed over a decade of high-intensity competition.",
+        "athletic_engagement": "Highly engaged and intensely focused on the psychological and tactical elements of the sport, using superior anticipation to maintain dominance as a seasoned veteran.",
+        "signals": [
+          "active_training",
+          "competitive",
+          "career_shift"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 11,
+          "matched_profile_name": "Net Presence",
+          "pathway_standing": "Basketball",
+          "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+          "scout_verdict": "At the Ahmedabad 2036 Games, your 196cm frame is more than just a physical asset; it is the anchor of a veteran strategy built on years of high-intensity play. Your evolution from a raw performer into a tactical commander allows you to dictate the tempo, using your court vision to dismantle opponents before they even recognize the formation. You have mastered the art of spatial control, ensuring that your presence on the hardwood serves as a constant, looming threat that forces the opposition into suboptimal decisions.\n\nIn the adaptive pathway, Wheelchair Basketball challenges you to translate that same court intelligence into a hyper-dynamic environment. This discipline, designed for athletes with physical impairments who require the use of a sports chair for competitive mobility, demands extraordinary upper-body synchronization and chair-handling agility. Here, your experience with explosive movement is reconfigured into a masterclass of maneuvering and tactical team play. At 34, you are no longer just an athlete; you are the architect of the game, orchestrating the floor with the cold, calculated efficiency that only a decade of high-performance athletics can forge."
+        },
+        {
+          "matched_profile_id": 12,
+          "matched_profile_name": "Iron Shoulder",
+          "pathway_standing": "Field Athletics (Discus/Shot Put)",
+          "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+          "scout_verdict": "Your journey to the Ahmedabad 2036 Games has culminated in a profound mastery of kinetic energy. In the field, you represent the pinnacle of concentrated power. By shifting your focus from the chaotic, fast-paced nature of team play to the singular, iterative precision of field athletics, you have protected your physical longevity while maintaining the raw, dense strength that defined your early career. Every throw is a testament to the mechanics you have refined over years of rigorous training, turning explosive potential into a singular moment of perfect, precise motion.\n\nThis physical discipline finds a unique and intense expression in the Seated Shot Put (C3). The C3 classification designates athletes who compete from a fixed seated position, relying entirely on core stability and upper-body torque to generate explosive distance. This pathway strips away the reliance on traditional footwork, forcing you to utilize the absolute purity of your kinetic chain. For a veteran like you, this represents the ultimate test of resilience, focusing on the mechanical integrity and explosive output that you have cultivated during your transition to a more deliberate, high-stakes model of competitive sport pathway."
+        }
+      ],
+      "eval_result": {
+        "overall": 7,
+        "summary": "The scouting report provides exceptional archetype matches and beautifully crafted veteran-stage narratives, though the evaluation suffers heavily from an overly brief, one-question interview.",
+        "authenticity": {
+          "score": 9,
+          "reasoning": "The 196cm and 103kg frame perfectly aligns with the real-world physical requirements for both a physical basketball player and a powerful shot put thrower."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The report explicitly integrates the user's choice of 'explosive, high-intensity team sports' into the basketball narrative and positions the field event as an evolution of that power."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The two pathways offer highly distinct athletic applications, contrasting a dynamic, spatial team sport with a singular, stationary kinetic-chain throwing event."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "The narrative beautifully targets the 34-year-old Veteran stage with highly appropriate phrases like 'evolution from a raw performer into a tactical commander' and 'protected your physical longevity'."
+        },
+        "interview_quality": {
+          "score": 1,
+          "reasoning": "The conversation consisted of only one turn, meaning no meaningful progressive interview occurred to deeply differentiate the athlete."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Correctly uses 'The Ahmedabad 2036 Games' format with no standalone trademark violations."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}
