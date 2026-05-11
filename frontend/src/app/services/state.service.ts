@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, ReplaySubject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 import { ConversationTurn, EvalResult, Question, TraceEvent, Metrics, ScoutingResult } from '../models';
 
 export type AppState = 'LANDING' | 'INTERVIEW' | 'SCOUTING' | 'RESULT' | 'TIME_TRAVEL_INTERVIEW';
@@ -50,8 +50,21 @@ export class StateService {
   /** Structured context summary the narrator emits when the era interview is complete. */
   eraContextSummary: any = null;
 
+  /**
+   * Era year stashed when an era-scout request fires. Consumed by setResult() to populate
+   * the visited-years cache. Decoupled from activeEraYear because that flag must clear
+   * synchronously (to dismiss the interview-time era banner) while the cache write must
+   * happen later when the scout result arrives over SSE.
+   */
+  pendingScoutEraYear: number | null = null;
+
   private visitedYearsSub = new BehaviorSubject<Set<number>>(new Set());
-  private eraReadyToScoutSub = new ReplaySubject<void>(1);
+  // Plain Subject (NOT ReplaySubject): when the narrator emits era_ready_to_scout=true
+  // the interview component is guaranteed to already be subscribed (the signal only fires
+  // mid-era-interview). A ReplaySubject would replay this cached emission to every future
+  // subscriber — every subsequent year click would auto-fire onEraReadyToScout() and skip
+  // the era interview entirely, racing against the new era request and trapping the UI.
+  private eraReadyToScoutSub = new Subject<void>();
 
   // ── Public Observables ──
   appState$   = this.appStateSub.asObservable();
@@ -83,6 +96,11 @@ export class StateService {
 
   setActiveQuestion(question: Question) {
     this.activeQuestionSub.next(question);
+    // Clear loading the instant a question lands. Otherwise, if the component that
+    // started the stream (e.g. timeline.travelTo) gets torn down by an appState
+    // change, its observer.complete() handler never fires and the spinner stays
+    // up forever — hiding the question that already arrived via dispatch().
+    this.loadingSub.next(false);
     const optionsText = question.options?.length
       ? `\nOptions: [${question.options.join(' | ')}]`
       : '';
@@ -90,7 +108,11 @@ export class StateService {
   }
 
   setResult(result: ScoutingResult) {
-    const eraYear = this.activeEraYear; // capture before clearing
+    // Read the era year from the pending stash (set when the era-scout request fired),
+    // not from activeEraYear — which gets cleared synchronously to dismiss the era banner
+    // long before the result returns over SSE.
+    const eraYear = this.pendingScoutEraYear;
+    this.pendingScoutEraYear = null;
     // Atomic Clear: Remove all interview context when result arrives.
     this.activeQuestionSub.next(null);
     this.loadingSub.next(false);
@@ -154,6 +176,7 @@ export class StateService {
     this.visitedYearsSub.next(new Set());
     this.lastCompletedEraYear = null;
     this.eraContextSummary = null;
+    this.pendingScoutEraYear = null;
     this.sessionId = crypto.randomUUID();
   }
 

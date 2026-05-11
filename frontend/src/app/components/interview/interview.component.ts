@@ -409,6 +409,7 @@ export class InterviewComponent implements OnInit, OnDestroy {
     if (!eraYear) return;
     this.state.setLoading(true);
     this.state.addUserTrace(`Skipping to The ${eraYear} Games report with current context.`);
+    this.state.pendingScoutEraYear = eraYear;
     this.state.setActiveEraYear(null);
     this.state.setAppState('SCOUTING');
     this.eraInterviewRound = 0;
@@ -429,7 +430,10 @@ export class InterviewComponent implements OnInit, OnDestroy {
 
     this.sub = this.stream.consume(body).subscribe({
       complete: () => this.state.setLoading(false),
-      error: () => this.state.setLoading(false)
+      error: () => {
+        this.state.pendingScoutEraYear = null;
+        this.state.setLoading(false);
+      }
     });
   }
 
@@ -439,6 +443,7 @@ export class InterviewComponent implements OnInit, OnDestroy {
     if (!eraYear) return;
     this.state.setLoading(true);
     this.state.addUserTrace(`Narrator has enough context for The ${eraYear} Games. Generating scout report.`);
+    this.state.pendingScoutEraYear = eraYear;
     this.state.setActiveEraYear(null);
     this.state.setAppState('SCOUTING');
     this.eraInterviewRound = 0;
@@ -459,7 +464,10 @@ export class InterviewComponent implements OnInit, OnDestroy {
 
     this.sub = this.stream.consume(body).subscribe({
       complete: () => this.state.setLoading(false),
-      error: () => this.state.setLoading(false)
+      error: () => {
+        this.state.pendingScoutEraYear = null;
+        this.state.setLoading(false);
+      }
     });
   }
 

@@ -243,6 +243,7 @@ export class TimelineComponent implements OnInit, OnDestroy {
 
     this.state.setActiveEraYear(game.year);
     this.state.addUserTrace(`I'm jumping to The ${game.year} Games — I'd be ${game.year - (this.state.metrics.birthYear || 2000)} years old. ${this.getLifeStageLabel(game.year)} stage.`);
+    this.state.setLoading(true);
 
     const body = {
       story: '',
@@ -258,7 +259,11 @@ export class TimelineComponent implements OnInit, OnDestroy {
 
     this.state.setAppState('INTERVIEW');
     this.sub = this.stream.consume(body).subscribe({
-      error: () => this.state.setAppState('RESULT')
+      complete: () => this.state.setLoading(false),
+      error: () => {
+        this.state.setLoading(false);
+        this.state.setAppState('RESULT');
+      }
     });
   }
 
