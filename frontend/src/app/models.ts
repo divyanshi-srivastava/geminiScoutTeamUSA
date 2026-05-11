@@ -13,6 +13,8 @@ export interface TraceEvent {
   event: string;
   timestamp: string;
   detail?: string;
+  before?: string;
+  after?: string;
 }
 
 export interface Profile {

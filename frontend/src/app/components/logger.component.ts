@@ -23,8 +23,21 @@ import { StateService } from '../services/state.service';
             <span class="agent-tag" [attr.data-agent]="t.agent">
               {{ formatAgent(t.agent) }}
             </span>
+            <span class="event-label" *ngIf="formatEventLabel(t.event)">
+              {{ formatEventLabel(t.event) }}
+            </span>
           </div>
           <p class="row-body">{{ t.detail || t.event }}</p>
+          <div *ngIf="t.before && t.after" class="diff-block">
+            <div class="diff-side diff-before">
+              <span class="diff-label">BEFORE</span>
+              <pre class="diff-text">{{ t.before }}</pre>
+            </div>
+            <div class="diff-side diff-after">
+              <span class="diff-label">AFTER</span>
+              <pre class="diff-text">{{ t.after }}</pre>
+            </div>
+          </div>
         </div>
 
         <div *ngIf="(traces$ | async)?.length === 0" class="empty-state">
@@ -118,6 +131,18 @@ import { StateService } from '../services/state.service';
     .agent-tag[data-agent*="system"]     { color: #94a3b8; font-style: italic; }
     .agent-tag[data-agent="user"]        { color: #a5f3fc; background: rgba(165,243,252,0.06); border: 1px solid rgba(165,243,252,0.12); }
 
+    .event-label {
+      font-size: 0.48rem;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.18);
+      padding: 1px 5px;
+      border-radius: 2px;
+      border: 1px solid rgba(255,255,255,0.07);
+      background: rgba(255,255,255,0.02);
+    }
+
     .row-body {
       color: rgba(255,255,255,0.65);
       font-size: 0.76rem;
@@ -136,6 +161,15 @@ import { StateService } from '../services/state.service';
       color: rgba(255,255,255,0.35);
       font-style: italic;
       font-size: 0.7rem;
+      max-height: 3.3rem;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255,255,255,0.1) transparent;
+    }
+    .trace-row[data-event="Thinking"] .row-body::-webkit-scrollbar { width: 3px; }
+    .trace-row[data-event="Thinking"] .row-body::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
     }
 
     .trace-row[data-event="Changed"] {
@@ -157,6 +191,47 @@ import { StateService } from '../services/state.service';
       color: rgba(52, 211, 153, 0.75);
       font-size: 0.72rem;
     }
+
+    .diff-block {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.6rem;
+    }
+    .diff-side {
+      flex: 1;
+      border-radius: 4px;
+      padding: 0.5rem 0.6rem;
+      overflow: hidden;
+    }
+    .diff-before {
+      background: rgba(248, 113, 113, 0.07);
+      border: 1px solid rgba(248, 113, 113, 0.2);
+    }
+    .diff-after {
+      background: rgba(52, 211, 153, 0.07);
+      border: 1px solid rgba(52, 211, 153, 0.2);
+    }
+    .diff-label {
+      display: block;
+      font-size: 0.5rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.3rem;
+    }
+    .diff-before .diff-label { color: rgba(248, 113, 113, 0.7); }
+    .diff-after  .diff-label { color: rgba(52, 211, 153, 0.7); }
+    .diff-text {
+      margin: 0;
+      font-size: 0.62rem;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-height: 180px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+    }
+    .diff-before .diff-text { color: rgba(248, 113, 113, 0.8); }
+    .diff-after  .diff-text { color: rgba(52, 211, 153, 0.8); }
 
     .empty-state {
       text-align: center;
@@ -181,6 +256,12 @@ export class LoggerComponent implements AfterViewChecked {
     if (name === 'user') return 'USER';
     if (name === 'system') return 'APP';
     return name.replace('_agent', '').replace(/_/g, ' ');
+  }
+
+  formatEventLabel(event: string): string {
+    if (event === 'Thinking') return 'RAW THOUGHTS';
+    if (event === 'Thought')  return 'SUMMARY';
+    return '';
   }
 
   ngAfterViewChecked() {

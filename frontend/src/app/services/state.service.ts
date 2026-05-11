@@ -17,6 +17,7 @@ export class StateService {
   private loadingSub = new BehaviorSubject<boolean>(false);
   private metricsSetSub = new BehaviorSubject<boolean>(false);
   private narrativeBridgeSub = new BehaviorSubject<string | null>(null);
+  private traveledYearSub = new BehaviorSubject<number | null>(null);
 
   /** Unique session ID — regenerated on every new interview so ADK session state never bleeds across runs. */
   sessionId: string = crypto.randomUUID();
@@ -50,6 +51,7 @@ export class StateService {
   loading$    = this.loadingSub.asObservable();
   metricsSet$ = this.metricsSetSub.asObservable();
   narrativeBridge$ = this.narrativeBridgeSub.asObservable();
+  traveledYear$   = this.traveledYearSub.asObservable();
 
   // ── Mutations ──
   setAppState(state: AppState) {
@@ -117,6 +119,7 @@ export class StateService {
     this.metrics = { height: null, weight: null, birthYear: null, gender: null };
     this.activeEraYear = null;
     this.traveledYear = null;
+    this.traveledYearSub.next(null);
     this.timelineBannerDismissed = false;
     this.eraHistoryMap.clear();
     this.sessionId = crypto.randomUUID();
@@ -142,6 +145,7 @@ export class StateService {
     this.activeEraYear = year;
     if (year !== null) {
       this.traveledYear = year;
+      this.traveledYearSub.next(year);
     }
   }
 

@@ -9,18 +9,12 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class StreamService {
-  private pendingResultTimer?: ReturnType<typeof setTimeout>;
-
   constructor(
     private zone: NgZone,
     private state: StateService
   ) {}
 
   consume(body: any): Observable<void> {
-    if (this.pendingResultTimer) {
-      clearTimeout(this.pendingResultTimer);
-      this.pendingResultTimer = undefined;
-    }
     const url = `${environment.apiUrl}/scout`;
 
     return new Observable(observer => {
@@ -123,15 +117,7 @@ export class StreamService {
         timestamp: new Date().toLocaleTimeString(),
         detail: 'Scouting result detected inside interview stream. Transitioning to Report.'
       });
-      // Show narrative bridge briefly before transitioning
-      this.state.setNarrativeBridge(
-        'The Narrator is weaving your Team USA legacy from the data...'
-      );
-      // Delay the result transition so the bridge is visible; store handle for cleanup
-      this.pendingResultTimer = setTimeout(() => {
-        this.pendingResultTimer = undefined;
-        this.zone.run(() => this.handleResult(raw));
-      }, 2500);
+      this.handleResult(raw);
       return;
     }
 

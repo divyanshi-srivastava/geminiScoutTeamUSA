@@ -40,7 +40,7 @@ import { map } from 'rxjs/operators';
       <div class="archetypes-grid">
 
         <div class="archetype-card glass-card-elevated">
-          <div class="card-type-label">ELITE SPORT PATHWAY</div>
+          <div class="card-type-label">STANDING PATHWAY</div>
           <div class="card-body">
             <h2 class="archetype-name text-gradient-usa">
               {{ v.olympic.matched_profile_name }}
@@ -52,7 +52,7 @@ import { map } from 'rxjs/operators';
         </div>
 
         <div class="archetype-card glass-card-elevated">
-          <div class="card-type-label">ADAPTIVE SPORT PATHWAY</div>
+          <div class="card-type-label">ADAPTIVE PATHWAY</div>
           <div class="card-body">
             <h2 class="archetype-name text-gradient-usa">
               {{ v.paralympic.matched_profile_name }}

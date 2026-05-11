@@ -6,14 +6,15 @@ import { StreamService } from '../../services/stream.service';
 import { MultiChoiceComponent } from './multi-choice.component';
 import { TextInputComponent } from './text-input.component';
 import { MetricsComponent } from './metrics.component';
+import { FactRotatorComponent } from '../fact-rotator.component';
 
 @Component({
   selector: 'app-interview',
   standalone: true,
-  imports: [CommonModule, MultiChoiceComponent, TextInputComponent, MetricsComponent],
+  imports: [CommonModule, MultiChoiceComponent, TextInputComponent, MetricsComponent, FactRotatorComponent],
   template: `
     <div class="interview-wrap animate-fade-in-up">
-      
+
       <!-- ── TIME TRAVEL ERA BANNER ── -->
       <div class="era-banner animate-fade-in" *ngIf="activeEraYear">
         <div class="era-icon">⏳</div>
@@ -29,21 +30,19 @@ import { MetricsComponent } from './metrics.component';
         <app-metrics (completed)="startNarrative()"></app-metrics>
       </div>
 
-      <!-- ── NARRATIVE BRIDGE (Transition State) ── -->
-      <div class="interview-card glass-card-elevated narrative-bridge animate-fade-in"
-           *ngIf="(narrativeBridge$ | async) as bridge">
-        <div class="bridge-icon">🏟️</div>
-        <h2 class="bridge-title text-gradient-gold">The Narrator is crafting your legacy…</h2>
-        <p class="bridge-text">{{ bridge }}</p>
-        <div class="bridge-pulse">
-          <div class="dot-pulse"></div>
-        </div>
+      <!-- ── LOADING STATE (both initial connect and between questions) ── -->
+      <div class="narrator-loading animate-fade-in"
+           *ngIf="(metricsSet$ | async) && (loading$ | async)">
+        <div class="narrator-spinner"></div>
+        <h2 class="narrator-loading-title">Crafting Your Story</h2>
+        <p class="narrator-loading-sub">Agent Active</p>
+        <app-fact-rotator></app-fact-rotator>
       </div>
 
       <!-- ── STEP 2: The Interview Loop ── -->
       <div class="interview-card glass-card-elevated"
-           *ngIf="!(narrativeBridge$ | async) && (metricsSet$ | async) && (activeQuestion$ | async) as q">
-        
+           *ngIf="(metricsSet$ | async) && !(loading$ | async) && (activeQuestion$ | async) as q">
+
         <!-- Narrator Feedback -->
         <div class="feedback-bar" *ngIf="q.feedback">
           <span class="feedback-icon">💬</span>
@@ -54,52 +53,35 @@ import { MetricsComponent } from './metrics.component';
         <h2 class="question-text animate-fade-in">{{ q.question }}</h2>
 
         <!-- Interactive Area -->
-        <div *ngIf="!(loading$ | async)">
-          <app-multi-choice
-            *ngIf="q.options && q.options.length > 0"
-            [options]="q.options"
-            (selected)="onAnswer($event)">
-          </app-multi-choice>
+        <app-multi-choice
+          *ngIf="q.options && q.options.length > 0"
+          [options]="q.options"
+          (selected)="onAnswer($event)">
+        </app-multi-choice>
 
-          <app-text-input
-            *ngIf="!q.options || q.options.length === 0"
-            (submitted)="onAnswer($event)">
-          </app-text-input>
+        <app-text-input
+          *ngIf="!q.options || q.options.length === 0"
+          (submitted)="onAnswer($event)">
+        </app-text-input>
 
-          <!-- Ready CTA — only shown when narrator has enough context -->
-          <div class="ready-divider" *ngIf="q.readyToProceed">
-            <span class="divider-line"></span>
-            <span class="divider-label">or</span>
-            <span class="divider-line"></span>
-          </div>
-          <button
-            class="btn-ready"
-            *ngIf="q.readyToProceed"
-            (click)="onReadyToScout()">
-            Show me my results →
-          </button>
+        <!-- Ready CTA — only shown when narrator has enough context -->
+        <div class="ready-divider" *ngIf="q.readyToProceed">
+          <span class="divider-line"></span>
+          <span class="divider-label">or</span>
+          <span class="divider-line"></span>
         </div>
-
-        <!-- Loading Indicator -->
-        <div *ngIf="loading$ | async" class="loading-block">
-          <div class="dot-pulse"></div>
-          <span>The Narrator is thinking…</span>
-        </div>
+        <button
+          class="btn-ready"
+          *ngIf="q.readyToProceed"
+          (click)="onReadyToScout()">
+          Show me my results →
+        </button>
 
         <!-- Disclaimer -->
         <p class="card-disclaimer">
           This assessment is for entertainment and archetypal analysis only.
           Not medical or professional athletic advice.
         </p>
-      </div>
-
-      <!-- Initial Loading State (after metrics, before first question) -->
-      <div class="interview-card glass-card-elevated"
-           *ngIf="!(narrativeBridge$ | async) && (metricsSet$ | async) && !(activeQuestion$ | async) && (loading$ | async)">
-        <div class="loading-block">
-          <div class="dot-pulse"></div>
-          <span>Connecting to the Narrator Agent…</span>
-        </div>
       </div>
     </div>
   `,
@@ -113,30 +95,39 @@ import { MetricsComponent } from './metrics.component';
       padding: 3rem;
     }
 
-    /* ── Narrative Bridge (Transition) ── */
-    .narrative-bridge {
+    /* ── Narrator Loading State (mirrors scouting phase structure) ── */
+    .narrator-loading {
       text-align: center;
-      padding: 4rem 3rem;
+      padding: 4rem 2rem;
+      width: 100%;
     }
-    .bridge-icon {
-      font-size: 3rem;
-      margin-bottom: 1.5rem;
+    .narrator-spinner {
+      width: 3rem;
+      height: 3rem;
+      border: 4px solid rgba(197, 164, 78, 0.15);
+      border-top-color: #c5a44e;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 1.5rem;
     }
-    .bridge-title {
-      font-size: 1.4rem;
+    .narrator-loading-title {
+      font-size: 1.3rem;
       font-weight: 900;
-      margin-bottom: 2rem;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
     }
-    .bridge-text {
-      color: rgba(255,255,255,0.65);
-      font-size: 0.95rem;
-      line-height: 1.7;
-      max-width: 500px;
-      margin: 0 auto 2rem;
+    .narrator-loading-sub {
+      font-size: 0.625rem;
+      color: rgba(212, 185, 94, 0.5);
+      font-weight: 700;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      margin-bottom: 0;
     }
-    .bridge-pulse {
-      display: flex;
-      justify-content: center;
+    @keyframes spin {
+      to { transform: rotate(360deg); }
     }
 
     /* ── Feedback Bar ── */
@@ -166,27 +157,6 @@ import { MetricsComponent } from './metrics.component';
       color: white;
       line-height: 1.4;
       margin-bottom: 2rem;
-    }
-
-    /* ── Loading ── */
-    .loading-block {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.25rem;
-      padding: 3rem 0;
-      color: rgba(255,255,255,0.4);
-      font-size: 0.85rem;
-    }
-    .dot-pulse {
-      width: 10px; height: 10px;
-      background: #c5a44e;
-      border-radius: 50%;
-      animation: pulse 1.2s ease-in-out infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { opacity: 0.3; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.5); }
     }
 
     /* ── Ready CTA ── */
@@ -286,7 +256,6 @@ export class InterviewComponent implements OnDestroy {
   activeQuestion$ = this.state.activeQuestion$;
   metricsSet$ = this.state.metricsSet$;
   loading$ = this.state.loading$;
-  narrativeBridge$ = this.state.narrativeBridge$;
   private sub?: Subscription;
 
   get activeEraYear(): number | null { return this.state.activeEraYear; }
@@ -299,7 +268,7 @@ export class InterviewComponent implements OnDestroy {
   get eraStageLabel(): string {
     const age = this.ageAtEra;
     if (age === null) return '';
-    if (age < 20)  return 'Rising Star';
+    if (age < 20) return 'Rising Star';
     if (age <= 32) return 'Elite Peak';
     if (age <= 45) return 'Veteran';
     return 'Legacy';
@@ -308,7 +277,7 @@ export class InterviewComponent implements OnDestroy {
   get eraStageColor(): string {
     const age = this.ageAtEra;
     if (age === null) return '#c5a44e';
-    if (age < 20)  return '#34d399';
+    if (age < 20) return '#34d399';
     if (age <= 32) return '#facc15';
     if (age <= 45) return '#60a5fa';
     return '#a78bfa';
@@ -334,7 +303,7 @@ export class InterviewComponent implements OnDestroy {
 
     this.sub = this.stream.consume(body).subscribe({
       complete: () => this.state.setLoading(false),
-      error: ()   => this.state.setLoading(false)
+      error: () => this.state.setLoading(false)
     });
   }
 
@@ -368,7 +337,7 @@ export class InterviewComponent implements OnDestroy {
 
       this.sub = this.stream.consume(body).subscribe({
         complete: () => this.state.setLoading(false),
-        error: ()   => { this.state.setLoading(false); this.state.setAppState('RESULT'); }
+        error: () => { this.state.setLoading(false); this.state.setAppState('RESULT'); }
       });
       return;
     }
@@ -390,7 +359,7 @@ export class InterviewComponent implements OnDestroy {
 
     this.sub = this.stream.consume(body).subscribe({
       complete: () => this.state.setLoading(false),
-      error: ()   => this.state.setLoading(false)
+      error: () => this.state.setLoading(false)
     });
   }
 
@@ -422,7 +391,7 @@ export class InterviewComponent implements OnDestroy {
 
     this.sub = this.stream.consume(body).subscribe({
       complete: () => this.state.setLoading(false),
-      error: ()   => this.state.setLoading(false)
+      error: () => this.state.setLoading(false)
     });
   }
 

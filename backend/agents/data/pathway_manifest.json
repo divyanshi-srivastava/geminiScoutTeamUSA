@@ -1,27 +1,80 @@
 [
   {
     "id": 1,
-    "name": "The Agile Dynamo",
+    "name": "Air Sculptor",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       14,
-      24
+      26
     ],
     "keywords": [
+      "aerial",
+      "rotation",
+      "floor-exercise",
+      "body-awareness",
+      "proprioception",
+      "vault",
+      "bars",
+      "kinesthetic-intelligence",
+      "explosive-control",
+      "spatial-orientation",
+      "flexibility",
+      "artistry",
+      "compactness",
       "balance",
-      "rotational",
-      "nimble",
-      "reflexes",
-      "compact"
+      "precision-movement"
     ],
     "centroids": {
-      "age": 19.4,
-      "height_cm": 154.5,
-      "weight_kg": 46.8
+      "age": 22.5,
+      "height_cm": 161.5,
+      "weight_kg": 54.4
+    },
+    "gender_centroids": {
+      "M": {
+        "age": 24.6,
+        "height_cm": 168.7,
+        "weight_kg": 65.0
+      },
+      "F": {
+        "age": 19.1,
+        "height_cm": 155.1,
+        "weight_kg": 47.3
+      }
     },
     "pathways": {
-      "standing": "Elite Artistic Gymnastics",
-      "adaptive": "Elite Adaptive Swimming (e.g., Women's 100 m Freestyle S6)"
+      "standing": "Artistic Gymnastics",
+      "adaptive": "Adaptive Swimming (e.g., Women's 100 m Freestyle S6)",
+      "adaptive_alternatives": [
+        "Para-Archery",
+        "Para-Boccia",
+        "Para-Table Tennis"
+      ]
+    },
+    "interview_signals": {
+      "strong_match": [
+        "body awareness",
+        "dance",
+        "movement arts",
+        "solo performance",
+        "technical precision",
+        "flexibility",
+        "indoor training",
+        "acrobatics",
+        "balance",
+        "coordination",
+        "artistic",
+        "compact",
+        "gymnastic",
+        "agility"
+      ],
+      "weak_match": [
+        "team sport",
+        "outdoor endurance",
+        "heavy contact",
+        "heavy lifting",
+        "distance running",
+        "team competition"
+      ]
     },
     "scout_narrative": {
       "tone": "Energetic, Nimble, Resilient",
@@ -37,27 +90,80 @@
   },
   {
     "id": 2,
-    "name": "The Endurance Engine",
+    "name": "Long Haul",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       20,
-      35
+      38
     ],
     "keywords": [
-      "stamina",
-      "aerobic",
-      "relentless",
+      "aerobic-capacity",
+      "lactate-threshold",
       "pacing",
-      "lean"
+      "cadence",
+      "gait-economy",
+      "fatigue-resistance",
+      "VO2-max",
+      "lean-mass",
+      "long-duration",
+      "stamina",
+      "rhythmic-movement",
+      "heat-adaptation",
+      "mental-endurance",
+      "steady-state",
+      "mileage"
     ],
     "centroids": {
-      "age": 23.8,
-      "height_cm": 163.4,
-      "weight_kg": 55.4
+      "age": 26.0,
+      "height_cm": 168.0,
+      "weight_kg": 55.5
+    },
+    "gender_centroids": {
+      "M": {
+        "age": 26.5,
+        "height_cm": 175.0,
+        "weight_kg": 61.0
+      },
+      "F": {
+        "age": 25.5,
+        "height_cm": 162.0,
+        "weight_kg": 49.0
+      }
     },
     "pathways": {
-      "standing": "Elite Distance Running",
-      "adaptive": "Elite Wheelchair Racing (e.g., Women's Marathon T54)"
+      "standing": "Distance Running",
+      "adaptive": "Wheelchair Racing (e.g., Women's Marathon T54)",
+      "adaptive_alternatives": [
+        "Para-Triathlon",
+        "Para-Cycling Road Race"
+      ]
+    },
+    "interview_signals": {
+      "strong_match": [
+        "endurance",
+        "distance training",
+        "running",
+        "cardiovascular",
+        "long duration",
+        "outdoor",
+        "pacing",
+        "rhythmic",
+        "solitary training",
+        "road work",
+        "stamina",
+        "aerobic",
+        "miles",
+        "sustained effort"
+      ],
+      "weak_match": [
+        "explosive power",
+        "sprinting",
+        "team sport",
+        "strength training",
+        "short bursts",
+        "contact sport",
+        "heavy lifting"
+      ]
     },
     "scout_narrative": {
       "tone": "Relentless, Paced, Driven",
@@ -73,27 +179,80 @@
   },
   {
     "id": 3,
-    "name": "The Precision Veteran",
+    "name": "Steady Hand",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       25,
-      50
+      52
     ],
     "keywords": [
-      "focus",
-      "stability",
-      "calm",
-      "steady",
-      "breathing"
+      "breath-control",
+      "trigger-discipline",
+      "sight-alignment",
+      "follow-through",
+      "mental-rehearsal",
+      "respiratory-control",
+      "fine-motor-control",
+      "hand-eye-coordination",
+      "stillness",
+      "aim-point",
+      "shot-execution",
+      "pre-performance-routine",
+      "quiet-eye",
+      "natural-pause",
+      "heart-rate-control"
     ],
     "centroids": {
-      "age": 34.4,
-      "height_cm": 168.6,
-      "weight_kg": 60.9
+      "age": 33.1,
+      "height_cm": 175.9,
+      "weight_kg": 78.8
+    },
+    "gender_centroids": {
+      "M": {
+        "age": 33.9,
+        "height_cm": 179.1,
+        "weight_kg": 82.9
+      },
+      "F": {
+        "age": 29.8,
+        "height_cm": 163.6,
+        "weight_kg": 64.3
+      }
     },
     "pathways": {
-      "standing": "Elite Marksmanship (Rifle/Pistol)",
-      "adaptive": "Elite Target Precision (e.g., Archery Men's FITA Round Open)"
+      "standing": "Marksmanship (Rifle/Pistol)",
+      "adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "adaptive_alternatives": [
+        "Para-Boccia",
+        "Para-Shooting R3 Mixed",
+        "Para-Table Tennis"
+      ]
+    },
+    "interview_signals": {
+      "strong_match": [
+        "precision",
+        "detail-oriented",
+        "calm",
+        "focus",
+        "mental discipline",
+        "patience",
+        "steady",
+        "technical refinement",
+        "low-impact",
+        "indoor sport",
+        "composed",
+        "analytical",
+        "methodical",
+        "stillness"
+      ],
+      "weak_match": [
+        "explosive power",
+        "high-intensity cardio",
+        "contact sport",
+        "team sport",
+        "outdoor endurance",
+        "sprint training"
+      ]
     },
     "scout_narrative": {
       "tone": "Focused, Calm, Strategic",
@@ -111,27 +270,80 @@
   },
   {
     "id": 4,
-    "name": "The Explosive Sprinter",
+    "name": "Block Starter",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       18,
       28
     ],
     "keywords": [
-      "fast-twitch",
-      "power",
+      "reaction-time",
+      "drive-phase",
+      "stride-length",
+      "stride-frequency",
+      "ground-contact-time",
+      "block-clearance",
+      "fast-twitch-fiber",
       "acceleration",
-      "decisive",
-      "burst"
+      "explosive-power",
+      "maximum-velocity",
+      "rate-of-force-development",
+      "sprint-mechanics",
+      "starting-blocks",
+      "neuromuscular-speed",
+      "short-burst"
     ],
     "centroids": {
-      "age": 22.3,
-      "height_cm": 170.3,
-      "weight_kg": 63.0
+      "age": 24.0,
+      "height_cm": 175.5,
+      "weight_kg": 70.5
+    },
+    "gender_centroids": {
+      "M": {
+        "age": 24.0,
+        "height_cm": 179.0,
+        "weight_kg": 76.0
+      },
+      "F": {
+        "age": 23.5,
+        "height_cm": 169.0,
+        "weight_kg": 61.0
+      }
     },
     "pathways": {
-      "standing": "Elite 100m/200m Sprints",
-      "adaptive": "Elite Ambulatory Sprints (e.g., Men's 100 m T44)"
+      "standing": "100m/200m Sprints",
+      "adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "adaptive_alternatives": [
+        "Para-Swimming Sprint Events",
+        "Para-Cycling Track Sprint"
+      ]
+    },
+    "interview_signals": {
+      "strong_match": [
+        "explosive",
+        "speed",
+        "sprinting",
+        "fast",
+        "quick reaction",
+        "short bursts",
+        "track",
+        "acceleration",
+        "power",
+        "competitive",
+        "fast-twitch",
+        "reactive",
+        "burst training",
+        "track and field"
+      ],
+      "weak_match": [
+        "endurance",
+        "long duration",
+        "team sport",
+        "precision work",
+        "calm temperament",
+        "distance training",
+        "sustained effort"
+      ]
     },
     "scout_narrative": {
       "tone": "Dynamic, Decisive, Fierce",
@@ -145,27 +357,77 @@
   },
   {
     "id": 5,
-    "name": "The Airborne Leaper",
+    "name": "Bar Raiser",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       19,
-      29
+      30
     ],
     "keywords": [
-      "vertical",
-      "extension",
-      "leverage",
-      "elevation",
-      "spring"
+      "vertical-force-production",
+      "Fosbury-flop",
+      "plyometric-training",
+      "takeoff-velocity",
+      "center-of-mass",
+      "elastic-energy-storage",
+      "leg-power-to-weight",
+      "reactive-strength",
+      "approach-run",
+      "bar-clearance",
+      "height-leverage",
+      "lean-power",
+      "technical-jumping",
+      "angular-momentum",
+      "flight-path"
     ],
     "centroids": {
-      "age": 23.3,
-      "height_cm": 179.7,
-      "weight_kg": 67.5
+      "age": 23.0,
+      "height_cm": 182.0,
+      "weight_kg": 65.0
+    },
+    "gender_centroids": {
+      "M": {
+        "age": 23.5,
+        "height_cm": 188.0,
+        "weight_kg": 72.0
+      },
+      "F": {
+        "age": 22.5,
+        "height_cm": 176.0,
+        "weight_kg": 59.0
+      }
     },
     "pathways": {
-      "standing": "Elite High Jump",
-      "adaptive": "Elite Standing High Jump (e.g., Men's High Jump T47)"
+      "standing": "High Jump / Pole Vault",
+      "adaptive": "Standing High Jump (e.g., Men's High Jump T47)",
+      "adaptive_alternatives": [
+        "Para-Long Jump",
+        "Para-Triple Jump"
+      ]
+    },
+    "interview_signals": {
+      "strong_match": [
+        "jumping",
+        "heights",
+        "vertical ability",
+        "lean physique",
+        "technical movement",
+        "individual sport",
+        "explosive spring",
+        "athletics",
+        "tall and lean",
+        "reach",
+        "elevation",
+        "bounds"
+      ],
+      "weak_match": [
+        "heavy lifting",
+        "contact sport",
+        "team sport",
+        "endurance training",
+        "short and compact",
+        "sustained cardio"
+      ]
     },
     "scout_narrative": {
       "tone": "Graceful, Calculated, Fearless",
@@ -180,27 +442,77 @@
   },
   {
     "id": 6,
-    "name": "The Leverage Grappler",
+    "name": "Mat Technician",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
-      20,
-      32
+      18,
+      33
     ],
     "keywords": [
-      "core",
-      "grounded",
-      "grip",
+      "leverage",
+      "grip-strength",
+      "core-stability",
+      "body-control",
+      "reaction-time",
+      "positional-awareness",
+      "takedown-technique",
+      "weight-management",
+      "functional-strength",
+      "clinch-work",
+      "pressure-fighting",
+      "single-leg",
       "mechanical-advantage",
-      "torque"
+      "torque-generation",
+      "mat-work"
     ],
     "centroids": {
-      "age": 24.7,
-      "height_cm": 173.5,
-      "weight_kg": 74.6
+      "age": 25.6,
+      "height_cm": 173.8,
+      "weight_kg": 77.8
+    },
+    "gender_centroids": {
+      "M": {
+        "age": 25.7,
+        "height_cm": 174.3,
+        "weight_kg": 78.5
+      },
+      "F": {
+        "age": 24.8,
+        "height_cm": 163.0,
+        "weight_kg": 61.4
+      }
     },
     "pathways": {
-      "standing": "Elite Wrestling",
-      "adaptive": "Elite Powerlifting (e.g., Men's +100 kg)"
+      "standing": "Wrestling",
+      "adaptive": "Powerlifting (e.g., Men's +100 kg)",
+      "adaptive_alternatives": [
+        "Para-Judo",
+        "Para-Boccia"
+      ]
+    },
+    "interview_signals": {
+      "strong_match": [
+        "physical contact",
+        "one-on-one competition",
+        "strength training",
+        "tactical thinking",
+        "competitive fighting",
+        "grappling",
+        "martial arts",
+        "wrestling",
+        "combat sport",
+        "physical challenge",
+        "strategy and force",
+        "individual combat"
+      ],
+      "weak_match": [
+        "non-contact sport",
+        "team ball sport",
+        "precision shooting",
+        "endurance running",
+        "artistic indoor sport",
+        "water sport"
+      ]
     },
     "scout_narrative": {
       "tone": "Grounded, Unyielding, Tactical",
@@ -215,32 +527,81 @@
   },
   {
     "id": 7,
-    "name": "The Versatile Decathlete",
+    "name": "Swiss Army",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       21,
-      31
+      32
     ],
     "keywords": [
+      "multi-discipline",
+      "versatility",
+      "periodization",
+      "biomechanical-efficiency",
+      "technical-adaptability",
+      "cross-training",
+      "mental-endurance",
+      "competitive-tenacity",
+      "sport-sampling",
       "all-rounder",
-      "tenacity",
-      "hybrid",
-      "adaptable",
-      "multi-discipline"
+      "transition-capacity",
+      "aerobic-base",
+      "power-endurance",
+      "skill-breadth",
+      "competition-resilience"
     ],
     "centroids": {
-      "age": 23.3,
-      "height_cm": 184.2,
-      "weight_kg": 78.4
+      "age": 25.0,
+      "height_cm": 183.5,
+      "weight_kg": 80.0
+    },
+    "gender_centroids": {
+      "M": {
+        "age": 25.5,
+        "height_cm": 186.0,
+        "weight_kg": 86.0
+      },
+      "F": {
+        "age": 24.5,
+        "height_cm": 176.0,
+        "weight_kg": 67.0
+      }
     },
     "pathways": {
-      "standing": "Elite Decathlon",
-      "adaptive": "Elite Multi-Discipline Athletics (e.g., Men's Pentathlon P44)"
+      "standing": "Decathlon",
+      "adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "adaptive_alternatives": [
+        "Para-Triathlon",
+        "Para-Biathlon"
+      ]
+    },
+    "interview_signals": {
+      "strong_match": [
+        "variety in training",
+        "all-around athlete",
+        "cross-training",
+        "multi-sport background",
+        "adaptable",
+        "versatile",
+        "good at many things",
+        "hybrid athlete",
+        "general fitness",
+        "broad training",
+        "diverse skills",
+        "multi-discipline"
+      ],
+      "weak_match": [
+        "pure specialist",
+        "single sport focus",
+        "narrow training",
+        "one discipline only",
+        "highly technical specialist"
+      ]
     },
     "scout_narrative": {
       "tone": "Adaptable, Tenacious, Well-Rounded",
       "life_hustle": "Pivoting from home repairs to helping with homework to cooking is stealth training for multi-discipline mental and physical agility.",
-      "verdict": "Your balanced, adaptable proportions are associated with the versatile profile of a multi-sport champion, mirroring the hybrid tenacity that won Team USA Gold in the Men's Pentathlon P44 at the 2008 Beijing Games. Source: Katie Press / IPC Historical Dataset"
+      "verdict": "Your balanced, adaptable proportions are associated with the versatile profile of a multi-sport champion, reflecting the hybrid tenacity behind Team USA's medals across adaptive multi-discipline athletics events at the Games. Source: IPC Athletics Historical Records"
     },
     "related_legacy_tags": [
       "Athletics",
@@ -250,27 +611,78 @@
   },
   {
     "id": 8,
-    "name": "The Aquatic Propeller",
+    "name": "Streamline",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
-      18,
+      16,
       27
     ],
     "keywords": [
-      "wingspan",
-      "hydrodynamic",
-      "reach",
-      "rhythmic",
-      "fluid"
+      "stroke-mechanics",
+      "turn-efficiency",
+      "underwaters",
+      "lactate-tolerance",
+      "aerobic-power",
+      "ankle-flexibility",
+      "shoulder-range-of-motion",
+      "hydrodynamic-position",
+      "drag-reduction",
+      "taper-preparation",
+      "bilateral-breathing",
+      "flip-turn",
+      "underwater-phase",
+      "reach-cycle",
+      "streamline-position"
     ],
     "centroids": {
-      "age": 24.2,
-      "height_cm": 191.5,
-      "weight_kg": 87.9
+      "age": 20.9,
+      "height_cm": 181.1,
+      "weight_kg": 73.8
+    },
+    "gender_centroids": {
+      "M": {
+        "age": 21.9,
+        "height_cm": 187.2,
+        "weight_kg": 82.4
+      },
+      "F": {
+        "age": 19.7,
+        "height_cm": 173.9,
+        "weight_kg": 64.0
+      }
     },
     "pathways": {
-      "standing": "Elite Swimming",
-      "adaptive": "Elite Adaptive Swimming (e.g., Men's 400 m Freestyle S10)"
+      "standing": "Swimming",
+      "adaptive": "Adaptive Swimming (e.g., Men's 400 m Freestyle S10)",
+      "adaptive_alternatives": [
+        "Para-Rowing",
+        "Para-Canoe Sprint"
+      ]
+    },
+    "interview_signals": {
+      "strong_match": [
+        "water sports",
+        "swimming",
+        "comfortable in water",
+        "technical precision",
+        "individual timed events",
+        "indoor training",
+        "technique focus",
+        "early sport specialization",
+        "aquatic",
+        "pool training",
+        "water comfort",
+        "long reach",
+        "shoulder strength"
+      ],
+      "weak_match": [
+        "team ball sports",
+        "outdoor running",
+        "contact sport",
+        "heavy weight training",
+        "winter sports",
+        "fear of water"
+      ]
     },
     "scout_narrative": {
       "tone": "Fluid, Rhythmic, Powerful",
@@ -285,27 +697,78 @@
   },
   {
     "id": 9,
-    "name": "The Pacing Powerhouse",
+    "name": "Boat Run",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
-      24,
-      40
+      20,
+      35
     ],
     "keywords": [
-      "pulling",
-      "rhythm",
-      "steady-output",
-      "synchronized",
-      "endurance"
+      "drive-ratio",
+      "catch-angle",
+      "blade-work",
+      "power-application",
+      "aerobic-capacity",
+      "lactate-threshold",
+      "synchronization",
+      "ergo-score",
+      "stroke-rate",
+      "body-composition",
+      "sweep-rowing",
+      "sculling",
+      "power-through-water",
+      "seat-racing",
+      "swing-rhythm"
     ],
     "centroids": {
-      "age": 34.1,
-      "height_cm": 180.7,
-      "weight_kg": 74.2
+      "age": 25.5,
+      "height_cm": 185.2,
+      "weight_kg": 80.3
+    },
+    "gender_centroids": {
+      "M": {
+        "age": 24.9,
+        "height_cm": 188.5,
+        "weight_kg": 84.5
+      },
+      "F": {
+        "age": 26.9,
+        "height_cm": 177.5,
+        "weight_kg": 70.8
+      }
     },
     "pathways": {
-      "standing": "Elite Rowing",
-      "adaptive": "Elite Adaptive Rowing (e.g., Mixed Coxed Four LTAMix4+)"
+      "standing": "Rowing",
+      "adaptive": "Adaptive Rowing (e.g., Mixed Coxed Four LTAMix4+)",
+      "adaptive_alternatives": [
+        "Para-Canoe Sprint",
+        "Para-Cycling Road Race"
+      ]
+    },
+    "interview_signals": {
+      "strong_match": [
+        "team synchronization",
+        "rhythmic activity",
+        "water sport",
+        "endurance",
+        "team sport",
+        "sustained power output",
+        "outdoor water",
+        "upper body strength",
+        "tall and powerful",
+        "crew sport",
+        "rowing",
+        "team coordination",
+        "long effort"
+      ],
+      "weak_match": [
+        "individual precision",
+        "short explosive bursts",
+        "winter sport",
+        "solo endurance running",
+        "contact sport",
+        "artistic performance"
+      ]
     },
     "scout_narrative": {
       "tone": "Methodical, Unstoppable, Synergistic",
@@ -320,27 +783,77 @@
   },
   {
     "id": 10,
-    "name": "The Kinetic Driver",
+    "name": "Launch Force",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       22,
-      35
+      36
     ],
     "keywords": [
-      "momentum",
-      "initial-force",
-      "launch",
-      "heavy-load",
-      "stability"
+      "initial-force-production",
+      "push-acceleration",
+      "momentum-transfer",
+      "power-sprint",
+      "explosive-loading",
+      "ground-force-application",
+      "kinetic-energy-transfer",
+      "push-pad",
+      "start-technique",
+      "power-to-mass",
+      "sprint-mechanics",
+      "loaded-push",
+      "drive-out",
+      "acceleration-mechanics",
+      "sprint-loading"
     ],
     "centroids": {
-      "age": 30.5,
-      "height_cm": 182.6,
-      "weight_kg": 91.4
+      "age": 29.5,
+      "height_cm": 181.6,
+      "weight_kg": 90.4
+    },
+    "gender_centroids": {
+      "M": {
+        "age": 30.2,
+        "height_cm": 182.9,
+        "weight_kg": 93.0
+      },
+      "F": {
+        "age": 28.3,
+        "height_cm": 170.3,
+        "weight_kg": 73.5
+      }
     },
     "pathways": {
-      "standing": "Elite Bobsleigh / Push sports",
-      "adaptive": "Elite Seated Throws (e.g., Men's Discus Throw F56)"
+      "standing": "Bobsleigh / Push Sports",
+      "adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+      "adaptive_alternatives": [
+        "Para-Powerlifting",
+        "Para-Athletics Sprint F11"
+      ]
+    },
+    "interview_signals": {
+      "strong_match": [
+        "explosive sprint",
+        "heavy lifting",
+        "powerful build",
+        "push sports",
+        "sprint training",
+        "power athlete",
+        "strength and speed",
+        "team sprint",
+        "strong build",
+        "mass and power",
+        "gym training",
+        "functional power"
+      ],
+      "weak_match": [
+        "endurance running",
+        "precision work",
+        "artistic sport",
+        "lean body preference",
+        "individual technical sport",
+        "water sport"
+      ]
     },
     "scout_narrative": {
       "tone": "Explosive, Steadfast, Bold",
@@ -355,27 +868,78 @@
   },
   {
     "id": 11,
-    "name": "The Aerial Defender",
+    "name": "Net Presence",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
-      19,
-      32
+      18,
+      33
     ],
     "keywords": [
-      "height",
       "court-vision",
-      "dominance",
-      "wingspan",
-      "commanding"
+      "vertical-jump",
+      "reaction-time",
+      "lateral-quickness",
+      "spatial-awareness",
+      "wingspan-advantage",
+      "approach-footwork",
+      "blocking",
+      "transition-speed",
+      "pick-and-roll",
+      "positioning",
+      "team-dynamics",
+      "aerial-contest",
+      "height-dominance",
+      "reading-the-court"
     ],
     "centroids": {
-      "age": 26.4,
-      "height_cm": 195.7,
-      "weight_kg": 102.5
+      "age": 25.0,
+      "height_cm": 190.5,
+      "weight_kg": 83.3
+    },
+    "gender_centroids": {
+      "M": {
+        "age": 26.0,
+        "height_cm": 196.4,
+        "weight_kg": 92.8
+      },
+      "F": {
+        "age": 26.2,
+        "height_cm": 182.4,
+        "weight_kg": 72.2
+      }
     },
     "pathways": {
-      "standing": "Elite Basketball",
-      "adaptive": "Elite Wheelchair Basketball (e.g., Men's Tournament)"
+      "standing": "Basketball",
+      "adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "adaptive_alternatives": [
+        "Sitting Volleyball",
+        "Para-Athletics High Jump T47"
+      ]
+    },
+    "interview_signals": {
+      "strong_match": [
+        "team sport",
+        "tall",
+        "court sports",
+        "basketball",
+        "volleyball",
+        "competitive team environment",
+        "explosive jumps",
+        "fast-paced game",
+        "team dynamics",
+        "height advantage",
+        "aerial ability",
+        "team competition",
+        "court game"
+      ],
+      "weak_match": [
+        "individual sport",
+        "precision shooting",
+        "endurance running",
+        "solo training",
+        "contact grappling",
+        "water sport"
+      ]
     },
     "scout_narrative": {
       "tone": "Imposing, Visionary, Commanding",
@@ -389,27 +953,78 @@
   },
   {
     "id": 12,
-    "name": "The Apex Thrower",
+    "name": "Iron Shoulder",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
-      23,
+      22,
       40
     ],
     "keywords": [
-      "mass",
-      "force",
-      "anchored",
-      "heavy-transfer",
-      "resolute"
+      "rotational-power",
+      "release-velocity",
+      "ground-force-transmission",
+      "implement-speed",
+      "angular-momentum",
+      "shot-put-technique",
+      "discus-release",
+      "hammer-swing",
+      "kinetic-chain",
+      "power-transfer",
+      "block-leg",
+      "turning-sequence",
+      "implement-control",
+      "power-lifting-base",
+      "explosive-torque"
     ],
     "centroids": {
-      "age": 27.5,
-      "height_cm": 188.3,
-      "weight_kg": 128.8
+      "age": 26.5,
+      "height_cm": 184.5,
+      "weight_kg": 102.0
+    },
+    "gender_centroids": {
+      "M": {
+        "age": 27.0,
+        "height_cm": 189.0,
+        "weight_kg": 115.0
+      },
+      "F": {
+        "age": 26.0,
+        "height_cm": 177.0,
+        "weight_kg": 88.0
+      }
     },
     "pathways": {
-      "standing": "Elite Field Athletics (Discus/Shot Put)",
-      "adaptive": "Elite Seated Shot Put (e.g., Women's Shot Put C3)"
+      "standing": "Field Athletics (Discus/Shot Put)",
+      "adaptive": "Seated Shot Put (e.g., Women's Shot Put C3)",
+      "adaptive_alternatives": [
+        "Para-Powerlifting",
+        "Para-Discus F32"
+      ]
+    },
+    "interview_signals": {
+      "strong_match": [
+        "strength training",
+        "explosive power",
+        "heavy lifting",
+        "power athlete",
+        "throwing sports",
+        "anchored strength",
+        "stability",
+        "mass and power",
+        "weight room",
+        "strength focus",
+        "powerful build",
+        "field athletics"
+      ],
+      "weak_match": [
+        "lean endurance",
+        "distance running",
+        "flexibility-focused",
+        "team ball sport",
+        "water sport",
+        "artistic performance",
+        "precision shooting"
+      ]
     },
     "scout_narrative": {
       "tone": "Anchored, Forceful, Resolute",
@@ -419,6 +1034,182 @@
     "related_legacy_tags": [
       "Athletics",
       "Goalball"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Edge Carver",
+    "adm_stage": "Stage 3: Train & Compete",
+    "peak_range": [
+      16,
+      32
+    ],
+    "keywords": [
+      "edge-control",
+      "weight-transfer",
+      "angulation",
+      "g-force-tolerance",
+      "turn-initiation",
+      "glide-efficiency",
+      "tuck-position",
+      "slalom-technique",
+      "carving",
+      "gate-reading",
+      "aerodynamic-stance",
+      "ice-efficiency",
+      "technical-precision",
+      "speed-control",
+      "course-awareness"
+    ],
+    "centroids": {
+      "age": 23.5,
+      "height_cm": 173.1,
+      "weight_kg": 71.1
+    },
+    "gender_centroids": {
+      "M": {
+        "age": 24.1,
+        "height_cm": 178.9,
+        "weight_kg": 79.5
+      },
+      "F": {
+        "age": 22.9,
+        "height_cm": 166.9,
+        "weight_kg": 62.2
+      }
+    },
+    "pathways": {
+      "standing": "Alpine Skiing / Speed Skating",
+      "adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "adaptive_alternatives": [
+        "Para-Biathlon",
+        "Para-Cross Country Skiing",
+        "Para-Snowboard"
+      ]
+    },
+    "interview_signals": {
+      "strong_match": [
+        "winter sports",
+        "skiing",
+        "ice skating",
+        "high speed",
+        "technical precision under pressure",
+        "outdoor sport",
+        "cold weather",
+        "mountain sport",
+        "blade sport",
+        "adrenaline sport",
+        "technical agility",
+        "snow sports",
+        "speed and control",
+        "edge work"
+      ],
+      "weak_match": [
+        "team ball sport",
+        "water sport",
+        "warm weather sport",
+        "heavy weight training",
+        "artistic indoor sport",
+        "endurance running"
+      ]
+    },
+    "scout_narrative": {
+      "tone": "Precise, Fearless, Technical",
+      "life_hustle": "Reading traffic at speed before a lane change or navigating a packed mountain run at full tilt is stealth training for split-second edge adjustments and spatial judgment at velocity.",
+      "verdict": "Your build and biomechanical profile align with the explosive technical precision demanded by elite winter speed sports, reflecting the edge mastery that has delivered Team USA Gold across Para-Alpine Skiing events at the Games. Source: IPC Winter Sports Historical Records"
+    },
+    "related_legacy_tags": [
+      "Alpine Skiing",
+      "Speed Skating",
+      "Short Track",
+      "Snowboard Cross"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Road Machine",
+    "adm_stage": "Stage 3: Train & Compete",
+    "peak_range": [
+      22,
+      38
+    ],
+    "keywords": [
+      "power-to-weight-ratio",
+      "VO2-max",
+      "cadence",
+      "aerobic-threshold",
+      "lactate-profile",
+      "watts-per-kilogram",
+      "recovery-rate",
+      "multi-sport",
+      "pacing-strategy",
+      "drafting",
+      "transition-efficiency",
+      "climbing-ability",
+      "sport-specific-endurance",
+      "peloton-tactics",
+      "interval-training"
+    ],
+    "centroids": {
+      "age": 26.3,
+      "height_cm": 175.9,
+      "weight_kg": 69.8
+    },
+    "gender_centroids": {
+      "M": {
+        "age": 25.4,
+        "height_cm": 180.1,
+        "weight_kg": 73.7
+      },
+      "F": {
+        "age": 29.9,
+        "height_cm": 167.3,
+        "weight_kg": 58.3
+      }
+    },
+    "pathways": {
+      "standing": "Cycling / Triathlon",
+      "adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "adaptive_alternatives": [
+        "Para-Triathlon",
+        "Para-Biathlon"
+      ]
+    },
+    "interview_signals": {
+      "strong_match": [
+        "cycling",
+        "triathlon",
+        "multi-sport",
+        "long-distance training",
+        "data-driven training",
+        "outdoor endurance",
+        "aerobic base",
+        "hill training",
+        "individual endurance",
+        "outdoor athlete",
+        "long rides",
+        "sustained output",
+        "aerobic machine"
+      ],
+      "weak_match": [
+        "explosive sprint",
+        "team ball sport",
+        "contact sport",
+        "short burst activity",
+        "indoor precision",
+        "heavy power lifting"
+      ]
+    },
+    "scout_narrative": {
+      "tone": "Methodical, Data-Driven, Relentless",
+      "life_hustle": "Tracking every variable in a complex project or calculating your most efficient commute route is stealth training for power-to-weight analysis and race pacing strategy.",
+      "verdict": "Your lean, aerobically efficient build aligns with the sustained power output and mental tenacity demanded by elite cycling and multi-discipline endurance events, reflecting the performance profile behind Team USA's podium results in Para-Cycling road and handcycling events at the Games. Source: IPC Cycling Historical Records"
+    },
+    "related_legacy_tags": [
+      "Cycling",
+      "Triathlon",
+      "Biathlon",
+      "Cross-Country Skiing"
     ]
   }
 ]

@@ -54,10 +54,18 @@ Deduct points for:
 - Age-math errors (e.g., "your 15 years of competitive sport" when the user would be 17)
 
 ### 5. Compliance Quality (passed / failed + note)
-Was the compliance pass genuine?
-- Are there any remaining brand references (specific Games names, sponsors, scoring systems)?
-- Is the narrative IOC-safe and athlete-dignity appropriate?
-- Do both profiles maintain equal narrative depth (parity)?
+Was the compliance pass genuine? Check against the ACTUAL compliance rules:
+
+**COMPLIANT — these must be present and are correct:**
+- Games references in the format "The [City] [Year] Games" (e.g., "The Brisbane 2032 Games", "The LA28 Games", "The Milano Cortina 2026 Games") — this is the REQUIRED format. Do NOT flag it.
+
+**VIOLATIONS — these are genuine failures:**
+- The standalone word "Olympic" or "Paralympic" used as a title or modifier (e.g., "Olympic athlete", "Paralympic Games")
+- Any individual athlete's real name, image, or likeness (NIL violation)
+- Specific finish times or scoring data (placements and medals only are allowed)
+- IOC/USOPC logos or torch references described in text
+- Significant narrative depth imbalance between the standing and adaptive profiles
+- Disrespectful, unsafe, or non-inclusive language
 
 ## Output Format
 

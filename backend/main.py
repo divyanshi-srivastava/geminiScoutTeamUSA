@@ -30,13 +30,77 @@ if os.path.isfile(_creds_path):
 # ── Imports (MUST come after env vars are set) ──
 from api.models import StoryRequest  # noqa: E402
 from api.streamer import event_generator  # noqa: E402
+from api.context import active_agent  # noqa: E402
 
 # ── Logging ──
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
-    datefmt="%H:%M:%S",
-)
+
+# ANSI color codes
+_RESET  = "\033[0m"
+_BOLD   = "\033[1m"
+_DIM    = "\033[2m"
+_COLORS = {
+    # level colors
+    "DEBUG":    "\033[36m",   # cyan
+    "INFO":     "\033[37m",   # white
+    "WARNING":  "\033[33m",   # yellow
+    "ERROR":    "\033[31m",   # red
+    "CRITICAL": "\033[35m",   # magenta
+    # agent colors (injected via AgentContextFilter)
+    "supervisor_agent":  "\033[95m",  # bright magenta
+    "scout_agent":       "\033[96m",  # bright cyan
+    "narrator_agent":    "\033[93m",  # bright yellow
+    "compliance_agent":  "\033[91m",  # bright red
+    "eval_agent":        "\033[92m",  # bright green
+    "logger_agent":      "\033[94m",  # bright blue
+    "—":                 "\033[90m",  # dark grey (no agent)
+}
+
+
+class AgentContextFilter(logging.Filter):
+    """Injects the currently active agent name into every log record."""
+    def filter(self, record: logging.LogRecord) -> bool:
+        record.agent = active_agent.get()  # type: ignore[attr-defined]
+        return True
+
+
+class ColorFormatter(logging.Formatter):
+    def format(self, record: logging.LogRecord) -> str:
+        agent = getattr(record, "agent", "—")
+        level = record.levelname
+        agent_color = _COLORS.get(agent, "\033[90m")
+        level_color  = _COLORS.get(level, "")
+
+        time_str  = self.formatTime(record, self.datefmt)
+        level_str = f"{level_color}{level:<7}{_RESET}"
+        agent_str = f"{agent_color}{agent:<20}{_RESET}"
+        name_str  = f"{_DIM}{record.name}{_RESET}"
+        msg_str   = record.getMessage()
+
+        line = f"{_DIM}{time_str}{_RESET}  {level_str}  {agent_str}  {name_str}: {msg_str}"
+
+        if record.exc_info:
+            line += "\n" + self.formatException(record.exc_info)
+        return line
+
+
+_agent_filter = AgentContextFilter()
+_color_fmt     = ColorFormatter(datefmt="%H:%M:%S")
+
+_root_handler = logging.StreamHandler()
+_root_handler.setFormatter(_color_fmt)
+_root_handler.addFilter(_agent_filter)
+
+logging.root.handlers = []
+logging.root.addHandler(_root_handler)
+logging.root.setLevel(logging.INFO)
+
+# Scout streamer gets DEBUG so full thoughts print
+logging.getLogger("scout-streamer").setLevel(logging.DEBUG)
+
+# Suppress ADK noise: "Sending out request, model: …" fires for every LLM call
+logging.getLogger("google_adk").setLevel(logging.WARNING)
+logging.getLogger("google.adk").setLevel(logging.WARNING)
+
 logger = logging.getLogger("scout-backend")
 
 # ── FastAPI app ──

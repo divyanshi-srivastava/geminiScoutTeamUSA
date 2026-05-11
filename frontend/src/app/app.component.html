@@ -79,6 +79,12 @@
 
       <!-- ── 3. SCOUTING (Loading) ── -->
       <section *ngIf="(appState$ | async) === 'SCOUTING'" class="scouting-view animate-fade-in">
+        <ng-container *ngIf="traveledYear$ | async as yr">
+          <div class="era-travel-strip">
+            <span class="era-travel-icon">⏳</span>
+            <span class="era-travel-dest">The {{ yr }} Games · Age {{ getAgeAtTravel(yr) }}</span>
+          </div>
+        </ng-container>
         <div class="scouting-spinner"></div>
         <h2 class="scouting-title">Analyzing Your Story</h2>
         <p class="scouting-sub">Agent Active</p>
