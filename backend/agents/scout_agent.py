@@ -21,7 +21,7 @@ scout_agent = Agent(
     generate_content_config=types.GenerateContentConfig(
         thinking_config=types.ThinkingConfig(
             include_thoughts=True,
-            thinking_budget=8192,
+            thinking_budget=4096,
         ),
     ),
 )

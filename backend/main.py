@@ -140,6 +140,31 @@ async def analyze_story(request: StoryRequest):
     Errors during streaming are handled inside event_generator and emitted as
     SSE error events — a try/except here cannot catch them.
     """
+    _mode = (
+        "TIME_TRAVEL_INTERVIEW" if request.target_game_year and not request.is_ready_to_scout
+        else "SCOUTING" if request.is_ready_to_scout
+        else "INTERVIEW"
+    )
+    logger.info(
+        "\n%s\n"
+        "  ▶▶ INCOMING REQUEST  /scout\n"
+        "     mode          → %s\n"
+        "     user/session  → %s / %s\n"
+        "     biometrics    → h=%scm  w=%skg  born=%s  gender=%s\n"
+        "     history       → %d turns\n"
+        "     target_year   → %-10s  ready_to_scout → %s\n"
+        "     era_context   → %-10s  era_history    → %s\n"
+        "%s",
+        "═" * 64,
+        _mode,
+        request.user_id, request.session_id,
+        request.height_cm, request.weight_kg, request.birth_year, request.gender or "—",
+        len(request.conversation_history),
+        request.target_game_year or "none", request.is_ready_to_scout,
+        "YES" if request.era_context_summary else "none",
+        "YES" if request.era_history else "none",
+        "═" * 64,
+    )
     return StreamingResponse(
         event_generator(request),
         media_type="text/event-stream",
