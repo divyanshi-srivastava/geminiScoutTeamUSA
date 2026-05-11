@@ -1,5 +1,5 @@
-# Files excluded from the Docker build context.
-# Mirrored with .gcloudignore so local `docker build` and Cloud Build produce identical images.
+# Files uploaded to Cloud Build but not needed in the deployed container.
+# Same syntax as .gitignore.
 
 # ── Python build / runtime artifacts ──
 venv/
