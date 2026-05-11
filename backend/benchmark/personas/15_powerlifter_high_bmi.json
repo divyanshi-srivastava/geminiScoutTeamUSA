@@ -1,0 +1,11 @@
+{
+  "id": "15_powerlifter_high_bmi",
+  "label": "Competitive powerlifter — high BMI, elite strength",
+  "description": "A 35-year-old male competitive powerlifter and strongman competitor. At 182cm and 142kg he sits well outside the BMI range that most sports profiling tools would flag as 'healthy' — but his body composition is predominantly muscle. He has squatted over 300kg, deadlifted 340kg, and has placed top-5 at national strongman competitions. He has a thick, powerful build with exceptional core strength and joint integrity. He is good-humoured about his size and pre-emptively dismissive of any system that tries to shoehorn him into conventional athlete archetypes. He is genuinely curious whether this pipeline will have the intelligence to recognise his strength sport profile rather than defaulting to lifestyle recommendations. He has no disability. When asked about physical preferences he answers in terms of raw power, maximal load, and technical lifting. He's never run more than 5km in his life and has no intention of starting.",
+  "height_cm": 182,
+  "weight_kg": 142,
+  "birth_year": 1991,
+  "gender": "M",
+  "target_game_year": null,
+  "max_questions": 4
+}

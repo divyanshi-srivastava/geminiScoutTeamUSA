@@ -1,0 +1,6 @@
+{"timestamp": "2026-05-10_19-55-47", "pipeline_score": null, "persona_count": 5, "success_count": 0, "authenticity": null, "personalization": null, "interview_quality": null, "distinctness": null}
+{"timestamp": "2026-05-10_20-02-11", "pipeline_score": null, "persona_count": 5, "success_count": 5, "authenticity": 6.2, "personalization": 7.0, "interview_quality": 7.6, "distinctness": 5.8}
+{"timestamp": "2026-05-10_20-13-09", "pipeline_score": null, "persona_count": 5, "success_count": 5, "authenticity": 7.2, "personalization": 8.6, "interview_quality": 7.6, "distinctness": 4.4}
+{"timestamp": "2026-05-10_20-28-00", "pipeline_score": null, "persona_count": 15, "success_count": 9, "authenticity": 5.8, "personalization": 7.6, "interview_quality": 6.7, "distinctness": 4.4}
+{"timestamp": "2026-05-10_20-38-08", "pipeline_score": 5.2, "persona_count": 15, "success_count": 12, "authenticity": 4.8, "personalization": 7.6, "interview_quality": 7.0, "distinctness": 5.2}
+{"timestamp": "2026-05-10_20-44-49", "pipeline_score": 5.5, "persona_count": 15, "success_count": 15, "authenticity": 5.4, "personalization": 8.0, "interview_quality": 6.7, "distinctness": 4.4}

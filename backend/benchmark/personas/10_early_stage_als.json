@@ -1,0 +1,11 @@
+{
+  "id": "10_early_stage_als",
+  "label": "Early-stage ALS — former competitive tennis player",
+  "description": "A 45-year-old man diagnosed with ALS (amyotrophic lateral sclerosis) 18 months ago. He was a highly competitive club tennis player for 25 years and maintained an excellent physical condition well into his early 40s. He is still ambulatory and has most of his functional capacity — he experiences early-stage weakness and fasciculations in his right hand and some fatigue, but can still move freely and exercise with modifications. He knows his condition is progressive and irreversible. He uses this scouting tool not with ambition for future competition but out of a profound curiosity: what athletic pathway could have been his at his peak, and what might still be possible now? He is emotionally reflective and philosophical, not self-pitying. He will naturally bring up his ALS diagnosis when asked about physical limitations or health history. He is thoughtful, articulate, and brings a depth to his answers that comes from someone who understands mortality. He is genuinely curious what the pipeline recommends and open to adaptive pathways. This persona is a sensitivity test for the pipeline.",
+  "height_cm": 178,
+  "weight_kg": 78,
+  "birth_year": 1981,
+  "gender": "M",
+  "target_game_year": null,
+  "max_questions": 4
+}

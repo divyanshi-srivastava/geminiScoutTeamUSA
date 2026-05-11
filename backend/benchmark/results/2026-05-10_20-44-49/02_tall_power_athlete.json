@@ -1,0 +1,85 @@
+{
+  "persona_id": "02_tall_power_athlete",
+  "persona_label": "Tall male power athlete",
+  "biometrics": {
+    "height_cm": 196,
+    "weight_kg": 103,
+    "birth_year": 2002,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To kick things off, how would you describe your history in competitive sport? Have you always been focused on one discipline, or have you explored several different paths?\nOptions: [I've focused on one sport my whole life | I've been a multi-sport athlete | I'm just starting to explore my athletic potential]"
+    },
+    {
+      "role": "user",
+      "content": "I've been a multi-sport athlete"
+    },
+    {
+      "role": "narrator",
+      "content": "Given your physical build, which of these athletic environments feels most like your natural habitat when you are in the heat of competition?\nOptions: [I thrive in explosive, power-based team sports | I prefer the technical focus of individual, precision-heavy pursuits | I enjoy endurance-based challenges that test my mental grit]"
+    },
+    {
+      "role": "user",
+      "content": "I thrive in explosive, power-based team sports"
+    },
+    {
+      "role": "narrator",
+      "content": "To understand how you manage your training intensity, what does your current weekly commitment to physical development look like?\nOptions: [I'm training 4-6 days a week, pushing for peak performance | I balance consistent training with other life commitments, maybe 2-3 sessions | I'm looking to structure a more rigorous routine to reach the next level]"
+    },
+    {
+      "role": "user",
+      "content": "I'm training 4-6 days a week, pushing for peak performance"
+    },
+    {
+      "role": "narrator",
+      "content": "As you look at your current trajectory, what is the ultimate milestone or achievement that would define success for you on your top-tier athletic pathway?\nOptions: [Standing on the podium at The LA28 Games | Becoming a dominant, feared force in my discipline | Consistently pushing my personal limits against the world's best]"
+    },
+    {
+      "role": "user",
+      "content": "Becoming a dominant, feared force in my discipline"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "scout_verdict": "You have spent years as a multi-sport athlete, but it is in the explosive, high-stakes environment of the court that your 196cm frame truly transforms into a weapon. At 24, you aren\u2019t just looking to compete; you are hunting for a position of absolute authority. Your stated ambition to be a feared, dominant force is a natural extension of the intense 4-6 day-a-week regimen you have built for yourself.\n\nWhether you are commanding the hardwood or the court, your physical stature allows you to dictate the tempo of play. You have the raw dimensions to clear lanes and control the air, turning every possession into a statement of intent. You are currently in the prime of your development, perfectly positioned to refine that raw power into the precision required to stand on the podium at The LA28 Games."
+    },
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Women's Shot Put C3)",
+      "scout_verdict": "There is a unique kind of power in the silence that precedes an explosive movement\u2014a truth you understand well through your commitment to high-intensity training. While you thrive on team-based energy, your transition to field athletics offers a pure, kinetic expression of the dominance you crave. Your 103kg frame provides the absolute stability and leverage required to translate years of hard work into a singular, record-shattering moment.\n\nThis path demands a different brand of grit, shifting the focus from the team to your own ability to generate devastating force. As a multi-sport athlete who has pushed for peak performance, you possess the mental discipline to thrive in the isolation of the throwing circle. You are no longer just looking to compete; you are built to become the benchmark, a powerhouse ready to dominate the sector when you arrive at The LA28 Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 4,
+    "summary": "While the physical archetype matches the user's size and the narrative integrates interview answers well, a severe gender mismatch in the adaptive pathway significantly damages the report's credibility.",
+    "authenticity": {
+      "score": 4,
+      "reasoning": "The 196cm/103kg frame is excellent for both basketball and throwing events, but recommending a 'Women's Shot Put' adaptive event for a 24-year-old male athlete is a glaring factual error."
+    },
+    "personalization": {
+      "score": 7,
+      "reasoning": "The verdict successfully weaves in the user's specific answers, tying their 4-6 day training regimen and desire to be a 'dominant, feared force' directly to their physical attributes."
+    },
+    "distinctness": {
+      "score": 7,
+      "reasoning": "The two pathways offer a good contrast between applying raw power in a chaotic team environment (Basketball) versus focusing it into a singular, isolated explosive movement (Shot Put)."
+    },
+    "interview_quality": {
+      "score": 4,
+      "reasoning": "The questions are highly generic and read like a basic personality quiz rather than an athletic assessment, failing to probe deeply into specific movement patterns or biomechanics."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean of specific violations and correctly uses 'The LA28 Games', though the gender mismatch in the adaptive pathway is a major quality failure."
+    }
+  },
+  "backend_error": null
+}

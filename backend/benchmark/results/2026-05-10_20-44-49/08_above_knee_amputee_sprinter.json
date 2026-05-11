@@ -1,0 +1,77 @@
+{
+  "persona_id": "08_above_knee_amputee_sprinter",
+  "persona_label": "Above-knee amputee \u2014 para-sprinter",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 73,
+    "birth_year": 2000,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our conversation, how would you describe your current relationship with physical training and activity?\nOptions: [I am currently training for a specific sport | I enjoy general high-intensity fitness and recreation | I am just beginning to explore my athletic pathway | I'm returning to training after a period of rest]"
+    },
+    {
+      "role": "user",
+      "content": "I am currently training for a specific sport"
+    },
+    {
+      "role": "narrator",
+      "content": "To help me understand your competitive landscape better, which category does your chosen sport primarily fall into?\nOptions: [Individual tactical or skill-based sport | Team-based field or court sport | Endurance or distance-focused sport | Strength and power-focused discipline]"
+    },
+    {
+      "role": "user",
+      "content": "Strength and power-focused discipline"
+    },
+    {
+      "role": "narrator",
+      "content": "To better understand your long-term vision, which of these best describes your primary ambition within your top-tier athletic pathway?\nOptions: [Reaching podiums at the highest international levels | Consistency in peak performance and personal mastery | Transitioning into a new high-performance technical discipline | Building a long-term career as a professional athlete]"
+    },
+    {
+      "role": "user",
+      "content": "Reaching podiums at the highest international levels"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "At 175cm and 73kg, your compact, high-leverage build is perfectly calibrated for the explosive demands of the track. Your dedicated background in strength and power-focused disciplines has built the exact fast-twitch kinetic profile required to dominate the drive phase of a sprint. At 26, you are entering your prime, standing on the edge of your most significant performances yet.\n\nVisualize yourself in the starting blocks at The Brisbane 2032 Games. The focus you\u2019ve honed in your pursuit of international podiums manifests in every muscle fiber as you wait for the start signal. This is the culmination of your journey\u2014a life of precision, explosive power, and an unwavering ambition to stand among the best in high-performance sport. Your ability to translate pure intensity into raw speed makes you a formidable force on the world stage."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "Your commitment to personal mastery and high-performance athletics finds a new, enduring rhythm in the world of road cycling. Your 175cm frame offers a rare combination of aerodynamic efficiency and mechanical leverage, allowing you to maintain an optimal power-to-weight ratio during grueling climbs and technical sprints alike. You have the discipline required to turn raw strength into sustained, high-wattage output over long distances.\n\nImagine the intensity of The Los Angeles 2028 Games, where every transition and pedal stroke is a testament to your professional rigor. Your experience in power-focused training provides the foundation needed for the explosive surges required at the finish line, while your long-term vision ensures you maintain the consistency necessary to compete for the podium. You are not just racing; you are executing a career-long strategy to solidify your legacy in the sport."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The report excels at weaving the user's biometric data and interview answers into highly personalized narratives, but fundamentally fails to provide any dedicated text for the adaptive pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The 175cm and 73kg biometrics closely align with real-world elite sprinters, making the Block Starter archetype and its focus on explosive leverage highly credible."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts explicitly incorporate the user's specific interview answers about strength training and seeking international podiums, tying them directly to their exact height, weight, and age."
+    },
+    "distinctness": {
+      "score": 2,
+      "reasoning": "There is zero distinct narrative for the adaptive pathways; the system merely appended an adaptive label to the JSON keys without exploring the adaptive experience in the verdicts at all."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asked progressively narrowing questions with genuinely distinct, non-convergent options that successfully differentiated the athlete's psychological and physical background."
+    },
+    "compliance": {
+      "passed": false,
+      "note": "Violation: There is a severe narrative depth imbalance, as the adaptive pathways are completely ignored in the scout verdicts."
+    }
+  },
+  "backend_error": null
+}

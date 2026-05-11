@@ -1,0 +1,81 @@
+{
+  "persona_id": "05_youth_time_travel_2032",
+  "persona_label": "Youth gymnast \u2014 time travel to 2032",
+  "biometrics": {
+    "height_cm": 164,
+    "weight_kg": 55,
+    "birth_year": 2010,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, which sports or physical activities have been the primary focus of your life so far?\nOptions: [Team sports (e.g., soccer, basketball, volleyball) | Individual endurance (e.g., running, swimming, cycling) | Technical or precision sports (e.g., gymnastics, climbing) | I'm still exploring and haven't specialized yet]"
+    },
+    {
+      "role": "user",
+      "content": "Technical or precision sports (e.g., gymnastics, climbing)"
+    },
+    {
+      "role": "narrator",
+      "content": "How many years have you been training in these disciplines, and do you feel your strength lies more in the explosive power required for rapid movements, or the sustained endurance needed for longer sessions?\nOptions: [Mostly explosive power and short bursts | More sustained endurance and pacing | A balanced mix of both]"
+    },
+    {
+      "role": "user",
+      "content": "Mostly explosive power and short bursts"
+    },
+    {
+      "role": "narrator",
+      "content": "As you envision yourself competing at the highest level at age 22, how do you see your approach to technical precision evolving from the rapid, explosive bursts you master today?\nOptions: [Refining explosive power for greater technical consistency | Integrating more endurance to sustain intensity through longer rounds | Mastering even more complex, high-difficulty maneuvers]"
+    },
+    {
+      "role": "user",
+      "content": "Mastering even more complex, high-difficulty maneuvers"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "As you stand on the precipice of The 2032 Games at 22 years old, your frame of 164cm and 55kg emerges as a masterclass in aerodynamic efficiency. While your current journey is rooted in the high-intensity, explosive precision of technical sports, this profile harnesses that same capacity for rapid acceleration and converts it into the relentless, sustained tempo required for high-performance cycling. Your focus on mastering complex, high-difficulty maneuvers translates beautifully here into the tactical brilliance needed to navigate a peloton or manage a race-winning breakaway.\n\nBy the time you reach the starting line in 2032, the explosive bursts you favor will have evolved into a formidable weapon, allowing you to dominate technical climbs and decisive surges. This pathway honors your technical roots while challenging you to push that precision into an endurance-based arena. You aren't just riding; you are applying the same analytical, movement-based mindset you developed in your younger years to command the road with surgical grace."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's +100 kg)",
+      "scout_verdict": "The path of the Mat Technician is built for someone who views sport as a puzzle of leverage and geometry. At 164cm, your compact build provides a low center of gravity and mechanical advantages that are essential for controlling an opponent or mastering heavy, precise resistance movements. Your dedication to learning complex, high-difficulty maneuvers is the perfect fuel for this discipline; success here is won by those who can execute flawless technique under extreme pressure.\n\nLooking toward The 2032 Games, this profile positions you as a tactician who can outmaneuver the opposition through superior positioning and explosive, calculated power. Where others rely on brute force, you will be defined by your ability to read the moment and apply your force with pinpoint accuracy. This is a journey that celebrates your background in precision sport, proving that at age 22, your greatest strength lies in the marriage of your explosive intensity and your unwavering commitment to technical perfection."
+    }
+  ],
+  "eval_result": {
+    "overall": 4,
+    "summary": "While the narrative integrates the user's interview answers well, the archetype mappings contain catastrophic weight and gender mismatches for the adaptive pathways, and the adaptive experience is entirely ignored in the text.",
+    "authenticity": {
+      "score": 2,
+      "reasoning": "Assigning 'Men's +100 kg Powerlifting' and 'Men's Handcycling' to a 55kg female athlete is a massive mismatch, completely undermining the credibility of the report."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The scout verdicts specifically reference the user's focus on 'explosive bursts' and their desire to master 'complex, high-difficulty maneuvers' from the interview."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "Although the standing sports (Cycling vs Wrestling) are distinct, the verdicts completely ignore the adaptive pathways, offering zero insight into how those sports would function for this user."
+    },
+    "life_stage_coherence": {
+      "score": 8,
+      "reasoning": "At age 22 (Elite Peak), the phrasing 'stand on the precipice' and describing her as a 'tactician who can outmaneuver the opposition' perfectly captures prime athletic performance."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions successfully narrowed down the user's profile from broad sport categories to specific physiological traits (explosive vs sustained) and future goals."
+    },
+    "compliance": {
+      "passed": false,
+      "note": "Significant narrative depth imbalance: the adaptive pathways are not mentioned at all in either scout verdict, which focus exclusively on the standing sports."
+    }
+  },
+  "backend_error": null
+}

@@ -1,0 +1,77 @@
+{
+  "persona_id": "03_adaptive_visual_impairment",
+  "persona_label": "Adaptive athlete \u2014 partial visual impairment",
+  "biometrics": {
+    "height_cm": 181,
+    "weight_kg": 83,
+    "birth_year": 1998,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, what has been the primary focus of your physical activity or training leading up to today?\nOptions: [Competitive team sports | Endurance training (running, cycling, or swimming) | Strength training and gym-based conditioning | Casual, multi-sport recreational activity]"
+    },
+    {
+      "role": "user",
+      "content": "Endurance training (running, cycling, or swimming)"
+    },
+    {
+      "role": "narrator",
+      "content": "What is the primary motivation driving your current endurance routine?\nOptions: [Chasing personal bests and event participation | Maintaining long-term wellness and mental clarity | Training for specific high-performance endurance challenges]"
+    },
+    {
+      "role": "user",
+      "content": "Training for specific high-performance endurance challenges"
+    },
+    {
+      "role": "narrator",
+      "content": "To better understand your developmental background, how long have you been consistently following a structured training program dedicated to these high-performance goals?\nOptions: [Less than 2 years | 2 to 5 years | More than 5 years]"
+    },
+    {
+      "role": "user",
+      "content": "More than 5 years"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "Your journey, marked by over five years of dedicated high-performance endurance training, has forged an internal quietude that few athletes possess. While the physiological resilience you\u2019ve cultivated on long-distance runs and rides is traditionally associated with cardiovascular output, it is exactly the foundation required for the 'Steady Hand' archetype. In the arena of high-stakes marksmanship, your body must become an immovable anchor for the mind\u2019s focus, and your history of pushing past physical limits is the key to mastering this stillness.\n\nAs you stand at the firing line at The Brisbane 2032 Games, the endurance that once propelled you through miles now anchors you in the present moment. Your physical architecture\u2014181cm and 83kg\u2014provides the ideal balance to minimize mechanical oscillation, turning your years of discipline into a razor-sharp edge. You are no longer just an athlete in motion; you are the epicenter of calm, waiting for the perfect breath to secure your legacy in high-performance sport."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Transitioning from the steady, relentless grind of your endurance background to the explosive technicality of the slopes, your potential as an 'Edge Carver' is immense. The five-plus years you\u2019ve spent honing your physiology for high-performance challenges have prepared your body for the rapid-fire decision-making and gravity-defying control required at top velocities. Your mass-to-height ratio is a significant aerodynamic asset, allowing you to manipulate the physics of the course with precise, calculated force.\n\nImagine the electric atmosphere at The Milano Cortina 2026 Games. As you navigate the steep, technical descent, your extensive endurance history serves as the engine for your late-race composure, allowing you to maintain speed where others falter. At 28, you represent a masterclass in athletic efficiency, seamlessly blending the cardiovascular power you built over the last half-decade with the raw, exhilarating speed of a technical specialist. You have arrived at your peak, ready to carve your path through the world's most demanding terrain."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The report effectively incorporates the user's specific interview answers and biometrics, but the connection between high-performance endurance training and marksmanship feels like a stretch, and the narratives completely ignore the adaptive pathways.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "While the physical dimensions are plausible for the 'Edge Carver' archetype, pivoting a dedicated high-performance endurance athlete into Marksmanship requires a logical leap that the narrative tries to cover with poetic phrasing rather than physiological alignment."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "Excellent integration of the user's specific inputs; it directly references their 'five-plus years' of 'high-performance endurance challenges' and weaves their exact age, height, and weight into the athletic context."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "Although the two archetypes are very different sports, the scout verdicts completely fail to discuss or differentiate the adaptive pathways, writing a single narrative that implicitly assumes a standing athlete."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions logically drill down into the user's training habits, offering distinct options that help narrow the athletic profile, though a question about movement mechanics rather than just duration would have been more revealing."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly uses the required 'The [City] [Year] Games' format without standalone Olympic/Paralympic violations."
+    }
+  },
+  "backend_error": null
+}

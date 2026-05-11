@@ -1,0 +1,12 @@
+{
+  "id": "05_youth_time_travel_2032",
+  "label": "Youth gymnast — time travel to 2032",
+  "description": "A 16-year-old female artistic gymnast who has been competing at regional level since age 6. She is compact, highly flexible, and explosive. Her strengths are spatial awareness, body control, and rotational power. She is not particularly interested in endurance sport — she prefers high-skill technical challenges. She is energetic and curious about her future. When the narrator asks about the future Games or long-term goals, she is genuinely excited about the 2032 Brisbane Games specifically and will say so. She is aware that her peak competitive years are ahead of her.",
+  "height_cm": 164,
+  "weight_kg": 55,
+  "birth_year": 2010,
+  "gender": "F",
+  "target_game_year": 2032,
+  "time_travel_trigger_after": 2,
+  "max_questions": 2
+}

@@ -1,0 +1,85 @@
+{
+  "persona_id": "14_deaf_sprinter",
+  "persona_label": "Profoundly deaf \u2014 competitive 400m sprinter",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 76,
+    "birth_year": 2001,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get started, how would you describe your current relationship with physical activity and your sporting journey?\nOptions: [I am actively training for a specific sport | I enjoy a variety of recreational activities | I am looking to get back into a structured training routine | I am just starting my fitness journey]"
+    },
+    {
+      "role": "user",
+      "content": "I am actively training for a specific sport"
+    },
+    {
+      "role": "narrator",
+      "content": "To help me better understand where your natural strengths might lie, what is the primary focus of your current training?\nOptions: [Endurance and cardio-heavy activities | Strength, power, and explosive movements | Technical skill and precision-based training | Team-oriented coordination and strategy]"
+    },
+    {
+      "role": "user",
+      "content": "Strength, power, and explosive movements"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the heat of a high-intensity training session, do you find you perform best when you are competing directly against an opponent, or do you thrive more when focusing purely on breaking your own personal bests?\nOptions: [Direct competition against an opponent | Pushing my own personal bests | A balance of both depending on the day]"
+    },
+    {
+      "role": "user",
+      "content": "Direct competition against an opponent"
+    },
+    {
+      "role": "narrator",
+      "content": "To round out my understanding of your athletic profile, how do you typically handle the recovery process after your most demanding, explosive training sessions?\nOptions: [Targeted mobility work and physical therapy | Complete rest and mental downtime | Active recovery like swimming or light cross-training | Focusing heavily on nutrition and sleep hygiene]"
+    },
+    {
+      "role": "user",
+      "content": "Targeted mobility work and physical therapy"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "Your physical composition of 178cm and 76kg acts as a natural blueprint for raw, fast-twitch acceleration. At 25, you are perfectly poised to enter the peak of your high-performance athletic journey. Your deep-seated commitment to explosive movements and your proven ability to thrive in the heat of direct competition against an opponent define you as a classic Block Starter. By integrating your disciplined approach to mobility and physical therapy, you ensure that your engine remains resilient under the immense forces generated on the track. As you sharpen your focus toward The LA28 Games, you possess the ideal balance of power and recovery management to turn the starting block into a launchpad for your future legacy in top-tier athletic competition."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "While your current training often leans into explosive bursts, your biometric profile of 178cm and 76kg offers a formidable foundation for the Road Machine archetype. The sustained, rhythmic power required to dominate on the open road demands the exact kind of professional recovery discipline\u2014through targeted mobility and physical therapy\u2014that you have already established in your daily regimen. As you look toward The LA28 Games, this high-performance pathway invites you to channel your intensity into a marathon-level effort rather than a sprint. Your psychological drive to compete directly against rivals will serve you well in a race, allowing you to master the tactical nuances of sustained speed and endurance, transforming your physical power into a display of consistent, long-range athletic brilliance."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong and highly tailored scouting report that effectively utilizes the user's specific interview responses to build a compelling narrative, especially for the primary archetype.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The user's biometrics (178cm, 76kg) and preference for explosive power perfectly match the Block Starter archetype, while the pivot to Road Machine is creatively justified."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts explicitly weave in the user's focus on explosive training, direct competition, and targeted mobility work, making the report feel highly individualized."
+    },
+    "distinctness": {
+      "score": 7,
+      "reasoning": "The sprinting and cycling pathways offer two very different athletic trajectories, though the adaptive pathways serve more as labels than fully integrated narrative elements."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions present clear, meaningfully distinct options (e.g., strength vs. endurance, direct competition vs. personal bests) that logically drive the archetype selection."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass with correct usage of 'The LA28 Games' and no restricted terms."
+    }
+  },
+  "backend_error": null
+}

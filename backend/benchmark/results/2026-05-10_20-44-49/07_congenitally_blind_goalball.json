@@ -1,0 +1,77 @@
+{
+  "persona_id": "07_congenitally_blind_goalball",
+  "persona_label": "Congenitally blind \u2014 goalball and tandem cycling",
+  "biometrics": {
+    "height_cm": 165,
+    "weight_kg": 60,
+    "birth_year": 1992,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, could you tell me a bit about your background in competitive sport? Are you a seasoned athlete, or are you looking to start a new, challenging chapter?\nOptions: [I've been a lifelong athlete. | I'm returning to competitive sport after a break. | I'm new to high-performance training.]"
+    },
+    {
+      "role": "user",
+      "content": "I've been a lifelong athlete."
+    },
+    {
+      "role": "narrator",
+      "content": "What kind of athletic disciplines have you focused on during your journey so far?\nOptions: [Endurance and distance sports | Team-based and tactical sports | Power and explosive disciplines | Strength and precision sports]"
+    },
+    {
+      "role": "user",
+      "content": "Team-based and tactical sports"
+    },
+    {
+      "role": "narrator",
+      "content": "To help understand how your body responds to your current training regime, how would you describe your ideal approach to high-performance preparation?\nOptions: [High-intensity, daily sessions focused on endurance and volume | Technical and skill-based sessions with heavy tactical focus | Balanced routine incorporating strength, agility, and recovery | Varied, adaptive training that changes based on the day's goals]"
+    },
+    {
+      "role": "user",
+      "content": "Technical and skill-based sessions with heavy tactical focus"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "Your history in team sports has sharpened your tactical awareness, but your physical profile suggests you were built for a different kind of precision: the relentless efficiency of the road. At 165.0cm and 60.0kg, you possess an aerodynamic profile that is perfectly suited for sustained power output. Transitioning into cycling allows you to channel your deep-seated competitive drive into a discipline where every watt saved is a victory earned.\n\nAs you approach your athletic peak at age 34, you bring a level of tactical maturity that is rare in the peloton. You aren't just training for endurance; you are training for the long-game strategy that defines champions at The Los Angeles 2028 Games. Your body is a machine, and with your background in high-pressure team environments, you have the mental fortitude to master the silence and the pace of the road."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's +100 kg)",
+      "scout_verdict": "Your preference for technical and tactical training finds its truest home on the mat. As a Mat Technician, your compact 165.0cm frame becomes a significant advantage in leverage-based combat. While others rely solely on raw strength, you thrive on the geometry of the sport\u2014understanding exactly where to apply pressure to dismantle an opponent's defense. Your tactical mind is your greatest asset here.\n\nThis path rewards the discipline you've cultivated throughout your life, transforming your technical obsession into mechanical dominance. Whether you are navigating the intensity of a high-stakes match or focusing on the pure explosion required for powerlifting, your stature provides a stable, low center of gravity that is nearly impossible to disrupt. Prepare your strategy for The Brisbane 2032 Games, where your ability to read the rhythm of the competition will set you apart."
+    }
+  ],
+  "eval_result": {
+    "overall": 4,
+    "summary": "While the narrative effectively incorporates the user's interview responses, severe data hallucinations\u2014such as placing a 60kg female into a Men's +100kg adaptive category\u2014ruin the report's credibility.",
+    "authenticity": {
+      "score": 2,
+      "reasoning": "Recommending 'Men's +100 kg' Powerlifting and 'Men's Road Race' for a 60kg female athlete is a massive hallucination that destroys the physical plausibility of the results."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative successfully weaves in the user's specific background in team sports and her stated preference for tactical training."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "The adaptive and standing sports are awkwardly mashed together in the same paragraph without offering genuinely distinct perspectives, and the adaptive choices directly contradict the user's gender and weight."
+    },
+    "interview_quality": {
+      "score": 6,
+      "reasoning": "The questions offer logically distinct paths, though the third question about training regimes overlaps heavily with the discipline choices made in question two."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean of restricted terms and correctly formats Games references, though the gender mismatch borders on disrespectful output."
+    }
+  },
+  "backend_error": null
+}

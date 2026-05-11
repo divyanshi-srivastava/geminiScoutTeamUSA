@@ -1,0 +1,12 @@
+{
+  "id": "11_retired_gymnast_time_travel_1984",
+  "label": "Retired gymnastics coach — time travel to 1984 LA Games",
+  "description": "A 68-year-old woman who was an elite competitive gymnast throughout her teens and twenties. She trained at national level through the 1970s and was considered a strong prospect for the 1980 Moscow Games — a dream crushed by the US boycott. She never got another shot and retired from competition in 1983. She has spent her adult life coaching gymnastics and has produced several national-level athletes. She is now using this tool out of nostalgic curiosity: she wants to know what might have been if she had competed at the 1984 Los Angeles Games at age 26. She is warm, articulate, and carries a gentle wistfulness about the athletic life she almost had. When the era question comes up she speaks naturally about what it felt like to be at her peak in that era — the training culture, the physical demands, her signature events (floor exercise and beam). She has no disability. Her current biometrics reflect her age but her era question answers should reflect her as a 26-year-old peak athlete.",
+  "height_cm": 162,
+  "weight_kg": 57,
+  "birth_year": 1958,
+  "gender": "F",
+  "target_game_year": 1984,
+  "time_travel_trigger_after": 2,
+  "max_questions": 2
+}

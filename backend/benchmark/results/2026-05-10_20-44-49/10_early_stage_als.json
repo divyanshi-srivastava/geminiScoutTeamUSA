@@ -1,0 +1,85 @@
+{
+  "persona_id": "10_early_stage_als",
+  "persona_label": "Early-stage ALS \u2014 former competitive tennis player",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 78,
+    "birth_year": 1981,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our conversation, how would you describe your current relationship with physical activity and competitive sport?\nOptions: [I'm currently very active and training regularly. | I'm looking to get back into a structured athletic routine. | I've spent years in competitive sport and am looking for a new challenge. | I'm just starting to explore what my body is capable of achieving.]"
+    },
+    {
+      "role": "user",
+      "content": "I've spent years in competitive sport and am looking for a new challenge."
+    },
+    {
+      "role": "narrator",
+      "content": "To help me understand your background better, what kind of athletic disciplines or sports have primarily shaped your journey until now?\nOptions: [Endurance and stamina-based sports (e.g., running, cycling) | Strength and power-focused activities (e.g., weightlifting, throwing) | Team-based or tactical sports (e.g., basketball, football) | Precision and technical skill-based disciplines (e.g., gymnastics, archery)]"
+    },
+    {
+      "role": "user",
+      "content": "Precision and technical skill-based disciplines (e.g., gymnastics, archery)"
+    },
+    {
+      "role": "narrator",
+      "content": "As we look at your current lifestyle, how much time per week are you typically dedicating to your physical training, and how does that fit into your daily routine?\nOptions: [I follow a structured 5-6 day routine. | I train when I can, usually 3-4 times a week. | I'm currently rebuilding my routine and aim for 1-2 sessions. | My activity is mostly integrated into my daily life rather than dedicated gym time.]"
+    },
+    {
+      "role": "user",
+      "content": "I train when I can, usually 3-4 times a week."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward this new high-performance athletic pathway, what is the primary motivation driving your search for a fresh challenge?\nOptions: [Pushing my physical and mental limits to the maximum. | Competing at an elite master's level in a new discipline. | Mentoring others while maintaining my own competitive edge. | Testing my technical mastery in a completely new environment.]"
+    },
+    {
+      "role": "user",
+      "content": "Testing my technical mastery in a completely new environment."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Your history of mastering technical disciplines serves as the perfect bedrock for the high-velocity demands of Alpine or speed-based competition. At 178.0cm and 78.0kg, your physical profile is a precision instrument designed for the tight corners and high-stakes lines found on the mountain or the track. The dedication you\u2019ve shown in your 3-4 weekly training sessions demonstrates the discipline required to maintain peak form while continuing to evolve your athletic journey. At 45, you possess a level of tactical awareness that younger competitors are still chasing. For you, the appeal of this path lies in the pursuit of absolute technical mastery, translating years of experience into the controlled aggression needed for competitive sport at the highest level. You aren't just starting a new chapter; you are refining a lifelong craft in anticipation of standing at the starting gate of The Milano Cortina 2026 Games."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "Sprinting is often viewed as pure power, but at the professional level, it is a game of millimeters and mechanical perfection\u2014exactly the kind of technical challenge you seek. Your history in precision sports has provided you with the foundational body awareness to refine the explosive phase of a block start and maintain biomechanical efficiency under extreme duress. This path offers the clean slate you desire, allowing you to re-engineer your movement patterns toward maximum explosive output. Transitioning to the track at 45 allows you to leverage your existing stamina and tactical patience to dominate the details of the sprint. Your commitment to a consistent 3-4 day training schedule provides the perfect environment to layer on the necessary explosive training while protecting your longevity. By the time you step onto the track at The Brisbane 2032 Games, your narrative will be defined by the technical intelligence you brought from your past, proving that mastery is a skill that translates across every arena."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The personalization is excellent and tightly integrates the user's interview answers, but the recommendation of 100m sprints for a 45-year-old is highly unrealistic, and the narratives fail to address the adaptive pathways.",
+    "authenticity": {
+      "score": 4,
+      "reasoning": "While the 178cm/78kg build fits these archetypes, pitching high-level 100m/200m sprints to a 45-year-old who will be 53 by the Brisbane 2032 Games severely damages real-world scouting plausibility."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narrative seamlessly weaves in the user's specific answers, explicitly referencing their background in precision disciplines, their 3-4 day training schedule, and their desire for technical mastery."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "The verdicts combine standing and adaptive paths into a single paragraph without ever mentioning or exploring the nuances of the adaptive sports (LW12 Sit-Ski or T44 Sprints) listed in the pathway keys."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator's questions build a logical athlete profile, offering genuinely distinct options (e.g., 'Mentoring others' vs 'Testing technical mastery') that meaningfully differentiate the user's mindset and background."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Correctly formatted Games references ('The Milano Cortina 2026 Games', 'The Brisbane 2032 Games') and no usage of forbidden trademarked terms."
+    }
+  },
+  "backend_error": null
+}

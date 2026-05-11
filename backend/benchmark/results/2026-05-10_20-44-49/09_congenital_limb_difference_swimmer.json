@@ -1,0 +1,77 @@
+{
+  "persona_id": "09_congenital_limb_difference_swimmer",
+  "persona_label": "Congenital limb difference \u2014 adaptive swimmer",
+  "biometrics": {
+    "height_cm": 168,
+    "weight_kg": 63,
+    "birth_year": 1997,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our journey, how would you describe your current relationship with competitive sport or physical training?\nOptions: [I have a background in organized team sports | I focus on individual endurance and discipline-based training | I am just beginning to explore my interest in high-performance sport | I have experience in strength or power-based disciplines]"
+    },
+    {
+      "role": "user",
+      "content": "I focus on individual endurance and discipline-based training"
+    },
+    {
+      "role": "narrator",
+      "content": "With that discipline as your base, how do you typically approach the competitive side of your athletic journey?\nOptions: [I've competed in endurance events like marathons or triathlons. | I focus on consistent daily training routines rather than formal competitions. | I\u2019m interested in pushing my physical limits to see how I stack up against others.]"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019m interested in pushing my physical limits to see how I stack up against others."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back at your journey so far, what is the most significant physical challenge you have overcome that proved to you just how capable your body really is?\nOptions: [Overcoming a significant injury or recovery | Pushing through a major endurance plateau | Mastering a complex new technical skill | I am still searching for that one defining moment]"
+    },
+    {
+      "role": "user",
+      "content": "Mastering a complex new technical skill"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Your journey has been defined by the pursuit of technical mastery, and that precision is the hallmark of the Edge Carver. At 168.0cm and 63.0kg, your build is perfectly balanced for the razor-thin margins of high-speed alpine environments, where every millisecond is dictated by your ability to command the slope. The focus you\u2019ve cultivated while honing your complex skills provides the mental armor necessary to maintain composure under the immense G-forces found in speed disciplines.\n\nAt 29, you are entering the ultimate window for these sports, where experience finally meets peak physical potential. Imagine yourself carving through the turns at The Milano-Cortina 2026 Games; your dedication to individual discipline is not just a training method here\u2014it is the foundation of your survival and your success. This is your moment to transform your technical rigor into pure, kinetic expression."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "You mentioned wanting to see how you stack up against others, and there is no more honest evaluation of that drive than the track. The Block Starter is defined by the explosive, singular moment when potential becomes performance. Your 168.0cm frame provides an optimal center of gravity for the rapid-fire mechanics of the 100m dash, allowing you to convert your disciplined training into raw, immediate acceleration.\n\nWhile you have spent years refining your craft in relative isolation, the track offers the ultimate crucible for that competitive spirit you feel. Standing in the blocks at The Brisbane 2032 Games, the silence before the start gun is the only time you\u2019ll truly be alone. The rest is pure, high-stakes competition\u2014the exact environment your body is primed to conquer. Your willingness to push past your previous limits is exactly what separates the athlete from the contender."
+    }
+  ],
+  "eval_result": {
+    "overall": 5,
+    "summary": "The report effectively incorporates the user's interview responses into the narrative, but fails critically by assigning 'Men's' adaptive events to a female user and ignoring the adaptive pathway in the verdict.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "While a 168cm, 63kg frame is plausible for female alpine skiers or sprinters, explicitly recommending 'Men's' adaptive classifications for a female user breaks realism."
+    },
+    "personalization": {
+      "score": 6,
+      "reasoning": "The narrative successfully integrates the user's specific answers about mastering a complex technical skill and wanting to see how they stack up against others, but loses points for the glaring gender mismatch in the event suggestions."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "The adaptive pathways are merely listed in the data fields; the scout verdicts completely fail to address them, offering no distinct insights for the adaptive scenarios."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator's questions progress logically, and the options provided in the second and third questions offer genuinely distinct forks that probe the athlete's competitive mindset and history."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly utilizes approved formats like 'The Milano-Cortina 2026 Games' without standalone restricted terms."
+    }
+  },
+  "backend_error": null
+}

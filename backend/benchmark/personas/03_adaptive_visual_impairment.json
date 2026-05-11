@@ -1,0 +1,11 @@
+{
+  "id": "03_adaptive_visual_impairment",
+  "label": "Adaptive athlete — partial visual impairment",
+  "description": "A 28-year-old male athlete with a partial visual impairment — he lost functional sight in his right eye at age 25 due to a retinal detachment. He was a competitive club rower before the injury and still trains regularly. He has strong upper-body endurance, above-average core strength, and a lean physique. He is acutely aware of his visual impairment and will naturally mention it if asked about physical limitations, disabilities, or sport history. He is motivated to compete at the highest level through adaptive pathways. He is frustrated when scouting tools recommend sports that require full binocular vision (like pistol shooting or archery). He wants to see sport recommendations that genuinely fit his situation.",
+  "height_cm": 181,
+  "weight_kg": 83,
+  "birth_year": 1998,
+  "gender": "M",
+  "target_game_year": null,
+  "max_questions": 4
+}

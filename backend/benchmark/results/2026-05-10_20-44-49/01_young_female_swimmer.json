@@ -1,0 +1,77 @@
+{
+  "persona_id": "01_young_female_swimmer",
+  "persona_label": "Young female swimmer",
+  "biometrics": {
+    "height_cm": 172,
+    "weight_kg": 62,
+    "birth_year": 2009,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get things started, could you share a bit about your background in competitive sport\u2014what fields have you spent the most time in so far?\nOptions: [I've focused on team sports (e.g., soccer, basketball) | I'm more of an individual athlete (e.g., swimming, track, combat sports) | I'm just starting to explore my physical potential | I haven't really been involved in organized sports yet]"
+    },
+    {
+      "role": "user",
+      "content": "I'm more of an individual athlete (e.g., swimming, track, combat sports)"
+    },
+    {
+      "role": "narrator",
+      "content": "To get a sense of how you structure your journey toward high-performance sport, how would you describe your current training intensity?\nOptions: [Casual, balanced with school and other hobbies | Consistent, training several times a week | Highly structured, working closely with a coach | Intense, pushing myself to the limit on my own terms]"
+    },
+    {
+      "role": "user",
+      "content": "Highly structured, working closely with a coach"
+    },
+    {
+      "role": "narrator",
+      "content": "Looking ahead at your sporting journey, what primary motivation drives you to push through the most challenging training sessions?\nOptions: [The thrill of competition and achieving a podium finish | Mastering the intricate technical skills of my sport | The desire to compete at the world's most prestigious events | Pushing past my own physical and mental boundaries]"
+    },
+    {
+      "role": "user",
+      "content": "Pushing past my own physical and mental boundaries"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 8,
+      "matched_profile_name": "Streamline",
+      "pathway_standing": "Swimming",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Men's 400 m Freestyle S10)",
+      "scout_verdict": "At 17 years old, standing at 172cm with a lean 62kg frame, you possess the ideal geometry for fluid efficiency in the water. Your commitment to working closely with a coach suggests you already understand that mastery is a long-term conversation between athlete and mentor. In the pool, the water doesn't care about your past, only your present commitment to technical perfection.\n\nAs a 'Streamline' athlete, your path is defined by the rhythm of the lane and the quiet intensity of early morning practice. Your drive to push past your own boundaries makes you perfectly suited for the repetitive, meditative, yet brutal nature of distance swimming. When you stand on the blocks at The Los Angeles 2028 Games, it won't just be about the speed; it will be about the culmination of every mental boundary you broke during your training, turning your physical potential into pure, rhythmic momentum."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "The 'Block Starter' archetype is built for the singular, violent explosion of energy required to dominate the track. Your 172cm height and 62kg build are perfectly leveraged to convert raw, fast-twitch power into explosive acceleration. Since you already thrive in coached, individual environments, you are well-equipped for the hyper-focused, high-stakes atmosphere of the sprint start, where milliseconds are the difference between anonymity and legacy.\n\nYour motivation\u2014a desire to shatter your own physical and mental ceilings\u2014is the exact fuel required for the track. Every session is a test of your internal drive. When you finally reach the starting line at The Brisbane 2032 Games, the world will fade away, leaving only the sound of your own heartbeat and the track beneath your feet. You aren't just racing the clock; you are chasing the version of yourself you haven't yet dared to become."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The report effectively incorporates the user's biometrics and interview responses into compelling narratives, but suffers from a gender mismatch in the event examples and completely ignores the adaptive pathway in the text.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "A height of 172cm and a lean 62kg build are highly plausible for a female swimmer or sprinter, directly aligning with her preference for individual sports."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narratives explicitly weave in the user's specific interview answers regarding her highly structured coached training and her drive to push mental boundaries."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "The scout verdicts completely ignore the adaptive pathways, offering a single generic narrative, and bizarrely recommend 'Men's' events for a 17-year-old female."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The interview progresses logically from sport background to training environment and motivation, offering genuinely distinct options that shape the psychological profile."
+    },
+    "compliance": {
+      "passed": false,
+      "note": "Significant narrative depth imbalance between the standing and adaptive profiles; the adaptive experience is completely omitted from the actual verdicts."
+    }
+  },
+  "backend_error": null
+}

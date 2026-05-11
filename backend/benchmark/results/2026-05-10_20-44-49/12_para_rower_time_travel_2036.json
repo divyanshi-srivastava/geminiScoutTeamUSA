@@ -1,0 +1,81 @@
+{
+  "persona_id": "12_para_rower_time_travel_2036",
+  "persona_label": "Para-rower with SCI \u2014 time travel to 2036 Games",
+  "biometrics": {
+    "height_cm": 184,
+    "weight_kg": 88,
+    "birth_year": 1988,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe your current relationship with your sporting journey?\nOptions: [I\u2019ve been a lifelong competitive athlete. | I\u2019m getting back into fitness after a long hiatus. | I\u2019m completely new to the world of high-performance training. | I'm currently training for a specific discipline.]"
+    },
+    {
+      "role": "user",
+      "content": "I'm currently training for a specific discipline."
+    },
+    {
+      "role": "narrator",
+      "content": "As you refine your approach, which area of your high-performance training are you currently dedicating the most time to?\nOptions: [Strength and Explosive Power | Endurance and Stamina | Technical Precision and Technique | Tactical Strategy and Mentality]"
+    },
+    {
+      "role": "user",
+      "content": "Technical Precision and Technique"
+    },
+    {
+      "role": "narrator",
+      "content": "When you envision yourself standing on the threshold of The 2036 Games, what do you hope your decades of refined technical mastery will allow you to demonstrate that you couldn't quite master before?\nOptions: [A breakthrough in unwavering consistency and poise. | The ability to mentor the next generation through my technical insight. | Setting a new standard for longevity and movement quality in my discipline. | Transitioning into a completely new, strategically dominant role.]"
+    },
+    {
+      "role": "user",
+      "content": "Setting a new standard for longevity and movement quality in my discipline."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "As you stand at 48 years old on the field at The 2036 Games, you have become a testament to the idea that the body is a lifelong project. Your journey, characterized by an obsessive commitment to technical precision and movement quality, has refined your 184cm and 88kg frame into a highly adaptable tool. While others may rely on raw, youthful speed, you bring the wisdom of decades to the complex demands of multi-discipline competition.\n\nYou have moved beyond the search for peak intensity, finding instead a rare, enduring flow that allows you to manage the diverse challenges of these events with grace. By prioritizing longevity and biomechanical efficiency, you\u2019ve redefined what is possible for a veteran athlete. In the arena at The 2036 Games, you aren't just participating; you are demonstrating that technical mastery, when nurtured over a lifetime, is the most formidable weapon in any athlete's arsenal."
+    },
+    {
+      "matched_profile_id": 10,
+      "matched_profile_name": "Launch Force",
+      "pathway_standing": "Bobsleigh / Push Sports",
+      "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+      "scout_verdict": "At The 2036 Games, you embody the 'Launch Force' archetype\u2014a profile where your stable, high-mass foundation is leveraged through the absolute precision of your technique. At 48, your body serves as a finely tuned engine, where every movement is calculated to maximize kinetic transfer. You have spent years stripping away the unnecessary, focusing your energy on the subtle nuances that separate a good performance from a masterclass.\n\nYour emphasis on technical accuracy makes you perfectly suited for the demands of these power-focused disciplines. Whether you are navigating the high-stakes environment of a push track or the singular, intense focus of the throwing circle, your presence is defined by an unwavering poise. You have transformed your physical experience into a legacy of control, proving that at this stage of your journey, your mind is just as explosive as your form."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly personalized and age-appropriate scouting report that masterfully weaves the user's focus on technique and longevity into two distinct, physically plausible archetypal pathways.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "At 184cm and 88kg, the user has a solid frame that fits the versatility of the 'Swiss Army' decathlete, though they might be slightly light for an elite 'Launch Force' bobsleigh push athlete."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "Directly integrates the user's specific interview choices regarding 'technical precision' and 'longevity and movement quality' into the core narrative of both verdicts."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "Effectively contrasts the multi-disciplinary requirements of the decathlon with the precise, explosive power needed for bobsleigh and seated throws."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "Perfectly captures the 'Legacy' stage at target age 48, using phrases like 'wisdom of decades' and 'redefined what is possible for a veteran athlete'."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator offered genuinely distinct options that progressively narrowed down the athlete's psychological and physical priorities from broad experience to specific 2036 legacy goals."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Successfully uses the required 'The 2036 Games' formatting and avoids any IP or NIL violations."
+    }
+  },
+  "backend_error": null
+}

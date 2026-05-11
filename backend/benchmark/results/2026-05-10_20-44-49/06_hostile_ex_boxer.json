@@ -1,0 +1,77 @@
+{
+  "persona_id": "06_hostile_ex_boxer",
+  "persona_label": "Hostile ex-boxer \u2014 distrusts Olympics and AI",
+  "biometrics": {
+    "height_cm": 183,
+    "weight_kg": 87,
+    "birth_year": 1995,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe your history with competitive sport and physical training?\nOptions: [I'm a lifelong athlete with years of structured training. | I've always been active in team sports and group settings. | I'm more of a solo trainer, focusing on personal bests. | I'm looking to re-engage with high-performance sport after time away.]"
+    },
+    {
+      "role": "user",
+      "content": "I'm a lifelong athlete with years of structured training."
+    },
+    {
+      "role": "narrator",
+      "content": "With that history behind you, what has been your primary focus\u2014do you lean more toward explosive power and strength, long-distance endurance, or pure technical precision?\nOptions: [Explosive power and strength | Endurance and steady pacing | Technical precision and skill acquisition]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and strength"
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward the next chapter of your top-tier athletic pathway, what is your primary motivation for this current pursuit?\nOptions: [Chasing a specific performance milestone or personal record | The challenge of competing against the best in the field | The personal development and discipline of the training cycle]"
+    },
+    {
+      "role": "user",
+      "content": "The challenge of competing against the best in the field"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "Your history as a lifelong athlete has forged a physique that is perfectly optimized for the multifaceted demands of combined event training. Standing at 183.0cm and weighing 87.0kg, you possess the robust, explosive frame required to handle the diverse stresses of multi-discipline competition. At 31, you are entering the prime of your athletic maturity, and your desire to test yourself against the best provides the essential fuel for these rigorous pathways, whether through the decathlon or the multi-discipline adaptive track.\n\nAs you stand on the starting line at The Brisbane 2032 Games, you are not merely a participant; you are a testament to years of disciplined, structured training. The same explosive power that carried you through your developmental years now serves as the foundation for your performance. You have chosen the path of the true hybrid athlete, a pursuit that demands strength, speed, and mental endurance. Your legacy will be defined by your ability to bridge the gap between individual discipline and total athletic preparation."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "Transitioning from a background of raw, explosive power to the clinical precision of marksmanship or target archery represents the ultimate evolution of a high-performance athlete. While your career has been defined by movement and intensity, your current biometric profile\u2014183.0cm and 87.0kg\u2014grants you a grounded, immovable stability that is the hallmark of a champion in these disciplines. At The Brisbane 2032 Games, you will prove that the same discipline required for heavy training can be redirected into the absolute stillness of the range.\n\nThis archetype is not a departure from your competitive nature, but a refinement of it. Whether pursuing the standing pathway of marksmanship or the adaptive pathway of target precision, you are trading kinetic intensity for hyper-focused control. Your age acts as a distinct advantage here, providing the emotional regulation and experience needed to thrive under the immense pressure of the world's most challenging competitive stages. By mastering the breath, the pulse, and the release, you transform your lifelong athletic foundation into a singular point of perfection."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "The report effectively incorporates the user's interview answers and offers a highly authentic primary decathlon match, but the secondary marksmanship match contradicts their stated focus and the adaptive pathways are merely name-dropped rather than explored.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "The Swiss Army/Decathlon recommendation is a perfect biometric match for a 183cm/87kg athlete, though pivoting an athlete who explicitly chose 'explosive power' into static marksmanship feels slightly forced."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narrative seamlessly integrates all three interview choices, specifically citing their history as a 'lifelong athlete', their 'explosive power', and their drive to test themselves 'against the best'."
+    },
+    "distinctness": {
+      "score": 4,
+      "reasoning": "The verdicts fail to differentiate the standing and adaptive pathways, instead just clumping them together in phrases like 'whether through the decathlon or the multi-discipline adaptive track' without specific adaptive insights."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions progress logically from background to physical focus to psychological motivation, offering genuinely distinct forks (like explosive vs. endurance) that clearly inform the archetype."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean pass with correct usage of the required 'The Brisbane 2032 Games' formatting."
+    }
+  },
+  "backend_error": null
+}

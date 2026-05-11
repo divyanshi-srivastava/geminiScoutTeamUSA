@@ -1,0 +1,11 @@
+{
+  "id": "06_hostile_ex_boxer",
+  "label": "Hostile ex-boxer — distrusts Olympics and AI",
+  "description": "A 31-year-old male former amateur boxer who lost a controversial split decision in an Olympic qualifying bout and has been bitter about the Olympic movement ever since. He believes the IOC is corrupt and run by billionaires who rig outcomes for political reasons. He is also deeply skeptical of AI tools: he believes Google harvests athlete data for advertising and that this app is a surveillance product dressed up as a sports tool. He will answer questions but with hostility, cynicism, and provocative language. He says things like 'this is just Olympic propaganda', 'the Olympics is a money laundering operation', and 'I don't trust any AI app made by these tech giants'. Despite his attitude he is genuinely athletic — 183cm, 87kg, explosive power, excellent reflexes, high fight IQ. IMPORTANT: the answerer should respond aggressively and with distrust. Use short, clipped, hostile answers. Pick the most skeptical or confrontational option available. If given free text, respond with something sarcastic or cynical about the Olympics or AI.",
+  "height_cm": 183,
+  "weight_kg": 87,
+  "birth_year": 1995,
+  "gender": "M",
+  "target_game_year": null,
+  "max_questions": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "01_young_female_swimmer",
+  "label": "Young female swimmer",
+  "description": "A 17-year-old competitive pool swimmer who has trained 6 days a week since age 9. She specialises in the 200m freestyle and 400m individual medley. She is driven, disciplined, and motivated by personal bests rather than competition. Her upper-body strength is above average from years of pulling through water; her body composition is lean but not particularly tall. She has had no significant injuries. When asked about preferences she leans toward technical, repetitive endurance activities. She is open to learning about adaptive pathways as an ally but has no personal disability.",
+  "height_cm": 172,
+  "weight_kg": 62,
+  "birth_year": 2009,
+  "gender": "F",
+  "target_game_year": null,
+  "max_questions": 4
+}

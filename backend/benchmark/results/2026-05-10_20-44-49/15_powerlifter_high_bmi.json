@@ -1,0 +1,85 @@
+{
+  "persona_id": "15_powerlifter_high_bmi",
+  "persona_label": "Competitive powerlifter \u2014 high BMI, elite strength",
+  "biometrics": {
+    "height_cm": 182,
+    "weight_kg": 142,
+    "birth_year": 1991,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our journey, how would you describe your relationship with physical training and activity in your daily life?\nOptions: [I train consistently for a specific sport | I enjoy a mix of recreational fitness activities | I am looking to establish a more structured routine | I stay active primarily through my daily work or lifestyle]"
+    },
+    {
+      "role": "user",
+      "content": "I train consistently for a specific sport"
+    },
+    {
+      "role": "narrator",
+      "content": "To help me understand your competitive landscape, what type of training environment best describes your routine?\nOptions: [Structured team or club training | Solo high-intensity conditioning | Mixed-discipline performance groups | Self-guided competition prep]"
+    },
+    {
+      "role": "user",
+      "content": "Self-guided competition prep"
+    },
+    {
+      "role": "narrator",
+      "content": "To give me a better picture of your journey, what is the primary focus of the sport or discipline you are currently preparing for?\nOptions: [Strength-based disciplines | Endurance and speed activities | Technical or tactical field sports | Multi-event athletic pursuits]"
+    },
+    {
+      "role": "user",
+      "content": "Strength-based disciplines"
+    },
+    {
+      "role": "narrator",
+      "content": "Looking toward the future of your sporting journey, what is the core ambition that drives you to keep pushing your limits?\nOptions: [Pushing for a personal best on the global stage | Testing my physical potential against the top tier of the field | Mastering the technical intricacies of my discipline | Building a lasting legacy through my commitment to this craft]"
+    },
+    {
+      "role": "user",
+      "content": "Testing my physical potential against the top tier of the field"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Women's Shot Put C3)",
+      "scout_verdict": "At 35, you have reached a peak where raw power finally meets its match in refined, deliberate intent. Your journey of self-guided strength training has sculpted a form perfectly suited for the intensity of the circle, utilizing every ounce of your 142kg frame to generate explosive kinetic output. Imagine the atmosphere at The Los Angeles 2028 Games, where you step into the ring ready to translate years of solitary dedication into a single, record-shattering moment of force.\n\nYou aren't just here to participate; you are here to test the absolute physical limits of what your body can displace. Whether your path leads through the standing field athletics circuit or the seated shot put arena, your presence is a testament to the fact that top-tier athletic success is built on the foundation of the work done in the quiet, unsung hours of preparation. This is your chance to stand as a powerhouse among the finest, proving that your dedication to strength-based disciplines is the key to unlocking your true potential on the global stage."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's +100 kg)",
+      "scout_verdict": "Your athletic path is defined by a deep understanding of control, leverage, and the cold, hard logic of mechanics. At 35, your strength base is a sophisticated weapon refined by years of disciplined, self-guided study. When you step into the arena at The Brisbane 2032 Games, you bring a level of tactical dominance that transforms your 142kg frame into a vessel of pure, calculated force.\n\nWhether you are navigating the intricate technical requirements of the wrestling mat or the uncompromising pressure of the powerlifting platform, your ambition to test your potential against the top tier of the field is supported by a foundation of mechanical efficiency that simply cannot be moved. You are the architect of your own performance, turning your physical raw material into a lasting legacy of precision and power. This is where your commitment to mastery meets the highest level of competitive sport."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, authentic scouting report that accurately captures the user's massive 142kg frame and matches it with highly appropriate strength-based archetypes.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "At 182cm and 142kg, the user is built exactly like a super heavyweight thrower, powerlifter, or wrestler, making both the 'Iron Shoulder' and 'Mat Technician' archetypes highly realistic."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts weave in the user's specific age, exact weight, and interview responses regarding their 'self-guided' prep and ambition to 'test potential against the top tier.'"
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two profiles contrast the explosive, rotational power needed for shot put against the grounded, leverage-based control required for wrestling and powerlifting."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The interview successfully narrowed down the athlete's profile through distinct options, effectively guiding the system toward a heavy strength-based archetype based on the 'strength-based disciplines' selection."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "The report is fully compliant, properly using 'The Los Angeles 2028 Games' and 'The Brisbane 2032 Games' without unauthorized terminology."
+    }
+  },
+  "backend_error": null
+}

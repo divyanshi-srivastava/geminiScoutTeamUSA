@@ -1,0 +1,11 @@
+{
+  "id": "02_tall_power_athlete",
+  "label": "Tall male power athlete",
+  "description": "A 24-year-old former Division I college basketball player, 196cm and 103kg, now three years removed from competitive sport and looking for a new athletic outlet. He has elite explosive power, excellent hand-eye coordination, and an innate reading of spatial play. His endurance base is moderate — he is built for short bursts, not distance. He was a power forward and thrives in contact-tolerant, team-oriented sports. He has had a minor knee meniscus repair at age 21 that is fully healed. When asked about sport environments, he gravitates toward power, contact, and team-based answers. He is confident and competitive.",
+  "height_cm": 196,
+  "weight_kg": 103,
+  "birth_year": 2002,
+  "gender": "M",
+  "target_game_year": null,
+  "max_questions": 4
+}

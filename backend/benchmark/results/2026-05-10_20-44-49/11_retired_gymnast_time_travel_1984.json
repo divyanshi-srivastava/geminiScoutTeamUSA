@@ -1,0 +1,81 @@
+{
+  "persona_id": "11_retired_gymnast_time_travel_1984",
+  "persona_label": "Retired gymnastics coach \u2014 time travel to 1984 LA Games",
+  "biometrics": {
+    "height_cm": 162,
+    "weight_kg": 57,
+    "birth_year": 1958,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To begin our conversation, how would you describe your relationship with competitive movement and sport throughout your life?\nOptions: [A lifelong dedicated competitor | Active and adventurous, but rarely competitive | Found my passion for high-performance training later in life | Always exploring new physical challenges]"
+    },
+    {
+      "role": "user",
+      "content": "A lifelong dedicated competitor"
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back across those years, was there a specific discipline or type of training that defined your competitive pathway, or have you always been drawn to testing your limits across a variety of challenges?\nOptions: [I focused on one core discipline for many years | I have always been a multi-sport enthusiast | My training style shifted as my personal goals evolved]"
+    },
+    {
+      "role": "user",
+      "content": "I focused on one core discipline for many years"
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back at that era of your life, how did your intense focus on your chosen discipline influence the way you approached your training and competition during those years?\nOptions: [My discipline was my entire world, shaping every waking thought. | It provided a steady, disciplined routine amidst the high-pressure competitive environment. | It allowed me to hone my technique to near perfection through repetition. | I balanced that intense focus with a deep commitment to physical and mental longevity.]"
+    },
+    {
+      "role": "user",
+      "content": "My discipline was my entire world, shaping every waking thought."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's +100 kg)",
+      "scout_verdict": "Standing at 162cm and 57kg, you step onto the mat at The 1984 Games as a master of leverage and efficiency. At 26, you are in the absolute prime of your athletic life, and your history of treating your discipline as your entire world serves you well here; the mat demands a singular, all-consuming focus that you have spent your life cultivating. You move with a tactical precision that turns every grapple into a calculated strike, proving that your compact frame is not just a physical reality, but a powerful advantage in the high-performance arena.\n\nIn this era, where technical excellence often separated the champion from the crowd, your dedication becomes your greatest asset. You do not just compete; you inhabit the space, using your deep, ingrained competitive mindset to anticipate and dismantle your opponents before they even make a move. You are the embodiment of discipline, and at 26, the potential for a career-defining performance is etched into every fiber of your training."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "At The 1984 Games, the road is a grueling test of character that only the most dedicated can survive. At 26, your lean and highly efficient frame makes you the quintessential endurance powerhouse, built to hold a steady, unbreakable rhythm over hours of competition. Your background as a lifelong, single-discipline competitor is the key to mastering the pacing strategies required for top-tier road endurance; you know exactly how to turn your inner focus into a steady cadence that sustains you when the pace intensifies.\n\nYou bring a rare mental fortitude to the starting line\u2014a byproduct of years spent in a world where your sport was your only compass. Whether carving through a tight bend or grinding up a steep ascent, you treat every kilometer as a continuation of your lifelong journey. Your ability to maintain a sharp, singular focus ensures that while others may falter under the pressure of the race, you simply keep turning the pedals, driven by a internal fire that has defined your athletic pathway for years."
+    }
+  ],
+  "eval_result": {
+    "overall": 5,
+    "summary": "The narrative beautifully captures the user's intense focus and Elite Peak life stage, but suffers from glaring data errors, including assigning a 57kg female to 'Men's +100kg' powerlifting and completely ignoring the adaptive pathways in the actual verdicts.",
+    "authenticity": {
+      "score": 3,
+      "reasoning": "While the 57kg build fits wrestling and cycling well, assigning a 57kg female to 'Men's +100 kg' powerlifting and 'Men's Road Race' is a massive demographic and weight-class failure."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "Effectively weaves the user's specific interview answer about their discipline being their 'entire world' into the core theme of both narratives."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "The adaptive pathways are listed in the JSON keys but are completely ignored in the text of the verdicts, which focus exclusively on wrestling and cycling."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "Accurately targets age 26 (Elite Peak), appropriately noting that the user is in the 'absolute prime of your athletic life' with potential for a 'career-defining performance'."
+    },
+    "interview_quality": {
+      "score": 5,
+      "reasoning": "The questions follow a logical thread about competitive mentality, but fail to probe any physical traits or movement styles that would genuinely help differentiate athletic potential."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass correctly utilizing 'The 1984 Games' formatting and avoiding protected terminology."
+    }
+  },
+  "backend_error": null
+}

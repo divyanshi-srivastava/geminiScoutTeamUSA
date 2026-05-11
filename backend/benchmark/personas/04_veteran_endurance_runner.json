@@ -1,0 +1,11 @@
+{
+  "id": "04_veteran_endurance_runner",
+  "label": "Veteran ultramarathon runner",
+  "description": "A 42-year-old male with 22 years of distance running behind him. He has completed multiple 100-mile ultramarathons and has a sub-3-hour marathon personal best. He is lean and highly aerobically efficient. His sport philosophy is deeply individualistic — he runs for the mental solitude as much as the physical challenge. He has no significant injuries but has accumulated some lower-limb wear. When asked about sport environments, he consistently chooses solo, endurance-oriented, and outdoor answers. He is humble about his abilities but pragmatic about his age: he knows his peak power years are behind him but his technical endurance knowledge is at its prime. He is not interested in team sports or explosive power activities.",
+  "height_cm": 175,
+  "weight_kg": 70,
+  "birth_year": 1984,
+  "gender": "M",
+  "target_game_year": null,
+  "max_questions": 4
+}

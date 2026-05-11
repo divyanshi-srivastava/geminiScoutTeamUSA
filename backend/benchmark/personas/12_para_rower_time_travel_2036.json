@@ -1,0 +1,12 @@
+{
+  "id": "12_para_rower_time_travel_2036",
+  "label": "Para-rower with SCI — time travel to 2036 Games",
+  "description": "A 38-year-old man with an incomplete T6 spinal cord injury sustained in a cycling accident at age 32. He has limited lower limb function and primarily uses a wheelchair, but retains good upper body and core strength. He discovered para-rowing two years after his injury and has since become a serious competitive para-rower (PR1 classification — arms and shoulders only). He is deeply curious about the future of para-sport and specifically wants to know what his athletic pathway might look like at the 2036 Games when he will be 48. He is analytical, forward-thinking, and optimistic about adaptive sport technology. When the era question arrives he speaks enthusiastically about para-sport development he hopes to see by 2036 — better blade technology, broader classification systems, more parity in prize money. He will naturally mention his SCI and PR1 classification when asked about physical background.",
+  "height_cm": 184,
+  "weight_kg": 88,
+  "birth_year": 1988,
+  "gender": "M",
+  "target_game_year": 2036,
+  "time_travel_trigger_after": 2,
+  "max_questions": 2
+}

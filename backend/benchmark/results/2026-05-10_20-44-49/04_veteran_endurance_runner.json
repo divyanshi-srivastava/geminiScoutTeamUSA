@@ -1,0 +1,77 @@
+{
+  "persona_id": "04_veteran_endurance_runner",
+  "persona_label": "Veteran ultramarathon runner",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 70,
+    "birth_year": 1984,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To help me understand your background, how would you describe your history with competitive sports up to this point?\nOptions: [I was a serious competitor in my youth and early adulthood. | I have always stayed active, though mostly for personal fitness. | I am relatively new to structured, competitive training. | I have dabbled in many different sports over the years.]"
+    },
+    {
+      "role": "user",
+      "content": "I was a serious competitor in my youth and early adulthood."
+    },
+    {
+      "role": "narrator",
+      "content": "What was the specific discipline or type of training that defined your peak years of competition?\nOptions: [Team-based field sports | Individual endurance or strength disciplines | High-intensity racket or combat sports | Other]"
+    },
+    {
+      "role": "user",
+      "content": "Individual endurance or strength disciplines"
+    },
+    {
+      "role": "narrator",
+      "content": "With that experience in mind, what is the primary motivation driving your curiosity about high-performance athletic pathways today?\nOptions: [I want to test my current limits and see what I can still achieve. | I\u2019m looking for a structured challenge to sharpen my performance. | I am curious to see where my potential could lead in a professional setting. | I want to re-engage with the competitive mindset I used to thrive in.]"
+    },
+    {
+      "role": "user",
+      "content": "I want to test my current limits and see what I can still achieve."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "Your history in individual endurance disciplines is not merely a chapter from your youth; it is the bedrock of your current athletic potential. At 175cm and 70kg, your build offers a lean, engine-like efficiency that is perfectly suited for the Road Machine archetype. While some might view 42 as a stage to slow down, you possess the mental fortitude and aerobic wisdom that define the most formidable endurance athletes.\n\nYour drive to test your limits mirrors the rigorous demands of cycling, where tactical intelligence often triumphs over raw age. By applying your competitive background to this discipline, you are positioning yourself for a high-performance journey that rewards consistent, sustained power. As you aim for your next milestone, perhaps with an eye on The LA28 Games, you carry the unique advantage of an athlete who understands exactly what it takes to push through the barrier when the race demands the most."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "Your previous life as a serious competitor has equipped you with a foundation of discipline that translates beautifully into the explosive, high-intensity world of the Block Starter. Shifting from endurance-based training to the fast-twitch requirements of sprinting represents a bold, dynamic contrast that challenges your biomechanics in entirely new ways. At your current height and weight, you possess an ideal power-to-weight ratio for the quick-burst acceleration that defines the track.\n\nTaking on this pathway is more than a change in activity; it is a total recalibration of your athletic intent. It requires the same fierce focus you thrived on in your earlier years, but channeled into a brief, violent release of energy from the starting blocks. Exploring this direction toward The Brisbane 2032 Games offers you the opportunity to prove that your competitive capacity is not limited by your previous experiences, but is instead liberated by your willingness to embrace a new, high-performance challenge."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The scouting report provides a highly personalized narrative for the standing pathways based on interview answers, but completely ignores the adaptive pathways in the text. The athlete's endurance background aligns well with the cycling recommendation, though sprinting is a tougher physical leap for a 42-year-old.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "The Road Machine archetype fits the 175cm/70kg frame and endurance background perfectly, while Block Starter requires a hard sell as a 'recalibration' for a 42-year-old former endurance athlete."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts expertly weave in the user's exact age, 'individual endurance' history, and specific motivation to 'test limits' derived straight from the conversation history."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "Although the standing sports differ greatly, the narratives completely fail to mention or contextualize the adaptive pathways (Handcycling and Ambulatory Sprints), treating them as mere labels rather than genuine insights."
+    },
+    "interview_quality": {
+      "score": 6,
+      "reasoning": "The questions progressively establish a psychographic and historical profile, but combining 'endurance or strength' into a single option prevents the pipeline from effectively distinguishing between slow-twitch and fast-twitch capabilities."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with properly formatted references to 'The LA28 Games' and 'The Brisbane 2032 Games' without triggering any IP violations."
+    }
+  },
+  "backend_error": null
+}

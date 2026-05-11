@@ -1,0 +1,77 @@
+{
+  "persona_id": "13_wheelchair_racer_paraplegic",
+  "persona_label": "T4 paraplegic \u2014 wheelchair racer and basketball player",
+  "biometrics": {
+    "height_cm": 163,
+    "weight_kg": 55,
+    "birth_year": 2004,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our conversation, how would you describe your current relationship with high-performance sport or your daily physical training?\nOptions: [I am currently training for competitive events. | I maintain a consistent, structured fitness routine. | I have a background in competitive sport but am looking for a new focus. | I am just beginning to explore my potential in a new sporting journey.]"
+    },
+    {
+      "role": "user",
+      "content": "I am currently training for competitive events."
+    },
+    {
+      "role": "narrator",
+      "content": "What kind of focus does your current training take\u2014are you primarily honing specific technical skills, building endurance, or focusing on your overall strength and conditioning?\nOptions: [Focusing on technical skill and mastery | Developing endurance and aerobic capacity | Prioritizing strength and explosive conditioning | A balanced mix of all of the above]"
+    },
+    {
+      "role": "user",
+      "content": "A balanced mix of all of the above"
+    },
+    {
+      "role": "narrator",
+      "content": "As you look ahead in your competitive journey, what is the primary ambition driving your efforts\u2014are you aiming for regional success, testing your limits on a national stage, or perhaps seeking a breakthrough in a completely new discipline?\nOptions: [I am aiming to dominate at a regional level. | I want to test my limits on the national stage. | I am seeking a breakthrough in a new discipline. | I'm focused on personal mastery and continuous improvement.]"
+    },
+    {
+      "role": "user",
+      "content": "I want to test my limits on the national stage."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "Your ambition to test your limits on the national stage finds a natural home in the world of high-endurance racing. Standing at 163.0cm and weighing 55.0kg, your physiology offers an exceptional power-to-weight ratio that is highly coveted in the endurance community. This aerodynamic profile allows you to slice through resistance, turning your 22-year-old vitality into pure, sustained velocity on the road.\n\nBecause you have already cultivated a balanced training regimen, you possess the structural foundation to thrive in the multi-discipline demands of high-performance cycling or triathlon. As you approach the national stage, your ability to integrate aerobic capacity with technical skill will be the engine that carries you through the most grueling sessions. You are currently in the ideal window to transform your passion for competition into a legacy of stamina that would make you a formidable competitor at The Los Angeles 2028 Games."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's +100 kg)",
+      "scout_verdict": "Your current focus on a balanced mix of training\u2014blending technical skill with strength\u2014highlights a tactical mind perfectly suited for the Mat Technician archetype. At 163.0cm, your compact build provides a low center of gravity and superior mechanical leverage, assets that become devastatingly effective in strength-based disciplines. Your disciplined approach to your craft ensures that every movement is calculated, efficient, and precise.\n\nWhile your goals are set on the national stage, the transition to high-performance power sports will challenge you to sharpen your focus toward explosive, singular moments of output. This pathway honors the strength conditioning you already prioritize, rewarding your intensity with a path that demands absolute core stability and tactical control. Whether navigating the complexity of a wrestling bout or the raw intensity of a heavy lift, you have the physical intelligence and the competitive drive to turn your training into a standout performance at The Brisbane 2032 Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 3,
+    "summary": "While the standing pathways and interview integration are decent, the adaptive pathways contain catastrophic demographic errors, recommending a 55kg female for a Men's super-heavyweight powerlifting class.",
+    "authenticity": {
+      "score": 2,
+      "reasoning": "Suggesting the 'Men's +100 kg' powerlifting and 'Men's Road Race H3' pathways for a 55kg female user shows a complete failure to map biometrics to real-world sporting realities."
+    },
+    "personalization": {
+      "score": 4,
+      "reasoning": "The narrative successfully weaves in the user's desire to reach the 'national stage', but completely ignores their specified gender and weight in the pathway designations."
+    },
+    "distinctness": {
+      "score": 6,
+      "reasoning": "Cycling and Wrestling represent genuinely distinct athletic avenues, though the adaptive pairings seem randomly generated rather than thoughtfully connected to the standing sports."
+    },
+    "interview_quality": {
+      "score": 5,
+      "reasoning": "The questions are logical but offer catch-all options like 'A balanced mix of all of the above', which fails to force a meaningful fork or truly differentiate the athlete's profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "No strict compliance violations were found, and Games references like 'The Los Angeles 2028 Games' are properly formatted."
+    }
+  },
+  "backend_error": null
+}
