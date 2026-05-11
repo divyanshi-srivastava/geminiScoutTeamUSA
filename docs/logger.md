@@ -32,7 +32,7 @@ USER REQUEST
      └──► FINAL JSON → SSE → Frontend
 ```
 
-> Note: The Supervisor Agent was removed in v2. Mode selection is now handled in Python (`streamer.py`). See [`ARCHITECTURE_EVOLUTION.md`](ARCHITECTURE_EVOLUTION.md) for the full history.
+> Note: The Supervisor Agent was removed in v2. Mode selection is now handled in Python (`streamer.py`). See [`architecture-evolution.md`](architecture-evolution.md) for the full history.
 
 ---
 

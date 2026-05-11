@@ -96,8 +96,8 @@ The compliance agent silently rewrites violations before output reaches the fron
 | Benchmark report (latest run) | `backend/benchmark/results/` (most recent folder) |
 | Score history | `backend/benchmark/results/history.jsonl` |
 | Frontend components | `frontend/src/app/components/` |
-| Architecture postmortem (Supervisor removal) | `docs/supervisor_agent_postmortem.md` |
-| Architecture evolution (v1 → v3) | `docs/ARCHITECTURE_EVOLUTION.md` |
+| Architecture postmortem (Supervisor removal) | `docs/supervisor-agent-postmortem.md` |
+| Architecture evolution (v1 → v3) | `docs/architecture-evolution.md` |
 
 ---
 

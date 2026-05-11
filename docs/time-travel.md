@@ -43,7 +43,7 @@ SCOUTING (with AGE_OVERRIDE):
   Narrator receives scout output + full conversation history + ERA_HISTORY.
 ```
 
-> The Supervisor Agent was removed in v2. See [`ARCHITECTURE_EVOLUTION.md`](ARCHITECTURE_EVOLUTION.md).
+> The Supervisor Agent was removed in v2. See [`architecture-evolution.md`](architecture-evolution.md).
 
 ---
 

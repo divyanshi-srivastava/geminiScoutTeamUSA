@@ -2,7 +2,7 @@
 
 ![Living Legacy Flow](architecture/living-legacy-flow.svg)
 
-This document describes the current multi-agent pipeline. For the full history of architectural changes, see [`ARCHITECTURE_EVOLUTION.md`](ARCHITECTURE_EVOLUTION.md). For the Supervisor Agent removal decision, see [`supervisor_agent_postmortem.md`](supervisor_agent_postmortem.md).
+This document describes the current multi-agent pipeline. For the full history of architectural changes, see [`architecture-evolution.md`](architecture-evolution.md). For the Supervisor Agent removal decision, see [`supervisor-agent-postmortem.md`](supervisor-agent-postmortem.md).
 
 ---
 
