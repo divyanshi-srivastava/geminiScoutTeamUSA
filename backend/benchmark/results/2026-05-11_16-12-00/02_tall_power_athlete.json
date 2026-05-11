@@ -1,0 +1,274 @@
+{
+  "persona_id": "02_tall_power_athlete",
+  "persona_label": "Tall male power athlete",
+  "biometrics": {
+    "height_cm": 196,
+    "weight_kg": 103,
+    "birth_year": 2002,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get a sense of your current baseline, where do you find yourself on your sporting journey right now?\nOptions: [Actively training and competing in a specific, high-intensity discipline. | Transitioning between sports and searching for a new physical identity. | Re-engaging with my body after a period of limited structure or downtime.]"
+    },
+    {
+      "role": "user",
+      "content": "Transitioning between sports and searching for a new physical identity."
+    },
+    {
+      "role": "narrator",
+      "content": "To help map out your future high-performance athletics path, how do you prefer to channel your energy during your training sessions?\nOptions: [Explosive, short-burst power: High-intensity, high-torque efforts that test raw physical dominance. | Strategic team orchestration: Engaging in complex, collaborative environments where physical presence is part of a larger tactical puzzle. | Sustained, rhythmic endurance: Pushing through long-form challenges that demand internal pacing and mental fortitude.]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive, short-burst power: High-intensity, high-torque efforts that test raw physical dominance."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking at your sporting journey, what type of environment do you find most galvanizing when putting that explosive power to the test?\nOptions: [Individual pursuit: I thrive when the outcome rests entirely on my own physical mastery and split-second reactions. | Direct combat and contact: I gravitate toward environments where my physical presence and force directly confront an opponent. | Precision-timed acceleration: I prefer environments where speed is maximized through technical execution and singular focus.]"
+    },
+    {
+      "role": "user",
+      "content": "Direct combat and contact: I gravitate toward environments where my physical presence and force directly confront an opponent."
+    },
+    {
+      "role": "narrator",
+      "content": "To finalize your profile, when the pressure of a high-stakes moment is at its peak, what is your primary mental anchor?\nOptions: [The 'Flow State' focus: Narrowing my vision entirely to the immediate physical mechanics and the target in front of me. | The Aggressive Provocateur: Using my physical presence to dictate the pace and proactively overwhelm the opponent's strategy. | The Analytical Counter-Striker: Maintaining a detached, calm observation to find the precise vulnerability in the chaos.]"
+    },
+    {
+      "role": "user",
+      "content": "The Aggressive Provocateur: Using my physical presence to dictate the pace and proactively overwhelm the opponent's strategy."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+      "scout_verdict": "At 196cm and 103kg, you possess the raw structural architecture that field athletics demands. Your transition into this arena at 24 is perfectly timed; your identity as an 'Aggressive Provocateur' is tailor-made for the throwing circle, where you don't just compete against the implement\u2014you impose your will upon it. In your standing path, we see the explosive, short-burst power you crave, channeled into a singular, high-torque release that dominates the field. You have the frame to dictate the pace of the competition through sheer physical presence.\n\nIn the adaptive pathway, you face the unique challenge of the C3 classification. This category encompasses athletes with coordinated movement limitations that require seated competition, fundamentally changing how you must generate force. Instead of relying on a lower-body drive, you are forced to isolate your upper-body mechanics and core stability to project power from a static base. It transforms your aggressive instinct into a surgical, mechanical force\u2014a test of how precisely you can transfer your intensity through a controlled, seated frame. Whether standing or seated, your journey is defined by that same hunger to overwhelm the standard."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's 100 kg)",
+      "scout_verdict": "Your craving for direct combat and physical confrontation finds its home on the wrestling mat. At 24, with your significant 196cm frame, you don't just grapple; you dictate the environment. You thrive as an 'Aggressive Provocateur,' using your weight and reach to force opponents into uncomfortable positions, turning every match into a high-stakes chess game of pressure and reactive dominance. Here, your desire to be the catalyst of the action is realized through constant physical engagement and tactical disruption.\n\nYour adaptive pivot toward powerlifting offers a vital, grounding contrast. While wrestling is chaotic and reactive, powerlifting demands a cold, analytical focus. It shifts your energy from the unpredictable 'combat' of the mat into the rhythmic, disciplined pursuit of a maximum lift. Here, the 'Aggressive Provocateur' remains, but it manifests as absolute control over the bar. You are no longer managing an opponent, but conquering a dead-weight challenge that requires total technical mastery and the mental fortitude to find the exact moment of peak explosive potential. This provides a secondary, essential outlet for the power you wield."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, well-tailored scouting report that effectively translates the user's massive frame and preference for explosive, aggressive combat into plausible athletic pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "At 196cm and 103kg, the user's biomechanics are highly suited for Field Athletics and Wrestling, and the archetypes align perfectly with their desire for explosive power and direct combat."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts heavily integrate the user's 'Aggressive Provocateur' mindset and explicitly reference their age, frame, and current transitional phase in sports."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The pathways contrast beautifully, especially in the second profile where the chaotic combat of Wrestling is sharply juxtaposed with the disciplined, static power generation of adaptive Powerlifting."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions successfully narrow down the user's physical and psychological profile, with the third question branching effectively into individual pursuit, direct combat, or precision timing."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "The narrative is clean, safe, and adheres to all branding guidelines without using restricted terms."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2028,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you prepare for this cycle, how has your professional or personal landscape shifted to support your pursuit of this top-tier athletic pathway?\nOptions: [Total immersion: I\u2019ve restructured my career and daily life to make this training cycle my singular priority. | The dual-pathway: I am balancing professional responsibilities or studies alongside my rigorous training demands. | The nomad phase: I have relocated to a specialized training hub to surround myself with the best coaching and infrastructure available.]"
+        },
+        {
+          "role": "user",
+          "content": "Total immersion: I\u2019ve restructured my career and daily life to make this training cycle my singular priority."
+        },
+        {
+          "role": "narrator",
+          "content": "As you navigate this peak at age 26, what does your daily 'immersion' look like in practice\u2014are you favoring a controlled, systematic hardening of your frame, or are you embracing a more volatile, high-frequency intensity to stress-test your limits?\nOptions: [The controlled architect: My training is a systematic, data-driven buildup to reach peak physical capacity exactly when it matters most. | The aggressive engine: I am pushing high-intensity volume and explosive load now, trusting that my physical resilience will adapt to the constant friction. | The dynamic experimentalist: I\u2019m cycling through various high-impact environments and sparring partners to find which specific intensity threshold unlocks my greatest power.]"
+        },
+        {
+          "role": "user",
+          "content": "The aggressive engine: I am pushing high-intensity volume and explosive load now, trusting that my physical resilience will adapt to the constant friction."
+        },
+        {
+          "role": "narrator",
+          "content": "As you lean into this intense, high-volume phase of your journey, how does your physical reality\u2014the current state of your body\u2014balance that aggressive workload against the necessity of avoiding systemic breakdown?\nOptions: [Steady adaptation: I\u2019ve integrated precise recovery protocols to ensure the engine doesn't redline too early in the cycle. | The hardening cycle: I am intentionally pushing through fatigue and micro-strains to forge a deeper, more resilient physical foundation. | Strategic volatility: I alternate between intense, high-load weeks and total recalibration blocks to avoid burnout while maintaining power.]"
+        },
+        {
+          "role": "user",
+          "content": "The hardening cycle: I am intentionally pushing through fatigue and micro-strains to forge a deeper, more resilient physical foundation."
+        },
+        {
+          "role": "narrator",
+          "content": "As you enter this final, intensive phase of preparation, how is the environment you've built around yourself in the lead-up to The LA28 Games shaping the way you process the intensity of your daily training?\nOptions: [Training in a specialized, high-intensity hub where the collective friction keeps my edge razor-sharp. | Navigating the focused isolation of a private, custom-built training environment tailored entirely to my personal physical load. | Integrating into an urban, high-stakes scene where the environment itself provides the kinetic energy I need to fuel my output.]"
+        },
+        {
+          "role": "user",
+          "content": "Training in a specialized, high-intensity hub where the collective friction keeps my edge razor-sharp."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "The user has fully committed to a 'total immersion' phase, restructuring their entire life to serve as a singular foundation for their peak performance at The LA28 Games.",
+        "physical_context": "They are in an intensive 'hardening cycle,' utilizing high-frequency, high-torque volume to stress-test their frame and build structural resilience through controlled friction.",
+        "athletic_engagement": "Operating out of a specialized, high-intensity hub, the user is deeply embedded in a competitive environment that treats every training block as a rehearsal for direct, aggressive physical confrontation.",
+        "signals": [
+          "active_training",
+          "competitive",
+          "peak_fitness",
+          "major_life_event"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 11,
+          "matched_profile_name": "Net Presence",
+          "pathway_standing": "Basketball",
+          "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+          "scout_verdict": "At 196cm and 103kg, your stature is the foundational pillar of your game. Heading into The LA28 Games at 26, you occupy the paint with a gravity that shifts the opposition's entire defensive geometry. As an 'Aggressive Provocateur,' your role is to dictate the physical tempo of every possession, turning the floor into a confined space where your presence is an absolute imposition. You do not just play the game; you curate the intensity, forcing opponents to break under the sheer weight of your competitive volume.\n\nWhen transitioning to the adaptive discipline of Wheelchair Basketball, you enter a sphere governed by a rigorous functional classification system, which assigns players a point value from 1.0 to 4.5 to ensure parity based on physical function. In this environment, your background as a provocateur becomes a technical advantage. You utilize your upper-body power and core stability to manage the 'chair-to-player' interface, using the chair itself as an extension of your aggressive perimeter. Here, the game shifts from vertical dominance to a high-speed, tactical collision course, where your ability to anticipate movement and engage in direct, high-torque contact remains the central engine of your squad\u2019s offensive and defensive identity."
+        },
+        {
+          "matched_profile_id": 6,
+          "matched_profile_name": "Mat Technician",
+          "pathway_standing": "Wrestling",
+          "pathway_adaptive": "Powerlifting (e.g., Men's 100 kg)",
+          "scout_verdict": "Your commitment to a 'hardening cycle' finds its purest expression on the mat. Wrestling at The LA28 Games demands the exact structural resilience you have spent your recent training blocks cultivating. By leveraging your explosive, short-burst power, you treat the mat as a site of direct, unmediated combat. You thrive in the immediate, visceral friction of the engagement, using your physical mass to anchor your position while aggressively stripping away the opponent's technical options. You are the architect of the clinch, turning every bout into a test of who can remain calm under the pressure of maximum force.\n\nIn the adaptive discipline of Powerlifting, your journey pivots from the fluid chaos of combat to the singular, clinical demand of the bench press. This discipline, which serves as the premier test of absolute strength in elite adaptive sport, requires you to harness that same explosive 'provocateur' energy into a perfectly synchronized, singular motion. Here, the test is not against another human, but against the raw structural integrity of your frame. It forces a refinement of your technical focus, requiring perfect tension control and a deep understanding of leverage. By moving from the unpredictable struggle of wrestling to the precision-oriented, maximal resistance of the weight bench, you validate your 'hardening cycle' through two distinct lenses: one of reactive combat and one of absolute, disciplined output."
+        }
+      ],
+      "eval_result": {
+        "overall": 6,
+        "summary": "The report features strong writing and appropriately matches the user's large physical frame to contact-heavy sports, but it suffers from a notable hallucination regarding the user's interview answers.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "At 196cm and 103kg, the user has the ideal dimensions for both a physical basketball forward and a Heavyweight wrestler, making both archetype matches highly plausible."
+        },
+        "personalization": {
+          "score": 4,
+          "reasoning": "While the scout correctly integrates the user's choice of 'Aggressive Provocateur', it bizarrely claims a commitment to a 'hardening cycle', which appears nowhere in the actual conversation history."
+        },
+        "distinctness": {
+          "score": 9,
+          "reasoning": "The pathways contrast effectively, particularly the wrestling-to-powerlifting pivot which shifts narrative focus from the 'fluid chaos of combat' to a 'singular, clinical demand'."
+        },
+        "life_stage_coherence": {
+          "score": 8,
+          "reasoning": "Targeting an Elite Peak at age 26, the language successfully frames the user as an established physical force ready for the immediate demands of The LA28 Games."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions build a clear, progressive athletic profile, offering genuinely distinct forks like choosing between 'Explosive, short-burst' and 'Sustained, rhythmic endurance'."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "The report correctly uses the mandated 'The LA28 Games' phrasing and successfully avoids any restricted Olympic or Paralympic trademarks."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2036,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "What was the primary catalyst for your transition between these sporting identities, and how has that shift altered the way you approach your physical potential at this stage in your career?\nOptions: [A necessary evolution: I sought a more complex, strategic physical challenge after hitting a natural ceiling in my previous discipline. | A recovery-focused pivot: My body demanded a shift toward a more sustainable, yet still high-impact, pathway to preserve my power. | A deliberate transformation: I intentionally redirected my focus to test my physicality in a completely new, high-contact arena.]"
+        },
+        {
+          "role": "user",
+          "content": "A deliberate transformation: I intentionally redirected my focus to test my physicality in a completely new, high-contact arena."
+        },
+        {
+          "role": "narrator",
+          "content": "As you bridge the gap between that period of raw, high-torque development and your current status as a veteran competitor, how has your physical chapter evolved\u2014has your training become more about refining your innate force or adapting your tactics to sustain that dominance?\nOptions: [Mastery through legacy: I have channeled that early physical intensity into a more calculated, veteran-led approach, prioritizing elite team cohesion and tactical wisdom. | Refined aggression: My explosive power remains the core, but I have fundamentally adapted my training to prioritize longevity and technical efficiency over raw, attritional output. | Tactical reinvention: I have shifted how I manifest my physical presence, moving away from high-attrition combat toward a more calculated, high-IQ style of engagement.]"
+        },
+        {
+          "role": "user",
+          "content": "Refined aggression: My explosive power remains the core, but I have fundamentally adapted my training to prioritize longevity and technical efficiency over raw, attritional output."
+        },
+        {
+          "role": "narrator",
+          "content": "As a veteran of your discipline, how has the landscape of your life outside of high-performance athletics shifted to accommodate your status as a senior competitor heading into this chapter?\nOptions: [Stepping into a mentor or leadership role, where my primary focus is balancing my own performance with the development of the next generation. | Navigating the complexities of integrating a long-term career or family milestones alongside the rigorous, time-intensive demands of elite sport. | Relocating or embracing a new cultural environment, using that change to force a total shift in my perspective on recovery and sustained output.]"
+        },
+        {
+          "role": "user",
+          "content": "Stepping into a mentor or leadership role, where my primary focus is balancing my own performance with the development of the next generation."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 34, the user has moved into a veteran leadership role, navigating the dual responsibilities of maintaining elite competitive standards while mentoring the next generation of athletes.",
+        "physical_context": "Following a period of intensive, high-torque 'hardening' in their twenties, the user has transitioned toward 'refined aggression,' prioritizing technical efficiency and long-term physical longevity over pure attrition.",
+        "athletic_engagement": "Actively competing as a high-contact veteran, focusing on tactical dominance and physical presence rather than brute force alone.",
+        "signals": [
+          "active_training",
+          "competitive",
+          "peak_fitness",
+          "career_shift"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 11,
+          "matched_profile_name": "Net Presence",
+          "pathway_standing": "Basketball",
+          "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+          "scout_verdict": "At 196cm and 103kg, your imposing physical frame acts as a gravitational anchor on the court. As you approach The Ahmedabad 2036 Games at 34, your transition from pure physical hardening to the role of an 'Aggressive Provocateur' has redefined your tactical output. You no longer merely rely on size; you leverage your veteran status to dictate the pace of play. By positioning yourself as an immovable barrier, you force opponents into sub-optimal decision-making, utilizing your profound experience to control the court\u2019s flow through calculated technical dominance.\n\nIn the adaptive pathway, Wheelchair Basketball becomes the primary stage for your strategic orchestration. Here, your stature is defined by reach and tactical command, allowing you to dominate the floor from your chair. Your ability to read the game, combined with the explosive torque you\u2019ve refined over a decade of high-intensity training, enables you to act as a vital pivot point. Leading the next generation through the intensity of the tournament with calculated aggression, you emerge as the architect of the floor space."
+        },
+        {
+          "matched_profile_id": 6,
+          "matched_profile_name": "Mat Technician",
+          "pathway_standing": "Wrestling",
+          "pathway_adaptive": "Powerlifting (e.g., Men's 100 kg)",
+          "scout_verdict": "Your journey from the high-torque hardening cycles of your twenties to the veteran 'refined aggression' of your thirties reaches its peak in this discipline. At The Ahmedabad 2036 Games, the mat becomes a space of pure, singular combat, stripping away the complexity of team dynamics to focus on the raw, tactical confrontation you crave. Your physical profile\u2014forged through years of testing your limits\u2014now allows you to apply force with surgical precision, moving away from attrition and toward an absolute mastery of leverage and mechanical dominance.\n\nIn the adaptive pathway, Powerlifting for athletes with lower-limb impairments serves as the ultimate venue for your physical legacy. This discipline demands a level of physical control and technical coordination that mirrors the discipline you\u2019ve cultivated over your career. It is here that your 'Aggressive Provocateur' mindset shifts from a social catalyst to a focus-driven internal engine. By concentrating your explosive power into a single, high-stakes kinetic release, you transform your body into a weapon, proving your capacity for controlled force remains at the top-tier of competitive athletics."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A strong and highly personalized scouting report that excellently integrates the user's veteran status and interview choices into coherent athletic profiles.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "The user's imposing frame of 196cm and 103kg perfectly matches both a physical Basketball center ('Net Presence') and a heavyweight Wrestler ('Mat Technician')."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The verdicts effectively weave in the user's self-identification as an 'Aggressive Provocateur' seeking high-torque, explosive bursts."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The Mat Technician profile elegantly pivots from Standing Wrestling to Adaptive Powerlifting, offering a genuinely distinct interpretation of raw strength application."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Targeting age 34 as a Veteran, the language perfectly reflects this life stage by highlighting the shift from 'high-torque hardening cycles of your twenties' to a 'veteran status' focused on technical mastery."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions logically narrow the athlete's profile, moving smoothly from general training phases down to specific competitive environments and psychological anchors."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Correct use of 'The Ahmedabad 2036 Games' formatting with no prohibited terminology or specific athlete references found."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

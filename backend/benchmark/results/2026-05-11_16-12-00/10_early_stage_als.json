@@ -1,0 +1,249 @@
+{
+  "persona_id": "10_early_stage_als",
+  "persona_label": "Early-stage ALS \u2014 former competitive tennis player",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 78,
+    "birth_year": 1981,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To begin building your profile, how would you describe the core of your current physical identity when you are at your best?\nOptions: [Explosive power and raw force production | Sustained aerobic capacity and rhythmic endurance | Precision, balance, and refined motor control]"
+    },
+    {
+      "role": "user",
+      "content": "Precision, balance, and refined motor control"
+    },
+    {
+      "role": "narrator",
+      "content": "How do you primarily express this need for precision in your current high-performance athletics or sporting journey?\nOptions: [Dedicated technical movement like martial arts, rock climbing, or racquet sports | Mind-body disciplines focused on control and flow like advanced yoga or pilates | High-focus precision sports like archery, target disciplines, or complex navigation]"
+    },
+    {
+      "role": "user",
+      "content": "Dedicated technical movement like martial arts, rock climbing, or racquet sports"
+    },
+    {
+      "role": "narrator",
+      "content": "When approaching these disciplines, how do you structure your training to balance this need for technical mastery with the physical longevity required for a high-performance lifestyle?\nOptions: [High-frequency, low-duration sessions focusing on incremental skill refinement and mental clarity | Intense, singular blocks of training followed by significant recovery cycles to prioritize tissue health and longevity | Adaptive, lifestyle-integrated training where movement is woven into daily habits rather than isolated, structured sessions]"
+    },
+    {
+      "role": "user",
+      "content": "High-frequency, low-duration sessions focusing on incremental skill refinement and mental clarity"
+    },
+    {
+      "role": "narrator",
+      "content": "Since you have established such a strong technical foundation, I have all the context I need to map your physical profile. Are you ready to see your potential pathways?"
+    },
+    {
+      "role": "user",
+      "content": "I am ready, though I view these pathways now through the lens of my ALS, curious to see what remains possible for a changing body."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Your history in martial arts has ingrained a language of kinetic efficiency that transcends the medium. At 45, the transition to the slopes\u2014and specifically to the LW12 classification\u2014becomes a masterclass in weight distribution and core-driven precision. The LW12 classification, which designates athletes with lower-limb impairment who compete in a seated position, requires a profound recalibration of center-of-mass management; for a former martial artist, this is simply a change of the fulcrum. Your body acts as a chassis for the monoski, and your capacity for high-frequency, low-duration training is ideally suited for the explosive, technical bursts required at The 2032 Games.\n\nIn this domain, your 178cm frame is an asset of leverage. As you negotiate the gates, the sensation of edge control you once sought on the mats is mirrored in the way you dictate the arc of your turn through the snow. This pathway honors the raw force production you once championed, but evolves it into a highly refined, technical pursuit where your analytical mind remains the most effective tool in your kit."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "N/A",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "If the slopes demand the kinetic fire of your past, the target range demands the absolute stillness of your present. This pathway is a deliberate shift toward the mental architecture of your high-performance life. As you navigate the physical changes associated with your health, the focus here moves from external force to internal control\u2014harnessing the breath and the pulse to become an extension of the bow. At The 2032 Games, this discipline will test your ability to hold a singular intent amidst a storm of competition.\n\nYou have long utilized high-frequency, low-duration sessions to refine your movement; here, those sessions serve to sharpen your nervous system. By prioritizing mental rehearsal, you bypass the limitations the body might otherwise impose, allowing your technical mastery to manifest in the flawless, repeatable release of an arrow. This is not a retreat from the competitive arena, but a tactical pivot into a domain where your capacity for patience and hyper-focus is the ultimate performance metric. By mastering the stillness between heartbeats, you turn the act of archery into a meditative, high-performance science that rewards the same disciplined repetition found in your technical martial arts training."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "This is a strong, highly personalized scouting report that beautifully incorporates the user's specific martial arts background, training style, and changing physical realities into two very distinct athletic pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The Edge Carver and Steady Hand archetypes are highly plausible matches for a 178cm/78kg athlete whose foundation is built on balance and precision-focused technical movement."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdict deeply integrates the user's martial arts history and 'high-frequency, low-duration' training answers, while meaningfully adapting the pathways (LW12 sit-ski and Open archery) to honor their disclosure of ALS."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The two pathways provide an excellent contrast, offering one option focused on kinetic edge control and core leverage, and another focused on absolute stillness and nervous system regulation."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The first three questions follow a logical progression that effectively narrows the user's precision-based athletic identity, though the final question is merely a transitional prompt rather than a meaningful fork."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean of restricted terms, though the phrasing 'The 2032 Games' technically omits the required host city prefix."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 1996,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "Looking back at that 15-year-old version of yourself, how would you describe your primary motivation and structure for physical activity during that specific time in your life?\nOptions: [I was deeply committed to a single, structured school or club sport, obsessing over mastery in that one domain | I was a 'generalist' explorer, constantly cycling through different sports and physical challenges without a specific focus | I was self-driven, seeking out independent movement practices like martial arts or individual technical disciplines to find my own flow]"
+        },
+        {
+          "role": "user",
+          "content": "I was deeply committed to a single, structured school or club sport, obsessing over mastery in that one domain"
+        },
+        {
+          "role": "narrator",
+          "content": "How was your body responding to that rigorous, singular focus as a 15-year-old\u2014did you feel invincible, or were you already learning the nuances of managing your physical output?\nOptions: [My body felt bulletproof; I was pushing limits daily and rarely worried about recovery. | I was managing persistent growing pains or strain that forced me to be tactical about my training load. | I was hyper-focused on sculpting my body specifically to gain an edge in my primary sport's technical requirements.]"
+        },
+        {
+          "role": "user",
+          "content": "My body felt bulletproof; I was pushing limits daily and rarely worried about recovery."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 15, the user was navigating the intense pressure and high expectations of being a 'Rising Star,' where the focus was entirely on scaling their potential in a single, high-stakes discipline.",
+        "physical_context": "The user experienced their body as a 'bulletproof' vessel, pushing through daily sessions with minimal need for recovery, defined by the raw resilience of youth.",
+        "athletic_engagement": "Highly structured and singular; the user was fully committed to a club or school-based sporting journey, prioritizing technical mastery and dominance in one domain.",
+        "signals": [
+          "active_training",
+          "competitive",
+          "peak_fitness"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 6,
+          "matched_profile_name": "Mat Technician",
+          "pathway_standing": "Wrestling",
+          "pathway_adaptive": "Powerlifting (e.g., Men's 100 kg)",
+          "scout_verdict": "At 15 years old, heading into The Atlanta 1996 Games, your physical identity was defined by a bulletproof resilience\u2014a 'rising star' era where your 178cm, 78kg frame was a vessel for pure, explosive potential. The wrestling mat demanded more than just strength; it required the precise, mechanical application of leverage that you naturally gravitated toward. In those days, your training was singular and relentless, built on the confidence that your body could recover instantly from the most grueling sessions, allowing you to sharpen your technical execution against the best in your competitive circuit.\n\nThis pathway captures that peak developmental window where your commitment to technical combat was absolute. The sport rewarded your innate grasp of balance and control, viewing each movement as a puzzle to be solved under high-pressure conditions. It was a time when your physical presence was an extension of your tactical mind, establishing a foundation of discipline that you continue to draw upon long after the echoes of the mat have faded."
+        },
+        {
+          "matched_profile_id": 3,
+          "matched_profile_name": "Steady Hand",
+          "pathway_standing": "Marksmanship (Rifle/Pistol)",
+          "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+          "scout_verdict": "As you navigate the realities of ALS, your athletic identity has undergone a profound transformation, shifting from raw combat intensity toward the refined mastery of stillness. In this adaptive pathway\u2014specifically within the classification of target archery\u2014you find a discipline that honors your requirement for high-focus, low-duration engagement. By prioritizing mental clarity and incremental skill refinement, you are able to bypass the need for high-impact force production, instead leveraging the very same internal coordination and motor control that once served you on the mat.\n\nThis discipline is not merely a sport, but a strategic adaptation to your current physical journey. The FITA round requires precise, repetitive execution that perfectly mirrors your preference for high-frequency training blocks that conserve your energy reserves. Here, your success is measured by your ability to command your own physiology and maintain composure, proving that your capacity for technical dominance remains intact\u2014it has simply evolved into a more precise, singular expression of your enduring high-performance spirit."
+        }
+      ],
+      "eval_result": {
+        "overall": 6,
+        "summary": "The report shows impressive narrative flexibility by adapting to a late revelation of ALS, but struggles with consistency by contradicting earlier interview answers in the standing profile.",
+        "authenticity": {
+          "score": 5,
+          "reasoning": "The standing verdict explicitly praises the user's 'pure, explosive potential', which directly contradicts the user's first interview answer where they bypassed explosive power in favor of precision and motor control."
+        },
+        "personalization": {
+          "score": 6,
+          "reasoning": "While it brilliantly personalizes the adaptive profile to the user's ALS revelation, the standing verdict ignores their chosen 'low-duration' training style, instead hallucinating 'grueling' and 'relentless' sessions."
+        },
+        "distinctness": {
+          "score": 9,
+          "reasoning": "The pathways are exceptionally distinct, offering a stark and compelling contrast between the dynamic leverage of Wrestling and the stillness and mental clarity of Target Archery."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Targeting age 15 (Rising Star), the verdict successfully grounds the narrative in this era by highlighting the user's 'peak developmental window' and framing them at '15 years old, heading into The Atlanta 1996 Games'."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The narrator provided strong, distinct forks, particularly in the second question which meaningfully separated different types of precision (combat vs. mind-body vs. target)."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean pass; correctly uses the approved 'The Atlanta 1996 Games' formatting without standalone Olympic/Paralympic violations."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2008,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you approached The Beijing 2008 Games at 27, how did your relationship with your body evolve from the raw intensity of your youth?\nOptions: [A period of total optimization where you pushed the physical limits to reach the absolute ceiling of your potential. | A transition toward tactical efficiency, where you began prioritizing the longevity and sustainability of your craft over raw force. | A phase of extreme specialization, where you narrowed your focus to master the specific technical demands of a high-precision discipline.]"
+        },
+        {
+          "role": "user",
+          "content": "A transition toward tactical efficiency, where you began prioritizing the longevity and sustainability of your craft over raw force."
+        },
+        {
+          "role": "narrator",
+          "content": "Heading into The Beijing 2008 Games, what did your day-to-day environment look like as you sought this balance? Was your focus primarily on professional, full-time training, or were you juggling the demands of a high-performance athletic pathway alongside other professional or life commitments?\nOptions: [Fully immersive, professional training environment focused entirely on the upcoming Games. | Dual-pathway approach, balancing top-tier training with a burgeoning career or academic pursuit. | Independent, self-managed training, traveling between locations to work with specific mentors and technical specialists.]"
+        },
+        {
+          "role": "user",
+          "content": "Dual-pathway approach, balancing top-tier training with a burgeoning career or academic pursuit."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 27, you were navigating the high-stakes balancing act of managing a dual-pathway, pursuing significant professional or academic goals alongside your intense commitment to your high-performance athletic journey for The Beijing 2008 Games.",
+        "physical_context": "You shifted your perspective from the raw, 'bulletproof' resilience of your younger years toward a more nuanced, sustainable model of tactical efficiency and longevity.",
+        "athletic_engagement": "You maintained a rigorous, high-performance training cycle defined by precision, balance, and intentional motor control, carefully managing your energy to preserve your craft.",
+        "signals": [
+          "active_training",
+          "peak_fitness",
+          "career_shift",
+          "major_life_event"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 3,
+          "matched_profile_name": "Steady Hand",
+          "pathway_standing": "Marksmanship (Rifle/Pistol)",
+          "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+          "scout_verdict": "At the 27-year-old mark of your life, entering The Beijing 2008 Games, your 178cm, 78kg frame serves as the perfect chassis for the extreme stillness required in marksmanship. Your lifelong dedication to martial arts has not just taught you how to move, but how to stop moving entirely. In an era where you are balancing intense professional ambitions, the high-frequency, low-duration training sessions you favor act as an anchor, allowing you to sharpen your focus without burning out your reserves.\n\nAs your physical reality shifts and the specter of ALS looms, this pathway becomes more than a sport; it is an exercise in agency. The adaptive pathway\u2014specifically the Men's FITA Round Open for archery\u2014is designed for athletes with impairments affecting the upper or lower limbs, focusing on the synergy between mental clarity and mechanical consistency. By mastering the breath and the release here, you reclaim the precision you have spent your life cultivating, turning a changing body into a refined instrument of control that remains just as deadly, and just as focused, as it was in your youth."
+        },
+        {
+          "matched_profile_id": 6,
+          "matched_profile_name": "Mat Technician",
+          "pathway_standing": "Wrestling",
+          "pathway_adaptive": "Powerlifting (e.g., Men's 100 kg)",
+          "scout_verdict": "Your history with technical martial arts and complex motor control finds a different, more visceral expression in the wrestling arena at The Beijing 2008 Games. Here, your stature is not for standing still, but for leveraging positional intelligence against an opponent. You treat every bout as a puzzle, using your strength to dictate the flow of the match rather than relying on raw force, a testament to the tactical mindset you developed while transitioning into the mature, high-performance chapter of your 20s.\n\nIn the context of an adaptive pathway, you transition into the technical rigors of powerlifting. This discipline is essential for the longevity of a body navigating neurological change, emphasizing controlled, repeatable movement patterns that leverage your existing strength foundations. By focusing on the mechanics of the lift, you honor the athleticism you have built while adapting to the unique demands of a progressive condition. This is not just lifting; it is a calculated defense of your physical identity, ensuring that even as your body evolves, your capacity to project force remains a central, unyielding part of who you are."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A highly personalized and emotionally resonant report that seamlessly integrates the user's ALS diagnosis and training habits into the narrative, though there is a minor weight-class mismatch in the second adaptive pathway.",
+        "authenticity": {
+          "score": 7,
+          "reasoning": "Both archetypes align beautifully with the user's focus on precision and martial arts, though suggesting the Men's 100 kg powerlifting class for a 78kg athlete is a clear biometric oversight."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The verdict brilliantly weaves in the user's explicit mention of their ALS diagnosis and uniquely references their preference for 'high-frequency, low-duration training sessions'."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The pathways offer two genuinely different takes on the user's martial arts background: one focusing on absolute stillness (Marksmanship) and the other on dynamic leverage (Wrestling/Powerlifting)."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Targeting age 27 at the Elite Peak stage, the narrative appropriately references the 'mature, high-performance chapter of your 20s' and balancing professional ambitions without treating the user like a novice or veteran."
+        },
+        "interview_quality": {
+          "score": 7,
+          "reasoning": "The questions logically progress from broad physical identity to specific disciplines and training structures, offering meaningfully distinct options that genuinely shape the athletic profile."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Fully compliant, correctly using 'The Beijing 2008 Games' and avoiding any restricted terminology."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

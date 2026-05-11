@@ -1,0 +1,257 @@
+{
+  "persona_id": "01_young_female_swimmer",
+  "persona_label": "Young female swimmer",
+  "biometrics": {
+    "height_cm": 172,
+    "weight_kg": 62,
+    "birth_year": 2009,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "When you think about the movement that makes you feel most alive, what kind of challenge are you naturally drawn to?\nOptions: [Explosive power and speed: High-intensity sprints, jumps, or dynamic team competition. | Sustained endurance and pacing: Distance-based movement, cycling, or rhythmic endurance work. | Precision and technical mastery: Focused, disciplined activities involving hand-eye coordination or tactical placement.]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance and pacing: Distance-based movement, cycling, or rhythmic endurance work."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep into that sustained effort, where do you feel most in your element?\nOptions: [The solitary road: Finding flow in silence, internal focus, and strictly tracking my own progress. | The communal rhythm: Engaging with a training group to push our collective pacing and share the intensity. | The natural landscape: Testing myself against changing terrain, hills, and the unpredictability of the outdoor environment.]"
+    },
+    {
+      "role": "user",
+      "content": "The solitary road: Finding flow in silence, internal focus, and strictly tracking my own progress."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look ahead at your high-performance athletic journey, what is the core intention that powers your training session each day?\nOptions: [The Pursuit of Self-Mastery: Refining my internal physical limits and achieving perfect technical execution. | The Pursuit of Competitive Dominance: Testing my mettle directly against the best to claim victory at top-tier athletic pathways. | The Pursuit of Boundary-Breaking: Pushing the established limits of the sport to redefine what is physically possible.]"
+    },
+    {
+      "role": "user",
+      "content": "The Pursuit of Self-Mastery: Refining my internal physical limits and achieving perfect technical execution."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 8,
+      "matched_profile_name": "Streamline",
+      "pathway_standing": "Swimming",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Women's 400 m Freestyle S10)",
+      "scout_verdict": "In the silent, pressurized world of the pool, your 172cm and 62kg frame acts as a vessel for pure hydrodynamic efficiency. You are drawn to the water because it offers the ultimate mirror for your desire for self-mastery\u2014every millisecond shaved off a lap is a direct result of your own technical discipline. In the standing pathway, you occupy the lane as a scientist of your own movement, calculating the precise angle of your reach to reduce drag to near zero.\n\nFor your adaptive pathway, the S10 classification represents athletes with minimal physical impairment affecting the lower limbs, allowing for a fluid, ambulatory approach to competitive swimming. Here, the narrative shifts to the nuance of your propulsion; while the standing lane emphasizes total physical symmetry, the S10 pathway challenges you to harness your lean, rhythmic efficiency to overcome minor imbalances. In either manifestation, you are the architect of your own performance, finding flow not in the roar of a crowd, but in the rhythmic, solitary perfection of your stroke as you approach the start blocks at The Games."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "The road offers a different kind of truth\u2014the raw, unfiltered challenge of the climb and the descent. Where your swimming profile is defined by fluid precision, the Road Machine archetype is forged through the grit of sustained power output. Your lean 62kg frame is a tactical advantage when gravity fights back, allowing you to sustain a high-cadence rhythm that would break a less efficient athlete. You aren't just moving; you are documenting the limits of your cardiovascular capacity against the ever-changing resistance of the terrain.\n\nIn the H3 handcycling classification, intended for athletes with lower-limb impairment who utilize a reclined hand-powered cycle, your endurance journey takes on a powerful, mechanical focus. The H3 path demands a complete recalibration of your kinetic chain, forcing you to channel your internal drive through a high-frequency upper-body force cycle rather than the legs. This is not merely a different sport; it is an interrogation of your endurance, requiring you to master the complex geometry of the handcycle as you attack the road. Whether you are standing on pedals or driving a handcycle, your focus remains the same: a relentless, solitary pursuit of your own maximum potential at The Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly cohesive and personalized scouting report that accurately translates the user's biometrics and interview preferences into realistic endurance sport pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The user's lean 172cm and 62kg frame is a highly realistic fit for both the 'Streamline' (Swimming) and 'Road Machine' (Cycling) endurance archetypes."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts expertly weave the user's explicit interview choices for 'the solitary road' and 'self-mastery' into the core narrative of both sports."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The adaptive pathways are distinctly and thoughtfully separated, contrasting minor limb imbalances in S10 swimming with a complete kinetic chain recalibration in H3 handcycling."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions logically progress from broad physiological strengths (endurance) to environmental preferences (solitary vs communal) and finally to psychological drivers."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean of restricted terms and NIL violations, utilizing the generic but safe 'The Games' terminology."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2032,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you moved into the final preparation phase for The Brisbane 2032 Games, what was the primary architecture of your life? Was your energy focused entirely on your athletic pursuit, or were you weaving that training into the demands of early professional life or further education?\nOptions: [Full immersion: My entire focus was dedicated to the rigor of full-time training and athletic refinement. | Dual-track navigation: I was balancing elite training with the complexities of a demanding academic or early-career path. | Strategic transition: I was rebuilding my life and training focus following a major relocation or significant personal change.]"
+        },
+        {
+          "role": "user",
+          "content": "Dual-track navigation: I was balancing elite training with the complexities of a demanding academic or early-career path."
+        },
+        {
+          "role": "narrator",
+          "content": "When you look back at that specific chapter of your life, how was your body treating you under the weight of those dual demands?\nOptions: [The Invincible Phase: My body felt resilient and consistent, allowing me to increase my training volume despite the professional workload. | The Delicate Balance: I was frequently managing small energy dips and localized fatigue, forcing me to become an expert at recovery and pacing. | The Adaptive Adjustment: I was navigating a necessary shift in my physical approach, learning to optimize my training for longevity rather than sheer force.]"
+        },
+        {
+          "role": "user",
+          "content": "The Delicate Balance: I was frequently managing small energy dips and localized fatigue, forcing me to become an expert at recovery and pacing."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 23, the user was managing the high-pressure intersection of elite-level training and the demands of an early professional career or academic path, forcing a refined approach to time and focus.",
+        "physical_context": "The user developed an expert-level understanding of their own energy reserves, shifting from a mindset of 'invincibility' to a nuanced philosophy of recovery and fatigue management to maintain performance.",
+        "athletic_engagement": "High-performance commitment focused on self-mastery and technical precision, even while operating under the constraints of a dual-track lifestyle.",
+        "signals": [
+          "active_training",
+          "competitive",
+          "recovery_mode",
+          "career_shift"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 8,
+          "matched_profile_name": "Streamline",
+          "pathway_standing": "Swimming",
+          "pathway_adaptive": "Adaptive Swimming (e.g., Women's 400 m Freestyle S10)",
+          "scout_verdict": "At 23, your life leading into The Brisbane 2032 Games is defined by the absolute silence of the pool lanes. You have traded the noise of the world for the rhythmic, calculated strokes that define the Streamline archetype. Your 172cm, 62kg frame acts as a precise instrument in the water, a testament to your unwavering commitment to self-mastery and the technical execution you\u2019ve refined over years of solitary training.\n\nFor you, the S10 classification\u2014covering athletes with minimal impairment affecting their legs or coordination\u2014is the framework where you demonstrate your physical potential. It is not just a technical label; it is the arena where your mastery of energy reserves meets the water. As you stand on the starting block at The Brisbane 2032 Games, you are not merely racing opponents, but competing against the fluid dynamics of your own capacity, finding your ultimate flow in the disciplined solitude that has fueled your journey."
+        },
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+          "scout_verdict": "As you pivot toward the endurance-based discipline of handcycling, the narrative of your athletic life shifts from rhythmic solitude to the complex tactical strategy of the open road. The H3 classification for handcyclists\u2014reserved for those who utilize their core and arm strength to generate mechanical power while operating from a seated position\u2014provides a new landscape for your physical expression. Unlike the internal focus of the pool, this pathway demands a sophisticated, methodical approach to pacing, aerodynamics, and terrain management.\n\nAt 23, juggling the high-pressure demands of a professional career, you have mastered the art of managing your fatigue. The road is now your laboratory for technical efficiency; it is a space where your disciplined mindset is tested against the unpredictable variables of the environment. As you compete at The Brisbane 2032 Games, this profile highlights your ability to convert endurance into strategy, transforming your physical experience into a calculated pursuit of tactical dominance."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A highly solid scouting report that successfully links the user's focus on solitary endurance to two distinct but fitting athletic pathways.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "The 'Streamline' and 'Road Machine' archetypes perfectly match a 172cm/62kg frame geared toward sustained endurance and pacing."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The narrative directly incorporates the user's preference for 'solitary road' and 'self-mastery' into the core descriptions of their training mindset."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The two pathways contrast nicely, shifting the focus from the isolated fluid dynamics of the pool to the tactical terrain management of handcycling."
+        },
+        "life_stage_coherence": {
+          "score": 7,
+          "reasoning": "At age 23 in the Elite Peak stage, the language correctly frames the athlete as having 'years of solitary training,' though referencing a 'professional career' outside of sport slightly muddles the elite athletic focus."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions systematically drill down from general movement style to specific environmental preferences and internal motivations with meaningfully distinct options."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean compliance with correct usage of 'The Brisbane 2032 Games' and no prohibited terms or NIL violations."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2040,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you have transitioned from the high-pressure, multi-faceted schedule of your early twenties into this singular focus of your professional peak, how has your relationship with your own physical body evolved regarding long-term recovery and intensity management?\nOptions: [The Conservative Master: I prioritize granular, daily recovery and long-term systemic longevity to minimize wear and tear. | The Aggressive Optimizer: I push my output to the absolute brink during training cycles, relying on advanced data to compress the recovery window. | The Adaptive Specialist: I have moved away from rigid periodization, preferring to pivot my training intensity daily based on real-time biometric feedback.]"
+        },
+        {
+          "role": "user",
+          "content": "The Conservative Master: I prioritize granular, daily recovery and long-term systemic longevity to minimize wear and tear."
+        },
+        {
+          "role": "narrator",
+          "content": "Which of these best describes your current training landscape as you reach your peak?\nOptions: [The Institutional Bastion: I train within a highly structured, state-of-the-art facility, relying on a dedicated professional team to support my endurance mastery. | The Secluded Sanctuary: I have built my own isolated training ecosystem that prioritizes silence and interaction with natural terrain to keep my metrics pure. | The Mentorship Bridge: I balance my own high-performance sessions with the role of guiding emerging talent, using their fresh energy to fuel my own commitment to the craft.]"
+        },
+        {
+          "role": "user",
+          "content": "The Institutional Bastion: I train within a highly structured, state-of-the-art facility, relying on a dedicated professional team to support my endurance mastery."
+        },
+        {
+          "role": "narrator",
+          "content": "As you stand at the pinnacle of your career in Doha, how has your tactical approach to the 'peak' itself changed\u2014are you still chasing that youthful feeling of raw, explosive potential, or have you found a new, sharper edge in your maturity?\nOptions: [The Wisdom of Efficiency: I now win by knowing exactly when to stay calm and when to unleash my reserve, trusting my experience over raw output. | The Perfectionist's Refinement: At 31, I\u2019ve refined my mechanics to such a precise degree that I am faster and more economical than I ever was in my twenties. | The Calculated Risk-Taker: I use my deep experience to take controlled, strategic gambles during competition that younger, less disciplined athletes wouldn't dare.]"
+        },
+        {
+          "role": "user",
+          "content": "The Perfectionist's Refinement: At 31, I\u2019ve refined my mechanics to such a precise degree that I am faster and more economical than I ever was in my twenties."
+        },
+        {
+          "role": "narrator",
+          "content": "As you prepare for the intensity of The Doha 2040 Games, how are you balancing your single-minded pursuit of technical excellence with the external realities of your life at 31?\nOptions: [The Focused Minimalist: I have stripped away all non-essential life commitments to ensure every ounce of energy is directed toward my competitive peak. | The Balanced Architect: I integrate my professional responsibilities and personal life as a way to maintain perspective and keep my focus sharp. | The Legacy Builder: I am actively documenting and sharing my knowledge with the next generation while I compete, finding motivation in the mentorship process.]"
+        },
+        {
+          "role": "user",
+          "content": "The Focused Minimalist: I have stripped away all non-essential life commitments to ensure every ounce of energy is directed toward my competitive peak."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 31, entering The Doha 2040 Games, the user has adopted the role of a focused minimalist, intentionally stripping away non-essential life commitments to ensure all resources are channeled into their competitive peak.",
+        "physical_context": "The user's physical profile has shifted from raw youthful intensity to a state of refined mechanical efficiency, emphasizing longevity, recovery, and precise, economical movement.",
+        "athletic_engagement": "Operating within an institutional training environment, the user is deeply committed to high-performance endurance, utilizing professional support to maintain their current peak.",
+        "signals": [
+          "active_training",
+          "peak_fitness",
+          "career_shift"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+          "scout_verdict": "At 31, entering The Doha 2040 Games, you have distilled your life into a pursuit of pure, mechanical efficiency. Having moved past the frantic, high-pressure balancing acts of your 23-year-old self in 2032, you now embrace a minimalist philosophy that views every calorie and every watt as a deliberate choice. Your 172cm, 62kg frame is the product of years of disciplined recovery and the hard-won wisdom that fatigue is not an enemy to be fought, but a variable to be mastered.\n\nThe H3 classification\u2014designated for athletes with impairment in trunk and lower limb function who compete from a handcycle\u2014is the arena where your dedication to solitary pacing finds its truest expression. Here, the road becomes a mirror for your self-mastery. The constant, rhythmic cycle of your arms, combined with your refined aerobic engine, allows you to maintain a relentless output that few can match. This is not just about raw power; it is about the quiet, meditative focus required to hold a threshold effort for hours on end, turning your body into an extension of the road itself."
+        },
+        {
+          "matched_profile_id": 3,
+          "matched_profile_name": "Steady Hand",
+          "pathway_standing": "Marksmanship (Rifle/Pistol)",
+          "pathway_adaptive": "Target Precision (e.g., Archery Women's FITA Round Open)",
+          "scout_verdict": "While your endurance background highlights the power of sustained motion, your adaptive pathway at The Doha 2040 Games pivots toward the profound stillness of Archery Women's FITA Round Open. This discipline, where precision and internal composure are paramount, offers a perfect counterpoint to the high-cadence demands of the road. Your preference for internal focus and technical execution\u2014traits sharpened over your decade-long journey\u2014finds a new home in the disciplined management of breath and heart rate.\n\nIn this Open category, which welcomes athletes with diverse functional needs to compete on an equal technical footing, your ability to cultivate a 'quiet mind' becomes your greatest asset. At 31, your capacity to strip away external noise allows you to achieve the hyper-focus required for center-target consistency. Transitioning from the aerobic intensity of a long-course race to the singular, heartbeat-controlled moment of release at the archery line represents a secondary peak for your career\u2014a testament to your evolution as an athlete who masters not just the movement, but the moments of stillness in between."
+        }
+      ],
+      "eval_result": {
+        "overall": 9,
+        "summary": "This is an exceptional scouting report that beautifully contrasts the intense aerobic demands of handcycling with the profound stillness of archery, perfectly matching the user's preference for solitary self-mastery.",
+        "authenticity": {
+          "score": 9,
+          "reasoning": "The user's 172cm/62kg build is an ideal fit for the power-to-weight demands of endurance cycling, and the psychological profile strongly supports the 'Road Machine' archetype."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The narrative directly incorporates the user's interview choices, specifically translating their desire for 'self-mastery' and 'solitary road' into a compelling athletic philosophy."
+        },
+        "distinctness": {
+          "score": 9,
+          "reasoning": "The pathways are wonderfully distinct, positioning high-cadence handcycling against the heartbeat-controlled stillness of adaptive archery."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Targeting age 31 at the Elite Peak life stage, the text successfully reflects mature athletic wisdom, noting the athlete has moved past their 'frantic' early twenties to embrace a 'minimalist philosophy'."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions progress logically from physical discipline to training environment to psychological motivation, providing genuinely distinct, non-convergent paths at each turn."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean pass with correct usage of 'The Doha 2040 Games' and no restricted IOC/USOPC terminology."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

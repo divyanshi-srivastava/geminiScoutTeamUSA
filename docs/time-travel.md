@@ -50,7 +50,7 @@ SCOUTING (with AGE_OVERRIDE):
 ## Narrator Mode C: Time Travel Interview
 
 ### Trigger
-Supervisor message contains `[SYSTEM: MODE | TIME_TRAVEL_INTERVIEW]` and `[SYSTEM: TIME_TRAVEL]`.
+The streamer's system header contains `[SYSTEM: MODE | TIME_TRAVEL_INTERVIEW]` and `[SYSTEM: TIME_TRAVEL]`. Mode resolution is done in Python (`event_generator()` in `streamer.py`) — there is no LLM routing.
 
 ### Rules
 1. Read the `TIME_TRAVEL` header to understand the destination era and life stage

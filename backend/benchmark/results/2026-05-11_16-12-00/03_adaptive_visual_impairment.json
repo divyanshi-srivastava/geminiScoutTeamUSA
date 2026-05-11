@@ -1,0 +1,241 @@
+{
+  "persona_id": "03_adaptive_visual_impairment",
+  "persona_label": "Adaptive athlete \u2014 partial visual impairment",
+  "biometrics": {
+    "height_cm": 181,
+    "weight_kg": 83,
+    "birth_year": 1998,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "When you reflect on your sporting journey thus far, what has been the primary engine driving your development?\nOptions: [Pure explosive power and raw speed | Endurance, stamina, and sustained grit | Precision, tactical awareness, and technical coordination]"
+    },
+    {
+      "role": "user",
+      "content": "Endurance, stamina, and sustained grit"
+    },
+    {
+      "role": "narrator",
+      "content": "When you envision yourself testing that stamina, where do you thrive most in your sporting journey?\nOptions: [The open road and shifting, natural terrain | The controlled, rhythmic environment of the track or pool | The strategic, team-based environment where collective pacing is key]"
+    },
+    {
+      "role": "user",
+      "content": "The controlled, rhythmic environment of the track or pool"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep into the most demanding part of your training, what serves as your primary mental focal point to drive you forward?\nOptions: [Chasing individual record-setting benchmarks and peak mechanical efficiency | Achieving a state of flow where breath and pace become a singular, rhythmic experience | Outthinking and outlasting others through aggressive, tactical pacing and psychological endurance]"
+    },
+    {
+      "role": "user",
+      "content": "Achieving a state of flow where breath and pace become a singular, rhythmic experience"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 8,
+      "matched_profile_name": "Streamline",
+      "pathway_standing": "Swimming",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Men's 400 m Freestyle S10)",
+      "scout_verdict": "Your 181cm, 83kg frame acts as a high-efficiency vessel, perfectly suited for the demands of the pool. Having prioritized rhythmic, flow-based training, you possess a rare capacity to turn 400 meters of intense exertion into a singular, meditative act of hydrodynamics. At 28, you are at the physical zenith where your stroke precision meets the raw capacity for sustained stamina, making you a formidable contender for the podium at The Games.\n\nIn your adaptive pathway, we look at the S10 classification\u2014a category for athletes with minimal impairment to their lower limbs or significant restriction in hip joint movement. In this arena, your focus on breath-centric control becomes your greatest asset. You don't just swim; you navigate the water with an economy of motion that compensates for the physiological drag, transforming the pool into a space of absolute technical refinement where every millisecond of glide is calculated."
+    },
+    {
+      "matched_profile_id": 9,
+      "matched_profile_name": "Boat Run",
+      "pathway_standing": "Rowing",
+      "pathway_adaptive": "Adaptive Rowing (e.g., Men's Single Scull ASM1x)",
+      "scout_verdict": "While your swimming focus is built on fluid glide, rowing offers you a starkly different challenge: the application of immense, controlled power through repetitive, rhythmic endurance. Your athletic history of seeking 'sustained grit' finds a natural home here, where the connection between the oar, the water, and your body creates a singular engine of output. The discipline required to maintain your pace over a long distance at The Games tests your psychological resolve in a way that swimming simply cannot replicate.\n\nThe ASM1x classification is for rowers who compete using only their arms and shoulders, providing an intense contrast to your standing profile. Here, the 'sustained grit' you value is distilled into pure, concentrated mechanical power. Without the use of your legs, the entire rhythm of the boat becomes a testament to your upper-body conditioning and core stability, demanding a relentless focus that bridges the gap between your physical strength and your internal drive to outlast the competition."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly personalized and cohesive scouting report that excellently utilizes the user's interview answers about flow and rhythm to justify the selected pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The 'Streamline' and 'Boat Run' archetypes fit the user's endurance focus well; while 181cm is slightly undersized for elite open-weight rowing, it remains highly plausible for swimming and adaptive sculling."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narrative directly incorporates the user's specific answers regarding 'sustained grit' and a 'flow-based' mental state, linking them perfectly to his 181cm, 83kg frame."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "Swimming and Rowing offer a great contrast between fluid full-body glide and concentrated mechanical power, with the adaptive ASM1x pathway providing a distinctly different biomechanical challenge."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator's questions progress logically from general athletic drivers to environmental preferences and finally psychological focus, offering functionally distinct options at every turn."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean result with proper use of 'The Games' and no trademark or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2024,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "Looking back at that specific era in 2024, what was the primary demand on your life outside of the pool or track? Were you entirely consumed by the pursuit of your high-performance athletics goals, or were you navigating the complexities of balancing that discipline with other major life milestones?\nOptions: [Total immersion, with every waking hour dedicated to refining my peak mechanical efficiency. | Dual-track focus, balancing intense, top-tier athletic pathway demands with professional or academic pursuits. | Navigating a period of major personal change\u2014such as a relocation or career shift\u2014while maintaining my training intensity.]"
+        },
+        {
+          "role": "user",
+          "content": "Navigating a period of major personal change\u2014such as a relocation or career shift\u2014while maintaining my training intensity."
+        },
+        {
+          "role": "narrator",
+          "content": "As you were navigating that relocation and your high-performance schedule in 2024, how did your body respond to the added stressors of that transition?\nOptions: [My physical systems remained resilient, using the steady rhythm of training as a grounding anchor during the move. | I faced heightened physical fatigue, which forced me to carefully recalibrate my intensity to ensure long-term sustainability. | I experienced an unexpected physical breakthrough, as the change in environment helped unlock a new, heightened level of performance intensity.]"
+        },
+        {
+          "role": "user",
+          "content": "I faced heightened physical fatigue, which forced me to carefully recalibrate my intensity to ensure long-term sustainability."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "The user was navigating a significant relocation and period of major personal change in 2024, balancing the intense demands of high-performance athletics with the logistical stress of life transitions.",
+        "physical_context": "The transition caused heightened fatigue, necessitating a shift from brute force to a more disciplined, sustainable approach to training intensity.",
+        "athletic_engagement": "The user remained dedicated to their elite training regimen, adapting their intensity to protect long-term capacity despite the external stressors.",
+        "signals": [
+          "competitive",
+          "recovery_mode",
+          "major_life_event"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 8,
+          "matched_profile_name": "Streamline",
+          "pathway_standing": "Swimming",
+          "pathway_adaptive": "Adaptive Swimming (e.g., Men's 400 m Freestyle S10)",
+          "scout_verdict": "At 26, standing on the threshold of The Paris 2024 Games, your 181cm and 83kg build is a testament to years of technical refinement. While your recent relocation and personal life transitions demanded a pivot toward sustainable intensity, you have successfully transformed that necessity into a competitive advantage. You have moved away from the risks of brute force and into the meditative, rhythmic flow that defines your approach to the water.\n\nIn the S10 classification, which accommodates athletes with restricted motor function in the lower extremities, your commitment to efficiency is paramount. By syncing your breath to the rhythmic requirements of your stroke, you have turned your movement into a form of disciplined, high-performance grace. Your ability to maintain this flow despite the external stress of your move showcases a mental fortitude that ensures you are not just keeping pace, but mastering the technical demands of your craft."
+        },
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+          "scout_verdict": "Stepping away from the pool, your engagement with the H3 classification in handcycling\u2014which supports athletes with impairment primarily impacting the lower body\u2014reveals a vastly different, more combative dimension of your endurance. Where the pool demands fluid integration, the road machine demands raw, systematic torque. At 26, you have leveraged this discipline to navigate your personal transitions, using the road as a concrete, data-driven outlet for your competitive energy.\n\nThis pathway prioritizes the sustained grit and tactical precision you highlighted during your development. Because the H3 category relies on excellent upper-body coordination and significant power output, it serves as the perfect antithesis to your aquatic flow, forcing you to engage your stamina in a high-torque, recovery-sustainable environment. This is where your ability to outthink and outlast the terrain transforms into a tactical advantage, proving that your journey through the chaos of 2024 has only sharpened your capacity for structured, long-term endurance."
+        }
+      ],
+      "eval_result": {
+        "overall": 6,
+        "summary": "The report effectively translates the user's interview answers into appropriate sports and life-stage context, but the verdicts blatantly hallucinate personal life events not present in the interview.",
+        "authenticity": {
+          "score": 6,
+          "reasoning": "The 181cm/83kg build is plausible for both swimming and cycling, but the inclusion of a fabricated 'recent relocation' makes the evaluation feel disconnected from reality."
+        },
+        "personalization": {
+          "score": 4,
+          "reasoning": "While the report correctly references the user's desire for 'rhythmic flow' and 'sustained grit,' it invents a 'recent relocation and personal life transitions' backstory out of nowhere."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The two pathways provide a strong contrast, pitting the fluid, breath-synchronized integration of Swimming against the raw, high-torque, systematic power of H3 Handcycling."
+        },
+        "life_stage_coherence": {
+          "score": 8,
+          "reasoning": "For a 26-year-old at The 2024 Games, phrasing like 'years of technical refinement' and focusing on prime competitive capacity perfectly matches the Elite Peak life stage."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions build logically, narrowing from the primary physical engine to the preferred environment, and finally to the psychological focal point, with genuinely distinct options at each step."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "The report correctly uses 'The Paris 2024 Games' format and avoids any restricted Olympic/Paralympic terminology."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2032,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "Reflecting on the years between 2024 and 2032, how has your body handled the transition from the high-octane intensity of your younger years to the refined, experienced approach you bring to your training now?\nOptions: [My body feels more resilient, but it requires a far more meticulous approach to recovery and daily maintenance. | I have fundamentally re-engineered my movement patterns to favor economy and mechanical rhythm over raw, explosive intensity. | My capacity for sustained volume has actually improved because I have finally learned how to manage my energy expenditure and avoid unnecessary strain.]"
+        },
+        {
+          "role": "user",
+          "content": "I have fundamentally re-engineered my movement patterns to favor economy and mechanical rhythm over raw, explosive intensity."
+        },
+        {
+          "role": "narrator",
+          "content": "As you prepare for this stage of your sporting journey at age 34, what does your 'veteran' reality look like in terms of your daily focus and lifestyle priorities?\nOptions: [Mentoring others and shaping the next generation while maintaining my own competitive edge. | Channeling every ounce of my energy into one final, calculated push for a personal best. | Integrating my training into a life that now demands a delicate balance of career, family, and athletic excellence.]"
+        },
+        {
+          "role": "user",
+          "content": "Mentoring others and shaping the next generation while maintaining my own competitive edge."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 34, the athlete has transitioned into a seasoned mentor role, successfully balancing the pressures of high-level competition with the responsibility of shaping the next generation of talent.",
+        "physical_context": "The athlete has intentionally re-engineered their biomechanics, prioritizing rhythmic efficiency and mechanical economy to sustain long-term performance.",
+        "athletic_engagement": "Actively competing with a refined, process-driven mindset that leverages years of accumulated experience to maintain a high performance ceiling.",
+        "signals": [
+          "active_training",
+          "competitive",
+          "peak_fitness",
+          "returning_to_sport"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 8,
+          "matched_profile_name": "Streamline",
+          "pathway_standing": "Swimming",
+          "pathway_adaptive": "Adaptive Swimming (e.g., Men's 400 m Freestyle S10)",
+          "scout_verdict": "At The Brisbane 2032 Games, your 181cm, 83kg frame serves not as a vessel for raw force, but as an instrument of pure kinetic efficiency. You have mastered the 'Streamline' archetype by channeling your veteran wisdom into a state of flow, where every breath is a calculated rhythmic anchor. Your history of balancing high-stakes professional life with athletic rigor has forged a unique capacity for endurance, allowing you to sustain a perfect, low-drag profile that younger, less seasoned competitors struggle to maintain over long distances.\n\nIn the S10 classification\u2014which encompasses athletes with minimal physical impairments such as localized range-of-motion limitations\u2014your journey is redefined by tactical precision. Having successfully re-engineered your biomechanics to prioritize mechanical economy, you now leverage the S10 pathway to showcase how a seasoned mind compensates for physical fatigue. By focusing on the nuances of your stroke cycle rather than brute speed, you transform the pool into a medium where your experience allows you to outperform athletes relying solely on explosive power. You aren't just swimming; you are managing a living system of breath and momentum, proving that at 34, you have reached your highest level of technical mastery."
+        },
+        {
+          "matched_profile_id": 9,
+          "matched_profile_name": "Boat Run",
+          "pathway_standing": "Rowing",
+          "pathway_adaptive": "Adaptive Rowing (e.g., Men's Single Scull ASM1x)",
+          "scout_verdict": "The 'Boat Run' archetype offers a stark departure from the fluid, meditative nature of the pool, demanding instead a process-driven, mechanical intensity that perfectly suits your current identity as a veteran competitor and mentor. At The Brisbane 2032 Games, your focus on synchronized, full-body power output allows you to engage in a high-impact rhythmic discipline where every repetition is an expression of deep, internal calculation. You have traded the explosive, erratic bursts of your younger self for a sustainable, cog-like precision that defines your performance on the water.\n\nThe ASM1x classification, designed for athletes who compete using primarily their arms and shoulders, provides the perfect constraint to highlight your evolution. By shifting the workload away from the kinetic chain of the legs and focusing entirely on upper-body force generation, you have cultivated a level of technical coordination that is exceptionally rare. This path demands that you operate with absolute structural integrity, turning the boat into a direct extension of your willpower. As a mentor, your performance here becomes a blueprint for those you lead: a testament to the fact that excellence at this stage of your sporting journey is no longer about raw output, but about the total harmonization of the human machine with the environment."
+        }
+      ],
+      "eval_result": {
+        "overall": 7,
+        "summary": "A solid scouting report with strong life-stage adaptation and distinct pathways, though marred slightly by hallucinating background details not present in the interview.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "The 181cm/83kg build and endurance-focused answers logically align with the 'Streamline' (Swimming) and 'Boat Run' (Rowing) archetypes."
+        },
+        "personalization": {
+          "score": 5,
+          "reasoning": "While it successfully incorporates the user's focus on 'breath and pace' and 'state of flow', it hallucinates a 'history of balancing high-stakes professional life' that was never mentioned."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The pathways are meaningfully different, contrasting the fluid, full-body mechanical economy of S10 Swimming with the isolated, upper-body force generation of ASM1x Rowing."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Perfectly captures the Veteran stage at 34, explicitly noting how 'veteran wisdom' and 'technical mastery' compensate against 'younger, less seasoned competitors'."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions progress logically, starting with broad athletic drivers and narrowing down to specific environments and psychological focal points that clearly dictate the archetype."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean report with correct formatting for The Brisbane 2032 Games and respectful, accurate descriptions of the adaptive classifications."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

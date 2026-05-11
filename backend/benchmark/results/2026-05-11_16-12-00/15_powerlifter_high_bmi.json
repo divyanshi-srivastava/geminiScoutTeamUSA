@@ -1,0 +1,241 @@
+{
+  "persona_id": "15_powerlifter_high_bmi",
+  "persona_label": "Competitive powerlifter \u2014 high BMI, elite strength",
+  "biometrics": {
+    "height_cm": 182,
+    "weight_kg": 142,
+    "birth_year": 1991,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe your current relationship with physical activity and training?\nOptions: [Rigorous, structured training aimed at competitive benchmarks | Sustained, functional movement integrated into a demanding lifestyle | Technical, precision-focused sessions emphasizing strength and mechanics]"
+    },
+    {
+      "role": "user",
+      "content": "Rigorous, structured training aimed at competitive benchmarks"
+    },
+    {
+      "role": "narrator",
+      "content": "To better understand your high-performance athletics profile, which physical quality do you feel defines your current training efforts most accurately?\nOptions: [Explosive power, speed, and immediate velocity | Sustained endurance, aerobic efficiency, and long-duration pacing | Complex technical coordination and strength-to-weight efficiency]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power, speed, and immediate velocity"
+    },
+    {
+      "role": "narrator",
+      "content": "When you think about the ideal environment for your explosive output, do you feel most at home in individual head-to-head challenges, technical disciplines focused on singular physical feats, or high-impact team environments?\nOptions: [Individual combat and direct head-to-head confrontation | Precision-based, weight-focused technical disciplines | High-impact team environments and tactical collisions]"
+    },
+    {
+      "role": "user",
+      "content": "Precision-based, weight-focused technical disciplines"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+      "scout_verdict": "Your 142kg frame is the engine of your athletic identity, perfectly suited for the explosive torque demanded by the circle. In your quest for the global stage, your preference for precision-based technical disciplines becomes your greatest asset; the shot put is, at its core, a puzzle of physics solved through raw speed and impeccable form. You possess the structured intensity required to turn mass into velocity, channeling every ounce of your training into that singular, decisive moment of release.\n\nIn the adaptive pathway, you would compete in a seated throwing frame, classified under C3\u2014a designation for athletes with significant trunk-movement limitations who rely on a stable chair to project power. Here, your discipline transforms. Without the benefit of a running approach or lower-body engagement, the entire burden of the throw shifts to your kinetic chain. This is where your commitment to rigorous, structured training serves as the foundation; mastering the throw from a fixed, seated position demands an even deeper focus on upper-body technical efficiency and shoulder stability, turning your physical limitations into a unique platform for high-performance athletics."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's 100 kg)",
+      "scout_verdict": "If your primary focus shifts from the implement to the opponent, wrestling offers a dynamic theater for your explosive capacity. This discipline moves you away from the singular, repetitive motion of the throws and into the unpredictable, high-stakes chaos of the mat. Your size, coupled with the rigorous conditioning you've sought out, transforms you into a formidable force of leverage and tactical control, where every engagement is a test of your ability to dictate the pace through weight-room mastery and technical awareness.\n\nAlternatively, your path within powerlifting\u2014competing at the 100kg+ tier\u2014serves as a complete inversion of your standing athletic goals. While wrestling requires reactive endurance and strategy, powerlifting is a study in controlled, absolute force. In this environment, you leverage the same dense power architecture built in the gym, but redirect it toward the perfect lift. It is a pursuit of mechanical perfection and strength-to-weight efficiency, stripping away the intensity of combat to focus on the pure, raw, and singular expression of moving iron against the constraints of your own body."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly authentic and personalized scouting report that correctly maps a heavy, powerful frame to suitable disciplines.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "At 182cm and 142kg, the user has a massive frame perfectly suited for super-heavyweight throws and powerlifting, making the archetypes highly realistic."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts explicitly reference the user's 142kg frame and weave in their specific interview choices about 'precision-based technical disciplines' and 'rigorous, structured training'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways offer genuine mechanical differences, especially contrasting the reactive chaos of wrestling with the absolute controlled force of powerlifting."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions progress logically to narrow down the athletic profile, offering clearly distinct forks between power, endurance, and technical environments."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "The report is clean, with balanced narrative depth and no restricted terminology or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2016,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "What was the central focus of your life during that season\u2014were you fully immersed in the demands of a high-performance athletics career, or were you balancing your training with other major life priorities?\nOptions: [Fully immersed in a dedicated, professional-level training environment | Juggling elite training alongside academic or early-career professional pressures | Navigating a major life transition or relocation while maintaining strict competitive commitments]"
+        },
+        {
+          "role": "user",
+          "content": "Fully immersed in a dedicated, professional-level training environment"
+        },
+        {
+          "role": "narrator",
+          "content": "Looking back at that specific chapter in 2016, how was your body holding up under the weight of that professional training intensity?\nOptions: [I was pushing through raw, high-impact volume, focusing on pure force production. | My focus was on fine-tuning technical mechanics and recovery to handle the repetitive load. | I was balancing heavy strength cycles with high-velocity movement, prioritizing power-to-weight efficiency.]"
+        },
+        {
+          "role": "user",
+          "content": "I was pushing through raw, high-impact volume, focusing on pure force production."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 25, during the lead-up to The Rio 2016 Games, the user was fully committed to a professional, high-intensity training regimen with no outside distractions.",
+        "physical_context": "The body was being pushed to its physical limit, prioritizing raw, high-impact volume and the development of maximum force production.",
+        "athletic_engagement": "Fully immersed in a dedicated, professional-level high-performance athletic career.",
+        "signals": [
+          "active_training",
+          "competitive",
+          "peak_fitness"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 12,
+          "matched_profile_name": "Iron Shoulder",
+          "pathway_standing": "Field Athletics (Discus/Shot Put)",
+          "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+          "scout_verdict": "At 25, during the peak of your physical prime at The Rio 2016 Games, your 182cm and 142kg frame acts as a living engine for explosive force production. Your commitment to a rigorous, professional-grade training regimen has transformed your mass into a singular, devastating asset. In the standing discus and shot put circles, your discipline is defined by the absolute translation of velocity into implement distance; you are not merely throwing, you are manifesting the culmination of years of dedicated, heavy-impact conditioning.\n\nTransitioning to the adaptive pathway of Seated Shot Put C3, the challenge shifts from total-body momentum to refined, localized mechanical dominance. The C3 classification designates athletes with severe impairment affecting all four limbs, requiring a unique approach where the chair serves as the grounded foundation for your output. Here, you must rely on the precise, calculated synchronization of your upper-body musculature, stripping away the lower-body drive to focus entirely on the shoulder girdle's explosive capacity. It is a transition from the kinetic freedom of the standing ring to the clinical, high-pressure precision of a seated thrower, testing your ability to isolate power in a confined, high-stakes environment."
+        },
+        {
+          "matched_profile_id": 6,
+          "matched_profile_name": "Mat Technician",
+          "pathway_standing": "Wrestling",
+          "pathway_adaptive": "Powerlifting (e.g., Men's 100 kg)",
+          "scout_verdict": "Your wrestling profile at The Rio 2016 Games reflects an athlete who views the mat as a chess board governed by raw, unyielding pressure. At 25, with your intense focus on tactical collisions, you utilize your 142kg frame to dictate the pace of the match through sheer positional dominance. Your training has ingrained a clinical, analytical approach to movement, allowing you to identify a leverage point in the blink of an eye and apply your strength with suffocating, decisive efficiency.\n\nIn the adaptive world of Powerlifting, however, your narrative moves away from the chaotic, reactive nature of the clinch and toward the pure, rhythmic mastery of the barbell. This discipline demands a different side of your athleticism: an extraordinary endurance of the nervous system and the technical discipline required to maintain structural integrity under extreme, near-maximal loading. While wrestling emphasizes your ability to overcome an opponent\u2019s will, this adaptive pathway prioritizes the cold, internal battle of testing the absolute threshold of your 142kg mass against the rigid, unmoving resistance of the steel, rewarding the same methodical, professional-level consistency you have built your career upon."
+        }
+      ],
+      "eval_result": {
+        "overall": 6,
+        "summary": "A structurally sound report that correctly maps a massive physical profile to heavyweight throwing and grappling, but suffers from a direct hallucination of the user's interview answers in the second profile.",
+        "authenticity": {
+          "score": 9,
+          "reasoning": "A 142kg frame paired with explosive power perfectly matches the Iron Shoulder (Shot Put) and super heavyweight powerlifting archetypes."
+        },
+        "personalization": {
+          "score": 4,
+          "reasoning": "The second profile explicitly claims the user has an 'intense focus on tactical collisions', entirely ignoring that the user actively chose 'Precision-based, weight-focused technical disciplines' instead."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The Wrestling to Powerlifting transition offers a highly distinct contrast, shifting from chaotic opponent manipulation to absolute static resistance."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Properly targets age 25 at The 2016 Games, correctly framing it as the 'peak of your physical prime' which perfectly aligns with the Elite Peak stage."
+        },
+        "interview_quality": {
+          "score": 7,
+          "reasoning": "The options successfully funnel the user from broad training habits down to specific explosive environments, effectively separating combat athletes from technical throwers."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean; correctly uses 'The Rio 2016 Games' and avoids standalone Olympic terminology."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2024,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you moved from that era of raw, high-impact volume into your current chapter, how has the focus of your training shifted to accommodate your growth as a veteran athlete?\nOptions: [Deepening technical mastery while managing professional responsibilities | Transitioning from raw force to strategic, injury-aware longevity | Refocusing athletic goals around high-efficiency movement and precision]"
+        },
+        {
+          "role": "user",
+          "content": "Transitioning from raw force to strategic, injury-aware longevity"
+        },
+        {
+          "role": "narrator",
+          "content": "To better capture the essence of your journey during that period in Paris, what was the primary driver that pushed you to refine your methodology and prioritize long-term physical sustainability over the relentless, raw intensity of your younger years?\nOptions: [A desire to optimize technical efficiency while balancing professional demands | A direct response to the need for smarter recovery and periodization | A pivot toward high-efficiency, strength-to-weight precision]"
+        },
+        {
+          "role": "user",
+          "content": "A direct response to the need for smarter recovery and periodization"
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 33, heading into The Paris 2024 Games, life was defined by the transition from a singular focus on raw power to the complex balancing act of a seasoned veteran athlete juggling professional growth and high-level training.",
+        "physical_context": "The body shifted from the relentless, high-impact volume of your youth toward a more sophisticated model of injury-aware longevity and strategic periodization.",
+        "athletic_engagement": "Maintained a high-performance commitment, replacing untamed intensity with deliberate, recovery-optimized methodology to sustain long-term competitive excellence.",
+        "signals": [
+          "active_training",
+          "recovery_mode",
+          "peak_fitness",
+          "career_shift"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 12,
+          "matched_profile_name": "Iron Shoulder",
+          "pathway_standing": "Field Athletics (Discus/Shot Put)",
+          "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+          "scout_verdict": "At 33, heading into The Paris 2024 Games, your transition from the untamed intensity of your early twenties to this current, calculated approach is your greatest asset. At 182cm and 142kg, you possess a massive foundation, but it is your newfound mastery of periodization\u2014trading the high-impact, bruising volume of 2016 for strategic, high-precision technical output\u2014that now defines your field dominance. You have evolved into a sculptor of kinetic energy, where every movement in the ring is a calculated effort to optimize force without compromising long-term durability.\n\nIn the seated athletic context, your profile aligns with the C3 classification, which covers athletes with moderate impairment in coordination and trunk function. Here, the challenge is not just the weight of the implement, but the absolute stillness and stability required to generate massive acceleration from a seated position. Your background in precision-focused throwing serves as the perfect bridge, allowing you to harness your upper-body power with the clinical, rhythmic focus necessary to excel in the C3 circuit, proving that true power as a veteran athlete is found in the stillness before the launch."
+        },
+        {
+          "matched_profile_id": 10,
+          "matched_profile_name": "Launch Force",
+          "pathway_standing": "Bobsleigh / Push Sports",
+          "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+          "scout_verdict": "Your journey to The Paris 2024 Games reflects a shift from the static to the kinetic. While your earlier career was defined by the singular drive of the thrower, this pathway utilizes your explosive sprint capacity and heavy-lifting legacy in the high-velocity, high-stakes environment of push sports. You are no longer just pushing weight for distance; you are the engine at the start of a multi-member unit, where your ability to instantly convert your 142kg of mass into explosive, synchronized forward momentum is the difference between a podium finish and the rest of the field.\n\nFor the seated throws pathway, you fall under the F56 classification, designed for athletes with significant impairment in the lower limbs who must generate power while seated, relying heavily on core stability and torso rotation. Unlike the technical, singular precision of your other focus, this discipline demands an intense, rhythmic coordination between your upper body and trunk to maximize velocity. It transforms your career-long strength into a secondary dimension of competitive endurance, testing your ability to sustain that explosive, high-impact force through multiple rounds of intense, head-to-head performance."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A highly authentic and coherent scouting report that accurately matches a heavy, powerful build to field athletics and push sports, highlighted by excellent life stage adaptation.",
+        "authenticity": {
+          "score": 9,
+          "reasoning": "At 182cm and 142kg, the user has the immense mass and power necessary for elite shot put and bobsleigh pushing, making 'Iron Shoulder' and 'Launch Force' incredibly accurate archetype matches."
+        },
+        "personalization": {
+          "score": 7,
+          "reasoning": "The narrative effectively weaves in the user's specific biometrics and connects their choice of 'precision-based, weight-focused technical disciplines' directly to their throwing mechanics."
+        },
+        "distinctness": {
+          "score": 6,
+          "reasoning": "While the standing pathways (Discus vs. Bobsleigh) offer a strong contrast between static power and kinetic momentum, the adaptive pathways both focus heavily on seated throws, reducing overall variety."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Targeting age 33 (Veteran), the verdict perfectly captures this life stage by focusing on 'long-term durability' and the shift from 'bruising volume' to a 'calculated approach'."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The interview questions successfully narrow the user's profile, moving logically from broad training habits to specific differentiators like 'explosive power' versus 'sustained endurance'."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "The report is fully compliant, correctly using 'The Paris 2024 Games' without any restricted terms or NIL violations."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

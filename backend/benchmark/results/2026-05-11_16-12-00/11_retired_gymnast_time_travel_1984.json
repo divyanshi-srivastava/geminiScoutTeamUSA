@@ -1,0 +1,240 @@
+{
+  "persona_id": "11_retired_gymnast_time_travel_1984",
+  "persona_label": "Retired gymnastics coach \u2014 time travel to 1984 LA Games",
+  "biometrics": {
+    "height_cm": 162,
+    "weight_kg": 57,
+    "birth_year": 1958,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To begin building your profile, how would you describe your history with high-performance athletics or movement-based challenges throughout your life?\nOptions: [A lifelong competitive athlete who has consistently sought out new challenges and podiums. | Someone who found their physical identity through steady, dedicated recreational movement and daily activity. | Currently rediscovering a deep passion for movement after a long break spent focusing on other life chapters.]"
+    },
+    {
+      "role": "user",
+      "content": "A lifelong competitive athlete who has consistently sought out new challenges and podiums."
+    },
+    {
+      "role": "narrator",
+      "content": "As we look at your sporting journey and the way your body has evolved over time, which physical dimension has typically served as your greatest asset when you are pushing for the win?\nOptions: [Explosive power and rapid-fire response times. | Sustained aerobic capacity and rhythmic endurance. | Precision, balance, and technical coordination.]"
+    },
+    {
+      "role": "user",
+      "content": "Precision, balance, and technical coordination."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the heart of a high-performance challenge, how do you prefer to interact with the environment or the competition around you?\nOptions: [Individual pursuit: I thrive when the outcome rests entirely on my own technical execution and singular mental focus. | Strategic collaboration: I find my rhythm when navigating complex challenges as part of a tightly-knit, high-performance team. | Tactical adaptability: I enjoy adjusting my approach in the moment to overcome unpredictable environments or shifting conditions.]"
+    },
+    {
+      "role": "user",
+      "content": "Individual pursuit: I thrive when the outcome rests entirely on my own technical execution and singular mental focus."
+    },
+    {
+      "role": "narrator",
+      "content": "To finalize this portrait of your athletic pathway, how do you view the role of 'rhythm' in your performance\u2014is it about maintaining a steady, unwavering pace, or do you prefer bursts of technical intensity punctuated by periods of complete stillness?\nOptions: [Unwavering, rhythmic consistency: I find my power in the meditative, steady flow of a repeated action. | Calculated bursts: I perform best when I can channel my energy into explosive, high-intensity segments followed by tactical pauses. | Fluid, reactive precision: I prefer a constant shifting of focus that requires me to adjust my technical output in real-time.]"
+    },
+    {
+      "role": "user",
+      "content": "Calculated bursts: I perform best when I can channel my energy into explosive, high-intensity segments followed by tactical pauses."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Women's 67 kg)",
+      "scout_verdict": "Your history as a lifelong competitor provides the perfect foundation for the Mat Technician archetype. In the standing pathway of wrestling, your preference for calculated bursts of intensity allows you to exploit openings with surgical timing. At 68, your ability to read an opponent and exert tactical pressure is a formidable asset, turning the mat into a space where your technical experience dictates the pace of every exchange.\n\nIn the adaptive pathway of powerlifting, the challenge shifts toward pure, singular execution. This pathway focuses on the controlled release of force. For an athlete with your background in individual pursuit, this discipline serves as the ultimate test of your biomechanical efficiency. You channel that same intensity required on the mat into the focused, high-load requirements of the lifting platform, proving that power is not just a product of youth, but a disciplined cultivation of technique and intent."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Women's FITA Round Open)",
+      "scout_verdict": "The Steady Hand archetype highlights your exceptional capacity for precision, balance, and technical coordination. In the standing pathway of marksmanship, you find a natural home for the stillness and meditative focus you have cultivated throughout your sporting journey. Here, the challenge is not in the intensity of movement, but in the total mastery of your internal rhythm\u2014maintaining composure while the world around you demands a perfect, singular release of energy.\n\nYour adaptive pathway, Archery Women's FITA Round Open, utilizes the 'Open' classification, which allows for equipment adaptations to ensure fair participation for athletes navigating diverse physical realities. This discipline demands the same technical refinement you value, but asks you to engage in a rhythmic, constant adjustment to environmental variables like wind and tension. It offers an elegant counterweight to your strength-based pursuits, requiring you to marry the stillness of the marksman with the fluid, reactive precision of an archer, proving that your most significant competitive edge is your unflinching mental focus."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The report provides a highly personalized narrative and strong interview progression, but recommending high-impact wrestling to a 68-year-old who prioritized precision over explosive power severely undermines the authenticity of the first archetype.",
+    "authenticity": {
+      "score": 4,
+      "reasoning": "While Marksmanship perfectly aligns with her 162cm/57kg frame and precision focus, recommending Wrestling to a 68-year-old contradicts realistic athletic pathways and her explicit choice of precision over power."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts directly reference her age of 68 and elegantly weave in specific interview answers like 'calculated bursts' and 'individual pursuit'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways offer meaningfully different biomechanical focuses, effectively contrasting the controlled force of Powerlifting with the environmental adaptability required in Archery."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator provided excellent, progressive questions that offered genuinely distinct forks regarding physical assets, competitive interaction, and pacing rhythm."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean output with no standalone Olympic/Paralympic terminology, NIL issues, or IP violations detected."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 1976,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As a rising star during that pivotal year, what did your daily life look like in terms of balancing the immense demands of your training with the other pressures of being 18?\nOptions: [A singular, all-consuming devotion to the training gym and local competitions, leaving little room for anything else. | A tight-rope walk between high-level athletic preparation and the expectations of finishing my secondary education. | Transitioning into a more serious, professionalized training environment that required me to move or significantly alter my daily rhythm.]"
+        },
+        {
+          "role": "user",
+          "content": "A singular, all-consuming devotion to the training gym and local competitions, leaving little room for anything else."
+        },
+        {
+          "role": "narrator",
+          "content": "At 18, as you poured every ounce of your energy into those gym sessions, how was your body navigating that specific, high-intensity load?\nOptions: [Resilient and hungry: I felt indestructible, constantly seeking to push further regardless of the demand. | Fine-tuned and calculated: I learned early on that I had to manage fatigue meticulously to maintain my technical precision. | Responsive to stress: I was in a constant state of learning, refining my movements as my body reacted to the rigors of my training volume.]"
+        },
+        {
+          "role": "user",
+          "content": "Resilient and hungry: I felt indestructible, constantly seeking to push further regardless of the demand."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 18, your life was defined by total immersion in the gym, with athletic ambitions crowding out all other standard adolescent pursuits.",
+        "physical_context": "You operated in an indestructible, high-energy state, viewing your body as a limitless vessel for intensity and technical mastery.",
+        "athletic_engagement": "Focused entirely on individual performance, driven by calculated bursts of high-intensity technical precision.",
+        "signals": [
+          "active_training",
+          "peak_fitness",
+          "competitive"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 1,
+          "matched_profile_name": "Air Sculptor",
+          "pathway_standing": "Artistic Gymnastics",
+          "pathway_adaptive": "Women's 100 m Freestyle S6",
+          "scout_verdict": "At 18, standing at 162cm and 57kg, you possess the ideal density for the Air Sculptor profile. Your body is a finely tuned instrument, capable of the precise, calculated bursts that define your time at The Montreal 1976 Games. In the gym, you operate with an intensity that leaves no room for hesitation, viewing every apparatus as a challenge to your internal rhythm. Your appetite for individual pursuit is your greatest asset here; you thrive in the silence between the applause, where your technical perfection is the only metric that matters.\n\nThis same pursuit of technical excellence translates naturally into your adaptive pathway in the Women's 100 m Freestyle S6. The S6 classification, which recognizes athletes with physical impairments that impact lower-limb function or coordination, demands a mastery of the water that mirrors your grace on the floor. Where your gymnastics routine relies on explosive leaps, your swimming utilizes your innate spatial awareness to slice through the lane. By channeling your need for calculated intensity into these brief, powerful sprints, you transform a physical limitation into a tactical advantage, mastering the water with the same surgical precision you bring to the mat."
+        },
+        {
+          "matched_profile_id": 13,
+          "matched_profile_name": "Edge Carver",
+          "pathway_adaptive": "Women's Super-G Sit-Ski LW12",
+          "pathway_standing": "Alpine Skiing / Speed Skating",
+          "scout_verdict": "While your primary athletic chapter finds its home in the controlled environment of the gym, your Edge Carver profile reveals a different side of your psyche: a hunger for high-velocity, reactive environments. At 18, you carry a restless energy that finds its match in the rapid-fire decision-making required for alpine speeds. You do not just move through space; you command it, adjusting your technical line in real-time to match the shifting topography of the course. This is where your strength shifts from the singular, repetitive burst to the fluid, continuous engagement with momentum.\n\nYour adaptive expression as an Edge Carver takes you to the slopes in the Women's Super-G Sit-Ski LW12 discipline. This classification is reserved for athletes with lower-limb impairments who demonstrate exceptional balance and trunk control while navigating steep, icy terrain in a sit-ski. Transitioning from the rhythmic, technical focus of your standing training, the LW12 pathway demands that you anchor your body to the mountain, using the ski's edge to carve out a path at blistering speeds. It is a profound shift from the delicate artistry of your floor work, requiring you to trust your reflexes and your ability to maintain stability in a high-stakes, gravity-driven environment."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A highly tailored and deeply personalized scouting report that effectively utilizes the user's interview responses to build two distinct, compelling athletic pathways.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "The biometrics (162cm/57kg) are a plausible match for the Air Sculptor archetype, and the transition from gymnastics to S6 swimming logically fits her preference for calculated technical bursts."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The narrative explicitly weaves in the user's exact interview selections, effectively grounding the verdict in her desire for 'individual pursuit' and 'calculated bursts'."
+        },
+        "distinctness": {
+          "score": 9,
+          "reasoning": "There is excellent contrast between the highly controlled, precise environment of the Air Sculptor pathway and the gravity-driven, reactive velocity of the Edge Carver sit-ski pathway."
+        },
+        "life_stage_coherence": {
+          "score": 8,
+          "reasoning": "At age 18 in the Rising Star phase, the verdict correctly avoids veteran language and frames her potential around 'restless energy' and an intense, developing 'hunger' for competition."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The narrator provides strong, meaningful forks, particularly in the final question where separating rhythm into steady endurance, calculated bursts, or reactive precision genuinely narrows the athletic profile."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean compliance pass with the correctly formatted 'The Montreal 1976 Games' reference and no restricted IP or NIL violations."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 1984,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you stepped into the atmosphere of 1984, how had your life outside of the training environment shifted\u2014were you navigating new professional or personal responsibilities alongside your training, or did you tighten your focus even further to achieve that elite state?\nOptions: [I deepened my commitment, narrowing my existence entirely to the pursuit of competitive mastery. | I integrated a new professional identity, learning to balance my high-performance goals with the demands of an emerging career. | I expanded my horizons, intentionally seeking new environments and relationships to gain a fresh perspective on my technical output.]"
+        },
+        {
+          "role": "user",
+          "content": "I deepened my commitment, narrowing my existence entirely to the pursuit of competitive mastery."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 26, heading into The Los Angeles 1984 Games, your entire existence was distilled into a singular, unwavering pursuit of competitive mastery, intentionally setting aside external life demands to facilitate total focus.",
+        "physical_context": "You were operating at your physical zenith, characterized by the ability to channel deep precision and balance into calculated, high-intensity bursts of performance.",
+        "athletic_engagement": "Fully engaged in intensive, individual-focused training, maintaining an environment of extreme technical rigor.",
+        "signals": [
+          "active_training",
+          "peak_fitness",
+          "competitive"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 1,
+          "matched_profile_name": "Air Sculptor",
+          "pathway_standing": "Artistic Gymnastics",
+          "pathway_adaptive": "Women's 100 m Freestyle S6",
+          "scout_verdict": "At 26, stepping onto the stage at The Los Angeles 1984 Games, your 162cm and 57kg frame is at its absolute peak\u2014a finely tuned instrument built for intensity. The 'Air Sculptor' archetype reflects the years of total immersion and singular focus you have dedicated to your craft, where you intentionally distanced yourself from external life demands to achieve true competitive mastery. Every move you make is a testament to the technical rigor you cultivated since your earlier years, prioritizing those explosive, calculated bursts of energy that only come from a mind and body operating in perfect, isolated harmony. In this environment, you are the sole architect of your success. Your preference for individual execution means you thrive when the weight of the moment rests entirely on your ability to find balance in mid-air. As you prepare to compete, the discipline that defined your teenage years in the 1976 era has matured into a calm, lethal precision. You don't just move; you sculpt the air with every rotation, turning high-intensity physical output into a work of technical art."
+        },
+        {
+          "matched_profile_id": 13,
+          "matched_profile_name": "Edge Carver",
+          "pathway_standing": "Alpine Skiing / Speed Skating",
+          "pathway_adaptive": "Women's Super-G Sit-Ski LW12",
+          "scout_verdict": "Your secondary pathway at The Los Angeles 1984 Games shifts the narrative from explosive power to the art of reactive precision. As an LW12 competitor\u2014a classification designating athletes with lower-limb impairments who compete in a seated position\u2014you utilize the seat-ski as an extension of your own body, requiring exceptional core stability and granular technical awareness. This path forces a departure from the rhythmic, explosive bursts of the mat, instead demanding a constant, fluid dialogue between your center of gravity and the terrain beneath you. This transition highlights a different facet of your athletic identity: your ability to make high-speed, technical adjustments in real-time. Where your primary profile focused on the height of a leap, this path focuses on the bite of the edge and the management of velocity. By leveraging the same deep, technical coordination you've practiced for years, you prove that your athletic potential is not merely about raw intensity, but about an uncanny capacity to adapt your singular mental focus to the unpredictability of a fast-moving, high-stakes environment."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "An excellent, highly tailored scouting report that masterfully integrates the user's interview answers and the time-travel life stage constraints.",
+        "authenticity": {
+          "score": 7,
+          "reasoning": "While 162cm and 57kg is slightly large for elite 1984 Artistic Gymnastics, it perfectly suits the robust power needed for the Edge Carver's Alpine Skiing pathway."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The scout verdict seamlessly weaves in the user's exact interview responses, specifically noting their preference for 'calculated bursts' and 'individual execution' in the narrative."
+        },
+        "distinctness": {
+          "score": 9,
+          "reasoning": "The two pathways provide a brilliant contrast, actively comparing the explosive verticality of the Air Sculptor with the velocity-driven reactive precision of the sit-ski Edge Carver."
+        },
+        "life_stage_coherence": {
+          "score": 10,
+          "reasoning": "The narrative perfectly nails the Elite Peak life stage at age 26, complete with accurate era-math referencing how the 'discipline that defined your teenage years in the 1976 era has matured'."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions successfully drill down into specific athletic differentiators, particularly the final question which expertly forces a choice between steady rhythm, calculated bursts, and reactive precision."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean compliance pass with correct usage of 'The Los Angeles 1984 Games' and no standalone restricted terms."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

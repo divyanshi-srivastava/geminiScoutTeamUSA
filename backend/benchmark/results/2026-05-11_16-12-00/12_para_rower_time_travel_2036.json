@@ -1,0 +1,249 @@
+{
+  "persona_id": "12_para_rower_time_travel_2036",
+  "persona_label": "Para-rower with SCI \u2014 time travel to 2036 Games",
+  "biometrics": {
+    "height_cm": 184,
+    "weight_kg": 88,
+    "birth_year": 1988,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you best characterize your current relationship with high-performance athletics and daily training?\nOptions: [Dedicated to explosive power and strength-based movement. | Focused on sustained endurance and aerobic conditioning. | Centered on versatile, multi-disciplinary functional training.]"
+    },
+    {
+      "role": "user",
+      "content": "Focused on sustained endurance and aerobic conditioning."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back at your sporting journey, how did you first build the habits that define your training today?\nOptions: [Foundational years in team sports, prioritizing game intelligence and collective movement. | Individual pursuit-based background, focusing on personal records and repetitive technical precision. | A transition later in life, discovering my athletic potential through a deliberate, late-start commitment.]"
+    },
+    {
+      "role": "user",
+      "content": "A transition later in life, discovering my athletic potential through a deliberate, late-start commitment."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward the horizon of your athletic journey, what is the primary spark that fuels your dedication to this level of training?\nOptions: [Chasing personal bests and testing the upper limits of my physiological capacity. | Cultivating a sustainable, long-term lifestyle that prioritizes peak vitality and longevity. | Testing my mettle in organized, community-based competitive events and pursuit-focused challenges.]"
+    },
+    {
+      "role": "user",
+      "content": "Chasing personal bests and testing the upper limits of my physiological capacity."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 9,
+      "matched_profile_name": "Boat Run",
+      "pathway_standing": "Rowing",
+      "pathway_adaptive": "Adaptive Rowing (e.g., Men's Single Scull ASM1x)",
+      "scout_verdict": "Your 184cm, 88kg frame is a powerful vessel for the water. Rowing demands a rare blend of explosive leg drive and sustained aerobic capacity, and your late-start commitment to personal excellence provides the mental grit necessary for the grueling, repetitive nature of the sport. At 38, your physiological maturity allows you to approach the rhythm of the stroke with a calculated, patient intensity that younger athletes often lack, making you a formidable presence in the pursuit of long-distance excellence.\n\nIn the adaptive pathway, the single scull classification is tailored for rowers who possess minimal trunk function, requiring them to use their arms and shoulders to generate the entirety of the boat's propulsion. This discipline turns your focus from total-body power to the mastery of technical precision and upper-body endurance. It is a profound challenge of coordination\u2014the ability to keep the vessel balanced while maintaining high-output strokes\u2014which mirrors your stated goal of testing the true limits of your physiological capacity. Embracing the technical nuances of this pathway is not just about competing; it is about refining your body into a singular, efficient machine capable of conquering the water with pure, concentrated effort."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "scout_verdict": "Cycling and triathlon call to the athlete who thrives on the rhythmic grind of a long road. Your journey, marked by a deliberate transition into high-performance athletics later in life, has fostered a deep capacity for data-driven development and the ability to maintain a steady, brutal pace over hours of effort. By chasing personal bests, you have cultivated the exact kind of internal discipline required to excel in these endurance-heavy disciplines, where the battle is often won in the quiet, meditative moments of a high-cadence climb.\n\nWhen navigating the handcycling adaptive pathway, you step into a discipline designed for athletes with lower-limb impairment who compete in a kneeling position. This classification demands a distinct type of physiological engagement, shifting the burden of power generation to your core and upper body while maintaining extreme aerodynamic efficiency. Unlike the rhythmic fluidity of your standing rowing profile, this pathway emphasizes raw, sustained torque and the ability to navigate complex, varied terrain. It is a platform for testing your mettle, where your focus on reaching the upper limits of your capacity is translated into the technical artistry of hand-cycle pacing and strategic race management."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "The scouting report provides highly personalized and authentic pathways, effectively utilizing the user's biometrics and interview responses to build a compelling narrative.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "At 184cm and 88kg, the user's frame genuinely suits the power-endurance requirements of rowing, aligning well with the chosen 'Boat Run' archetype."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts explicitly weave in the user's 'late-start commitment' and their drive for 'chasing personal bests' into the core of the athletic assessment."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways offer clear, biomechanically distinct challenges (e.g., isolating arm and shoulder power for single scull, kneeling handcycle) compared to the standing options."
+    },
+    "interview_quality": {
+      "score": 6,
+      "reasoning": "The questions successfully narrow down the user's focus to endurance, but the multiple-choice options feel somewhat like a broad personality quiz rather than a deep biomechanical assessment."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "No compliance violations detected; adaptive pathways are detailed respectfully and no restricted terms are misused."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2008,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "At that age, what was the primary focus of your daily rhythm\u2014were you balancing the high-performance athletics workload with the demands of university or early-career foundations, or were you living a life fully anchored to the professional training environment?\nOptions: [Fully immersed in a professional training environment, treating athletics as my singular occupation. | Balancing intense, high-stakes training with the pressure of university or academic commitments. | Navigating a pivotal shift, perhaps a relocation or a complete change in discipline that defined that specific chapter.]"
+        },
+        {
+          "role": "user",
+          "content": "Navigating a pivotal shift, perhaps a relocation or a complete change in discipline that defined that specific chapter."
+        },
+        {
+          "role": "narrator",
+          "content": "Reflecting on that transition as you headed toward The Beijing 2008 Games, how did your body handle the new demands\u2014did you feel like you were hitting new physiological ceilings, or was it a period where you had to be more calculated with your physical recovery and adaptation?\nOptions: [A period of rapid physical adaptation where I felt nearly invincible and capable of endless volume. | A time of careful physical management, navigating minor setbacks while learning to integrate new training patterns. | A chapter defined by intense experimentation, pushing my threshold through trial and error in this new environment.]"
+        },
+        {
+          "role": "user",
+          "content": "A time of careful physical management, navigating minor setbacks while learning to integrate new training patterns."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At age 20, leading into The Beijing 2008 Games, the user was navigating a transformative period marked by relocation and a deliberate shift in their athletic discipline.",
+        "physical_context": "This chapter required a measured, intelligent approach to physical adaptation, balancing the desire for high-volume training with the need to carefully manage minor setbacks.",
+        "athletic_engagement": "The user was in a state of high-intensity experimentation, fully committed to reaching the upper limits of their physiological capacity despite the life-stage transition.",
+        "signals": [
+          "competitive",
+          "recovery_mode",
+          "relocation",
+          "major_life_event",
+          "peak_fitness"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 9,
+          "matched_profile_name": "Boat Run",
+          "pathway_standing": "Rowing",
+          "pathway_adaptive": "Adaptive Rowing (e.g., Men's Single Scull ASM1x)",
+          "scout_verdict": "At 20 years old, standing at 184cm and 88kg, you arrived at the precipice of The Beijing 2008 Games with a body primed for the grueling, repetitive intensity of the water. Your recent relocation and commitment to high-performance athletics provided the mental grit required to synchronize your power with the unforgiving cadence of a racing shell. You were not just training; you were learning to anchor your endurance to the rhythm of a crew, finding a flow state that harnessed your aerobic potential to its absolute peak.\n\nIn the adaptive realm, this path is defined by the ASM1x classification, designed for athletes who require specialized stabilization due to trunk mobility considerations. Because the boat requires absolute kinetic chain synchronization, your physical transition into this discipline necessitated a high degree of technical precision. Here, you utilized your natural reach and raw aerobic capacity to drive the scull forward, turning the mechanical challenge of the classification into a testament of sustained force that defined your contribution to the era."
+        },
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+          "scout_verdict": "If the boat was about collective harmony, the road provided the solitary laboratory you needed to test your own physiological limits. As a 20-year-old navigating a major life transition, you channeled your drive into the methodical, data-centric world of cycling. This pathway rewarded your recovery-focused approach, allowing you to fine-tune your power-to-weight ratio during the intense training cycles preceding The Beijing 2008 Games. It was a pursuit of individual excellence, where every watt generated was a measure of your personal breakthrough.\n\nWithin the H3 classification for handcycling, you operated as an athlete utilizing hand-crank propulsion from a reclined or kneeling position, an architecture that demands exceptional upper-body endurance and trunk efficiency for those with impaired lower-limb or trunk function. This environment allowed you to treat the road as a proving ground for your discipline. Unlike the team-based coordination of your other potential pathway, this mode focused entirely on your self-paced dedication, forcing you to master the physics of wind resistance and terrain as you pushed toward the upper limits of your capabilities."
+        }
+      ],
+      "eval_result": {
+        "overall": 7,
+        "summary": "A strong, highly compliant scouting report that correctly leverages the 2008 era, though it makes a minor creative leap interpreting the user's 'late start' as a 'relocation' or 'major life transition'. The physical archetype mapping is very solid for rowing.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "The user's 184cm / 88kg build is an excellent match for the raw power and leverage needed in Rowing (Boat Run), and highly suitable for flat-road cycling or track endurance."
+        },
+        "personalization": {
+          "score": 7,
+          "reasoning": "It successfully incorporates the user's desire to test 'physiological limits', though it slightly misinterprets 'a transition later in life' as a physical 'recent relocation'."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The two pathways are meaningfully contrasted, directly comparing the collective harmony of the rowing shell with the solitary, data-centric laboratory of the road."
+        },
+        "life_stage_coherence": {
+          "score": 8,
+          "reasoning": "The narrative explicitly frames the user as a 20-year-old at their physical prime ('body primed for the grueling... intensity') arriving at The Beijing 2008 Games, perfectly matching the Elite Peak target."
+        },
+        "interview_quality": {
+          "score": 7,
+          "reasoning": "The questions logically progress from metabolic engine to training history to motivation, with distinct options that effectively narrow down the athlete's profile."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean execution with correct 'The Beijing 2008 Games' formatting and respectful, accurate adaptive classifications (ASM1x, H3)."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2036,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "How has your physical foundation held up, and what is your current philosophy on maintaining your peak capacity as you enter this legacy chapter?\nOptions: [Prioritizing recovery-centric methodologies to maintain high-output capacity. | Adapting my training volume to focus on sustained technical mastery and movement quality. | Transitioning to strategic, lower-impact training modalities that allow for continued competitive growth.]"
+        },
+        {
+          "role": "user",
+          "content": "Transitioning to strategic, lower-impact training modalities that allow for continued competitive growth."
+        },
+        {
+          "role": "narrator",
+          "content": "What is the primary motivation driving your athletic participation as you step into this era\u2014are you focused on personal mastery, sharing the torch with others, or continuing to push the envelope of what is physically possible at this stage?\nOptions: [Seeking personal mastery and refining my own competitive peak. | Transitioning into a mentorship role, using my experience to guide the next generation. | Testing the absolute limits of my physiological capacity through specialized competitive focus.]"
+        },
+        {
+          "role": "user",
+          "content": "Testing the absolute limits of my physiological capacity through specialized competitive focus."
+        },
+        {
+          "role": "narrator",
+          "content": "At 48, how have you balanced the demands of your personal and professional life with the rigorous requirements of your high-performance athletics routine?\nOptions: [Deeply integrated into my daily life, using my training as a consistent anchor for my broader responsibilities. | Structured around intense, seasonal blocks that allow me to focus entirely on peaking for specific competitive milestones. | Evolved into a highly specialized, community-driven process where I train within a dedicated, performance-focused network.]"
+        },
+        {
+          "role": "user",
+          "content": "Deeply integrated into my daily life, using my training as a consistent anchor for my broader responsibilities."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 48, the user has reached a legacy phase where their high-performance training is fully integrated into their daily life, serving as a consistent anchor for their broader professional and personal responsibilities.",
+        "physical_context": "The user maintains their peak capacity through a philosophy of strategic, lower-impact training, focusing on longevity and technical mastery without sacrificing competitive output.",
+        "athletic_engagement": "Consistent, highly disciplined, and driven by a relentless focus on testing the absolute limits of their physiological capacity in a competitive environment.",
+        "signals": [
+          "active_training",
+          "peak_fitness",
+          "career_shift"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 9,
+          "matched_profile_name": "Boat Run",
+          "pathway_standing": "Rowing",
+          "pathway_adaptive": "Adaptive Rowing (e.g., Men's Single Scull ASM1x)",
+          "scout_verdict": "At 48, standing on the water as you approach The Ahmedabad 2036 Games, you embody a legacy of endurance that only a late-start commitment can forge. Your 184cm frame is perfectly suited for the rhythmic, sustained output of rowing, where your focus on testing the absolute limits of your physiology finds its highest expression. You\u2019ve evolved from the athlete who navigated the complex shifts of your early career into a master of aerobic intensity, finding that the water offers the ultimate feedback loop for your relentless drive.\n\nIn the adaptive pathway, your classification\u2014ASM1x\u2014refers to athletes with impaired trunk function who utilize a specialized seat and stabilization to translate pure upper-body power into forward motion. For you, this isn't about limitation; it\u2019s about the surgical application of your endurance. By focusing on the stability of the scull, you translate your years of disciplined conditioning into a singular, explosive cadence that thrives in the long-distance grind, proving that the pursuit of personal bests is a craft that only deepens with age."
+        },
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+          "scout_verdict": "As you prepare for The Ahmedabad 2036 Games, this path highlights your transition from raw athletic pursuit to the clinical precision of mechanical efficiency. Your history\u2014building endurance through a deliberate, late-start dedication\u2014finds its peak here. You aren't just training for distance anymore; you are refining the aerodynamic profile of a veteran athlete who understands that every watt saved is a testament to technical mastery, fitting for a legacy stage where consistency is your greatest weapon.\n\nThe adaptive pathway, H3, is the classification for athletes with impaired lower-limb function who compete using an arm-powered handcycle. This shifts the focus away from the repetitive, full-body demand of the oars and onto the high-cadence, strategic endurance required for tactical road racing. This archetype leans into your capacity for long-term consistency, where your training, which you've anchored into your daily professional and personal life, allows you to master the nuances of gear ratios and wind resistance. It provides a secondary, high-velocity outlet that treats your endurance as a precision instrument, perfectly suited to the road-race demands of an experienced competitor."
+        }
+      ],
+      "eval_result": {
+        "overall": 9,
+        "summary": "An exceptional scouting report that seamlessly integrates the user's specific biometrics, age, and interview answers into a highly plausible, mechanically sound narrative.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "A 184cm, 88kg frame aligns perfectly with the power-endurance demands of rowing and cycling, especially given the user's explicit preference for sustained aerobic conditioning."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The verdicts directly weave in the user's specific interview answers, notably their 'late-start commitment' and desire to 'test the absolute limits' of their physiology."
+        },
+        "distinctness": {
+          "score": 9,
+          "reasoning": "The adaptive pathways (ASM1x Rowing and H3 Handcycling) offer genuinely distinct, technically detailed biomechanical alternatives that go far beyond just adding 'Adaptive' to the title."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Targeting age 48 at the Legacy stage, the narrative beautifully captures a master athlete refining their craft, explicitly noting that their consistency is a weapon and their pursuit 'deepens with age'."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions successfully narrowed the athlete's profile from broad physical traits to specific competitive motivations, providing clear, distinct forks that informed the final result."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean pass with correct usage of 'The Ahmedabad 2036 Games' and no prohibited terminology."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

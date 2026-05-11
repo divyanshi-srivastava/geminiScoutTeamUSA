@@ -32,13 +32,17 @@ USER REQUEST
      └──► FINAL JSON → SSE → Frontend
 ```
 
-> Note: The Supervisor Agent was removed in v2. Mode selection is now handled in Python (`streamer.py`). See [`architecture-evolution.md`](architecture-evolution.md) for the full history.
+> Notes:
+> - The Supervisor Agent was removed in v2. Mode selection is handled in Python (`streamer.py`).
+> - Pipelines vary by mode: SCOUTING runs scout → narrator → compliance → eval; INTERVIEW and TIME_TRAVEL_INTERVIEW run narrator → compliance only.
+> - Compliance output is shape-validated by the streamer; on divergence, Narrator's pre-compliance draft is used and a `compliance_agent / Hallucination` trace event is emitted (see [v4 detail](architecture/v4-scout-input-standardisation.md)).
+> - See [`architecture-evolution.md`](architecture-evolution.md) for the full pipeline history.
 
 ---
 
 ## Logger Agent: Rules & Output Spec
 
-The Logger Agent receives a context dump from the Supervisor after each pipeline step and must output a **single-line, data-specific trace** — maximum 150 characters.
+The Logger Agent is called directly from `streamer.py` after every in-pipeline agent step (Scout, Narrator, Compliance, Eval). It receives the agent's accumulated thinking tokens and a one-line quick-summary of the agent's output, and must produce a **single-line, data-specific trace** — maximum 150 characters. The Logger never goes through Compliance.
 
 ### Anti-Patterns (Banned Boilerplate)
 
@@ -57,14 +61,16 @@ Each SSE trace event has:
 ```json
 {
   "type": "trace",
-  "agent": "scout_agent | narrator_agent | compliance_agent | supervisor_agent | logger_agent",
-  "event": "Thought | RequestReceived | AssemblingContext | ...",
+  "agent": "scout_agent | narrator_agent | compliance_agent | eval_agent | logger_agent | user | system",
+  "event": "Thinking | Thought | Approved | Changed | Hallucination | UserAction | ...",
   "timestamp": "HH:MM:SS",
-  "detail": "<the actual intelligence trace — this is the primary text>"
+  "detail": "<the human-readable intelligence trace>",
+  "before": "<optional: pre-compliance text, present on Changed and Hallucination events>",
+  "after":  "<optional: post-compliance text, present on Changed and Hallucination events>"
 }
 ```
 
-The `detail` field from the **Logger Agent** is the human-readable intelligence trace. The `event` name from other agents is a raw ADK event class name used for secondary display only.
+The `detail` field from the **Logger Agent** is the human-readable intelligence trace. Other `event` values are emitted directly by the streamer: `Thinking` (live thought tokens from any agent), `Approved` / `Changed` (compliance diff result), `Hallucination` (compliance shape-validation failure — see [v4 detail](architecture/v4-scout-input-standardisation.md)), and `UserAction` (frontend-originated trace).
 
 ---
 
@@ -120,9 +126,10 @@ Q2: Training frequency + team sport background. [READY] not yet (minimum 3 requi
 | Scout       | Gold      | `#c5a44e` | Data analysis        |
 | Narrator    | Amber     | `#e3ce6f` | Storytelling         |
 | Compliance  | Red       | `#f87171` | Quality gate / risk  |
-| Supervisor  | Purple    | `#a78bfa` | Orchestration        |
+| Eval        | Green     | `#34d399` | Quality scoring      |
 | Logger      | Green     | `#34d399` | System trace         |
 | System      | Slate     | `#94a3b8` | Internal events      |
+| User        | Slate     | `#94a3b8` | Frontend-originated  |
 
 ---
 

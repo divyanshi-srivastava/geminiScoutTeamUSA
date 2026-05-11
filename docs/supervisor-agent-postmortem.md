@@ -71,7 +71,7 @@ Notable finding: the supervisor's thinking showed it understood the `transfer_to
 **Result**: Valuable for diagnosis. No effect on routing.
 
 ### 4. Model Selection
-The supervisor was initially configured with an unspecified model, later locked to `gemini-2.5-flash-lite` (written as `gemini-3.1-flash-lite` in the codebase — this may need correction).
+The supervisor was initially configured with an unspecified model, later locked to `gemini-3.1-flash-lite` (the same lite tier all in-pipeline agents settled on).
 
 **Result**: No meaningful difference in routing reliability observed across model variants tested.
 

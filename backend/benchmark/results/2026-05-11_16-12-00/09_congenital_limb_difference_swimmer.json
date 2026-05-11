@@ -1,0 +1,265 @@
+{
+  "persona_id": "09_congenital_limb_difference_swimmer",
+  "persona_label": "Congenital limb difference \u2014 adaptive swimmer",
+  "biometrics": {
+    "height_cm": 168,
+    "weight_kg": 63,
+    "birth_year": 1997,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To help me understand where your physical potential truly lies, how would you characterize your history with movement and your training focus over the last few years?\nOptions: [A dedicated focus on strength, hypertrophy, and raw power development. | A sustained emphasis on cardiovascular endurance and metabolic pacing. | A concentration on technical precision, reactive speed, and agile movement patterns.]"
+    },
+    {
+      "role": "user",
+      "content": "A concentration on technical precision, reactive speed, and agile movement patterns."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep in the flow of your training, which environment pushes you to your absolute peak?\nOptions: [High-pressure, solo competitive arenas where performance depends entirely on your own internal focus and technical execution. | Dynamic team environments that require constant communication, shared tactical awareness, and split-second spatial coordination. | Unpredictable, natural terrains where the primary challenge is your ability to adapt to changing surfaces and environmental variables.]"
+    },
+    {
+      "role": "user",
+      "content": "High-pressure, solo competitive arenas where performance depends entirely on your own internal focus and technical execution."
+    },
+    {
+      "role": "narrator",
+      "content": "When you encounter a plateau or a moment where your performance stalls, how do you typically approach the obstacle in your sporting journey?\nOptions: [Aggressive analytical breakdown: I dissect the failure, isolate the technical flaw, and methodically rebuild my mechanics from the ground up. | Psychological recalibration: I shift my mindset, lean into the mental discipline of the task, and intensify my focus to break through the barrier through sheer determination. | Tactical pivot: I analyze the landscape for an alternative route or strategy, favoring the ability to adapt and find a new angle to succeed.]"
+    },
+    {
+      "role": "user",
+      "content": "Aggressive analytical breakdown: I dissect the failure, isolate the technical flaw, and methodically rebuild my mechanics from the ground up."
+    },
+    {
+      "role": "narrator",
+      "content": "With your focus on technical execution and high-pressure, solo performance, I believe we have a clear view of your path forward."
+    },
+    {
+      "role": "user",
+      "content": "That sounds right, so let's get back to the pool and put those adjustments into practice."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Your 168cm, 63kg frame acts as a high-performance instrument of physics, perfectly calibrated for the demands of high-velocity movement. As an 'Edge Carver,' your propensity for dissecting technical flaws and rebuilding your mechanics translates directly into the micro-adjustments required for elite-level edge control on the slopes or the ice. You thrive in the isolation of the starting gate, where the chaos of the environment is silenced by your absolute focus on the trajectory ahead.\n\nLooking toward The 2026 Games, your approach is defined by a relentless search for efficiency in motion. This pursuit of perfection ensures that every movement is calculated, every turn is optimized for speed, and your mental state remains consistent under immense pressure. By viewing your performance as a dynamic interaction between your body and the terrain, you consistently elevate your standard of competition, turning every high-velocity descent into a masterclass of refined mechanical power and graceful, calculated athleticism."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Women's FITA Round Open)",
+      "scout_verdict": "While the 'Edge Carver' profile taps into your kinetic intensity, 'Steady Hand' offers a profound counterpoint: the mastery of stillness. Here, your analytical mind finds its ultimate expression not in navigating obstacles at speed, but in the radical simplification of the body. You are built for the quiet, high-stakes discipline of the range, where the world narrows down to your heart rate, your grip, and the target. This demands a complete mastery of your internal environment, where you must remain steady through rigorous discipline.\n\nIn the FITA Round Open archery classification\u2014which welcomes athletes with physical impairments who compete in a seated or standing capacity based on their functional profile\u2014success depends on the near-meditative alignment of intent and technical execution. Your habit of 'aggressive analytical breakdown' serves you here as you tune your equipment and posture to the millimetre. This pathway demands that you strip away everything that isn't essential, transforming your drive for self-directed mechanical mastery into a singular, unwavering point of focus. It is the perfect complement to your active athletic life, providing a space where your capacity for absolute mental clarity defines your legacy at The 2026 Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, well-tailored scouting report that effectively translates the user's analytical and precise mindset into two highly distinct athletic archetypes.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The 'Edge Carver' and 'Steady Hand' archetypes perfectly align with the user's preference for solo competition and technical precision, while the 168cm/63kg build is highly plausible for alpine skiing and archery."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The scout seamlessly weaves the user's specific interview choice of 'aggressive analytical breakdown' into the narratives for both high-speed edge control and quiet marksmanship."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two profiles offer a brilliant contrast, contrasting the high-velocity kinetic demands of Alpine Skiing with the near-meditative mastery of stillness required in Archery."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions provide clearly distinct forks (e.g., solo vs. team vs. unpredictable terrains) that effectively narrow down the athlete's psychological and physical profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with correct 'The 2026 Games' formatting and no trademark or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2020,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "What did your daily life look like when you were 23 and preparing for the intensity of that cycle?\nOptions: [Full-time athlete status, with my days entirely dedicated to training cycles and recovery. | Balancing intensive, high-performance training with university studies or early career responsibilities. | Navigating a period of significant personal change or relocation that required me to adapt my training environments constantly.]"
+        },
+        {
+          "role": "user",
+          "content": "Balancing intensive, high-performance training with university studies or early career responsibilities."
+        },
+        {
+          "role": "narrator",
+          "content": "How was your body responding to that intense, dual-demand lifestyle back then\u2014were you in a chapter of peak consistency, or did you have to navigate the nuances of physical recovery and maintenance to keep your training on track?\nOptions: [A period of absolute peak durability, where my body thrived under the load and allowed for uninterrupted, consistent technical refinement. | A cycle of active management, where I had to balance intensity with proactive recovery to mitigate the physical toll of such a demanding daily schedule. | An era of adaptation, where I was working through specific recovery needs or structural adjustments to ensure my performance remained sharp.]"
+        },
+        {
+          "role": "user",
+          "content": "A cycle of active management, where I had to balance intensity with proactive recovery to mitigate the physical toll of such a demanding daily schedule."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 23, you were navigating the high-wire act of balancing demanding high-performance training cycles with the intellectual and temporal pressures of university studies or early career foundations.",
+        "physical_context": "Your body required a sophisticated, disciplined approach to maintenance, treating active recovery as a non-negotiable pillar of your daily performance rather than an afterthought.",
+        "athletic_engagement": "You maintained a sharp, analytical competitive intensity, consistently refining your mechanics to sustain peak performance in solo, high-pressure sporting environments.",
+        "signals": [
+          "active_training",
+          "competitive",
+          "recovery_mode",
+          "student_era"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 13,
+          "matched_profile_name": "Edge Carver",
+          "pathway_standing": "Alpine Skiing / Speed Skating",
+          "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+          "scout_verdict": "At The Tokyo 2020 Games, your reputation as an architect of movement was forged in the isolation of the training arena. At 23, standing at 168cm and 63kg, you approached your discipline not merely as a test of speed, but as a mechanical puzzle waiting to be solved. By meticulously dissecting every turn and edge-engagement, you transformed failure into data, allowing you to rebuild your technical foundation with a clinical, analytical intensity that few could sustain during those high-pressure years.\n\nYour journey in the standing discipline was defined by the transition from raw effort to refined geometry. While others relied on intuition, you relied on the absolute physics of your performance. Whether navigating the high-stakes corridors of the speed skating oval or the technical slopes, your ability to isolate flaws in your mechanics and correct them in real-time meant that you were not just competing against the clock\u2014you were competing against the imperfections of your own execution."
+        },
+        {
+          "matched_profile_id": 1,
+          "matched_profile_name": "Air Sculptor",
+          "pathway_standing": "Artistic Gymnastics",
+          "pathway_adaptive": "Adaptive Swimming (e.g., Women's 100 m Freestyle S6)",
+          "scout_verdict": "Within the high-pressure aquatic environment, you discovered a vital extension of your technical rigor. The S6 classification, which categorizes athletes with short stature, certain amputations, or moderate coordination impairments, became the stage for your second act. Here, your technical precision\u2014the same discipline you used to troubleshoot your mechanics\u2014was redirected toward maximizing hydrodynamics and stroke economy. Your ability to maintain a 'recovery-focused' mental state ensured that even during high-intensity training, your movements remained fluid and calculated.\n\nThis archetype offers a profound contrast to your standing performance, shifting the emphasis from the high-velocity precision of the speed track to the rhythmic, tactical mastery of the water. For an athlete whose primary drive is an aggressive, analytical breakdown of movement, the pool served as the ultimate test of control. By mastering the nuances of your aquatic displacement, you proved that your analytical mind was as powerful in the water as it was on land, turning the constraints of the S6 classification into a canvas for a sophisticated, highly controlled performance."
+        }
+      ],
+      "eval_result": {
+        "overall": 7,
+        "summary": "A solid, highly personalized report that cleverly incorporates the user's final conversational input about 'the pool' into the adaptive pathway, yielding a tailored and distinct analysis.",
+        "authenticity": {
+          "score": 7,
+          "reasoning": "The Edge Carver archetype fits the biometrics (168cm, 63kg) reasonably well for precision-based speed sports, though the standing pathway completely ignores the user's explicit mention of swimming."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The narrative directly incorporates the user's choice of 'aggressive analytical breakdown' and seamlessly weaves their mention of the pool into the adaptive evaluation."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The pathways are highly distinct, contrasting the high-velocity edge control of speed skating with the rhythmic, hydrodynamic mastery of adaptive swimming."
+        },
+        "life_stage_coherence": {
+          "score": 8,
+          "reasoning": "At age 23 in the Elite Peak stage, the language correctly frames the athlete as actively competing in 'high-pressure years' with a refined technical foundation."
+        },
+        "interview_quality": {
+          "score": 7,
+          "reasoning": "The questions effectively narrowed down the athlete's psychological and environmental preferences, with distinct options that logically steered the archetype mapping."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Correctly uses 'The Tokyo 2020 Games' and avoids all restricted terminology."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2028,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you prepare for this peak, what has been the defining priority shaping your daily life during these years of preparation?\nOptions: [Total immersion in competitive refinement, stripping away non-essential obligations to focus entirely on peak optimization. | Integrating a complex new professional role alongside training, finding a synergy between work-based discipline and athletic mastery. | Broadening your impact through mentorship or team-building, where your pursuit of excellence serves as a foundation for others.]"
+        },
+        {
+          "role": "user",
+          "content": "Total immersion in competitive refinement, stripping away non-essential obligations to focus entirely on peak optimization."
+        },
+        {
+          "role": "narrator",
+          "content": "With this level of focus on your athletic mastery, how has your relationship with your body changed during these years of intensive preparation?\nOptions: [My body has become more resilient, allowing me to handle a higher volume and intensity of training than I ever could have sustained in my early twenties. | I have had to become far more surgical and preventative, prioritizing structural integrity and recovery to ensure I can maintain this peak-level output. | I have transitioned toward a phase of deep refinement, finding that I am gaining speed and efficiency by perfecting my mechanical execution rather than increasing the physical load.]"
+        },
+        {
+          "role": "user",
+          "content": "I have transitioned toward a phase of deep refinement, finding that I am gaining speed and efficiency by perfecting my mechanical execution rather than increasing the physical load."
+        },
+        {
+          "role": "narrator",
+          "content": "As you stand on the precipice of this competitive cycle in the lead-up to The LA28 Games, how has your internal environment shifted compared to the balancing act you navigated back in 2020?\nOptions: [I have stripped away all external professional noise to create a monastically focused training environment. | I have learned to leverage my professional experiences to bring a new level of strategic, high-stakes composure to my training sessions. | I have embraced a period of intense mentorship and peer-leadership, finding that helping others sharpen their craft has clarified my own technical path.]"
+        },
+        {
+          "role": "user",
+          "content": "I have stripped away all external professional noise to create a monastically focused training environment."
+        },
+        {
+          "role": "narrator",
+          "content": "As you define your peak at 31, how have you adapted your actual training mechanics compared to that more frantic, multi-faceted era?\nOptions: [Shifting toward high-intensity, explosive blocks that prioritize quality over quantity to maintain structural integrity. | Focusing on a high-volume, precision-heavy workload that emphasizes technical efficiency and sustained metabolic control. | Integrating complex, variable-speed training to push the boundaries of reactive speed and fine-tuned motor control.]"
+        },
+        {
+          "role": "user",
+          "content": "Focusing on a high-volume, precision-heavy workload that emphasizes technical efficiency and sustained metabolic control."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 31, heading into The LA28 Games, the user has transitioned from the multi-faceted, high-pressure balancing act of their early twenties to a state of total, monastic immersion in their craft.",
+        "physical_context": "The focus has shifted from raw high-intensity loading to a high-volume, precision-heavy regimen, emphasizing technical efficiency and structural longevity over sheer physical volume.",
+        "athletic_engagement": "Maintains a peak-performance, solo-execution mindset, treating every session as a surgical refinement of metabolic control and mechanical technique.",
+        "signals": [
+          "active_training",
+          "peak_fitness",
+          "competitive"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 13,
+          "matched_profile_name": "Edge Carver",
+          "pathway_standing": "Alpine Skiing / Speed Skating",
+          "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+          "scout_verdict": "Your 168cm, 63kg frame is an instrument designed for the high-velocity precision of The LA28 Games. As an 'Edge Carver,' you thrive where physics meets the knife-edge of control. In the standing pathway, your tendency for aggressive analytical breakdown allows you to find tenths of a second in the way you carve a turn, treating each descent as a series of technical problems to be solved with absolute, uncompromising focus.\n\nIn your adaptive pathway, you face the specialized challenge of the LW12 classification, which encompasses athletes with significant lower-limb impairment competing in a seated position. Here, your 'monastic immersion' becomes your greatest asset; because you cannot shift your weight through your legs, you must master the delicate, surgical manipulation of your center of gravity through core engagement and upper-body tension. The seat becomes an extension of your own skeletal structure, requiring the same hyper-analytical approach to every micro-adjustment you would use in your standing technical training."
+        },
+        {
+          "matched_profile_id": 3,
+          "matched_profile_name": "Steady Hand",
+          "pathway_standing": "Marksmanship (Rifle/Pistol)",
+          "pathway_adaptive": "Target Precision (e.g., Archery Women's FITA Round Open)",
+          "scout_verdict": "The 'Steady Hand' profile captures the absolute stillness you seek when the world falls away. At The LA28 Games, your competitive strength lies in your capacity for sustained, deep-tissue focus. Standing on the line, you transform your internal pressure into a rhythmic, almost meditative execution\u2014deconstructing the mechanics of your trigger release with the same cold, analytical intensity you apply to your training plateaus. You are not just aiming; you are mapping the trajectory of your own nervous system.\n\nFor your adaptive pathway, you step into the FITA Round Open archery category. This classification allows for specific equipment adaptations for athletes with physical limitations, demanding a profound level of body awareness to stabilize your shot despite varying levels of physical output. While the 'Edge Carver' path emphasizes velocity, this pathway requires a shift toward intense, rhythmic coordination. You will rely on your signature technical precision to manage the draw weight and wind resistance, treating each release as an act of surgical refinement that perfectly mirrors your commitment to metabolic and mechanical control."
+        }
+      ],
+      "eval_result": {
+        "overall": 6,
+        "summary": "The report provides strong pathway distinctions and follows compliance rules, but it ignores the user's specific mention of swimming at the end of the interview and inserts hallucinated quotes.",
+        "authenticity": {
+          "score": 6,
+          "reasoning": "The 168cm/63kg build fits the technical archetypes well, but ignoring the user's explicit reference to 'the pool' undermines the believability of the scout's assessment."
+        },
+        "personalization": {
+          "score": 5,
+          "reasoning": "It successfully incorporates the user's 'aggressive analytical breakdown' choice, but inexplicably quotes 'monastic immersion' which the user never said, completely missing their custom input about swimming."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The two pathways offer an excellent contrast between high-velocity dynamic control (Edge Carver) and static, deep-focus precision (Steady Hand), with adaptive profiles that add genuine biomechanical insight."
+        },
+        "life_stage_coherence": {
+          "score": 8,
+          "reasoning": "Targeting age 31 at the Elite Peak life stage, the narrative focuses on refined mechanics, treating performance as technical problems to be solved\u2014a perfect fit for a mature competitor."
+        },
+        "interview_quality": {
+          "score": 5,
+          "reasoning": "While the questions offer distinct functional forks, the heavily prescriptive, multiple-choice style options feel more like an automated questionnaire than an organic scouting conversation."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean compliance pass with correct usage of 'The LA28 Games' and no prohibited IP or NIL violations."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

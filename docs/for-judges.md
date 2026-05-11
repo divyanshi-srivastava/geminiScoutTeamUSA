@@ -26,7 +26,7 @@ The timeline feature lets users explore their entire athletic arc across Games h
 **Functionality — 15-persona pipeline benchmark:**
 The project includes an automated benchmark system that runs 15 diverse pre-written personas through the full live backend (HTTP, not mocked) and produces a scored report. This is our primary regression guard. See `backend/benchmark/README.md`.
 
-Latest benchmark run: 15 personas × 3 rounds = 45 runs, 45/45 succeeded. Overall pipeline score: **7.4/10** (up from 5.5 at baseline — +1.9 overall, +3.8 distinctness, +2.2 authenticity). Score history is tracked in `backend/benchmark/results/history.jsonl`.
+Latest benchmark run: 15 personas, 15/15 succeeded, with the v4 hallucination defenses in place. Overall pipeline score: **7.2/10**, time-travel `life_stage_coherence` 8.4 averaged across 30 hops, zero compliance failures. The earlier v3c peak of 7.4/10 was on the same persona set across 3 rounds. Score history is tracked in `backend/benchmark/results/history.jsonl`. The master evaluator can be re-run on any past run without re-running personas: `python -m benchmark.run_benchmark --regenerate latest`.
 
 **Gemini integration — multi-agent reasoning chain:**
 Five Gemini agents run in sequence on every scouting request:
@@ -37,10 +37,10 @@ scout_agent → narrator_agent → compliance_agent → eval_agent
                                     (+ logger_agent called after each step)
 ```
 
-- **Scout** uses `gemini-2.5-flash` to perform structured biometric matching with a 14-profile manifest
-- **Narrator** uses `gemini-2.5-flash` to personalize the scout's technical output into a compelling 2–4 paragraph narrative
-- **Compliance** uses `gemini-2.5-flash` to enforce IOC brand rules and adaptive parity silently
-- **Eval** uses `gemini-2.5-pro-preview` to score the completed result across 6 dimensions — it never modifies output
+- **Scout** uses `gemini-3.1-flash-lite` to perform structured biometric matching with a 14-profile manifest, with a Step 7 output verification that re-reads every emitted field against the manifest before allowing JSON emission
+- **Narrator** uses `gemini-3.1-flash-lite` to personalize the scout's technical output into a compelling 2–4 paragraph narrative
+- **Compliance** uses `gemini-3.1-flash-lite` to enforce IOC brand rules and adaptive parity silently; the streamer validates Compliance's output shape against Narrator's pre-compliance draft and reverts on divergence
+- **Eval** uses `gemini-3.1-pro-preview` to score the completed result across 6 dimensions — it never modifies output
 - **Logger** uses `gemini-3.1-flash-lite` to translate internal agent reasoning into plain English for the sidebar
 
 All agents run via **Google ADK `SequentialAgent`** — deterministic Python sequencing with `output_key` passing between agents. No LLM routing; no flaky orchestration.
@@ -63,6 +63,17 @@ The same manifest has `adaptive_M` and `adaptive_F` fields on every profile. Ste
 
 **Innovation — Eval agent as continuous quality feedback:**
 The eval agent runs on every scouting result and scores across 6 dimensions. These scores appear in the frontend Judge's Vault and feed the benchmark master evaluator. The benchmark system tracks score history across runs, making quality regressions visible. See [`backend/agents/instructions/eval.md`](../backend/agents/instructions/eval.md).
+
+**Innovation — Defense-in-depth against agent hallucinations:**
+The benchmark surfaced two leak paths: Scout occasionally inventing archetype names not in the 14-profile manifest, and Compliance occasionally fabricating a scout-result while reviewing a time-travel interview question. Both were closed by defenses at every layer rather than a single fix:
+
+- **Scout Step 7** verifies every output field character-for-character against the manifest before JSON emission.
+- **Compliance shape validation** in `streamer.py` classifies the JSON shape of Narrator's draft and Compliance's output. If they differ, Compliance is discarded and Narrator's draft is used; a `compliance_agent / Hallucination` trace event is emitted so the recovery is visible to judges.
+- **Pipeline emit contract** — `_PIPELINE_EMIT_TYPE` makes the SSE event type a function of pipeline name, never of output shape. A hallucinated scout-array from `time_travel_pipeline` cannot leak into the result channel.
+- **Frontend `looksLikeResult()`** in `stream.service.ts` is a strict shape detector that never classifies a payload with a `question` field as a result.
+- **Era result caching** in `state.service.ts` makes revisiting a Games year instant, eliminating the per-click LLM round trip and the narrative drift from rerunning the same era.
+
+Full writeup: [`docs/architecture/v4-scout-input-standardisation.md`](architecture/v4-scout-input-standardisation.md).
 
 ---
 
@@ -97,7 +108,8 @@ The compliance agent silently rewrites violations before output reaches the fron
 | Score history | `backend/benchmark/results/history.jsonl` |
 | Frontend components | `frontend/src/app/components/` |
 | Architecture postmortem (Supervisor removal) | `docs/supervisor-agent-postmortem.md` |
-| Architecture evolution (v1 → v3) | `docs/architecture-evolution.md` |
+| Architecture evolution (v1 → v4) | `docs/architecture-evolution.md` |
+| Hallucination defenses (v4) | `docs/architecture/v4-scout-input-standardisation.md` |
 
 ---
 

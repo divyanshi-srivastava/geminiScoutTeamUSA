@@ -1,6 +1,6 @@
-# Architecture Evolution — v1 to v3
+# Architecture Evolution — v1 to v4
 
-This document traces how the Gemini Scout pipeline changed across three architectural generations. Each change was driven by a concrete failure mode discovered in the live system.
+This document traces how the Gemini Scout pipeline changed across four architectural generations. Each change was driven by a concrete failure mode discovered in the live system.
 
 ---
 
@@ -42,6 +42,30 @@ Full detail: [v3 detail](architecture/v3-instruction-tuning.md)
 
 ---
 
+## v4 — Hallucination Defenses (Days 6–7)
+
+By v3c the benchmark was at 7.4 with zero compliance failures, but two failure modes still leaked through under live use that the scalar score did not penalise heavily:
+
+- **Scout** occasionally invented archetype names not in the 14-profile manifest ("Tactical Scholar", "The Strategist") when biometric matches were ambiguous, and occasionally recommended weight classes physically incompatible with the user's weight.
+- **Compliance** occasionally hallucinated entirely new content in time-travel interview mode — replacing a Narrator-authored era question with a fabricated scout-array, which the streamer then emitted to the frontend as a scouting result.
+
+v4 closed both holes with a package of defenses rather than a new agent or pipeline restructure:
+
+- **Scout output verification** — a MANDATORY CONSTRAINT block, a weight-class plausibility check at Step 0, and a Step 7 that verifies every output field character-for-character against the manifest before emitting JSON.
+- **Compliance shape validation in `streamer.py`** — every JSON output is classified into a shape (`question`, `scout-array`, `era-signal`, etc.). Compliance is required to preserve the shape it received from Narrator. If shapes diverge, the Compliance output is discarded and Narrator's pre-compliance draft is used.
+- **Pipeline emit contract** — the SSE event type (`result` vs `interview`) is now derived from the pipeline name, never from the output shape. A hallucinated scout-array inside `time_travel_pipeline` can no longer reach the result channel by mimicking its shape.
+- **Frontend defensive parsing** — `looksLikeResult()` in `stream.service.ts` is a strict shape detector. `era_ready_to_scout` mid-stream signals are discriminated from question payloads before any state mutation.
+- **Era result caching** — revisiting a Games year is instant; no second LLM round-trip, no narrative drift from LLM nondeterminism.
+- **`CONTENT_RULES` header + canonical Games name lookup** — single source of truth for forbidden terms / eval criteria; `_games_name(year)` injects canonical Games names so Compliance no longer has to rewrite "The 2028 Games" → "The LA28 Games".
+
+The instinct from an earlier proposal — "remove ERA_CONTEXT from Scout's input entirely" — was tried on paper and discarded. Hardening Scout's output verification (Step 7) closed the hallucination gap without giving up the additional context. The discarded proposal and the reasoning for not shipping it are documented in [v4 detail](architecture/v4-scout-input-standardisation.md).
+
+The first benchmark run after v4 (`2026-05-11_15-05-29`) scored 7.2 overall with `life_stage_coherence` of 8.4 on time travel hops. The slight dip from v3c's 7.4 reflects the master evaluator surfacing a separate finding — premature interview truncation on three personas — that v4 did not target.
+
+Full detail: [v4 detail](architecture/v4-scout-input-standardisation.md)
+
+---
+
 ## Principles
 
 A few things became clear across this process:
@@ -55,3 +79,7 @@ A few things became clear across this process:
 **Structural constraints beat prompt instructions for correctness.** The gender hallucination wasn't fixable with a better filter instruction. It was fixed by putting the right value in the manifest so the agent could copy it rather than infer it.
 
 **Session isolation matters.** `InMemorySessionService` accumulates function calls across requests. Fresh session IDs per request are required for stateless API behavior.
+
+**Output verification beats output trust.** Once a benchmark caught Scout inventing archetype names, the fix that stuck was not a softer instruction — it was a hard `Step 7` that re-reads every output field against the manifest before allowing JSON emission. Instructing the model not to hallucinate is weaker than instructing it to verify.
+
+**Defend at every layer.** The Compliance shape check, the pipeline emit contract, and the frontend's `looksLikeResult()` parser are three independent defenses against the same class of failure (a hallucinated payload reaching the user as the wrong screen). Each is cheap; together they make the failure structurally impossible. When the cost of a defense is low and the cost of the failure is high, redundancy is the right call.

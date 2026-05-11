@@ -74,11 +74,11 @@ each step → logger_agent → Intelligence Trace sidebar
 
 | Agent | Model | Role |
 |---|---|---|
-| **Scout** | Gemini 2.5 Flash | Euclidean biometric matching + interview signal scoring against 14-profile manifest. Gender-resolves adaptive pathway. Enforces dimension distinctness. |
-| **Narrator** | Gemini 2.5 Flash | Personalises scout output into a 2–4 paragraph narrative using the user's specific answers and profile tone. Runs era mini-interview in Time Travel mode. |
-| **Compliance** | Gemini 2.5 Flash | Enforces NIL rules, IOC brand terminology, and adaptive parity. Rewrites violations silently — users never see non-compliant output. |
-| **Eval** | Gemini 2.5 Pro | Scores the completed result across 6 quality dimensions. Never modifies output — assessment only. Scores appear in the Judge's Vault. |
-| **Logger** | Gemini 2.5 Flash | Translates each agent's internal reasoning steps into plain English trace lines for the real-time sidebar. |
+| **Scout** | `gemini-3.1-flash-lite` | Euclidean biometric matching + interview signal scoring against 14-profile manifest. Gender-resolves adaptive pathway. Enforces dimension distinctness. Step 7 output verification rejects manifest-invalid output before emit. |
+| **Narrator** | `gemini-3.1-flash-lite` | Personalises scout output into a 2–4 paragraph narrative using the user's specific answers and profile tone. Runs era mini-interview in Time Travel mode. |
+| **Compliance** | `gemini-3.1-flash-lite` | Enforces NIL rules, IOC brand terminology, and adaptive parity. Rewrites violations silently — users never see non-compliant output. Output shape is validated against Narrator's pre-compliance draft; if shapes diverge, the Compliance output is discarded and Narrator's draft is used. |
+| **Eval** | `gemini-3.1-pro-preview` | Scores the completed result across 6 quality dimensions. Never modifies output — assessment only. Scores appear in the Judge's Vault. |
+| **Logger** | `gemini-3.1-flash-lite` | Translates each agent's internal reasoning steps into plain English trace lines for the real-time sidebar. |
 
 ### 2. Paralympic Parity — Built Into the System, Not Bolted On
 
@@ -116,9 +116,10 @@ The Eval Agent scores every result across 6 dimensions: Authenticity, Personaliz
 | v2 baseline | 5.5 | 5.4 | 8.0 | 6.7 | 4.4 | 15/15 |
 | v3a | 6.0 | 6.3 | 8.3 | 7.3 | 5.2 | 15/15 |
 | v3b | 6.5 | 5.9 | 7.9 | 7.6 | 6.1 | 45/45 |
-| **v3c (current)** | **7.4** | **7.6** | **8.0** | **7.6** | **8.2** | **45/45** |
+| v3c | 7.4 | 7.6 | 8.0 | 7.6 | 8.2 | 45/45 |
+| **v4 (current)** | **7.2** | **7.5** | **7.9** | **6.8** | **8.2** | **15/15** |
 
-Baseline → current: **+1.9 overall · +2.2 authenticity · +3.8 distinctness · zero compliance failures.**
+Baseline → current: **+1.7 overall · +2.1 authenticity · +3.8 distinctness · zero compliance failures.** v4's dip in interview quality reflects a new finding the master evaluator surfaced (premature interview truncation on three personas) — captured as a follow-up; the hallucination defenses introduced in v4 are not measured by the scalar score.
 
 ---
 
@@ -128,7 +129,7 @@ Baseline → current: **+1.9 overall · +2.2 authenticity · +3.8 distinctness �
 |---|---|
 | **Frontend** | Angular 19, TypeScript, CSS custom properties |
 | **Backend** | FastAPI (Python), Server-Sent Events (SSE) |
-| **AI / Agents** | Google ADK `SequentialAgent` + `LlmAgent`, Gemini 2.5 Flash + Gemini 2.5 Pro |
+| **AI / Agents** | Google ADK `SequentialAgent` + `LlmAgent`, `gemini-3.1-flash-lite` (Scout, Narrator, Compliance, Logger) + `gemini-3.1-pro-preview` (Eval) |
 | **Hosting** | Firebase Hosting (frontend), Google Cloud Run (backend) |
 | **Auth** | Google Application Default Credentials via Vertex AI |
 
@@ -155,10 +156,11 @@ The engineering decisions behind Gemini Scout are fully documented — including
 | Document | What It Covers |
 |---|---|
 | [`docs/for-judges.md`](docs/for-judges.md) | Direct mapping of every feature to judging criteria |
-| [`docs/architecture-evolution.md`](docs/architecture-evolution.md) | How the pipeline evolved from v1 (Supervisor LLM) → v3 (SequentialAgent + Eval) |
+| [`docs/architecture-evolution.md`](docs/architecture-evolution.md) | How the pipeline evolved from v1 (Supervisor LLM) → v4 (hallucination defenses) |
 | [`docs/architecture/v1-supervisor-agent.md`](docs/architecture/v1-supervisor-agent.md) | Why the Supervisor failed — the ADK `transfer_to_agent` root cause |
 | [`docs/architecture/v2-sequential-agent.md`](docs/architecture/v2-sequential-agent.md) | SequentialAgent design and the failure modes it exposed |
 | [`docs/architecture/v3-instruction-tuning.md`](docs/architecture/v3-instruction-tuning.md) | All 11 instruction changes with benchmark score deltas + agent context reference table |
+| [`docs/architecture/v4-scout-input-standardisation.md`](docs/architecture/v4-scout-input-standardisation.md) | Hallucination defenses — Scout output verification, Compliance shape validation, frontend defensive parsing, era result caching |
 | [`docs/supervisor-agent-postmortem.md`](docs/supervisor-agent-postmortem.md) | Full postmortem on 8 failed approaches before the Supervisor was removed |
 | [`docs/time-travel.md`](docs/time-travel.md) | Time travel — headers, flow, era memory, state management |
 | [`docs/logger.md`](docs/logger.md) | Intelligence Trace — design and trace format spec |

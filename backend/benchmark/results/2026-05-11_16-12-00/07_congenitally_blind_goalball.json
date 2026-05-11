@@ -1,0 +1,240 @@
+{
+  "persona_id": "07_congenitally_blind_goalball",
+  "persona_label": "Congenitally blind \u2014 goalball and tandem cycling",
+  "biometrics": {
+    "height_cm": 165,
+    "weight_kg": 60,
+    "birth_year": 1992,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start mapping out your sporting journey, how would you describe your historical relationship with physical training and structured competition?\nOptions: [Competitive roots: I grew up in structured, high-intensity team environments. | Late-bloomer intensity: I discovered my passion for performance and training later in life. | Exploration-based: I prefer diverse, self-guided movement and individual skill-based challenges.]"
+    },
+    {
+      "role": "user",
+      "content": "Competitive roots: I grew up in structured, high-intensity team environments."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking at your current relationship with training, how have you adapted that competitive drive to your life today?\nOptions: [Dedicated Maintenance: I still prioritize structured, coach-led sessions to stay sharp. | Performance Pivot: I have shifted my focus toward individual challenges and personal mastery. | Dynamic Integration: I blend high-intensity training with varied, functional modalities to keep my physical pathways diverse.]"
+    },
+    {
+      "role": "user",
+      "content": "Dedicated Maintenance: I still prioritize structured, coach-led sessions to stay sharp."
+    },
+    {
+      "role": "narrator",
+      "content": "When you step into a training session, what is the primary objective that currently fuels your intensity and focus?\nOptions: [Explosive output and reactive speed: Focusing on high-force, short-duration athletic performance. | Precision and technical refinement: Focusing on efficiency, complex movement patterns, and control. | Endurance and structural resilience: Focusing on sustained power, cardiovascular longevity, and long-term durability.]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive output and reactive speed: Focusing on high-force, short-duration athletic performance."
+    },
+    {
+      "role": "narrator",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "Given my background in goalball, I prioritize refining my spatial orientation and reaction time to ensure I remain a dominant force on the court."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+      "scout_verdict": "Your history in high-intensity team environments serves as the perfect engine for the explosive demands of the track. With a 165cm, 60kg frame, you possess a low center of gravity that is ideal for the rapid, reactive force development required to clear the blocks with speed. At 34, your transition into this high-performance athletics pathway leverages your mature, structured approach to training, turning your focus on reactive power into a weapon of acceleration. You will focus on the biomechanical efficiency of your drive phase and the consistency of your transition out of the set position, ensuring every muscle fiber contributes to peak velocity.\n\nIn the adaptive high-performance athletics pathway, you enter a specialized sprint classification designed for athletes with lower-limb considerations who compete in a standing position. Your competitive foundation in goalball is your greatest asset here; the acute spatial awareness and reaction time that defined your court dominance translate directly to the kinetic requirements of the sprint start. By leveraging your established discipline, this pathway challenges you to synchronize your explosive power with the technical mastery of your gait. You will refine every micro-movement and coordination pattern to ensure that your drive into the first thirty meters is fluid and efficient, culminating in a powerful presence on the track at the Brisbane 2032 Games."
+    },
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Women's Tournament)",
+      "scout_verdict": "Where the sprint track demands solitary, explosive bursts, the court demands a different brand of intensity. Your background in goalball has already honed your ability to process sensory information and navigate complex spatial patterns in real-time, making you a natural candidate for the 'Net Presence' archetype. This role is less about individual linear velocity and more about tactical endurance, shifting your focus toward precision, court vision, and the orchestration of team play under high-pressure conditions. You will develop an expanded repertoire of offensive and defensive movements designed to dominate the paint and anticipate the flow of competitive play.\n\nTransitioning into the wheelchair basketball pathway requires a shift in your physical engagement, emphasizing core stability and the rhythmic, sustained energy expenditure of match play. This discipline moves you away from the singular goal of reaction-based sprinting and into a multifaceted, coach-led environment where your ability to anticipate movement and manage a fluid, strategic game becomes the focal point. It is a challenge of coordination and sustained technical mastery, offering a high-intensity stage that values your deep-seated competitive drive. You will learn to utilize the chair as an extension of your own movement, harmonizing your upper-body strength with strategic positioning to anchor your team effectively at the Brisbane 2032 Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly personalized and well-contrasted scouting report that effectively utilizes the user's specific sport background, though the interview history contains a minor formatting glitch in the final turn.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "While the 165cm and 60kg frame perfectly suits the explosive 'Block Starter' sprint archetype, it is a bit undersized for standing 'Net Presence' basketball, though it remains plausible for a specialized guard or wheelchair role."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdict excellently weaves the user's explicit mention of 'goalball' and their need for 'spatial orientation and reaction time' into the rationales for both track and court pathways."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The report provides a strong contrast between the 'solitary, explosive bursts' of sprinting and the 'tactical endurance' and team orchestration required for basketball."
+    },
+    "interview_quality": {
+      "score": 6,
+      "reasoning": "The initial questions logically narrow down the user's athletic profile with distinct options, but the final turn features an empty Narrator prompt which disrupts the conversational flow."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Correctly utilizes 'the Brisbane 2032 Games' format and successfully avoids restricted terms like 'Olympic' or 'Paralympic'."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2012,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you reflect on that specific moment in 2012, what was the primary demand of your daily existence outside the training ground\u2014were you balancing your high-performance commitments with academic pressures, the start of a career, or were you entirely consumed by the pursuit of sporting excellence?\nOptions: [Academic pursuit: Navigating the pressures of university life while chasing peak performance. | Professional transition: Diving headfirst into early career demands while maintaining a rigid training schedule. | Pure immersion: Dedicating every ounce of your focus solely to your training and team evolution.]"
+        },
+        {
+          "role": "user",
+          "content": "Pure immersion: Dedicating every ounce of your focus solely to your training and team evolution."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 20 years old, heading into The London 2012 Games, you were in a state of total immersion, dedicating your entire daily rhythm to team evolution and the pursuit of peak performance.",
+        "physical_context": "Your physical state was defined by the high-force, explosive demands of goalball, with a focus on maintaining peak reactive speed and spatial orientation.",
+        "athletic_engagement": "You were fully embedded in a high-performance, structured competitive pathway, with your life entirely centered on your role within the team.",
+        "signals": [
+          "competitive",
+          "peak_fitness",
+          "active_training"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 6,
+          "matched_profile_name": "Mat Technician",
+          "pathway_standing": "Wrestling",
+          "pathway_adaptive": "Powerlifting (e.g., Women's 67 kg)",
+          "scout_verdict": "At 20 years old, arriving at The London 2012 Games, you bring the rare, high-intensity reactive speed honed on the court to the raw environment of the wrestling mat. Standing at 165cm and 60kg, your physical build provides a dense, low center of gravity that is essential for neutralizing an opponent\u2019s leverage. Your life at this stage is defined by total immersion in competition, and the explosive power you once used to defend a goal now translates into a clinical, high-force defensive mastery that dominates the mat's tactical space.\n\nIn the adaptive pathway, your transition to Powerlifting honors that same uncompromising demand for structural resilience and explosive output. Powerlifting focuses on the foundational capacity to generate maximum force in short-duration windows, a requirement that perfectly mirrors your athletic history of reactive speed. By leveraging your natural density, you find an environment where precise, maximal effort replaces the chaos of the court, allowing you to master your own physical capacity through controlled, heavy-load resistance."
+        },
+        {
+          "matched_profile_id": 11,
+          "matched_profile_name": "Net Presence",
+          "pathway_standing": "Wheelchair Basketball (e.g., Women's Tournament)",
+          "pathway_adaptive": "Wheelchair Basketball (e.g., Women's Tournament)",
+          "scout_verdict": "Your presence at The London 2012 Games is underscored by the years of tactical evolution spent mastering the court. As a specialist in spatial orientation, you possess an innate ability to read the movement of others before it manifests, a skill-set that remains your primary competitive edge. Whether in high-stakes team environments or individual maneuvers, you function as the orchestrator of your own trajectory, utilizing a level of court vision that turns the game into a mental chess match played at high speed.\n\nThis adaptive pathway, utilizing a formal classification system that evaluates athletes based on functional trunk control and physical movement capacity, is the ideal stage for your skill-set. By transitioning into this high-intensity team dynamic, you leverage the same reactive coordination and spatial fluency that defined your journey. You are no longer just reacting to sound or proximity; you are commanding the movement of the entire court, translating your deep history of team-structured athletic engagement into a sophisticated display of tactical dominance."
+        }
+      ],
+      "eval_result": {
+        "overall": 4,
+        "summary": "While the narrative beautifully integrates the user's custom goalball background, the pipeline output contains a fatal flaw by assigning an adaptive sport to a standing pathway.",
+        "authenticity": {
+          "score": 4,
+          "reasoning": "The biometrics align well with Wrestling, but placing Wheelchair Basketball as a standing sport is a categorical error that breaks the reality of the scouting report."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The verdict expertly weaves in the user's custom input about goalball, specifically referencing their reliance on 'sound or proximity' and 'spatial orientation'."
+        },
+        "distinctness": {
+          "score": 1,
+          "reasoning": "The second archetype completely fails this metric by literally assigning 'Wheelchair Basketball' for both the standing and adaptive pathways."
+        },
+        "life_stage_coherence": {
+          "score": 8,
+          "reasoning": "Appropriately targets a 20-year-old at their Elite Peak by highlighting their 'total immersion in competition' heading into The London 2012 Games."
+        },
+        "interview_quality": {
+          "score": 6,
+          "reasoning": "The initial questions offer meaningfully distinct forks regarding training style and intensity, though the final turn drops the prompt entirely."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean execution with correct 'The London 2012 Games' formatting and no restricted IP or trademarks."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2024,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "As you prepared for those Games, how did you navigate the interplay between your athletic commitments and the broader demands of your life outside the arena?\nOptions: [Professional Integration: I balanced elite competition with a demanding full-time career trajectory. | Total Immersion: I committed every available resource exclusively to the pursuit of peak performance and the podium. | Mentorship Transition: I focused on bridging the gap between my own competitive output and guiding the next generation of athletes.]"
+        },
+        {
+          "role": "user",
+          "content": "Professional Integration: I balanced elite competition with a demanding full-time career trajectory."
+        },
+        {
+          "role": "narrator",
+          "content": "How was your body responding to that level of intensity at 32, and how did that reality shift your approach to your training sessions?\nOptions: [Optimized Longevity: I transitioned from raw, high-volume sessions to smarter, recovery-focused methodology. | Unwavering Intensity: My physical capacity for explosive, high-force output remained my core strength, and I maintained my rigorous training intensity. | Strategic Adaptation: I began integrating cross-disciplinary, low-impact training to manage physical load while keeping my reactive speed razor-sharp.]"
+        },
+        {
+          "role": "user",
+          "content": "Strategic Adaptation: I began integrating cross-disciplinary, low-impact training to manage physical load while keeping my reactive speed razor-sharp."
+        },
+        {
+          "role": "narrator",
+          "content": ""
+        }
+      ],
+      "era_context_summary": {
+        "life_context": "At 32, you were navigating the high-stakes intersection of elite athletic competition and a demanding full-time professional career.",
+        "physical_context": "You shifted toward a smarter, cross-disciplinary methodology to manage physical load while preserving the razor-sharp reactive speed central to your performance.",
+        "athletic_engagement": "You maintained a elite-level commitment to your sport, utilizing the tactical foundations of your goalball background to refine efficiency.",
+        "signals": [
+          "active_training",
+          "peak_fitness",
+          "career_shift"
+        ]
+      },
+      "scouting_result": [
+        {
+          "matched_profile_id": 4,
+          "matched_profile_name": "Block Starter",
+          "pathway_standing": "100m/200m Sprints",
+          "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+          "scout_verdict": "At The Paris 2024 Games, the track demands a visceral, instantaneous reaction\u2014a challenge that your history in goalball has perfectly prepared you for. At 165cm and 60kg, you possess an ideal power-to-weight ratio for explosive acceleration. Your commitment to structured, coach-led training has refined your fast-twitch fibers, allowing you to treat every race as a singular, high-intensity expression of kinetic energy.\n\nIn the ambulatory sprinting classification, which encompasses athletes with a lower-limb impairment who compete standing, your performance is defined by the synchronization of your explosive start with impeccable technical grace. By channeling the same reactive speed you once used to track a ball across a court, you transform the starting block into a launchpad. At 32, you are not merely racing; you are mastering the physics of velocity, using your physical maturity to execute clinical, lightning-fast bursts of power that command the track."
+        },
+        {
+          "matched_profile_id": 6,
+          "matched_profile_name": "Mat Technician",
+          "pathway_standing": "Wrestling",
+          "pathway_adaptive": "Powerlifting (e.g., Women's 67 kg)",
+          "scout_verdict": "While the track requires pure velocity, your presence at The Paris 2024 Games within this pathway celebrates the tactical, grounded side of your athletic identity. Wrestling requires the same high-stakes spatial awareness and core stability you perfected during your years of high-level goalball. You are no longer chasing the burst; you are managing the pressure, using your 60kg frame to create leverage and dominate the mat through precise, deliberate force application.\n\nYour adaptive pathway, specifically in competitive powerlifting, focuses on the structural mastery of your body. This discipline rewards the 'Dedicated Maintenance' mindset you\u2019ve cultivated, emphasizing clinical technical precision over raw, chaotic output. By treating each lift as a tactical problem to be solved, you leverage your athletic background to achieve a level of sustained, controlled force that many athletes only reach in their prime. Here, your maturity is your greatest asset\u2014a testament to a career built on efficiency and the pursuit of perfect, repeatable execution."
+        }
+      ],
+      "eval_result": {
+        "overall": 7,
+        "summary": "A highly personalized and well-written scouting report that successfully integrates the user's specific answers, though it slightly misses the mark on the adaptive classification implication.",
+        "authenticity": {
+          "score": 6,
+          "reasoning": "While the 165cm/60kg biometrics perfectly fit the Block Starter and Mat Technician archetypes, assigning a T44 (lower-limb) adaptive pathway completely misses the vision-impairment implication of the user's explicitly stated Goalball background."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The narrative directly incorporates both the custom 'goalball' input and the 'Dedicated Maintenance' multiple-choice answer to explain the athlete's spatial awareness and training mindset."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The two pathways offer a stark, meaningful contrast between the explosive velocity of sprinting and the grounded, pressure-management focus of wrestling and powerlifting."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "At age 32 (Elite Peak), the verdict appropriately emphasizes 'physical maturity' and reaching a level of execution that athletes 'only reach in their prime,' perfectly matching the life stage."
+        },
+        "interview_quality": {
+          "score": 7,
+          "reasoning": "The questions offer meaningfully distinct options (e.g., explosive output vs endurance) that genuinely branch the athletic profile, leading to a logical archetype fit."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "The report correctly uses the approved 'The Paris 2024 Games' format and avoids any restricted terminology."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

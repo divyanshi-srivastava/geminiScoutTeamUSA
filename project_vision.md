@@ -23,14 +23,15 @@ The Narrator Agent leads a conversational onboarding. No cold forms.
 
 ## Act 2: The Scout Report
 
-A 4-agent pipeline runs after the interview:
+A 5-agent pipeline runs after the interview:
 
 | Agent | Role |
 |---|---|
-| **Scout** | Maps biometrics to the closest archetype from a 12-profile manifest using Euclidean distance + keyword matching |
+| **Scout** | Maps biometrics to the closest archetype from a 14-profile manifest using Euclidean distance + interview signal keyword scoring. Step 7 output verification re-reads every field against the manifest before allowing emission. |
 | **Narrator** | Rewrites Scout's technical verdict into a personalized 2–4 paragraph story using the user's interview answers |
-| **Compliance** | Silently fixes any IOC brand violations (standalone "Olympic", NIL references, parity gaps) |
-| **Logger** | Interprets each agent's internal reasoning in real-time, translating thought tokens into plain English for the judge's sidebar |
+| **Compliance** | Silently fixes any IOC brand violations (standalone "Olympic", NIL references, parity gaps). Shape-validated by the streamer; hallucinated output is reverted to Narrator's pre-compliance draft. |
+| **Eval** | Scores the final compliance-approved result across 6 dimensions (Authenticity, Personalization, Interview Quality, Pathway Distinctness, Life-Stage Coherence, Compliance). Assessment only — never modifies output. |
+| **Logger** | Interprets each agent's internal reasoning in real-time, translating thought tokens into plain English for the Intelligence Trace sidebar |
 
 The result page shows:
 - **Scout Verdict** — the Narrator's personalized story (top panel)
@@ -79,7 +80,7 @@ Each agent's thought tokens are captured by the streamer and immediately passed 
 The sidebar accumulates logs across the entire session — interview, scouting, and time travel jumps. Judges can scroll back through the full reasoning history.
 
 See `docs/logger.md` for the full Logger architecture spec.
-See `docs/time_travel.md` for the full Time Travel implementation spec.
+See `docs/time-travel.md` for the full Time Travel implementation spec.
 
 ---
 
@@ -110,7 +111,7 @@ Backend (FastAPI + Google ADK)
 | `[SYSTEM: MODE \| TIME_TRAVEL_INTERVIEW]` | Era mini-interview | Narrator (era mode) → Compliance → return question |
 
 ### Key Invariants
-- Scout and Compliance are never modified for time travel — only Narrator and Supervisor
+- Scout and Compliance are never modified for time travel — only Narrator's mode changes
 - `matched_profile_id`, `matched_profile_name`, `pathway_standing`, `pathway_adaptive` are always locked fields — never rewritten by downstream agents
 - The Logger never goes through Compliance — it's internal/judge-facing content
-- Phase 0 docs (this file + `docs/time_travel.md` + agent `.md` instructions) are the source of truth — code must match them, not the other way around
+- Phase 0 docs (this file + `docs/time-travel.md` + agent `.md` instructions) are the source of truth — code must match them, not the other way around
