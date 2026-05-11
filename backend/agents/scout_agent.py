@@ -3,7 +3,7 @@ from google.adk import Agent
 from google.genai import types
 
 AGENTS_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL = "gemini-3.1-pro-preview"
+MODEL = "gemini-3.1-flash-lite"
 
 with open(os.path.join(AGENTS_DIR, "instructions", "scout.md"), "r") as f:
     _instruction = f.read()

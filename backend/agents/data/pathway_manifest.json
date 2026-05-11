@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Air Sculptor",
+    "dimension": "Precision/Technical",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       14,
@@ -43,7 +44,9 @@
     },
     "pathways": {
       "standing": "Artistic Gymnastics",
-      "adaptive": "Adaptive Swimming (e.g., Women's 100 m Freestyle S6)",
+      "adaptive": "Adaptive Swimming (e.g., 100 m Freestyle S6)",
+      "adaptive_M": "Adaptive Swimming (e.g., Men's 100 m Freestyle S6)",
+      "adaptive_F": "Adaptive Swimming (e.g., Women's 100 m Freestyle S6)",
       "adaptive_alternatives": [
         "Para-Archery",
         "Para-Boccia",
@@ -91,6 +94,7 @@
   {
     "id": 2,
     "name": "Long Haul",
+    "dimension": "Endurance",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       20,
@@ -132,7 +136,9 @@
     },
     "pathways": {
       "standing": "Distance Running",
-      "adaptive": "Wheelchair Racing (e.g., Women's Marathon T54)",
+      "adaptive": "Wheelchair Racing (e.g., Marathon T54)",
+      "adaptive_M": "Wheelchair Racing (e.g., Men's Marathon T54)",
+      "adaptive_F": "Wheelchair Racing (e.g., Women's Marathon T54)",
       "adaptive_alternatives": [
         "Para-Triathlon",
         "Para-Cycling Road Race"
@@ -180,6 +186,7 @@
   {
     "id": 3,
     "name": "Steady Hand",
+    "dimension": "Precision/Technical",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       25,
@@ -221,7 +228,9 @@
     },
     "pathways": {
       "standing": "Marksmanship (Rifle/Pistol)",
-      "adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "adaptive": "Target Precision (e.g., Archery FITA Round Open)",
+      "adaptive_M": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "adaptive_F": "Target Precision (e.g., Archery Women's FITA Round Open)",
       "adaptive_alternatives": [
         "Para-Boccia",
         "Para-Shooting R3 Mixed",
@@ -271,6 +280,7 @@
   {
     "id": 4,
     "name": "Block Starter",
+    "dimension": "Power/Strength",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       18,
@@ -312,7 +322,9 @@
     },
     "pathways": {
       "standing": "100m/200m Sprints",
-      "adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "adaptive": "Ambulatory Sprints (e.g., 100 m T44)",
+      "adaptive_M": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "adaptive_F": "Ambulatory Sprints (e.g., Women's 100 m T44)",
       "adaptive_alternatives": [
         "Para-Swimming Sprint Events",
         "Para-Cycling Track Sprint"
@@ -358,6 +370,7 @@
   {
     "id": 5,
     "name": "Bar Raiser",
+    "dimension": "Power/Strength",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       19,
@@ -399,7 +412,9 @@
     },
     "pathways": {
       "standing": "High Jump / Pole Vault",
-      "adaptive": "Standing High Jump (e.g., Men's High Jump T47)",
+      "adaptive": "Standing High Jump (e.g., High Jump T47)",
+      "adaptive_M": "Standing High Jump (e.g., Men's High Jump T47)",
+      "adaptive_F": "Standing High Jump (e.g., Women's High Jump T47)",
       "adaptive_alternatives": [
         "Para-Long Jump",
         "Para-Triple Jump"
@@ -443,6 +458,7 @@
   {
     "id": 6,
     "name": "Mat Technician",
+    "dimension": "Power/Strength",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       18,
@@ -484,7 +500,9 @@
     },
     "pathways": {
       "standing": "Wrestling",
-      "adaptive": "Powerlifting (e.g., Men's +100 kg)",
+      "adaptive": "Powerlifting",
+      "adaptive_M": "Powerlifting (e.g., Men's 100 kg)",
+      "adaptive_F": "Powerlifting (e.g., Women's 67 kg)",
       "adaptive_alternatives": [
         "Para-Judo",
         "Para-Boccia"
@@ -528,6 +546,7 @@
   {
     "id": 7,
     "name": "Swiss Army",
+    "dimension": "Endurance",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       21,
@@ -569,7 +588,9 @@
     },
     "pathways": {
       "standing": "Decathlon",
-      "adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "adaptive": "Multi-Discipline Athletics (e.g., Pentathlon P44)",
+      "adaptive_M": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "adaptive_F": "Multi-Discipline Athletics (e.g., Women's Pentathlon P44)",
       "adaptive_alternatives": [
         "Para-Triathlon",
         "Para-Biathlon"
@@ -612,6 +633,7 @@
   {
     "id": 8,
     "name": "Streamline",
+    "dimension": "Endurance",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       16,
@@ -653,7 +675,9 @@
     },
     "pathways": {
       "standing": "Swimming",
-      "adaptive": "Adaptive Swimming (e.g., Men's 400 m Freestyle S10)",
+      "adaptive": "Adaptive Swimming (e.g., 400 m Freestyle S10)",
+      "adaptive_M": "Adaptive Swimming (e.g., Men's 400 m Freestyle S10)",
+      "adaptive_F": "Adaptive Swimming (e.g., Women's 400 m Freestyle S10)",
       "adaptive_alternatives": [
         "Para-Rowing",
         "Para-Canoe Sprint"
@@ -698,6 +722,7 @@
   {
     "id": 9,
     "name": "Boat Run",
+    "dimension": "Endurance",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       20,
@@ -740,6 +765,8 @@
     "pathways": {
       "standing": "Rowing",
       "adaptive": "Adaptive Rowing (e.g., Mixed Coxed Four LTAMix4+)",
+      "adaptive_M": "Adaptive Rowing (e.g., Men's Single Scull ASM1x)",
+      "adaptive_F": "Adaptive Rowing (e.g., Women's Single Scull ASW1x)",
       "adaptive_alternatives": [
         "Para-Canoe Sprint",
         "Para-Cycling Road Race"
@@ -784,6 +811,7 @@
   {
     "id": 10,
     "name": "Launch Force",
+    "dimension": "Power/Strength",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       22,
@@ -825,7 +853,9 @@
     },
     "pathways": {
       "standing": "Bobsleigh / Push Sports",
-      "adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+      "adaptive": "Seated Throws (e.g., Discus Throw F56)",
+      "adaptive_M": "Seated Throws (e.g., Men's Discus Throw F56)",
+      "adaptive_F": "Seated Throws (e.g., Women's Discus Throw F56)",
       "adaptive_alternatives": [
         "Para-Powerlifting",
         "Para-Athletics Sprint F11"
@@ -869,6 +899,7 @@
   {
     "id": 11,
     "name": "Net Presence",
+    "dimension": "Precision/Technical",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       18,
@@ -910,7 +941,9 @@
     },
     "pathways": {
       "standing": "Basketball",
-      "adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "adaptive": "Wheelchair Basketball (e.g., Tournament)",
+      "adaptive_M": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "adaptive_F": "Wheelchair Basketball (e.g., Women's Tournament)",
       "adaptive_alternatives": [
         "Sitting Volleyball",
         "Para-Athletics High Jump T47"
@@ -954,6 +987,7 @@
   {
     "id": 12,
     "name": "Iron Shoulder",
+    "dimension": "Power/Strength",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       22,
@@ -995,7 +1029,9 @@
     },
     "pathways": {
       "standing": "Field Athletics (Discus/Shot Put)",
-      "adaptive": "Seated Shot Put (e.g., Women's Shot Put C3)",
+      "adaptive": "Seated Shot Put (e.g., Shot Put C3)",
+      "adaptive_M": "Seated Shot Put (e.g., Men's Shot Put C3)",
+      "adaptive_F": "Seated Shot Put (e.g., Women's Shot Put C3)",
       "adaptive_alternatives": [
         "Para-Powerlifting",
         "Para-Discus F32"
@@ -1039,6 +1075,7 @@
   {
     "id": 13,
     "name": "Edge Carver",
+    "dimension": "Precision/Technical",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       16,
@@ -1080,7 +1117,9 @@
     },
     "pathways": {
       "standing": "Alpine Skiing / Speed Skating",
-      "adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "adaptive": "Para-Alpine Skiing (e.g., Super-G Sit-Ski LW12)",
+      "adaptive_M": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "adaptive_F": "Para-Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
       "adaptive_alternatives": [
         "Para-Biathlon",
         "Para-Cross Country Skiing",
@@ -1128,6 +1167,7 @@
   {
     "id": 14,
     "name": "Road Machine",
+    "dimension": "Endurance",
     "adm_stage": "Stage 3: Train & Compete",
     "peak_range": [
       22,
@@ -1169,7 +1209,9 @@
     },
     "pathways": {
       "standing": "Cycling / Triathlon",
-      "adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "adaptive": "Handcycling (e.g., Road Race H3)",
+      "adaptive_M": "Handcycling (e.g., Men's Road Race H3)",
+      "adaptive_F": "Handcycling (e.g., Women's Road Race H3)",
       "adaptive_alternatives": [
         "Para-Triathlon",
         "Para-Biathlon"

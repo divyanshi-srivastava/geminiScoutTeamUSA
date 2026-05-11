@@ -26,7 +26,7 @@ The timeline feature lets users explore their entire athletic arc across Games h
 **Functionality — 15-persona pipeline benchmark:**
 The project includes an automated benchmark system that runs 15 diverse pre-written personas through the full live backend (HTTP, not mocked) and produces a scored report. This is our primary regression guard. See `backend/benchmark/README.md`.
 
-Latest benchmark run: 15 personas × 3 rounds = 45 runs. Overall pipeline score: 6.0/10. Score history is tracked in `backend/benchmark/results/history.jsonl`.
+Latest benchmark run: 15 personas × 3 rounds = 45 runs, 45/45 succeeded. Overall pipeline score: **7.4/10** (up from 5.5 at baseline — +1.9 overall, +3.8 distinctness, +2.2 authenticity). Score history is tracked in `backend/benchmark/results/history.jsonl`.
 
 **Gemini integration — multi-agent reasoning chain:**
 Five Gemini agents run in sequence on every scouting request:

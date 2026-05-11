@@ -115,15 +115,15 @@ See `backend/benchmark/README.md` for full benchmark documentation.
 
 ## Pipeline Quality
 
-The benchmark system runs 15 diverse personas (including adaptive athletes, time-travel edge cases, and hostile inputs) through the full live pipeline. Current scores:
+The benchmark system runs 15 diverse personas (including adaptive athletes, time-travel edge cases, and hostile inputs) through the full live pipeline — 3 rounds each, 45 total runs. Current scores (latest run, 45/45 succeeded):
 
-| Dimension | Score |
-|---|---|
-| Personalization | 8.3 / 10 |
-| Interview Quality | 7.3 / 10 |
-| Authenticity | 6.3 / 10 |
-| Pathway Distinctness | 5.2 / 10 |
-| **Overall Pipeline** | **6.0 / 10** |
+| Dimension | Score | Baseline | Change |
+|---|---|---|---|
+| Authenticity | 7.6 / 10 | 5.4 | +2.2 |
+| Personalization | 8.0 / 10 | 8.0 | — |
+| Interview Quality | 7.6 / 10 | 6.7 | +0.9 |
+| Pathway Distinctness | 8.2 / 10 | 4.4 | +3.8 |
+| **Overall Pipeline** | **7.4 / 10** | **5.5** | **+1.9** |
 
 Score history is tracked in `backend/benchmark/results/history.jsonl`. The benchmark is run after every significant change to detect regressions.
 

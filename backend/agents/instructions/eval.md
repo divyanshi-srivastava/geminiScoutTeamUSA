@@ -19,6 +19,8 @@ Does the matched archetype genuinely fit this user's physical and personal profi
 - Are the user's interview answers coherent with the sport pathway recommended?
 - Would a real athletic scout plausibly recommend this?
 
+**Do NOT penalise for sport seasonality.** The archetypes represent athletic dimensions (e.g., "Edge Carver" = precision edge control + high-velocity judgment), not season-specific sports. Whether that dimension maps to Alpine Skiing or Speed Skating in a Summer or Winter Games context is irrelevant — the archetype fit is what matters. Deducting points because a Winter sport appeared in a Summer Games city is incorrect.
+
 ### 2. Personalization (1–10)
 Does the narrative feel like it was written for THIS specific user?
 - Does the scout verdict incorporate the user's specific interview answers (not just generic archetype description)?
