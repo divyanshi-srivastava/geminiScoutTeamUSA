@@ -1,0 +1,78 @@
+{
+  "persona_id": "03_adaptive_visual_impairment",
+  "persona_label": "Adaptive athlete \u2014 partial visual impairment",
+  "biometrics": {
+    "height_cm": 181,
+    "weight_kg": 83,
+    "birth_year": 1998,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start understanding your athletic profile, how would you describe your natural physical rhythm when you are fully engaged in a challenging activity?\nOptions: [Explosive power and rapid, high-intensity movements. | Sustained endurance, rhythmic pacing, and stamina. | Technical precision, coordination, and complex strategic execution.]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance, rhythmic pacing, and stamina."
+    },
+    {
+      "role": "narrator",
+      "content": "Now that we know you thrive on steady, rhythmic exertion, how do you best channel that energy when you are in the thick of competition?\nOptions: [Solo pursuit, where it is just me against the clock or the terrain. | Team-based strategy, where my endurance fuels a collective objective. | Adaptive environmental challenges, where I have to adjust my pace to changing terrain or unpredictable conditions.]"
+    },
+    {
+      "role": "user",
+      "content": "Team-based strategy, where my endurance fuels a collective objective."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back at what keeps you coming back to high-performance sport, which of these internal drivers resonates most with your long-term ambitions?\nOptions: [The relentless desire to push physical boundaries and break through established performance barriers. | The tactical satisfaction of outsmarting an opponent or solving a complex, unfolding game-state problem. | The deep, quiet fulfillment that comes from mastering a highly technical and disciplined movement pattern.]"
+    },
+    {
+      "role": "user",
+      "content": "The relentless desire to push physical boundaries and break through established performance barriers."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "At 181cm and 83kg, your presence at the range is defined by a deep, quiet composure that belies your high-energy history. While your background is rooted in the relentless pursuit of endurance, the transition to the discipline of the Steady Hand archetype allows you to redirect that internal rhythm into perfect, controlled stillness. At 28, you possess the mental maturity to master the fine-motor control required to perform under immense pressure.\n\nAs you stand on the threshold of The Brisbane 2032 Games, your endurance-honed heart rate management becomes your greatest asset. Where others see a static target, you see a complex system requiring rhythmic breathing and absolute stillness. Your journey here is not about the race, but about the transition from external exertion to internal mastery, proving that the endurance athlete can find their most explosive power in the moment of perfect, unwavering focus."
+    },
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "Your relentless drive to shatter established performance barriers finds its natural home in the Swiss Army archetype. You are an athlete who thrives when the demands on your body shift mid-stride, and your preference for team-based objectives translates into a high-level ability to approach each segment of a multi-discipline event as a critical component of a greater whole. At The Los Angeles 2028 Games, your capacity for sustained stamina will ensure that while your competitors begin to fade in the later stages, your output remains consistent and lethal.\n\nYour profile is built for the complexity of high-performance multi-sport competition. You view the track and the arena as a puzzle, and your refusal to accept physical limits allows you to find speed where others find fatigue. By channeling your need for rhythmic pacing into the intense, variable landscape of this pathway, you transform the concept of endurance into a tactical tool, dominating the scoreboard through sheer, unrelenting versatility."
+    }
+  ],
+  "eval_result": {
+    "overall": 4,
+    "summary": "While the interview questions were well-crafted, the pipeline failed in its archetype matching by assigning a static precision sport to an endurance-focused athlete, and completely neglected the adaptive pathway in its narrative.",
+    "authenticity": {
+      "score": 4,
+      "reasoning": "Assigning 'Steady Hand' (Marksmanship) to an athlete who explicitly selected 'sustained endurance' and 'team-based strategy' is a massive mismatch that forces awkward narrative justification."
+    },
+    "personalization": {
+      "score": 7,
+      "reasoning": "The verdicts successfully integrate specific interview phrases like 'relentless drive to shatter established boundaries' and 'team-based objectives', even if they struggle to fit the sport."
+    },
+    "distinctness": {
+      "score": 2,
+      "reasoning": "The verdicts completely fail to address or differentiate the adaptive pathways, offering only a single generalized narrative for each archetype."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator's questions offer distinct, meaningful choices that effectively separate explosive, endurance, and technical athletic profiles."
+    },
+    "compliance": {
+      "passed": false,
+      "note": "Violation: Significant narrative depth imbalance, as the adaptive pathways are entirely ignored in the actual scout verdicts."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

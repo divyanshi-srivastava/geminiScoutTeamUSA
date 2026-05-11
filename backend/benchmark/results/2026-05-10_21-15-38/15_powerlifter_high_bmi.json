@@ -1,0 +1,77 @@
+{
+  "persona_id": "15_powerlifter_high_bmi",
+  "persona_label": "Competitive powerlifter \u2014 high BMI, elite strength",
+  "biometrics": {
+    "height_cm": 182,
+    "weight_kg": 142,
+    "birth_year": 1991,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our conversation, how would you describe your relationship with physical activity and competitive sport to date?\nOptions: [I have been a competitive athlete throughout my life. | I am looking to build a new foundation and start fresh. | I am returning to a sport I used to love.]"
+    },
+    {
+      "role": "user",
+      "content": "I have been a competitive athlete throughout my life."
+    },
+    {
+      "role": "narrator",
+      "content": "What kind of sporting environments have you thrived in most during your journey\u2014team settings where collaboration is key, or individual pursuits that test your personal limits?\nOptions: [I thrive in team sports. | I prefer individual challenges. | I've enjoyed a mix of both.]"
+    },
+    {
+      "role": "user",
+      "content": "I prefer individual challenges."
+    },
+    {
+      "role": "narrator",
+      "content": "When you look back at the most intense challenges in your sporting journey, have you typically felt more empowered by tests of raw explosive power or tests of long-duration endurance?\nOptions: [Explosive power and strength-based feats. | Endurance and stamina-based challenges. | I thrive when combining elements of both.]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and strength-based feats."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Women's Shot Put C3)",
+      "scout_verdict": "Your history as a lifelong competitor has forged a resolve that is perfectly complemented by your current physical profile. Standing at 182cm and weighing in at 142kg, you possess the rare, dense kinetic chain required to dominate in the throwing circle. At 35, you have entered a stage of life where your technical refinement meets your raw, unbridled power\u2014a combination that is nothing short of formidable.\n\nYou have always thrived on individual challenges, where the only thing standing between you and victory is the weight of the implement and your own capacity to produce force. Whether you are envisioning a future standing in the field at The LA28 Games or navigating the technical precision of a seated throw, your frame acts as an immovable anchor, allowing you to channel every ounce of that explosive energy into a singular, devastating movement. You are not just a participant; you are a powerhouse built for the world stage."
+    },
+    {
+      "matched_profile_id": 10,
+      "matched_profile_name": "Launch Force",
+      "pathway_standing": "Bobsleigh / Push Sports",
+      "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+      "scout_verdict": "There is a specific kind of intensity required to move mass with absolute velocity, and you have demonstrated that you possess that capability in abundance. Your massive, stable frame serves as the foundation for the explosive drive-out mechanics required for push sports or the high-output rotational force needed for the discus circle. This is the archetype of someone who does not just compete\u2014they strike.\n\nYour background in individual, strength-based feats confirms that you have the mental fortitude to isolate yourself in the pursuit of perfection. As you look toward the horizon, perhaps considering the high-performance demands of a future multi-discipline event, your 142kg structure gives you a significant advantage in inertia and momentum. You are ready to be the force that turns potential energy into a game-changing performance at the highest level of international competition."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly authentic and well-personalized scouting report that correctly identifies heavy-mass, power-based sports for this user, though it contains a noticeable gender-mapping error in the adaptive pathway.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "At 182cm and 142kg, the user's immense mass and self-reported explosive power perfectly align with real-world shot putters and bobsleigh push athletes as suggested by the 'Iron Shoulder' and 'Launch Force' archetypes."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The scout verdicts seamlessly weave in the user's exact biometrics alongside their specific interview answers regarding lifelong competition and individual, strength-based feats."
+    },
+    "distinctness": {
+      "score": 6,
+      "reasoning": "While the sports are theoretically distinct, the first profile carelessly recommends 'Women's Shot Put C3' for a male user, and the verdicts rely mostly on the standing sport narrative rather than exploring the adaptive mechanics."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions form a logical funnel, successfully narrowing the user's profile from general experience to team vs. individual settings, and finally differentiating between explosive power and endurance."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "No IP violations were found and the correct 'The LA28 Games' format was used, though the gender inaccuracy in the pathway naming is a data quality issue."
+    }
+  },
+  "backend_error": null
+}

@@ -1,0 +1,77 @@
+{
+  "persona_id": "13_wheelchair_racer_paraplegic",
+  "persona_label": "T4 paraplegic \u2014 wheelchair racer and basketball player",
+  "biometrics": {
+    "height_cm": 163,
+    "weight_kg": 55,
+    "birth_year": 2004,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you best describe your current relationship with competitive sport and physical training?\nOptions: [I have a background in competitive team sports. | I am an experienced individual athlete. | I focus mostly on strength and conditioning training. | I am just beginning my journey into high-performance sport.]"
+    },
+    {
+      "role": "user",
+      "content": "I am an experienced individual athlete."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the middle of your most intense training sessions, what do you find is the primary goal that keeps you pushing forward?\nOptions: [Refining my technical skills and precision | Increasing my raw power and speed | Pushing my endurance limits | Mental toughness and strategic growth]"
+    },
+    {
+      "role": "user",
+      "content": "Increasing my raw power and speed"
+    },
+    {
+      "role": "narrator",
+      "content": "To keep that power consistently high, how many sessions a week do you typically dedicate specifically to high-intensity training?\nOptions: [1-2 sessions | 3-4 sessions | 5+ sessions | It varies based on my cycle]"
+    },
+    {
+      "role": "user",
+      "content": "5+ sessions"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "Your history as an experienced individual athlete has clearly honed your ability to thrive in solitary, high-stakes environments. At 22, with your lean 55.0kg build, you possess the perfect foundation to transition your current 5+ session weekly high-intensity regime into the high-cadence, high-torque world of road cycling. Your drive for raw power and speed is the exact fuel needed to turn a climb into a weapon, allowing you to sustain aggressive efforts that leave the competition behind.\n\nImagine yourself at the starting line of The Brisbane 2032 Games. The focus you\u2019ve built training alone, pushing your limits when no one is watching, becomes your greatest asset. You are no longer just training; you are recalibrating your physiology to handle the sustained power output required to break away from the pack. You are entering your prime years, and your dedication to intensity ensures that when the final sprint begins, you will be the one holding the decisive advantage."
+    },
+    {
+      "matched_profile_id": 2,
+      "matched_profile_name": "Long Haul",
+      "pathway_standing": "Distance Running",
+      "pathway_adaptive": "Wheelchair Racing (e.g., Women's Marathon T54)",
+      "scout_verdict": "The marathon distance is the ultimate test of the individual spirit, a discipline that demands the exact level of grit and solitary focus you have cultivated throughout your athletic journey. At 55.0kg, your physical profile offers a significant advantage in terms of kinetic efficiency, minimizing drag and allowing you to translate your explosive power into the rhythmic, relentless motion of the road. Your current regimen of 5+ intense sessions per week provides the metabolic foundation necessary for long-distance dominance.\n\nAs you look toward the horizon of The Los Angeles 2028 Games, you carry the self-discipline of an athlete who has spent years perfecting their craft. The transition from raw, explosive power to the long-duration endurance required for high-performance racing is a natural evolution for someone with your background. In this arena, you aren't just racing against others; you are mastering the art of the long haul, where your ability to sustain speed during the final miles will define your legacy in the sport."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The report shows strong personalization by weaving interview answers into the narrative, but struggles with authenticity as it assigns endurance-heavy sports to an athlete who explicitly prioritized raw power and speed.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "While the 55kg build fits the assigned sports, suggesting marathon running and road cycling to an athlete who specifically chose 'increasing my raw power and speed' over 'pushing my endurance limits' is a clear mismatch."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts excellently integrate the user's specific inputs, directly referencing their 5+ weekly sessions, exact weight, and background as an individual athlete focused on power."
+    },
+    "distinctness": {
+      "score": 5,
+      "reasoning": "Although the two sports (cycling and running) are different, the narratives feel functionally similar and completely ignore the adaptive pathways, offering zero insight into handcycling or wheelchair racing."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions progress logically from athletic background to training goals and frequency, with the second question offering strong, distinct forks that should have meaningfully guided the archetype selection."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass with correct Games formatting ('The Brisbane 2032 Games') and no restricted terminology."
+    }
+  },
+  "backend_error": null
+}

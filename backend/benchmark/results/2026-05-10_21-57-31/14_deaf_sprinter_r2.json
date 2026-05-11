@@ -1,0 +1,86 @@
+{
+  "persona_id": "14_deaf_sprinter",
+  "persona_label": "Profoundly deaf \u2014 competitive 400m sprinter",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 76,
+    "birth_year": 2001,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To begin, how would you best describe your history with competitive movement and training?\nOptions: [A lifelong athlete, consistently training and competing in organized team or individual sports. | An active life with a focus on functional movement, gym work, and self-directed challenges. | A return to high-performance sport after focusing on other life pursuits; ready to test my limits.]"
+    },
+    {
+      "role": "user",
+      "content": "A lifelong athlete, consistently training and competing in organized team or individual sports."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back on your experience, what element of competition has historically been the biggest driver for your performance?\nOptions: [The raw, immediate thrill of explosive power and reactive speed. | The psychological challenge and deep physical discipline of sustained endurance and tactical pacing. | The relentless pursuit of technical precision and complex motor coordination.]"
+    },
+    {
+      "role": "user",
+      "content": "The psychological challenge and deep physical discipline of sustained endurance and tactical pacing."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward the next chapter of your high-performance sport pathway, which environment do you feel would best elevate your potential?\nOptions: [A data-driven, professional squad environment with constant performance tracking and high-tech support. | A rugged, self-reliant training regime that centers on mental fortitude and internal mastery. | A collaborative, strategy-focused team setting that values tactical synergy and mentorship.]"
+    },
+    {
+      "role": "user",
+      "content": "A data-driven, professional squad environment with constant performance tracking and high-tech support."
+    },
+    {
+      "role": "narrator",
+      "content": "Before we finalize your profile, is there a specific, defining moment in your athletic history\u2014a particular victory or a hard-won lesson\u2014that still shapes how you approach your training today?"
+    },
+    {
+      "role": "user",
+      "content": "Winning my first Deaflympic gold taught me that while the starting pistol is silent to me, my drive to break 46 seconds is deafening."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "Your build\u2014178.0cm and 76.0kg\u2014serves as the perfect chassis for high-velocity output. In the quiet intensity of the blocks, where the world fades into a singular focus, your physical stature acts as a coiled spring, ready to convert potential into raw, explosive momentum. This objective is not just about a specific metric, but a testament to your internal rhythm; it is where your history as a lifelong athlete meets the absolute zenith of power. \n\nAs you stand on the precipice of The Brisbane 2032 Games, this profile highlights your ability to translate the silence of the starting gun into a powerful performance. Every improvement in your execution is a validation of the discipline you've honed throughout your journey, proving that true speed is found when the mind and body act in perfect harmony."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "While the sprint requires sudden ignition, your drive for tactical mastery and endurance finds its true home here. This path transforms your sporting journey into a deep, calculated war of attrition, where every pedal stroke is optimized by the data-driven professional environment you crave. At 25, your ability to sustain high-output levels over grueling distances becomes your greatest asset, distancing you from the pack through sheer mental fortitude and superior pacing strategy.\n\nLooking ahead to The Los Angeles 2028 Games, this profile allows you to treat your body as a precision-engineered instrument. By integrating advanced performance tracking with your inherent discipline, you turn the race into a complex chess match. This is where your passion for analytical training truly shines, rewarding not just the quickest start, but the most efficient, unrelenting engine in the field."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, highly personalized scouting report that skillfully balances the user's conflicting signals between endurance preferences and elite sprint history.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "The 178cm/76kg build fits both profiles well, though assigning 100m/200m sprints slightly misses the 400m implication of breaking 46 seconds."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdict brilliantly incorporates the user's custom input regarding their deafness, referencing the 'silence of the starting gun' alongside their desire for a data-driven environment."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two pathways offer a stark, compelling contrast between explosive track power and calculated road endurance, addressing both sides of the user's interview responses."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The multiple-choice questions offer genuinely distinct athletic philosophies, successfully drawing out the user's specific performance drivers."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly utilizes approved formats like 'The Brisbane 2032 Games' and avoids restricted terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

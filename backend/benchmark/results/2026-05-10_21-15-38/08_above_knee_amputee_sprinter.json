@@ -1,0 +1,77 @@
+{
+  "persona_id": "08_above_knee_amputee_sprinter",
+  "persona_label": "Above-knee amputee \u2014 para-sprinter",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 73,
+    "birth_year": 2000,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our journey, how would you describe your history with competitive sport so far?\nOptions: [I\u2019ve spent years in team-based competition. | I lean toward individual endurance and discipline-focused sports. | I\u2019ve focused primarily on strength and explosive power training. | I'm new to the world of competitive sport and looking to find my path.]"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019ve spent years in team-based competition."
+    },
+    {
+      "role": "narrator",
+      "content": "When you look back on your experience in team-based settings, what aspect of the competition did you find the most rewarding?\nOptions: [The strategic depth and working as a tactical unit. | The adrenaline and high-stakes intensity of the game. | The camaraderie and building shared goals with my teammates.]"
+    },
+    {
+      "role": "user",
+      "content": "The adrenaline and high-stakes intensity of the game."
+    },
+    {
+      "role": "narrator",
+      "content": "When you're facing those high-pressure moments, do you find your focus leaning more toward pure physical output and raw intensity, or is it more about the mental chess match of outmaneuvering your opponent?\nOptions: [Pure physical output and raw intensity. | Mental strategy and outmaneuvering opponents. | A perfect balance of both.]"
+    },
+    {
+      "role": "user",
+      "content": "Pure physical output and raw intensity."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "You are a predator on the track, built to thrive in the split-second world of pure acceleration. Your 175cm, 73kg frame acts as a high-performance engine, optimized for the explosive power-to-weight ratio required to dominate the short-burst discipline. While you cut your teeth in the high-stakes world of team sports, you now find your true calling in the solitary intensity of the sprint, where every millisecond is dictated by your own raw, physical drive.\n\nAt 26, you are entering the prime window for your neuromuscular speed to hit its absolute peak. Standing on the blocks at The 2028 Games, you carry that familiar adrenaline from your team days, but here, it is compressed into a single, kinetic heartbeat. You don't just run; you command the track with the same intensity you once brought to the field, proving that the most explosive unit on the pitch is often the individual who dares to move faster than anyone else."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "Your history of team-based competition taught you the value of tenacity, but the cycling circuit is where your appetite for pure, grueling physical output finds its perfect outlet. With a robust 73kg frame, you possess the structural efficiency to maintain blistering power outputs over long distances. You thrive on the sheer intensity of the race, and this pathway offers the high-stakes battlefield you crave, where the machine and the athlete become a singular, unrelenting force.\n\nWhen you line up for the road race at The 2032 Games, the adrenaline will be palpable\u2014not from the roar of a crowd in a stadium, but from the searing heat in your lungs and the rhythm of your own heart. This discipline demands the same unwavering commitment you brought to your team, requiring you to channel that competitive fire into mechanical output. Here, your drive to outpace the field isn't just about strategy; it's a testament to your ability to sustain peak performance when the physical cost is at its highest."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A highly personalized scouting report that beautifully integrates the user's interview answers, though it falls short in exploring the adaptive pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "A height of 175cm and weight of 73kg provides a strong power-to-weight ratio that realistically supports both explosive sprinting and endurance cycling."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narratives expertly weave in the user's specific background in team sports and their expressed preference for adrenaline and pure physical output."
+    },
+    "distinctness": {
+      "score": 4,
+      "reasoning": "Although two distinct archetypes are presented, the individual scout verdicts completely ignore the adaptive pathways, offering only a single blended narrative for each."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions progress logically from broad athletic history to specific psychological drivers, offering distinct choices that genuinely help narrow the athletic profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution; correctly avoids forbidden terminology while using appropriate Games references."
+    }
+  },
+  "backend_error": null
+}

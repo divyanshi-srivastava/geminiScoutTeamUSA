@@ -1,0 +1,78 @@
+{
+  "persona_id": "02_tall_power_athlete",
+  "persona_label": "Tall male power athlete",
+  "biometrics": {
+    "height_cm": 196,
+    "weight_kg": 103,
+    "birth_year": 2002,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get started, could you tell me a bit about your current relationship with physical training or competitive sport?\nOptions: [I am currently training for a specific competitive sport. | I participate in regular recreational or club-level sports. | I focus primarily on gym-based strength and conditioning. | I am looking to rediscover or start my high-performance athletic journey.]"
+    },
+    {
+      "role": "user",
+      "content": "I am looking to rediscover or start my high-performance athletic journey."
+    },
+    {
+      "role": "narrator",
+      "content": "To help me understand your starting point, could you tell me a bit about your past involvement in sports?\nOptions: [I played competitive team sports in school or university. | I have experience in individual, endurance, or strength-based sports. | I have limited competitive experience, but I have always been physically active. | I am coming at this as a blank slate with a fresh start.]"
+    },
+    {
+      "role": "user",
+      "content": "I played competitive team sports in school or university."
+    },
+    {
+      "role": "narrator",
+      "content": "Given your background in team sports, how would you describe your preferred style of training\u2014do you find your best results in explosive, power-based movements, or are you drawn toward endurance and sustained cardiovascular output?\nOptions: [I lean toward explosive, power-based movements. | I prefer endurance and sustained intensity. | I am a hybrid and enjoy a mix of both. | I'm still discovering where my body excels.]"
+    },
+    {
+      "role": "user",
+      "content": "I lean toward explosive, power-based movements."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "scout_verdict": "At 196cm and 103kg, you command the court with an authority that few can match. Your background in competitive team sports is your greatest asset, providing you with the spatial awareness and tactical instincts to thrive under pressure. You don\u2019t just play the game; you control the flow, acting as the fulcrum for your squad\u2019s offensive and defensive strategies.\n\nImagine the electric energy of The LA28 Games, where every second on the clock is a battle for dominance. Your explosive power turns routine court transitions into devastating surges of momentum. At 24 years old, you are entering your prime, ready to become the heartbeat of your team. This is your moment to convert your athletic history into court-based excellence."
+    },
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Women's Shot Put C3)",
+      "scout_verdict": "Power is your language, and at 103kg, you possess the raw, kinetic engine required to master the throwing circle. Your preference for explosive, power-based movements makes this discipline a natural extension of your physical capabilities. This is where your strength translates directly into pure, unadulterated performance.\n\nPicture yourself at The Brisbane 2032 Games: the stadium falls silent, the weight of the implement rests in your hand, and you channel your training into one singular, explosive release. Your physical stature provides the immense leverage needed to compete at the highest level. You are shifting from a team player to a master of individual physics, where your discipline and explosive drive define whether you stand on the top step of the podium."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "Strong physical archetype matching and good use of interview data, but severely held back by a gender mapping error in the adaptive pathway and a lack of distinct adaptive narrative.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "At 196cm and 103kg, the user has a textbook physical frame for both basketball and heavy throwing events like shot put."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narratives directly incorporate the user's specific answers, effectively highlighting their transition from team sports to an individual power discipline in the second profile."
+    },
+    "distinctness": {
+      "score": 4,
+      "reasoning": "The narratives fail to distinctly address the adaptive pathways at all, and there is a glaring oversight in recommending a 'Women's Shot Put' adaptive event to a male user."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions progressively filter the user's profile from current athletic status down to specific training preferences, though the options follow a highly standard branching logic."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Passes strict brand rules with correct Games formats, but lacks adaptive narrative depth and contains a gender mismatch in the adaptive pathway field."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

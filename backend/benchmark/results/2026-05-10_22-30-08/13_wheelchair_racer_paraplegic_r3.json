@@ -1,0 +1,78 @@
+{
+  "persona_id": "13_wheelchair_racer_paraplegic",
+  "persona_label": "T4 paraplegic \u2014 wheelchair racer and basketball player",
+  "biometrics": {
+    "height_cm": 163,
+    "weight_kg": 55,
+    "birth_year": 2004,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "When you are in the middle of a physical challenge, what kind of energy drives you to reach your peak performance?\nOptions: [Explosive bursts of speed and raw power | Deep, sustained endurance and mental focus | Precision, balance, and technical refinement]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive bursts of speed and raw power"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are cultivating that raw speed and power, what kind of training environment makes you feel most unstoppable?\nOptions: [Solo, high-intensity sessions where I set the pace | Competitive training groups that push me through shared intensity | Methodical, coaching-led environments that focus on technical refinement]"
+    },
+    {
+      "role": "user",
+      "content": "Competitive training groups that push me through shared intensity"
+    },
+    {
+      "role": "narrator",
+      "content": "As you look at your own sporting journey, where do you feel your greatest challenge currently lies when you are preparing for a major competition?\nOptions: [Mastering the complex technical mechanics of my movement | Refining my tactical awareness and quick-response speed | Building the physical resilience needed for back-to-back high-intensity sessions]"
+    },
+    {
+      "role": "user",
+      "content": "Refining my tactical awareness and quick-response speed"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Women's -67 kg)",
+      "scout_verdict": "At 22 years old, standing at 163cm and 55kg, you possess the ideal physical density for the Mat Technician. Your preference for competitive, high-intensity groups matches the high-stakes environment of the wrestling circle, where your focus on tactical awareness allows you to dismantle opponents through precise leverage rather than brute force alone. You move with the calculated patience of a strategist, waiting for that split-second opening to unleash a rapid, reactive takedown that defines your dominance on the mat.\n\nIn the adaptive pathway of powerlifting, specifically within the women's -67 kg category, you utilize the same structural strength to master gravity itself. This weight-classed competition demands a perfect marriage of absolute force and technical form, where every lift is a test of your internal resilience and ability to remain unflappable under pressure. Here, the challenge shifts from the opponent in front of you to the weight on the bar, requiring the same tactical focus to ensure your explosive power is channeled through precise, repeatable mechanics on the way to The Brisbane 2032 Games."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+      "scout_verdict": "If the mat is about calculation, the track is about pure, unadulterated kinetic velocity. As a Block Starter, you represent the manifestation of explosive potential, channeling your desire for raw speed into a singular, high-octane focus. Your build is optimized for a powerful drive phase; you don't just run, you project yourself through the air, driven by the shared intensity of a group that forces you to shave milliseconds off your start\u2014the very phase where your reactive speed turns into a race-winning advantage.\n\nThis transition to the track finds its most profound expression in the T44 classification, which includes ambulatory athletes with a lower-limb impairment who compete standing. This pathway is a study in biomechanical efficiency, where your speed is translated through specialized prosthetic or bracing technology. It requires a distinct mental shift from the combat environment, focusing instead on the rhythmic mastery of force application and coordination. Just as in the standard sprint, your goal here is to dominate the short, sharp burst of the 100m, utilizing your tactical mind to master the track surface and claim your place in the spotlight of the high-performance stage at The LA28 Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly customized and biologically plausible scouting report that skillfully integrates the user's interview responses into distinct athletic narratives.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "A height of 163cm and weight of 55kg is a perfect biological fit for women's wrestling (which features a 53kg/57kg weight class) and sprinting, perfectly matching the user's preference for explosive power."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts explicitly incorporate the user's desire for 'competitive, high-intensity groups' and 'tactical awareness' into the rationale for their success in wrestling and sprinting."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways offer meaningfully different mechanical challenges, particularly shifting from the dynamic combat of wrestling to the static, gravity-defying focus of powerlifting."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The interview progresses logically from core energy drivers to training environments and finally to specific competitive challenges, with each set of options offering genuinely different athletic profiles."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Perfect compliance, correctly using 'The Brisbane 2032 Games' and 'The LA28 Games' without restricted standalone terms."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

@@ -1,0 +1,77 @@
+{
+  "persona_id": "02_tall_power_athlete",
+  "persona_label": "Tall male power athlete",
+  "biometrics": {
+    "height_cm": 196,
+    "weight_kg": 103,
+    "birth_year": 2002,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "Before we dive deeper into your ambitions, I'd love to understand your relationship with physical training\u2014how would you describe your current activity level?\nOptions: [I\u2019m currently training hard for a specific sport | I enjoy a mix of gym work and general fitness | I\u2019m looking to start a new high-performance routine from scratch]"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019m looking to start a new high-performance routine from scratch"
+    },
+    {
+      "role": "narrator",
+      "content": "Before we look at the path ahead, what does your past sporting journey look like\u2014have you played competitive sports in the past, or would this be a brand new chapter for you?\nOptions: [I played team sports like rugby or basketball. | I mostly focused on solo gym training. | This would be my first time in competitive sport.]"
+    },
+    {
+      "role": "user",
+      "content": "I played team sports like rugby or basketball."
+    },
+    {
+      "role": "narrator",
+      "content": "Given your physical stature and your background in those high-intensity sports, what do you feel is your greatest asset that you would bring to a new, focused journey?\nOptions: [My physical power and presence | My ability to stay calm under pressure | My dedication to learning and refining new skills]"
+    },
+    {
+      "role": "user",
+      "content": "My physical power and presence"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "scout_verdict": "Your path to the court is paved with the competitive fire of the team sports you once loved. Standing at 196.0cm, you possess a natural command over the game, turning your physical power and presence into a defensive bulwark and a relentless offensive weapon. As you transition into this high-performance journey, you are perfectly positioned to master the tactical nuances of the game.\n\nImagine yourself at the height of your career at The Brisbane 2032 Games, where your ability to dictate the flow of play makes you an indispensable leader. Whether you are dominating the court on your feet or harnessing the high-octane intensity and precision of the wheelchair basketball circuit, your imposing frame ensures that the game is always played on your terms."
+    },
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Women's Shot Put C3)",
+      "scout_verdict": "If the court is about spatial dominance, the throwing circle is where you express your pure, kinetic potential. Your 103.0kg mass, combined with your desire to build a new high-performance routine, provides an ideal engine for explosive, grounded strength. You aren't just training for a sport; you are refining yourself into a powerhouse.\n\nAs you dedicate your energy to the technical precision required for these throwing disciplines, your natural physical presence will evolve into a force of nature. Visualize the intensity of The Brisbane 2032 Games, where the stadium hushes as you prepare to translate years of disciplined effort into a single, monumental movement. Whether you are finding your stance in the standing circle or utilizing the focused, technical mechanics of the seated throwing chair, you are carving out a legacy built on the bedrock of absolute strength."
+    }
+  ],
+  "eval_result": {
+    "overall": 5,
+    "summary": "The scouting report integrates the user's physical profile and interview answers well, but suffers a critical failure by recommending a Women's adaptive event for a male athlete.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "While 196cm and 103kg is an excellent physical match for both basketball and throwing, the system recommending 'Women's Shot Put C3' for a male user destroys the scout's credibility."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts expertly weave in the user's exact interview answers, directly referencing their 'physical power and presence' and desire to start a 'new high-performance routine'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two pathways offer a great contrast between dynamic, spatial team dominance (Basketball) and pure, isolated explosive power (Field Athletics)."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asked strong, progressive questions that clearly separated the user's current fitness baseline, past team sport experience, and primary athletic asset."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean on trademark rules ('The Brisbane 2032 Games' used correctly), though the gender mismatch in the adaptive pathway is a major logic error."
+    }
+  },
+  "backend_error": null
+}

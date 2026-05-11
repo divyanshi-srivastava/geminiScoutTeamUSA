@@ -1,0 +1,86 @@
+{
+  "persona_id": "07_congenitally_blind_goalball",
+  "persona_label": "Congenitally blind \u2014 goalball and tandem cycling",
+  "biometrics": {
+    "height_cm": 165,
+    "weight_kg": 60,
+    "birth_year": 1992,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, let\u2019s look at your natural physiological blueprint\u2014how does your body generally respond best to training?\nOptions: [Explosive bursts: I thrive in moments requiring sudden, high-intensity power and speed. | Sustained endurance: My strength lies in pacing and grit over long, grueling sessions. | Technical precision: I excel in controlled, rhythmic movements that demand high focus and coordination.]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive bursts: I thrive in moments requiring sudden, high-intensity power and speed."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back at your sporting journey, which environment do you feel truly brings out the best in your natural physical gifts?\nOptions: [The fast-paced, high-pressure environment of team-based sports. | The singular, focused pursuit of pure individual speed and power metrics. | The calculated, high-intensity strategy found in combat or reaction-based disciplines.]"
+    },
+    {
+      "role": "user",
+      "content": "The fast-paced, high-pressure environment of team-based sports."
+    },
+    {
+      "role": "narrator",
+      "content": "As you consider your high-performance pathway, what is the primary engine that keeps you pushing toward the next level?\nOptions: [The visceral thrill of direct competition and securing the win. | The endless pursuit of personal mastery and refining my physical craft. | The role of the leader or tactician, elevating the performance of those around me.]"
+    },
+    {
+      "role": "user",
+      "content": "The visceral thrill of direct competition and securing the win."
+    },
+    {
+      "role": "narrator",
+      "content": "To finalize your profile, is there a specific, defining moment or achievement in your life that you feel best showcases your 'all-in' competitive nature?"
+    },
+    {
+      "role": "user",
+      "content": "Winning the deciding penalty in the Paralympic goalball semi-final proved that I perform best when the entire game rests on my reaction and strength."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+      "scout_verdict": "Your history of thriving under pressure\u2014evidenced by that definitive moment when you secured a victory in high-stakes competition\u2014is the exact spark needed for the track. At 165cm and 60kg, you possess a compact, dense foundation perfectly suited for the explosive acceleration required to burst from the blocks. You don't just run; you compete, and your ability to channel your intensity into a single, decisive movement makes you a natural for the track's most demanding sprint events.\n\nAs you stand at the start line for The Los Angeles 2028 Games, you carry that same 'all-in' mentality you honed on the court. The sprint is no longer about a team surrounding you, but about you being the explosive engine. Every muscle fiber in your 34-year-old frame is primed for that split-second reaction, turning years of high-pressure training into a blistering, singular pursuit of speed that defines the world's most competitive stage. For the adaptive sprint pathway, you apply this same intensity to mastering mechanical efficiency and explosive drive, proving that your capacity for high-speed performance is equally formidable on the track in an adaptive setting. You channel your competitive drive into a specialized training regime that optimizes your biomechanics, ensuring that your 34-year-old frame translates raw power into rapid, efficient, and sustained momentum across the finish line at The Los Angeles 2028 Games."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "While your raw power is undeniable, your capacity for precision and high-speed decision-making reveals an entirely different dimension of your athletic potential. In the technical intensity of a descent, your focus shifts from a singular burst to a rhythmic, calculated dance with gravity. The same reflexes that allowed you to pinpoint a target amidst the roar of a stadium are now re-engineered to navigate high-velocity turns on an icy slope. At The Milano Cortina 2026 Games, you will trade the court for the mountain, entering a high-velocity environment where every millisecond of edge control matters. This pathway rewards your tactical mind and your ability to maintain composure when the stakes are at their highest.\n\nSimilarly, your adaptive pathway at The Milano Cortina 2026 Games demands that same relentless focus, requiring you to master the intricate balance and rapid-fire reactions needed to navigate steep, technical terrain while seated. By applying your fast-twitch capabilities to the technical demands of carving a line, you transform your athletic journey into a masterpiece of speed, strategy, and poise, proving that your 'all-in' spirit is as effective on the mountainside in an adaptive capacity as it is in the heat of a team-based showdown. You demonstrate that success is defined not just by raw physical capability, but by the discipline required to adapt your movement patterns to the unique challenges of the icy terrain."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "A generally solid scouting report that integrates the user's focus on explosive power and competition, though the adaptive pathways feel tacked-on rather than organically integrated.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "A 165cm, 60kg frame provides a compact, powerful base suitable for both explosive sprints and alpine skiing, aligning well with the user's self-reported fast-twitch capability."
+    },
+    "personalization": {
+      "score": 7,
+      "reasoning": "The narrative successfully references the user's high-stakes goalball penalty shot, though describing the 'roar of a stadium' is ironically inaccurate for goalball, which is played in silence."
+    },
+    "distinctness": {
+      "score": 5,
+      "reasoning": "While the sports (Sprints vs. Alpine Skiing) offer distinct angles, the adaptive pathway text feels bolted onto the end of each verdict rather than offering a cohesive, standalone perspective."
+    },
+    "interview_quality": {
+      "score": 6,
+      "reasoning": "The interview progresses logically through physical traits, environment, and motivation, but the multiple-choice options are somewhat generic and predictably mapped to broad athletic categories."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance; correctly uses 'The Los Angeles 2028 Games' and avoids restricted trademark terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

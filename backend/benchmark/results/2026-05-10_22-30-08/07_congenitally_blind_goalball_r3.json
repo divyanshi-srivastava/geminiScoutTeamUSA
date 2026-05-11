@@ -1,0 +1,78 @@
+{
+  "persona_id": "07_congenitally_blind_goalball",
+  "persona_label": "Congenitally blind \u2014 goalball and tandem cycling",
+  "biometrics": {
+    "height_cm": 165,
+    "weight_kg": 60,
+    "birth_year": 1992,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To begin, how would you best describe your history in competitive sport?\nOptions: [I've spent years competing in organized, high-level sports. | I\u2019ve always been active and athletic, but usually in a recreational or individual capacity. | I'm looking to pivot into a new high-performance discipline as a fresh challenge.]"
+    },
+    {
+      "role": "user",
+      "content": "I've spent years competing in organized, high-level sports."
+    },
+    {
+      "role": "narrator",
+      "content": "As you consider your next high-performance chapter, which physical dimension feels most aligned with your natural strengths and ambitions?\nOptions: [Explosive power and high-velocity speed | Extreme, long-haul endurance and mental grit | Technical precision and complex tactical mastery]"
+    },
+    {
+      "role": "user",
+      "content": "Technical precision and complex tactical mastery"
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward this next phase of your sporting journey, how do you see your role in the arena?\nOptions: [I thrive in high-stakes team environments, relying on coordination and collective strategy. | I prefer the solitary, meditative pursuit of mastering a specific craft or technical discipline. | I am drawn to the bridge between strategy and execution, such as coaching or designing training systems.]"
+    },
+    {
+      "role": "user",
+      "content": "I thrive in high-stakes team environments, relying on coordination and collective strategy."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Women's -67 kg)",
+      "scout_verdict": "At 165cm and 60kg, you possess a center of gravity and density that make you a natural force in the high-intensity theater of wrestling. Your preference for tactical mastery and team-driven strategy means you won't just be an individual athlete on the mat; you will be the anchor for your training block, treating every bout like a complex puzzle where you outmaneuver your opponent through sheer technical calculation. As you build toward The LA28 Games, your previous experience in high-level competition will serve as your compass, allowing you to read the flow of the match with the maturity of a veteran leader.\n\nIn your adaptive pathway, you step into the world of powerlifting, where tactical mastery takes the form of internal physics and precise kinetic output. Competing in the -67kg category, your focus shifts to the disciplined science of lift optimization, weight class management, and explosive force production. Here, the 'team' aspect is essential\u2014you are part of a squad of lifters who calibrate every repetition and micro-adjustment to reach peak performance. It is a sport of absolute precision, where your ability to analyze your own bio-mechanics under load will redefine what you believe your body is capable of achieving."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "This pathway pivots your focus from close-quarters combat to the razor-thin margins of high-velocity technical precision. Whether carving lines on a mountain slope or finding the rhythm on the speed skating track, you are testing the absolute limits of momentum and edge control. Your background in high-stakes, team-oriented sports will be your greatest asset as you enter the relay and squad-based training environments leading up to The Brisbane 2032 Games, where collective strategy is the difference between a podium finish and the pack.\n\nYour adaptive pathway brings you to Para-Alpine Skiing under the LW12 classification\u2014a category for athletes with lower-limb impairments who compete using a sit-ski. Mastering this discipline is the ultimate test of technical command; it requires an intimate, tactical connection between your core, the chair\u2019s balance, and the snow beneath your edges. Because LW12 requires such a high level of postural and equipment control, your focus on 'technical mastery' becomes the primary variable of your success. You aren't just sliding; you are navigating the mountain through a complex technical dialogue between human, equipment, and environment, all while supported by the strategic coordination of a highly specialized racing team."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly cohesive and personalized scouting report that beautifully maps the user's biometrics and interview preferences into plausible standing and adaptive pathways.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "The user's biometrics (165cm, 60kg) are a perfect, realistic fit for the Mat Technician archetype, slotting naturally into mid-weight wrestling categories."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdict explicitly incorporates the user's choice of 'technical precision' and 'high-stakes team environments' to frame how she would tackle individual sports like wrestling and skiing."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The adaptive pathways (Powerlifting and Para-Alpine Skiing LW12) offer deep, specific insights that translate the user's focus on technical mastery into core control and biomechanics rather than just repeating the standing text."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asks logically progressive questions with highly distinct options, successfully narrowing down the athlete from general background to physical strengths and finally to environmental preferences."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with perfectly formatted references like 'The LA28 Games' and no standalone restricted terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

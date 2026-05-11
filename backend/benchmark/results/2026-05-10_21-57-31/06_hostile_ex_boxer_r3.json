@@ -1,0 +1,78 @@
+{
+  "persona_id": "06_hostile_ex_boxer",
+  "persona_label": "Hostile ex-boxer \u2014 distrusts Olympics and AI",
+  "biometrics": {
+    "height_cm": 183,
+    "weight_kg": 87,
+    "birth_year": 1995,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, which of these physical dimensions feels most like your natural 'home' when you are pushing yourself to the limit?\nOptions: [Explosive power and rapid, high-impact movement | Endurance capacity and steady-state rhythm | Precision, stability, and technical tactical execution]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and rapid, high-impact movement"
+    },
+    {
+      "role": "narrator",
+      "content": "When you're in the heat of a high-performance setting, what is the primary drive that fuels your performance?\nOptions: [Direct head-to-head dominance and proving physical superiority over an opponent | The internal pursuit of breaking personal records and achieving a flawless physical feat | Strategic, tactical awareness used to outmaneuver and disrupt the opposition]"
+    },
+    {
+      "role": "user",
+      "content": "Direct head-to-head dominance and proving physical superiority over an opponent"
+    },
+    {
+      "role": "narrator",
+      "content": "As we look toward the potential arenas where your strength could shine, how do you see yourself best operating within a high-performance team or competitive environment?\nOptions: [I thrive on individual accountability, where the victory or defeat rests squarely on my own shoulders. | I prefer the synergy of a collaborative team, where our collective strategy and unified physical presence overwhelm the opposition. | I am at my best as a disruptive force, acting as the primary tactical pivot that the opposition must constantly account for.]"
+    },
+    {
+      "role": "user",
+      "content": "I thrive on individual accountability, where the victory or defeat rests squarely on my own shoulders."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "You have expressed a profound need to stand alone in the arena, and there is no greater crucible for individual mastery than the decathlon. At 31, with a robust 183cm and 87kg frame, you possess the exact blend of physical resilience and explosive raw power required to dominate across ten distinct disciplines. This path is not merely about versatility; it is about the relentless pursuit of physical superiority in every sprint, jump, and throw.\n\nImagine the intensity of The LA 2028 Games, where the competition is a constant, head-to-head battle against the world\u2019s best. Your build serves as the perfect engine for this journey, allowing you to channel your drive for dominance into a high-octane performance that culminates in a singular, individual victory. Here, your desire for high-impact movement is not just rewarded\u2014it is the very foundation of your legacy.\n\nAlternatively, your physical profile offers exceptional utility within the multi-discipline adaptive track. This pathway requires the same core strength and explosive capability, challenging you to master varying apparatus and techniques while maintaining physical parity with the field. In this high-performance setting, you define your own standard of excellence, transforming your energy into a display of raw power and tactical precision. Just as in the standing discipline, you carry the responsibility of your own results, ensuring that your pursuit of dominance at The LA 2028 Games remains a test of your personal limits."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "While your nature leans toward the kinetic energy of high-impact athletics, you find your true north in the absolute accountability of a solitary quest. This pathway strips away the team and the crowd, leaving only your 87kg frame and an unyielding commitment to stillness. At 31, you have reached the age where mental fortitude and nervous system control meet the physical requirements of competitive target sports, turning your frame into an anchor of rock-solid precision.\n\nAt The LA 2028 Games, you will experience a different form of dominance: the total command of your own internal landscape. In an environment where a single heartbeat determines your standing on the podium, you will find the competitive pressure you crave\u2014a quiet, lethal intensity where you are the sole arbiter of your success or failure. It is the ultimate test of your resolve, proving that the most explosive power is the kind held in check until the perfect, singular moment of release.\n\nYour adaptive target precision path offers an identical challenge of supreme composure. Utilizing specialized equipment designed for absolute stability, this discipline requires you to harmonize your physiology with mechanical precision. You will face the same internal struggle of self-mastery, where the focus remains entirely on your ability to execute under the most demanding competitive conditions. Like the standing discipline, the rewards at The LA 2028 Games are found in your ability to remain unflinching, proving that true excellence is defined by the depth of your focus and the consistency of your output."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The report shines in personalization and biometrics integration for the first profile, but struggles significantly with authenticity on the second archetype, shoehorning an explosive-power athlete into a static marksmanship role.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "While Decathlon perfectly fits an 183cm/87kg athlete craving explosive movement, recommending Marksmanship to a user who explicitly chose 'rapid, high-impact movement' and 'physical superiority' is a glaring mismatch."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative effectively grounds itself in the user's biometrics ('31, with a robust 183cm and 87kg frame') and explicitly references their interview answers regarding solitary accountability and head-to-head dominance."
+    },
+    "distinctness": {
+      "score": 4,
+      "reasoning": "The adaptive pathways offer little unique insight, mostly functioning as copy-paste reskins of the standing pathways using phrases like 'identical challenge' and 'same core strength'."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asked strong, logically progressive questions that effectively forced meaningful choices between physical domains, competitive drives, and team environments."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass; 'The LA 2028 Games' is used correctly and no restricted IP or NIL violations are present."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

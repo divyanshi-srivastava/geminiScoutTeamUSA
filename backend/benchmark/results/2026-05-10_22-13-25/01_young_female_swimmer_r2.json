@@ -1,0 +1,78 @@
+{
+  "persona_id": "01_young_female_swimmer",
+  "persona_label": "Young female swimmer",
+  "biometrics": {
+    "height_cm": 172,
+    "weight_kg": 62,
+    "birth_year": 2009,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our conversation, what is it that most motivates you when you step into an athletic environment?\nOptions: [The raw, explosive pursuit of speed and immediate power. | The disciplined, long-term mastery of endurance and sustained pacing. | The intricate, technical precision required for complex tactical execution.]"
+    },
+    {
+      "role": "user",
+      "content": "The disciplined, long-term mastery of endurance and sustained pacing."
+    },
+    {
+      "role": "narrator",
+      "content": "In terms of your current environment, how do you best find your flow when you are training?\nOptions: [Immersed in solitary, meditative training sessions to refine my own internal rhythm. | Collaborating within a tightly-knit team to manage collective pacing and shared strategy. | Testing my limits in high-intensity, competition-simulated environments to sharpen my race-day fortitude.]"
+    },
+    {
+      "role": "user",
+      "content": "Immersed in solitary, meditative training sessions to refine my own internal rhythm."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking toward your future in high-performance athletics, what is the primary driving force behind the sacrifices you make for your craft?\nOptions: [The personal satisfaction of knowing I reached the absolute limit of my own physical capacity. | The desire to master a specific, complex discipline and prove my technical superiority over time. | The pursuit of long-term milestones and building a legacy that endures through my competitive career.]"
+    },
+    {
+      "role": "user",
+      "content": "The personal satisfaction of knowing I reached the absolute limit of my own physical capacity."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 8,
+      "matched_profile_name": "Streamline",
+      "pathway_standing": "Swimming",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Women's 400 m Freestyle S10)",
+      "scout_verdict": "In the water, the world falls away, leaving only you and your rhythm. At 172cm and 62kg, your frame is perfectly calibrated for the fluid dynamics required to glide through the lane with minimal resistance. Your preference for solitary, meditative training is your greatest asset here; you don't just swim, you sync your consciousness with the pace of your stroke, finding a profound internal stillness amidst the churn of competition.\n\nAs you look toward the horizon of The Brisbane 2032 Games, this rhythmic consistency becomes your path to legacy. You aren't chasing the noise of the crowd, but the absolute limits of your own capacity. By grounding your training in the solitary pursuit of perfection, you are building the stamina of a long-distance specialist who treats every meter as a piece of an intricate, enduring masterpiece."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Where the water demands a steady pulse, the mountain and the ice demand the sharpness of a razor. Your journey moves from the meditative flow of the lane to the high-stakes, analytical theater of speed. Here, your drive to reach your physical limit translates into the clinical, micro-adjustments required to carve an edge through a turn at high velocity. It is a sport of cold, hard facts: the angle of the blade, the pressure on the ski, the millisecond-timing of a tactical maneuver.\n\nThis is where your desire to master complexity comes to the forefront. Preparing for The Milano Cortina 2026 Games requires a shift in your mental landscape\u2014moving from internal rhythmic flow to external tactical precision. You will be the architect of your own speed, calculating the physics of every descent. It is a demanding, solitary road, but one that rewards the analytical mind that refuses to settle for anything less than complete control over the environment."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly personalized and evocative scouting report that intelligently uses the athlete's psychological preferences to inform two distinct sporting pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The 'Streamline' archetype is an excellent physical fit for a 172cm/62kg frame in endurance swimming, while 'Edge Carver' provides a plausible winter sports alternative."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdict deeply integrates the user's specific answers about solitary, meditative training and reaching absolute physical limits into the narrative."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The pathways offer a strong seasonal and elemental contrast (fluid dynamics of summer swimming vs. sharp physics of winter skiing/skating), though the adaptive pathways are somewhat standard additions."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions effectively segment the athlete by physical and psychological traits, though the options follow a somewhat predictable power vs. endurance vs. tactics structure."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean. Correctly uses 'The Brisbane 2032 Games' and 'The Milano Cortina 2026 Games'."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

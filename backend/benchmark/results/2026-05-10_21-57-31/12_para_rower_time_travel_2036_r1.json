@@ -1,0 +1,82 @@
+{
+  "persona_id": "12_para_rower_time_travel_2036",
+  "persona_label": "Para-rower with SCI \u2014 time travel to 2036 Games",
+  "biometrics": {
+    "height_cm": 184,
+    "weight_kg": 88,
+    "birth_year": 1988,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our exploration of your top-tier athletic pathway, how would you describe your historical approach to physical challenge and competition?\nOptions: [Explosive intensity: I thrive on high-impact, short-burst efforts. | Endurance and discipline: I find my flow in long-term, sustained mental and physical output. | Precision and technical mastery: I excel at controlled, strategic movements where technique is everything.]"
+    },
+    {
+      "role": "user",
+      "content": "Endurance and discipline: I find my flow in long-term, sustained mental and physical output."
+    },
+    {
+      "role": "narrator",
+      "content": "When you envision yourself pushing through those long-duration challenges, do you find your focus is sharpened more by the connection to a team or by the solitude of the individual pursuit?\nOptions: [The shared pressure of a team, where collective rhythm dictates the pace. | The solitude of the individual pursuit, where I am the sole architect of my success. | The high-stakes strategic navigation of a technical, analytical role.]"
+    },
+    {
+      "role": "user",
+      "content": "The solitude of the individual pursuit, where I am the sole architect of my success."
+    },
+    {
+      "role": "narrator",
+      "content": "By The 2036 Games, you will be 48 years old, stepping into the 'Legacy' phase of your athletic journey. As you look toward that milestone, how does your definition of the 'individual pursuit' change when the goal shifts from raw achievement to defining your lasting influence on your sport?\nOptions: [Focusing on personal mastery and refining long-standing techniques. | Mentoring and passing the torch to the next generation of athletes. | Testing the limits of physiological longevity and redefining what is possible for a veteran athlete.]"
+    },
+    {
+      "role": "user",
+      "content": "Testing the limits of physiological longevity and redefining what is possible for a veteran athlete."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "At The 2036 Games, standing at 184cm and 88kg, you enter the arena not just as a competitor, but as a testament to the endurance of the human spirit. Your career has been defined by the steady, rhythmic discipline of the individual pursuit, and here, that philosophy finds its ultimate expression. The grueling nature of the multi-discipline pathway is often viewed as a young person\u2019s game, yet your explicit intent to test the boundaries of physiological longevity makes you a formidable outlier.\n\nAt 48, you are not merely participating; you are refining the technical mastery you have cultivated over decades. The multi-discipline pathway requires a relentless mental and physical flow across varying events. By choosing this path, you are etching a legacy that transcends the typical prime age range, proving that endurance is not just about speed, but about the sustained, intelligent preservation of function under extreme pressure."
+    },
+    {
+      "matched_profile_id": 10,
+      "matched_profile_name": "Launch Force",
+      "pathway_standing": "Bobsleigh / Push Sports",
+      "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+      "scout_verdict": "If the multi-discipline path represents your marathon, the seated throws represent your strike of pure, kinetic truth. You have long positioned yourself as the 'sole architect of your success,' and this discipline strips away all extraneous variables, leaving only you, the implement, and the singular, explosive moment of release. Your 88kg frame offers the foundational leverage required to translate years of disciplined strength into raw, localized power.\n\nAt 48, your journey to The 2036 Games shifts focus toward the perfection of one precise, devastating movement. While your heart beats for endurance, your mind thrives on technical control. By mastering the explosive requirements of the throw, you redefine your legacy not through the volume of your efforts, but through the singular, explosive efficiency of your force. It is the ultimate manifestation of the individual architect\u2014mastering a silent, explosive skill that leaves no room for anything but your own intentionality."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A highly personalized and age-appropriate narrative that cleverly incorporates the user's interview responses, though the choice of Decathlon for a 48-year-old pushes the bounds of athletic plausibility.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While 184cm/88kg is a plausible build for a decathlete, recommending the grueling multi-discipline Decathlon to a 48-year-old who prefers 'sustained mental and physical output' (endurance) is a bit of a stretch in the real world."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts brilliantly weave in direct quotes and concepts from the interview, such as being the 'sole architect of your success' and focusing on 'physiological longevity'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two pathways offer a stark, meaningful contrast between the grueling versatility of multi-discipline athletics and the singular, explosive focus of seated throws."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "The narrative directly references the user's age of 48 and grounds the recommendation perfectly in their desire to test the boundaries of a veteran athlete."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asks strong, branching questions with distinct options, particularly the final question which expertly leverages the 2036 time-travel premise to probe the user's legacy goals."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "The output correctly uses 'The 2036 Games' format and avoids any restricted terms or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

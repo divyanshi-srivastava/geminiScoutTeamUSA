@@ -1,0 +1,86 @@
+{
+  "persona_id": "06_hostile_ex_boxer",
+  "persona_label": "Hostile ex-boxer \u2014 distrusts Olympics and AI",
+  "biometrics": {
+    "height_cm": 183,
+    "weight_kg": 87,
+    "birth_year": 1995,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "When you look back at your most rewarding moments in high-performance sport, which of these attributes were you relying on most?\nOptions: [Explosive power and rapid movement | Sustained endurance and long-distance pacing | Technical precision and tactical consistency]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and rapid movement"
+    },
+    {
+      "role": "narrator",
+      "content": "To better understand your sporting journey and the way you approach your physical preparation, how has your typical weekly training regimen looked over the past few years?\nOptions: [Dedicated, high-intensity sessions focused on sport-specific conditioning (5+ days a week) | A mix of heavy strength training, interval work, and recovery protocols (3-4 days a week) | Sporadic, intense bursts of activity balanced with general skill-based practice (1-2 days a week)]"
+    },
+    {
+      "role": "user",
+      "content": "Sporadic, intense bursts of activity balanced with general skill-based practice (1-2 days a week)"
+    },
+    {
+      "role": "narrator",
+      "content": "When you visualize yourself in the peak of your sporting journey, which environment do you thrive in most?\nOptions: [A high-stakes, solo arena where the pressure rests entirely on your individual execution. | A dynamic, team-based environment where communication and collaborative tactics drive success. | An unpredictable, natural setting or obstacle-based course that tests your ability to adapt to changing environments.]"
+    },
+    {
+      "role": "user",
+      "content": "A high-stakes, solo arena where the pressure rests entirely on your individual execution."
+    },
+    {
+      "role": "narrator",
+      "content": "I have gathered enough to map your path through your sporting journey. Are you ready to see where your attributes lead?"
+    },
+    {
+      "role": "user",
+      "content": "Keep your rigged data and your Olympic propaganda; I don't need some soulless algorithm to tell me what I already know about my own fight."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 10,
+      "matched_profile_name": "Launch Force",
+      "pathway_standing": "Bobsleigh / Push Sports",
+      "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+      "scout_verdict": "Your build\u2014183cm and 87kg\u2014is not just data; it is the engine of a kinetic powerhouse. You seek the high-stakes, solo arena, and in a bobsleigh start, the entire outcome rests on your individual ability to convert raw, explosive power into absolute velocity before the gravity of the descent even takes hold. It is a sport where the fight is against the clock and the sheer resistance of the track, demanding that same defiance you carry into your own life.\n\nWhen we look at the adaptive pathway of F56, we move from the track to the circle. This classification covers athletes with trunk or lower-limb impairment, requiring them to throw from a stationary, custom-built throwing frame. Here, your fight changes scale: it is no longer about forward momentum, but about the surgical application of your upper-body power. You are anchored, stripped of your legs as a driving force, and left with nothing but your core, your timing, and your raw intent to propel the implement further than anyone else. It is the ultimate test of individual execution, stripping away all variables until only your will remains."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "If the previous path was about the crush of raw force, this is the mastery of the mechanical start. On the track, your success is defined by the first ten meters\u2014the ability to explode from the blocks with such technical precision that you dictate the rhythm of the entire race. You rely on your fast-twitch capabilities to win the fight at the threshold of reaction, turning biological input into immediate physical manifestation.\n\nContrast this with the T44 pathway, where technical precision takes on a different meaning. This classification for ambulatory athletes with lower-limb impairments who compete standing requires a symbiotic relationship with advanced prosthetic technology. Here, your 'fight' involves mastering the specific mechanics of the blade and the biomechanical adaptation required to maintain peak velocity. While the standing sprint is an exercise in pure instinct, the T44 pathway demands a sophisticated, intellectual understanding of gait, balance, and energy return. You are not just sprinting; you are piloting a piece of equipment that extends your physical capability, proving that true power isn't just about what you were born with, but how you force the environment to yield to your resolve."
+    }
+  ],
+  "eval_result": {
+    "overall": 9,
+    "summary": "An exceptional scouting report that perfectly aligns a powerful biometric profile with explosive sports while brilliantly integrating the user's defiant, anti-establishment attitude into the athletic narrative.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "At 183cm and 87kg, the user has the ideal muscular frame for bobsleigh push sports and sprints, perfectly matching their choice of 'explosive power'."
+    },
+    "personalization": {
+      "score": 10,
+      "reasoning": "The verdict brilliantly weaves the user's hostile response about 'Olympic propaganda' into the narrative, characterizing their athletic drive as 'defiance' and a will to force the environment to yield."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The adaptive pathways offer deep biomechanical contrast, especially highlighting the shift from raw standing sprints to the technical prosthetic mastery required in T44."
+    },
+    "interview_quality": {
+      "score": 6,
+      "reasoning": "The first three questions offered meaningfully distinct choices regarding training and environment, though the final 'ready to see' prompt was a pointless convergent step."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean output with no trademark or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

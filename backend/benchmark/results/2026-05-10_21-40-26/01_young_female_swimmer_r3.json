@@ -1,0 +1,78 @@
+{
+  "persona_id": "01_young_female_swimmer",
+  "persona_label": "Young female swimmer",
+  "biometrics": {
+    "height_cm": 172,
+    "weight_kg": 62,
+    "birth_year": 2009,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe your current relationship with competitive athletics? Are you deep into a specific training routine, or are you still exploring where your strengths truly lie?\nOptions: [I am currently training regularly for one specific sport. | I am a multi-sport athlete, testing my limits in different areas. | I am just beginning to explore my potential in competitive athletics.]"
+    },
+    {
+      "role": "user",
+      "content": "I am currently training regularly for one specific sport."
+    },
+    {
+      "role": "narrator",
+      "content": "What is the primary sport you are currently dedicating your training to, and how many hours a week does your routine typically involve?\nOptions: [Less than 5 hours per week (recreational focus) | 5\u201312 hours per week (competitive focus) | 13+ hours per week (high-performance focus)]"
+    },
+    {
+      "role": "user",
+      "content": "13+ hours per week (high-performance focus)"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the middle of a grueling training block, what is the core motivation or vision that keeps you pushing forward to reach your potential?\nOptions: [The pursuit of excellence and personal mastery. | The thrill of head-to-head competition. | The challenge of breaking barriers and testing my limits. | The dream of representing my country on the global stage.]"
+    },
+    {
+      "role": "user",
+      "content": "The pursuit of excellence and personal mastery."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 8,
+      "matched_profile_name": "Streamline",
+      "pathway_standing": "Swimming",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Men's 400 m Freestyle S10)",
+      "scout_verdict": "At 172cm and 62kg, you possess the ideal physical architecture for cutting through the water with minimal resistance, a classic hallmark of the Streamline profile. Your commitment to over 13 hours of high-performance training each week has already forged the mental toughness and technical discipline required to excel in the pool. You are currently in the perfect developmental window to master the fluid mechanics that define the world's most elite aquatic competitors. Your singular pursuit of personal excellence is the engine that will drive you toward The 2028 Los Angeles Games. Every stroke you take is an investment in your legacy, transforming raw athletic potential into a refined, efficient engine. In the world of high-performance sport, your dedication to mastery ensures that when you dive in, you aren't just racing against the clock\u2014you are redefining your own boundaries."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "With a lean, athletic build and a natural affinity for fast-twitch explosive movement, you are the archetype of a Block Starter. Your decision to dedicate 13+ hours a week to your craft highlights a level of commitment that is rare for a 17-year-old, providing you with the exact technical foundation needed to dominate the track. You have the physical dimensions that track-and-field scouts identify as critical for short-burst velocity. Your drive for personal mastery is exactly what will carry you to The 2032 Brisbane Games. Precision is the language of the sprint, and your desire to constantly test your own limits ensures that your starts, transitions, and drive phases will be executed with unmatched intent. You are not just running; you are crafting a performance of pure power, prepared to leave your mark on the global stage of high-performance sport."
+    }
+  ],
+  "eval_result": {
+    "overall": 5,
+    "summary": "While the narrative effectively incorporates the user's interview responses and biometrics, it suffers from a glaring gender mismatch in the adaptive pathways and fails to provide distinct standing versus adaptive verdicts.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "The biometrics (172cm, 62kg) fit both swimming and sprinting well, but suggesting 'Men's 400m' and 'Men's 100m' events for a female athlete completely breaks immersion."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts explicitly weave in her exact 13+ hours of high-performance training, her age (17), and her motivation for personal mastery."
+    },
+    "distinctness": {
+      "score": 2,
+      "reasoning": "There is no distinction at all; the system provided only one unified verdict per archetype instead of separate narratives exploring the standing and adaptive contexts."
+    },
+    "interview_quality": {
+      "score": 5,
+      "reasoning": "The questions successfully gauge commitment and mindset, but the second question is poorly constructed\u2014asking 'What is the primary sport' while only providing options for training hours."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean of strict IP violations, though the single-verdict format creates a narrative depth imbalance by ignoring the adaptive pathway entirely."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

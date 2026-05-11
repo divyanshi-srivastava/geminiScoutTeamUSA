@@ -1,0 +1,78 @@
+{
+  "persona_id": "09_congenital_limb_difference_swimmer",
+  "persona_label": "Congenital limb difference \u2014 adaptive swimmer",
+  "biometrics": {
+    "height_cm": 168,
+    "weight_kg": 63,
+    "birth_year": 1997,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, I'd love to learn about your athletic foundation. What does your current physical activity or training routine look like?\nOptions: [Consistent, structured training (4+ days/week) | Occasional, varied activity | Currently rebuilding my foundation | Mostly recreational sport]"
+    },
+    {
+      "role": "user",
+      "content": "Consistent, structured training (4+ days/week)"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the middle of those sessions, what is the primary focus of your training routine?\nOptions: [Strength and explosive power | Endurance and aerobic capacity | Skill-based technical mastery | A balanced mix of all disciplines]"
+    },
+    {
+      "role": "user",
+      "content": "Skill-based technical mastery"
+    },
+    {
+      "role": "narrator",
+      "content": "When you look ahead at your high-performance athletic pathway, what is the core motivation that drives you to keep pushing for that next level of precision?\nOptions: [The challenge of mastering a complex movement | The thrill of direct competition | The personal discipline and mental fortitude | The goal of reaching a top-tier competitive milestone]"
+    },
+    {
+      "role": "user",
+      "content": "The challenge of mastering a complex movement"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "The mountain rewards those who treat every turn like a masterclass in physics. Given your unwavering focus on skill-based technical mastery, the Edge Carver archetype is a natural extension of your dedication. At 168.0cm and 63.0kg, you possess the ideal center of gravity to manage high-velocity descents with grace and precision. Your journey toward The Milano Cortina 2026 Games will be defined by the nuance of your edge control and the spatial awareness you bring to each run.\n\nAt 29 years old, you are entering your peak years, where experience and muscle memory converge. The challenge of mastering a complex movement is precisely what high-performance sport demands on the slopes, and your history of structured, consistent training ensures you have the foundation to handle the intensity of the circuit. You don't just ride the mountain; you dictate the line."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Adaptive Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "Sprinting is the ultimate high-stakes puzzle, a sport of split-second decisions and absolute technical purity. For an athlete like you, who finds motivation in the mechanics of a complex movement, the Block Starter archetype offers an environment where every millisecond is a triumph of preparation. Your biometric profile, honed by consistent 4+ days of weekly training, provides the necessary stability to withstand the immense G-forces of explosive acceleration.\n\nAs you look toward The Brisbane 2032 Games, view every training session as a refinement of your kinetic chain. The transition from the blocks is a violent, beautiful sequence of physics that requires the exact blend of discipline and power you have cultivated. In this arena, your pursuit of technical mastery becomes your greatest weapon, turning your deliberate focus into the rhythmic, raw speed required to compete at the highest level."
+    }
+  ],
+  "eval_result": {
+    "overall": 4,
+    "summary": "The report integrates interview answers well but makes a glaring personalization error by recommending Men's adaptive events to a female user.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "The biometrics (168cm, 63kg) and focus on technical mastery fit Alpine Skiing reasonably well, though sprinting is slightly less aligned with 'complex movement' mastery."
+    },
+    "personalization": {
+      "score": 2,
+      "reasoning": "Despite weaving in the user's interview quotes, the report assigns 'Men's Super-G' and 'Men's 100m' events to a female athlete, completely breaking the illusion of a tailored scout."
+    },
+    "distinctness": {
+      "score": 5,
+      "reasoning": "The adaptive pathways offer specific events, but they are just direct 1:1 translations of the standing sport with 'Men's' added, rather than uniquely explored angles."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions progress logically from training frequency to focus to motivation, with distinct options that help shape the archetype."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean of IOC/NIL violations, but the misgendering of the adaptive events is a major quality flaw."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

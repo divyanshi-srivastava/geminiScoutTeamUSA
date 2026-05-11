@@ -4,3 +4,9 @@
 {"timestamp": "2026-05-10_20-28-00", "pipeline_score": null, "persona_count": 15, "success_count": 9, "authenticity": 5.8, "personalization": 7.6, "interview_quality": 6.7, "distinctness": 4.4}
 {"timestamp": "2026-05-10_20-38-08", "pipeline_score": 5.2, "persona_count": 15, "success_count": 12, "authenticity": 4.8, "personalization": 7.6, "interview_quality": 7.0, "distinctness": 5.2}
 {"timestamp": "2026-05-10_20-44-49", "pipeline_score": 5.5, "persona_count": 15, "success_count": 15, "authenticity": 5.4, "personalization": 8.0, "interview_quality": 6.7, "distinctness": 4.4}
+{"timestamp": "2026-05-10_21-15-38", "pipeline_score": 6.0, "persona_count": 15, "success_count": 15, "authenticity": 6.3, "personalization": 8.3, "interview_quality": 7.3, "distinctness": 5.2}
+{"timestamp": "2026-05-10_21-40-26", "pipeline_score": 5.5, "persona_count": 15, "rounds": 3, "total_runs": 45, "success_count": 45, "authenticity": 6.0, "personalization": 7.7, "interview_quality": 7.1, "distinctness": 4.6}
+{"timestamp": "2026-05-10_21-57-31", "pipeline_score": 6.5, "persona_count": 15, "rounds": 3, "total_runs": 45, "success_count": 45, "authenticity": 5.9, "personalization": 7.9, "interview_quality": 7.6, "distinctness": 6.1}
+{"timestamp": "2026-05-10_22-13-25", "pipeline_score": 6.5, "persona_count": 15, "rounds": 3, "total_runs": 45, "success_count": 43, "authenticity": 6.6, "personalization": 7.7, "interview_quality": 7.7, "distinctness": 6.5}
+{"timestamp": "2026-05-10_22-30-08", "pipeline_score": 7.4, "persona_count": 15, "rounds": 3, "total_runs": 45, "success_count": 45, "authenticity": 7.6, "personalization": 8.0, "interview_quality": 7.6, "distinctness": 8.2}
+{"timestamp": "2026-05-11_11-46-41", "pipeline_score": 7.4, "persona_count": 15, "rounds": 1, "total_runs": 15, "success_count": 15, "authenticity": 7.7, "personalization": 8.1, "interview_quality": 7.5, "distinctness": 8.0}

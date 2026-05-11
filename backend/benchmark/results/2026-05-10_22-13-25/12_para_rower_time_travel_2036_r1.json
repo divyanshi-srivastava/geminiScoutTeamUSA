@@ -1,0 +1,83 @@
+{
+  "persona_id": "12_para_rower_time_travel_2036",
+  "persona_label": "Para-rower with SCI \u2014 time travel to 2036 Games",
+  "biometrics": {
+    "height_cm": 184,
+    "weight_kg": 88,
+    "birth_year": 1988,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To help me understand the foundation of your sporting journey, how would you best describe your relationship with physical training and competition over the years?\nOptions: [A lifelong competitor, consistently pushing physical boundaries through intense, high-impact training. | A dedicated practitioner, focused on the mastery of technical, precision-based movements and tactical execution. | A resilient seeker, having developed my strongest physical and mental capabilities later in my athletic trajectory.]"
+    },
+    {
+      "role": "user",
+      "content": "A resilient seeker, having developed my strongest physical and mental capabilities later in my athletic trajectory."
+    },
+    {
+      "role": "narrator",
+      "content": "As you reflect on the intensity of your training during that period, what was the primary engine that allowed you to break through and excel?\nOptions: [Total cardiovascular capacity and the ability to outlast the competition. | Strategic anticipation and the ability to exploit small, technical margins of error. | Pure physical output and overwhelming, explosive strength.]"
+    },
+    {
+      "role": "user",
+      "content": "Pure physical output and overwhelming, explosive strength."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward that horizon, how does your approach to maintaining that competitive edge change when you are balancing deep, hard-won experience with the physical realities of age?\nOptions: [Prioritizing refined technical efficiency to maintain output with less strain. | Transitioning into a strategic mentorship role where tactical IQ amplifies physical performance. | Committing to an even more rigorous, specialized regime to preserve maximum, high-intensity physical capacity.]"
+    },
+    {
+      "role": "user",
+      "content": "Prioritizing refined technical efficiency to maintain output with less strain."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 10,
+      "matched_profile_name": "Launch Force",
+      "pathway_standing": "Bobsleigh / Push Sports",
+      "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+      "scout_verdict": "At 48 years old, arriving at The 2036 Games, you embody the 'Launch Force' archetype\u2014a testament to the resilience of a seeker who unlocked their true potential well into their athletic journey. Your foundation in explosive power and overwhelming physical output finds a natural home in the high-stakes world of bobsleigh and push athletics. Where younger competitors rely solely on raw, unrefined speed, your legacy is built on the calculated, heavy-duty force production you perfected through years of dedicated gym work.\n\nYour 184cm, 88kg frame acts as the ultimate engine for the start phase of competition. By channeling the same drive that characterized your earlier years into the explosive demands of a sled push, you transform your physical history into a singular, kinetic moment. You aren't just competing against the clock; you are utilizing the wisdom of your decades-long trajectory to ensure every ounce of your power is applied with maximum impact, proving that the peak of high-performance sport is often found in the mastery of momentum."
+    },
+    {
+      "matched_profile_id": 9,
+      "matched_profile_name": "Boat Run",
+      "pathway_standing": "N/A",
+      "pathway_adaptive": "Adaptive Rowing (e.g., Mixed Coxed Four LTAMix4+)",
+      "pathway_adaptive_adaptive": "Adaptive Rowing (e.g., Men's Single Scull ASM1x)",
+      "scout_verdict": "As you prepare for The 2036 Games, the 'Boat Run' archetype offers a profound evolution from the raw explosive power of your younger self toward the refined, technical efficiency that defines your current philosophy. Your transition toward prioritizing technical precision allows you to thrive in the rhythmic, high-endurance environment of adaptive rowing, where the synchronization of movement becomes as vital as the force exerted.\n\nWhile your earlier history was defined by sudden bursts of intensity, this legacy pathway rewards your ability to maintain consistent, sustained output through complex, repetitive motions. Rowing demands a different level of internal calibration\u2014using your hard-won experience to optimize every stroke and conserve energy for the critical final meters. In this discipline, your capacity for endurance is not just a physical trait, but a strategic asset, allowing you to guide your crew or maneuver your craft with a level of composure and tactical IQ that only a lifetime in competitive sport can provide."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, highly personalized report that successfully balances the user's explosive strength with their age-appropriate need for technical efficiency.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "While Olympic bobsleigh is a stretch at 48, the user's 184cm/88kg frame and explosive power answers align well with the physiological demands of both push sports and rowing."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdict directly references the user's self-identification as a 'resilient seeker' and their pivot toward 'refined technical efficiency'."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The pathways offer a stark, meaningful contrast between raw, explosive kinetic moments (Bobsleigh) and rhythmic, technical endurance (Adaptive Rowing)."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "The narrative explicitly integrates the target age of 48 (Legacy), praising the user's 'decades-long trajectory' and the wisdom required to transition from raw speed to technical efficiency."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions successfully narrow down both the athlete's physical engine (explosive vs cardio) and their approach to aging, providing meaningful forks in the assessment."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly uses the mandated 'The 2036 Games' format without standalone Olympic/Paralympic flags or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

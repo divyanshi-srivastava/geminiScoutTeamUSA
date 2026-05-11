@@ -9,7 +9,9 @@ You are called **after** the full pipeline completes. You receive:
 
 ## Your Task
 
-Evaluate the pipeline output across 4 dimensions (5 when time travel is active) and return a single JSON object. Be a tough critic — this scoring will be shown to judges. Generic, low-effort analysis should score 5 or below.
+Evaluate the pipeline output and return a single JSON object. Be a tough critic — this scoring will be shown to judges. Generic, low-effort analysis should score 5 or below.
+
+The scoring dimensions are defined in `EVAL_CRITERIA` in `[SYSTEM: CONTENT_RULES]`. Score each criterion listed there. Apply the detailed guidance below for each criterion ID.
 
 ## Scoring Dimensions
 

@@ -1,0 +1,78 @@
+{
+  "persona_id": "01_young_female_swimmer",
+  "persona_label": "Young female swimmer",
+  "biometrics": {
+    "height_cm": 172,
+    "weight_kg": 62,
+    "birth_year": 2009,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "When you picture yourself in the heat of competition, where do you feel your greatest strength lies?\nOptions: [Explosive bursts of speed and rapid-fire agility | Sustained endurance and rhythmic, long-distance pacing | Technical precision and deliberate, controlled movement]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance and rhythmic, long-distance pacing"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the thick of a long-duration effort, how do you manage your internal focus?\nOptions: [I lock into a meditative state, focusing exclusively on my breathing and steady rhythm. | I constantly analyze my technique, making micro-adjustments to maximize my physical efficiency. | I channel my energy into monitoring the people around me, using their movement to tactically dictate my pace.]"
+    },
+    {
+      "role": "user",
+      "content": "I lock into a meditative state, focusing exclusively on my breathing and steady rhythm."
+    },
+    {
+      "role": "narrator",
+      "content": "When you look at your training environment, what setting do you find most essential for your growth in high-performance sport?\nOptions: [The solitude of the long road, where it is just me against the clock. | The collaborative spirit of a training squad, where we push each other to find that extra gear. | The high-pressure environment of direct competition, where I feed off the energy of the pack.]"
+    },
+    {
+      "role": "user",
+      "content": "The solitude of the long road, where it is just me against the clock."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 8,
+      "matched_profile_name": "Streamline",
+      "pathway_standing": "Swimming",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Women's 400 m Freestyle S10)",
+      "scout_verdict": "At 172cm and 62kg, your physique acts as a vessel for pure, sustained momentum. You have described a preference for the solitude of the lane and a meditative approach to movement, which aligns perfectly with the demands of long-distance aquatic endurance. In the water, your capacity to shut out the external world and focus entirely on your own rhythm transforms the pool into a sanctuary of high-performance output.\n\nAs you stand on the blocks for The Brisbane 2032 Games, the silence you cultivated during your training sessions becomes your greatest weapon. While others struggle with the noise of the crowd, you settle into a cycle of efficiency, where every stroke is a deliberate, calculated pull against the resistance. Your frame is not just lean; it is optimized for the hydrodynamic grace required to dominate the distance events, proving that your mental discipline is as powerful as your physical reach."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+      "scout_verdict": "Where the Streamline archetype thrives on the rhythmic flow of the long-duration effort, the Block Starter demands a total transformation of your physical reality. Here, we move from the meditative silence of the lane to the violent, singular explosion of kinetic energy off the start line. Your biometrics reveal a hidden reservoir of fast-twitch potential that contradicts your natural inclination toward patience, suggesting a body built for the rapid-fire mechanics of pure speed.\n\nAt The Brisbane 2032 Games, this version of you is not seeking a steady pace to hold; you are seeking to destroy the clock in a matter of seconds. Instead of the rhythmic glide of the water, you master the harsh, sharp interactions between your frame and the track surface. This pathway challenges you to trade your meditative focus for the raw, sensory-heavy intensity of the sprint, forcing a pivot from endurance-based conservation to a high-stakes, all-out expenditure of power that defines the competitive sport pathway."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A highly personalized narrative that elegantly incorporates the athlete's interview responses into the primary archetype, though the secondary archetype actively fights against the user's stated preferences and adaptive pathways are ignored in the prose.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "The 'Streamline' swimming archetype perfectly matches the user's biometric build (172cm/62kg) and stated endurance preference, though forcing a sprint archetype as the secondary option feels like a stretch."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narrative directly and seamlessly integrates the user's specific answers regarding the 'solitude of the lane' and a 'meditative approach' to endurance."
+    },
+    "distinctness": {
+      "score": 4,
+      "reasoning": "While the two archetypes contrast sharply with each other, the verdicts completely fail to address the adaptive pathways, leaving them as mere title tags with no narrative exploration."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions progress logically from physical strengths to mental focus and training environment, offering meaningfully distinct options that effectively narrow the athletic profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with correct 'The Brisbane 2032 Games' formatting and no unauthorized IP or terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

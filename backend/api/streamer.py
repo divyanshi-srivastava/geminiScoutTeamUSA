@@ -11,6 +11,7 @@ import uuid
 import asyncio
 import datetime
 import logging
+import os
 
 from google.adk import Runner
 from google.adk.sessions import InMemorySessionService
@@ -24,7 +25,55 @@ from api.context import active_agent
 
 logger = logging.getLogger("scout-streamer")
 
+# ── Content rules loaded once at startup ──
+_CONTENT_RULES_PATH = os.path.join(
+    os.path.dirname(__file__), "..", "agents", "data", "content_rules.json"
+)
+with open(_CONTENT_RULES_PATH) as _f:
+    _CONTENT_RULES: dict = json.load(_f)
+
+_FORBIDDEN_TERMS: list[str] = _CONTENT_RULES.get("forbidden_terms", [])
+_EVAL_CRITERIA: list[dict] = _CONTENT_RULES.get("eval_criteria", [])
+
 session_service = InMemorySessionService()
+
+_GAMES_DISPLAY_NAME: dict[int, str] = {
+    1960: "The Rome 1960 Games",
+    1964: "The Tokyo 1964 Games",
+    1968: "The Mexico City 1968 Games",
+    1972: "The Munich 1972 Games",
+    1976: "The Montreal 1976 Games",
+    1980: "The Moscow 1980 Games",
+    1984: "The Los Angeles 1984 Games",
+    1988: "The Seoul 1988 Games",
+    1992: "The Barcelona 1992 Games",
+    1996: "The Atlanta 1996 Games",
+    2000: "The Sydney 2000 Games",
+    2002: "The Salt Lake City 2002 Games",
+    2004: "The Athens 2004 Games",
+    2006: "The Turin 2006 Games",
+    2008: "The Beijing 2008 Games",
+    2010: "The Vancouver 2010 Games",
+    2012: "The London 2012 Games",
+    2014: "The Sochi 2014 Games",
+    2016: "The Rio 2016 Games",
+    2018: "The PyeongChang 2018 Games",
+    2020: "The Tokyo 2020 Games",
+    2022: "The Beijing 2022 Games",
+    2024: "The Paris 2024 Games",
+    2026: "The Milano Cortina 2026 Games",
+    2028: "The LA28 Games",
+    2030: "The French Alps 2030 Games",
+    2032: "The Brisbane 2032 Games",
+    2034: "The Salt Lake City 2034 Games",
+    2036: "The Ahmedabad 2036 Games",
+    2040: "The Doha 2040 Games",
+    2044: "The Istanbul 2044 Games",
+}
+
+
+def _games_name(year: int) -> str:
+    return _GAMES_DISPLAY_NAME.get(year, f"The {year} Games")
 
 def _sse(data: dict | str) -> str:
     if isinstance(data, dict):
@@ -94,12 +143,13 @@ def _build_system_header(request: StoryRequest) -> str:
     if request.target_game_year and request.birth_year:
         age_at_game = request.target_game_year - request.birth_year
         life_stage = _get_life_stage(age_at_game)
+        games_display = _games_name(request.target_game_year)
         header += (
-            f"[SYSTEM: TIME_TRAVEL | Destination: The {request.target_game_year} Games "
+            f"[SYSTEM: TIME_TRAVEL | Destination: {games_display} "
             f"| User age at destination: {age_at_game} | Life stage: {life_stage}]\n"
         )
         if request.is_ready_to_scout:
-            header += f"[SYSTEM: AGE_OVERRIDE | {age_at_game} (at The {request.target_game_year} Games)]\n"
+            header += f"[SYSTEM: AGE_OVERRIDE | {age_at_game} (at {games_display})]\n"
 
     if hasattr(request, 'era_history') and request.era_history:
         header += "[SYSTEM: ERA_HISTORY]\n"
@@ -107,11 +157,32 @@ def _build_system_header(request: StoryRequest) -> str:
             header += f"  {year} Games: {summary}\n"
         header += "[END ERA_HISTORY]\n"
 
+    if hasattr(request, 'era_context_summary') and request.era_context_summary:
+        cs = request.era_context_summary
+        header += "[SYSTEM: ERA_CONTEXT]\n"
+        if cs.get('life_context'):
+            header += f"  Life context: {cs['life_context']}\n"
+        if cs.get('physical_context'):
+            header += f"  Physical context: {cs['physical_context']}\n"
+        if cs.get('athletic_engagement'):
+            header += f"  Athletic engagement: {cs['athletic_engagement']}\n"
+        if cs.get('signals'):
+            header += f"  Signals: {', '.join(cs['signals'])}\n"
+        header += "[END ERA_CONTEXT]\n"
+
     if request.conversation_history:
         header += "\n[SYSTEM: CONVERSATION_HISTORY]\n"
         for turn in request.conversation_history:
             header += f"  {turn.role.upper()}: {turn.content}\n"
         header += "[END CONVERSATION_HISTORY]\n"
+
+    header += f"\n[SYSTEM: CONTENT_RULES]\n"
+    header += f"  FORBIDDEN_TERMS: {', '.join(_FORBIDDEN_TERMS)}\n"
+    if mode == "SCOUTING":
+        criteria_ids = [c["id"] for c in _EVAL_CRITERIA]
+        header += f"  EVAL_CRITERIA: {', '.join(criteria_ids)}\n"
+    header += "[END CONTENT_RULES]\n"
+
     header += "\n"
     return header
 
@@ -335,19 +406,27 @@ async def event_generator(request: StoryRequest):
                 )
                 await asyncio.sleep(0.03)
 
-        result_type = "interview" if mode in ("INTERVIEW", "TIME_TRAVEL_INTERVIEW") else "result"
-        yield _sse({"type": result_type, "response": final_response_text})
-        await asyncio.sleep(0.01)
-
         # ── Detect scouting result even when mode flag disagrees with actual output ──
+        # This must run BEFORE the yield so the correct event type is emitted.
+        # In TIME_TRAVEL_INTERVIEW mode the narrator occasionally returns the scouting
+        # array format instead of an era interview object — emitting that as "interview"
+        # causes clients to crash on a list where they expect a dict.
         _is_scouting_result = mode == "SCOUTING"
         if not _is_scouting_result:
             try:
                 _d = json.loads(final_response_text)
-                if isinstance(_d, list) and len(_d) > 0 and "matched_profile_id" in _d[0]:
+                if isinstance(_d, list) and len(_d) > 0 and isinstance(_d[0], dict) and "matched_profile_id" in _d[0]:
                     _is_scouting_result = True
+                    logger.warning(
+                        "◉ MODE MISMATCH  mode=%s but narrator returned scouting array — emitting as 'result'",
+                        mode,
+                    )
             except Exception:
                 pass
+
+        result_type = "result" if _is_scouting_result else "interview"
+        yield _sse({"type": result_type, "response": final_response_text})
+        await asyncio.sleep(0.01)
 
         # ── Eval Agent — runs after any confirmed scouting result ──
         if _is_scouting_result:

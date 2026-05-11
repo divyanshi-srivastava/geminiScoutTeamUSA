@@ -1,0 +1,78 @@
+{
+  "persona_id": "09_congenital_limb_difference_swimmer",
+  "persona_label": "Congenital limb difference \u2014 adaptive swimmer",
+  "biometrics": {
+    "height_cm": 168,
+    "weight_kg": 63,
+    "birth_year": 1997,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our journey, how would you best describe your current relationship with competitive sport?\nOptions: [I am a lifelong competitive athlete currently looking to refine my performance. | I am just getting back into high-performance sport after time away. | I am exploring how my physical profile could translate to a new, unfamiliar discipline.]"
+    },
+    {
+      "role": "user",
+      "content": "I am a lifelong competitive athlete currently looking to refine my performance."
+    },
+    {
+      "role": "narrator",
+      "content": "In your current training, what aspect of your physical output do you find most defining when you're pushing yourself toward the next tier of high-performance sport?\nOptions: [Explosive, high-intensity bursts\u2014speed and reactive power. | Sustained, rhythmic stamina\u2014long-term endurance and pacing. | Precision-focused movement\u2014balance, coordination, and technical mastery.]"
+    },
+    {
+      "role": "user",
+      "content": "Precision-focused movement\u2014balance, coordination, and technical mastery."
+    },
+    {
+      "role": "narrator",
+      "content": "As you strive for that level of technical excellence, how do you prefer to apply your precision in a competitive environment?\nOptions: [Technical, solo-focused refinement\u2014mastering the craft in solitude. | Tactical, opponent-reactive engagement\u2014adjusting in real-time against an adversary. | Team-integrated collaboration\u2014relying on synergy and collective precision.]"
+    },
+    {
+      "role": "user",
+      "content": "Technical, solo-focused refinement\u2014mastering the craft in solitude."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "At 168cm and 63kg, your frame acts as an ideal lever for the high-velocity demands of Alpine competition. Your commitment to solitary, technical refinement finds its ultimate expression on the mountain, where the wind and ice become your only training partners. As you stand at the gates of The Milano Cortina 2026 Games, your focus on mastering the 'line' reflects an athlete who understands that speed is not just about force, but about the surgical precision of every turn.\n\nIn the adaptive pathway, you represent the elite LW12 classification\u2014a category for athletes with lower-limb impairments who compete using a mono-ski and outriggers. This classification is far more than a technical designation; it is a testament to the relationship between your core stability and the kinetic energy of the mountain. Your success here is driven by your unique ability to internalize technical feedback in total solitude, translating it into the rapid, calculated weight shifts required to navigate a Super-G course. At 29, your maturity in managing this complex, high-stakes balance makes you a formidable presence in the world of high-performance alpine sport."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Adaptive Target Precision (e.g., Archery Women's FITA Round Open)",
+      "scout_verdict": "While the Edge Carver finds rhythm in movement, you possess an equally potent capacity for absolute stillness. This profile shifts your solitary mastery away from the velocity of the track and into the high-pressure environment of the shooting range. At 29, you bring a level of emotional discipline and technical consistency that is rare, perfectly suiting the relentless internal focus required for match-grade marksmanship. You are the architect of your own performance, finding peace in the singular breath before the trigger break.\n\nContrasting your speed-focused potential, the adaptive archery pathway offers a rigorous test of your coordination and environmental awareness. In the Open classification for archery, your physical engagement is stripped back to its most essential elements: aim, stability, and the release. This discipline rewards the exact same analytical mindset you identified in your training, but pivots the demand from rapid speed-work to the long-term, meditative pursuit of perfection. As you prepare for The Brisbane 2032 Games, this pathway celebrates your ability to command your own physiology, proving that your most significant competitive asset is not just your strength, but your unwavering, methodical mental clarity."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, well-reasoned scouting report that effectively translates the user's preference for precision and solitary training into two highly distinct, plausible athletic profiles.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The biometrics (168cm, 63kg) are plausible for both Alpine Skiing and Marksmanship/Archery, and the user's focus on precision and solo refinement perfectly matches both archetypes."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdict explicitly incorporates the user's biometrics and directly references their stated preference for 'solitary, technical refinement' and 'internal focus'."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The two pathways provide excellent contrast, comparing the high-velocity kinetic energy of Alpine Skiing to the absolute stillness and emotional discipline of Marksmanship/Archery."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions progress logically, starting broad and drilling down into the specific application of precision (solo vs. opponent-reactive vs. team), offering genuinely distinct options."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with properly formatted references to 'The Milano Cortina 2026 Games' and 'The Brisbane 2032 Games', with no standalone trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

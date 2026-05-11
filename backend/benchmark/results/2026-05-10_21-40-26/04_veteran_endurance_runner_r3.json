@@ -1,0 +1,86 @@
+{
+  "persona_id": "04_veteran_endurance_runner",
+  "persona_label": "Veteran ultramarathon runner",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 70,
+    "birth_year": 1984,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our conversation, how would you best describe your current relationship with physical training and movement?\nOptions: [I am a former competitive athlete looking to return to a high level of intensity. | I am an active enthusiast who enjoys regular, consistent training. | I am new to the world of competitive sport and am looking for a starting point. | I focus primarily on functional movement and long-term wellness.]"
+    },
+    {
+      "role": "user",
+      "content": "I am an active enthusiast who enjoys regular, consistent training."
+    },
+    {
+      "role": "narrator",
+      "content": "What specific types of movement or training currently dominate your routine?\nOptions: [Strength and resistance training | Endurance training (running, cycling, or swimming) | Functional fitness and high-intensity agility work | Field or court-based team sports]"
+    },
+    {
+      "role": "user",
+      "content": "Endurance training (running, cycling, or swimming)"
+    },
+    {
+      "role": "narrator",
+      "content": "When you engage in your training, what drives you most\u2014are you focused on personal benchmarks, looking for competitive race experiences, or is it primarily about the long-term lifestyle and health benefits?\nOptions: [I focus on personal benchmarks and tracking performance progress. | I actively participate in local races or community endurance events. | I prioritize the mental clarity and well-being my training provides. | I am looking for a new challenge in high-performance sport.]"
+    },
+    {
+      "role": "user",
+      "content": "I prioritize the mental clarity and well-being my training provides."
+    },
+    {
+      "role": "narrator",
+      "content": "Before we proceed to see where your profile fits within the landscape of high-performance sport, is there a specific type of challenge you've always been curious about, or are you looking for the scouting system to suggest a path for you?\nOptions: [I'm curious about testing my limits in longer-distance endurance events. | I'd like to explore how my endurance base translates to speed or agility disciplines. | I'm open to any recommendations the scouting system suggests based on my profile. | I'm looking for a new, structured competitive challenge.]"
+    },
+    {
+      "role": "user",
+      "content": "I'm curious about testing my limits in longer-distance endurance events."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "At 175cm and 70kg, you possess the ideal equilibrium for the Road Machine profile. Your years of endurance training have forged a body that thrives under the steady, rhythmic demand of long-distance cycling. While you began this journey for the mental clarity that endurance provides, your current transition into competitive long-distance events marks the next logical chapter of your sporting journey.\n\nImagine yourself at the starting line of The Brisbane 2032 Games. The focus, the rhythm, and the profound mental resilience you\u2019ve built over years of training are now your greatest weapons. Your age of 42 is not a limitation; it is the manifestation of seasoned discipline. You possess the aerobic capacity and the steady hand required to master this path, turning your lifelong pursuit of well-being into a testament of high-performance endurance."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "The Block Starter profile offers a daring pivot for someone with your established endurance background. At 70kg, you have a solid, dense frame that hides latent explosive potential. Stepping away from the meditative pace of the road and onto the track is a radical experiment in kinetic energy. This path challenges you to transform the aerobic efficiency you\u2019ve cultivated into a singular, lightning-fast release of power.\n\nVisualize your preparation for The LA28 Games. Transitioning from the steady endurance grind to the visceral intensity of the track requires a completely different mindset. While your roots are firmly in endurance, this discipline tests if you can harness your existing conditioning to master sudden acceleration. It is a new challenge\u2014a way to see if your body can surprise itself by trading hours of rhythmic effort for a fleeting, high-intensity performance."
+    }
+  ],
+  "eval_result": {
+    "overall": 5,
+    "summary": "The scouting report effectively personalizes the narrative using the user's interview responses, but it completely fails to integrate or explore the adaptive pathways within the verdicts.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While the 'Road Machine' fits perfectly with the 175cm/70kg biometrics and endurance background, suggesting 'Block Starter' as a daring pivot for a 42-year-old endurance athlete strains credibility."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative successfully incorporates specific user inputs, such as their age, biometrics, and motivation for 'mental clarity' through endurance training."
+    },
+    "distinctness": {
+      "score": 2,
+      "reasoning": "The scout verdicts completely ignore the adaptive pathways, offering zero narrative distinction or insight beyond listing them in the pathway fields."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The interview logically builds from general fitness to specific disciplines and motivations, with options that meaningfully differentiate the user's goals."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Games references correctly use the required format (e.g., 'The Brisbane 2032 Games'), with no trademark violations detected."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

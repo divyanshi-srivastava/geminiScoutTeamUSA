@@ -1,0 +1,78 @@
+{
+  "persona_id": "13_wheelchair_racer_paraplegic",
+  "persona_label": "T4 paraplegic \u2014 wheelchair racer and basketball player",
+  "biometrics": {
+    "height_cm": 163,
+    "weight_kg": 55,
+    "birth_year": 2004,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To help me understand your background, how would you describe your history with competitive sport?\nOptions: [I have been competing at a high level for years | I have played many sports, but never specialized in one | I am relatively new to structured training, but ready to commit]"
+    },
+    {
+      "role": "user",
+      "content": "I have been competing at a high level for years"
+    },
+    {
+      "role": "narrator",
+      "content": "To get a better sense of your current routine, how many hours per week do you typically dedicate to your structured training?\nOptions: [Less than 5 hours | 5-10 hours | 10-20 hours | Over 20 hours]"
+    },
+    {
+      "role": "user",
+      "content": "Over 20 hours"
+    },
+    {
+      "role": "narrator",
+      "content": "As you navigate your current sporting journey, what is your primary focus for the next phase of your development?\nOptions: [Mastering a single, specific discipline | Developing a versatile, multi-sport skill set | Finding the high-performance environment that best fits my profile]"
+    },
+    {
+      "role": "user",
+      "content": "Mastering a single, specific discipline"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "Your commitment to high-level competition and your resolve to master a single, focused discipline distinguish you as a true specialist. At 22 years old, with a 163cm and 55kg frame, you possess the ideal physical architecture for the high-efficiency, sustained output demanded by road sports. Your dedication\u2014clocking over 20 hours of training every single week\u2014provides the perfect engine to drive this athletic archetype forward.\n\nAs you look toward the horizon of your competitive sport journey, this profile offers a path where your methodical intensity becomes your greatest asset. Whether on two wheels or in a handcycle, your ability to focus on the technical nuances of cadence and resistance is exactly what is required to reach the podium at The Brisbane 2032 Games. You are built not just for movement, but for the precision of endurance, turning every training session into a step toward mastery."
+    },
+    {
+      "matched_profile_id": 2,
+      "matched_profile_name": "Long Haul",
+      "pathway_standing": "Distance Running",
+      "pathway_adaptive": "Wheelchair Racing (e.g., Women's Marathon T54)",
+      "scout_verdict": "Success in the long-distance arena is defined by the depth of one's reserves and the consistency of the daily grind. Your background in high-level competition and your proven ability to sustain over 20 hours of structured training per week demonstrate a level of grit that is essential for this high-performance athletic pathway. At 163cm and 55kg, your body type is perfectly suited for the metabolic efficiency needed to sustain high-speed endurance over the grueling course of a major marathon.\n\nThis profile is designed for those who find their rhythm in the repeat, in the long hours of effort, and in the quiet discipline of the road. As you continue your sporting journey, you are essentially training for the endurance test of a lifetime at The Los Angeles 2028 Games. Your focus on mastering a single discipline aligns perfectly with the tactical demands of distance racing, where the difference between reaching the podium and the pack is often found in the dedication you bring to every mile."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "The scouting report delivers highly authentic and well-justified pathways for an endurance athlete, effectively weaving the user's specific interview responses into the final verdict.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "A height of 163cm and weight of 55kg paired with a 20+ hour training week perfectly align with the physical and metabolic profiles of elite distance runners and cyclists."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative explicitly incorporates the user's focus on 'mastering a single discipline' and their 'over 20 hours' of weekly training to justify the recommendations."
+    },
+    "distinctness": {
+      "score": 7,
+      "reasoning": "While the physical sports are distinct (cycling vs running), both narratives lean heavily on similar thematic elements of endurance, grit, and the 'long haul'."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions successfully establish the athlete's dedication and training volume through meaningfully distinct options that would logically differentiate an endurance specialist from a casual competitor."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass with correct Games nomenclature (e.g., 'The Brisbane 2032 Games') and no prohibited terms."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

@@ -1,0 +1,77 @@
+{
+  "persona_id": "14_deaf_sprinter",
+  "persona_label": "Profoundly deaf \u2014 competitive 400m sprinter",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 76,
+    "birth_year": 2001,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, how would you describe your history in competitive sport? Have you spent your years honing a specific discipline, or has your experience been more about testing your versatility across different activities?\nOptions: [I\u2019ve been hyper-focused on one specific sport for years. | I\u2019ve explored many different activities and enjoy being a generalist. | I am new to the world of high-performance athletics.]"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019ve been hyper-focused on one specific sport for years."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back on your time within that sport, do you feel you thrive most in the high-pressure environment of individual competition, or do you find your best performance comes from being part of a team?\nOptions: [I thrive in the high-pressure environment of individual competition. | I perform best when part of a team, working toward a shared goal. | I enjoy a blend of both, depending on the training phase.]"
+    },
+    {
+      "role": "user",
+      "content": "I thrive in the high-pressure environment of individual competition."
+    },
+    {
+      "role": "narrator",
+      "content": "As we look at your pathway toward top-tier athletic goals, would you say your primary motivation comes from the internal challenge of constantly pushing your own limits, or are you driven more by the pursuit of podium moments?\nOptions: [The internal challenge of self-improvement. | The pursuit of podiums and external validation. | A balance of both internal growth and external achievement.]"
+    },
+    {
+      "role": "user",
+      "content": "The pursuit of podiums and external validation."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "At 178.0cm and 76.0kg, you possess the raw, explosive power that defines the sprint archetype. Your years of hyper-focus on a single discipline have forged the mental resilience required for the singular, heart-pounding intensity of the track, where every millisecond determines your legacy. At 25, you are entering the prime of your career, perfectly positioned to channel your pursuit of podiums into the electric atmosphere of The Los Angeles 2028 Games.\n\nThis path is tailor-made for your competitive spirit; it is about the cold, individual pressure you thrive under. Your desire for external validation finds its ultimate home here, where the world is watching for the fastest person on the track. You aren't looking for teammates to share the burden\u2014you seek the glory of the finish line all to yourself, and with your natural build, that glory is well within your reach."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "Should you seek a transition from the explosive velocity of the track, the world of endurance cycling offers a compelling alternative. Your lean, 76.0kg frame is a precision instrument, perfectly suited for the grueling, methodical demands of long-distance circuits where grit and data merge to create a championship performance. The solitary nature of this pathway rewards your deep-seated drive for self-validation, pitting your internal limits against the clock and the open road.\n\nImagine the focus required to navigate a technical road race at The Brisbane 2032 Games, where your ability to sustain power over long durations will define your standing. This discipline provides a different kind of intensity\u2014one where you are the sole architect of your strategy. Your history of hyper-focus acts as the perfect bedrock for the specialized, data-driven lifestyle of a top-tier cyclist, turning every training session into a calculated step toward your next podium moment."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "The scouting report effectively leverages the user's biometrics and interview responses to create tailored, plausible sport recommendations, but entirely fails to integrate the adaptive pathways into the narrative verdicts.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "At 178cm and 76kg, the user has an appropriate build for both sprint power and endurance cycling, making the athletic recommendations highly credible."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts brilliantly weave in the user's specific answers regarding 'hyper-focus,' 'individual competition,' and the desire for 'podiums and external validation.'"
+    },
+    "distinctness": {
+      "score": 4,
+      "reasoning": "While the two archetypes (sprints vs. endurance cycling) are distinct from each other, the verdicts completely ignore the adaptive pathways, merely listing them in the headers without providing any narrative insight."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions progressively narrow down the athlete's psychological profile, and the options provided are meaningfully distinct, allowing for a genuine fork in potential recommendations."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Compliant references to The Los Angeles 2028 Games and The Brisbane 2032 Games with no trademark violations."
+    }
+  },
+  "backend_error": null
+}

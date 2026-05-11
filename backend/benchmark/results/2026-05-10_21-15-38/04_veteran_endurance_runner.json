@@ -1,0 +1,77 @@
+{
+  "persona_id": "04_veteran_endurance_runner",
+  "persona_label": "Veteran ultramarathon runner",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 70,
+    "birth_year": 1984,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To kick things off, could you tell me a bit about your current relationship with physical activity and any sports you've been passionate about throughout your life?\nOptions: [I'm currently very active with endurance and strength training | I'm looking to get back into competitive sport after a long break | I've been involved in team sports for most of my life | I'm starting from scratch and looking for a new athletic challenge]"
+    },
+    {
+      "role": "user",
+      "content": "I'm currently very active with endurance and strength training"
+    },
+    {
+      "role": "narrator",
+      "content": "When you look at your current training, what kind of challenges or goals drive you to keep pushing your limits?\nOptions: [I'm looking for a new high-performance competitive challenge | I want to refine my skills to set new personal benchmarks | I'm interested in testing my capabilities in a structured, competitive setting | I'm exploring how my background translates to a specific top-tier athletic pathway]"
+    },
+    {
+      "role": "user",
+      "content": "I want to refine my skills to set new personal benchmarks"
+    },
+    {
+      "role": "narrator",
+      "content": "As you look at the landscape of high-performance sport, are you more drawn to the raw, explosive power of speed and strength, or the tactical endurance and mental fortitude required for long-distance events?\nOptions: [Explosive power and speed | Endurance and tactical precision | A hybrid approach blending both]"
+    },
+    {
+      "role": "user",
+      "content": "Endurance and tactical precision"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "At 42, your years of dedicated endurance and strength training have forged a physical profile that thrives under the grueling demands of the long haul. Your 175cm, 70kg frame is optimized for sustained power output, acting as a highly efficient engine that does not waste a single watt of energy. When you step onto the course at The Los Angeles 2028 Games, you bring more than just muscle; you bring a seasoned tactical mind that thrives on precision and pacing. In a discipline where the smallest adjustment in strategy can mean the difference between the podium and the pack, your commitment to refining your own benchmarks makes you a formidable force on the road."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "While your heart often leans toward the steady, calculated rhythm of long-distance events, your background in strength training reveals a secondary, dormant potential for explosive, high-intensity speed. Your 175cm frame offers a compact, dense foundation that is uniquely capable of channeling raw power into an immediate, lightning-fast start. At The Brisbane 2032 Games, you would not just be a competitor; you would be a master of the explosive transition. This archetype rewards the very discipline you have cultivated in your training, requiring a rare, refined focus to master the kinetic physics of the sprint, proving that your athletic peak is defined by your intent, not your age."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "The report delivers a highly personalized and authentic athletic profile based on the user's endurance background, though it fails to integrate the adaptive pathways into the narrative verdicts.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The 175cm, 70kg biometric profile perfectly aligns with the 'Road Machine' cycling archetype, representing a highly realistic endurance athlete build."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The scout verdicts specifically weave in the user's age, endurance/strength background, and exact interview phrasing about refining skills for 'personal benchmarks'."
+    },
+    "distinctness": {
+      "score": 4,
+      "reasoning": "While the two archetypes contrast nicely (endurance vs. sprints), the narrative verdicts completely ignore the adaptive pathways, offering no genuine insight beyond adding them to the title fields."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions logically progress from general activity level to specific athletic motivators, with the final question about endurance vs. power creating a meaningful fork in the recommendation."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Properly formats 'The Los Angeles 2028 Games' and 'The Brisbane 2032 Games' without triggering any restricted Olympic terminology or NIL violations."
+    }
+  },
+  "backend_error": null
+}

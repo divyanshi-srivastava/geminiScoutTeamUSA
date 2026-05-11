@@ -1,0 +1,82 @@
+{
+  "persona_id": "11_retired_gymnast_time_travel_1984",
+  "persona_label": "Retired gymnastics coach \u2014 time travel to 1984 LA Games",
+  "biometrics": {
+    "height_cm": 162,
+    "weight_kg": 57,
+    "birth_year": 1958,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "When you reflect on your relationship with movement and high-performance athletics over the years, which of these best describes your path?\nOptions: [Lifelong competitor: I have always been driven by structured training and testing my limits. | Dedicated hobbyist: I have prioritized consistent movement, outdoor pursuits, and mastering technical skills. | Dynamic explorer: I have continuously sought out new sports and diverse ways to challenge my body.]"
+    },
+    {
+      "role": "user",
+      "content": "Lifelong competitor: I have always been driven by structured training and testing my limits."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look back on your competitive years, what kind of physical challenges have kept that flame burning the brightest?\nOptions: [Precision-based technical sports: I have always been drawn to mastery and micro-adjustments. | High-output endurance pursuits: I find my flow state in sustained, rhythmic physical exertion. | Explosive power and strength training: I have always gravitated toward lifting, throwing, or short-burst speed.]"
+    },
+    {
+      "role": "user",
+      "content": "Precision-based technical sports: I have always been drawn to mastery and micro-adjustments."
+    },
+    {
+      "role": "narrator",
+      "content": "As you were building toward your peak in 1984, what was life asking of you alongside your rigorous training schedule?\nOptions: [Professional Immersion: I was balancing a demanding early-career path while maintaining a strictly regimented training life. | Sporting Focus: My life was almost entirely dedicated to my training environment and competitive preparation. | Geographic Transition: I was navigating a major relocation or environment change during those critical performance years.]"
+    },
+    {
+      "role": "user",
+      "content": "Sporting Focus: My life was almost entirely dedicated to my training environment and competitive preparation."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Women's FITA Round Open)",
+      "scout_verdict": "In the sweltering heat of The Los Angeles 1984 Games, your 26-year-old self would have found a sanctuary in the quiet intensity of the shooting range. With a compact frame of 162cm and 57kg, you possess a natural center of gravity that lends itself to the stillness required for marksmanship. Your lifelong commitment to structured competition is the bedrock upon which your composure is built; in a sport where heart rate management is the difference between podium success and runner-up, your ability to cultivate internal silence is your greatest weapon.\n\nFor your adaptive pathway, the Archery Women's FITA Round Open classification\u2014designed for athletes who possess the technical capacity to draw and release independently\u2014calls upon that same analytical mind. Here, you aren't just hitting a target; you are engaging in a rhythmic dialogue with the wind and the tension of the bow. Your affinity for micro-adjustments transforms the FITA Round into a study of perfection, where your precision is the ultimate expression of the total devotion you gave to your sport during those golden years.\n\nThis discipline requires the same intense focus on internal consistency. By applying your capacity for deliberate movement to the challenges of the open-air range, you create a seamless connection between your physical form and the mechanics of the sport, solidifying your status as a competitor of deep technical prowess."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Women's 67 kg)",
+      "scout_verdict": "If the precision of the range represents your mental discipline, the wrestling mat represents the raw, physical realization of your competitive fire. At 26, with the peak conditioning of an athlete living solely for her craft, you would have approached the mat not as a place of chaos, but as a technical puzzle requiring explosive power and iron-clad stability. Your stature allows for a lower, more grounded base of operations, making you a formidable force in hand-to-hand combat where every shift in weight dictates the flow of the bout.\n\nIn contrast to the stillness of precision, the powerlifting arena demands a visceral, structural resilience. In this category, your dedication to intense, regimented training pays dividends through pure kinetic output. Here, the challenge is no longer about the grace of a release, but the absolute integrity of your kinetic chain. By applying the same uncompromising focus you once gave to technical sport, you transform the weights into a manifestation of sheer willpower, proving that your legacy is defined as much by your capacity for immense force as it is by your capacity for quiet focus.\n\nThis strength-based discipline rewards the same level of granular attention to movement that you honed throughout your career. Each lift requires a synthesis of explosive movement and steady composure, reflecting your ability to adapt your high-performance background into a display of absolute strength and controlled power."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly personalized and distinct scouting report that effectively utilizes the user's interview answers and temporal context. The archetypes perfectly map to the requested precision and competitive focus, offering two meaningfully different athletic avenues.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "A frame of 162cm and 57kg is an excellent biometric fit for both the stillness of marksmanship and a lower weight class in wrestling or powerlifting."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdict seamlessly integrates specific interview concepts, directly tying her 'affinity for micro-adjustments' and 'living solely for her craft' into the narrative."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The report provides a profound contrast between the absolute stillness of marksmanship (internal silence) and the explosive, raw kinetic output of wrestling and powerlifting."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "Perfectly captures the 'Elite Peak' stage by referencing her '26-year-old self' and the 'peak conditioning of an athlete' at the height of her training."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions offer meaningful athletic and lifestyle forks, particularly the second question which excellently divides athletes into precision, endurance, or explosive power categories."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean pass with correct 'The Los Angeles 1984 Games' formatting and no trademark or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

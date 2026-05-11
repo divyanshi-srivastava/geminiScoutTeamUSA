@@ -1,0 +1,86 @@
+{
+  "persona_id": "14_deaf_sprinter",
+  "persona_label": "Profoundly deaf \u2014 competitive 400m sprinter",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 76,
+    "birth_year": 2001,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe your current relationship with physical training and competitive sport?\nOptions: [I have a background in competitive team or club sports. | I am a dedicated solo trainee with a consistent routine. | I am just beginning to explore a more structured athletic life. | I have experience in high-performance, professional-level training.]"
+    },
+    {
+      "role": "user",
+      "content": "I have experience in high-performance, professional-level training."
+    },
+    {
+      "role": "narrator",
+      "content": "To better understand your specific athletic foundation, what was the primary focus of your high-performance training?\nOptions: [Strength and Power | Endurance and Stamina | Technical Agility and Speed | Team-Based Tactical Discipline]"
+    },
+    {
+      "role": "user",
+      "content": "Technical Agility and Speed"
+    },
+    {
+      "role": "narrator",
+      "content": "How does your current lifestyle impact your ability to pursue a high-performance athletic pathway?\nOptions: [My current career or studies leaves me with limited, focused training windows. | My life is structured around my training cycles, making it my primary focus. | I balance a busy lifestyle with high-intensity training sessions when I can fit them in.]"
+    },
+    {
+      "role": "user",
+      "content": "My life is structured around my training cycles, making it my primary focus."
+    },
+    {
+      "role": "narrator",
+      "content": "What is the primary motivation driving you toward a high-performance athletic pathway\u2014are you chasing the thrill of head-to-head competition, the internal satisfaction of pushing your personal limits, or the mastery of complex technical movements?\nOptions: [The thrill of head-to-head competition | The pursuit of personal records and limits | The mastery of complex technical movements]"
+    },
+    {
+      "role": "user",
+      "content": "The pursuit of personal records and limits"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "At 25 years old, you stand at the precise intersection of experience and raw, explosive potential. Your frame\u2014178.0cm and 76.0kg\u2014offers the perfect mechanical foundation for the track, providing a compact, high-torque build that translates every ounce of effort into forward velocity. Because your lifestyle is already structured around the rigorous demands of a training cycle, you possess the mental discipline required to shave those vital milliseconds off your personal records.\n\nAs you look toward the horizon of The Brisbane 2032 Games, imagine yourself settled into the blocks. The hours spent mastering technical agility are not just training; they are the architecture of your competitive future. Every explosive drive phase and every transition is a testament to your commitment to personal mastery. On the track, the pursuit of your own limits is the ultimate race, and you have the physical profile to turn that ambition into a legacy of speed."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "Your commitment to a high-performance lifestyle makes you a natural candidate for the sustained intensity of the cycling world. While your background is rooted in speed and agility, those traits are the exact components needed to dominate the velodrome or the punishing inclines of a road race. Your 178.0cm, 76.0kg build provides an exceptional power-to-weight ratio, allowing you to sustain high wattage with the technical precision of an athlete who has spent years perfecting their movement.\n\nIn the lead-up to The Brisbane 2032 Games, your transition from technical speed to endurance power will be your defining narrative. You thrive on the internal satisfaction of breaking records, and the road offers a unique canvas for that drive. Whether you are navigating a sharp velodrome banking or pushing through the final kilometers of a road race, your ability to treat training as a primary focus will be the engine that carries you to the pinnacle of the sport."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A highly personalized and athletically authentic report that effectively uses interview data, but fails to integrate the adaptive pathways into the narrative text.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The 178cm/76kg build perfectly aligns with the high-torque mechanical requirements of a Block Starter and the power-to-weight needs of a track cyclist."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "Exceptional integration of interview answers, directly linking the user's focus on 'technical agility', 'pursuit of personal records', and structured training lifestyle to the athletic demands."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "While the two archetypes are distinct sports, the scout verdicts completely ignore the adaptive pathways, writing exclusively about standing scenarios like starting blocks and velodromes."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The interview logically progresses from training background to lifestyle and motivation, offering meaningfully distinct options that genuinely differentiate the athlete's psychological and physical profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Properly uses 'The Brisbane 2032 Games' and avoids forbidden trademark terms, though it skates close to a violation regarding narrative depth imbalance by omitting adaptive text."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

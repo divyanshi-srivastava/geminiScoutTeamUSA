@@ -1,0 +1,78 @@
+{
+  "persona_id": "07_congenitally_blind_goalball",
+  "persona_label": "Congenitally blind \u2014 goalball and tandem cycling",
+  "biometrics": {
+    "height_cm": 165,
+    "weight_kg": 60,
+    "birth_year": 1992,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "How would you best describe your current engagement with high-performance athletics and training?\nOptions: [Lifelong competitor in various sports | Returning to competitive training after a significant break | New to the pursuit of high-performance athletics | Focused on fitness with an interest in competitive scaling]"
+    },
+    {
+      "role": "user",
+      "content": "Lifelong competitor in various sports"
+    },
+    {
+      "role": "narrator",
+      "content": "To get a better sense of your athletic trajectory, could you tell me more about the specific types of disciplines or team environments you've spent the most time in?\nOptions: [Endurance and aerobic-based sports (running, cycling, rowing) | Explosive and power-focused activities (sprinting, lifting, jumping) | Skill-based and technical sports (racquet sports, martial arts) | Team-based competitive dynamics]"
+    },
+    {
+      "role": "user",
+      "content": "Team-based competitive dynamics"
+    },
+    {
+      "role": "narrator",
+      "content": "As you think about your time in team environments, what role do you feel you naturally gravitate toward when the pressure is at its highest?\nOptions: [The tactical strategist, breaking down the game plan | The engine, maintaining relentless intensity | The motivator, keeping the team's spirit high | The clutch performer, focused on the decisive play]"
+    },
+    {
+      "role": "user",
+      "content": "The clutch performer, focused on the decisive play"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "At 34, with a lifetime of navigating complex team dynamics, you bring a level of tactical maturity that is rarely seen. Your build of 165cm and 60kg provides an ideal power-to-weight ratio for endurance, allowing you to sustain aggressive pacing whether in standing cycling disciplines or within the technical requirements of handcycling. Your history as a clutch performer ensures that you do not just endure the long miles; you treat every kilometer as a strategic setup for the final, decisive strike. As you approach the starting line at The Brisbane 2032 Games, your ability to remain calm amidst the intensity of the pack becomes your greatest asset. Whether competing in standing or adaptive categories, you possess the internal engine to withstand the competition and the cool-headed clarity to identify exactly when the moment for success arrives. You are a tactical machine, ready to execute with clinical precision when the podium is on the line."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's +100 kg)",
+      "scout_verdict": "Your background as a lifelong competitor in team environments has instilled in you a unique comfort with high-stakes pressure, whether applying leverage in standing wrestling disciplines or showcasing raw power and control in powerlifting. At 165cm, your compact build gives you a natural center of gravity and a tactical advantage that is essential for dominating the field. You have spent years fine-tuning your reactions, and now, that experience manifests as a singular, unwavering focus on the decisive play. Stepping into the arena at The Los Angeles 2028 Games, you will be prepared for any challenge. You excel at the 'clutch' moments\u2014those split-second windows where the result is determined\u2014using your tactical mind to exploit the slightest imbalance. Your journey has led you to this stage, where your tenacity and technical precision make you a formidable force in either pathway, capable of turning intense pressure into a clinical victory."
+    }
+  ],
+  "eval_result": {
+    "overall": 3,
+    "summary": "The report fundamentally fails on authenticity by assigning Men's heavyweight adaptive pathways to a 60kg female athlete, and it awkwardly crams standing and adaptive sports into single paragraphs rather than exploring them distinctly.",
+    "authenticity": {
+      "score": 2,
+      "reasoning": "Suggesting 'Men's +100 kg' powerlifting and 'Men's Road Race' for a 60kg female completely breaks plausibility, even if the standing sports arguably match her build."
+    },
+    "personalization": {
+      "score": 6,
+      "reasoning": "The verdict integrates her interview answers directly (referencing her 'history as a clutch performer' in 'team dynamics'), though it feels somewhat mad-libs style."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "Standing and adaptive pathways are not treated distinctly; instead, they are awkwardly merged into single sentences like 'whether in standing cycling disciplines or within the technical requirements of handcycling'."
+    },
+    "interview_quality": {
+      "score": 5,
+      "reasoning": "The questions progress logically from background to sport type to psychological role, but they feel more like a generic personality quiz than a deep athletic assessment."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean of restricted terms, NIL, and logos, properly using 'The Brisbane 2032 Games' format."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

@@ -1,0 +1,86 @@
+{
+  "persona_id": "07_congenitally_blind_goalball",
+  "persona_label": "Congenitally blind \u2014 goalball and tandem cycling",
+  "biometrics": {
+    "height_cm": 165,
+    "weight_kg": 60,
+    "birth_year": 1992,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, how would you best describe your current relationship with physical training or competitive sports?\nOptions: [I am currently very active and training regularly | I have a background in competitive sports but have recently taken a break | I am looking to start a new high-performance pathway from scratch]"
+    },
+    {
+      "role": "user",
+      "content": "I am currently very active and training regularly"
+    },
+    {
+      "role": "narrator",
+      "content": "Since you are already in the rhythm of regular training, what does your primary focus look like during a typical week?\nOptions: [Endurance and cardio-heavy training | Strength, power, and explosive movements | Skill-based technical training or team sports | A balanced mix of everything]"
+    },
+    {
+      "role": "user",
+      "content": "Skill-based technical training or team sports"
+    },
+    {
+      "role": "narrator",
+      "content": "Thinking back to your personal sporting journey, what has been the most significant factor in shaping your commitment to your chosen discipline?\nOptions: [Mastering technical proficiency under high-pressure scenarios | Building mental resilience through challenging competition | The process of constant improvement and skill refinement | The camaraderie and strategic demands of team dynamics]"
+    },
+    {
+      "role": "user",
+      "content": "Mastering technical proficiency under high-pressure scenarios"
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward the potential of a high-performance athletic pathway, what is your ultimate ambition within your sporting journey?\nOptions: [To reach the highest international level of competition | To push my physical and mental limits through constant refinement | To contribute my skills to a competitive team environment | To balance elite performance with personal mastery]"
+    },
+    {
+      "role": "user",
+      "content": "To reach the highest international level of competition"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "Your commitment to technical precision and high-pressure scenarios finds a powerful new expression in the cycling circuit. At 34, you possess the mental maturity and tactical foresight necessary to thrive in the complex, high-stakes drafting battles of the peloton. Your efficient 165cm, 60kg build acts as a natural engine, perfectly suited for the sustained aerobic demands of this discipline.\n\nAs you look toward the horizon of The Brisbane 2032 Games, your transition from skill-based team environments into the focused world of endurance racing will be defined by your ability to execute under pressure. The road is demanding, but for someone with your history of refining technique and pursuing constant improvement, it is a landscape waiting to be conquered. You are moving from the training ground to the world stage, where every watt saved and every tactical decision made becomes the difference between a podium finish and the rest of the field."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's +100 kg)",
+      "scout_verdict": "For someone who identifies most strongly with mastering technical proficiency under high-pressure scenarios, the wrestling mat offers a visceral, chess-like intensity that few other disciplines can replicate. Your history in skill-based and team-oriented sports provides the foundational discipline needed to navigate the demanding, leverage-heavy reality of grappling. At this stage of your sporting journey, your drive to refine your craft becomes your greatest asset.\n\nCompeting at The Brisbane 2032 Games requires more than just raw strength; it demands the mental fortitude you have already cultivated throughout your career. Every match is an exercise in high-stakes problem solving, where your efficiency and technical edge will allow you to neutralize opponents and control the tempo. You are not just stepping onto the mat to compete; you are stepping up as a technician of the sport, ready to apply your experience to reach the absolute summit of international performance."
+    }
+  ],
+  "eval_result": {
+    "overall": 2,
+    "summary": "The scouting report integrates interview answers effectively but completely fails on basic user facts, assigning Men's heavy-weight adaptive pathways to a 60kg female.",
+    "authenticity": {
+      "score": 2,
+      "reasoning": "While 165cm/60kg is a plausible build for female cycling and wrestling, recommending 'Men's +100 kg' Powerlifting and 'Men's Road Race' to a 60kg female completely breaks reality."
+    },
+    "personalization": {
+      "score": 4,
+      "reasoning": "The verdicts accurately weave in the user's specific answers about technical precision and high-pressure scenarios, but misgendering the user in the pathway titles destroys the personalized feel."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "Although the standing sports (Cycling vs. Wrestling) are distinct, the narratives completely ignore the adaptive pathways, offering zero insight into how the user would perform in Handcycling or Powerlifting."
+    },
+    "interview_quality": {
+      "score": 5,
+      "reasoning": "The interview progresses logically from training status to motivation, but the questions feel generic and act more like a personality quiz than a robust athletic assessment."
+    },
+    "compliance": {
+      "passed": false,
+      "note": "Violation: There is a significant narrative depth imbalance, as the scout verdicts focus entirely on the standing sports and completely ignore the adaptive pathways."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

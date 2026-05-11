@@ -1,0 +1,85 @@
+{
+  "persona_id": "07_congenitally_blind_goalball",
+  "persona_label": "Congenitally blind \u2014 goalball and tandem cycling",
+  "biometrics": {
+    "height_cm": 165,
+    "weight_kg": 60,
+    "birth_year": 1992,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started on your sporting journey, how would you describe your historical engagement with physical training and competitive activities?\nOptions: [Lifelong athlete: I have been involved in structured training and competition since childhood. | The late bloomer: My serious focus on physical performance is a more recent development. | Recreational to competitive: I have stayed active for years, but I am now ready to push into a high-performance framework.]"
+    },
+    {
+      "role": "user",
+      "content": "Lifelong athlete: I have been involved in structured training and competition since childhood."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look back on your journey through competitive sport, which physical quality has always felt like your most reliable superpower in the heat of a performance?\nOptions: [Explosive power and rapid, reactive movement | Sustained endurance and steady-state pacing | Technical precision and nuanced control]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and rapid, reactive movement"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the middle of a high-performance challenge, what drives your internal motivation to push through the hardest moments?\nOptions: [The pursuit of tactical superiority and outsmarting the opposition | The visceral thrill of peak exertion and testing my physical limits | The drive to refine technique and achieve absolute movement mastery]"
+    },
+    {
+      "role": "user",
+      "content": "The pursuit of tactical superiority and outsmarting the opposition"
+    },
+    {
+      "role": "narrator",
+      "content": "I have everything I need to map out your potential path to the podium. Are you ready to see your athletic blueprint?"
+    },
+    {
+      "role": "user",
+      "content": "I am ready to review the data and determine how my physical profile translates into a concrete plan for the next Paralympic cycle."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Women's -67 kg)",
+      "scout_verdict": "Your journey as a lifelong athlete has forged a deep-seated connection between your intent and your physical response. At 165cm and 60kg, you possess a compact, high-output engine perfectly suited for the tactical density of the Mat Technician archetype. In the arena, where every millisecond of leverage matters, your desire to outsmart the opposition finds its home in the intense, force-based discipline of the powerlifting platform.\n\nAt 34, you bring the wisdom of decades of competitive engagement to the training hall. This isn't just about moving mass; it is a game of millimeters, where your explosive power is harnessed into a singular, calculated exertion. As you look toward The Los Angeles 2028 Games, your ability to read an opponent\u2014or in this case, the mechanics of the bar\u2014serves as your greatest asset. You have the structural foundation and the mental fortitude to transform that lifelong competitive hunger into a performance of absolute, tactical precision."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "If the Mat Technician pathway demands brute tactical force, the Edge Carver pathway asks you to translate your reactivity into the high-velocity, high-consequence environment of the mountain. This path invites you into the LW12 classification\u2014a category for athletes with impairment in the lower limbs who compete in a sit-ski, utilizing a single ski attached to a specialized chair. Mastering this requires a total shift in your physical expression: from the direct, grounded conflict of the mat to the fluid, gravity-defying mastery of the slope.\n\nYour explosive history serves you here in a new capacity. In a sit-ski, your core becomes the cockpit for every turn, requiring you to convert your reactive speed into rapid, technical adjustments that keep your edge locked in at high speeds. This pathway challenges your desire for mastery in an environment where the 'opposition' is the mountain itself, demanding constant, precise adaptation to changing terrain. It offers an exhilarating contrast to your usual style, inviting you to test your performance limits at The Milano Cortina 2026 Games through a lens of speed, precision, and complete, technical control."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly customized and plausible scouting report that creates a strong narrative bridge between the user's answers and two very distinct sport pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "At 165cm and 60kg, a compact build is indeed well-suited for the weight-class based Mat Technician archetype (Wrestling/Powerlifting), and the explosive/tactical focus matches the required athletic profile."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdict explicitly weaves in the user's status as a 'lifelong athlete' and their desire to 'outsmart the opposition' into the context of reading the mechanics of the bar."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The pathways are excellently contrasted, pitting the static, brute force of Powerlifting against the high-velocity, dynamic balance required for Para-Alpine Sit-Skiing."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The first three questions provide meaningfully distinct options that effectively narrow down the athlete's physical and psychological profile, though the final confirmation turn adds no value."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with correctly formatted references to The Los Angeles 2028 Games and The Milano Cortina 2026 Games."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

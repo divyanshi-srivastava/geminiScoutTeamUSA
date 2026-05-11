@@ -1,0 +1,86 @@
+{
+  "persona_id": "04_veteran_endurance_runner",
+  "persona_label": "Veteran ultramarathon runner",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 70,
+    "birth_year": 1984,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To begin, let\u2019s look at your foundational athletic history. What type of activity defined your most active years?\nOptions: [Team field sports requiring tactical coordination and sustained sprints | Individual endurance pursuits focused on rhythm, pace, and long-term stamina | High-intensity combat or strength disciplines demanding explosive power and precision]"
+    },
+    {
+      "role": "user",
+      "content": "Individual endurance pursuits focused on rhythm, pace, and long-term stamina"
+    },
+    {
+      "role": "narrator",
+      "content": "When you're deep into a demanding training session and the physical fatigue starts to mount, which approach do you naturally lean toward to sustain your performance?\nOptions: [Doubling down on mental fortitude to push through the discomfort | Refining technical form to maximize efficiency and conserve energy | Analyzing the situational landscape to outmaneuver the challenge]"
+    },
+    {
+      "role": "user",
+      "content": "Refining technical form to maximize efficiency and conserve energy"
+    },
+    {
+      "role": "narrator",
+      "content": "As you reflect on your path in high-performance sport, what is the core driver that keeps you coming back to the training ground?\nOptions: [Chasing the edge of human possibility to shatter your own personal benchmarks | The strategic, intense battle of head-to-head racing against a direct opponent | The pursuit of a meditative flow state and total connection with the environment]"
+    },
+    {
+      "role": "user",
+      "content": "The pursuit of a meditative flow state and total connection with the environment"
+    },
+    {
+      "role": "narrator",
+      "content": "With your focus on internal harmony and physical efficiency, you have built a unique foundation. We now have enough insight into your athletic character to explore your potential pathways."
+    },
+    {
+      "role": "user",
+      "content": "I am looking for a path that honors my experience while allowing me to disappear into the rhythm of the trail alone."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "Your 175.0cm frame carries exactly the lean, efficient profile required to conquer the sustained climbs of the world\u2019s most grueling road circuits. Having spent years cultivating a connection with the environment, you treat the road not as a battlefield, but as a partner. When you disappear into the rhythm of the trail alone, your metabolic efficiency becomes a quiet, unstoppable force that leaves others exhausted by their own surges.\n\nAt 42, you have entered a phase where instinct replaces raw aggression. As you line up for The 2036 Games, your focus on conserving energy through impeccable technical form means you are not just racing against your opponents, but against the clock itself. You have mastered the art of the 'meditative pedal stroke,' ensuring that while others focus on the immediate sprint, you are already executing a long-form strategy that culminates in a masterclass of endurance."
+    },
+    {
+      "matched_profile_id": 1,
+      "matched_profile_name": "Air Sculptor",
+      "pathway_standing": "Artistic Gymnastics",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Men's 100 m Freestyle S6)",
+      "scout_verdict": "This path pivots away from the relentless demand of the trail and toward the absolute silence of the pool, where your mastery of body mechanics transforms you into a vessel of pure hydrodynamic efficiency. Your pursuit of a meditative flow state is fully realized in the water; here, the physical fatigue of your long career is mitigated by a meticulous attention to form. You aren't just swimming; you are sculpting your line through the water with the grace of a technician who understands that every millimeter of drag matters.\n\nAt The 2032 Games, you demonstrate that power is secondary to spatial control. Your 70.0kg frame is perfectly balanced for a discipline where the slightest adjustment in reach creates an effortless glide. By focusing on total connection with the environment, you have found a way to turn the medium of water into a mirror for your own internal harmony, proving that the most efficient athlete is the one who has learned how to move without fighting the physics of their own existence."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "While the narrative beautifully incorporates the user's interview responses, a severe mismatch in the second profile's sports pathways undermines the report's credibility.",
+    "authenticity": {
+      "score": 4,
+      "reasoning": "The 'Road Machine' cycling profile fits the 175cm/70kg endurance athlete perfectly, but recommending 'Artistic Gymnastics' for a 42-year-old endurance specialist is highly unrealistic."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts expertly weave in specific user quotes, such as the desire to 'disappear into the rhythm of the trail alone' and the focus on a 'meditative flow state'."
+    },
+    "distinctness": {
+      "score": 5,
+      "reasoning": "The narratives offer distinct aquatic and road environments, but the second profile creates a glaring contradiction by listing 'Artistic Gymnastics' as the standing pathway while the entire verdict discusses swimming."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asked strong, logically progressing questions with meaningfully distinct options that effectively isolated the user's psychological and tactical approach to fatigue."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly uses 'The 2036 Games' and 'The 2032 Games' without protected terms or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

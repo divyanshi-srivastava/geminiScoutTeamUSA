@@ -1,0 +1,189 @@
+{
+  "persona_id": "04_veteran_endurance_runner",
+  "persona_label": "Veteran ultramarathon runner",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 70,
+    "birth_year": 1984,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "Thinking back, what has been the defining chapter of your physical life\u2014the era where you felt most connected to your athletic potential?\nOptions: [The high-intensity competitive years, where raw performance and speed were the primary focus. | The foundational years, focused on mastering complex technical skills and building long-term consistency. | The current chapter, prioritizing sustainable movement, longevity, and adaptive mastery.]"
+    },
+    {
+      "role": "user",
+      "content": "The current chapter, prioritizing sustainable movement, longevity, and adaptive mastery."
+    },
+    {
+      "role": "narrator",
+      "content": "As you lean into this chapter of adaptive mastery, how do you prefer to apply your focus during your sessions?\nOptions: [Solo, meditative endurance: Focusing on long-distance rhythm and mental clarity. | Technical team-based flow: Leveraging shared coordination and tactical awareness. | High-intensity adaptive circuits: Challenging precision and reactive explosive power in controlled settings.]"
+    },
+    {
+      "role": "user",
+      "content": "Solo, meditative endurance: Focusing on long-distance rhythm and mental clarity."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward the next horizon in your sporting journey, what type of goal most effectively fuels your desire for this kind of sustained, solo focus?\nOptions: [Endurance events in natural terrain that demand total adaptability to changing landscapes and unpredictable conditions. | Technical precision milestones that prioritize consistent physiological efficiency and the pursuit of repeatable personal bests. | Long-duration, multi-stage challenges that test both mental fortitude and unwavering, steady-state pacing.]"
+    },
+    {
+      "role": "user",
+      "content": "Endurance events in natural terrain that demand total adaptability to changing landscapes and unpredictable conditions."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "At 42, your path is defined by a deep, technical synergy between athlete and equipment. In the standing pathway of cycling and triathlon, your 175cm and 70kg frame offers a stable, efficient platform that thrives on the rhythmic intensity of long-distance exertion. You possess the steady-state focus to turn the resistance of the wind and the complexity of the road into a seamless experience of high-performance athletics, making you a formidable presence in endurance events. As you look toward The Los Angeles 2028 Games, you maintain the capacity to sustain deep, aerobic flow across varied natural terrain.\n\nIn the adaptive pathway, the H3 classification for handcycling mirrors this requirement for technical precision and core stability. This discipline demands that you adapt to the shifting terrain of a mountain pass or a coastal circuit, much like the standing discipline. The handcycle becomes an extension of your physiology, requiring the same meditative, solo movement you have cultivated. Whether standing or utilizing adaptive equipment, your focus on efficiency and biomechanical mastery ensures you are prepared to excel as you engage with the challenges of the competitive sport pathway."
+    },
+    {
+      "matched_profile_id": 2,
+      "matched_profile_name": "Long Haul",
+      "pathway_standing": "Distance Running",
+      "pathway_adaptive": "Wheelchair Racing (e.g., Men's Marathon T54)",
+      "scout_verdict": "In the standing pathway of distance running, your current chapter emphasizes the raw, kinetic essence of the athlete as the engine. Your commitment to meditative, rhythmic movement is perfectly suited for long-distance efforts where patience and internal cadence dictate success. At 42, your years of experience translate into the fortitude needed to manage pacing through natural terrain, turning every stride into a disciplined, high-performance athletic expression. Leading into The Los Angeles 2028 Games, this profile highlights your ability to maintain steady-state focus during demanding, multi-stage challenges.\n\nThe T54 adaptive pathway for wheelchair racing offers an identical requirement for mental grit and sustained power output. Here, you are not managing gears, but driving a racing chair through the unwavering, singular conversation between your mechanics and the pavement. This discipline demands the same profound internal cadence and focus on physiological efficiency as the standing pathway. By channeling your energy into the rhythm of your strikes against the rims, you demonstrate the capacity to excel in the competitive sport pathway, proving that your resilience is a direct, unfiltered expression of your will."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly cohesive scouting report that perfectly aligns the user's biometrics and interview preferences with fitting endurance archetypes.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "A 175cm, 70kg frame is a quintessential endurance build, making 'Road Machine' and 'Long Haul' highly realistic and athletically sound recommendations."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts explicitly weave in the user's stated preference for 'meditative, solo movement' and adaptability in 'natural terrain' alongside their exact biometrics."
+    },
+    "distinctness": {
+      "score": 7,
+      "reasoning": "The pathways are distinct, contrasting the technical equipment synergy of cycling with the raw, unfiltered mechanical output of wheelchair racing and distance running."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asks progressive questions with distinct options, effectively filtering the user from a general longevity focus down to specific solo endurance environments."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with correct 'The Los Angeles 2028 Games' formatting and no restricted terminology."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2000,
+      "era_interview_log": [],
+      "era_context_summary": null,
+      "scouting_result": [
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+          "scout_verdict": "At sixteen years old, standing on the cusp of The Sydney 2000 Games, your journey is defined by the steady calibration of effort and flow. At 175cm and 70kg, your frame offers an ideal balance for aerodynamic efficiency, a physical advantage that transforms the road into a meditative landscape. You find your center in the repetition of the pedal stroke, a pursuit that demands both deep focus and a quiet, unrelenting intensity.\n\nYour adaptive path centers on the H3 handcycling classification, which supports athletes with impairment in the lower limbs, often involving limited trunk control, by utilizing a recumbent cycle design to maximize power transfer. This framework provides you with the stability needed to engage in high-speed technical descents and long-distance maneuvers across the diverse Australian terrain. It is not merely a sport but an extension of your own movement, where the engineering of the bike meets your internal drive for sustainable, long-term athletic growth."
+        },
+        {
+          "matched_profile_id": 2,
+          "matched_profile_name": "Long Haul",
+          "pathway_standing": "Distance Running",
+          "pathway_adaptive": "Wheelchair Racing (e.g., Men's Marathon T54)",
+          "scout_verdict": "While your focus on cycling emphasizes mechanical efficiency, your secondary pathway through wheelchair racing offers a raw, tactile connection to the ground. As you prepare for the challenges of The Sydney 2000 Games, this discipline highlights a different dimension of your resilience\u2014one that favors the rhythmic, grueling demands of distance and the internal fortitude required to push through the fatigue of a marathon course.\n\nIn the T54 classification, designed for athletes with no lower limb function but full trunk control, you utilize your core and upper body as the primary engine for propulsion. This classification necessitates a highly coordinated approach to track and road racing, turning the wheels into a direct conduit for your intent. Choosing this path emphasizes your interest in total adaptability, as you navigate unpredictable surfaces and varied gradients. It is a pursuit of pure rhythm, where your ability to maintain a steady-state pace becomes a testament to the discipline you have cultivated during your years as a rising star."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A strong, highly tailored scouting report that effectively translates the user's preference for meditative, natural-terrain endurance into appropriate standing and adaptive pathways.",
+        "authenticity": {
+          "score": 9,
+          "reasoning": "The user's biometrics (175cm, 70kg) represent a lean, efficient frame that perfectly aligns with endurance archetypes like the 'Road Machine' and 'Long Haul'."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The verdict heavily references the user's interview choices, specifically echoing their desire for 'meditative' focus and navigating 'unpredictable surfaces' in natural terrain."
+        },
+        "distinctness": {
+          "score": 7,
+          "reasoning": "While both pathways are endurance-based, the narrative successfully distinguishes between the mechanical efficiency of handcycling (H3) and the raw, tactile nature of wheelchair racing (T54)."
+        },
+        "life_stage_coherence": {
+          "score": 8,
+          "reasoning": "The narrative accurately frames the 16-year-old user as a 'rising star' seeking 'long-term athletic growth,' appropriately matching the early developmental stage for The Sydney 2000 Games."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions progressively narrowed the athlete's profile from broad priorities to specific training environments, with Q2 offering genuinely distinct forks (solo endurance vs. team flow vs. high-intensity)."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "The report is fully compliant, correctly using 'The Sydney 2000 Games' and avoiding restricted Olympic/Paralympic terminology."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2012,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "At 28, heading into that competitive era, how would you describe the balance you were striking between your commitment to high-performance athletics and the other responsibilities life was asking of you?\nOptions: [I was fully immersed in a dedicated training block, with the majority of my energy channeled into singular athletic development. | I was navigating a major career transition, balancing the grind of training with the pressures of establishing my professional path. | I was managing significant life shifts, such as relocation or new family milestones, which made my time in sport a vital anchor for consistency.]"
+        },
+        {
+          "role": "user",
+          "content": "I was fully immersed in a dedicated training block, with the majority of my energy channeled into singular athletic development."
+        }
+      ],
+      "era_context_summary": null,
+      "scouting_result": [
+        {
+          "matched_profile_id": 2,
+          "matched_profile_name": "Long Haul",
+          "pathway_standing": "Distance Running",
+          "pathway_adaptive": "Wheelchair Racing (e.g., Men's Marathon T54)",
+          "scout_verdict": "At 28, standing at 175cm and 70kg, your physiology is perfectly calibrated for the long-distance endurance required to thrive at The London 2012 Games. Your preference for solo, rhythmic training finds its ultimate expression here, where the road becomes a meditative conduit for sustained aerobic output. This archetype honors your commitment to sustainable movement, allowing your natural stride and steady-state efficiency to dictate the pace over unforgiving, unpredictable terrain.\n\nIn the adaptive pathway, you find a deep connection to the T54 classification. This category encompasses athletes with impaired trunk and leg muscle function who possess full shoulder and arm power, allowing for the explosive, repetitive torque needed to navigate marathon distances. For you, this is not just a sport; it is an extension of your desire for rhythmic mastery. Every push-rim stroke during your training acts as a heartbeat, matching your internal cadence to the rhythm of the road, transforming the landscape into a canvas for your personal pursuit of endurance perfection."
+        },
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+          "scout_verdict": "While the 'Long Haul' profile focuses on the raw connection between body and road, 'Road Machine' shifts the dialogue toward technical precision and mechanical synergy. Entering The London 2012 Games, this pathway rewards your intellectual approach to athletic development\u2014using data-driven insights and tactical adjustments to maintain high-velocity output even as environmental variables shift. It is a secondary, more analytical expression of your endurance capacity, prioritizing the efficiency of the machine-athlete interface.\n\nIn the adaptive sphere, your focus transitions to the H3 classification, designed for athletes with significant lower-limb and trunk impairment who utilize handcycles to engage in high-torque, technical racing. Unlike the rhythmic fluidity of your distance-focused profile, the H3 pathway demands a heightened level of tactical maneuvering and reactive power. You will find that navigating corners, managing gear ratios, and executing strategic overtakes in a peloton setting forces a complete shift in your engagement\u2014turning every ride into a complex, high-stakes puzzle that demands as much strategic foresight as it does cardiovascular excellence."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A highly cohesive and personalized scouting report that masterfully integrates the user's interview preferences with their biometrics and target life stage.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "The user's build of 175cm and 70kg is a highly realistic fit for both the 'Long Haul' and 'Road Machine' endurance archetypes."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The verdict explicitly weaves in the user's desire for 'solo, rhythmic training' and 'sustainable movement' directly from their interview answers."
+        },
+        "distinctness": {
+          "score": 9,
+          "reasoning": "The pathways offer excellent contrast, pitting the raw, rhythmic endurance of marathon running against the tactical, gear-driven strategy of handcycling."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "Targeting age 28 (Elite Peak), the language correctly frames the user as being 'perfectly calibrated' and ready to execute high-stakes tactical maneuvers, successfully avoiding mismatched rookie or veteran tropes."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions progress logically from overarching athletic philosophy to specific training environments, offering genuinely distinct forks that shape the endurance outcome."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean report with correct formatting for 'The London 2012 Games' and no prohibited terminology or athlete references."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

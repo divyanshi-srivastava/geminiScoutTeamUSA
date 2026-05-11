@@ -1,0 +1,82 @@
+{
+  "persona_id": "11_retired_gymnast_time_travel_1984",
+  "persona_label": "Retired gymnastics coach \u2014 time travel to 1984 LA Games",
+  "biometrics": {
+    "height_cm": 162,
+    "weight_kg": 57,
+    "birth_year": 1958,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe your historical connection to physical activity\u2014what is the primary 'engine' you\u2019ve relied on throughout your life?\nOptions: [Steady-state endurance and long-distance consistency | Explosive movement, speed, and sharp agility | Stability, core strength, and calculated, controlled power]"
+    },
+    {
+      "role": "user",
+      "content": "Stability, core strength, and calculated, controlled power"
+    },
+    {
+      "role": "narrator",
+      "content": "When it comes to your sporting journey, where do you find your greatest drive?\nOptions: [Mastering technical precision and complex mechanics in solitary pursuits | Collaborative team-based strategy and shared tactical success | Overcoming physical limits through high-intensity strength challenges]"
+    },
+    {
+      "role": "user",
+      "content": "Mastering technical precision and complex mechanics in solitary pursuits"
+    },
+    {
+      "role": "narrator",
+      "content": "As you stood at the threshold of your peak physical form during The 1984 Games, what was the primary technical challenge you focused on to elevate your solitary pursuit to the top of the podium?\nOptions: [Mastering the internal mental stillness required to execute complex movements under immense pressure. | Refining the mechanical efficiency of your technique to ensure every movement was perfectly optimized for power. | Adapting your specialized training regimen to the specific equipment and methodologies of that era.]"
+    },
+    {
+      "role": "user",
+      "content": "Mastering the internal mental stillness required to execute complex movements under immense pressure."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Women's -67 kg)",
+      "scout_verdict": "At 26, you stepped onto the mat at The Los Angeles 1984 Games with a poise that defied the chaotic intensity of the wrestling arena. Your 162cm frame, possessing a grounded density of 57kg, provided the perfect mechanical leverage to transform an opponent\u2019s aggressive movement into your own tactical advantage. While others sought victory through speed, you relied on a profound internal stillness, executing your technique with a surgical, calculated precision that kept your base unbreakable under pressure.\n\nThis mastery of core stability and controlled power translates seamlessly into the world of powerlifting, where the platform demands a singular, perfect engagement of your kinetic chain. In your prime, your capacity to synthesize physical density with a quiet, meditative mental state transforms grueling lifts into a rhythmic, solitary pursuit of absolute perfection. Beyond the platform, this discipline requires a deep focus on the nuances of weight distribution and bar path, mirroring the technical rigor you displayed on the mat. By isolating specific muscle groups and perfecting your breathing under heavy load, you can achieve a level of consistency that defines the very best in the sport."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "Your journey toward The Los Angeles 1984 Games was defined by the silent, relentless focus of the long road\u2014a discipline where the rider and machine become one. By viewing your training through the lens of a technician, you obsessively refined your mechanical efficiency, ensuring that every watt of output was optimized for maximum endurance. At 26, you weren't just racing; you were engaged in a deep, solitary study of aerodynamics and human energy management, finding your greatest strength in the ability to hold a perfect, sustained pace while your mind remained perfectly still.\n\nThis commitment to technical excellence finds a new, powerful iteration in the precision of handcycling. Here, the challenge shifts to the intimate mechanics of the upper body, requiring that same refined consistency to master the rhythm of the climb and the technical demands of the descent. It is a pursuit that honors your heritage of solitary, high-focus athletic effort, rewarding those who can maintain composure and strategic perfection over the grueling course of a long-distance race. Furthermore, the mastery of the handcycle platform allows you to apply your analytical skills to gear ratios and resistance profiles, providing a tactile connection to the pavement that echoes your history in cycling. By balancing your aerobic capacity with this technical aptitude, you create a holistic approach to movement that ensures longevity and competitive success in every race you encounter."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly personalized and age-appropriate scouting report that effectively utilizes the time-travel parameters and biometrics.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The user's biometrics (162cm, 57kg) are a textbook match for the 57kg weight classes in wrestling and powerlifting, aligning perfectly with the Mat Technician archetype."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narrative expertly weaves the user's specific interview answers regarding 'internal stillness' and 'solitary pursuits' into their 1984 Games experience."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The report offers two clearly distinct pathways, contrasting a strength-and-leverage focus (Wrestling/Powerlifting) with a mechanics-and-endurance focus (Cycling/Handcycling)."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "The language accurately reflects an Elite Peak 26-year-old athlete, referencing them being 'in your prime' with 'established poise' rather than a developing rookie."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions provide clear, meaningful forks that effectively differentiate the user's biomechanical and psychological drivers."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass utilizing the correct 'The Los Angeles 1984 Games' formatting without any IP or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

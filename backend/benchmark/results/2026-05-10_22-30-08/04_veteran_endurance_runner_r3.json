@@ -1,0 +1,78 @@
+{
+  "persona_id": "04_veteran_endurance_runner",
+  "persona_label": "Veteran ultramarathon runner",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 70,
+    "birth_year": 1984,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To begin defining your path, which of these physical challenges aligns most closely with your natural strengths?\nOptions: [Power-based strength: I thrive in short, high-intensity bursts and explosive movements. | Endurance and stamina: I prefer long-duration challenges that require sustained rhythm and pacing. | Precision and technical coordination: I excel in controlled, complex movements that demand extreme focus and fine motor control.]"
+    },
+    {
+      "role": "user",
+      "content": "Endurance and stamina: I prefer long-duration challenges that require sustained rhythm and pacing."
+    },
+    {
+      "role": "narrator",
+      "content": "When you engage in those endurance-heavy activities, what is the primary environment or context where you find your flow?\nOptions: [Solo grit: I perform best when it is just me against the clock or the terrain. | Team cohesion: I find my strength in contributing to a synchronized, group effort. | Strategic rivalry: I enjoy the tactical 'chess match' of out-pacing and out-thinking a direct opponent.]"
+    },
+    {
+      "role": "user",
+      "content": "Solo grit: I perform best when it is just me against the clock or the terrain."
+    },
+    {
+      "role": "narrator",
+      "content": "At this point in your sporting journey, how do you define your current level of commitment as you look toward a new challenge?\nOptions: [Long-standing history: I have been involved in structured high-performance sport for years and am looking to test my peak limits. | Late-stage discovery: I am transitioning into rigorous, focused athletic training in my 40s to see how far I can push my potential. | Recreational conversion: I have a solid foundation of lifelong active living and am ready to pivot toward a competitive, disciplined discipline.]"
+    },
+    {
+      "role": "user",
+      "content": "Long-standing history: I have been involved in structured high-performance sport for years and am looking to test my peak limits."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "At 175cm and 70kg, your physique acts as a precision instrument, finely tuned for the sustained power-to-weight ratios that define cycling. Your extensive history in structured sport provides you with the mental architecture to process long, grueling hours in the saddle, transforming solo grit into a measurable, rhythmic engine. You don't just ride; you calculate the resistance, the wind, and your own aerobic limit, finding your flow state in the isolation of the open road.\n\nAs you look toward the intensity of a high-performance stage, your ability to remain disciplined under extreme fatigue becomes your greatest asset. Whether navigating a technical climb or maintaining a steady cadence on a flat pursuit, you thrive on the direct relationship between your effort and your velocity. Preparing for the pinnacle of The LA28 Games, you treat every training session as a high-stakes encounter with your own potential, proving that age is merely the foundation upon which true tactical patience is built."
+    },
+    {
+      "matched_profile_id": 2,
+      "matched_profile_name": "Long Haul",
+      "pathway_standing": "Distance Running",
+      "pathway_adaptive": "Wheelchair Racing (e.g., Men's Marathon T54)",
+      "scout_verdict": "In the T54 classification, where athletes compete with impairment in the lower trunk and legs, the sport is defined by an exquisite blend of raw aerobic output and refined mechanical propulsion. For an athlete with your background, this transition shifts the focus from simple endurance to the high-velocity, technical precision required to master the racing chair. Your body becomes the pivot point for extreme energy transfer, demanding a sophisticated awareness of posture and core stability to maintain speed over marathon distances.\n\nUnlike the solitary nature of long-distance cycling, the tactical landscape of T54 racing is a high-speed chess match. It requires you to harness your aerobic tenacity in an environment where draft dynamics and split-second positioning are critical. You will find that the technical coordination of your stroke\u2014ensuring every push maximizes your kinetic efficiency\u2014serves as a distinct contrast to the power-based rhythmic grind of your standing training. Here, at the elite level of The LA28 Games, your disciplined history ensures you possess the patience to master the fine motor control needed to dominate the peloton."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, highly coherent scouting report that accurately translates the user's biometrics and interview responses into plausible endurance pathways.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "At 175cm and 70kg, the user has a prime build for endurance sports like cycling and distance running, validating the 'Road Machine' and 'Long Haul' archetypes."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative explicitly weaves in the user's preference for 'solo grit' and acknowledges their 'long-standing history' in structured sport."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The pathways offer a clear contrast, with the standing profile focusing on rhythmic power-to-weight cycling and the adaptive profile emphasizing the high-velocity, technical draft dynamics of T54 racing."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions effectively narrow the athlete's profile from broad physical strengths to specific environmental preferences and current athletic commitment."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance with correct usage of 'The LA28 Games' and no prohibited terminology or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

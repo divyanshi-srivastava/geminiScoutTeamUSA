@@ -1,0 +1,78 @@
+{
+  "persona_id": "08_above_knee_amputee_sprinter",
+  "persona_label": "Above-knee amputee \u2014 para-sprinter",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 73,
+    "birth_year": 2000,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To begin, how would you describe your relationship with competitive sport\u2014is this a new pursuit, or have you been active in a specific discipline for a while?\nOptions: [I'm a complete newcomer looking for a challenge | I have some experience, but I'm looking to pivot to something new | I'm a seasoned athlete looking to reach the next level]"
+    },
+    {
+      "role": "user",
+      "content": "I'm a seasoned athlete looking to reach the next level"
+    },
+    {
+      "role": "narrator",
+      "content": "To get a better sense of your background, what kind of athletic disciplines have you spent the most time in\u2014are we talking team field sports, endurance training, or something more strength-based?\nOptions: [Team field sports (e.g., soccer, rugby, basketball) | Endurance sports (e.g., running, cycling, swimming) | Strength or combat sports (e.g., gym training, wrestling, martial arts)]"
+    },
+    {
+      "role": "user",
+      "content": "Team field sports (e.g., soccer, rugby, basketball)"
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward taking your journey to the next level, what do you feel is your most significant strength\u2014the foundation upon which you'll build your future performance?\nOptions: [Physical endurance and stamina | Explosive speed and agility | Strategic and tactical mindset]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive speed and agility"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "Your history in team field sports has forged the exact explosive agility required to dominate the track. At 26, your physiological profile is primed for a transition to high-performance sprinting; your 175cm, 73kg build is not just a collection of metrics, but a precision-engineered engine built for that initial burst of acceleration. You have spent your life mastering the art of the sudden change of direction, and now, that instinct will serve as your greatest weapon.\n\nImagine the roar of the crowd at The Brisbane 2032 Games as you settle into the blocks. You are no longer chasing a ball across a field; you are chasing thousandths of a second. The fast-twitch power that once made you a standout on the pitch is now distilled into a singular, explosive focus. This is the beginning of a legacy where every stride is calculated, and the finish line is the only goal that matters."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "Your background in team field sports has gifted you something invaluable: a deep, resilient aerobic engine and the tactical mindset to outmaneuver the competition under pressure. While others focus only on raw speed, your experience has taught you how to manage effort and read the flow of a race. At 175cm and 73kg, your biomechanical efficiency is perfectly suited for the rhythmic, sustained power required to master handcycling.\n\nPicture yourself navigating a technical course at The Los Angeles 2028 Games, the wind against your face as you pull away from the pack. You have moved beyond the field, trading the chaos of team play for the solitary, relentless discipline of the road. Your transition into this archetype is an evolution of your existing strengths, blending your hard-won athletic stamina with a new, singular focus on mechanical output. This is where your tactical background pays off, allowing you to dominate the endurance circuit with the precision of a seasoned competitor."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "The scouting report provides distinct and plausible athletic pathways, but the secondary profile contradicts the user's self-identified traits by focusing on aerobic stamina instead of explosive speed.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "The 175cm/73kg build fits well for a 'Block Starter' sprinter, though pivoting an explosive team sports athlete into a purely endurance-based 'Road Machine' profile is a slight physiological mismatch."
+    },
+    "personalization": {
+      "score": 6,
+      "reasoning": "While the first verdict excellently incorporates the user's 'explosive agility' and 'team field sports' answers, the second verdict completely ignores the speed choice to incorrectly praise their 'resilient aerobic engine'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The pathways offer vastly different athletic pursuits (explosive track sprints vs. sustained endurance handcycling), providing the user with two completely unique and well-defined angles."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The narrator asked logical, branching questions that successfully isolated the user's athletic background and primary physical advantage with distinct, meaningful options."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with correct Games nomenclature (The Brisbane 2032 Games) and no restricted IP terms or unauthorized real-world athlete references."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

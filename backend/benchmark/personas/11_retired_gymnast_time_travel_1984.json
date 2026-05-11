@@ -6,7 +6,6 @@
   "weight_kg": 57,
   "birth_year": 1958,
   "gender": "F",
-  "target_game_year": 1984,
-  "time_travel_trigger_after": 2,
-  "max_questions": 2
+  "max_questions": 4,
+  "time_travel_hops": [1976, 1984]
 }

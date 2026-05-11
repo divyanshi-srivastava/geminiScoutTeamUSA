@@ -1,0 +1,78 @@
+{
+  "persona_id": "04_veteran_endurance_runner",
+  "persona_label": "Veteran ultramarathon runner",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 70,
+    "birth_year": 1984,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe your historical relationship with physical activity and training throughout your life?\nOptions: [Lifetime athlete: Consistently training and competing in organized sports for years. | Recreational enthusiast: Active lifestyle with a history of regular, self-directed movement. | New explorer: Recently shifting focus toward deliberate, high-performance athletic goals.]"
+    },
+    {
+      "role": "user",
+      "content": "Recreational enthusiast: Active lifestyle with a history of regular, self-directed movement."
+    },
+    {
+      "role": "narrator",
+      "content": "As you pivot toward more structured, top-tier athletic goals, which area of physical capability do you feel most driven to cultivate right now?\nOptions: [Explosive power and raw speed | Sustained endurance and long-range pacing | Precision, coordination, and technical mastery]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance and long-range pacing"
+    },
+    {
+      "role": "narrator",
+      "content": "When you envision your training intensity, what environment pushes you to your absolute best?\nOptions: [Solo, rhythmic, and meditative: Pushing the limits in isolation to find flow. | Collaborative, tactical, and team-based: Relying on group dynamics and shared objectives. | Competitive, high-pressure, and environment-dependent: Testing yourself against the elements or specific race conditions.]"
+    },
+    {
+      "role": "user",
+      "content": "Solo, rhythmic, and meditative: Pushing the limits in isolation to find flow."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "At 175cm and 70kg, your physique acts as a high-efficiency engine, perfectly calibrated for the demands of the open road. Your background as a recreational enthusiast has built a solid, rhythmic foundation that now serves as the bedrock for your transition into high-performance sport. The solitude of the cycling circuit allows you to enter the meditative flow state you crave, where every pedal stroke becomes a calculated heartbeat of progress.\n\nWhen you line up at The Los Angeles 2028 Games, you aren't just racing against the field; you are competing against the physics of drag and the limits of your own aerobic ceiling. Your endurance-heavy profile thrives in this discipline, where your ability to maintain a consistent, punishing pace long after others have faded defines your true strength. You have mastered the art of the solo effort, turning each training session into a personal masterclass in discipline and endurance."
+    },
+    {
+      "matched_profile_id": 1,
+      "matched_profile_name": "Air Sculptor",
+      "pathway_standing": "Artistic Gymnastics",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Men's 100 m Freestyle S6)",
+      "scout_verdict": "While your primary drive leans toward sustained endurance, your secondary athletic dimension is found in the fluid, high-precision world of the pool. If the road is your arena for sheer metabolic output, the water is your laboratory for technical mastery. Here, your frame transforms into a streamlined vessel, prioritizing hydrodynamics and acute bodily awareness over the rhythmic grind of long-distance exertion.\n\nThis aquatic pathway offers a vital, refreshing contrast to your endurance work, demanding a total commitment to technique and precise movement. By focusing on the nuances of every stroke and the efficiency of your underwater recovery, you are sculpting a level of coordination that pushes your physical boundaries in an entirely new direction. As you prepare for The Brisbane 2032 Games, this discipline becomes a sanctuary for your mind, offering a sharp, tactical challenge that proves you possess both the grit to endure and the technical grace to excel in a high-pressure, individual aquatic environment."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The primary cycling recommendation perfectly matches the user's endurance and meditative preferences, but the second profile suffers from a jarring mismatch between its standing pathway and narrative.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "While a 175cm/70kg build is excellent for endurance cycling, the secondary 'Air Sculptor' profile lists Artistic Gymnastics as the standing pathway but inexplicably writes the entire verdict about aquatic hydrodynamics and swimming."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative excellently weaves in the user's exact interview phrases, such as their background as a 'recreational enthusiast' and their desire for a 'meditative flow state'."
+    },
+    "distinctness": {
+      "score": 6,
+      "reasoning": "The pathways offer a clear contrast between rhythmic road endurance and aquatic technical mastery, though the second profile's confused standing pathway tags undermine its overall impact."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions provide genuinely distinct forks, allowing the user to clearly separate endurance/solo preferences from explosive power or team-based options."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Correctly uses the approved 'The Los Angeles 2028 Games' format and avoids restricted IOC/USOPC terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

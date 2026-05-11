@@ -1,0 +1,82 @@
+{
+  "persona_id": "12_para_rower_time_travel_2036",
+  "persona_label": "Para-rower with SCI \u2014 time travel to 2036 Games",
+  "biometrics": {
+    "height_cm": 184,
+    "weight_kg": 88,
+    "birth_year": 1988,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe your historical engagement with physical training and competitive sport?\nOptions: [I have a deep foundation in explosive, power-based sports. | My background is built on sustained endurance and pacing. | I come from a history of technical and precision-oriented sports.]"
+    },
+    {
+      "role": "user",
+      "content": "My background is built on sustained endurance and pacing."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the thick of preparing for a significant athletic goal, which environment do you find most effective for your development?\nOptions: [Independent, data-driven solitary training sessions. | Structured team-based environments with peer competition. | Deep, coach-led technical refinement and strategy.]"
+    },
+    {
+      "role": "user",
+      "content": "Independent, data-driven solitary training sessions."
+    },
+    {
+      "role": "narrator",
+      "content": "When you project yourself into the Legacy stage at The Ahmedabad 2036 Games, how do you envision your relationship with your solitary, data-driven training evolving?\nOptions: [Transitioning to using data primarily for peak efficiency and metabolic longevity. | Deepening the analytical intensity to challenge traditional performance barriers at age 48. | Integrating advanced real-time bio-feedback to master technical precision in every session.]"
+    },
+    {
+      "role": "user",
+      "content": "Integrating advanced real-time bio-feedback to master technical precision in every session."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "As you step onto the field at The Ahmedabad 2036 Games, now at 48 years old, your journey from endurance-based training to the high-performance stage culminates in a test of pure, multifaceted resilience. Your 184cm, 88kg frame provides the optimal leverage for sustained effort, proving that your long-term commitment to cardiovascular pacing is a formidable weapon against time. You have evolved past the need for raw, explosive youth, finding instead a deep, technical efficiency that allows you to maintain peak performance across a grueling schedule of events.\n\nIn the adaptive pathway, you represent the Men\u2019s Pentathlon P44\u2014a category for ambulatory athletes with lower-limb impairments that impact their running or jumping mechanics. Your mastery of endurance is the cornerstone here; while your competitors struggle to recover between phases, you utilize your years of analytical pacing to distribute your energy across the five disciplines with surgical accuracy. Your adaptive journey isn't defined by your impairment, but by how your refined internal rhythm allows you to endure where others falter, turning the final event into a testament to your tactical dominance."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "Your progression toward The Ahmedabad 2036 Games reflects a quiet, calculated ascent into the elite ranks of technical mastery. At 48, your preference for solitary, data-driven training has shielded you from the physical volatility that often limits a career, allowing you to refine your focus into a science. By integrating real-time bio-feedback into your daily routine, you have become a human instrument\u2014constantly monitoring your physiological state to ensure that every movement is as efficient and intentional as possible.\n\nThis analytical precision finds its ultimate home in the Archery Men\u2019s FITA Round Open, a classification for athletes whose physical impairments in either the upper or lower body require specific adaptive equipment to compete. Here, your focus is entirely on the marriage of human physiology and technical gear. You aren't just aiming at a target; you are analyzing your heart rate, wind resistance, and muscle engagement in real-time, using the data to make micro-adjustments that your younger, less disciplined competitors cannot perceive. At this stage of your sporting journey, your ability to remain perfectly calm under the weight of competition makes you a daunting figure, turning every arrow into a calculated expression of your long-term dedication to precision."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "This is a high-quality scouting report that expertly blends the user's biometric data and interview answers with the specific nuances of an older athlete competing in the Legacy life stage.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The user's solid 184cm/88kg frame is highly plausible for a Decathlete, while Archery makes perfect practical sense for an athlete obsessing over bio-feedback."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts explicitly integrate the user's exact interview choices regarding 'solitary, data-driven training' and 'real-time bio-feedback' to justify the recommendations."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two pathways offer completely different applications of the user's profile: grueling multi-disciplinary physical endurance versus hyper-focused physiological precision."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "At age 48 in the Legacy stage, the narrative perfectly shifts focus to veteran advantages, citing how the user has 'evolved past the need for raw, explosive youth.'"
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asks strong, differentiating questions, particularly the final one which offers three distinct philosophical approaches to aging in sport."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with correct 'The Ahmedabad 2036 Games' formatting and respectful adaptive pathway terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

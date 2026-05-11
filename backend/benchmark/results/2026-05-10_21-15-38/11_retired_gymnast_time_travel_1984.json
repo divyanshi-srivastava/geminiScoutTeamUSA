@@ -1,0 +1,81 @@
+{
+  "persona_id": "11_retired_gymnast_time_travel_1984",
+  "persona_label": "Retired gymnastics coach \u2014 time travel to 1984 LA Games",
+  "biometrics": {
+    "height_cm": 162,
+    "weight_kg": 57,
+    "birth_year": 1958,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "Looking back at your sporting journey over the years, what kind of activities or competitive movements have you felt most connected to?\nOptions: [Team-based sports and court games | Endurance, running, or cycling | Strength-focused or bodyweight training | I have mostly enjoyed recreational movement]"
+    },
+    {
+      "role": "user",
+      "content": "Strength-focused or bodyweight training"
+    },
+    {
+      "role": "narrator",
+      "content": "How long have you been incorporating this type of focused strength training into your regular routine?\nOptions: [I have been consistent with it for several decades. | I started later in life to build foundational strength. | I have moved through various phases of intensity over the years.]"
+    },
+    {
+      "role": "user",
+      "content": "I have been consistent with it for several decades."
+    },
+    {
+      "role": "narrator",
+      "content": "Reflecting on that pivotal era of your life\u2014at age 26, when you were hitting your physical peak\u2014what was the primary focus of your training regime?\nOptions: [Pursuing personal bests and maximum physical power | The tactical intensity of competitive sports | Mastering complex movements and body control | Focusing on speed and explosive agility]"
+    },
+    {
+      "role": "user",
+      "content": "Mastering complex movements and body control"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's +100 kg)",
+      "scout_verdict": "Standing at 162.0cm and weighing 57.0kg, your physique at age 26 was perfectly tuned for the technical demands of the mat. During The 1984 Games, where the atmosphere was electric with the pursuit of absolute physical mastery, your dedication to complex movements and body control would have made you a formidable force. You possessed that rare ability to translate raw intent into precise, leverage-based execution, turning every movement into a calculated chess match against gravity and an opponent.\n\nYour decades of commitment to strength-focused training are the bedrock of this profile. In an era that celebrated the grit of the individual, your focus on mastering the nuances of your own physiology set you apart. Whether through the tactical intensity of a grappling discipline or the singular, grounded power required for heavy lifting, you were an athlete defined by the ability to hold your ground and outmaneuver others through sheer technical superiority."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "As you stood at the threshold of your physical prime during The 1984 Games, your profile shifted toward the relentless, rhythmic pursuit of the road. With your compact, efficient build, you were engineered for the power-to-weight demands that define the world's most enduring cyclists. This era was a turning point for road sport, and your personal history of lifelong, consistent training aligns perfectly with the discipline required to sustain output over long distances, where the mind is as taxed as the muscles.\n\nYour journey is one of endurance, built on a foundation of decades-long consistency. At 26, you possessed the internal drive to push past the wall, a trait that makes you a natural for the long-distance demands of high-performance road racing. Your body was not just a machine of power, but one of resilience; it was a frame built for the long haul, reflecting a deep-seated connection to the movement that only those who have spent a lifetime in motion truly understand."
+    }
+  ],
+  "eval_result": {
+    "overall": 4,
+    "summary": "While the physical biometrics align well with the standing pathways, the adaptive pathway recommendations contain severe gender and weight class mismatches that undermine the entire report.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "A height of 162cm and weight of 57kg is a perfect biological fit for the 57kg wrestling weight class and makes sense for a compact cyclist."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative effectively weaves in the user's specific interview answers regarding 'complex movements and body control' and 'strength-focused training'."
+    },
+    "distinctness": {
+      "score": 2,
+      "reasoning": "The adaptive pathways are egregiously mismatched, suggesting 'Men's +100 kg' powerlifting and 'Men's Road Race' for a 57kg female athlete."
+    },
+    "life_stage_coherence": {
+      "score": 6,
+      "reasoning": "The narrative correctly identifies the 26-year-old as being in their 'physical prime', but the repeated references to 'decades of commitment' feels mathematically strained for this age."
+    },
+    "interview_quality": {
+      "score": 4,
+      "reasoning": "The narrator offered 'several decades' of experience as an option to a 26-year-old, indicating a failure to dynamically adjust the interview logic based on the user's age."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean of IP violations, though the gender mismatch in the adaptive sport examples is a notable quality failure."
+    }
+  },
+  "backend_error": null
+}

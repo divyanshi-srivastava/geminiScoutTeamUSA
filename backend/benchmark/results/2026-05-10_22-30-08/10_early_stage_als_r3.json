@@ -1,0 +1,79 @@
+{
+  "persona_id": "10_early_stage_als",
+  "persona_label": "Early-stage ALS \u2014 former competitive tennis player",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 78,
+    "birth_year": 1981,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "Reflecting on your journey so far, how would you characterize your historical engagement with competitive sport?\nOptions: [Lifelong team player: I thrive in the energy and shared goals of team environments. | Individual pursuit: I prefer focusing on personal bests, self-discipline, and individual benchmarks. | Technical practitioner: I am drawn to the precision, mastery, and strategic complexity of skill-focused disciplines.]"
+    },
+    {
+      "role": "user",
+      "content": "Technical practitioner: I am drawn to the precision, mastery, and strategic complexity of skill-focused disciplines."
+    },
+    {
+      "role": "narrator",
+      "content": "When you engage in your training, how do you prefer to apply that technical focus to your movement?\nOptions: [Explosive power and reactive precision: I thrive when high intensity is coupled with split-second physical decision-making. | Sustained technical endurance: I prefer long-duration sessions where consistent mental focus and repetitive refinement are the primary challenges. | Tactical systems and strategic management: I am driven by the mental game, managing energy and technique over complex, evolving scenarios.]"
+    },
+    {
+      "role": "user",
+      "content": "Tactical systems and strategic management: I am driven by the mental game, managing energy and technique over complex, evolving scenarios."
+    },
+    {
+      "role": "narrator",
+      "content": "Given your affinity for strategic management and complex systems, what environment do you believe best allows you to showcase that tactical edge in your sporting journey?\nOptions: [Complex team environments: Where I act as the brain of the operation, orchestrating plays and managing group dynamics. | Individual technical precision: Where the complexity is internal, focusing on perfecting a highly nuanced, strategic skill set under pressure. | Variable-condition pursuits: Where external, unpredictable factors force constant adaptation and real-time strategic shifts.]"
+    },
+    {
+      "role": "user",
+      "content": "Individual technical precision: Where the complexity is internal, focusing on perfecting a highly nuanced, strategic skill set under pressure."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Your aptitude for technical mastery translates seamlessly into both standing and adaptive environments. For your standing pathway in alpine skiing or speed skating, your physique acts as a high-performance anchor, allowing you to prioritize the subtle weight shifts and technical edges that define speed and control. You treat the equipment as an extension of your own tactical decision-making, where every maneuver is calculated for maximum efficiency and precision.\n\nIn the adaptive pathway, specifically the LW12 seated alpine classification, this tactical focus becomes critical. Navigating the high-speed, technical gates at The French Alps 2030 Games requires you to operate with deep-seated mechanical awareness. Here, you manage the physics of your seated position as an extension of your analytical mind, ensuring that every movement is as fluid and precise as the top-tier standing performers, demonstrating your capacity to master complex movement patterns in any environment."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "pathway_vertical": "Cycling / Triathlon",
+      "scout_verdict": "Your preference for tactical systems and strategic management finds a perfect home in the endurance-focused world of cycling and triathlon. In your standing pathway, you act as the architect of your own performance, balancing metabolic efficiency with aerodynamic strategy. You excel at the mental game, treating the race as a series of complex, evolving conditions where pacing and energy distribution are managed with the precision of a high-performance system.\n\nThis same strategic mastery is foundational to the adaptive handcycling H3 pathway. As you compete at The Salt Lake City 2034 Games, your success is driven by your ability to analyze terrain, wind resistance, and energy reserves over long-duration efforts. Both pathways demand that you view yourself as both the engine and the navigator, proving that your capacity for sustained, repetitive refinement and tactical execution remains a significant competitive advantage across all disciplines."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, highly tailored scouting report that effectively matches the user's preference for tactical, individual sports with plausible alpine and cycling pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "A height of 178cm and weight of 78kg provides a solid, versatile frame that realistically suits both the aerodynamic demands of cycling and the power-to-weight balance of alpine skiing."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The scout verdicts specifically weave in the user's interview choice of 'Tactical systems and strategic management', framing both sports around mental execution and technical precision."
+    },
+    "distinctness": {
+      "score": 7,
+      "reasoning": "The adaptive and standing pathways offer genuinely different mechanical insights (e.g., managing the physics of a seated LW12 position versus standing weight shifts), though they follow a somewhat repetitive narrative structure."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The interview questions build logically from broad historical engagement to specific environmental preferences, with options that clearly differentiate between explosive, endurance, and tactical archetypes."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with correct Games naming conventions ('The French Alps 2030 Games', 'The Salt Lake City 2034 Games') and no unauthorized IP."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

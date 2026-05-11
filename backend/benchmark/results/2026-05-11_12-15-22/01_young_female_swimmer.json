@@ -1,0 +1,9 @@
+{
+  "persona_id": "01_young_female_swimmer",
+  "persona_label": "Young female swimmer",
+  "error": "sequence item 0: expected str instance, dict found",
+  "conversation_log": [],
+  "scouting_result": null,
+  "eval_result": null,
+  "round": 1
+}

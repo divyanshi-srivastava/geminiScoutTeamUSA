@@ -1,0 +1,82 @@
+{
+  "persona_id": "05_youth_time_travel_2032",
+  "persona_label": "Youth gymnast \u2014 time travel to 2032",
+  "biometrics": {
+    "height_cm": 164,
+    "weight_kg": 55,
+    "birth_year": 2010,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe your relationship with competition and physical activity?\nOptions: [I thrive in team environments where coordination and shared strategy define the game. | I prefer individual pursuits where I can master a specific technical skill or craft. | I am drawn to high-intensity endurance and outdoor environments that push my physical limits.]"
+    },
+    {
+      "role": "user",
+      "content": "I prefer individual pursuits where I can master a specific technical skill or craft."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the flow of honing your craft, which physical dimension do you find most essential to your success?\nOptions: [Precision and rapid reaction: I focus on explosive, short-burst movements where split-second timing is everything. | Technical endurance: I excel at maintaining complex physical patterns over extended periods of concentrated effort. | Force and leverage: I am drawn to activities where mastering precise body positioning and mechanical leverage yields the greatest impact.]"
+    },
+    {
+      "role": "user",
+      "content": "Precision and rapid reaction: I focus on explosive, short-burst movements where split-second timing is everything."
+    },
+    {
+      "role": "narrator",
+      "content": "As you bridge the gap between where you are now and your prime at 22, what do you envision as the biggest evolution in how you apply your explosive reaction speed to your craft?\nOptions: [Translating my raw speed into highly technical, repeatable patterns under intense competition. | Refining my mechanical leverage so every explosive movement becomes increasingly energy-efficient. | Expanding my repertoire to include more complex, reactive responses to unpredictable environments.]"
+    },
+    {
+      "role": "user",
+      "content": "Translating my raw speed into highly technical, repeatable patterns under intense competition."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "As you step onto the track at 22, your journey from a curious 16-year-old seeking technical mastery culminates in the relentless pursuit of speed. Your 164cm frame and 55kg build offer a perfect power-to-weight ratio for the cycling circuit, where your obsession with honing individual craft transforms into the methodical, high-cadence precision required at the highest level of competitive sport. At The Brisbane 2032 Games, the road becomes an extension of your commitment to perfection, turning every training session into a symphony of efficiency.\n\nIn the adaptive pathway, you excel in the H3 handcycling classification, which utilizes hand-powered cycles for athletes with lower-limb impairments. Here, your desire to translate raw speed into repeatable, technical patterns becomes your greatest advantage. You analyze the biomechanics of every crank rotation, ensuring that your explosive power is harnessed into smooth, aerodynamic momentum. It is a seamless marriage of your physical profile and your drive to master complex movement under the pressure of the field."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Women's -67 kg)",
+      "scout_verdict": "Your secondary legacy is defined by a fierce shift toward tactical leverage and high-impact strength. Within the realm of wrestling, your early focus on precision and rapid reaction finds a new home; it is no longer just about moving quickly, but about the explosive, short-burst movements that allow you to dictate the pace of a match. At 22, you possess the mental clarity to see your opponent's position and the technical repertoire to exploit the smallest mechanical advantage at The Brisbane 2032 Games.\n\nThis same focus on leverage and force development serves you in powerlifting, where you compete in the -67kg class. This is where your quest to turn speed into repeatable patterns truly shines. In the controlled environment of the lifting platform, you treat every rep as a technical study in physics, refining your body to withstand immense load while maintaining the split-second timing you have always prized. This adaptive journey demands a unique intensity\u2014the quiet, focused power of a technician who knows that when force is perfectly applied, success is inevitable."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The report effectively incorporates the user's interview answers and time travel constraints, but suffers from a noticeable archetype mismatch based on the user's focus on short-burst explosiveness.",
+    "authenticity": {
+      "score": 4,
+      "reasoning": "The user explicitly selected 'explosive, short-burst movements', which heavily contradicts the endurance-focused 'Road Machine' cycling archetype provided as the primary match."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative directly weaves in the user's biometrics and interview choices, such as referencing their desire to translate 'raw speed into repeatable, technical patterns'."
+    },
+    "distinctness": {
+      "score": 6,
+      "reasoning": "The adaptive pathways offer genuinely different sports (Handcycling and Powerlifting), though placing a 55kg athlete in the -67kg powerlifting class is an unforced athletic error."
+    },
+    "life_stage_coherence": {
+      "score": 7,
+      "reasoning": "The language appropriately frames age 22 as an 'Elite Peak' where past technical mastery culminates in prime performance, though the reference to starting as a '16-year-old' implies questionable math if the current year is 2024."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions provide meaningfully distinct options that effectively narrow the athletic profile, and the final question smartly incorporates the time travel premise into the prompt."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean pass with correct usage of 'The Brisbane 2032 Games' and no protected terms."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

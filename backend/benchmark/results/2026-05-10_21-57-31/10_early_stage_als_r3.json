@@ -1,0 +1,78 @@
+{
+  "persona_id": "10_early_stage_als",
+  "persona_label": "Early-stage ALS \u2014 former competitive tennis player",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 78,
+    "birth_year": 1981,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "How would you best describe your current engagement with your own physical limits and training?\nOptions: [Pushing for explosive power and competitive intensity | Refining technical mastery and precision in movement | Prioritizing sustained endurance and functional longevity]"
+    },
+    {
+      "role": "user",
+      "content": "Refining technical mastery and precision in movement"
+    },
+    {
+      "role": "narrator",
+      "content": "In your pursuit of technical perfection, what is the environment where you truly feel you sharpen your edge the most?\nOptions: [Solitary, introspective practice where you calibrate your own form in silence | Dynamic, collaborative environments where you hone precision alongside other dedicated athletes | High-pressure, competitive settings where you are forced to execute your skills under immediate scrutiny]"
+    },
+    {
+      "role": "user",
+      "content": "Solitary, introspective practice where you calibrate your own form in silence"
+    },
+    {
+      "role": "narrator",
+      "content": "As you look ahead, how do you see your approach to high-performance sport evolving in this next chapter of your athletic journey?\nOptions: [Focusing on longevity and smart training to maintain peak intensity | Transitioning your technical foundation toward guiding and mentoring others | Taking on new, complex disciplines to push the boundaries of your adaptability]"
+    },
+    {
+      "role": "user",
+      "content": "Taking on new, complex disciplines to push the boundaries of your adaptability"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "At 45, your athletic journey is defined by the quest for absolute technical clarity. With your 178cm, 78kg stature, you possess a stable, grounded center of gravity that is perfectly suited for the unforgiving precision of Alpine disciplines. This profile honors your preference for solitary, introspective practice; here, success is measured not in the noise of the crowd, but in the quiet, perfect articulation of an edge against ice or snow.\n\nAs you look toward the future, this path offers you a canvas to refine your mastery long into your current chapter. By focusing on the nuances of spatial judgment and aerodynamic efficiency, you turn your training into a meditation on movement. This is the pursuit of flow state, where your mental discipline translates directly into the high-speed execution required at a venue like The 2030 Games."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "To satisfy your drive for new, complex disciplines and your desire to test your limits, we pivot from the fluid geometry of the slopes to the raw, kinetic explosion of the track. While your initial focus emphasized precision and grace, this profile challenges your 78kg frame to generate sudden, violent force. It is a transition from long-form calibration to the high-stakes, fast-twitch demand of the sprint, requiring an entirely different physiological engine.\n\nYou will still rely on that hallmark solitary focus, but now it is directed toward the milliseconds before the gun. Training for the blocks requires a psychological shift\u2014channeling your introspective nature into the volatile energy of the start. It is a bold move to adapt your technical foundation toward such explosive power, but it fulfills your ambition to explore new athletic territories as you push your boundaries in competitive sport."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, highly tailored scouting report that effectively uses the interview answers to build two distinct and compelling athletic narratives.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "The 178cm/78kg build is well-suited for the gravitational and stability demands of Alpine Skiing, though recommending a 45-year-old pivot to explosive 100m sprints is slightly less realistic."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts directly weave the user's specific selections for 'solitary, introspective practice' and the desire for 'new, complex disciplines' into the rationale for each sport."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two recommended profiles contrast beautifully, taking the user from fluid, solitary precision on the slopes to the raw, explosive fast-twitch demands of the track."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator provides highly distinct, meaningful options (e.g., solitary calibration vs. collaborative honing vs. high-pressure scrutiny) that genuinely branch the psychological profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; avoids standalone protected terms and utilizes acceptable event phrasing like 'The 2030 Games'."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

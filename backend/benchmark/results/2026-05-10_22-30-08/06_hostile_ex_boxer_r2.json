@@ -1,0 +1,78 @@
+{
+  "persona_id": "06_hostile_ex_boxer",
+  "persona_label": "Hostile ex-boxer \u2014 distrusts Olympics and AI",
+  "biometrics": {
+    "height_cm": 183,
+    "weight_kg": 87,
+    "birth_year": 1995,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start building a picture of your history, what style of physical challenge has been the cornerstone of your activity thus far?\nOptions: [Fast-paced team environments requiring high-speed agility and tactical cooperation. | Individual pursuits centered on raw explosive power and short-duration intensity. | Endurance-based training focused on deep cardiovascular capacity and sustained pacing.]"
+    },
+    {
+      "role": "user",
+      "content": "Individual pursuits centered on raw explosive power and short-duration intensity."
+    },
+    {
+      "role": "narrator",
+      "content": "To better understand your developmental pathway in high-performance athletics, where do you find the most consistent growth in your training?\nOptions: [A highly structured, facility-based setting where every movement is measured against precise metrics. | A rugged, outdoor setting where the natural terrain and environmental unpredictability dictate your challenge. | A group-based, high-pressure setting where constant interaction and competition with others push you forward.]"
+    },
+    {
+      "role": "user",
+      "content": "A rugged, outdoor setting where the natural terrain and environmental unpredictability dictate your challenge."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep into a demanding session in the wild, what is the 'mental engine' that keeps you pushing when your body begins to tire?\nOptions: [Pure physical output: Focusing on hitting peak force or explosive metrics in every single repetition. | Strategic adaptation: Focusing on reading the environment and adjusting your movement patterns to conquer the terrain. | Internal resilience: Focusing on the mental discipline required to sustain a high-intensity pace through physical discomfort.]"
+    },
+    {
+      "role": "user",
+      "content": "Pure physical output: Focusing on hitting peak force or explosive metrics in every single repetition."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 10,
+      "matched_profile_name": "Launch Force",
+      "pathway_standing": "Bobsleigh / Push Sports",
+      "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+      "scout_verdict": "At 183cm and 87kg, your physical foundation is perfectly calibrated for the violent, high-velocity demands of the bobsleigh track. Your obsession with raw explosive power\u2014the ability to generate maximum force in a fraction of a second\u2014is the exact currency needed for the push phase. At 31, you possess the seasoned maturity to harness that peak force, translating your natural mass into the kinetic energy required to dominate the start at The Milano Cortina 2026 Games. \n\nWhen you leave the block, the sled is a dead weight, and you are the engine. Your preference for rugged, unpredictable environments mirrors the high-stakes atmosphere of the ice, where your ability to maintain composure during a high-speed descent separates the podium finishers from the rest of the field."
+    },
+    {
+      "matched_profile_id": 10,
+      "matched_profile_name": "Launch Force",
+      "pathway_standing": "Bobsleigh / Push Sports",
+      "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+      "scout_verdict": "The F56 classification encompasses athletes with impairment in lower limb function who compete from a seated position, typically utilizing a specialized throwing frame. Here, your 'Launch Force' profile undergoes a radical transformation: the explosive output you previously channeled into forward acceleration is redirected into a masterclass of rotational torque and technical precision. Success in the circle is not just about strength; it is about the kinetic chain of your upper body and trunk, leveraging your 87kg build to create a whip-like release that maximizes distance. \n\nIn this arena, your focus on 'peak force in every repetition' becomes an exercise in repetitive perfection. You aren't just throwing; you are managing the interaction between your stability in the chair and the explosive rotation required to launch the discus. At The Los Angeles 2028 Games, your competitive advantage will be your ability to find that singular, explosive 'snap' of power from a fixed, seated position, demonstrating a depth of technical mastery that demands total synchronization of the core."
+    }
+  ],
+  "eval_result": {
+    "overall": 9,
+    "summary": "An exceptional scouting report that perfectly marries the user's biometrics and interview responses with highly plausible and distinct athletic pathways.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "At 183cm and 87kg, the user's substantial physical build is an ideal real-world fit for the explosive power and mass requirements of both bobsleigh and seated throws."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narrative expertly weaves in the user's specific interview choices, directly quoting their focus on 'peak force in every repetition' and preference for rugged environments."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The pathways offer fundamentally different athletic mechanics, brilliantly contrasting the linear, forward-accelerating push of bobsleigh with the fixed, rotational torque of seated throws."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator's questions effectively narrow down the athlete's profile by offering distinctly different options covering physical modality, training environment, and psychological drivers."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Perfectly compliant, successfully using approved formats like 'The Milano Cortina 2026 Games' and 'The Los Angeles 2028 Games' without standalone trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

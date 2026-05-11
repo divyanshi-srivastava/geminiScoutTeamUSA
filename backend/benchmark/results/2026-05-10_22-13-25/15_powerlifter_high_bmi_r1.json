@@ -1,0 +1,78 @@
+{
+  "persona_id": "15_powerlifter_high_bmi",
+  "persona_label": "Competitive powerlifter \u2014 high BMI, elite strength",
+  "biometrics": {
+    "height_cm": 182,
+    "weight_kg": 142,
+    "birth_year": 1991,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start building our understanding of your athletic pathway, I would like to know where your strengths have traditionally centered. Which of these environments feels most like home to you?\nOptions: [Explosive, high-intensity strength and power | Sustained, tactical endurance and pacing | Precision, technical coordination and control]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive, high-intensity strength and power"
+    },
+    {
+      "role": "narrator",
+      "content": "When it comes to how you compete and train, which environment brings out the best in your performance?\nOptions: [The lone pursuit: I thrive on solo training where I am solely accountable for my own progress. | The team dynamic: I draw my energy from a collective unit pushing toward a shared, cohesive goal. | The strategic duel: I enjoy one-on-one competition where tactical, head-to-head rivalry drives me.]"
+    },
+    {
+      "role": "user",
+      "content": "The lone pursuit: I thrive on solo training where I am solely accountable for my own progress."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look back on your athletic journey and toward your future goals, what is the primary factor that fuels your drive to keep pushing the envelope?\nOptions: [The pursuit of technical mastery: Refining a specific movement until it is absolutely flawless. | The drive to break physical barriers: Testing the absolute limits of what my body can achieve. | The mental resilience challenge: Mastering my focus and composure under extreme, high-stakes pressure.]"
+    },
+    {
+      "role": "user",
+      "content": "The drive to break physical barriers: Testing the absolute limits of what my body can achieve."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+      "scout_verdict": "At 182cm and 142kg, your substantial physical frame is a powerhouse of raw, latent energy, perfectly aligned with the explosive demands of high-performance field athletics. You have identified your core athletic identity in the solitude of the training ground, where the quiet, disciplined pursuit of perfection replaces the noise of the crowd. For you, the throwing circle is the ultimate stage to test the absolute limits of your physicality.\n\nAs you look toward competing at The Brisbane 2032 Games, your legacy will be defined by your commitment to breaking through barriers that others deem immovable. Whether performing from a standing position or in the seated throw, your journey is one of singular focus. By channeling every ounce of your 142kg frame into the mechanics of a single, explosive movement, you transform the act of throwing into an expression of pure, refined force."
+    },
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "scout_verdict": "While your foundation is built on explosive power, this pathway invites you to pivot toward a different kind of intensity: the strategic, high-speed chess match of the court. Shifting from the solitary pursuit of physical limits to the dynamic, technical landscape of basketball introduces a vital contrast to your current archetype. It demands that you translate your immense physical presence into agility, spatial awareness, and tactical precision.\n\nAt The Brisbane 2032 Games, you will be required to apply your legendary discipline not just to a single movement, but to the fluid, unpredictable geometry of the game. Developing these technical skills serves as the perfect complement to your strength-focused origins. By mastering court vision and the coordination required for high-speed maneuvering, you round out your athletic narrative, proving that your 142kg of explosive power can be as versatile and intelligent as it is unstoppable."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A solid scouting report that successfully identifies a primary sport perfectly suited to the user's massive frame and solo mindset, though the secondary sport recommendation feels forced.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "Shot Put is an exceptionally realistic match for a 182cm, 142kg athlete prioritizing explosive power, though standing basketball is a stretch for that body composition."
+    },
+    "personalization": {
+      "score": 6,
+      "reasoning": "The first verdict beautifully integrates the user's preference for 'the lone pursuit', but the second verdict awkwardly attempts to justify a team sport by framing it as a 'pivot' away from the user's actual answers."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "Field Athletics and Basketball offer vastly different athletic pathways, and both standing and adaptive options are clearly defined."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The interview presents genuinely distinct forks (e.g., solo vs. team vs. duel) that logically funnel the user toward specific athletic archetypes."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Correctly formats 'The Brisbane 2032 Games' and contains no NIL or disallowed trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

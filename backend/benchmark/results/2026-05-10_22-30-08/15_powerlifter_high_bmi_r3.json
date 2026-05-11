@@ -1,0 +1,86 @@
+{
+  "persona_id": "15_powerlifter_high_bmi",
+  "persona_label": "Competitive powerlifter \u2014 high BMI, elite strength",
+  "biometrics": {
+    "height_cm": 182,
+    "weight_kg": 142,
+    "birth_year": 1991,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "As we begin to uncover the roots of your sporting journey, what do you feel is the core strength that defines your physical engagement with competition?\nOptions: [Raw, explosive power for immediate impact and force production | Technical mastery and precision control in high-pressure scenarios | Sustained physical endurance for long-duration, high-output events]"
+    },
+    {
+      "role": "user",
+      "content": "Raw, explosive power for immediate impact and force production"
+    },
+    {
+      "role": "narrator",
+      "content": "When you visualize yourself in the heat of a major event, where do you see that power being most effectively deployed?\nOptions: [Individual performance, relying solely on my own output to hit a peak target | Dynamic team environments, using my force to create openings and secure tactical advantages for others | Direct competitive opposition, where my physical presence is used to control or overcome a specific opponent]"
+    },
+    {
+      "role": "user",
+      "content": "Individual performance, relying solely on my own output to hit a peak target"
+    },
+    {
+      "role": "narrator",
+      "content": "To build toward that personal peak, what does your preferred training atmosphere look like?\nOptions: [Highly structured, gym-centric protocols focused on maximum force and absolute strength. | Outdoors-driven, high-intensity conditioning that emphasizes speed, agility, and explosive movement. | Technical, high-repetition skill work designed to refine explosive motion under fatigue.]"
+    },
+    {
+      "role": "user",
+      "content": "Highly structured, gym-centric protocols focused on maximum force and absolute strength."
+    },
+    {
+      "role": "narrator",
+      "content": "As you envision your path toward your ultimate goals, what is the primary drive that keeps you pushing when you are grinding through those intense sessions?\nOptions: [The relentless pursuit of my own absolute physical limit. | The prestige of achieving glory on a top-tier global stage. | The drive to redefine what is possible within my chosen discipline.]"
+    },
+    {
+      "role": "user",
+      "content": "The relentless pursuit of my own absolute physical limit."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+      "scout_verdict": "At 182cm and 142kg, you possess the raw, unadulterated mass that serves as the foundation for dominance in the throwing circle. Your journey is defined by the relentless pursuit of force production, where every gym-centric session is a calculated step toward maximizing your kinetic output. When you step into the ring at The Los Angeles 2028 Games, the stadium will become an extension of your own individual pursuit, as you channel that immense power into the flight of the shot or discus, transforming your physical stature into a weapon of pure physics.\n\nIn the adaptive arena, your focus shifts to the specialized demands of the C3 classification. This classification, which accounts for athletes with specific coordination impairments, necessitates an extraordinary marriage of stability and explosive power. While your seated posture eliminates the use of your lower kinetic chain, it demands a heightened level of trunk control and upper-body precision to propel the weight. In this discipline, your weight becomes your anchor, allowing you to focus your entire physiological drive into a perfectly timed release, proving that true power is not just about movement, but about the controlled expression of strength under the most exacting technical constraints."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's +100 kg)",
+      "scout_verdict": "Stepping onto the mat at The Brisbane 2032 Games, your profile transforms from a projectile-based athlete into a master of human dynamics. Wrestling is the ultimate test of your 142kg frame in direct, combat-focused opposition, where your preference for raw power is tested against the resistance of an opponent who is actively trying to neutralize you. Here, your size is a strategic advantage, serving as the pivot point for leverages, throws, and defensive anchors that define the sport\u2019s brutal, high-pressure environment.\n\nContrasting the chaotic fluidity of the mat, your adaptive pathway in Powerlifting strips away the opponent to focus entirely on the cold, honest weight of the iron. In the Men\u2019s +100 kg category, the game changes to a meditative, high-intensity grind that aligns with your hunger for the absolute physical limit. This is not about the throw or the takedown; it is about the sustained, disciplined recruitment of muscle fiber to conquer a static load. By isolating your power, you transition from the reactive speed of the wrestling mat to the sheer, crushing persistence of the lifting platform, finding glory in the ability to move the immovable."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong scouting report that effectively utilizes the user's massive biometrics to suggest highly appropriate strength-based pathways, with solid integration of interview preferences.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The 'Iron Shoulder' shot put and powerlifting recommendations are perfect for a 142kg athlete seeking explosive, individual output, though the wrestling suggestion slightly contradicts the user's explicit preference to avoid direct opposition."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative explicitly weaves in the user's biometrics and interview selections, referencing 'gym-centric sessions' and their 'relentless pursuit of the absolute physical limit'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive and standing pathways offer very distinct biomechanical and psychological challenges, especially in the second archetype contrasting wrestling's fluidity with powerlifting's static grind."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asks progressive questions with meaningfully distinct options that successfully separate combat athletes from individual power athletes."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with correct Games terminology ('The Los Angeles 2028 Games' and 'The Brisbane 2032 Games') and no violations."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

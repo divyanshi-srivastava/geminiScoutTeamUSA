@@ -1,0 +1,78 @@
+{
+  "persona_id": "03_adaptive_visual_impairment",
+  "persona_label": "Adaptive athlete \u2014 partial visual impairment",
+  "biometrics": {
+    "height_cm": 181,
+    "weight_kg": 83,
+    "birth_year": 1998,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our exploration of your sporting journey, what style of physical activity has historically resonated most with your natural rhythm and capabilities?\nOptions: [Explosive power and short-burst speed (sprinting, weightlifting, court sports) | Sustained endurance and aerobic capacity (long-distance running, rowing, cycling) | Precision-based technical mastery and strategic control (tactical team roles, target sports)]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance and aerobic capacity (long-distance running, rowing, cycling)"
+    },
+    {
+      "role": "narrator",
+      "content": "Looking at how you prefer to channel that endurance, which environment do you feel allows your natural talents to truly shine?\nOptions: [Solitary focus and self-reliance, pushing solely against my own limits. | Collaborative synergy, where I am a critical engine in a team's collective momentum. | High-pressure head-to-head competition, thrive on the direct tension of facing an opponent.]"
+    },
+    {
+      "role": "user",
+      "content": "Collaborative synergy, where I am a critical engine in a team's collective momentum."
+    },
+    {
+      "role": "narrator",
+      "content": "When you think about your ultimate contribution in a team setting, what defines your presence on the field or court?\nOptions: [The relentless workhorse, dictating the pace and physically outlasting the opposition. | The tactical architect, reading the flow of the game to position my team for victory. | The versatile utility player, adapting my energy to whatever the team needs most in the moment.]"
+    },
+    {
+      "role": "user",
+      "content": "The relentless workhorse, dictating the pace and physically outlasting the opposition."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 9,
+      "matched_profile_name": "Boat Run",
+      "pathway_standing": "Rowing",
+      "pathway_adaptive": "Adaptive Rowing (e.g., Men's Single Scull ASM1x)",
+      "scout_verdict": "At 28, you have reached the absolute zenith of your physical engine, and your 181cm, 83kg frame offers the ideal leverage to dominate the water. You described yourself as a 'relentless workhorse,' and that is exactly the profile that wins races on the global stage. In the rowing shell, you do not just exert force; you dictate the cadence, becoming the rhythmic heartbeat that drives your crew to find that elusive, perfect synchronization. Your journey is defined by the collaborative synergy you crave\u2014the ability to turn individual sacrifice into collective momentum. At The LA28 Games, you will be the anchor that ensures the boat remains stable under the most intense pressure, turning every stroke into a statement of endurance. You are not just competing; you are anchoring a team\u2019s pursuit of glory through sheer, unyielding effort.\n\nIn the adaptive pathway, your physical profile translates perfectly into the specialized requirements of the single scull. Here, the focus shifts to technical precision in the stroke cycle while maintaining the same relentless work ethic that defines your standing profile. You will need to master the unique balance and propulsion techniques required in the adaptive category, using your aerobic capacity to sustain high-output levels throughout the race distance. Competing at The LA28 Games in this capacity will require you to be a master of your own rhythm, translating your team-oriented drive into a focused, powerful display of individual capability that serves as the foundation of your adaptive performance."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "While your base is built on endurance, there is a secondary, untapped facet of your athleticism waiting to be unleashed: the clinical precision of the speed specialist. This pathway demands high-speed spatial navigation and the ability to process micro-adjustments in fractions of a second. It is a transition from the 'workhorse' to the 'architect of velocity,' where your success is measured by your mastery over physics, edge control, and the ability to maintain speed through challenging terrain. This discipline moves you away from team-based synchronization and into a space of solitary, high-stakes technical execution, requiring you to harness your physical power and focus it entirely on the line you carve through the frost at The LA28 Games.\n\nThe adaptive pathway presents an equally rigorous challenge, demanding a high level of core strength and upper-body coordination to execute high-speed maneuvers on a sit-ski. You will be tasked with utilizing your weight distribution and biomechanical leverage to navigate technical gates with maximum efficiency. This discipline mirrors the standing technical requirements, emphasizing your capacity for rapid decision-making and calculated risks. At The LA28 Games, your performance will be defined by your ability to maintain stability and speed through complex curves, translating your endurance-based foundation into a high-octane display of control and athletic resilience that challenges the limits of the course."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "This is a strong, highly personalized scouting report that accurately leverages the user's biometrics and interview responses, though the secondary archetype deliberately departs from the user's stated preferences.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "At 181cm and 83kg, the user has an excellent biometric foundation for a powerful endurance athlete, and rowing aligns perfectly with their stated team-based, sustained-capacity profile."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narrative directly incorporates the user's exact biometrics and seamlessly weaves their specific self-described 'relentless workhorse' and 'collaborative synergy' quotes into the primary verdict."
+    },
+    "distinctness": {
+      "score": 7,
+      "reasoning": "The adaptive pathways introduce specific biomechanical differences like sit-skiing core requirements, though the adaptive rowing pathway oddly forces a strictly team-focused user into an individual single scull event."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator's questions branch logically from foundational physical traits to environmental preferences, effectively drilling down to uncover the user's specific identity as a pace-setting team engine."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean pass with proper use of 'The LA28 Games' and no protected Olympic or Paralympic trademark terms."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

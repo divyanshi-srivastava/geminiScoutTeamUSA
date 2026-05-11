@@ -1,0 +1,78 @@
+{
+  "persona_id": "02_tall_power_athlete",
+  "persona_label": "Tall male power athlete",
+  "biometrics": {
+    "height_cm": 196,
+    "weight_kg": 103,
+    "birth_year": 2002,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you best characterize the physical focus of your experience in competitive sport thus far?\nOptions: [Explosive power and short-burst speed | Sustained tactical endurance and team-based strategy | Precision-heavy technical skill and rhythmic coordination]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and short-burst speed"
+    },
+    {
+      "role": "narrator",
+      "content": "When you look at the setting of your potential competition, which 'theatre' do you feel best channels that intensity?\nOptions: [High-pressure individual duels where you face a direct opponent head-on | Complex team-based environments where you rely on synergy and coordination | Solo time-trial settings where the focus is on perfecting your own personal limit]"
+    },
+    {
+      "role": "user",
+      "content": "Complex team-based environments where you rely on synergy and coordination"
+    },
+    {
+      "role": "narrator",
+      "content": "When the pressure is at its peak in that team environment and the match is on the line, what is your most natural way of asserting your impact?\nOptions: [Hyper-focused execution: I isolate my specific role and execute my technical responsibilities with surgical precision. | Tactical leadership: I shift my focus to scanning the floor, reading the opposition's weaknesses, and directing my team's movement. | Pure momentum: I lean into high-intensity impact, drawing the defensive focus to create space and scoring opportunities for my teammates.]"
+    },
+    {
+      "role": "user",
+      "content": "Pure momentum: I lean into high-intensity impact, drawing the defensive focus to create space and scoring opportunities for my teammates."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "scout_verdict": "At 196.0cm and 103.0kg, you possess the physical gravity that turns a court into your own territory. Your game is defined by more than just movement\u2014it is defined by the way you demand attention, drawing the defense into your sphere of influence to create gaps for your teammates. This ability to use your physicality as a strategic engine makes you a centerpiece of any roster.\n\nAs you stand at 24 years old, you are in the perfect window to translate that raw, explosive momentum into the high-stakes chess match of the international stage. Whether it is the fast-paced transitions of a traditional court or the tactical, high-impact collisions of a wheelchair-based tournament, your archetype is built for The LA28 Games. You do not just participate in the rhythm of the game; you dictate it, forcing the opposition to account for your presence every time the ball is in play."
+    },
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+      "scout_verdict": "If the court is about the collective, this path is about the singular, absolute mastery of kinetic force. Your 103.0kg frame is a reservoir of stored energy, and as an 'Iron Shoulder,' your journey shifts away from team synergy toward the technical perfection of a single, explosive release. Here, the challenge is not navigating a defense, but overcoming the constraints of physics through pure, disciplined power.\n\nAt this stage in your journey, the discipline required to hone that explosive burst into a precise, repeatable movement cycle becomes your ultimate calling. Whether it is in a standing circle or an anchored, seated position, you are trading team strategy for the quiet, grinding focus of a specialist. At The LA28 Games, your contribution is measured in millimeters and milliseconds\u2014the ultimate test of how effectively you can channel your inner drive into one, singular, match-deciding explosion of strength."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, highly personalized report that excellently leverages the user's biometrics and interview answers to offer two distinct, plausible sporting pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The user's 196cm, 103kg frame and preference for explosive power perfectly match the physical requirements for both a physical basketball presence and a heavyweight throwing athlete."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The scout verdict directly incorporates the user's specific interview answer about 'drawing the defensive focus to create space' seamlessly into the Basketball narrative."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two profiles offer a great contrast, explicitly shifting from a team-based invasion sport in the first pathway to a singular, mechanics-driven throwing discipline in the second."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The interview questions logically progressed from general physical traits to specific competitive environments and in-game roles, offering meaningfully distinct options at each turn."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass; correctly uses 'The LA28 Games' and avoids all restricted terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

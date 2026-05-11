@@ -1,0 +1,78 @@
+{
+  "persona_id": "02_tall_power_athlete",
+  "persona_label": "Tall male power athlete",
+  "biometrics": {
+    "height_cm": 196,
+    "weight_kg": 103,
+    "birth_year": 2002,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "Which of these physical domains do you feel most naturally aligned with based on your sporting journey thus far?\nOptions: [Explosive power and short-burst speed (e.g., sprinting, jumping, or explosive lifting) | Sustained power output and rhythmic pacing (e.g., rowing, cycling, or endurance-based work) | Precision, coordination, and tactical decision-making (e.g., complex ball sports or technical combat arts)]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and short-burst speed (e.g., sprinting, jumping, or explosive lifting)"
+    },
+    {
+      "role": "narrator",
+      "content": "To better understand how you cultivate that athleticism, what kind of training environment do you thrive in when you're pushing toward your peak?\nOptions: [Structured, high-tech facilities with dedicated coaching and precise equipment | Self-guided, functional training focused on raw movement and environmental adaptability | Team-based, high-intensity environments that rely on competitive pressure to drive output]"
+    },
+    {
+      "role": "user",
+      "content": "Team-based, high-intensity environments that rely on competitive pressure to drive output"
+    },
+    {
+      "role": "narrator",
+      "content": "When the stakes are at their peak during a high-performance event, what is the single most important factor that allows you to execute your best performance under pressure?\nOptions: [Mental recalibration: The ability to block out noise and focus entirely on the mechanical execution of the task. | Physical dominance: Relying on your raw strength and speed to overwhelm the competition in the moment. | Situational awareness: Reading the flow of the game to identify and exploit tactical gaps in your opponent's strategy.]"
+    },
+    {
+      "role": "user",
+      "content": "Situational awareness: Reading the flow of the game to identify and exploit tactical gaps in your opponent's strategy."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "scout_verdict": "Standing at a commanding 196cm, you are built to dominate the court. Your 103kg frame provides the necessary physical barrier to control the paint, while your dedication to high-intensity, team-driven environments makes you a natural leader in any basketball setting. As you prepare for The LA28 Games, your ability to read tactical gaps will be the difference between a good player and a game-changing anchor who dictates the rhythm of the match.\n\nIn the adaptive pathway, Wheelchair Basketball transforms your tactical awareness into a fast-paced, high-contact chess match. This discipline uses a 1.0 to 4.5 classification system, where players are assigned a number based on their level of trunk stability and movement; as a high-point player, you would use your natural athleticism and reach to control the transition game. Your shift in focus here is from pure verticality to court-wide navigation, where your existing situational awareness allows you to exploit opposing defensive lines with pinpoint precision, ensuring your team remains a constant threat at The LA28 Games."
+    },
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+      "scout_verdict": "This pathway pivots from the court to the arena, focusing on the pure, explosive power you have honed through years of dedicated lifting. Your build is a powerhouse for the shot put and discus; at 24, you are entering the prime window for explosive force production. Instead of relying on team dynamics, you command the field through individual mastery, translating your 103kg of functional mass into a single, kinetic explosion of speed and rotational technique that can define your standing at The LA28 Games.\n\nThe adaptive pathway, specifically in the Seated Shot Put (classification C3, which covers athletes with lower-limb impairment competing from a fixed throwing frame), requires a complete recalibration of your biomechanics. You will no longer rely on leg drive; instead, your success hinges on the stability of your core and the absolute precision of your upper-body kinetic chain. By isolating your power, you turn your explosive athleticism into a display of raw, seated force. It is a pursuit of perfect technique and muscular engagement, where your ability to tune out the surrounding noise and focus entirely on the mechanical release of the weight will mark you as a top-tier contender at The LA28 Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 9,
+    "summary": "An exceptionally strong scouting report that effectively synthesizes the user's impressive physical biometrics with their specific interview choices to create highly plausible athletic pathways.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "At 196cm and 103kg, the user has the exact robust, powerful frame suited for both a physical basketball forward and a discus/shot put thrower, making both 'Net Presence' and 'Iron Shoulder' highly credible matches."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts brilliantly incorporate the user's specific interview choices, actively linking their preference for 'situational awareness' and 'team-driven environments' directly to their tactical role on the basketball court."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The adaptive pathways are exceptionally well-researched, introducing genuine mechanical differences like the wheelchair basketball 1.0-4.5 classification system and the fixed throwing frame biomechanics of seated shot put."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The interview presents a logical funnel, moving from foundational physical traits to training environment and finally mental approach, with options that genuinely branch the athlete's psychological and physical profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly uses the approved 'The LA28 Games' format with no standalone trademark violations or NIL issues."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

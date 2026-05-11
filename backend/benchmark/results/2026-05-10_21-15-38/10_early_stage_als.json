@@ -1,0 +1,77 @@
+{
+  "persona_id": "10_early_stage_als",
+  "persona_label": "Early-stage ALS \u2014 former competitive tennis player",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 78,
+    "birth_year": 1981,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, could you tell me a little about your history with physical activity? Have you always been deeply involved in high-performance sport, or is this a new ambition you are setting for yourself?\nOptions: [I have a lifelong background in competitive athletics. | I\u2019m returning to the field after a significant hiatus. | I am beginning to explore my physical potential now.]"
+    },
+    {
+      "role": "user",
+      "content": "I have a lifelong background in competitive athletics."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back on that journey, which of these modalities defined your most intense years of training?\nOptions: [Team-based field sports | Endurance and individual disciplines | Strength and explosive power training | A mix of various modalities]"
+    },
+    {
+      "role": "user",
+      "content": "Endurance and individual disciplines"
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward your next goals in high-performance sport, how would you describe your current training frequency?\nOptions: [Casual/Maintenance (1-2 times a week) | Active Hobbyist (3-4 times a week) | Competitive/Rigorous (5+ times a week) | I am preparing to significantly increase my training load.]"
+    },
+    {
+      "role": "user",
+      "content": "Casual/Maintenance (1-2 times a week)"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "At 45, you bring a level of seasoned focus that younger competitors often lack. Your height of 178.0cm and weight of 78.0kg provide a stable, powerful center of gravity ideal for the technical demands of speed disciplines. Drawing on your lifelong commitment to endurance and individual pursuits, you possess the mental fortitude required for the solitary, high-stakes environment found on the slopes.\n\nYour history of intense, self-driven training is the perfect foundation for mastering the precise edge control required at this level of performance. Visualizing your performance at The Milano Cortina 2026 Games, it is clear that your ability to remain calm under pressure while navigating high-velocity turns is a significant asset. You aren't just participating; you are refining a lifelong craft, turning the discipline of your past into a sharp, competitive advantage on the ice and snow."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "While your background is rooted in endurance, your physical build at 178.0cm and 78.0kg reveals a hidden reservoir of explosive potential. The transition from long-distance stamina to short-burst intensity is a challenge that demands a deep well of athletic intelligence\u2014a well you have been filling throughout your years of competitive participation. You possess the structural integrity to handle the extreme forces of the starting blocks.\n\nStepping into the atmosphere of The Brisbane 2032 Games, you would be trading steady, long-form exertion for the singular, blinding speed of the track. This path requires a recalibration of your movement patterns, leaning on your natural biomechanics to generate immediate, high-frequency power. Your past experience has taught you how to train with purpose, and that same mindset will allow you to dismantle the technical barriers of the sprint, proving that your athletic peak is defined not by age, but by the ferocity of your intent."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The report incorporates the user's athletic background effectively, but stretches plausibility by recommending explosive sprints to a 45-year-old with casual endurance habits.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While Edge Carver fits the user's physical build well, trying to pivot a 45-year-old casual endurance athlete into an explosive Block Starter stretches real-world scouting plausibility."
+    },
+    "personalization": {
+      "score": 7,
+      "reasoning": "The verdicts accurately reference the user's lifelong endurance background and biometrics, but gloss over their current drop to 'Casual/Maintenance' training."
+    },
+    "distinctness": {
+      "score": 5,
+      "reasoning": "The two archetypes provide vastly different sporting angles, but the narratives completely fail to explore the adaptive pathways beyond listing them in the titles."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asks a logical progression of questions with genuinely distinct options that effectively narrow down the athlete's history, modality, and current training load."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance with proper Games terminology (e.g., The Milano Cortina 2026 Games) and no restricted trademark violations."
+    }
+  },
+  "backend_error": null
+}

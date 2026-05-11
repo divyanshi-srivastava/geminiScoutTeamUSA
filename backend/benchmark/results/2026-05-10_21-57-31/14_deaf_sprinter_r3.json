@@ -1,0 +1,78 @@
+{
+  "persona_id": "14_deaf_sprinter",
+  "persona_label": "Profoundly deaf \u2014 competitive 400m sprinter",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 76,
+    "birth_year": 2001,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start understanding your athletic identity, how do you most naturally express your physical potential when you are in the zone?\nOptions: [Explosive power and speed: I thrive on short, high-intensity bursts and raw physical force. | Sustained endurance and pacing: I excel at grinding through long durations and maintaining a steady, tactical flow. | Precision and technical coordination: I am driven by fine motor control, timing, and pinpoint accuracy in my movements.]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and speed: I thrive on short, high-intensity bursts and raw physical force."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are looking to sharpen that raw power, where do you spend most of your time training?\nOptions: [A structured, high-intensity strength and conditioning program in a gym environment. | Field-based, explosive agility drills focused on reaction and quick transitions. | Technical discipline training where I channel raw speed into precise, repetitive movement patterns.]"
+    },
+    {
+      "role": "user",
+      "content": "Technical discipline training where I channel raw speed into precise, repetitive movement patterns."
+    },
+    {
+      "role": "narrator",
+      "content": "When you look toward the next chapter of your sporting journey, what core motivation drives your daily training and keeps you focused on your long-term goals?\nOptions: [Mastery and refinement of personal technique: I am fueled by the constant, meditative pursuit of perfect individual execution. | Strategic competition: I am driven by the thrill of outplaying opponents through speed-based, tactical pressure. | Dynamic team synergy: I am motivated by the challenge of harmonizing my explosive capabilities within a high-performance group.]"
+    },
+    {
+      "role": "user",
+      "content": "Mastery and refinement of personal technique: I am fueled by the constant, meditative pursuit of perfect individual execution."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "At 178.0cm and 76.0kg, you possess a frame built for the violent, beautiful simplicity of pure speed. At 25, you have hit that critical inflection point where your physical maturity perfectly aligns with your mental focus. You aren't just sprinting; you are calculating the geometry of every stride, turning raw explosive force into a masterpiece of biomechanical efficiency.\n\nWhen you take your place at the starting blocks for The Brisbane 2032 Games, the world narrows down to that singular, meditative moment of release. For you, the race is the ultimate expression of the mastery you have been refining. Every muscle fiber, every ounce of kinetic potential, is calibrated to shatter the limits of human velocity, proving that your pursuit of perfect individual execution is the most potent weapon on the track.\n\nIn the adaptive pathway, this same drive for mastery is translated into a technical pursuit of efficiency through specialized equipment. You channel your explosive force into rhythmic, high-frequency movement patterns that require immense core stability and perfect synchronization with your equipment. As you prepare for The Brisbane 2032 Games, your focus on individual technique allows you to navigate the track with fluid power, ensuring that every drive phase is an extension of your calculated intent and raw physical capability."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "While the track demands raw kinetic discharge, the mountain and the ice demand a symphony of micro-adjustments. Your 178.0cm frame and 76.0kg build grant you the perfect center of gravity to master the extreme forces exerted during high-speed maneuvers. At this stage of your athletic journey, your drive for perfect individual execution becomes your greatest asset as you navigate icy gradients where the difference between success and near-misses is measured in millimeters.\n\nStepping onto the stage at The Milano Cortina 2026 Games, you channel your explosive potential into the technical discipline of edge control. It is no longer just about outputting power; it is about refining that energy into a razor-sharp, flowing dance against gravity. Here, your dedication to technical perfection allows you to command high-speed environments with a level of focused intensity that defines a true master of their craft.\n\nWithin the adaptive pathway, this technical discipline is amplified by the unique interface between you and your sit-ski. You refine your lines with extreme precision, using subtle shifts in body weight and core engagement to navigate demanding courses. Your journey toward The Milano Cortina 2026 Games is defined by the same meditative pursuit of perfection; you treat every turn as a technical problem to be solved, ensuring that your explosive speed is perfectly balanced by the sophisticated mechanics of your equipment and your mastery of the icy terrain."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "This is a strong, highly personalized scouting report that accurately translates the user's biometrics and interview responses into coherent athletic pathways.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "A 178cm, 76kg build is an excellent physiological match for the explosive power and technical coordination required in both sprinting and alpine skiing."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdict successfully integrates the user's specific psychological drivers, explicitly referencing their selected 'meditative pursuit of perfect individual execution' to frame the narrative."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive profiles thoughtfully incorporate equipment-specific mechanics, such as core stability for T44 sprinting and the unique sit-ski interface in LW12 alpine skiing."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The interview progresses logically from physical expression to training environment and finally psychological motivation, offering meaningfully distinct options that effectively narrow the athletic profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "The report is fully compliant, utilizing the approved 'The [City] [Year] Games' format and avoiding any restricted terms or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

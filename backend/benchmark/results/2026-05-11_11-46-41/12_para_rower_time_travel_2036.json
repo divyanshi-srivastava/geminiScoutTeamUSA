@@ -1,0 +1,82 @@
+{
+  "persona_id": "12_para_rower_time_travel_2036",
+  "persona_label": "Para-rower with SCI \u2014 time travel to 2036 Games",
+  "biometrics": {
+    "height_cm": 184,
+    "weight_kg": 88,
+    "birth_year": 1988,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "How would you best describe your current engagement with your sporting journey?\nOptions: [Dedicated competitive athlete focused on maximizing peak performance. | Active enthusiast integrating high-level movement into a demanding professional lifestyle. | Returning to high-performance athletics after a period of focus on other life priorities.]"
+    },
+    {
+      "role": "user",
+      "content": "Dedicated competitive athlete focused on maximizing peak performance."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the thick of a high-performance training block, what is the primary physical engine you rely on to beat the competition?\nOptions: [Explosive power, raw speed, and anaerobic capacity. | Sustained endurance, aerobic efficiency, and long-form pacing. | Technical precision, complex spatial movement, and tactical agility.]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance, aerobic efficiency, and long-form pacing."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look ahead to that chapter in your life, what does your primary focus look like outside of the training environment\u2014are you transitioning into a mentor/leadership role, scaling new heights in your career, or perhaps balancing a significant shift in family and lifestyle?\nOptions: [Leading and mentoring the next generation while maintaining personal competitive output. | Pursuing a high-stakes professional peak while integrating athletic training as a foundational pillar. | Embracing a period of intense focus on personal legacy and master-level competitive mastery.]"
+    },
+    {
+      "role": "user",
+      "content": "Embracing a period of intense focus on personal legacy and master-level competitive mastery."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "Standing at 184cm and weighing 88kg, your stature is a testament to the decades of hard work you have poured into your athletic foundation. As you approach The Ahmedabad 2036 Games, your commitment to master-level competitive mastery is not merely a hobby\u2014it is the defining pillar of your legacy. The Decathlon archetype honors your desire to be a complete athlete, utilizing your sustained aerobic engine to outpace the field across ten distinct disciplines that demand both strength and cardiovascular resilience.\n\nIn the adaptive pathway, you would compete in the P44 classification, which is designed for athletes with lower-limb impairment who demonstrate the ability to compete in a standing position. This classification perfectly captures your dedication to vertical movement and explosive versatility. By choosing this path for your legacy chapter, you are not just competing; you are redefining what is possible for a master-level athlete at 48. Your ability to integrate diverse movement patterns into a unified performance ensures that your presence at The Ahmedabad 2036 Games will be felt long after the final event."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "Your transition toward the Road Machine profile represents a pivot from broad versatility to the surgical refinement of your aerobic efficiency. At 48, you have identified that your greatest asset is your capacity for long-form pacing and the unwavering focus required to master a specialized craft. By channeling your energy into the world of cycling, you embrace a discipline where the marriage of human physiology and technical hardware creates a singular, efficient machine. \n\nWithin the adaptive framework, the H3 classification for handcycling is your true calling. This category, intended for athletes with impaired lower-limb function\u2014often involving spinal cord injury\u2014centers the entire engine of the race in the upper body and core. It demands a sophisticated level of power-to-weight optimization that perfectly matches your analytical approach to training. At The Ahmedabad 2036 Games, competing as an H3 athlete allows you to strip away the noise and focus purely on the rhythmic, high-intensity exertion that has become your trademark. It is a technical, tactical, and profoundly rewarding way to secure your legacy, demanding total coordination between your mind and the machine you drive."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A solid report with excellent life-stage framing and adaptive pathway details, though one archetype slightly misaligns with the user's stated physical engine.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While Road Machine perfectly fits the user's choice of 'sustained endurance,' the Decathlon (Swiss Army) relies heavily on explosive power, which the user explicitly did not choose."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative directly integrates the user's exact quote about 'master-level competitive mastery' alongside their specific height and weight."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways introduce distinct classifications (P44 and H3) and explain the specific physiological demands of each compared to the standing events."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "At age 48, the Legacy framing is executed perfectly, referencing a 'legacy chapter' and acknowledging that they are redefining what is possible for an older master-level athlete."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions successfully probe both physical mechanics and life stage priorities to narrow down the profile, providing distinct and meaningful forks."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with correct use of 'The Ahmedabad 2036 Games' and no standalone Olympic or Paralympic terms."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

@@ -1,0 +1,82 @@
+{
+  "persona_id": "05_youth_time_travel_2032",
+  "persona_label": "Youth gymnast \u2014 time travel to 2032",
+  "biometrics": {
+    "height_cm": 164,
+    "weight_kg": 55,
+    "birth_year": 2010,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you best describe your current engagement with physical activity and your preferred style of exertion?\nOptions: [I thrive in team environments, focusing on dynamic strategy and collective high-intensity movement. | I prefer individual discipline, focusing on long-term endurance, steady pacing, and refined cardiovascular capacity. | I am drawn to individual power and explosive movement, focusing on maximum force and technical precision.]"
+    },
+    {
+      "role": "user",
+      "content": "I am drawn to individual power and explosive movement, focusing on maximum force and technical precision."
+    },
+    {
+      "role": "narrator",
+      "content": "To better understand your developmental journey, how many years have you been consistently dedicated to structured, high-performance athletic training?\nOptions: [Under 2 years \u2014 I am just beginning to explore my physical limits. | 3 to 5 years \u2014 I have been building a solid, consistent technical base. | More than 5 years \u2014 I have been deeply immersed in the grind for a significant portion of my life.]"
+    },
+    {
+      "role": "user",
+      "content": "More than 5 years \u2014 I have been deeply immersed in the grind for a significant portion of my life."
+    },
+    {
+      "role": "narrator",
+      "content": "As you envision your Elite Peak performance at The Brisbane 2032 Games, which aspect of your power-focused journey do you hope will be your defining legacy on the track or in the field?\nOptions: [A signature, record-breaking burst of explosive force. | Flawless technical precision that leaves no room for error. | Tactical dominance that combines raw power with calculated strategy.]"
+    },
+    {
+      "role": "user",
+      "content": "Flawless technical precision that leaves no room for error."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "Standing Pathway: At 164cm and 55kg, your frame is perfectly calibrated for the mechanical demands of the road. By The Brisbane 2032 Games, at age 22, you will no longer just be competing; you will be operating as a seamless extension of the machine, where every gear shift and breath is a calculated act of efficiency. Your five-plus years of rigorous training have instilled a level of discipline that turns the endurance pathway into a theater of precision. You have learned that the highest form of control is found in the ability to maintain output when others fatigue. For you, the race is a puzzle of aerodynamics and pacing, and your legacy will be defined by the technical mastery with which you execute your performance under the immense pressure of the global stage.\n\nAdaptive Pathway: Your transition into the handcycling discipline will leverage your core strength and aerobic base to transform physical exertion into sustained power. In this category, your technical precision becomes the primary interface between you and the cycle, requiring the same level of calculated movement you prioritize in your training. As you prepare for The Brisbane 2032 Games, you will develop a deep understanding of leverage and torque management, ensuring that every rotation of the cranks is optimized for speed and consistency. This pathway demands a unique form of endurance, one that rewards the same disciplined, long-term approach that you have spent the last five years perfecting. Your legacy in this domain will be built upon your ability to command the road with a relentless, rhythmic intensity that sets a new standard for excellence."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Women's -67 kg)",
+      "scout_verdict": "Standing Pathway: This pathway demands the raw, explosive force you have prioritized throughout your development. Wrestling relies on the 'flawless technical precision' you identified as your defining legacy, transforming every interaction into a chess match played at maximum intensity. When you step onto the mat at The Brisbane 2032 Games as a 22-year-old at your physical peak, your opponents will face a competitor who has synthesized years of intense conditioning into a single, kinetic strike. Your 55kg frame becomes a fulcrum of leverage and balance, proving that brute force is secondary to the surgical accuracy of your movement. In this domain, your legacy will be measured by the undeniable certainty and technical grace with which you apply your power to dominate the field.\n\nAdaptive Pathway: Your potential in powerlifting mirrors your commitment to absolute force production and technical exactness. This discipline requires a specialized focus on kinetic chains, where your years of structured training culminate in a display of maximal effort under controlled conditions. As you refine your approach for The Brisbane 2032 Games, you will master the art of weight distribution and explosive recovery, treating each movement as a precise sequence of mechanics rather than just weight moved. The intensity you have cultivated during your five-year grind is the ideal foundation for the high-pressure environment of the platform. Your legacy here will be defined by your ability to channel intense focus into a single, flawless, and explosive moment of truth that commands the respect of the entire field."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "The scouting report integrates user responses well and respects compliance rules, but suffers from an archetype mismatch where an endurance-based cycling profile was assigned despite the user explicitly selecting explosive power.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "While Wrestling is an excellent fit for the 164cm/55kg biometrics and explosive preference, assigning Road Machine (Cycling) contradicts the user's explicit rejection of the endurance option in the interview."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The report successfully weaves the user's specific answers, such as 'flawless technical precision' and their five-plus years of grinding, directly into the narrative of both profiles."
+    },
+    "distinctness": {
+      "score": 7,
+      "reasoning": "The Wrestling and Powerlifting pathways offer excellent contrast in the second archetype, though the Cycling and Handcycling pairing in the first feels fundamentally identical."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "The narrative explicitly frames the user as 'a 22-year-old at your physical peak', directly supporting the Elite Peak life stage for The Brisbane 2032 Games."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator's questions offer clear, meaningful forks\u2014such as forcing a choice between endurance, team sports, and explosive power\u2014that genuinely narrow down an athlete's physical profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Perfectly clean; uses 'The Brisbane 2032 Games' correctly and avoids standalone protected terms."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

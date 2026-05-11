@@ -1,0 +1,78 @@
+{
+  "persona_id": "03_adaptive_visual_impairment",
+  "persona_label": "Adaptive athlete \u2014 partial visual impairment",
+  "biometrics": {
+    "height_cm": 181,
+    "weight_kg": 83,
+    "birth_year": 1998,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our journey, how would you best describe your current relationship with high-performance sport?\nOptions: [I am an active competitor looking to sharpen my focus and reach the next level of elite performance. | I am returning to structured training after a hiatus and want to rebuild my competitive foundation. | I am looking to pivot into a new, challenging sporting discipline to test my physical limits.]"
+    },
+    {
+      "role": "user",
+      "content": "I am an active competitor looking to sharpen my focus and reach the next level of elite performance."
+    },
+    {
+      "role": "narrator",
+      "content": "To help tailor your high-performance pathway, what physical dimension do you find is currently your greatest competitive asset in your training?\nOptions: [Explosive power and rapid acceleration | Sustained cardiovascular endurance and pacing | Technical precision and neuromuscular control]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained cardiovascular endurance and pacing"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep into your training, which of these environments allows you to push your limits the furthest?\nOptions: [A structured team environment where a coach dictates every session and strategy. | Solo, analytical training where I control my own pacing and track precise physical metrics. | A group of peers where we push one another through high-intensity intervals and competition.]"
+    },
+    {
+      "role": "user",
+      "content": "Solo, analytical training where I control my own pacing and track precise physical metrics."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "At 28 years old, your physical stature of 181cm and 83kg provides a rock-solid foundation for the precision-based world of marksmanship. You thrive in the solitary, analytical environments where you can obsess over the metrics of your performance, turning every training session into a data-driven pursuit of perfection. As you step onto the range for The Brisbane 2032 Games, the focus isn't just on the target; it is on your ability to master your own physiological responses, an asset you have meticulously honed through your commitment to solo, high-performance training.\n\nIn the adaptive sphere, your focus carries into Target Precision, such as archery in the Open classification. This category unites athletes with diverse physical profiles on an even playing field, relying on the same unwavering composure you have cultivated. Your capacity for self-regulation allows you to excel here, proving that the technical demands of precision sports are the perfect vessel for your analytical approach to your high-performance sporting journey. By refining your technique in this setting, you will be well-prepared to represent at The Brisbane 2032 Games with the same level of discipline and focus as your counterparts on the standing pathway."
+    },
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "While your stability is a clear strength, you possess a significant reservoir of sustained cardiovascular endurance that demands a more versatile stage: the decathlon. This is where your passion for pacing and intense, disciplined effort truly shines. At The Brisbane 2032 Games, you are not just competing in a single moment\u2014you are orchestrating a long-form performance that requires the resilience to thrive across ten different disciplines, a test that demands the same analytical grit you apply to your daily, self-managed training cycles.\n\nThis endurance focus is perhaps most striking when viewed through the lens of adaptive athletics, such as the Pentathlon P44. The P44 classification is specifically designed for ambulatory athletes who have a lower-limb impairment, yet compete in a standing, high-impact capacity. By bringing your endurance-based pacing into this classification, you challenge the narrative of what is possible within a multi-discipline event. Your profile proves that the ability to manage one's energy across a long, grueling day of competition is just as much a competitive advantage as raw speed, ensuring that you arrive at The Brisbane 2032 Games as a premier force."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The report effectively personalizes the narrative using the interview answers, but struggles with authenticity as the recommended sports do not align well with the user's stated athletic strengths.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "Recommending Marksmanship to a user whose greatest asset is 'sustained cardiovascular endurance' is contradictory, as precision shooting relies on lowering heart rate rather than cardio output."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts successfully integrate the user's exact biometrics and explicitly reference their preference for solo, analytical, data-driven training environments."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways introduce genuine detail, specifically referencing the Open classification for Archery and the P44 ambulatory classification for Pentathlon."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions offered distinct and logical forks regarding physical dimensions and training environments, forcing meaningful choices that should have guided the archetype."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; the report correctly uses 'The Brisbane 2032 Games' and avoids restricted terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

@@ -1,0 +1,77 @@
+{
+  "persona_id": "09_congenital_limb_difference_swimmer",
+  "persona_label": "Congenital limb difference \u2014 adaptive swimmer",
+  "biometrics": {
+    "height_cm": 168,
+    "weight_kg": 63,
+    "birth_year": 1997,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, could you share a bit about your current relationship with movement or competitive sport? How do you like to challenge your body?\nOptions: [I am currently active in competitive team sports | I focus on individual endurance, like running or cycling | I thrive on strength and explosive power training | I am looking to get back into a structured athletic routine]"
+    },
+    {
+      "role": "user",
+      "content": "I am currently active in competitive team sports"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are out on the field or court, which aspect of your performance do you feel defines your impact on the team?\nOptions: [I am a tactical playmaker, setting up others for success | I am a defensive anchor, focused on intensity and protection | I am an explosive attacker, looking to break through | I am an endurance runner, covering ground all game long]"
+    },
+    {
+      "role": "user",
+      "content": "I am an explosive attacker, looking to break through"
+    },
+    {
+      "role": "narrator",
+      "content": "To keep that competitive edge sharp, how would you describe your typical training approach when you aren't on the field?\nOptions: [I focus on high-intensity interval training and speed drills | I prioritize heavy resistance and power-based lifting | I rely primarily on my team practice sessions for conditioning | I follow a balanced program of recovery, mobility, and skill-work]"
+    },
+    {
+      "role": "user",
+      "content": "I prioritize heavy resistance and power-based lifting"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Your history as an explosive attacker on the field has primed you for the high-stakes precision required of the Edge Carver. At 168.0cm and 63.0kg, your frame acts as a coiled spring, ready to translate that familiar on-field intensity into the technical velocity of the slopes. At 29, you are at a prime age where your physical maturity meets a refined, strategic mindset\u2014essential traits for navigating the razor-thin margins of a championship course.\n\nImagine the roar of the crowd at The Milano Cortina 2026 Games as you stand at the starting gate. Your background in power-based lifting provides the raw torque needed to hold an edge through icy turns, while your experience as a tactical team player translates into a unique ability to read the terrain under pressure. You don't just race; you dominate the line, carrying the same hunger for the breakthrough that defined your team-sport career."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "The Block Starter archetype is the manifestation of the 'explosive attacker' you describe yourself to be. Your commitment to heavy resistance training has built the precise fast-twitch profile needed to erupt from the blocks with authority. Standing at 168.0cm and 63.0kg, you possess a compact, powerful physiology that allows for immediate acceleration\u2014the kind of movement that wins races in the opening thirty meters.\n\nPicture yourself at The LA28 Games. The stadium is silent, the tension is absolute, and when the gun sounds, your training takes over. You are no longer just an athlete; you are a force of nature, carrying the explosive power from your years of competitive team sports into the singular pursuit of speed. This pathway honors the raw power you have cultivated, offering you the ultimate stage to prove that your ability to break through isn't just a strategy\u2014it's your identity."
+    }
+  ],
+  "eval_result": {
+    "overall": 5,
+    "summary": "The narrative successfully integrates the user's interview answers and suggests physically appropriate sports, but glaringly recommends Men's adaptive events for a female athlete and fails to address the adaptive experience in the text.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "While the physical mapping of a 168cm/63kg power-lifter to sprinting and skiing is highly plausible, recommending 'Men's' events to a female athlete ruins the authenticity."
+    },
+    "personalization": {
+      "score": 6,
+      "reasoning": "The text does a great job weaving in specific answers like 'explosive attacker' and 'power-based lifting', but fails on basic demographic personalization by ignoring the user's gender."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "The standing and adaptive pathways are not meaningfully distinct, as the single verdict per archetype relies entirely on able-bodied imagery like 'erupt from the blocks'."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator's questions logically drill down from general sport interest to specific in-game roles and off-field training habits, offering genuinely distinct options at each turn."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Properly uses 'The Milano Cortina 2026 Games' and 'The LA28 Games' formats without triggering any forbidden terms or NIL violations."
+    }
+  },
+  "backend_error": null
+}

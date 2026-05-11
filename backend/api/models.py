@@ -34,6 +34,7 @@ class StoryRequest(BaseModel):
     # ── Time-Travel Fields ──
     target_game_year: Optional[int] = None
     era_history: Optional[dict] = None  # {year: summary_string}
+    era_context_summary: Optional[dict] = None  # structured summary from narrator when era interview completes
 
 
 class AgentEventTrace(BaseModel):

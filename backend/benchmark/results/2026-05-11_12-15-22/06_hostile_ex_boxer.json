@@ -1,0 +1,9 @@
+{
+  "persona_id": "06_hostile_ex_boxer",
+  "persona_label": "Hostile ex-boxer \u2014 distrusts Olympics and AI",
+  "error": "sequence item 0: expected str instance, dict found",
+  "conversation_log": [],
+  "scouting_result": null,
+  "eval_result": null,
+  "round": 1
+}

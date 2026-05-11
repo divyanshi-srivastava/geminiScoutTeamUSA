@@ -1,0 +1,78 @@
+{
+  "persona_id": "01_young_female_swimmer",
+  "persona_label": "Young female swimmer",
+  "biometrics": {
+    "height_cm": 172,
+    "weight_kg": 62,
+    "birth_year": 2009,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "Before we dive deeper into your physical identity, I'd like to understand what environment truly fuels your drive. Where do you find your competitive spark?\nOptions: [Individual pursuit, focusing on personal mastery, precision, and raw speed. | Team dynamics, where shared strategy, trust, and coordination are key. | Sustained endurance, where grit, rhythm, and mental pacing define the challenge.]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance, where grit, rhythm, and mental pacing define the challenge."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep into a demanding session and the intensity begins to peak, what do you feel is the primary challenge you must overcome to maintain your rhythm?\nOptions: [Physical fatigue, as my body begins to strain against the sustained output. | Technical precision, as I have to fight to keep my form perfect under pressure. | Mental discipline, as the urge to speed up prematurely threatens to break my pacing.]"
+    },
+    {
+      "role": "user",
+      "content": "Technical precision, as I have to fight to keep my form perfect under pressure."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back at your sporting journey so far, how did you first build your athletic foundation?\nOptions: [I was molded by early structure, rising through organized club teams and competitive coaching. | I forged my own path, spending years exploring different sports independently to discover my own limits. | I thrived as a multisport athlete, balancing different disciplines to develop a wide-ranging, generalist physical skillset.]"
+    },
+    {
+      "role": "user",
+      "content": "I was molded by early structure, rising through organized club teams and competitive coaching."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 8,
+      "matched_profile_name": "Streamline",
+      "pathway_standing": "Swimming",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Women's 400 m Freestyle S10)",
+      "scout_verdict": "At 172cm and 62kg, your physiological profile is purpose-built for the water. Your expressed dedication to sustained endurance and rhythm finds its purest expression in the pool, where your ability to maintain technical precision while battling fatigue allows you to minimize drag and maximize every stroke. You possess a rare, quiet grit that thrives in the repetitive, meditative nature of long-distance swimming, making you an ideal candidate to dominate in the S10 classification, which is designed for athletes with minimal limb impairment who require exceptional coordination and hydrodynamic control.\n\nYour history of disciplined club training provides the structural foundation necessary to navigate the grueling cycles of elite high-performance sport. As you look toward your future, your focus on internal pacing serves as your greatest asset. Whether you are aiming for the podium at The Brisbane 2032 Games or testing your limits at smaller regional meets, your journey is one of incremental, relentless refinement, ensuring that when the intensity of the race peaks, your form remains an unbreakable cycle of efficiency."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "If your pool work is a study in fluid rhythm, the slopes offer a stark, exhilarating contrast that tests the limits of your spatial judgment and reactive speed. Here, your technical precision is not just about form\u2014it is about split-second edge adjustment on icy, high-velocity turns. This pathway introduces the LW12 classification, which is tailored for athletes who compete in a seated position, demanding supreme core strength and a mastery of balance that transforms your upper body into the primary engine of your momentum.\n\nTransitioning from the structured, rhythmic lanes of a pool to the unpredictable terrain of a mountainside requires a pivot in how you apply your focus. You must trade your sustained endurance for explosive, tactical decision-making, utilizing the same grit you built in your club days to master the complexities of a sit-ski at speed. Preparing for a descent at The Milano Cortina 2026 Games would require you to become an extension of your equipment, turning your disciplined background into a distinct competitive edge that bridges the gap between raw athleticism and high-velocity technical art."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly cohesive and personalized scouting report that excellently integrates the user's biometrics and interview responses into two distinct sporting pathways.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "A height of 172cm and weight of 62kg perfectly matches the lean, hydrodynamic build required for the Streamline (Swimming) archetype, and the logic connecting endurance to technical precision is sport-accurate."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts seamlessly incorporate all three interview answers, specifically tying the user's 'history of disciplined club training' and focus on 'technical precision' to the demands of the recommended sports."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two profiles offer a strong contrast between the rhythmic, repetitive nature of swimming and the explosive, reactive demands of sit-skiing."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions progress logically, and the options provided in each turn are meaningfully distinct, effectively narrowing down the athlete's psychological and historical profile to drive the final recommendation."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly uses 'The Brisbane 2032 Games' and 'The Milano Cortina 2026 Games' without any unauthorized Olympic/Paralympic terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

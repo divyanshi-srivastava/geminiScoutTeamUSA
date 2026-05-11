@@ -1,0 +1,78 @@
+{
+  "persona_id": "10_early_stage_als",
+  "persona_label": "Early-stage ALS \u2014 former competitive tennis player",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 78,
+    "birth_year": 1981,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start building the picture of your sporting journey, how would you characterize your historical approach to athletic training?\nOptions: [Steady-state endurance and long-duration pacing | Explosive power, strength, and raw speed | Precision-based technical skill and complex motor control]"
+    },
+    {
+      "role": "user",
+      "content": "Precision-based technical skill and complex motor control"
+    },
+    {
+      "role": "narrator",
+      "content": "Reflecting on your past, how would you describe the intensity of your engagement in your chosen activities?\nOptions: [High-intensity, competitive atmosphere with regular formal training. | Skill-focused, consistent recreational engagement, such as racquet sports or martial arts. | Deep-dive mastery, prioritizing technical refinement in self-taught or solo disciplines.]"
+    },
+    {
+      "role": "user",
+      "content": "High-intensity, competitive atmosphere with regular formal training."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look ahead to the next phase of your sporting journey, what is the core motivation that drives your desire to continue testing your limits in a high-performance setting?\nOptions: [The thrill of team strategy and shared, collaborative success. | The solitary, relentless pursuit of your own peak performance and personal records. | The tactical, mental challenge of outmaneuvering an individual opponent.]"
+    },
+    {
+      "role": "user",
+      "content": "The tactical, mental challenge of outmaneuvering an individual opponent."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "At 178cm and 78kg, you possess the ideal density for the high-velocity requirements of alpine and speed disciplines. Your frame acts as a kinetic engine, capable of generating the explosive force needed to hold a line on icy slopes or tight rink corners. You have clearly thrived in competitive environments where high-intensity training is the standard, and this background serves you well in the high-stakes arena of The Milano Cortina 2026 Games, where every millisecond on the clock is a testament to your technical aggression.\n\nIn your adaptive journey, the focus shifts to the specialized mastery of the sit-ski. The LW12 classification covers athletes with lower-limb impairments who compete in a seated position, relying on a fixed-frame sit-ski and shorter outriggers for balance. Your 78kg frame provides a stable center of gravity essential for high-speed maneuvers in this configuration. Here, the precision you\u2019ve cultivated is reimagined; you are no longer just carving with your legs, but through the chassis of the ski itself. It demands a heightened level of sensory feedback\u2014feeling the mountain through the frame\u2014transforming the physics of your build into a fluid, tactical dance against the gravity of the course."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "Your preference for complex motor control and the psychological challenge of outmaneuvering an opponent makes you a master of the stillness required in competitive marksmanship. At 45, you are entering the prime window for this discipline, where mental fortitude and the ability to maintain a 'quiet' body under extreme pressure often eclipse raw explosive speed. Your previous commitment to rigorous, formal training provides the discipline needed to refine your aim until it is absolute, turning every competition into a battle of nerves rather than muscle, preparing you for the high-pressure environment of The LA28 Games.\n\nIn the adaptive realm, your path leads to Archery within the Open classification, which allows for competition among athletes with diverse physical impairments through the use of assistive adaptations that maintain the integrity of the sport. As you take your place at The LA28 Games, your focus is entirely on the mental tactical game. You aren't just hitting a target; you are engaging in a silent dialogue with your opponent, where every breath and release is a calculated move to secure a tactical advantage. The adaptive setup allows you to leverage your existing knowledge of complex motor refinement, proving that the most lethal weapon in your arsenal is the precise, disciplined mind you have honed over a lifetime of practice."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong scouting report that effectively weaves the user's specific interview answers and biometrics into two very distinct athletic archetypes.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "While 'Steady Hand' perfectly aligns with the precision and age profile, 'Edge Carver' is a slight stretch for someone whose core motivation is tactical 1v1 outmaneuvering, though the biometric fit for alpine skiing is solid."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts explicitly cite the user's preference for 'complex motor control' and 'outmaneuvering an opponent', grounding the narrative directly in their interview choices."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways are highly detailed, specifically mentioning the physics of the LW12 sit-ski chassis and the Archery Open classification rather than just appending 'Para' to the sport."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions provide meaningful forks, particularly the third question which successfully differentiates between team, solitary, and 1v1 tactical motivations."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass with correct references to 'The Milano Cortina 2026 Games' and 'The LA28 Games'."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

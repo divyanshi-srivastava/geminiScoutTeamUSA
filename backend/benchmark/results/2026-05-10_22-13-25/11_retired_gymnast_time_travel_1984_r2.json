@@ -1,0 +1,82 @@
+{
+  "persona_id": "11_retired_gymnast_time_travel_1984",
+  "persona_label": "Retired gymnastics coach \u2014 time travel to 1984 LA Games",
+  "biometrics": {
+    "height_cm": 162,
+    "weight_kg": 57,
+    "birth_year": 1958,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "Reflecting on your past experiences, which path best describes the type of activity that has most shaped your physical history?\nOptions: [Foundational years in team-based, tactical sports | Individual pursuit, focused on endurance and personal bests | Technical, precision-oriented activities that require steady focus]"
+    },
+    {
+      "role": "user",
+      "content": "Technical, precision-oriented activities that require steady focus"
+    },
+    {
+      "role": "narrator",
+      "content": "Looking at your current relationship with physical activity, what is your primary objective when you engage in a challenging task?\nOptions: [Maintaining peak cognitive and physical coordination through repetition and routine | Exploring new, high-performance physical challenges to test current limits | Refining and mastering a singular, complex skill set for competitive precision]"
+    },
+    {
+      "role": "user",
+      "content": "Refining and mastering a singular, complex skill set for competitive precision"
+    },
+    {
+      "role": "narrator",
+      "content": "At 26, standing in the arena at The Los Angeles 1984 Games, how would you have applied that deep, technical focus to your performance?\nOptions: [Developing a near-perfect, repeatable technical routine | Adapting that precision to handle the unpredictable pressure of high-stakes competition | Refining the mental stillness required to execute a complex skill under global scrutiny]"
+    },
+    {
+      "role": "user",
+      "content": "Refining the mental stillness required to execute a complex skill under global scrutiny"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Women's FITA Round Open)",
+      "scout_verdict": "At 26 years old, stepping onto the range at The Los Angeles 1984 Games, your 162cm, 57kg frame served as the perfect vessel for high-performance focus. You possessed the rare, innate ability to cultivate absolute mental stillness amidst the rising pressure of a global stage. Your approach was defined by a surgical commitment to detail, where the world around you fell away, leaving only the rhythm of your own breath and the singular goal before you.\n\nThis archetype celebrates your mastery of the 'still point.' By refining the internal quietude required to execute complex skills, you transcended the noise of competition. Your journey proves that true power often lies not in kinetic force, but in the disciplined containment of energy\u2014a testament to your ability to maintain composure when the entire world is watching."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Women's -67 kg)",
+      "scout_verdict": "Your experience at The Los Angeles 1984 Games reveals a striking dimension of your potential: the 'Mat Technician'. While your core strength lies in your technical precision, this path demands a transformation of that focus into tangible, tactical force. You harnessed your physical dimensions not for static observation, but for the complex, core-stabilizing demands of strength-based physical strategy.\n\nBy applying the same analytical rigor you used for technical activities to the high-stakes world of physical power and ground control, you demonstrated an elite ability to outmaneuver physical obstacles through sheer structural efficiency. You are the architect of your own leverage, utilizing your weight and discipline to command the field. This narrative highlights your capability to shift from the silent precision of the target to the explosive, calculated strength of high-performance powerlifting, proving that your reach extends far beyond the quiet focus of your youth."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A solid, well-tailored scouting report that effectively uses the 1984 Games context and aligns nicely with the user's interview answers, though the second archetype feels slightly forced.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "Marksmanship perfectly matches the user's answers regarding mental stillness and precision, though Wrestling/Powerlifting for the second archetype feels like a leap from the interview answers despite fitting the biometrics."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts directly incorporate the user's focus on 'mental stillness' and 'technical precision' chosen during the interview."
+    },
+    "distinctness": {
+      "score": 6,
+      "reasoning": "While the sports themselves are distinct, the verdicts blend the standing and adaptive concepts into a single general narrative rather than highlighting how the athlete would perform in each specific pathway."
+    },
+    "life_stage_coherence": {
+      "score": 8,
+      "reasoning": "The Elite Peak life stage at age 26 is well represented, framing the user as possessing 'high-performance focus' and having evolved beyond the 'quiet focus of your youth'."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions progress logically from general physical history to specific competitive mindset, offering distinct options that clearly steered the archetype selection toward precision sports."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean pass; appropriately uses 'The Los Angeles 1984 Games' without any restricted Olympic terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

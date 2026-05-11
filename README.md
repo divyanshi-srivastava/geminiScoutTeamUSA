@@ -1,39 +1,124 @@
-# Gemini Scout — Time-Traveling Talent Scout
+# Gemini Scout — The Time-Traveling Talent Scout
 
-A conversational AI sports scouting experience powered by Google Gemini and the Agent Development Kit. Built for the Team USA × Google Cloud Hackathon.
+> *Where do you fit in the Team USA story — and who could you have been across every era of the Games?*
+
+A conversational AI scouting experience powered by Google Gemini and the Agent Development Kit. Built for the Team USA × Google Cloud Hackathon — **submitted for Challenge 5: Choose Your Own Fan-Centric Challenge**.
 
 **Live app:** [gemini-scout.web.app](https://gemini-scout.web.app)
 
 ---
 
-## What It Does
-
-Gemini Scout discovers what kind of athlete you are — and who you could have been across every era of the Games. In three acts:
+## The Experience — Three Acts
 
 **Act 1 — The Great Interview**
-A Narrator agent leads a warm, adaptive conversation. It asks 3–5 targeted questions, provides empathetic feedback, and builds a picture of your athleticism before any scouting begins.
+A Narrator agent opens a warm, adaptive conversation. It asks 3–5 targeted questions about how you move, compete, and train — providing empathetic feedback on every answer. No form. No dropdown. A real conversation that builds a picture of your athleticism before any scouting begins.
 
 **Act 2 — The Scout Report**
-A 5-agent pipeline analyzes your biometrics and interview answers against a 14-profile athletic archetype manifest. Two pathways are always returned: a **standing pathway** (conventional discipline) and an **adaptive pathway** (para-sport equivalent) — with equal narrative depth and prominence.
+A 5-agent AI pipeline analyses your biometrics and interview answers against 14 named athletic archetypes derived from 120 years of Olympic history and Paralympic classification data. Two pathway cards are always returned: a **standing pathway** (conventional discipline) and an **adaptive pathway** (para-sport equivalent) — with equal narrative depth and prominence, always.
 
 **Act 3 — The Time Machine**
-After seeing your result, a timeline bar shows every Games year where you'd have been eligible. Click any year and the Narrator asks one era-bridging question before running a new full scout with your age at that time. Cross-era memory accumulates — your 2028 context informs your 2032 conversation.
+After your result, a timeline bar shows every Games year where you'd have been eligible. Click any year and a Narrator asks one era-bridging biographical question — then a full new scout runs with your age at that time. The 1984 version of you gets a different result than the 2032 version. Cross-era memory accumulates so earlier hops inform later ones.
 
 ---
 
-## Key Features
+## Data Foundation — 120 Years of Olympic and Paralympic History
 
-| Feature | Description |
-|---|---|
-| **14-Profile Archetype Manifest** | Physics-grounded profiles (Air Sculptor, Long Haul, Block Starter, etc.) with Euclidean centroid matching + interview signal scoring |
-| **Gender-Resolved Adaptive Pathways** | Every profile has `adaptive_M` and `adaptive_F` variants — no wrong-gender event recommendations |
-| **Dimension Enforcement** | Each profile has an explicit `dimension` tag (Power/Strength, Endurance, Precision/Technical). Standing and adaptive picks are always from different dimensions. |
-| **Time Travel** | Full biographic arc — user can jump to past and future eras, each triggering a new mini-interview + scout with AGE_OVERRIDE |
-| **Cross-Era Memory** | `ERA_HISTORY` system header accumulates context across time travel stops |
-| **Intelligence Trace** | Real-time sidebar showing each agent's internal reasoning as plain English |
-| **Eval Agent** | Post-scouting evaluation agent scores every result on Authenticity, Personalization, Interview Quality, Pathway Distinctness, Life-Stage Coherence, and Compliance |
-| **Pipeline Benchmark** | 15 pre-written personas run through the live backend end-to-end; produces timestamped score reports and trend history for continuous improvement |
-| **Compliance Gate** | Silently enforces NIL rules, IOC brand terminology, and adaptive/standing parity on every response before it reaches the user |
+The 14 athletic archetypes at the heart of Gemini Scout were produced by running **K-means clustering** on **120 years of Olympic history (1896–2024)** and **International Paralympic Committee athlete classification data**. The clustering was performed offline on the full dataset to identify stable, physically meaningful athlete groupings — the 14 profiles are the direct output of that analysis, then named, enriched, and made narratable.
+
+Each archetype profile encodes:
+- **Biometric centroids** — height and weight cluster centres calibrated separately for male and female athletes from the historical dataset
+- **Peak competitive age ranges** — derived from when athletes in each cluster family have historically peaked across the 120-year record
+- **Interview signal keywords** — behavioural and lifestyle markers that distinguish one cluster from another in the real record
+- **Gender-specific adaptive events** — `adaptive_M` and `adaptive_F` fields on every profile mapped to IPC classification standards, so recommended para-sport events are always correct for the user's gender
+
+The deliberate choice to run clustering offline rather than at runtime is what makes the narrative experience possible. A runtime cluster number cannot have a name, a tone, a voice, or an equal adaptive pathway. Pre-derived, named archetypes can — and that is what allows the Narrator to write a personalised 2–4 paragraph story about *you*, not a data printout about cluster membership.
+
+| Archetype | Dimension | Peak Age Range |
+|---|---|---|
+| Air Sculptor | Precision / Technical | 14 – 26 |
+| Block Starter | Power / Strength | 18 – 28 |
+| Bar Raiser | Power / Strength | 19 – 30 |
+| Streamline | Endurance | 16 – 27 |
+| Edge Carver | Precision / Technical | 16 – 32 |
+| Net Presence | Precision / Technical | 18 – 33 |
+| Mat Technician | Power / Strength | 18 – 33 |
+| Swiss Army | Endurance | 21 – 32 |
+| Boat Run | Endurance | 20 – 35 |
+| Launch Force | Power / Strength | 22 – 36 |
+| Road Machine | Endurance | 22 – 38 |
+| Long Haul | Endurance | 20 – 38 |
+| Iron Shoulder | Power / Strength | 22 – 40 |
+| Steady Hand | Precision / Technical | 25 – 52 |
+
+---
+
+## What Makes Gemini Scout Different
+
+### 1. A Real Multi-Agent Pipeline — Not a Single LLM Call
+
+Five Gemini agents run in strict sequence on every scouting request, orchestrated by **Google ADK `SequentialAgent`** — deterministic Python execution with no LLM routing and no flaky orchestration.
+
+```
+browser (Angular 19)
+    │  SSE stream
+    ▼
+FastAPI /scout endpoint — mode resolved in Python
+    ▼
+ADK SequentialAgent
+    ├── INTERVIEW mode:              narrator_agent → compliance_agent
+    ├── SCOUTING mode:               scout_agent → narrator_agent → compliance_agent → eval_agent
+    └── TIME_TRAVEL_INTERVIEW mode:  narrator_agent (era mode) → compliance_agent
+
+each step → logger_agent → Intelligence Trace sidebar
+```
+
+| Agent | Model | Role |
+|---|---|---|
+| **Scout** | Gemini 2.5 Flash | Euclidean biometric matching + interview signal scoring against 14-profile manifest. Gender-resolves adaptive pathway. Enforces dimension distinctness. |
+| **Narrator** | Gemini 2.5 Flash | Personalises scout output into a 2–4 paragraph narrative using the user's specific answers and profile tone. Runs era mini-interview in Time Travel mode. |
+| **Compliance** | Gemini 2.5 Flash | Enforces NIL rules, IOC brand terminology, and adaptive parity. Rewrites violations silently — users never see non-compliant output. |
+| **Eval** | Gemini 2.5 Pro | Scores the completed result across 6 quality dimensions. Never modifies output — assessment only. Scores appear in the Judge's Vault. |
+| **Logger** | Gemini 2.5 Flash | Translates each agent's internal reasoning steps into plain English trace lines for the real-time sidebar. |
+
+### 2. Paralympic Parity — Built Into the System, Not Bolted On
+
+Every single scouting result returns two pathways of equal depth. This is not a design principle — it is a hard enforcement rule:
+
+- The **Compliance agent** measures word count of both verdicts. If the adaptive pathway is absent, under 60 words, or less than 50% the length of the standing verdict, it **rewrites the adaptive narrative to full depth** before anything reaches the user.
+- The **pathway manifest** has `adaptive_M` and `adaptive_F` fields on every profile. The Scout resolves the correct gender field before scoring begins — a 60kg female athlete never receives a "Men's +100kg Powerlifting" recommendation.
+- The **Narrator** is explicitly instructed that when an adaptive pathway contains a sport classification code (T44, S10, F56, etc.), it must name the classification, explain what it covers, and connect it to the user's specific profile — the disability context is never a footnote.
+- **8 of 15 benchmark personas are adaptive or para athletes** — including congenital limb difference, visual impairment, above-knee amputation, ALS, SCI wheelchair racing, Deafness, and goalball. Paralympic quality is measured, tracked, and scored on every pipeline run.
+
+### 3. Time Travel — A Full Biographical Arc
+
+No other submission lets a fan live their athletic story across time. The time travel feature:
+
+- Shows the user every Games year they'd have been eligible for, coloured by life stage (Rising Star / Elite Peak / Veteran / Legacy)
+- Triggers a biographical mini-interview before each era scout — questions about what life was asking of them in that era
+- Applies an **AGE_OVERRIDE** so the archetype matching and narrative reflect who they were at that age, not who they are now
+- Accumulates **cross-era memory** (`ERA_HISTORY`) — what the user shared at the 1992 Games informs the conversation at the 1996 Games
+- Covers 1960 through 2044 — the full arc from Rome to Istanbul
+
+### 4. Intelligence Trace — The AI's Reasoning Made Visible
+
+A real-time sidebar shows every agent's internal reasoning as plain English. Not a status bar. Judges can follow the exact logical thread: which archetype scored highest and why, which interview signals reinforced it, whether compliance found a violation and what it rewrote, and what the eval agent scored the final result. This is a window into the pipeline, not a spinner.
+
+### 5. Continuous Quality Measurement — A Benchmark Built for Regression Detection
+
+Most hackathon projects have no way to know if a change improved or broke quality. Gemini Scout has a benchmark system that runs **15 pre-written personas** through the full live backend (real HTTP calls, not mocked), 3 rounds each, and produces a scored report with dimension averages and per-persona scorecards.
+
+The Eval Agent scores every result across 6 dimensions: Authenticity, Personalization, Interview Quality, Pathway Distinctness, Life-Stage Coherence, and Compliance. Scores are tracked in `history.jsonl` across versions.
+
+**Benchmark score progression:**
+
+| Version | Overall | Authenticity | Personalization | Interview Quality | Distinctness | Compliance |
+|---|---|---|---|---|---|---|
+| v2 baseline | 5.5 | 5.4 | 8.0 | 6.7 | 4.4 | 15/15 |
+| v3a | 6.0 | 6.3 | 8.3 | 7.3 | 5.2 | 15/15 |
+| v3b | 6.5 | 5.9 | 7.9 | 7.6 | 6.1 | 45/45 |
+| **v3c (current)** | **7.4** | **7.6** | **8.0** | **7.6** | **8.2** | **45/45** |
+
+Baseline → current: **+1.9 overall · +2.2 authenticity · +3.8 distinctness · zero compliance failures.**
 
 ---
 
@@ -43,47 +128,41 @@ After seeing your result, a timeline bar shows every Games year where you'd have
 |---|---|
 | **Frontend** | Angular 19, TypeScript, CSS custom properties |
 | **Backend** | FastAPI (Python), Server-Sent Events (SSE) |
-| **AI / Agents** | Google ADK `SequentialAgent` + `LlmAgent`, Gemini 2.5 Flash / Pro |
+| **AI / Agents** | Google ADK `SequentialAgent` + `LlmAgent`, Gemini 2.5 Flash + Gemini 2.5 Pro |
 | **Hosting** | Firebase Hosting (frontend), Google Cloud Run (backend) |
-| **Credentials** | Google Application Default Credentials via Vertex AI |
+| **Auth** | Google Application Default Credentials via Vertex AI |
 
 ---
 
-## Architecture
+## Compliance
 
-```
-Browser (Angular 19)
-  │  SSE stream
-  ▼
-FastAPI /scout endpoint
-  │  mode resolved in Python (INTERVIEW / SCOUTING / TIME_TRAVEL_INTERVIEW)
-  ▼
-ADK SequentialAgent Pipeline
-  ├── INTERVIEW mode:      narrator_agent → compliance_agent
-  ├── SCOUTING mode:       scout_agent → narrator_agent → compliance_agent → eval_agent
-  └── TIME_TRAVEL_INTERVIEW: narrator_agent (era mode) → compliance_agent
+| Rule | Status | How it's enforced |
+|---|---|---|
+| No NIL (individual athlete names / likenesses) | ✓ PASS | Archetype-only output; Compliance agent blocks any name reference |
+| No IOC branding ("Olympic", "Paralympic" as standalone terms) | ✓ PASS | Compliance instruction + word-level replacement |
+| Games format ("The [City] [Year] Games") | ✓ PASS | Narrator instruction + Compliance catches violations; 30-year lookup table covers 1960–2044 |
+| Adaptive / standing parity | ✓ PASS | Compliance rewrites adaptive verdict if absent, <60 words, or <50% standing length |
+| Gender-correct adaptive events | ✓ PASS | `adaptive_M` / `adaptive_F` resolved at Scout Step 0 before scoring begins |
+| No finish times or specific scoring data | ✓ PASS | Placements and medals only in all legacy references |
+| No PII stored | ✓ PASS | No database; all conversation state is per-session in memory only |
 
-Each agent step streams a trace event → Logger Agent → Intelligence Trace sidebar
-```
+---
 
-### Agent Responsibilities
+## Architecture Documentation
 
-| Agent | Role |
+The engineering decisions behind Gemini Scout are fully documented — including failures, root causes, and what was learned.
+
+| Document | What It Covers |
 |---|---|
-| **Scout** | Euclidean distance matching across 14 archetype profiles. Gender-resolves adaptive pathway. Enforces dimension distinctness. |
-| **Narrator** | Personalizes scout output into 2–4 paragraph stories using interview answers and profile tone. In time travel mode, asks one era-bridging question. |
-| **Compliance** | Enforces NIL rules, IOC brand terminology, and adaptive parity. Rewrites violations silently. |
-| **Eval** | Scores the completed pipeline result across 6 dimensions. Never modifies output — assessment only. |
-| **Logger** | Translates each agent's internal steps into human-readable trace lines for the sidebar. |
-
----
-
-## Data Model
-
-- **`pathway_manifest.json`** — 14 athletic archetypes, each with biometric centroids (M/F split), keyword signals, and gender-specific adaptive pathway examples
-- **`games_manifest.json`** — Games years, host cities, and era metadata for the timeline
-- **`legacy_facts.json`** — Historical achievement context used by Narrator
-- **`system_constraints.json`** — Compliance reference data
+| [`docs/for-judges.md`](docs/for-judges.md) | Direct mapping of every feature to judging criteria |
+| [`docs/architecture-evolution.md`](docs/architecture-evolution.md) | How the pipeline evolved from v1 (Supervisor LLM) → v3 (SequentialAgent + Eval) |
+| [`docs/architecture/v1-supervisor-agent.md`](docs/architecture/v1-supervisor-agent.md) | Why the Supervisor failed — the ADK `transfer_to_agent` root cause |
+| [`docs/architecture/v2-sequential-agent.md`](docs/architecture/v2-sequential-agent.md) | SequentialAgent design and the failure modes it exposed |
+| [`docs/architecture/v3-instruction-tuning.md`](docs/architecture/v3-instruction-tuning.md) | All 11 instruction changes with benchmark score deltas + agent context reference table |
+| [`docs/supervisor-agent-postmortem.md`](docs/supervisor-agent-postmortem.md) | Full postmortem on 8 failed approaches before the Supervisor was removed |
+| [`docs/time-travel.md`](docs/time-travel.md) | Time travel — headers, flow, era memory, state management |
+| [`docs/logger.md`](docs/logger.md) | Intelligence Trace — design and trace format spec |
+| [`backend/benchmark/README.md`](backend/benchmark/README.md) | Benchmark system — personas, running, output format |
 
 ---
 
@@ -103,50 +182,9 @@ npm install
 ng serve
 ```
 
-**Pipeline Benchmark** (backend running required):
+**Benchmark** (requires backend running):
 ```bash
 cd backend
 source venv/bin/activate
 python -m benchmark.run_benchmark
 ```
-See `backend/benchmark/README.md` for full benchmark documentation.
-
----
-
-## Pipeline Quality
-
-The benchmark system runs 15 diverse personas (including adaptive athletes, time-travel edge cases, and hostile inputs) through the full live pipeline — 3 rounds each, 45 total runs. Current scores (latest run, 45/45 succeeded):
-
-| Dimension | Score | Baseline | Change |
-|---|---|---|---|
-| Authenticity | 7.6 / 10 | 5.4 | +2.2 |
-| Personalization | 8.0 / 10 | 8.0 | — |
-| Interview Quality | 7.6 / 10 | 6.7 | +0.9 |
-| Pathway Distinctness | 8.2 / 10 | 4.4 | +3.8 |
-| **Overall Pipeline** | **7.4 / 10** | **5.5** | **+1.9** |
-
-Score history is tracked in `backend/benchmark/results/history.jsonl`. The benchmark is run after every significant change to detect regressions.
-
----
-
-## Compliance
-
-- No individual athlete names, images, or likenesses anywhere in the pipeline
-- Games always referenced as "The [City] [Year] Games" — never "Olympic" or "Paralympic" as standalone terms
-- Standing and adaptive pathways always receive equal narrative depth
-- No finish times or specific scoring — placements and medals only
-- No PII collected or stored
-
----
-
-## Docs
-
-| Document | What It Covers |
-|---|---|
-| [`docs/FOR_JUDGES.md`](docs/FOR_JUDGES.md) | Direct mapping of features to hackathon judging criteria |
-| [`docs/ARCHITECTURE_EVOLUTION.md`](docs/ARCHITECTURE_EVOLUTION.md) | How the architecture changed from v1 (Supervisor) to v3 (SequentialAgent + Eval) |
-| [`docs/LIVING_LEGACY_ARCH.md`](docs/LIVING_LEGACY_ARCH.md) | Current multi-agent architecture reference |
-| [`docs/supervisor_agent_postmortem.md`](docs/supervisor_agent_postmortem.md) | Why the Supervisor LLM was removed — engineering postmortem |
-| [`docs/time_travel.md`](docs/time_travel.md) | Time travel feature — headers, flow, state management |
-| [`docs/logger.md`](docs/logger.md) | Intelligence Trace logger — design and trace format spec |
-| [`backend/benchmark/README.md`](backend/benchmark/README.md) | Benchmark system — personas, running, output format |

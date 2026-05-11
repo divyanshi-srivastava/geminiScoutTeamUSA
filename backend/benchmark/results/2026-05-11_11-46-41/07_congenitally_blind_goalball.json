@@ -1,0 +1,78 @@
+{
+  "persona_id": "07_congenitally_blind_goalball",
+  "persona_label": "Congenitally blind \u2014 goalball and tandem cycling",
+  "biometrics": {
+    "height_cm": 165,
+    "weight_kg": 60,
+    "birth_year": 1992,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To help me understand the foundation of your sporting journey, could you tell me which environment best describes the physical activities that defined your earlier years?\nOptions: [Intense, team-based competition and tactical group play | Solo pursuit of endurance, pacing, and long-distance discipline | Precision-focused technical mastery and individual skill acquisition]"
+    },
+    {
+      "role": "user",
+      "content": "Intense, team-based competition and tactical group play"
+    },
+    {
+      "role": "narrator",
+      "content": "Looking at your current training habits, how do you primarily approach your fitness routine these days?\nOptions: [Strict, high-intensity intervals and programmed strength blocks | Steady, consistent flow training that prioritizes recovery and long-term sustainability | Dynamic, spontaneous movement that adapts to daily schedule and environment]"
+    },
+    {
+      "role": "user",
+      "content": "Strict, high-intensity intervals and programmed strength blocks"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep into a session or facing a high-pressure moment, what is the primary drive that keeps you pushing past your limits?\nOptions: [Dominating the field through raw speed and overwhelming physical power | Outlasting opponents with relentless tactical consistency and endurance | Achieving perfect technical execution and mastery under high-pressure conditions]"
+    },
+    {
+      "role": "user",
+      "content": "Dominating the field through raw speed and overwhelming physical power"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+      "scout_verdict": "You have always thrived where the atmosphere is charged with the intensity of the starting line. At 165cm and 60kg, your physiology is a masterclass in efficiency, providing the rapid-fire turnover required to dominate the 100m and 200m sprints. Your long-standing preference for the raw physical dominance found in team sports translates perfectly to the track, where every millisecond becomes a battle for ground and momentum.\n\nFor your adaptive path, you would compete in the T44 category. This classification is specifically for ambulatory athletes with a lower-limb impairment who compete in a standing position, often utilizing advanced prosthetics to translate your explosive power into linear velocity. Your commitment to high-intensity, structured strength blocks is exactly what is needed to master these specialized mechanics, turning the start block into your launchpad at The 2028 Los Angeles Games."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "While your base is built on explosive power, your mind is equally wired for the cool, calculated mastery of technical environments. This pathway shifts the focus away from the raw force of the track and into the domain of the Edge Carver, where success is defined not just by how fast you move, but by how you navigate a descent with razor-sharp intent. Your history of team-based tactical play serves as the foundation for the deep, sustained focus required to hold a precise line at high speeds.\n\nIn the adaptive landscape, you would classify under LW12, a category for athletes who compete using a sit-ski\u2014a specialized bucket-seat apparatus mounted on a single ski. This path demands a total shift toward core-driven stability and nuanced weight distribution, requiring you to steer through gates with a level of accuracy that mirrors your background in tactical, group-based strategy. It is a different manifestation of your athletic potential, forged through absolute composure and the seamless connection between athlete and equipment as you carve your way toward the podium at The 2028 Los Angeles Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "The scouting report provides two distinct and highly personalized pathways that accurately reflect the athlete's biometrics and interview responses.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "A height of 165cm and weight of 60kg creates a realistic power-to-weight ratio for an explosive sprinter, validating the Block Starter archetype."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts explicitly incorporate the user's choices, referencing their background in team sports and preference for strict, high-intensity strength blocks."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The profiles offer a strong contrast between the raw linear power of track sprinting and the technical, core-driven precision required for sit-skiing."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions effectively probe the user's athletic background, training habits, and competitive drive, with distinct options that logically lead to different archetypes."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance with appropriate use of 'The 2028 Los Angeles Games' and no NIL or trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

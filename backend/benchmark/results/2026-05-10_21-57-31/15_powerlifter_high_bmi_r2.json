@@ -1,0 +1,78 @@
+{
+  "persona_id": "15_powerlifter_high_bmi",
+  "persona_label": "Competitive powerlifter \u2014 high BMI, elite strength",
+  "biometrics": {
+    "height_cm": 182,
+    "weight_kg": 142,
+    "birth_year": 1991,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "Reflecting on your physical background, what has been the primary focus of your training or athletic lifestyle up to this point?\nOptions: [Explosive power and short-duration intensity | Sustained endurance and metabolic capacity | Technical precision and strategic positioning]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and short-duration intensity"
+    },
+    {
+      "role": "narrator",
+      "content": "When you envision yourself in a high-performance setting, do you find that you excel more in scenarios where you have total individual autonomy, or do you thrive when you are an integral part of a synchronized team strategy?\nOptions: [Individual autonomy: I want the outcome to depend entirely on my own focus and execution. | Team synchronization: I thrive when I can contribute my power to a larger, collective goal.]"
+    },
+    {
+      "role": "user",
+      "content": "Individual autonomy: I want the outcome to depend entirely on my own focus and execution."
+    },
+    {
+      "role": "narrator",
+      "content": "When you look back at your history of physical challenges, which of these environments do you feel most at home in?\nOptions: [Controlled environments: where repeatability and precise technique are king. | Dynamic environments: where the terrain or external conditions are constantly shifting. | Strength-centric environments: where the raw battle is directly against heavy resistance or gravity.]"
+    },
+    {
+      "role": "user",
+      "content": "Strength-centric environments: where the raw battle is directly against heavy resistance or gravity."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+      "scout_verdict": "You were born to command the circle. At 182.0cm and 142.0kg, your physical presence is an imposing reality that demands space and respect. Your history of seeking out intense, strength-centric environments finds its ultimate expression here, where the only thing that matters is the purity of your explosive power against the relentless pull of gravity. At 35, you possess the seasoned mental fortitude required to master the fine margins of the throw, transforming raw mass into a singular, kinetic strike.\n\nWhen you step into the stadium at The Los Angeles 2028 Games, whether in the standing field or the seated throwing circle, it is just you, the implement, and the sector. Both pathways reward your specific physical attributes and preference for total individual autonomy. In the standing category, you utilize lower-body drive to launch the implement; in the seated category, you rely on core stability and upper-body torque to generate equivalent force. Each pathway demands a high level of technical precision, ensuring that every ounce of energy spent is yours alone to control. This is the arena of absolute accountability, where your commitment to high-performance athletics is measured in the distance you carve into the earth, proving you are an immovable object finding an unstoppable trajectory."
+    },
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "scout_verdict": "While your raw power is undeniable, your potential for high-performance athletics extends into the realm of complex tactical dominance. By transitioning your explosive intensity into the dynamic, high-speed world of court sports, you cease to be merely a force of nature and become the anchor of a sophisticated spatial strategy. Your substantial 142.0kg frame becomes a physical landmark on the court, used not just for force, but to dictate lanes, screen opponents, and control the flow of the game.\n\nAt The Brisbane 2032 Games, you find your home within the heartbeat of the team. Whether navigating the court on your feet or operating from a specialized sports chair, this pathway demands that you channel your explosive, short-duration capability into clinical precision. You are no longer just battling gravity; you are outthinking the opposition. Your presence at the net requires a shift from singular focus to a deep, resonant awareness of the entire field of play, where your strength acts as the foundation for a synchronized, tactical masterclass in dominance."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The first profile is an excellent fit for the user's biometrics and answers, but the second profile recommends a team sport for a 313-pound athlete who explicitly requested individual autonomy.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While Field Athletics (Shot Put) is a perfect match for a 142.0kg explosive athlete, Basketball is highly unrealistic for that body composition."
+    },
+    "personalization": {
+      "score": 5,
+      "reasoning": "The first verdict incorporates the user's preference for 'individual autonomy', but the second verdict completely ignores this by forcing them into a 'synchronized, tactical masterclass'."
+    },
+    "distinctness": {
+      "score": 7,
+      "reasoning": "The adaptive and standing pathways are well-differentiated mechanically, specifically noting the difference between lower-body drive and seated upper-body torque in the throwing circle."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The interview questions logically progress from broad energy systems to specific environmental preferences, with distinct options that effectively fork the athlete's potential."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with correct 'The Los Angeles 2028 Games' and 'The Brisbane 2032 Games' formatting."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

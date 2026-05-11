@@ -1,0 +1,82 @@
+{
+  "persona_id": "05_youth_time_travel_2032",
+  "persona_label": "Youth gymnast \u2014 time travel to 2032",
+  "biometrics": {
+    "height_cm": 164,
+    "weight_kg": 55,
+    "birth_year": 2010,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, could you tell me a bit about your background with organized sports\u2014do you currently compete in a specific discipline, or are you just beginning your search for the right pathway?\nOptions: [I'm a seasoned athlete already competing. | I participate in sports recreationally but want to get serious. | I'm looking for a new challenge and haven't chosen a sport yet.]"
+    },
+    {
+      "role": "user",
+      "content": "I'm a seasoned athlete already competing."
+    },
+    {
+      "role": "narrator",
+      "content": "Since you're already competing, could you tell me a bit more about the nature of your training? What type of discipline are you currently pouring your energy into?\nOptions: [Team sports (e.g., soccer, basketball, volleyball) | Individual combat or racquet sports | Endurance or water-based disciplines | Gymnastics or technical movement sports]"
+    },
+    {
+      "role": "user",
+      "content": "Gymnastics or technical movement sports"
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward reaching your absolute physical and mental prime at The 2032 Games, how do you envision evolving your technical background into a new, high-performance pathway?\nOptions: [Refining my technical precision for a new, specialized discipline. | Pivoting to a sport that demands greater explosive power. | Leveraging my core balance and focus for a new endurance challenge. | Focusing on the psychological mastery and strategy required for top-tier competition.]"
+    },
+    {
+      "role": "user",
+      "content": "Refining my technical precision for a new, specialized discipline."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "Your background in gymnastics has gifted you with a rare level of body awareness and spatial control\u2014qualities that are essential when navigating a high-speed peloton or perfecting the rhythmic cadence required for long-distance endurance. At The 2032 Games, you will be able to harness that meticulous technical focus to command the road with absolute precision. At 164.0cm and 55.0kg, your build is a tactical advantage, perfectly suited for the punishing ascents where power-to-weight ratios dictate the leaderboard. By age 22, you are entering your prime, transitioning your history of technical movement into a relentless, machine-like efficiency that will allow you to dominate the field."
+    },
+    {
+      "matched_profile_id": 2,
+      "matched_profile_name": "Long Haul",
+      "pathway_standing": "Distance Running",
+      "pathway_adaptive": "Wheelchair Racing (e.g., Women's Marathon T54)",
+      "scout_verdict": "The path to success at The 2032 Games is built on the foundation of economy and focus you developed during your time in gymnastics. For an athlete competing over long distances, every micro-adjustment in your form preserves energy, and your experience with complex, technical movement patterns makes you a natural for the grueling marathon discipline. Your 164.0cm, 55.0kg frame is an engine of efficiency, allowing you to maintain speed without the excessive output that slows others down in the final miles. As you reach age 22, you will find that the same discipline you used to stick a landing is exactly what you need to sustain a perfect, unwavering pace across the finish line."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The report effectively integrates the user's interview answers and target life stage, but struggles to authentically map an explosive technical sport like gymnastics into pure endurance pathways, and includes a careless gender mismatch.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "While the 164cm/55kg biometrics fit endurance sports, mapping a seasoned gymnast\u2014a highly explosive and anaerobic athlete\u2014to long-distance running or road cycling is athletically disjointed."
+    },
+    "personalization": {
+      "score": 6,
+      "reasoning": "The narrative successfully weaves in the user's gymnastics background and technical focus, but careless templating suggests a 'Men's Road Race' for a female athlete."
+    },
+    "distinctness": {
+      "score": 6,
+      "reasoning": "Both recommendations focus heavily on long-haul endurance racing (cycling vs. distance running), making the two profiles feel functionally very similar in their demands."
+    },
+    "life_stage_coherence": {
+      "score": 8,
+      "reasoning": "Targeting age 22, the verdict correctly adopts an Elite Peak tone with phrases like 'entering your prime' and transitioning into 'relentless, machine-like efficiency.'"
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions progress logically from experience level to specific sport families, and the final question offers distinct paths (explosive vs. endurance vs. technical) that should genuinely fork the outcome."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean on IOC trademarks and NIL, though the 'Men's Road Race' suggestion for a female athlete is a notable oversight."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

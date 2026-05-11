@@ -1,0 +1,9 @@
+{
+  "persona_id": "03_adaptive_visual_impairment",
+  "persona_label": "Adaptive athlete \u2014 partial visual impairment",
+  "error": "sequence item 0: expected str instance, dict found",
+  "conversation_log": [],
+  "scouting_result": null,
+  "eval_result": null,
+  "round": 1
+}

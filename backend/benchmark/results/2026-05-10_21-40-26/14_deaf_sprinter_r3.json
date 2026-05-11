@@ -1,0 +1,86 @@
+{
+  "persona_id": "14_deaf_sprinter",
+  "persona_label": "Profoundly deaf \u2014 competitive 400m sprinter",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 76,
+    "birth_year": 2001,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe your current relationship with competitive sport\u2014do you have a background in a specific discipline, or are you looking to start a new journey from the ground up?\nOptions: [I'm a seasoned athlete looking for a new challenge. | I have some experience but want to reach a higher level. | I'm ready to dive into high-performance training for the first time.]"
+    },
+    {
+      "role": "user",
+      "content": "I'm a seasoned athlete looking for a new challenge."
+    },
+    {
+      "role": "narrator",
+      "content": "To help me map out where your skills might translate best, could you tell me a bit more about the primary nature of the athletic training you've focused on so far?\nOptions: [Individual endurance or strength-focused disciplines. | Team-based sports requiring coordination and strategy. | High-intensity explosive or speed-based training.]"
+    },
+    {
+      "role": "user",
+      "content": "High-intensity explosive or speed-based training."
+    },
+    {
+      "role": "narrator",
+      "content": "To better understand your current capacity, how would you describe your typical weekly training volume and structure?\nOptions: [A few times a week, focused on maintenance. | Regular, disciplined sessions 4-5 times a week. | Intense, high-frequency training focused entirely on performance gains.]"
+    },
+    {
+      "role": "user",
+      "content": "Intense, high-frequency training focused entirely on performance gains."
+    },
+    {
+      "role": "narrator",
+      "content": "To help me capture the vision behind your journey, what is the core ambition driving you toward this high-performance pathway?\nOptions: [Testing my physical limits at the absolute highest competitive level. | Mastering a new discipline and achieving personal excellence. | Competing for podium finishes in international top-tier events. | The process of representing my country on the world stage.]"
+    },
+    {
+      "role": "user",
+      "content": "Testing my physical limits at the absolute highest competitive level."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "At 178.0cm and 76.0kg, your body is engineered for the violent, precise mechanics of the starting block. Your history as a seasoned athlete with a focus on high-intensity, explosive speed-based training provides the perfect foundation for the fast-twitch requirements of the track. At 25 years old, you are currently in the golden window of physiological prime, where your rate of force development is at its absolute peak.\n\nImagine the roar of the crowd at The Brisbane 2032 Games as you settle into the blocks. The work you have put in\u2014that relentless pursuit of your physical limits\u2014culminates in a fraction of a second. This pathway is not just about raw power; it is about the mastery of acceleration that you have already begun to refine. You have the discipline to push past previous plateaus, making the sprint track a theater where your intensity will finally find its true expression."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "If the track is an explosion, this pathway is a testament to the endurance of the human spirit. Your background in high-frequency, performance-driven training has cultivated a power-to-weight ratio that is lethal over long distances. While you have built your reputation on speed, your capacity for sustained, high-intensity output allows you to pivot toward a pursuit defined by mental fortitude and tactical precision.\n\nPicture yourself on the long, winding technical descents of The Los Angeles 2028 Games. The high-frequency training sessions you've committed to\u2014those disciplined, grit-filled days of pushing for total performance\u2014are what will carry you through the final kilometer when others fade. This is a strategic, data-driven journey for an athlete who refuses to settle for anything less than international excellence. It is time to prove that your engine can sustain the intensity you've spent years cultivating."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A solid, highly personalized scouting report that accurately leverages the user's biometrics and interview answers, though it lacks distinct narrative focus on the adaptive pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The 'Block Starter' archetype perfectly aligns with the user's 178cm/76kg frame and their background in explosive, high-intensity training."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts weave in multiple specific interview responses seamlessly, directly addressing their status as a 'seasoned athlete' seeking to test 'physical limits' through 'high-frequency training'."
+    },
+    "distinctness": {
+      "score": 5,
+      "reasoning": "While the two archetypes contrast well (sprint vs. endurance), the scout verdicts completely fail to address the adaptive pathways in the narrative, leaving them as mere titles."
+    },
+    "interview_quality": {
+      "score": 6,
+      "reasoning": "The questions logically narrow down the athlete's profile from experience to training style and ambition, but the options are somewhat standard and don't force highly differentiating choices."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance with appropriate 'The [City] [Year] Games' phrasing and no disallowed terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

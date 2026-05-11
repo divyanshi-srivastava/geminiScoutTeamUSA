@@ -1,0 +1,78 @@
+{
+  "persona_id": "01_young_female_swimmer",
+  "persona_label": "Young female swimmer",
+  "biometrics": {
+    "height_cm": 172,
+    "weight_kg": 62,
+    "birth_year": 2009,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "When you walk into a training space, what is the core 'edge' you strive to bring to your performance?\nOptions: [Developing explosive speed and raw power for short-burst intensity. | Building sustained endurance and the mental grit to pace long-distance efforts. | Mastering precise technical movements and refined tactical coordination.]"
+    },
+    {
+      "role": "user",
+      "content": "Building sustained endurance and the mental grit to pace long-distance efforts."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look at how you structure your weekly training sessions to build that stamina, which approach do you find most effective for your development?\nOptions: [High-frequency, shorter sessions focused on building a deep aerobic base through consistency. | Long-duration, high-intensity sessions that push my physical and mental limits to the brink. | A recovery-focused approach that prioritizes high-quality, controlled output over sheer volume.]"
+    },
+    {
+      "role": "user",
+      "content": "High-frequency, shorter sessions focused on building a deep aerobic base through consistency."
+    },
+    {
+      "role": "narrator",
+      "content": "When you imagine yourself competing at the highest level, what kind of social or competitive environment do you feel brings out the most intense version of yourself?\nOptions: [The singular, pressure-filled focus of individual competition where the result rests entirely on my own shoulders. | The collaborative, high-stakes energy of a team-based environment where shared strategy drives success. | The tactical, partner-focused dynamic where synergy and communication with one other athlete are essential.]"
+    },
+    {
+      "role": "user",
+      "content": "The singular, pressure-filled focus of individual competition where the result rests entirely on my own shoulders."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "Your 172cm, 62kg frame acts as a high-precision engine, perfectly calibrated for the aerodynamic demands of the cycling circuit. By prioritizing high-frequency, consistent aerobic sessions, you have laid the groundwork for the 'Road Machine' archetype\u2014a profile defined by the ability to maintain punishing tempos long after others have reached their limit. This discipline requires more than just fitness; it requires the metabolic efficiency that only comes from the deep-base building you\u2019ve committed to in your formative years.\n\nAs you look toward The Brisbane 2032 Games, imagine yourself navigating the final technical descents of a road race. Your ability to hold a steady, sustained output while others surge and fade will be your greatest weapon. Whether in standard cycling or in the H3 handcycling category\u2014which specifically encompasses athletes with lower-limb impairment who utilize their upper-body power for propulsion\u2014your pathway is one of calculated, rhythmic dominance. You don't just race; you execute a strategy, treating every kilometer as a measurement of your internal consistency."
+    },
+    {
+      "matched_profile_id": 2,
+      "matched_profile_name": "Long Haul",
+      "pathway_standing": "Distance Running",
+      "pathway_adaptive": "Wheelchair Racing (e.g., Women's Marathon T54)",
+      "scout_verdict": "While the Road Machine thrives on aerodynamic efficiency, the 'Long Haul' archetype demands a different kind of intensity: the visceral, rhythmic grit required to command the road alone. This pathway is a study in internal fortitude, perfectly matched to your preference for the solitary pressure of individual competition. Here, your focus shifts to the raw, mechanical application of power through either traditional long-distance running or the T54 wheelchair racing class, which covers athletes with impairment in the lower trunk and legs who compete in a specialized racing chair.\n\nIn this arena, your aerobic base is no longer just about endurance\u2014it is the foundation for an unyielding pace that tests the limits of your competition. At The Brisbane 2032 Games, you are the architect of your own race, relying on the singular, high-stakes pressure you crave. Where other disciplines reward tactical nuance in groups, this circuit rewards the ability to find a sustainable, blistering cadence in the face of physical fatigue. Your journey here is defined by that quiet, solitary commitment to the clock, proving that when the strategy rests entirely on your own shoulders, you possess the mental edge to endure to the very end."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "The report is highly effective, matching plausible endurance-based archetypes to a lean athletic frame while deeply weaving the user's specific interview choices into the narrative.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "A 172cm, 62kg frame is highly plausible for female distance runners and cyclists, aligning perfectly with the chosen endurance archetypes."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts directly incorporate the user's specific choices regarding 'high-frequency' aerobic sessions and the 'solitary pressure' of individual competition."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The report provides specific adaptive classifications (H3 Handcycling, T54 Wheelchair Racing) with distinct physiological descriptions compared to the standing pathways."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asks logically progressing questions, moving from broad athletic focus to specific training philosophy and team dynamics, with distinct and meaningful options."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly uses 'The Brisbane 2032 Games' and avoids restricted terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

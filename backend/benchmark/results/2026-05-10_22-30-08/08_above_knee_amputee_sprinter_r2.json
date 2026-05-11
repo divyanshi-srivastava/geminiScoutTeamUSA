@@ -1,0 +1,78 @@
+{
+  "persona_id": "08_above_knee_amputee_sprinter",
+  "persona_label": "Above-knee amputee \u2014 para-sprinter",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 73,
+    "birth_year": 2000,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get started, how would you best describe your current relationship with physical training and your athletic background?\nOptions: [I've spent years honing technical mastery through team-based, strategic competitive sports. | I've focused primarily on individual physical development, prioritizing strength, speed, and explosive power. | My foundation is built on long-term endurance, rhythmic movement, and sustained, high-intensity output.]"
+    },
+    {
+      "role": "user",
+      "content": "I've focused primarily on individual physical development, prioritizing strength, speed, and explosive power."
+    },
+    {
+      "role": "narrator",
+      "content": "To help me understand your competitive mindset, what primarily fuels your drive when you're deep into a rigorous training cycle?\nOptions: [The rush of head-to-head competition against a physical rival. | The quiet satisfaction of pushing past my previous personal bests. | The mastery of complex, technical maneuvers under extreme fatigue.]"
+    },
+    {
+      "role": "user",
+      "content": "The quiet satisfaction of pushing past my previous personal bests."
+    },
+    {
+      "role": "narrator",
+      "content": "To round out our understanding of how you best operate in the field, which environmental approach to training feels most natural to you?\nOptions: [I prefer high-intensity, short-duration bursts that push my absolute physical peak. | I gravitate toward steady, high-volume sessions that prioritize long-term systemic adaptation. | I thrive in adaptive, multi-faceted environments where I must constantly balance cognitive focus with physical output.]"
+    },
+    {
+      "role": "user",
+      "content": "I prefer high-intensity, short-duration bursts that push my absolute physical peak."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "At 26 years old, you are currently standing at the exact intersection of raw potential and peak physical performance. Your build\u2014175cm and 73kg\u2014is a masterclass in efficiency, offering the ideal power-to-weight ratio to dominate the explosive, short-duration bursts you crave. When you walk into the stadium at The Brisbane 2032 Games, the track beneath you will be less of a surface and more of a catalyst for that internal drive that fuels your relentless pursuit of a new personal best.\n\nIn the T44 category, which covers athletes with lower-limb impairments who compete with a prosthesis, your build serves as a formidable engine. Your history of prioritizing individual physical development means that every ounce of force you generate is refined, purposeful, and lethal. This pathway isn't just about speed; it is about the cold, calculated science of the block start. As you settle into the set position, the quiet satisfaction of knowing you have out-trained your past self becomes the only momentum you need to shatter the clock."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "While your heart beats for the explosive burst, there is a dormant precision within you that demands a different kind of mastery. Transitioning to the slopes of The Milano Cortina 2026 Games, you shift from the linear aggression of the track to the fluid, high-velocity technicality of the mountain. Here, success is not merely about raw output, but about the surgical control of edges under extreme fatigue\u2014a mental and physical test that mirrors your desire for constant, adaptive growth.\n\nYour profile leads you to the LW12 classification, which is designated for sit-skiers with significant lower-limb functional impairment. By utilizing a sit-ski, you effectively turn your core into the primary suspension and steering mechanism for the entire rig. This requires a profound cognitive focus, as every subtle weight shift is amplified at speed. By channeling your preference for high-intensity, short-duration bursts into the technical discipline of a Super-G run, you aren't just racing; you are sculpting your trajectory through the gates with the same singular obsession you once reserved for your personal bests."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "The scouting report effectively aligns the user's physical metrics and preference for explosive power with two highly plausible archetypes, delivering tailored and evocative narratives.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The user's build (175cm/73kg) and preference for explosive power make the 'Block Starter' sprint profile highly realistic."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts directly incorporate the user's interview answers, specifically referencing the 'quiet satisfaction' of beating personal bests and 'high-intensity, short-duration bursts'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The pathways offer a strong contrast between linear track sprints and technical alpine skiing, with detailed and distinct explanations of the T44 and LW12 adaptive classifications."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions logically progress from athletic background to mindset and training environment, offering clearly distinct options that meaningfully shape the athlete profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "The report is clean, correctly using the approved 'The [City] [Year] Games' format and avoiding all prohibited terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

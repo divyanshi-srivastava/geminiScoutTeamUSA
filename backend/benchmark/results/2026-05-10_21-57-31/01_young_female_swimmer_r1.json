@@ -1,0 +1,78 @@
+{
+  "persona_id": "01_young_female_swimmer",
+  "persona_label": "Young female swimmer",
+  "biometrics": {
+    "height_cm": 172,
+    "weight_kg": 62,
+    "birth_year": 2009,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe your natural athletic instinct when you are deep in the heat of competition?\nOptions: [I thrive on individual precision and technical mastery. | I excel at team strategy and collaborative movement. | I rely on pure explosive power and rapid reaction speed.]"
+    },
+    {
+      "role": "user",
+      "content": "I thrive on individual precision and technical mastery."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the middle of a high-pressure moment, how does your focus manifest in the way you approach the task at hand?\nOptions: [Perfecting a singular, repeatable skill until it is technically flawless. | Navigating a dynamic, unpredictable environment requiring constant tactical adjustments. | Deconstructing an opponent's patterns to find the exact moment to strike.]"
+    },
+    {
+      "role": "user",
+      "content": "Perfecting a singular, repeatable skill until it is technically flawless."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back at your sporting journey so far, which training environment has most effectively nurtured your growth as a high-performance athlete?\nOptions: [Structured, coach-led sessions focused on repetitive drills and incremental improvement. | Competitive, high-pressure environments that force me to adapt and solve problems in real-time. | Isolated, self-guided practice sessions where I can obsess over the smallest technical details at my own pace.]"
+    },
+    {
+      "role": "user",
+      "content": "Structured, coach-led sessions focused on repetitive drills and incremental improvement."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 8,
+      "matched_profile_name": "Streamline",
+      "pathway_standing": "Swimming",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Women's 400 m Freestyle S10)",
+      "scout_verdict": "Your commitment to individual precision and technical mastery finds its truest home in the lane. At 17 years old, with a build of 172.0cm and 62.0kg, you possess the ideal physical proportions to cut through the water with minimal drag and maximum efficiency. Your preference for structured, repetitive drills is not just a training habit; it is the foundation for the fluid, rhythmic consistency that defines an endurance athlete at the highest level of competitive sport. In the quiet intensity of the pool, you are not just swimming laps\u2014you are refining a singular expression of motion. As you prepare for the global stage, envision the discipline of your training manifesting in The Brisbane 2032 Games. Here, your focus on technical perfection becomes your greatest asset, allowing you to maintain pace when others falter. This is where your journey meets the water, turning every structured, coach-led session into a masterclass of endurance."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+      "scout_verdict": "Your capacity for technical obsession serves as the perfect catalyst for the explosive, high-stakes world of sprinting. Standing at 172.0cm, your physiology is uniquely suited to the biomechanical demands of the track, where every millisecond is won in the first few meters. By applying the same structured, repetitive focus you use in your training to the mastery of block start mechanics, you transform into a force of raw, controlled velocity. Think of the starting block as the ultimate technical challenge. It requires the same methodical, coach-led refinement you crave, focusing your energy into a singular, devastating moment of release. As you look ahead toward The Los Angeles 2028 Games, your trajectory will be defined not by the length of the race, but by the perfection of your acceleration. This is a journey of power, where your ability to deconstruct your movement patterns makes you a formidable presence, turning your dedication into an unrivaled weapon on the track."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A solid, well-personalized scouting report that correctly leverages the user's biometric data and interview answers, though it lacks specific narrative exploration of the adaptive pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "At 172cm and 62kg, the user's build is highly appropriate for both swimming and sprinting, making the Streamline and Block Starter archetypes realistic recommendations."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts explicitly incorporate the user's interview choices, specifically calling out their preference for 'structured, repetitive drills' and 'individual precision'."
+    },
+    "distinctness": {
+      "score": 6,
+      "reasoning": "While swimming and sprinting offer distinct athletic angles, the narratives focus almost entirely on the sport generally without meaningfully elaborating on the adaptive pathways mentioned in the headers."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions progress logically from broad instinct to specific training environments, with options that genuinely differentiate an athlete's psychological profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Compliant usage of Games references (The Brisbane 2032 Games, The Los Angeles 2028 Games) and no prohibited terms found."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

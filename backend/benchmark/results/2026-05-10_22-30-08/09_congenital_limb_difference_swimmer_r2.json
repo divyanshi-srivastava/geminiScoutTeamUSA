@@ -1,0 +1,78 @@
+{
+  "persona_id": "09_congenital_limb_difference_swimmer",
+  "persona_label": "Congenital limb difference \u2014 adaptive swimmer",
+  "biometrics": {
+    "height_cm": 168,
+    "weight_kg": 63,
+    "birth_year": 1997,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start laying the foundation for your profile, which of these best describes your history with high-performance sport?\nOptions: [Consistent, competitive athlete training with a team or coach. | Self-directed enthusiast focused on high-intensity, personal mastery. | Transitioning from other interests to discover my untapped physical abilities.]"
+    },
+    {
+      "role": "user",
+      "content": "Consistent, competitive athlete training with a team or coach."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are at your absolute best during training, what is the primary physical dimension that makes you feel most capable and in control of your performance?\nOptions: [Explosive power and rapid, high-intensity bursts of movement. | Sustained endurance and deep, rhythmic physical pacing. | Technical precision and complex movement coordination.]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance and deep, rhythmic physical pacing."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward the next stage of your sporting journey, what core motivation drives your commitment to the grind?\nOptions: [The objective pursuit of pushing my physiological limits to set new, measurable benchmarks. | The tactical, strategic thrill of outsmarting and outlasting opponents in direct competition. | The collective energy of a team or squad striving for a shared, high-performance achievement.]"
+    },
+    {
+      "role": "user",
+      "content": "The objective pursuit of pushing my physiological limits to set new, measurable benchmarks."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "At 168cm and 63kg, your stature is perfectly tuned for the high-velocity demands of the Edge Carver archetype. As you stand at 29, you bring a mature, disciplined focus that is essential in the high-stakes world of competitive snow and ice sports. Your background in structured, team-based environments has forged a mental resilience that turns every technical turn into a calculated pursuit of perfection. Whether you are navigating the high-speed arc of a super-G run or the precise geometry of a speed skating lane, your commitment to objective, measurable improvement makes you a formidable contender for The Milano Cortina 2026 Games. You don't just participate; you analyze the physics of your movement, transforming your body into a precision instrument designed to slice through the environment with maximum efficiency."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "If the Edge Carver represents your technical precision, the Road Machine is your true endurance engine. This pathway leverages your preference for rhythmic pacing, casting you into the H3 handcycling classification\u2014a category for athletes with lower-limb impairment who generate sustained, powerful outputs through the upper body and trunk. This is where your drive for measurable benchmarks becomes your greatest weapon; you will find your flow state in the relentless, data-driven grind of the road circuit. As you prepare for The LA28 Games, your focus shifts to the horizon, measuring your progress in watts, cadence, and the steady, rhythmic burn of a long-distance effort. Here, your competitive spirit finds its ultimate expression not in a singular explosive moment, but in the sustained mastery of your own physiological boundaries over the course of a high-performance road race."
+    }
+  ],
+  "eval_result": {
+    "overall": 9,
+    "summary": "This is a high-quality, highly tailored scouting report that effectively utilizes the user's interview answers to craft two distinct, mechanically sound sport pathways.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "The user's 168cm/63kg build and preference for sustained pacing perfectly fit the physiological profile of a Road Machine cyclist."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdict explicitly incorporates the user's desire for 'measurable benchmarks' by directly translating it into sport-specific cycling metrics like watts and cadence."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The pathways offer a stark, compelling contrast between winter technical velocity (Edge Carver) and summer rhythmic endurance (Road Machine), with rich classification details for the adaptive route."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions probe genuine athletic differentiators, with the second question (explosive vs endurance vs technical) creating a clear, meaningful fork for the sport recommendation."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly uses 'The Milano Cortina 2026 Games' and 'The LA28 Games' formats without any standalone Olympic or Paralympic violations."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

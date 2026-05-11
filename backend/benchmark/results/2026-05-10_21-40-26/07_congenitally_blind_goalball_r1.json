@@ -1,0 +1,78 @@
+{
+  "persona_id": "07_congenitally_blind_goalball",
+  "persona_label": "Congenitally blind \u2014 goalball and tandem cycling",
+  "biometrics": {
+    "height_cm": 165,
+    "weight_kg": 60,
+    "birth_year": 1992,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you best describe your history or current involvement in competitive sport?\nOptions: [I have a background in team-based athletics | I am primarily an individual endurance athlete | I focus on strength, power, and technical precision | I am looking to pivot into a new sport for the first time]"
+    },
+    {
+      "role": "user",
+      "content": "I have a background in team-based athletics"
+    },
+    {
+      "role": "narrator",
+      "content": "When you think back to your time in team sports, which aspect did you find most rewarding?\nOptions: [The fast-paced intensity of match play | The collaborative strategy and tactical planning | The camaraderie and social connection | The challenge of adapting to different positions]"
+    },
+    {
+      "role": "user",
+      "content": "The collaborative strategy and tactical planning"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the thick of a high-pressure situation, how do you usually maintain that focus and execute your tactical plan?\nOptions: [I thrive on the adrenaline and maintain a sharp, reactive focus | I rely on rigorous preparation to stay calm and methodical | I draw energy from the collective trust and communication with teammates | I step back to analyze the variables before making a decisive move]"
+    },
+    {
+      "role": "user",
+      "content": "I draw energy from the collective trust and communication with teammates"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "At 165.0cm and 60.0kg, you possess a lean, powerful frame perfectly suited for the endurance demands of the road. Your transition from team sports is far more natural than it might seem; while cycling is often perceived as an individual pursuit, the peloton is a living, breathing team environment. Your deep appreciation for tactical planning and collective trust will make you a formidable force in drafting, pacing, and positioning.\n\nAs you look toward The Los Angeles 2028 Games, your 34-year-old baseline positions you to master the intricate group strategies that define the podium finishers. The same communication skills you once used to control the flow of a match will now be your greatest asset in managing peloton dynamics, turning every race into a masterclass of collective strategy."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Your ability to remain calm and decisive under pressure\u2014a trait honed through years of team-based high-stakes competition\u2014is the exact currency required to master the slopes. The precision demanded in Alpine disciplines is not merely about raw speed; it is about the tactical navigation of gates and terrain. Your physical stature provides a stable, low center of gravity that will allow you to hold an edge with surgical accuracy.\n\nAs you prepare for the high-speed challenges of The Milano Cortina 2026 Games, your experience drawing energy from collective trust will serve you well in the high-stakes environment of mountain competition. Your focus on executing complex, pre-meditated tactical plans will be the definitive bridge between merely completing a run and dominating the course, allowing you to anticipate the mountain's geometry with the same precision you once used to dissect a defense."
+    }
+  ],
+  "eval_result": {
+    "overall": 4,
+    "summary": "The pipeline delivers strong psychological personalization linking team strategy to cycling, but completely fails to integrate adaptive narratives and hallucinates Men's events for a Female athlete.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "Cycling and triathlon are excellent physiological fits for a 165cm, 60kg athlete, though Alpine Skiing is slightly less optimal for this height."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative expertly connects the user's specific answers about 'collaborative strategy' and 'collective trust' to the pack dynamics of a cycling peloton."
+    },
+    "distinctness": {
+      "score": 2,
+      "reasoning": "There is zero distinct narrative for the adaptive pathways, and the recommended adaptive events (e.g., 'Men's Road Race') contradict the user's female gender."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions logically progressed from the athlete's general background to specific situational drivers like high-pressure focus, offering distinct behavioral choices."
+    },
+    "compliance": {
+      "passed": false,
+      "note": "Violation: Significant narrative depth imbalance, as the adaptive pathways are entirely ignored in the scout verdicts."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

@@ -1,4 +1,4 @@
-import { Component, inject, OnDestroy } from '@angular/core';
+import { Component, inject, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { StateService } from '../services/state.service';
@@ -41,9 +41,11 @@ interface GameEntry {
           *ngFor="let g of eligibleGames"
           class="game-pill"
           [class.active]="g.year === activeYear"
+          [class.visited]="visitedYears.has(g.year)"
           [style.borderColor]="getPhaseColor(g.year)"
           (click)="travelTo(g)">
           <span class="game-year">{{ g.year }}</span>
+          <span class="visited-dot" *ngIf="visitedYears.has(g.year)" [style.background]="getPhaseColor(g.year)"></span>
         </button>
       </div>
     </nav>
@@ -146,6 +148,7 @@ interface GameEntry {
 
     .game-pill {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 0.45rem 0.9rem;
@@ -156,23 +159,36 @@ interface GameEntry {
       transition: all 0.2s;
       white-space: nowrap;
       flex-shrink: 0;
+      gap: 0.2rem;
     }
     .game-pill:hover { background: rgba(255,255,255,0.06); }
     .game-pill.active {
       background: rgba(197, 164, 78, 0.08);
       box-shadow: 0 0 12px rgba(197, 164, 78, 0.12);
     }
+    .game-pill.visited {
+      background: rgba(255,255,255,0.05);
+    }
     .game-year { font-size: 0.75rem; font-weight: 800; color: white; }
+    .visited-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      opacity: 0.8;
+    }
   `]
 })
-export class TimelineComponent implements OnDestroy {
+export class TimelineComponent implements OnInit, OnDestroy {
   private state = inject(StateService);
   private stream = inject(StreamService);
   private sub?: Subscription;
+  private visitedSub?: Subscription;
 
   eligibleGames: GameEntry[] = [];
   activeYear: number | null = null;
   infoOpen = false;
+  visitedYears = new Set<number>();
 
   private readonly gamesManifest: GameEntry[] = gamesManifestData as GameEntry[];
 
@@ -186,6 +202,12 @@ export class TimelineComponent implements OnDestroy {
     } else {
       this.eligibleGames = this.gamesManifest;
     }
+  }
+
+  ngOnInit() {
+    this.visitedSub = this.state.visitedYears$.subscribe(years => {
+      this.visitedYears = years;
+    });
   }
 
   getPhaseColor(year: number): string {
@@ -212,6 +234,13 @@ export class TimelineComponent implements OnDestroy {
     this.infoOpen = false;
     this.state.timelineBannerDismissed = true;
 
+    // Restore from cache instantly — no backend call needed
+    if (this.state.hasVisitedYear(game.year)) {
+      this.state.addUserTrace(`Revisiting The ${game.year} Games — restoring your previous report.`);
+      this.state.restoreFromCache(game.year);
+      return;
+    }
+
     this.state.setActiveEraYear(game.year);
     this.state.addUserTrace(`I'm jumping to The ${game.year} Games — I'd be ${game.year - (this.state.metrics.birthYear || 2000)} years old. ${this.getLifeStageLabel(game.year)} stage.`);
 
@@ -235,5 +264,6 @@ export class TimelineComponent implements OnDestroy {
 
   ngOnDestroy() {
     this.sub?.unsubscribe();
+    this.visitedSub?.unsubscribe();
   }
 }

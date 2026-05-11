@@ -1,0 +1,78 @@
+{
+  "persona_id": "10_early_stage_als",
+  "persona_label": "Early-stage ALS \u2014 former competitive tennis player",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 78,
+    "birth_year": 1981,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "How would you describe your primary focus when it comes to training or competitive sport over the past few years?\nOptions: [I focus on endurance and cardiovascular consistency. | I am a dedicated strength and conditioning enthusiast. | I compete regularly in local club-level sports. | My movement is driven by recreational activities and general fitness.]"
+    },
+    {
+      "role": "user",
+      "content": "I focus on endurance and cardiovascular consistency."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back at your sporting journey, what has been your primary motivator for pushing yourself physically?\nOptions: [To test the limits of my physical endurance. | The challenge of competing against others. | For mental clarity and personal health. | The pursuit of mastering a specific skill.]"
+    },
+    {
+      "role": "user",
+      "content": "The challenge of competing against others."
+    },
+    {
+      "role": "narrator",
+      "content": "To better understand your current training load, how many hours per week do you typically dedicate to your structured physical activity?\nOptions: [Less than 5 hours. | 5 to 10 hours. | 10 to 15 hours. | More than 15 hours.]"
+    },
+    {
+      "role": "user",
+      "content": "Less than 5 hours."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Standing at 178cm and 78kg, you possess the physical architecture designed for the mountain. Your long-standing commitment to cardiovascular consistency has built the precise engine needed to maintain composure when gravity pulls at its hardest. At 45, you bring a level of seasoned tactical awareness that younger athletes often lack, making your ability to carve a perfect edge under immense pressure a unique asset.\n\nImagine the scene at The Milano Cortina 2026 Games: the cold air, the razor-sharp tension of the start gate, and the roar of the crowd as you navigate the technical turns. Your drive to test yourself against others transforms every slope into a personal challenge. You are not just sliding; you are piloting your frame with the calculated precision of a veteran who knows that the difference between a good run and a great one is found in the stillness of the mind and the strength of the heart."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "Your 178cm, 78kg frame is an ideal blueprint for the explosive, high-velocity mechanics required to dominate the track. You have expressed that your deepest motivation is the thrill of head-to-head competition\u2014the raw, singular intensity that defines the sprint disciplines. Even with your current, focused training approach, you carry the inherent power of an athlete who thrives in the fleeting, high-stakes environment of the blocks.\n\nWhen you line up at The LA28 Games, it is that competitive fire that will propel you through the acceleration phase. Your biomechanics are perfectly tuned for that sharp, instantaneous power output. For you, the race is a manifestation of the mental clarity you seek in your fitness routine, distilled into a few seconds of absolute effort where every stride is a testament to your focus and your refusal to yield to the field."
+    }
+  ],
+  "eval_result": {
+    "overall": 5,
+    "summary": "The report correctly incorporates the user's biometrics and interview answers, but suffers from a sport mismatch and completely ignores the adaptive pathways in the narrative.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "The user explicitly stated their focus is 'endurance and cardiovascular consistency', yet they were placed in 'Block Starter' (100m sprints), which is the antithesis of endurance."
+    },
+    "personalization": {
+      "score": 6,
+      "reasoning": "While the narratives weave in the user's specific answers like 'cardiovascular consistency', the sprint verdict hallucinates 'the mental clarity you seek' which was an unchosen interview option."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "The adaptive pathways are merely listed in the headers; the verdicts themselves offer one unified narrative that completely ignores any adaptive context or insight."
+    },
+    "interview_quality": {
+      "score": 6,
+      "reasoning": "The questions offer distinct and logical pathways for the user, but the final verdict seemingly ignores the user's 'Less than 5 hours' training load answer to push an elite Olympic narrative anyway."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass with correctly formatted Games references (The Milano Cortina 2026 Games, The LA28 Games) and no violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

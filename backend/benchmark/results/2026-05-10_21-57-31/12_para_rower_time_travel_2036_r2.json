@@ -1,0 +1,82 @@
+{
+  "persona_id": "12_para_rower_time_travel_2036",
+  "persona_label": "Para-rower with SCI \u2014 time travel to 2036 Games",
+  "biometrics": {
+    "height_cm": 184,
+    "weight_kg": 88,
+    "birth_year": 1988,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our look into your athletic history, what has defined the core of your training or physical pursuits up to this point?\nOptions: [Explosive power and short-burst intensity | Sustained endurance and long-distance pacing | Tactical team strategy and complex coordination]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance and long-distance pacing"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the middle of a challenging training session, where do you find the most satisfaction?\nOptions: [The meditative solitude of the solitary grind, focusing purely on my internal rhythm. | The visceral, high-stakes energy of head-to-head competition against others. | The meticulous, scientific pursuit of optimizing my performance metrics and technical efficiency.]"
+    },
+    {
+      "role": "user",
+      "content": "The meticulous, scientific pursuit of optimizing my performance metrics and technical efficiency."
+    },
+    {
+      "role": "narrator",
+      "content": "As you step into this Legacy stage of your athletic journey at age 48, how do you envision your focus shifting regarding that analytical drive?\nOptions: [Applying my decades of experience to mentor the next generation through advanced performance analysis. | Pushing the boundaries of human capacity by refining my personal bio-optimization at 48. | Transitioning my analytical skills toward the innovation of new training systems and high-performance technology.]"
+    },
+    {
+      "role": "user",
+      "content": "Transitioning my analytical skills toward the innovation of new training systems and high-performance technology."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "At The 2036 Games, you arrive not merely as a competitor, but as a master technician of the human engine. At 48, your stature of 184cm and 88kg represents a lifetime of carefully calibrated endurance, a frame that has been sculpted through decades of scientific inquiry rather than brute repetition. The multi-discipline path suits your analytical soul perfectly; you approach the complex rhythm of these events with the precision of a laboratory experiment.\n\nYour journey has evolved from the solitary pursuit of long-distance pacing into a holistic mastery of multi-event dynamics. Here, you aren't fighting your age\u2014you are utilizing your vast experience to innovate how the body sustains peak efficiency across grueling days of competition. You have become an architect of your own performance, turning every transition and technical hurdle into a demonstration of how deeply refined intellect can extend the prime of an athlete\u2019s career."
+    },
+    {
+      "matched_profile_id": 10,
+      "matched_profile_name": "Launch Force",
+      "pathway_standing": "Bobsleigh / Push Sports",
+      "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+      "scout_verdict": "When the context shifts to the sheer physics of power, your focus moves away from the rhythmic grind of endurance and onto the explosive, singular moment of force production. At The 2036 Games, you leverage your 88kg foundation as a platform for generating kinetic energy, treating the mechanics of a seated throw as a rigorous problem in ballistics and torque. Your scientific mind, which once obsessed over sustained metabolic output, now turns its precision toward the instantaneous release of power.\n\nThis path rewards your analytical obsession in a completely different dimension. Instead of managing fuel over time, you are managing leverage and mechanical alignment within the tight constraints of a seated position. It is a transition from the 'long game' to the 'perfect game'\u2014an arena where your years of study are focused on the geometry of force transfer, proving that at age 48, your most valuable asset is no longer just your stamina, but the cold, clinical intelligence with which you command every micro-adjustment of your kinetic chain."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly personalized and age-appropriate scouting report that brilliantly incorporates the user's scientific mindset, though it struggles slightly to align the recommended power/multi-event sports with the user's stated background in long-distance endurance.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "While the 184cm/88kg frame fits Decathlon and Bobsleigh well, pitching purely explosive or multi-discipline sports to a user who explicitly selected 'sustained endurance and long-distance pacing' feels like a slight mismatch, despite the narrative's attempt to explain the pivot."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdict deeply integrates the user's interview choices, specifically referencing their desire to innovate training systems and their meticulous, scientific pursuit of performance."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The two pathways are meaningfully distinct, contrasting the holistic, multi-event stamina of Decathlon with the singular, isolated kinetic force generation of Seated Throws."
+    },
+    "life_stage_coherence": {
+      "score": 10,
+      "reasoning": "Targeting age 48 in the Legacy stage, the narrative perfectly frames the user as an 'architect of your own performance' who relies on 'cold, clinical intelligence' rather than youthful stamina."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions progress logically from physical baseline to psychological drivers, and the final question explicitly leverages the time-travel life stage to offer genuinely distinct legacy pathways."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly uses 'The 2036 Games' without any NIL or trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

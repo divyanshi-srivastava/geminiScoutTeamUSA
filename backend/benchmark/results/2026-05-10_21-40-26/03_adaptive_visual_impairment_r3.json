@@ -1,0 +1,78 @@
+{
+  "persona_id": "03_adaptive_visual_impairment",
+  "persona_label": "Adaptive athlete \u2014 partial visual impairment",
+  "biometrics": {
+    "height_cm": 181,
+    "weight_kg": 83,
+    "birth_year": 1998,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get started, what has been your primary engagement with competitive sport so far in your journey?\nOptions: [Team-based sports | Individual endurance or strength events | I'm just beginning my athletic journey | Recreational or lifestyle fitness focus]"
+    },
+    {
+      "role": "user",
+      "content": "Individual endurance or strength events"
+    },
+    {
+      "role": "narrator",
+      "content": "How would you describe your current training approach? Do you follow a structured program, or do you prefer more spontaneous, performance-led sessions?\nOptions: [Structured program with specific targets | Spontaneous, high-intensity sessions | I focus on consistent base-building | I'm looking to transition to more structure]"
+    },
+    {
+      "role": "user",
+      "content": "Structured program with specific targets"
+    },
+    {
+      "role": "narrator",
+      "content": "With that foundation in place, what is your primary motivation for pursuing your sporting journey further? Are you chasing a specific performance milestone, seeking personal mastery, or perhaps looking to challenge yourself against the best in the field?\nOptions: [Chasing specific performance milestones | Achieving personal mastery | Testing myself against the best in the field | The pursuit of a long-term legacy]"
+    },
+    {
+      "role": "user",
+      "content": "Testing myself against the best in the field"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "Your commitment to a structured training program is the bedrock upon which champions are built, and at 28, you possess the mental maturity required for the relentless focus of marksmanship. Standing at 181.0cm and 83.0kg, your body acts as a perfect, stable tripod, minimizing micro-movements to ensure that when you find your target, the outcome is inevitable. This is a pursuit of pure discipline, where the world fades away until there is only the internal rhythm of your breathing and the silence between heartbeats.\n\nAs you step onto the range at The LA28 Games, you carry the weight of your methodical training and the desire to measure yourself against the world\u2019s most precise athletes. In this environment, your preference for structured targets transforms from a training style into an art form. Every session you have logged in your journey has been a rehearsal for this singular, decisive moment of composure, setting the stage for you to etch your name into the history of high-performance sport."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "The alpine slopes demand more than just physical strength; they demand the total synchronization of power and instinct. At 83.0kg, you possess the ideal mass to command the mountain, providing the biomechanical stability needed to hold an aggressive line at high speeds. Your drive to test yourself against the best finds its ultimate expression here, where the margin between triumph and chaos is measured in fractions of a second and the pressure of the G-force tests the limits of your resolve.\n\nImagine the roar of the crowd at The Milano Cortina 2026 Games as you push off from the starting gate. Your history of individual strength training and structured preparation provides the foundation for the raw, high-stakes intensity required for speed carving. You are not just competing; you are carving a legacy into the ice, utilizing every ounce of your focus to navigate the course with a blend of surgical precision and fearless determination. This is where your ambition meets the ultimate challenge, pushing you to perform at the very zenith of high-performance sport."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The report effectively incorporates the user's biometrics and interview answers to justify the archetypes, but completely fails to integrate the adaptive pathways into the narrative verdicts.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The Edge Carver archetype correctly identifies that 83.0kg provides ideal biomechanical mass for holding aggressive lines in Alpine Skiing."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative directly references the user's focus on structured programs and their explicit desire to test themselves against the best in the field."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "While the JSON lists adaptive pathways like Para-Alpine Skiing, the verdicts entirely ignore them, offering no distinct insight or narrative for the adaptive experience."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions progress logically from general sport background to training style and motivation, offering functionally distinct options that genuinely shape the athletic profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance with correct usage of 'The LA28 Games' and 'The Milano Cortina 2026 Games' and no prohibited terms."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

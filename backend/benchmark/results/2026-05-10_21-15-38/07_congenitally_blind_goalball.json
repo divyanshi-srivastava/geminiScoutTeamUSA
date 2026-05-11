@@ -1,0 +1,85 @@
+{
+  "persona_id": "07_congenitally_blind_goalball",
+  "persona_label": "Congenitally blind \u2014 goalball and tandem cycling",
+  "biometrics": {
+    "height_cm": 165,
+    "weight_kg": 60,
+    "birth_year": 1992,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start us off, how would you describe your current relationship with physical activity or competitive sport?\nOptions: [I'm currently very active and compete regularly. | I'm looking to rediscover my athletic side after a break. | I've always been interested in sport but haven't found the right path yet.]"
+    },
+    {
+      "role": "user",
+      "content": "I'm currently very active and compete regularly."
+    },
+    {
+      "role": "narrator",
+      "content": "To help me understand your physical strengths better, which of these best describes your primary focus in your current competitive journey?\nOptions: [Individual endurance (e.g., running, swimming, cycling) | Strength and power-based activities (e.g., lifting, sprints, throwing) | Dynamic team or tactical sports (e.g., court or field sports)]"
+    },
+    {
+      "role": "user",
+      "content": "Dynamic team or tactical sports (e.g., court or field sports)"
+    },
+    {
+      "role": "narrator",
+      "content": "To help me understand your competitive mindset, what would you say has been the most defining moment or realization in your sporting journey thus far?\nOptions: [A specific competition that really tested my limits | The process of mastering a difficult tactical skill | Developing the discipline required for consistent training | Learning how to push through a major setback]"
+    },
+    {
+      "role": "user",
+      "content": "The process of mastering a difficult tactical skill"
+    },
+    {
+      "role": "narrator",
+      "content": "As you consider your next steps in your high-performance athletic journey, what is the core drive that motivates you to push toward your next level of excellence?\nOptions: [Chasing personal bests and constant self-improvement | The thrill of outsmarting opponents in competitive scenarios | Building a legacy and inspiring those who follow in my footsteps]"
+    },
+    {
+      "role": "user",
+      "content": "The thrill of outsmarting opponents in competitive scenarios"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "Your commitment to mastering the fine details of your sport makes you a formidable presence on the road. At 165cm and 60kg, your build is not just efficient\u2014it is a precision instrument designed for the high-stakes dynamics of the peloton. Your drive to outsmart your opponents turns every race into a high-stakes chess match, a mindset that will be your greatest asset when you step onto the start line at The LA28 Games. You possess the rare combination of steady endurance and the analytical awareness required to dictate the tempo of a race. By leveraging your years of experience, you transform the road into your personal domain, anticipating moves before they unfold and choosing the perfect moment to strike. This is your pathway to a legacy built on intelligence, strategic pacing, and the relentless pursuit of tactical superiority."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's +100 kg)",
+      "scout_verdict": "There is a unique intensity in the way you approach a challenge, viewing every physical encounter as a complex puzzle to be solved. As a Mat Technician, you don't just rely on raw output; you use your compact frame and exceptional leverage to dismantle an opponent's strategy from the inside out. Your success is anchored in the same discipline that has defined your journey thus far\u2014the patient, focused mastery of complex tactical skills. At The LA28 Games, you will be the athlete who brings calm, calculated precision to the pressure-cooker environment of the competition hall. Whether you are finding the perfect angle to gain control or applying force with surgical accuracy, your ability to stay composed under fire makes you a dangerous competitor. Your path is one of grounded mechanical dominance, where the battle is won in the mind long before it is decided on the mat or the platform."
+    }
+  ],
+  "eval_result": {
+    "overall": 4,
+    "summary": "While the narrative incorporates the user's tactical mindset well, assigning a 60kg female athlete to 'Men's +100 kg' Powerlifting and 'Men's Road Race' completely breaks immersion and utility.",
+    "authenticity": {
+      "score": 3,
+      "reasoning": "Although 60kg is a great fit for women's wrestling, recommending 'Men's +100 kg' powerlifting and 'Men's' handcycling for a 60kg female completely shatters the realism of the scouting report."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative effectively weaves the user's stated love for 'mastering difficult tactical skills' and 'outsmarting opponents' into the sport-specific analogies of peloton chess matches and wrestling puzzles."
+    },
+    "distinctness": {
+      "score": 6,
+      "reasoning": "Cycling and Wrestling offer distinct athletic paths, but the adaptive pathways feel tacked on and completely ignore the user's biometric profile."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions offer functionally distinct, meaningful choices that clearly funnel the user toward either an endurance, power, or tactical profile based on their genuine preferences."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean of restricted terms and uses 'The LA28 Games' correctly, though the gender and weight mismatch in the adaptive pathways is a major data flaw."
+    }
+  },
+  "backend_error": null
+}

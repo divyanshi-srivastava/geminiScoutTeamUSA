@@ -1,0 +1,82 @@
+{
+  "persona_id": "11_retired_gymnast_time_travel_1984",
+  "persona_label": "Retired gymnastics coach \u2014 time travel to 1984 LA Games",
+  "biometrics": {
+    "height_cm": 162,
+    "weight_kg": 57,
+    "birth_year": 1958,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To begin, how would you describe the physical essence of your activity over the years? What has been the primary way you've challenged your body?\nOptions: [Sustained endurance and long-distance pacing. | Precision, coordination, and technical mastery. | Explosive movement and raw functional strength.]"
+    },
+    {
+      "role": "user",
+      "content": "Precision, coordination, and technical mastery."
+    },
+    {
+      "role": "narrator",
+      "content": "When you look back at your journey in high-performance sport, where have you most often found your flow state?\nOptions: [Solitary mastery and inward personal refinement. | Tactical team coordination and group synergy. | The intense pressure of a high-stakes competitive arena.]"
+    },
+    {
+      "role": "user",
+      "content": "Solitary mastery and inward personal refinement."
+    },
+    {
+      "role": "narrator",
+      "content": "If you were 26 at The Los Angeles 1984 Games, you would have been competing during a time when high-performance athletics training was defined by pure grit and analog precision rather than today's digital data. What do you imagine was the most vital part of your solitary preparation in that specific era?\nOptions: [Perfecting a singular, repetitive movement until it became absolute second nature. | Building mental fortitude through long hours of isolated, undistracted training sessions. | Customizing your technical equipment to gain a competitive edge in that particular arena.]"
+    },
+    {
+      "role": "user",
+      "content": "Perfecting a singular, repetitive movement until it became absolute second nature."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Women's -67 kg)",
+      "scout_verdict": "Stepping into the arena at The Los Angeles 1984 Games, your 162cm, 57kg frame is not just a collection of measurements; it is a calculated instrument of leverage. You thrive on the mat, where every shift in center of gravity and every subtle rotation is a victory of technique over sheer brute force. At 26, your capacity for solitary refinement allows you to dismantle an opponent by focusing on the minute, precise details that others miss, turning the chaotic environment of the mat into a quiet workspace for technical mastery.\n\nIn your adaptive path as a powerlifter in the -67kg category, this obsession with perfection becomes even more pronounced. This classification focuses on maximal weight capacity through strictly controlled, technical movements. Your ability to treat a heavy lift as a singular, repetitive movement to be mastered allows you to thrive under the immense pressure of the platform. Your frame is perfectly dense for the demands of the bench press, where your meticulous attention to the geometry of the lift ensures that every ounce of your 57kg is translated into explosive, efficient power, demonstrating that technical precision is the ultimate foundation for raw strength."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "While the mat demanded condensed, grounded power, your journey at The Los Angeles 1984 Games finds a contrasting expression of mastery on the open road. Here, the precision you once applied to a singular hold is transformed into the rhythmic, meditative efficiency of the handcycle. You are uniquely suited for the H3 class\u2014a category for athletes with lower-limb impairment who utilize their upper body for propulsion. Your 162cm frame allows for a compact, aerodynamic profile that slices through the wind, enabling you to maintain a consistent, high-velocity output over the grueling distances of the road race.\n\nThis discipline demands the very 'second nature' movement you have cultivated throughout your athletic career. As you lock into the repetitive, fluid cadence of the H3 circuit, the world narrows down to your breathing and the precise motion of your hand cranks. Your 26-year-old vitality is matched by a deep mental fortitude, allowing you to sustain perfect technical form through the fatigue of long-distance competition. You have transitioned from the isolated, static combat of the mat to a rhythmic, dynamic endurance, proving that even in a sport defined by repetitive motion, the true edge lies in the perfection of the smallest technical details."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly tailored and creative scouting report that successfully integrates the user's specific answers and the 1984 era into two distinctly different athletic profiles.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "The 162cm/57kg frame aligns well with lower weight classes in Wrestling and Powerlifting, though Wrestling is slightly at odds with the user's choice of 'solitary mastery' over team or opponent-based combat."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narrative expertly weaves the user's exact interview choices, particularly the focus on 'solitary refinement' and 'perfecting a singular, repetitive movement,' directly into the mechanical requirements of both sports."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two archetypes provide an excellent contrast, pivoting from static, grounded power on the mat to rhythmic, aerodynamic endurance on the open road."
+    },
+    "life_stage_coherence": {
+      "score": 8,
+      "reasoning": "The report effectively captures the Elite Peak stage at age 26, referencing '26-year-old vitality' and the mature 'mental fortitude' required to sustain perfect technical form through fatigue."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions logically narrow the athlete's psychological profile, and the final era-specific question offers meaningfully different approaches to analog preparation."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance; correctly uses 'The Los Angeles 1984 Games' and avoids restricted terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

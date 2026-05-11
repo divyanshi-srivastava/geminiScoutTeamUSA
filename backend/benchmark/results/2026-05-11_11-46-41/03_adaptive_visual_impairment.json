@@ -1,0 +1,86 @@
+{
+  "persona_id": "03_adaptive_visual_impairment",
+  "persona_label": "Adaptive athlete \u2014 partial visual impairment",
+  "biometrics": {
+    "height_cm": 181,
+    "weight_kg": 83,
+    "birth_year": 1998,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you best describe the foundation of your sporting journey to date?\nOptions: [Foundational team sports: Focused on strategy, collaboration, and high-intensity movement. | Individual endurance focus: Built on steady output, personal pacing, and long-range consistency. | Power and technique: Centered on explosive movements, precision, and mastery of complex mechanics.]"
+    },
+    {
+      "role": "user",
+      "content": "Individual endurance focus: Built on steady output, personal pacing, and long-range consistency."
+    },
+    {
+      "role": "narrator",
+      "content": "When you engage in your most challenging endurance sessions, what type of environment allows you to reach your peak state of flow?\nOptions: [Rugged, unpredictable terrain: Focusing on terrain adaptation and raw mental grit. | Controlled, rhythmic environments: Prioritizing consistent, steady output and technical efficiency. | Extreme or high-altitude conditions: Seeking the physiological strain of environmental stressors to test your limits.]"
+    },
+    {
+      "role": "user",
+      "content": "Controlled, rhythmic environments: Prioritizing consistent, steady output and technical efficiency."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking toward your long-term evolution in high-performance athletics, what is the primary objective that fuels your commitment to your sporting journey?\nOptions: [Chasing absolute speed and hitting aggressive, quantifiable performance benchmarks. | Cultivating long-form mental fortitude and the capacity to sustain focus under fatigue. | Refining total body mechanical efficiency and the pursuit of perfect, fluid movement patterns.]"
+    },
+    {
+      "role": "user",
+      "content": "Refining total body mechanical efficiency and the pursuit of perfect, fluid movement patterns."
+    },
+    {
+      "role": "narrator",
+      "content": "With this deep understanding of your focus on rhythmic efficiency and technical mastery, we have established a clear picture of your profile. I am ready to finalize your pathway."
+    },
+    {
+      "role": "user",
+      "content": "I want a pathway that leverages my rowing background and core strength while accounting for my limited depth perception in my right eye."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 9,
+      "matched_profile_name": "Boat Run",
+      "pathway_standing": "Rowing",
+      "pathway_adaptive": "Adaptive Rowing (e.g., Men's Single Scull ASM1x)",
+      "scout_verdict": "Your 181cm stature provides the perfect foundation for the leverage required in a single scull, turning your physical presence into an instrument of kinetic efficiency. Your preference for controlled environments and rhythmic output finds its ultimate expression on the water, where the repetitive cycle of the stroke becomes a meditative focus. By prioritizing technical mastery, you have cultivated an internal clock that does not rely on visual depth, but on the precise, tactile feedback of every oar catch and recovery.\n\nIn the context of the ASM1x classification\u2014reserved for athletes who use their trunk and arms to navigate the shell\u2014your profile shines. The classification recognizes the unique physiological demands placed on your core, allowing you to compensate for your limited depth perception by leaning into the rhythmic, vibration-sensitive nature of the boat. As you prepare for The Brisbane 2032 Games, your journey is one of transforming the shell into a seamless extension of your body, mastering the water through sheer, steady-state discipline."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "pathway_standing": "Cycling / Triathlon",
+      "scout_verdict": "Where rowing is about fluid, synchronized recovery, your path as a Road Machine is about the relentless, grinding power of the ascent. This archetype plays to your secondary dimension: the capacity for sustained endurance in high-load, core-centric environments. Your ability to maintain focus under fatigue is your greatest asset here, allowing you to hold a high-cadence power output that feels less like a struggle and more like a perfectly tuned engine.\n\nThe H3 handcycling classification, designed for athletes with significant impairment in the lower limbs, highlights your need for absolute core engagement and upper-body torque. Because your right eye\u2019s limited depth perception can complicate the rapid visual shifts of a peloton, the H3 recumbent geometry provides a stable, low-center-of-gravity platform that allows you to dominate the road with controlled, predictable mechanics. By channeling your endurance foundation into this discipline for The Brisbane 2032 Games, you move away from the fluid water and into the raw, tactical grit of the tarmac, where your ability to pace yourself will redefine your legacy."
+    }
+  ],
+  "eval_result": {
+    "overall": 9,
+    "summary": "An exceptional scouting report that seamlessly integrates the user's specific physical traits and self-reported visual impairment into two highly distinct, realistic pathways.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "The 181cm, 83kg profile is a highly plausible fit for both upper-body driven adaptive rowing and H3 handcycling, aligning perfectly with the user's focus on steady output and mechanical efficiency."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts directly address the user's custom input, cleverly explaining how rowing uses tactile feedback to bypass depth perception issues and how H3 handcycling provides a stable geometry."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The two pathways offer a superb contrast between the fluid, synchronized recovery of water sports and the grinding, tactical grit of tarmac racing."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asked progressively specific questions with genuinely distinct forks, separating rugged terrain from controlled rhythmic environments to logically guide the athlete's profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance with correct usage of 'The Brisbane 2032 Games' and no prohibited terms."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

@@ -1,0 +1,82 @@
+{
+  "persona_id": "11_retired_gymnast_time_travel_1984",
+  "persona_label": "Retired gymnastics coach \u2014 time travel to 1984 LA Games",
+  "biometrics": {
+    "height_cm": 162,
+    "weight_kg": 57,
+    "birth_year": 1958,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To begin, how would you describe your historical relationship with physical activity and competitive sport?\nOptions: [I have been a dedicated athlete, consistently training and competing throughout my life. | I have always gravitated toward individual challenges and personal mastery over organized team settings. | My interest in high-performance athletics is a recent passion I am now eager to explore more deeply.]"
+    },
+    {
+      "role": "user",
+      "content": "I have been a dedicated athlete, consistently training and competing throughout my life."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back at the many years you have spent in the arena, what has been the primary engine driving your sporting journey?\nOptions: [The pursuit of raw intensity and explosive physical performance. | The cultivation of endurance, rhythm, and long-term consistency. | The refinement of technical precision, form, and tactical mastery.]"
+    },
+    {
+      "role": "user",
+      "content": "The refinement of technical precision, form, and tactical mastery."
+    },
+    {
+      "role": "narrator",
+      "content": "When you look back at that specific moment in your journey\u2014standing at the height of your capability at The Los Angeles 1984 Games\u2014what was the primary mental focus that allowed your technical discipline to hold firm under the weight of such high-performance competition?\nOptions: [Trusting my refined, muscle-memory-driven reflexes to execute at maximum speed. | Maintaining a singular, immovable focus on procedural discipline and form. | Strategically adapting my technical approach in real-time based on the nuances of the competition.]"
+    },
+    {
+      "role": "user",
+      "content": "Maintaining a singular, immovable focus on procedural discipline and form."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Women's FITA Round Open)",
+      "scout_verdict": "Standing at the peak of your career during The Los Angeles 1984 Games, your 162cm, 57kg frame became a vessel for absolute stillness. Your lifelong commitment to technical precision found its ultimate expression in the marksmanship range, where the noise of the world faded into the singular, rhythmic motion of your breathing. By age 26, you had mastered the art of the 'immovable focus,' turning the psychological weight of high-performance competition into the fuel for your tactical calm.\n\nIn the adaptive realm, this translates to the Women's FITA Round Open, a classification category for athletes with physical impairments who require a precise, balanced platform to achieve consistent release mechanics. Your technical expertise allows you to bridge the gap between human and equipment, using the archery bow as an extension of your own skeletal alignment. Here, the precision you cultivated as a dedicated athlete transforms into a meditative art form, where your mastery of form becomes the differentiator between a good shot and a perfect one, ensuring you remain a constant force regardless of the pressure within the arena."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "While your precision made you a master of the static, your underlying potential at 26 was built for the raw velocity of The Los Angeles 1984 Games. You were an athlete who viewed every turn as a geometric problem to be solved at speed. Your ability to maintain procedural discipline meant that when you transitioned into high-velocity disciplines, you didn't just move fast\u2014you carved precise, efficient lines through every gate, trusting your tactical judgment to guide you through the chaos of descent.\n\nThis physical intelligence finds its home in the LW12 classification for Para-Alpine skiing, which consists of sit-ski athletes with lower-limb impairments. Within this discipline, your form-driven approach is critical; the sit-ski becomes a high-performance machine that relies on your core, outrigger control, and the exactness of your tilt. By applying your mature technical discipline to the physics of aerodynamics and edge friction, you transform the high-velocity environment into a tactical theater. At 26, your capacity to synthesize split-second spatial judgment with years of disciplined physical habit makes you an elite force on the slope, where the arc of a turn is as much a display of tactical brilliance as it is a feat of raw power."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "The report features excellent personalization and life stage coherence, but suffers from a notable sport-to-event mismatch by recommending Alpine Skiing for the Los Angeles 1984 Summer Games.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While the biometrics and focus on precision fit Marksmanship well, the second archetype recommends Alpine Skiing for the Los Angeles 1984 Games, an incongruous pairing for a Summer Games."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts effectively weave in the user's exact height, weight, and specific interview answers like 'immovable focus' and 'procedural discipline'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The standing and adaptive pathways are well-differentiated, with the adaptive narratives offering specific technical insights like sit-ski aerodynamics rather than just appending 'adaptive'."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "At age 26 (Elite Peak), phrases like 'peak of your career' and 'mature technical discipline' perfectly capture an established athlete in their prime without resorting to rookie or veteran tropes."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The narrator's questions progress logically from general background to specific mental focus, offering meaningfully distinct options that successfully drill down into the athlete's psychological profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean pass; 'The Los Angeles 1984 Games' follows the required naming convention and no NIL or scoring data violations are present."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

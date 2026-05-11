@@ -1,0 +1,214 @@
+{
+  "persona_id": "05_youth_time_travel_2032",
+  "persona_label": "Youth gymnast \u2014 time travel to 2032",
+  "biometrics": {
+    "height_cm": 164,
+    "weight_kg": 55,
+    "birth_year": 2010,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To help me understand how you approach movement, how would you describe your primary focus when you are training or physically active?\nOptions: [Explosive power and speed: Prioritizing quick bursts, raw strength, and agility. | Sustained endurance and pacing: Building a deep aerobic base for long-distance or high-stamina efforts. | Precision and technical mastery: Concentrating on the control, balance, and intricate mechanics of a movement.]"
+    },
+    {
+      "role": "user",
+      "content": "Precision and technical mastery: Concentrating on the control, balance, and intricate mechanics of a movement."
+    },
+    {
+      "role": "narrator",
+      "content": "How have you typically approached structured training or coaching as you have refined these technical skills?\nOptions: [Guided academy development: I've thrived in formal club settings with dedicated, long-term coaching. | Independent technical refinement: I prefer to analyze and master movements largely through my own solo practice. | Peer-driven collaborative training: I learn best through shared drills, group feedback, and constant interaction with training partners.]"
+    },
+    {
+      "role": "user",
+      "content": "Guided academy development: I've thrived in formal club settings with dedicated, long-term coaching."
+    },
+    {
+      "role": "narrator",
+      "content": "As you continue your sporting journey, how do you prefer to handle the pressure of performance when the stakes are at their highest?\nOptions: [Process-focused: I thrive on the internal satisfaction of perfecting my execution, regardless of the scoreboard. | Competition-driven: I find my greatest motivation in testing my limits against others and chasing the podium. | Strategic-adaptable: I view high-performance athletics as a tactical game, where outthinking an opponent is as vital as my own technical output.]"
+    },
+    {
+      "role": "user",
+      "content": "Process-focused: I thrive on the internal satisfaction of perfecting my execution, regardless of the scoreboard."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "At 16, standing on the threshold of your potential, your 164cm, 55kg frame is an ideal instrument for the demands of high-speed technical disciplines. You have a natural affinity for the process-focused pursuit of perfection, where the rhythm of a carved turn becomes a form of kinetic meditation. Your body is built for the mechanical efficiency required to find the fastest line, translating your internal focus into fluid, rapid execution. For you, the thrill is not in the podium, but in the micro-adjustments that turn a difficult descent into a masterpiece of technical control.\n\nIn the adaptive pathway, your journey into this sport utilizes the LW12 classification, which is designated for athletes who compete in a sit-ski due to lower-limb impairments. Here, your mastery shifts to the unique relationship between your core stability and the ski\u2019s edge. It requires a specialized command of balance, transforming your technical focus into an intimate dialogue with the mountain. As you prepare for The Milan 2026 Games, this pathway rewards the structured development you have thrived in, demanding an analytical mind capable of mastering the mountain\u2019s complex, high-velocity geometry."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Women's Archery FITA Round Open)",
+      "scout_verdict": "While the world of speed relies on reactivity, your path in Marksmanship reveals a deeper, more profound strength: the power of stillness. Your process-focused mindset finds a perfect home in a discipline where the heartbeat is your greatest variable and your own breath is the only obstacle. At 16, you possess the rare, methodical patience required to dissect every mechanical detail of your form, valuing the quiet, repetitive refinement of your technique over the noise of external competition.\n\nYour adaptive pathway in Archery, categorized under the FITA Round Open classification, welcomes athletes who compete based on functional ability, focusing on the refined harmony between mind, steady intent, and the final release of the bowstring. This classification demands a mastery of consistency that contrasts sharply with the explosive demands of other high-performance athletics. It is an exploration of internal architecture; where others seek to outrun their opponents, you seek to outthink your own nervous system. As you look toward The Milan 2026 Games, the discipline you've honed in academy settings becomes the bedrock of your performance, allowing you to build an unbreakable internal framework for success, shot by deliberate shot."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly personalized and well-reasoned scouting report that accurately translates the user's psychological and developmental preferences into plausible athletic pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "A height of 164cm and weight of 55kg is a very plausible build for a 16-year-old female entering precision sports like Marksmanship or technical disciplines like Alpine Skiing."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts expertly weave the user's specific interview choices\u2014such as her preference for 'process-focused' execution and 'academy settings'\u2014into the fabric of the athletic analysis."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways offer genuine mechanical differences, specifically highlighting the shift to core stability in the LW12 sit-ski classification compared to standing skiing."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator's questions effectively narrow down the athlete's psychological profile, offering genuinely distinct options for training environment and competitive mindset."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance with no violations; Games references follow the required format."
+    }
+  },
+  "backend_error": null,
+  "time_travel_results": [
+    {
+      "target_game_year": 2032,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "How would you describe the landscape of your life during this peak phase\u2014what does the balance look like between your commitment to high-performance athletics and the other demands of your world at that time?\nOptions: [Dedicated focus: My life is almost entirely centered on this athletic pathway. | Integrated pursuit: I am managing professional or academic goals alongside my intensive training. | Global transition: I\u2019ve relocated to a specialist training hub to fully commit to my craft.]"
+        },
+        {
+          "role": "user",
+          "content": "Global transition: I\u2019ve relocated to a specialist training hub to fully commit to my craft."
+        },
+        {
+          "role": "narrator",
+          "content": "With that level of intensity in your new training environment, how has your body been responding to the workload\u2014are you finding that your physical capacity is evolving alongside your technical goals, or have you had to focus heavily on recovery to sustain your output?\nOptions: [Constant upward adaptation: My body has responded well to the increased volume, allowing for continuous growth in both skill and physical capacity. | Strategic recovery management: I\u2019ve had to be highly disciplined about integrating recovery periods to manage the high-performance load. | Navigation of physical constraints: I am actively working around specific, recurring physical limitations to ensure I can continue refining my technique.]"
+        },
+        {
+          "role": "user",
+          "content": "Constant upward adaptation: My body has responded well to the increased volume, allowing for continuous growth in both skill and physical capacity."
+        }
+      ],
+      "era_context_summary": null,
+      "scouting_result": [
+        {
+          "matched_profile_id": 1,
+          "matched_profile_name": "Air Sculptor",
+          "pathway_standing": "Artistic Gymnastics",
+          "pathway_adaptive": "Adaptive Swimming (e.g., Women's 100 m Freestyle S6)",
+          "scout_verdict": "At 164cm and 55kg, your physical architecture is perfectly calibrated for the gravity-defying requirements of Artistic Gymnastics. Your commitment to academy-style development has cultivated a level of technical precision that allows you to treat every rotation and landing as an exercise in pure form. By the time you arrive at The Brisbane 2032 Games, your ability to focus on the internal process\u2014rather than the roar of the crowd\u2014will be your greatest asset.\n\nIn this discipline, your focus on intricate mechanics transforms your training into a form of high-performance artistry. You have mastered the balance between explosive capability and the micro-adjustments required for perfect execution. For you, the scoreboard is merely a byproduct of the technical mastery you strive for every day in the gym."
+        },
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+          "scout_verdict": "When you pivot toward the H3 handcycling classification, your athletic identity shifts from vertical grace to horizontal, mechanical precision. The H3 category is designed for athletes with lower-limb impairments who compete using a handcycle, requiring immense core strength and a highly refined aerodynamic profile. Your history of disciplined, data-driven training provides the exact foundation needed to master the gear ratios and tactical pacing of the road.\n\nWhile your standing profile in cycling emphasizes long-duration endurance, this adaptive pathway highlights your ability to translate your meticulous technical focus into a rhythmic, power-based endurance discipline. At The Brisbane 2032 Games, you will be defined by your capacity to hold a punishing pace while maintaining absolute focus on the mechanics of your hand-driven cycle, ensuring that every watt of energy is transferred with maximum efficiency."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A strong, highly personalized scouting report that correctly leverages the user's interview responses and provides two distinctly different athletic pathways.",
+        "authenticity": {
+          "score": 7,
+          "reasoning": "While 164cm and 55kg is slightly tall for typical elite Artistic Gymnastics, the precision-focused narrative fits the 'Air Sculptor' archetype well."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The report directly incorporates the user's specific preferences for 'academy-style development' and focusing on the 'internal process' over the scoreboard."
+        },
+        "distinctness": {
+          "score": 9,
+          "reasoning": "The transition from the vertical, gravity-defying Air Sculptor to the horizontal, endurance-based Road Machine provides excellent contrast between the two pathways."
+        },
+        "life_stage_coherence": {
+          "score": 8,
+          "reasoning": "The narrative appropriately positions the 22-year-old at The Brisbane 2032 Games as having 'mastered the balance', which perfectly fits the Elite Peak life stage."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions logically progress from movement style to coaching preference and competitive mindset, offering genuinely distinct options that shape the profile."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean execution with correct 'The Brisbane 2032 Games' formatting and no forbidden terminology."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "target_game_year": 2044,
+      "era_interview_log": [
+        {
+          "role": "narrator",
+          "content": "At 34, how are you currently balancing your professional or personal life with the rigorous demands of your top-tier athletic pathway?\nOptions: [Dedicated focus: I have structured my life and career specifically to prioritize my training and recovery above all else. | Dual-pathway: I am successfully managing a professional career or external project alongside my competitive sporting commitments. | Life-integrated: My personal life and family are the primary anchors of my routine, with my training sessions integrated into a broader, holistic lifestyle.]"
+        },
+        {
+          "role": "user",
+          "content": "Dedicated focus: I have structured my life and career specifically to prioritize my training and recovery above all else."
+        },
+        {
+          "role": "narrator",
+          "content": "As you reflect on your evolution, how has your relationship with your physical body changed as you transitioned from your younger years into this veteran phase of your top-tier athletic pathway?\nOptions: [Longevity and preservation: My focus has shifted heavily toward injury prevention, recovery optimization, and managing my load to ensure peak readiness. | Refined intensity: I have learned to push with more precision than ever, using my experience to find the exact threshold where I get the most 'return' from my effort. | Adaptive recalibration: My training has evolved to work with the natural changes in my body, finding new ways to maintain that technical mastery I value so much.]"
+        },
+        {
+          "role": "user",
+          "content": "Adaptive recalibration: My training has evolved to work with the natural changes in my body, finding new ways to maintain that technical mastery I value so much."
+        }
+      ],
+      "era_context_summary": null,
+      "scouting_result": [
+        {
+          "matched_profile_id": 1,
+          "matched_profile_name": "Air Sculptor",
+          "pathway_standing": "Artistic Gymnastics",
+          "pathway_adaptive": "Adaptive Swimming (e.g., Women's 100 m Freestyle S6)",
+          "scout_verdict": "As you arrive at The Istanbul 2044 Games, your 34 years serve as a testament to your depth of experience. Where others rely on the reckless speed of youth, your commitment to process and precision allows you to navigate the high-stakes environment of high-performance athletics with an analytical, calm focus. Your lean frame is built for the nuanced spatial awareness required to rotate and balance, turning every performance into a deliberate work of art that feels like a quiet triumph of personal mastery. You have learned to channel your years of training into a singular, graceful output that defines your legacy.\n\nIn the adaptive pathway, you find a different expression of that same technical soul within the S6 classification. This category encompasses athletes who rely on extreme postural control to navigate the water. By focusing on the essential mechanics of the stroke, S6 swimming demands the exact same rigor and intricate focus that has defined your journey. Here, you are not just moving; you are sculpting the water, proving that brilliance is found in the elegance of execution and the mastery of your own physical connection to the environment, regardless of the unique constraints presented."
+        },
+        {
+          "matched_profile_id": 2,
+          "matched_profile_name": "Long Haul",
+          "pathway_standing": "Distance Running",
+          "pathway_adaptive": "Wheelchair Racing (e.g., Women's Marathon T54)",
+          "scout_verdict": "The Long Haul archetype aligns your trajectory toward the rhythmic, meditative endurance that complements your academy-honed discipline. In this form of high-performance athletics, the focus shifts away from explosive, short-lived bursts and toward the steady, sustained power of a veteran. Your training, built on years of rigorous, guided development, finds a natural home in the aerobic capacity of the marathoner. Your ability to outthink the distance and manage your pacing becomes the key to outlasting the field at The Istanbul 2044 Games, transforming your endurance into a tactical advantage that keeps you steady as the competition fatigues.\n\nThis endurance-based philosophy finds a powerful, contrasting outlet in T54 racing. This classification represents athletes who compete in highly engineered racing chairs, requiring a complete recalibration of your athletic rhythm. By focusing on the relentless, repetitive power of the upper body, the T54 discipline demands an intense synchronization of torso and arm movement. Just as in running, you must harness your capacity for structured, long-term training to master this machine. It is a pursuit of total harmony between athlete and equipment, forcing you to utilize your aerobic base to maintain speed and efficiency over the grueling marathon distance."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A highly cohesive and personalized scouting report that excellently integrates the user's age, biometrics, and psychological preferences into compelling athletic pathways.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "The 164cm/55kg frame and stated preference for technical precision perfectly match the Air Sculptor profile and align plausibly with the endurance demands of the Long Haul."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The verdicts effectively weave in the user's specific interview choices, explicitly referencing their 'process and precision' and 'academy-honed discipline'."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The adaptive pathways (S6 swimming and T54 wheelchair racing) offer clear, biomechanically distinct challenges that go well beyond simply modifying the standing sports."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "The narrative beautifully captures the Veteran stage for a 34-year-old, explicitly praising their 'depth of experience' over the 'reckless speed of youth' and focusing on legacy."
+        },
+        "interview_quality": {
+          "score": 7,
+          "reasoning": "The questions progress logically from physical movement style to training environment and pressure management, offering meaningfully distinct options that shape the narrative."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean; correctly uses 'The Istanbul 2044 Games' and maintains respectful, deeply detailed adaptive descriptions without any terminology violations."
+        }
+      },
+      "backend_error": null
+    }
+  ],
+  "round": 1
+}

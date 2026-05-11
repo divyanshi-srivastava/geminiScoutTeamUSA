@@ -1,0 +1,78 @@
+{
+  "persona_id": "14_deaf_sprinter",
+  "persona_label": "Profoundly deaf \u2014 competitive 400m sprinter",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 76,
+    "birth_year": 2001,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start understanding your unique athletic identity, how would you describe the core drive behind your physical activity so far?\nOptions: [Explosive, high-intensity movements that require split-second power. | Endurance-based training that demands deep focus and long-term stamina. | Technical precision and flow, mastering complex and intricate physical coordination.]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive, high-intensity movements that require split-second power."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the middle of a high-intensity session, where do you find your focus is best channeled?\nOptions: [A controlled, indoor environment where every variable is precisely accounted for. | The unpredictable outdoors, where you adapt to the elements and terrain in real-time. | A team-based setting, where collective rhythm and communication dictate your intensity.]"
+    },
+    {
+      "role": "user",
+      "content": "A controlled, indoor environment where every variable is precisely accounted for."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking at your current lifestyle, how would you define your engagement with your sporting journey?\nOptions: [Total immersion: I structure my entire lifestyle around maximizing physical performance and competitive outcomes. | Dedicated progression: I pursue excellence through specific, high-intensity blocks of training integrated into my life. | Technical refinement: I prioritize the mastery of specific movements and mechanics, focusing on the quality and precision of each session.]"
+    },
+    {
+      "role": "user",
+      "content": "Total immersion: I structure my entire lifestyle around maximizing physical performance and competitive outcomes."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "At 178cm and 76kg, your body is engineered for the violent, instantaneous release of energy that defines the track. Your commitment to total immersion allows you to strip away all distractions, creating the singular, high-intensity focus required for a perfect block exit. At 25, you are in your prime, possessing the physical maturity to convert pure power into the explosive acceleration that separates the field in the final seconds of a race.\n\nIn the ambulatory track disciplines, your journey is defined by harnessing that raw explosive drive while managing the technical complexities of competing as an athlete with a lower-limb impairment. Here, the track is your laboratory, and your specialized equipment becomes a seamless extension of your physique. As you prepare for the tension of a race at The LA28 Games, your ability to control every variable of your start ensures that when the gun fires, you are launching with precision."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "Your capacity for profound stillness is remarkable. You thrive in the controlled, indoor environments where you can account for every variable, moving from the intensity of the track to a realm where success is measured by the silence between heartbeats. Your discipline\u2014the same rigor you bring to your daily training\u2014is repurposed here into an absolute, unwavering focus that turns a complex technical challenge into a display of pure poise and mental clarity.\n\nIn the adaptive archery pathway, you find a different form of high-performance sport. This discipline demands that you channel your energy into the micro-coordination required to hit a target at distance. It acts as the perfect mental counter-balance to your other training, requiring the same level of total immersion but calling upon your ability to command your own nervous system. At this level, standing on the line at The Brisbane 2032 Games, you prove that mastery is about the precision with which you hold your focus."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong and highly personalized scouting report that effectively utilizes the user's interview responses to craft two distinct athletic pathways.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "The 'Block Starter' archetype perfectly matches a 178cm/76kg build and the user's preference for explosive movements, though the secondary 'Steady Hand' profile has to stretch a bit to reconcile the user's explosive drive with a static precision sport."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narrative seamlessly integrates the user's choices, explicitly referencing their desire for 'total immersion' and preference for 'controlled, indoor environments' where every variable is accounted for."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The pathways are highly distinct, contrasting the violent physical explosion of Ambulatory Sprints with the profound stillness and micro-coordination of Adaptive Archery."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions logically filter the athlete's profile by progressing from foundational energy systems to environmental preferences and finally lifestyle commitment, offering genuinely distinct forks."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Perfectly adheres to naming conventions with references to 'The LA28 Games' and 'The Brisbane 2032 Games' and contains no trademark or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

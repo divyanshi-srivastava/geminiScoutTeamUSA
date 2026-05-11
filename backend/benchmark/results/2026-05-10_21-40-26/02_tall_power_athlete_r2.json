@@ -1,0 +1,86 @@
+{
+  "persona_id": "02_tall_power_athlete",
+  "persona_label": "Tall male power athlete",
+  "biometrics": {
+    "height_cm": 196,
+    "weight_kg": 103,
+    "birth_year": 2002,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our discussion on your sporting journey, could you tell me a bit about your history? What kind of athletic activities or competitive environments have defined your life so far?\nOptions: [Team sports (e.g., basketball, rugby, field sports) | Individual endurance or technical sports (e.g., rowing, swimming, combat sports) | Strength and power disciplines (e.g., weightlifting, track & field) | I am relatively new to structured competitive sport]"
+    },
+    {
+      "role": "user",
+      "content": "Team sports (e.g., basketball, rugby, field sports)"
+    },
+    {
+      "role": "narrator",
+      "content": "Since you\u2019ve spent time in team environments, how would you describe your role or playing style when the pressure is at its highest?\nOptions: [The leader and strategist calling the plays | The reliable specialist executing specific tasks | The powerhouse driving the intensity and physical play | The adaptable utility player covering multiple positions]"
+    },
+    {
+      "role": "user",
+      "content": "The powerhouse driving the intensity and physical play"
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward the next chapter of your athletic journey, what is the primary goal fueling your interest in taking your physical potential to the next level?\nOptions: [Pursuing a path toward elite professional competition | Testing my limits to see how far my natural attributes can take me | Mastering the tactical and technical side of a new high-performance discipline | Joining a high-performance squad to contribute to collective success]"
+    },
+    {
+      "role": "user",
+      "content": "Joining a high-performance squad to contribute to collective success"
+    },
+    {
+      "role": "narrator",
+      "content": "To finalize the picture of your athletic footprint, how would you describe your current training structure: is it a rigid, daily discipline, or are you in the process of building that foundation to support a high-performance workload?\nOptions: [I follow a rigorous, daily structured regimen | I train consistently but with room to formalize | I am building my structure from the ground up]"
+    },
+    {
+      "role": "user",
+      "content": "I train consistently but with room to formalize"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "scout_verdict": "At 196cm and 103kg, you possess a formidable presence on the court. Your history in team sports has clearly refined your instinct for the game\u2014you effectively manage spatial dynamics and anchor tactical plays, making you a vital engine that drives a team\u2019s success.\n\nAs you look ahead to the challenge of The LA28 Games, your trajectory aligns well with the demands of high-level competition. At 24, you are approaching a prime stage for development. Success in these pathways is not just about individual statistics; it is about the relentless, daily commitment to collective victory and the chemistry required to support a squad at the highest levels of competition."
+    },
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Women's Shot Put C3)",
+      "scout_verdict": "Power is defined by control, alignment, and the explosive release of energy. Your 103kg frame provides a stable, anchored foundation necessary to generate the torque required for these disciplines. You have the physical potential to turn raw intensity into a precise and powerful performance.\n\nImagine yourself competing at The LA28 Games. You have the physical foundation to handle intense pressure and the focus to refine your technique. While you have previously thrived in team environments, this transition allows you to channel that same powerhouse energy into the technical mastery required for high-performance field athletics."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The archetypes generally fit the user's large physical frame and team-oriented 'powerhouse' answers, but a glaring gender mismatch in the second adaptive pathway undermines the realism of the report.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "While 196cm and 103kg perfectly suits a basketball forward or a discus thrower, suggesting 'Women's Shot Put C3' for a male athlete severely breaks immersion."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts expertly weave in the user's specific interview choices, referencing their 'powerhouse energy' and their desire to contribute to 'collective victory'."
+    },
+    "distinctness": {
+      "score": 6,
+      "reasoning": "Basketball and Field Athletics offer completely different athletic trajectories, though the adaptive pathways are mostly direct 1:1 translations rather than offering unique angles."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asks strong, progressively narrowing questions, particularly in the second turn where options like 'leader and strategist' vs 'powerhouse driving the intensity' meaningfully separate athlete psychologies."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean passing with correct 'The LA28 Games' formatting and no NIL or trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

@@ -1,0 +1,78 @@
+{
+  "persona_id": "14_deaf_sprinter",
+  "persona_label": "Profoundly deaf \u2014 competitive 400m sprinter",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 76,
+    "birth_year": 2001,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, how would you describe your current experience with physical training and competitive activity?\nOptions: [I am a seasoned competitor in a specific sport with years of technical training. | I am a dedicated fitness enthusiast with experience across multiple athletic modalities. | I am just beginning to explore my potential and looking for a pathway into high-performance sport.]"
+    },
+    {
+      "role": "user",
+      "content": "I am a seasoned competitor in a specific sport with years of technical training."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward your next level of achievement in high-performance sport, what is the primary quality that defines your training and your competitive edge?\nOptions: [Explosive power and rapid, high-intensity output. | Relentless, long-distance cardiovascular endurance and pacing. | Meticulous technical precision and tactical decision-making.]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and rapid, high-intensity output."
+    },
+    {
+      "role": "narrator",
+      "content": "As you move into this next phase of your sporting journey, do you find that your competitive focus thrives best in the collective intensity of a team, or in the solitary, self-reliant pursuit of individual mastery?\nOptions: [The collective energy and shared strategy of a team-based discipline. | The singular, focused pursuit of individual technical excellence. | The collaborative but distinct responsibility of a partner-based competition.]"
+    },
+    {
+      "role": "user",
+      "content": "The singular, focused pursuit of individual technical excellence."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "At 178cm and 76kg, you possess the ideal physical architecture for the explosive power that defines the Block Starter archetype. Your history as a seasoned competitor demonstrates a deep commitment to the technical demands of high-intensity output, making you a natural fit for the track. As you stand in the blocks, waiting for the signal, your entire athletic identity converges on that singular moment of explosive release\u2014a trait perfectly suited to the 100m and 200m disciplines where every millisecond of force production counts.\n\nIn the adaptive pathway, your classification as a T44 athlete\u2014reserved for those with lower-limb impairment who compete in a standing position\u2014underscores your unique physical resilience. Rather than being a limitation, your anatomy in this category acts as a fulcrum for your explosive potential. You have mastered the mechanics of energy transfer through your lower-limb prosthetics, turning what was once a technical challenge into a high-performance advantage. You are not just running; you are calculating the physics of each stride to ensure maximum ground reaction force, proving that your focus on individual excellence remains unmatched at The LA28 Games."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "While your base is built on explosive force, your preference for individual mastery finds a new, demanding outlet in the Edge Carver archetype. Here, the raw power you've cultivated is redirected toward the precision required to hold a high-velocity line. In Alpine disciplines, success isn't just about how hard you push, but how perfectly you distribute your weight through a turn. Your background as a technical specialist allows you to thrive in the cold, calculated environment of a downhill course, where the slope demands absolute, unwavering focus.\n\nYour adaptive pathway, specifically the LW12 classification for sit-skiers with lower-limb impairment, transforms your sporting journey from one of explosive rhythm to one of extreme technical coordination. In this discipline, your upper body becomes the engine of your agility, requiring a different kind of core stabilization and sensory precision as you navigate the gates. This path challenges your desire for self-reliance in a high-stakes environment where your body must become one with the equipment. It is a profound shift from the track to the mountain, testing your ability to adapt your explosive background into the rhythmic, graceful, and highly tactical navigation required for success at The Brisbane 2032 Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A solid, compliant scouting report that effectively utilizes the user's biometrics and interview choices to create plausible athletic narratives.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "A height of 178cm and weight of 76kg provides a powerful, compact frame that is highly realistic for both sprinting (Block Starter) and alpine disciplines (Edge Carver)."
+    },
+    "personalization": {
+      "score": 7,
+      "reasoning": "The verdicts directly weave in the user's specific selections, such as being a 'seasoned competitor' and favoring 'individual mastery' and 'explosive force'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways are highly distinct, specifically detailing the mechanics of T44 lower-limb prosthetics and the core stabilization required for LW12 sit-skiing."
+    },
+    "interview_quality": {
+      "score": 5,
+      "reasoning": "The questions successfully narrow down the sport family, but rely on fairly generic, direct-mapping options rather than probing deeper athletic nuances."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass with correct usage of 'The LA28 Games' and 'The Brisbane 2032 Games', and no NIL or trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

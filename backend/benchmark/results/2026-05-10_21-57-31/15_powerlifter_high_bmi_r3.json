@@ -1,0 +1,86 @@
+{
+  "persona_id": "15_powerlifter_high_bmi",
+  "persona_label": "Competitive powerlifter \u2014 high BMI, elite strength",
+  "biometrics": {
+    "height_cm": 182,
+    "weight_kg": 142,
+    "birth_year": 1991,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "When you imagine yourself in the heat of competition, what is the primary quality that defines your performance?\nOptions: [Explosive, raw power and immediate force | Sustained endurance and calculated pacing | Technical precision and steady, methodical control]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive, raw power and immediate force"
+    },
+    {
+      "role": "narrator",
+      "content": "In your pursuit of that peak performance, where do you find your focus is best directed?\nOptions: [The intense, collaborative energy of a team environment | The singular, disciplined focus of individual strength training | The dynamic, rapid-fire environment of reactive, tactical drills]"
+    },
+    {
+      "role": "user",
+      "content": "The singular, disciplined focus of individual strength training"
+    },
+    {
+      "role": "narrator",
+      "content": "When you visualize yourself in a high-performance sport environment, what is the core element of the challenge that draws you in?\nOptions: [The raw, visceral display of strength and explosive capability | The scientific, hyper-focused refinement of physical performance | The mastery of complex, high-stakes tactical movements]"
+    },
+    {
+      "role": "user",
+      "content": "The raw, visceral display of strength and explosive capability"
+    },
+    {
+      "role": "narrator",
+      "content": "With your profile now clearly defined, we have all the information required to chart your potential path and visualize your impact on the world stage."
+    },
+    {
+      "role": "user",
+      "content": "Just make sure your algorithm doesn't try to put me on a treadmill once it sees my BMI."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+      "scout_verdict": "At 182.0cm and 142.0kg, you are built not for the rhythmic repetition of a treadmill, but for the singular, violent release of energy. Your path to The Los Angeles 2028 Games is defined by the heavy iron in your hand and the quiet, crushing discipline of the weight room. While others focus on aerobic capacity, your legacy is forged in the explosive torque generated from a grounded, immovable base.\n\nAt 35, you possess the seasoned composure that younger competitors lack. In the circle, you aren't just throwing; you are a monument to kinetic force. You have traded the endless miles of endurance training for the pure, visceral satisfaction of moving mass through space. When you step into the stadium, the crowd understands that you are there to dominate through raw, immediate power\u2014a testament to your unwavering focus on the strength that defines your very core."
+    },
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "scout_verdict": "If the circle represents the peak of explosive power, the court represents the zenith of your tactical dominance. Here, your 142kg frame is recontextualized: you are no longer just a source of raw force, but a formidable, immovable pillar around which the entire game pivots. In the high-stakes environment of The Brisbane 2032 Games, you command the paint with a level of spatial authority that few can challenge.\n\nThis is a shift from the kinetic surge of field athletics to a masterclass in positioning and tactical reading. Your physical presence forces opposing teams to respect the lane, turning your stature into an impenetrable wall of defense. By leveraging your disciplined focus, you orchestrate the flow of play, reacting to the shifting geometry of the court with technical precision. You don't need to run; you simply occupy the space that matters most, proving that true athleticism is as much about where you stand\u2014and how you hold that ground\u2014as it is about explosive output."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The report shows excellent personalization by incorporating the user's specific quip, but struggles with authenticity on the second archetype and completely fails to differentiate the adaptive pathways in the narrative.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "While Shot Put perfectly matches a 182cm/142kg explosive power profile, standing Basketball is highly unrealistic for a 5'11, 313lb athlete."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narrative brilliantly incorporates the user's joke about the algorithm putting him on a treadmill due to his BMI."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "The verdicts completely ignore the adaptive pathways, writing a single narrative for each sport without exploring the specific nuances of Seated Shot Put or Wheelchair Basketball."
+    },
+    "interview_quality": {
+      "score": 5,
+      "reasoning": "The questions became somewhat repetitive, with the third question simply asking another variation of whether the user prefers raw strength or tactics, which had already been established."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with properly formatted Games references ('The Los Angeles 2028 Games', 'The Brisbane 2032 Games') and no violations."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

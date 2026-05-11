@@ -1,0 +1,78 @@
+{
+  "persona_id": "14_deaf_sprinter",
+  "persona_label": "Profoundly deaf \u2014 competitive 400m sprinter",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 76,
+    "birth_year": 2001,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you best describe your primary history or natural inclination in competitive sport to date?\nOptions: [Explosive, power-based movements (e.g., sprinting, jumping, or combat) | Endurance-focused, high-volume activity (e.g., long-distance, cycling, or rowing) | Technical precision and hand-eye coordination (e.g., racquet sports, target sports, or complex movement)]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive, power-based movements (e.g., sprinting, jumping, or combat)"
+    },
+    {
+      "role": "narrator",
+      "content": "When you're at the top of your game, how do you prefer to apply that raw power in a competitive setting?\nOptions: [Individual focus: Obsessive pursuit of personal bests and physical perfection. | Tactical team integration: Using my physical dominance to anchor and drive a collective unit. | Direct opposition: Relying on real-time reaction and strategic aggression to overcome an opponent.]"
+    },
+    {
+      "role": "user",
+      "content": "Individual focus: Obsessive pursuit of personal bests and physical perfection."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep in your training cycles, what acts as your greatest catalyst for improvement?\nOptions: [Analyzing and refining biomechanics to optimize efficiency and power. | Pushing the absolute boundaries of your physical capacity through high-frequency conditioning. | Studying and mastering the specific technical nuances required for your discipline.]"
+    },
+    {
+      "role": "user",
+      "content": "Analyzing and refining biomechanics to optimize efficiency and power."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "At 178.0cm and 76.0kg, your biometric profile aligns perfectly with the explosive requirements of the world\u2019s elite sprinters. As you take your mark at The Brisbane 2032 Games, you are the living embodiment of kinetic efficiency. Your singular obsession with refining the biomechanics of your start and drive phase has turned every fiber of your being into a coiled spring, allowing you to dominate the track through pure, calculated power generation that hits like a thunderclap."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "In contrast to the sudden, violent bursts of the sprint track, your journey at The Brisbane 2032 Games takes on the discipline of the long-distance grind. Your analytical approach to biomechanics is now applied to the economy of human motion, turning you into a high-precision engine capable of maintaining immense power long after others have succumbed to cumulative fatigue. This path demands a quiet, intense mental endurance, where your ability to optimize every stroke over kilometers of pavement transforms you into a relentless, unstoppable force on the road."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "Strong personalization using interview inputs, but the second archetype contradicts the user's explicit preference for explosive power over endurance.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While 'Block Starter' fits the 178cm/76kg biometrics perfectly, assigning the endurance-heavy 'Road Machine' as the second profile directly contradicts the user's choice of explosive movements."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts skillfully weave in the user's stated preference for 'refining biomechanics' and an 'obsessive pursuit' of physical perfection."
+    },
+    "distinctness": {
+      "score": 4,
+      "reasoning": "The two archetypes are distinct from each other, but the verdicts completely fail to differentiate the standing and adaptive experiences, offering only a single unified narrative for each."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions logically drill down from broad energy systems to competitive environment and training philosophy with distinct, meaningful options that avoid convergence traps."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly uses 'The Brisbane 2032 Games' without triggering any IOC or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

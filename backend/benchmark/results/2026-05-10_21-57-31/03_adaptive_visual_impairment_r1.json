@@ -1,0 +1,78 @@
+{
+  "persona_id": "03_adaptive_visual_impairment",
+  "persona_label": "Adaptive athlete \u2014 partial visual impairment",
+  "biometrics": {
+    "height_cm": 181,
+    "weight_kg": 83,
+    "birth_year": 1998,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, I\u2019d like to understand what kind of sporting environment you feel most naturally drawn toward?\nOptions: [Individual pursuit: Focusing on personal mastery, internal discipline, and refining specialized technical skills. | Team strategy: Thriving on collaboration, complex tactical coordination, and the shared intensity of a group environment. | Pure explosive competition: Challenging your physical limits through raw speed, power, and high-impact, short-burst movement.]"
+    },
+    {
+      "role": "user",
+      "content": "Team strategy: Thriving on collaboration, complex tactical coordination, and the shared intensity of a group environment."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back at your sporting journey, how were your fundamental skills formed?\nOptions: [Formal academy development: You were immersed in structured coaching environments from a young age. | Competitive grassroots growth: You climbed the ranks through consistent club competition and local leagues. | Multisport versatility: You balanced several different athletic pursuits before focusing your energy on one primary team discipline.]"
+    },
+    {
+      "role": "user",
+      "content": "Competitive grassroots growth: You climbed the ranks through consistent club competition and local leagues."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward your potential in high-performance sport, what is the core quality you believe defines your edge when the pressure is at its peak?\nOptions: [Unwavering composure under tactical pressure: Keeping a cool head to orchestrate play when the game is on the line. | Physical dominance and relentless engine: Outworking opponents through sheer endurance and high-intensity output. | Dynamic situational awareness: The ability to read the field and anticipate the game's flow before it unfolds.]"
+    },
+    {
+      "role": "user",
+      "content": "Physical dominance and relentless engine: Outworking opponents through sheer endurance and high-intensity output."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "Your journey through competitive grassroots leagues has ingrained in you a profound sense of tactical discipline. While you thrived in the chaos of team environments, your profile suggests an untapped mastery of stillness. At 181.0cm and 83.0kg, you possess a physical center of gravity perfectly suited for the rigid stability required at the highest levels of precision sport. You are at an ideal age\u201428\u2014to translate the composure you once used to orchestrate team play into the singular, unwavering focus required to master target sports.\n\nStepping onto the range at The Los Angeles 2028 Games, you will find that the complexity of team strategy is replaced by a deeper, internal negotiation. Here, you are the team. Your 'relentless engine' is no longer about physical output, but about maintaining the extreme physiological control needed to deliver perfection under pressure. This is where your ability to anticipate the game's flow transforms into the ability to visualize and execute a shot, turning calm precision into your most lethal competitive weapon."
+    },
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "You described your edge as a 'relentless engine'\u2014the desire to outwork every opponent through pure endurance and high-intensity output. This drive, born from your years climbing through local, grassroots competition, is the exact fuel needed for the grueling landscape of multi-discipline sport. At 28 years old, your balanced 181.0cm, 83.0kg frame is not just a collection of measurements, but a chassis built for the punishing, varied demands of this pathway. Your physical build and mental stamina provide a significant advantage when navigating the recovery phases between intense physical efforts.\n\nUnlike those who specialize in a single dimension, you are built for the cumulative toll of the multi-event stage. At The Brisbane 2032 Games, you will be in your prime, using your hard-won versatility to grind down opponents who may excel in one burst but lack your overall stamina. This is the ultimate test of the tenacity you developed in those early competitive days\u2014a proving ground where your ability to remain dynamic and tactically aware across several different events will define your legacy as one of the most complete athletes in high-performance sport."
+    }
+  ],
+  "eval_result": {
+    "overall": 3,
+    "summary": "The scouting report completely ignores the user's preference for team sports and hallucinates interview answers to force-fit incompatible individual archetypes.",
+    "authenticity": {
+      "score": 3,
+      "reasoning": "Recommending Marksmanship to an athlete who thrives on team strategy and a 'relentless physical engine' is a jarring mismatch, making the narrative feel highly contrived."
+    },
+    "personalization": {
+      "score": 3,
+      "reasoning": "The 'Steady Hand' verdict hallucinates that the user selected 'unwavering composure' and 'anticipating the game's flow', when they actually chose 'physical dominance and relentless engine'."
+    },
+    "distinctness": {
+      "score": 2,
+      "reasoning": "The adaptive pathways are listed in the headers but completely ignored in the actual scout verdicts, offering zero distinct narrative insight."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions present clear, meaningful athletic differentiators (like choosing between tactical composure or physical engine) that should have guided a strong profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass utilizing the correct 'The [City] [Year] Games' format without standalone trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

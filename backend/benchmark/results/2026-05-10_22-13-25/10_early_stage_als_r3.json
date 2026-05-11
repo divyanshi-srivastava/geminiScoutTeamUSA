@@ -1,0 +1,78 @@
+{
+  "persona_id": "10_early_stage_als",
+  "persona_label": "Early-stage ALS \u2014 former competitive tennis player",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 78,
+    "birth_year": 1981,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, how would you describe your historical relationship with physical challenge and competitive sport?\nOptions: [Foundational team sports: I thrive in high-intensity, collaborative, and tactical environments. | Endurance and grit: I am drawn to solo, long-duration efforts where I can test my internal limits. | Technical precision: I gravitate toward activities requiring high coordination and disciplined, repetitive mastery.]"
+    },
+    {
+      "role": "user",
+      "content": "Technical precision: I gravitate toward activities requiring high coordination and disciplined, repetitive mastery."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep in that pursuit of precision, what environment helps you reach your peak performance?\nOptions: [The controlled, singular focus of an unchanging environment (like a quiet training ground). | The unpredictable, shifting landscape of a live arena where you must apply precision under pressure. | The tactile, sensory-rich environment where you must constantly calibrate to external, real-time feedback.]"
+    },
+    {
+      "role": "user",
+      "content": "The unpredictable, shifting landscape of a live arena where you must apply precision under pressure."
+    },
+    {
+      "role": "narrator",
+      "content": "When the pressure is at its absolute peak, what part of the challenge makes you feel most 'in the flow'?\nOptions: [Anticipating and neutralizing an opponent\u2019s tactical maneuvers. | Executing a perfectly timed, complex physical sequence under fire. | Adapting your rhythm and technique to an environment that never stays the same.]"
+    },
+    {
+      "role": "user",
+      "content": "Executing a perfectly timed, complex physical sequence under fire."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "At 45, you possess an analytical depth that younger competitors often lack. Your 178cm and 78kg frame provides the perfect center of gravity to master the subtle, high-stakes art of the turn. In the high-performance arena, where the surface is unforgiving and the margins are measured in fractions of a second, your ability to execute a complex sequence under pressure becomes your greatest weapon.\n\nImagine the roar of the crowd at The Milano Cortina 2026 Games as you stand at the gate. The unpredictable, icy slope demands more than just strength; it requires the precise, repetitive mastery you\u2019ve honed throughout your journey. Your intuition for external feedback allows you to adjust your line in real-time, carving through the course with a level of control that turns a chaotic run into a symphony of movement. This is where your maturity meets your technical ambition, allowing you to dominate the mountain through sheer tactical clarity. Whether competing in a standing capacity or utilizing adaptive equipment, the demand for precision remains identical, requiring you to master the physics of the slope through absolute focus and disciplined edge control."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Adaptive Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "Where your precision-based profile leans on poise, the Block Starter archetype demands an explosive conversion of energy into raw, linear velocity. This path pivots away from the graceful arcs of the mountain and into the violent, high-frequency intensity of the track. Your drive to execute complex sequences under fire is now channeled into the explosive firing of fast-twitch fibers in the first thirty meters of a race.\n\nWhen you line up for the final at The Brisbane 2032 Games, the atmosphere shifts. The technical complexity you crave is present, but it is compressed into a singular, monumental explosion of force at the crack of the gun. Your 78kg frame becomes a coiled spring, and your years of disciplined movement training ensure that your mechanics hold firm under the immense physiological strain. Whether you are navigating the track with standard biomechanics or utilizing high-performance adaptive prosthetic technology, the challenge is to master the brutal simplicity of speed, proving that the most effective athlete is the one who can move with the most sudden, overwhelming power."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "The report effectively integrates the user's biometrics and interview answers, though the adaptive pathways feel tacked on rather than deeply explored.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "Alpine skiing fits the user's 178cm/78kg frame and preference for shifting landscapes well, though sprinting contradicts the desire for unpredictable environments."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts weave in the user's exact age, biometrics, and interview quotes about executing complex sequences under pressure."
+    },
+    "distinctness": {
+      "score": 4,
+      "reasoning": "The adaptive pathways are merely appended as single, generic sentences at the end of each verdict rather than offering genuinely distinct insights."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asks strong, differentiating questions with meaningfully distinct options, such as choosing between team tactics, endurance, or technical precision."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass with correct formatting for 'The Milano Cortina 2026 Games' and 'The Brisbane 2032 Games'."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

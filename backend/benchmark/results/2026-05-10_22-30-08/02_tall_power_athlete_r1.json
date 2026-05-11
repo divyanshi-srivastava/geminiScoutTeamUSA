@@ -1,0 +1,78 @@
+{
+  "persona_id": "02_tall_power_athlete",
+  "persona_label": "Tall male power athlete",
+  "biometrics": {
+    "height_cm": 196,
+    "weight_kg": 103,
+    "birth_year": 2002,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "When you reflect on how you've performed in competitive sport so far, which of these core physical dimensions feels most innate to your personal style?\nOptions: [Explosive power and rapid speed\u2014I thrive in short, high-intensity bursts. | Sustained endurance and rhythmic pacing\u2014I excel at maintaining performance over long-duration challenges. | Precision, coordination, and technical mastery\u2014I prefer strategic control and accuracy over raw force.]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and rapid speed\u2014I thrive in short, high-intensity bursts."
+    },
+    {
+      "role": "narrator",
+      "content": "When you're in the heat of competition, do you thrive more in environments where the outcome depends entirely on your own individual output, or do you prefer the dynamic of a team where strategy and synchronization drive the momentum?\nOptions: [Individual mastery\u2014I thrive when the result is solely a reflection of my own grit. | Team integration\u2014I excel at syncing my intensity with others to overwhelm opponents. | Tactical leadership\u2014I prefer orchestrating the play and timing my bursts for maximum impact.]"
+    },
+    {
+      "role": "user",
+      "content": "Team integration\u2014I excel at syncing my intensity with others to overwhelm opponents."
+    },
+    {
+      "role": "narrator",
+      "content": "As we look at your journey in high-performance sport, what is the deepest motivation that fuels your drive to compete at the highest level?\nOptions: [Chasing the ultimate victory\u2014I'm driven by the scoreboard and the thrill of the win. | Pushing physical boundaries\u2014I'm driven by testing the absolute limits of what my body and potential can achieve. | Building a legacy\u2014I'm driven by the impact I can have on the future of my sport and those who follow.]"
+    },
+    {
+      "role": "user",
+      "content": "Chasing the ultimate victory\u2014I'm driven by the scoreboard and the thrill of the win."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "scout_verdict": "Standing at 196cm with a 103kg frame, you possess the rare blend of size and acceleration that turns a basketball court into your personal theater. Your drive to synchronize with teammates creates a tactical force that is nearly impossible to stifle; you don't just score, you dictate the momentum of the entire game. At 24, you are hitting that golden window of physical maturity where your explosive court-vision allows you to see the play develop two passes ahead of your rivals, positioning you perfectly for a legacy-defining run at The LA28 Games.\n\nIn the adaptive pathway, Wheelchair Basketball utilizes a classification system based on functional ability to ensure the game remains a test of skill and movement. For you, this discipline shifts the focus toward high-speed technical maneuvering and rapid, multidirectional changes in momentum. Because you thrive on team synergy, the chair becomes an extension of your kinetic energy; you will find that your height\u2014typically an advantage for rebounding and shooting\u2014transforms here into an asset for covering more floor, allowing you to dominate the lanes and orchestrate the team offense through relentless pressure and precision-timed bursts."
+    },
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+      "scout_verdict": "Your capacity for explosive power is perfectly suited for the raw, singular intensity of Field Athletics. Where others falter, you excel in the 'one-shot' environment, channeling your 103kg frame into a singular, kinetic explosion. At 24, your physical foundation is optimized for the technical precision of the Shot Put, where every millimeter of release angle and every ounce of your explosive speed are magnified into a test of pure, individual dominance. This is the stage where you prove your grit, turning your body into a masterclass of physics and leverage.\n\nIn the adaptive context, the C3 classification refers to athletes who compete from a fixed, seated position, requiring the athlete to compensate for the lack of lower-body drive through extreme upper-body coordination and core stability. This is a profound departure from your standing pathway; it demands that your explosive speed be re-channeled into flawless technical mastery. While you remain driven by the pursuit of the win, this discipline tests your ability to maintain composure and absolute precision under immense mechanical constraints. It is here that your path becomes a study in discipline, forcing you to master the intricate mechanics of a seated launch, proving that your potential is not just about the intensity of your movement, but the absolute control you exert over your own power."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A solid scouting report with highly plausible biometric matching, though it stumbles in personalization by offering a purely individual sport pathway after the user explicitly selected team integration.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "A 196cm, 103kg frame with explosive speed perfectly aligns with the physical requirements for a powerful basketball forward or an explosive thrower."
+    },
+    "personalization": {
+      "score": 5,
+      "reasoning": "While the basketball profile utilizes the user's choice of 'team integration', the field athletics profile blatantly contradicts this by forcing an 'individual dominance' narrative."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways offer excellent biomechanical insights, specifically noting how Seated Shot Put eliminates lower-body drive and changes the athlete's kinetic chain."
+    },
+    "interview_quality": {
+      "score": 6,
+      "reasoning": "The questions provide distinct, meaningful forks regarding physical style and team preference, though they lean slightly toward generic sports psychology rather than deep technical probes."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass with correct usage of 'The LA28 Games' and no restricted trademark or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

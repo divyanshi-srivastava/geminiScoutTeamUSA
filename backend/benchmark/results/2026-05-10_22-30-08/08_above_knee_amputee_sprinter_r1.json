@@ -1,0 +1,78 @@
+{
+  "persona_id": "08_above_knee_amputee_sprinter",
+  "persona_label": "Above-knee amputee \u2014 para-sprinter",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 73,
+    "birth_year": 2000,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get a sense of your athletic identity, how did you primarily spend your time in your formative years?\nOptions: [Organized team sports that thrived on tactical coordination and group dynamics | Individual high-intensity disciplines focused on raw explosive output | Endurance-based activities that rewarded consistent mental and physical grit]"
+    },
+    {
+      "role": "user",
+      "content": "Organized team sports that thrived on tactical coordination and group dynamics"
+    },
+    {
+      "role": "narrator",
+      "content": "Looking at your own physical movement style, which of these attributes do you feel best defines your presence in a high-performance setting?\nOptions: [High-frequency explosive bursts and sharp directional changes | Sustained, rhythmic power output over long durations | Precision-based technical control and stability under pressure]"
+    },
+    {
+      "role": "user",
+      "content": "High-frequency explosive bursts and sharp directional changes"
+    },
+    {
+      "role": "narrator",
+      "content": "Finally, as you look toward your own sporting journey, what core motivation drives your pursuit of excellence?\nOptions: [Testing my physical limits through direct, head-to-head confrontation | Refining technical execution to achieve near-perfect efficiency in movement | Orchestrating group strategy to outmaneuver the competition]"
+    },
+    {
+      "role": "user",
+      "content": "Testing my physical limits through direct, head-to-head confrontation"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "At The LA28 Games, you occupy the center lane, your 175cm, 73kg frame coiled into the starting blocks. Your background in high-intensity, direct competition has forged a mindset that thrives on the singular, high-velocity kinetic output required for the 100m dash. Every fiber of your training is geared toward that initial explosive reaction, mirroring the 'do-or-die' intensity you have always sought in your athletic journey. You possess the raw, twitch-fiber recruitment necessary to dominate the opening phase of the race, transitioning from static pressure to maximum velocity with clinical efficiency.\n\nIn your adaptive pathway, you compete within the T44 classification, which designates athletes with lower-limb impairment who compete with the use of a specialized prosthesis. For you, this is not a limitation but a mechanical extension of your explosive capabilities. You have mastered the intricate transition from the set position to full velocity, using the energy return of your equipment to match the raw speed of your peers. At 26, you are operating at the absolute zenith of your physical capabilities, treating the track as a stage for the direct, head-to-head confrontation you have craved since your earliest team-sport days."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "If the track is about the raw snap of power, the mountain at The French Alps 2030 Games represents a pivot toward the calculated, cold-blooded precision that defines your secondary athletic dimension. Here, the challenge is not just speed, but the mastery of line and edge. You apply the same intense focus you once used to orchestrate team strategies to the split-second decision-making required to navigate a Super-G course at breakneck velocity, where every micro-adjustment dictates your path toward the podium.\n\nIn the LW12 classification for sit-skiing\u2014intended for athletes with lower-limb impairment who have limited to no trunk stability\u2014you utilize a custom-fitted mono-ski that becomes an extension of your own skeletal structure. While others might fight the mountain, you negotiate with it, using your core to find the perfect center of gravity through technical turns that require absolute stability under pressure. This path highlights a different side of your potential: the analytical strategist who can temper explosive instinct with the surgical, technical control required to carve a perfect line down the frost-bitten slopes."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "This is a strong, highly personalized scouting report that successfully integrates the user's specific interview choices into plausible and mechanically detailed athletic pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "A 175cm, 73kg frame is a solid, realistic match for the explosive power-to-weight ratio required in both the 'Block Starter' sprint profile and the 'Edge Carver' alpine profile."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narrative expertly integrates the user's exact selections, weaving their desire for 'head-to-head confrontation' into the sprint verdict and their background in 'team strategies' into the alpine evaluation."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The adaptive pathways are thoughtfully constructed, detailing the specific mechanics of a T44 prosthesis for sprinting and an LW12 sit-ski for alpine skiing."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator's options were meaningfully distinct, effectively forcing the user to choose between 'explosive bursts', 'sustained power', and 'precision-based control' to genuinely fork the evaluation."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly uses proper naming conventions like 'The LA28 Games' and avoids standalone trademarked terms."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

@@ -1,0 +1,77 @@
+{
+  "persona_id": "01_young_female_swimmer",
+  "persona_label": "Young female swimmer",
+  "biometrics": {
+    "height_cm": 172,
+    "weight_kg": 62,
+    "birth_year": 2009,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our conversation, how would you describe your experience with competitive sport to date?\nOptions: [I've been part of competitive teams for years | I'm very active but new to structured training | I focus on self-led individual training | I'm just beginning my journey into high-performance sport]"
+    },
+    {
+      "role": "user",
+      "content": "I've been part of competitive teams for years"
+    },
+    {
+      "role": "narrator",
+      "content": "Since you've grown up in team settings, what is it about the pressure of a high-performance sport environment that excites you the most?\nOptions: [The challenge of pushing my own physical limits | The thrill of competing against the world's best | Mastering a specific set of skills to perfection | The camaraderie and shared pursuit of greatness]"
+    },
+    {
+      "role": "user",
+      "content": "The challenge of pushing my own physical limits"
+    },
+    {
+      "role": "narrator",
+      "content": "As you build your foundation for a top-tier athletic pathway, where do you feel you have the most room to grow?\nOptions: [Refining my speed and agility | Building greater raw endurance | Developing mental resilience | Mastering technical precision]"
+    },
+    {
+      "role": "user",
+      "content": "Mastering technical precision"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 8,
+      "matched_profile_name": "Streamline",
+      "pathway_standing": "Swimming",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Men's 400 m Freestyle S10)",
+      "scout_verdict": "At 17 years old, standing at 172.0cm and 62.0kg, you possess a frame that is built for the water. Your journey, rooted in years of high-performance team environments, has sharpened your appetite for pushing physical limits\u2014a trait essential when the only thing standing between you and a podium finish is your own willpower. The transition to the pool allows you to channel your drive for technical precision into the art of the perfect stroke.\n\nImagine the roar of the crowd at The Brisbane 2032 Games as you stand on the blocks. Your focus on mastering every micro-adjustment in your hydrodynamic positioning becomes the bedrock of your success. In this lane, you are not just an athlete; you are a kinetic sculpture, moving with rhythmic, calculated efficiency. This is where your desire to test your limits meets the cold, quiet discipline of the lane, turning your dedication into a legacy of speed."
+    },
+    {
+      "matched_profile_id": 9,
+      "matched_profile_name": "Boat Run",
+      "pathway_standing": "Rowing",
+      "pathway_adaptive": "Adaptive Rowing (e.g., Mixed Coxed Four LTAMix4+)",
+      "scout_verdict": "Your history in competitive team settings finds its ultimate expression in the crew boat. Rowing is the physical manifestation of collective synchronization, where your individual drive to push your limits is amplified by the presence of your teammates. At 172.0cm and 62.0kg, your build is perfectly calibrated for the sustained, balanced output required in a competitive rowing shell, turning your technical precision into a shared, powerful engine.\n\nLooking toward The Brisbane 2032 Games, you envision the synchronization of the oars hitting the water\u2014a symphony of effort born from the thousands of hours you spent refining your craft. The transition from your background in team sports to the rigors of the rowing circuit will feel like coming home. Here, your technical focus ensures that not a single ounce of energy is wasted. You are the heartbeat of the boat, a testament to what can be achieved when personal ambition and team cohesion are forged into one singular, unstoppable momentum."
+    }
+  ],
+  "eval_result": {
+    "overall": 5,
+    "summary": "While the narrative effectively incorporates the user's interview answers, it completely fails to differentiate the adaptive pathway and mistakenly recommends a Men's event for a Female athlete.",
+    "authenticity": {
+      "score": 4,
+      "reasoning": "At 172cm, the user is somewhat undersized for elite rowing, but more egregiously, the pipeline recommended a 'Men's' adaptive swimming event for a Female athlete."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts expertly weave in the user's exact interview choices, linking 'technical precision' and 'pushing physical limits' directly to the mechanics of swimming and rowing."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "There is no distinction made between the standing and adaptive pathways in the verdicts, and the adaptive pathway is entirely ignored in the narrative text."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The narrator asks logical, progressive questions with meaningfully distinct options that probe both the psychological drive and technical focus of the athlete."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean of violations; 'The Brisbane 2032 Games' format is used correctly and no restricted terms are present."
+    }
+  },
+  "backend_error": null
+}

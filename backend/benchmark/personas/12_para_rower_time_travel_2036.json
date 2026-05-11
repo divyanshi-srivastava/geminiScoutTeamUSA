@@ -6,7 +6,6 @@
   "weight_kg": 88,
   "birth_year": 1988,
   "gender": "M",
-  "target_game_year": 2036,
-  "time_travel_trigger_after": 2,
-  "max_questions": 2
+  "max_questions": 4,
+  "time_travel_hops": [2008, 2036]
 }

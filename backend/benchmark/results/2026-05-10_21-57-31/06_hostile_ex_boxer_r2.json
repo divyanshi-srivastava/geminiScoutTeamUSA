@@ -1,0 +1,78 @@
+{
+  "persona_id": "06_hostile_ex_boxer",
+  "persona_label": "Hostile ex-boxer \u2014 distrusts Olympics and AI",
+  "biometrics": {
+    "height_cm": 183,
+    "weight_kg": 87,
+    "birth_year": 1995,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start uncovering your potential, how would you describe your current relationship with physical training and the way you approach competitive effort?\nOptions: [The pursuit of raw explosive power and velocity. | The disciplined grind of endurance and sustained output. | The technical mastery of precision and tactical movement.]"
+    },
+    {
+      "role": "user",
+      "content": "The pursuit of raw explosive power and velocity."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are pushing your body to its absolute limit, what drives your motivation more: the pursuit of personal perfection, or the heat of a direct confrontation?\nOptions: [The pursuit of perfect movement\u2014honing my craft against time, distance, or gravity. | The heat of the moment\u2014directly outmaneuvering or outperforming an opponent. | The calculated risk\u2014executing high-stakes, complex maneuvers under extreme pressure.]"
+    },
+    {
+      "role": "user",
+      "content": "The heat of the moment\u2014directly outmaneuvering or outperforming an opponent."
+    },
+    {
+      "role": "narrator",
+      "content": "As we look at your sporting journey, which environment do you feel best channels that intensity?\nOptions: [Intense, high-stakes team environments where tactical communication is key. | One-on-one head-to-head scenarios where it is purely you against an opponent. | Dynamic, unpredictable environments where you must constantly react to external chaos.]"
+    },
+    {
+      "role": "user",
+      "content": "One-on-one head-to-head scenarios where it is purely you against an opponent."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "At 31, with a frame of 183.0cm and 87.0kg, you possess the rare physical architecture to command the arena. Your hunger for raw explosive power and your appetite for head-to-head combat find their ultimate expression here. In the grueling, multifaceted test of the Decathlon at The Brisbane 2032 Games, your ability to treat every sprint and throw as a personal duel against a rival provides the psychological edge necessary to dominate the field. You don't just endure the ten events; you weaponize your versatility to systematically dismantle the opposition event by event.\n\nYour physical foundation is the engine, but your combative spirit is the fuel. While others view the multi-discipline pathway as a test of endurance, you approach it as a ten-round fight, where each explosive movement is calculated to outmaneuver the person standing in the lane next to you. This is where your maturity becomes your greatest tactical weapon, allowing you to harness your strength with the precision of a seasoned veteran."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "At The Brisbane 2032 Games, the atmosphere is electric, and the pressure is suffocating\u2014an environment where you thrive. While your heart beats for the chaos of a head-to-head clash, this pathway demands that you channel that same high-stakes intensity into the quietest, most absolute stillness. You are transitioning from the explosive, visible confrontation of the field to the internal, psychological warfare of the firing line. Your stable, mature 87.0kg frame is not just mass; it is a foundation for absolute bodily control, turning you into a human anchor amidst the noise.\n\nIn this discipline, the 'opponent' is not someone you can physically overpower, but a target that demands total psychological dominance. By taking that fire you feel during a one-on-one confrontation and condensing it into a single, unwavering point of focus, you turn precision into a lethal tactical pursuit. It is the art of extreme pressure management, where your maturity acts as the barrier between victory and defeat. Here, the 'heat of the moment' is redefined; it is the micro-second of calm as your breath hitches and you release a shot that decides the outcome."
+    }
+  ],
+  "eval_result": {
+    "overall": 5,
+    "summary": "While the interview questions are solid and personalization efforts are visible, the archetype matches contradict the user's explicitly stated preference for explosive, one-on-one combat, and the adaptive pathways are entirely ignored in the narrative.",
+    "authenticity": {
+      "score": 4,
+      "reasoning": "Assigning Marksmanship to a user who explicitly selected 'raw explosive power' and 'one-on-one head-to-head scenarios' is a severe mismatch, and Decathlon lacks the direct physical confrontation the user desires."
+    },
+    "personalization": {
+      "score": 7,
+      "reasoning": "The verdicts explicitly reference the user's 183cm/87kg frame and heavily integrate their interview answers about 'raw explosive power' and 'head-to-head combat' into the text."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "The verdicts are written as monolithic blocks that focus solely on the standing disciplines (Decathlon, Marksmanship), completely failing to mention or differentiate the adaptive pathways."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions are well-crafted and offer genuinely distinct forks, progressing logically from physical traits to motivational drivers and competitive environments."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass; uses 'The Brisbane 2032 Games' correctly and avoids any standalone trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

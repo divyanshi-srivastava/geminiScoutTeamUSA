@@ -1,0 +1,78 @@
+{
+  "persona_id": "13_wheelchair_racer_paraplegic",
+  "persona_label": "T4 paraplegic \u2014 wheelchair racer and basketball player",
+  "biometrics": {
+    "height_cm": 163,
+    "weight_kg": 55,
+    "birth_year": 2004,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, which of these physical archetypes best describes your natural inclination during training or physical activity?\nOptions: [Explosive intensity and raw power in short, sharp bursts | Endurance-focused capacity and rhythmic, sustained efficiency | Tactical precision and technical mastery of complex movements]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive intensity and raw power in short, sharp bursts"
+    },
+    {
+      "role": "narrator",
+      "content": "How would you describe your current level of engagement with high-performance sport or structured training?\nOptions: [I am currently training for active competition with a dedicated coach. | I train independently, focusing on specific personal athletic goals. | I have an athletic background but am currently rebuilding my routine.]"
+    },
+    {
+      "role": "user",
+      "content": "I am currently training for active competition with a dedicated coach."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the middle of a high-pressure competition, where does your mental focus naturally land?\nOptions: [Blocking out the noise and focusing purely on the technical execution of the next move. | Channeling my adrenaline into raw, immediate force and explosive speed. | Visualizing the end goal and the strategic path to victory to keep my momentum steady.]"
+    },
+    {
+      "role": "user",
+      "content": "Channeling my adrenaline into raw, immediate force and explosive speed."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+      "scout_verdict": "Your stature of 163cm and 55kg provides an exceptional strength-to-weight ratio, granting you the rapid acceleration necessary to dominate the track. In the T44 classification\u2014which denotes ambulatory athletes with a lower-limb impairment who compete standing, often utilizing advanced prosthetic technology\u2014your compact frame becomes an engine of pure efficiency. Your stated ability to channel high-pressure adrenaline into immediate, explosive force is the hallmark of a world-class sprinter.\n\nAt 22, you are perfectly positioned at the threshold of your peak performance years. This pathway is about more than just speed; it is about the rhythmic, explosive synergy between your body and the track. By focusing your training with your coach on the critical first thirty meters of the race, you can transform that raw internal intensity into a weapon that will define your performance at The LA28 Games."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Women's -67 kg)",
+      "scout_verdict": "While the track demands linear velocity, this path shifts your focus toward the tactical dominance of core stability and mechanical precision. In the powerlifting circuit, specifically within weight classes designed to showcase brute force and controlled exertion, you move away from the 'burst' of the sprint toward a more calculated, formidable application of power. This is where your ability to block out external noise and concentrate purely on the technical execution of a lift\u2014or a grappling maneuver\u2014becomes your greatest asset.\n\nBy channeling your athletic intensity into the structural integrity of your movements, you develop a brand of physical dominance that is both imposing and precise. This pathway rewards those who view their body as a system of levers and forces, turning your competitive training sessions into a laboratory of mechanical efficiency. It is a transition from reactive speed to proactive control, providing you with a distinct, tactical edge as you progress toward your appearance at The LA28 Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The report provides a highly authentic archetype match for the user's biometrics, but the second verdict hallucinated an interview response the user did not actually select.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "A 163cm, 55kg frame is an excellent match for a 'Block Starter', mirroring the compact, high strength-to-weight ratio builds of elite sprinters."
+    },
+    "personalization": {
+      "score": 4,
+      "reasoning": "While the first verdict integrates her actual answers, the second verdict falsely claims her asset is 'blocking out external noise and concentrating purely on technical execution'\u2014an option she explicitly did not choose."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The pathways offer a strong contrast between explosive linear velocity (sprints) and static, mechanical strength (powerlifting/wrestling)."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The narrator's questions feature meaningfully distinct options that effectively fork the athlete's physiological and psychological profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "The report is clean, correctly utilizing the approved 'The LA28 Games' format and avoiding restricted trademark terms."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

@@ -1,0 +1,78 @@
+{
+  "persona_id": "03_adaptive_visual_impairment",
+  "persona_label": "Adaptive athlete \u2014 partial visual impairment",
+  "biometrics": {
+    "height_cm": 181,
+    "weight_kg": 83,
+    "birth_year": 1998,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our look into your athletic history, could you tell me a bit about your background in competitive sport?\nOptions: [I have a background in team sports | I am primarily an individual athlete (e.g., swimming, endurance) | I focus on strength and conditioning-based disciplines | I'm relatively new to structured, competitive training]"
+    },
+    {
+      "role": "user",
+      "content": "I am primarily an individual athlete (e.g., swimming, endurance)"
+    },
+    {
+      "role": "narrator",
+      "content": "What level of commitment does your current training typically demand, and what are you looking for in a new high-performance pathway?\nOptions: [I'm looking for a professional, full-time commitment. | I prefer a balanced approach alongside my other life responsibilities. | I am still testing the waters to see how far I can push my limits.]"
+    },
+    {
+      "role": "user",
+      "content": "I'm looking for a professional, full-time commitment."
+    },
+    {
+      "role": "narrator",
+      "content": "When you envision yourself pushing toward the peak of a high-performance athletic pathway, what is the core driving force that keeps you motivated through those grueling, high-intensity training sessions?\nOptions: [The drive to push my physical and mental limits | The goal of competing at the highest international level | The satisfaction of mastering complex technical skills | The pursuit of long-term personal legacy]"
+    },
+    {
+      "role": "user",
+      "content": "The goal of competing at the highest international level"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "Your history as an individual endurance athlete has instilled in you a unique ability to find calm amidst physical exhaustion, a trait that serves as the bedrock for this discipline. At 181.0cm and 83.0kg, your stature provides a perfectly balanced, stable foundation that turns the firing line into a space of absolute stillness. Being 28 years old puts you right in the heart of your prime, where your mental discipline finally aligns with your physical precision.\n\nYou have spent years training with a professional mindset, driven by the singular goal of competing at the highest international level. As you stand on the range at The Brisbane 2032 Games, the world fades away. Your training has moved beyond simple repetition; it is now a study in focus and heart-rate management. In this environment, your legacy is not written in speed, but in the unwavering accuracy that defines the greatest marksmen in the history of the sport."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "The mountain is a place that demands both absolute trust in one\u2019s equipment and an unyielding personal drive. Your stature of 181.0cm and 83.0kg provides the exact mechanical leverage needed to manipulate high-speed edges through tight corners, turning raw force into graceful, efficient motion. Having spent your life as an individual endurance athlete, you are already accustomed to the solitude and self-reliance required to excel in these high-velocity, technical disciplines.\n\nAt 28, you possess the calculated courage necessary to treat every training session as a professional pursuit. When you envision yourself at The Milano Cortina 2026 Games, you aren't just looking to compete; you are looking to master the mountain. Your transition into this pathway represents the culmination of your experience, blending the long-term stamina of your endurance background with the explosive, split-second decision-making required to chase greatness on the international stage."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The report integrates the user's biometrics and interview answers smoothly into the narrative, but completely fails to differentiate between the standing and adaptive pathways within the scout verdicts.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "The biometrics (181cm/83kg) fit the Edge Carver archetype well, and the connection between an endurance background and heart-rate control for Marksmanship is a plausible, insightful scout connection."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative effectively incorporates the user's specific background as an 'individual endurance athlete' and their desire for a 'professional pursuit' aimed at the 'highest international level'."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "There is no distinction made within the narrative text between the standing and adaptive pathways; the verdicts read as single, generalized assessments that ignore the adaptive sport context."
+    },
+    "interview_quality": {
+      "score": 6,
+      "reasoning": "The questions logically progress from athletic background to commitment and motivation, but the options are fairly standard and don't probe deeply into specific physical or biomechanical differentiators."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Compliant; correctly uses 'The Brisbane 2032 Games' and 'The Milano Cortina 2026 Games' without violating IP rules."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

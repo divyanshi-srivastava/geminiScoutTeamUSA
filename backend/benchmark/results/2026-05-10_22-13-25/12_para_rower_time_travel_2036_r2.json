@@ -1,0 +1,81 @@
+{
+  "persona_id": "12_para_rower_time_travel_2036",
+  "persona_label": "Para-rower with SCI \u2014 time travel to 2036 Games",
+  "biometrics": {
+    "height_cm": 184,
+    "weight_kg": 88,
+    "birth_year": 1988,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "When you approach a physical challenge, which of these core capacities do you find defines your greatest strength?\nOptions: [Pure power and explosive strength (I prefer short, high-intensity efforts) | Sustained endurance and aerobic capacity (I thrive on long-distance rhythm) | Precision, technical skill, and coordination (I excel at nuanced, controlled tasks)]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance and aerobic capacity (I thrive on long-distance rhythm)"
+    },
+    {
+      "role": "narrator",
+      "content": "With that foundation of endurance, how do you see yourself interacting with the arena? Do you prefer the singular focus of individual mastery or the complex coordination required to navigate a team environment?\nOptions: [Individual focus: I prefer to rely entirely on my own rhythm and mental grit | Team integration: I excel at synchronizing my output within a larger collective dynamic | Tactical maneuvering: I thrive on reading the environment and adapting my pace against direct opposition]"
+    },
+    {
+      "role": "user",
+      "content": "Team integration: I excel at synchronizing my output within a larger collective dynamic"
+    },
+    {
+      "role": "narrator",
+      "content": "At The 2036 Games, how do you see your role as a veteran contributor most significantly shaping the performance of your teammates?\nOptions: [The Strategic Anchor: Providing the calm, steady rhythm that keeps the team composed under pressure. | The Tactical Mentor: Utilizing my decades of experience to guide team positioning and reads during the heat of competition. | The Synchronizer: Acting as the bridge between individual athletes to ensure the team functions as a single, seamless unit.]"
+    },
+    {
+      "role": "user",
+      "content": "The Strategic Anchor: Providing the calm, steady rhythm that keeps the team composed under pressure."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "At The 2036 Games, you arrive not as a raw talent, but as a seasoned engine. Your build of 184cm and 88kg provides the perfect chassis for the unrelenting demands of the Decathlon. Because you thrive on sustained aerobic capacity and long-distance rhythm, you treat these ten events not as a series of sprints, but as a single, cohesive endurance challenge. \n\nAs the 'Strategic Anchor' of your journey, your greatest asset at age 48 is your ability to maintain composure when the cumulative fatigue of the multi-day grind sets in. While others falter under the pressure of individual technical failures, your mature pacing and steady heart rate allow you to treat the final event as a victory lap of mental grit, proving that in high-performance athletics, the most enduring strength is the one found in the mind."
+    },
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "scout_verdict": "Stepping onto the court at The 2036 Games, you trade the singular focus of your endurance training for the intricate, high-speed chess match of team sport. Your role as the 'Strategic Anchor' is transformed here; you are no longer just managing your own output, but acting as the vital link that synchronizes the movement of your entire squad to maintain a cohesive flow during transitions.\n\nYour 184cm frame provides an imposing defensive presence, allowing you to control the lanes and dictate the pace with a veteran\u2019s tactical intuition. This path highlights a sharp contrast to your other work: instead of relying solely on internal rhythm, you thrive by interpreting the chaotic, rapid-fire environment of the court and adapting your position to ensure your team remains a unified, impenetrable force. Your contribution is the calm efficiency that keeps the team composed under the intensity of the final tournament."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The narrative successfully adopts the requested Legacy life stage and personalizes the text well, but the pipeline failed to map the user's explicit preference for team integration to a team-based standing sport.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "The user explicitly selected 'Team integration', yet the standing pathway assigned Decathlon, an entirely individual pursuit, undermining the authenticity of the match."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts effectively weave in specific interview answers like 'Strategic Anchor' and 'sustained aerobic capacity' to explain the user's athletic approach."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The two pathways provide a stark and meaningful contrast between a solitary multi-event endurance grind and a dynamic, high-speed team court sport."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "Perfectly captures the Legacy phase for a 48-year-old by focusing on 'veteran\u2019s tactical intuition', 'mature pacing', and acting as a 'seasoned engine' rather than relying on raw youth."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions progress logically from core physical capacities to arena environment to leadership style, offering distinct and meaningful forks."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with correct use of 'The 2036 Games' and no restricted trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

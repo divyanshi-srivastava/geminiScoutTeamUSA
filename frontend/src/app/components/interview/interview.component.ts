@@ -1,4 +1,4 @@
-import { Component, inject, OnDestroy } from '@angular/core';
+import { Component, inject, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { StateService } from '../../services/state.service';
@@ -64,17 +64,30 @@ import { FactRotatorComponent } from '../fact-rotator.component';
           (submitted)="onAnswer($event)">
         </app-text-input>
 
-        <!-- Ready CTA — only shown when narrator has enough context -->
-        <div class="ready-divider" *ngIf="q.readyToProceed">
+        <!-- Ready CTA — only shown when narrator has enough context (normal interview) -->
+        <div class="ready-divider" *ngIf="q.readyToProceed && !activeEraYear">
           <span class="divider-line"></span>
           <span class="divider-label">or</span>
           <span class="divider-line"></span>
         </div>
         <button
           class="btn-ready"
-          *ngIf="q.readyToProceed"
+          *ngIf="q.readyToProceed && !activeEraYear"
           (click)="onReadyToScout()">
           Show me my results →
+        </button>
+
+        <!-- Skip CTA — shown during era interview so it never feels forced -->
+        <div class="ready-divider" *ngIf="activeEraYear">
+          <span class="divider-line"></span>
+          <span class="divider-label">or</span>
+          <span class="divider-line"></span>
+        </div>
+        <button
+          class="btn-ready"
+          *ngIf="activeEraYear"
+          (click)="onSkipToEraScout()">
+          Generate my {{ activeEraYear }} report →
         </button>
 
         <!-- Disclaimer -->
@@ -249,7 +262,7 @@ import { FactRotatorComponent } from '../fact-rotator.component';
     }
   `]
 })
-export class InterviewComponent implements OnDestroy {
+export class InterviewComponent implements OnInit, OnDestroy {
   private state = inject(StateService);
   private stream = inject(StreamService);
 
@@ -257,6 +270,8 @@ export class InterviewComponent implements OnDestroy {
   metricsSet$ = this.state.metricsSet$;
   loading$ = this.state.loading$;
   private sub?: Subscription;
+  private eraSub?: Subscription;
+  eraInterviewRound = 0;
 
   get activeEraYear(): number | null { return this.state.activeEraYear; }
 
@@ -281,6 +296,10 @@ export class InterviewComponent implements OnDestroy {
     if (age <= 32) return '#facc15';
     if (age <= 45) return '#60a5fa';
     return '#a78bfa';
+  }
+
+  ngOnInit() {
+    this.eraSub = this.state.eraReadyToScout$.subscribe(() => this.onEraReadyToScout());
   }
 
   startNarrative() {
@@ -315,14 +334,13 @@ export class InterviewComponent implements OnDestroy {
     const eraYear = this.state.activeEraYear;
 
     if (eraYear !== null) {
-      // ── Time Travel mode: any answer triggers a full re-scout with age override ──
+      // ── Time Travel mode: continue the era mini-interview (narrator decides when done) ──
+      this.eraInterviewRound++;
       const shortAnswer = answer.length > 120 ? answer.substring(0, 120) + '…' : answer;
-      this.state.addUserTrace(`My answer for The ${eraYear} Games: "${shortAnswer}"`);
+      this.state.addUserTrace(`Era Q${this.eraInterviewRound} answer for The ${eraYear} Games: "${shortAnswer}"`);
       this.state.saveEraAnswer(eraYear, shortAnswer);
-      this.state.setActiveEraYear(null);
-      this.state.setAppState('SCOUTING');
 
-      const body = {
+      const body: any = {
         story: answer,
         session_id: this.state.sessionId,
         height_cm: this.state.metrics.height,
@@ -330,7 +348,7 @@ export class InterviewComponent implements OnDestroy {
         birth_year: this.state.metrics.birthYear,
         gender: this.state.metrics.gender || null,
         conversation_history: this.state.getHistory(),
-        is_ready_to_scout: true,
+        is_ready_to_scout: false,
         target_game_year: eraYear,
         era_history: this.state.getEraHistory()
       };
@@ -368,11 +386,6 @@ export class InterviewComponent implements OnDestroy {
     this.state.setLoading(true);
     this.state.addUserTrace("I'm ready — show me my results.");
 
-    const eraYear = this.state.activeEraYear;
-    if (eraYear !== null) {
-      this.state.setActiveEraYear(null);
-    }
-
     const body: any = {
       story: '',
       session_id: this.state.sessionId,
@@ -384,10 +397,65 @@ export class InterviewComponent implements OnDestroy {
       is_ready_to_scout: true
     };
 
-    if (eraYear !== null) {
-      body['target_game_year'] = eraYear;
-      body['era_history'] = this.state.getEraHistory();
-    }
+    this.sub = this.stream.consume(body).subscribe({
+      complete: () => this.state.setLoading(false),
+      error: () => this.state.setLoading(false)
+    });
+  }
+
+  onSkipToEraScout() {
+    this.sub?.unsubscribe();
+    const eraYear = this.state.activeEraYear;
+    if (!eraYear) return;
+    this.state.setLoading(true);
+    this.state.addUserTrace(`Skipping to The ${eraYear} Games report with current context.`);
+    this.state.setActiveEraYear(null);
+    this.state.setAppState('SCOUTING');
+    this.eraInterviewRound = 0;
+
+    const body: any = {
+      story: '',
+      session_id: this.state.sessionId,
+      height_cm: this.state.metrics.height,
+      weight_kg: this.state.metrics.weight,
+      birth_year: this.state.metrics.birthYear,
+      gender: this.state.metrics.gender || null,
+      conversation_history: this.state.getHistory(),
+      is_ready_to_scout: true,
+      target_game_year: eraYear,
+      era_history: this.state.getEraHistory(),
+      era_context_summary: this.state.eraContextSummary
+    };
+
+    this.sub = this.stream.consume(body).subscribe({
+      complete: () => this.state.setLoading(false),
+      error: () => this.state.setLoading(false)
+    });
+  }
+
+  onEraReadyToScout() {
+    this.sub?.unsubscribe();
+    const eraYear = this.state.activeEraYear;
+    if (!eraYear) return;
+    this.state.setLoading(true);
+    this.state.addUserTrace(`Narrator has enough context for The ${eraYear} Games. Generating scout report.`);
+    this.state.setActiveEraYear(null);
+    this.state.setAppState('SCOUTING');
+    this.eraInterviewRound = 0;
+
+    const body: any = {
+      story: '',
+      session_id: this.state.sessionId,
+      height_cm: this.state.metrics.height,
+      weight_kg: this.state.metrics.weight,
+      birth_year: this.state.metrics.birthYear,
+      gender: this.state.metrics.gender || null,
+      conversation_history: this.state.getHistory(),
+      is_ready_to_scout: true,
+      target_game_year: eraYear,
+      era_history: this.state.getEraHistory(),
+      era_context_summary: this.state.eraContextSummary
+    };
 
     this.sub = this.stream.consume(body).subscribe({
       complete: () => this.state.setLoading(false),
@@ -397,5 +465,6 @@ export class InterviewComponent implements OnDestroy {
 
   ngOnDestroy() {
     this.sub?.unsubscribe();
+    this.eraSub?.unsubscribe();
   }
 }

@@ -1,0 +1,1234 @@
+{
+  "run_timestamp": "2026-05-10_21-15-38",
+  "backend_url": "http://localhost:8000",
+  "persona_count": 15,
+  "success_count": 15,
+  "master": {
+    "pipeline_score": 6.0,
+    "run_summary": "The pipeline excels at personalizing narratives based on interview responses but suffers from severe logic flaws in gender mapping and adaptive pathway integration.",
+    "strengths": [
+      "Exceptional personalization, seamlessly weaving specific interview answers and biometrics into the scouting verdicts (e.g., 04_veteran_endurance_runner, 06_hostile_ex_boxer, 15_powerlifter_high_bmi).",
+      "Strong interview quality with logical, progressive questions that adapt well even to difficult or hostile inputs (e.g., 06_hostile_ex_boxer)."
+    ],
+    "weaknesses": [
+      "Severe gender mapping failures in adaptive event recommendations, frequently assigning Men's events to Female athletes and vice versa (e.g., 01_young_female_swimmer, 02_tall_power_athlete, 07_congenitally_blind_goalball, 09_congenital_limb_difference_swimmer).",
+      "Failure to integrate adaptive pathways into the actual narrative text, leaving those recommendations feeling disconnected (e.g., 03_adaptive_visual_impairment, 04_veteran_endurance_runner, 14_deaf_sprinter).",
+      "Age and life-stage logic errors, such as recommending explosive sports to older casual athletes or offering 'decades of experience' to a 26-year-old (e.g., 10_early_stage_als, 11_retired_gymnast_time_travel_1984)."
+    ],
+    "critical_issues": [
+      "01_young_female_swimmer: Distinctness score of 3.",
+      "07_congenitally_blind_goalball: Authenticity score of 3 due to recommending Men's +100kg powerlifting to a 60kg female.",
+      "09_congenital_limb_difference_swimmer: Distinctness score of 3.",
+      "11_retired_gymnast_time_travel_1984: Distinctness score of 2."
+    ],
+    "suggested_improvements": [
+      {
+        "area": "Adaptive Pathway Logic",
+        "suggestion": "Implement a strict gender-matching constraint for all recommended events to prevent assigning Men's events to Female athletes and vice versa."
+      },
+      {
+        "area": "Narrative Generation",
+        "suggestion": "Update the prompt template to explicitly require the inclusion and contextualization of adaptive pathways within the main scouting verdicts."
+      },
+      {
+        "area": "Age and Life Stage Coherence",
+        "suggestion": "Add dynamic age-filtering to interview questions and sport recommendations to prevent offering 'decades of experience' to young users or highly explosive sports to older, casual athletes."
+      },
+      {
+        "area": "Distinctness",
+        "suggestion": "Increase the temperature or adjust the penalty parameters in the LLM configuration to generate more varied and unique scouting reports across different personas."
+      }
+    ],
+    "dimension_analysis": {
+      "authenticity": "Generally plausible biometric-to-sport mapping is frequently undermined by glaring gender mismatches and age-inappropriate recommendations.",
+      "personalization": "Consistently excellent across all personas, with the pipeline expertly weaving exact interview phrases and physical traits into the final verdicts.",
+      "interview_quality": "Strong and logical, featuring progressive questions with meaningfully distinct options that effectively funnel users into specific athletic profiles.",
+      "distinctness": "Noticeably weak, with repetitive narrative structures and a failure to differentiate adaptive pathways from standard standing pathways."
+    }
+  },
+  "results": [
+    {
+      "persona_id": "01_young_female_swimmer",
+      "persona_label": "Young female swimmer",
+      "biometrics": {
+        "height_cm": 172,
+        "weight_kg": 62,
+        "birth_year": 2009,
+        "gender": "F"
+      },
+      "conversation_log": [
+        {
+          "role": "narrator",
+          "content": "To start our conversation, how would you describe your experience with competitive sport to date?\nOptions: [I've been part of competitive teams for years | I'm very active but new to structured training | I focus on self-led individual training | I'm just beginning my journey into high-performance sport]"
+        },
+        {
+          "role": "user",
+          "content": "I've been part of competitive teams for years"
+        },
+        {
+          "role": "narrator",
+          "content": "Since you've grown up in team settings, what is it about the pressure of a high-performance sport environment that excites you the most?\nOptions: [The challenge of pushing my own physical limits | The thrill of competing against the world's best | Mastering a specific set of skills to perfection | The camaraderie and shared pursuit of greatness]"
+        },
+        {
+          "role": "user",
+          "content": "The challenge of pushing my own physical limits"
+        },
+        {
+          "role": "narrator",
+          "content": "As you build your foundation for a top-tier athletic pathway, where do you feel you have the most room to grow?\nOptions: [Refining my speed and agility | Building greater raw endurance | Developing mental resilience | Mastering technical precision]"
+        },
+        {
+          "role": "user",
+          "content": "Mastering technical precision"
+        }
+      ],
+      "scouting_result": [
+        {
+          "matched_profile_id": 8,
+          "matched_profile_name": "Streamline",
+          "pathway_standing": "Swimming",
+          "pathway_adaptive": "Adaptive Swimming (e.g., Men's 400 m Freestyle S10)",
+          "scout_verdict": "At 17 years old, standing at 172.0cm and 62.0kg, you possess a frame that is built for the water. Your journey, rooted in years of high-performance team environments, has sharpened your appetite for pushing physical limits\u2014a trait essential when the only thing standing between you and a podium finish is your own willpower. The transition to the pool allows you to channel your drive for technical precision into the art of the perfect stroke.\n\nImagine the roar of the crowd at The Brisbane 2032 Games as you stand on the blocks. Your focus on mastering every micro-adjustment in your hydrodynamic positioning becomes the bedrock of your success. In this lane, you are not just an athlete; you are a kinetic sculpture, moving with rhythmic, calculated efficiency. This is where your desire to test your limits meets the cold, quiet discipline of the lane, turning your dedication into a legacy of speed."
+        },
+        {
+          "matched_profile_id": 9,
+          "matched_profile_name": "Boat Run",
+          "pathway_standing": "Rowing",
+          "pathway_adaptive": "Adaptive Rowing (e.g., Mixed Coxed Four LTAMix4+)",
+          "scout_verdict": "Your history in competitive team settings finds its ultimate expression in the crew boat. Rowing is the physical manifestation of collective synchronization, where your individual drive to push your limits is amplified by the presence of your teammates. At 172.0cm and 62.0kg, your build is perfectly calibrated for the sustained, balanced output required in a competitive rowing shell, turning your technical precision into a shared, powerful engine.\n\nLooking toward The Brisbane 2032 Games, you envision the synchronization of the oars hitting the water\u2014a symphony of effort born from the thousands of hours you spent refining your craft. The transition from your background in team sports to the rigors of the rowing circuit will feel like coming home. Here, your technical focus ensures that not a single ounce of energy is wasted. You are the heartbeat of the boat, a testament to what can be achieved when personal ambition and team cohesion are forged into one singular, unstoppable momentum."
+        }
+      ],
+      "eval_result": {
+        "overall": 5,
+        "summary": "While the narrative effectively incorporates the user's interview answers, it completely fails to differentiate the adaptive pathway and mistakenly recommends a Men's event for a Female athlete.",
+        "authenticity": {
+          "score": 4,
+          "reasoning": "At 172cm, the user is somewhat undersized for elite rowing, but more egregiously, the pipeline recommended a 'Men's' adaptive swimming event for a Female athlete."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The verdicts expertly weave in the user's exact interview choices, linking 'technical precision' and 'pushing physical limits' directly to the mechanics of swimming and rowing."
+        },
+        "distinctness": {
+          "score": 3,
+          "reasoning": "There is no distinction made between the standing and adaptive pathways in the verdicts, and the adaptive pathway is entirely ignored in the narrative text."
+        },
+        "interview_quality": {
+          "score": 7,
+          "reasoning": "The narrator asks logical, progressive questions with meaningfully distinct options that probe both the psychological drive and technical focus of the athlete."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean of violations; 'The Brisbane 2032 Games' format is used correctly and no restricted terms are present."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "persona_id": "02_tall_power_athlete",
+      "persona_label": "Tall male power athlete",
+      "biometrics": {
+        "height_cm": 196,
+        "weight_kg": 103,
+        "birth_year": 2002,
+        "gender": "M"
+      },
+      "conversation_log": [
+        {
+          "role": "narrator",
+          "content": "Before we dive deeper into your ambitions, I'd love to understand your relationship with physical training\u2014how would you describe your current activity level?\nOptions: [I\u2019m currently training hard for a specific sport | I enjoy a mix of gym work and general fitness | I\u2019m looking to start a new high-performance routine from scratch]"
+        },
+        {
+          "role": "user",
+          "content": "I\u2019m looking to start a new high-performance routine from scratch"
+        },
+        {
+          "role": "narrator",
+          "content": "Before we look at the path ahead, what does your past sporting journey look like\u2014have you played competitive sports in the past, or would this be a brand new chapter for you?\nOptions: [I played team sports like rugby or basketball. | I mostly focused on solo gym training. | This would be my first time in competitive sport.]"
+        },
+        {
+          "role": "user",
+          "content": "I played team sports like rugby or basketball."
+        },
+        {
+          "role": "narrator",
+          "content": "Given your physical stature and your background in those high-intensity sports, what do you feel is your greatest asset that you would bring to a new, focused journey?\nOptions: [My physical power and presence | My ability to stay calm under pressure | My dedication to learning and refining new skills]"
+        },
+        {
+          "role": "user",
+          "content": "My physical power and presence"
+        }
+      ],
+      "scouting_result": [
+        {
+          "matched_profile_id": 11,
+          "matched_profile_name": "Net Presence",
+          "pathway_standing": "Basketball",
+          "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+          "scout_verdict": "Your path to the court is paved with the competitive fire of the team sports you once loved. Standing at 196.0cm, you possess a natural command over the game, turning your physical power and presence into a defensive bulwark and a relentless offensive weapon. As you transition into this high-performance journey, you are perfectly positioned to master the tactical nuances of the game.\n\nImagine yourself at the height of your career at The Brisbane 2032 Games, where your ability to dictate the flow of play makes you an indispensable leader. Whether you are dominating the court on your feet or harnessing the high-octane intensity and precision of the wheelchair basketball circuit, your imposing frame ensures that the game is always played on your terms."
+        },
+        {
+          "matched_profile_id": 12,
+          "matched_profile_name": "Iron Shoulder",
+          "pathway_standing": "Field Athletics (Discus/Shot Put)",
+          "pathway_adaptive": "Seated Shot Put (e.g., Women's Shot Put C3)",
+          "scout_verdict": "If the court is about spatial dominance, the throwing circle is where you express your pure, kinetic potential. Your 103.0kg mass, combined with your desire to build a new high-performance routine, provides an ideal engine for explosive, grounded strength. You aren't just training for a sport; you are refining yourself into a powerhouse.\n\nAs you dedicate your energy to the technical precision required for these throwing disciplines, your natural physical presence will evolve into a force of nature. Visualize the intensity of The Brisbane 2032 Games, where the stadium hushes as you prepare to translate years of disciplined effort into a single, monumental movement. Whether you are finding your stance in the standing circle or utilizing the focused, technical mechanics of the seated throwing chair, you are carving out a legacy built on the bedrock of absolute strength."
+        }
+      ],
+      "eval_result": {
+        "overall": 5,
+        "summary": "The scouting report integrates the user's physical profile and interview answers well, but suffers a critical failure by recommending a Women's adaptive event for a male athlete.",
+        "authenticity": {
+          "score": 5,
+          "reasoning": "While 196cm and 103kg is an excellent physical match for both basketball and throwing, the system recommending 'Women's Shot Put C3' for a male user destroys the scout's credibility."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The verdicts expertly weave in the user's exact interview answers, directly referencing their 'physical power and presence' and desire to start a 'new high-performance routine'."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The two pathways offer a great contrast between dynamic, spatial team dominance (Basketball) and pure, isolated explosive power (Field Athletics)."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The narrator asked strong, progressive questions that clearly separated the user's current fitness baseline, past team sport experience, and primary athletic asset."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean on trademark rules ('The Brisbane 2032 Games' used correctly), though the gender mismatch in the adaptive pathway is a major logic error."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "persona_id": "03_adaptive_visual_impairment",
+      "persona_label": "Adaptive athlete \u2014 partial visual impairment",
+      "biometrics": {
+        "height_cm": 181,
+        "weight_kg": 83,
+        "birth_year": 1998,
+        "gender": "M"
+      },
+      "conversation_log": [
+        {
+          "role": "narrator",
+          "content": "To get us started, how would you describe your current relationship with physical activity and competitive sport?\nOptions: [I have a background in competitive team sports. | I focus primarily on individual endurance and personal discipline. | Strength, power, and gym-based training are my bread and butter. | I am just beginning to explore my potential in a structured athletic journey.]"
+        },
+        {
+          "role": "user",
+          "content": "I focus primarily on individual endurance and personal discipline."
+        },
+        {
+          "role": "narrator",
+          "content": "To better understand your journey so far, how have you primarily challenged your limits\u2014do you lean toward endurance racing, technical personal milestones, or something else entirely?\nOptions: [I focus on long-distance endurance events or racing. | I prioritize hitting specific technical or strength-based milestones. | I prefer a mix of cross-training to build overall athletic capacity. | I am still experimenting with different disciplines to find my niche.]"
+        },
+        {
+          "role": "user",
+          "content": "I focus on long-distance endurance events or racing."
+        },
+        {
+          "role": "narrator",
+          "content": "As you look toward a high-performance athletic pathway, how do you define success\u2014is it purely about the podium, or is it more about pushing your personal limits to see what you are truly capable of achieving?\nOptions: [I'm chasing the podium and elite-level competition. | I want to see how far I can push my physical boundaries. | It's about the process and the community of fellow athletes. | I'm looking for a mix of both competitive results and personal growth.]"
+        },
+        {
+          "role": "user",
+          "content": "I'm chasing the podium and elite-level competition."
+        }
+      ],
+      "scouting_result": [
+        {
+          "matched_profile_id": 3,
+          "matched_profile_name": "Steady Hand",
+          "pathway_standing": "Marksmanship (Rifle/Pistol)",
+          "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+          "scout_verdict": "Your history in endurance racing is not just about the miles covered; it has forged an internal stillness that is rare among athletes. At 28, you stand at the threshold of peak performance, possessing the exact mental discipline required to hold focus when the heart rate threatens to spike. Your 181.0cm, 83.0kg frame provides a stable, grounded platform that is vital for the pursuit of absolute precision.\n\nImagine the quiet tension of the shooting range, where your long-distance training translates into controlled, measured breathing. This is where your pursuit of the podium shifts from explosive movement to the mastery of the moment. By channeling your commitment to discipline, you aren't just competing against others; you are mastering the geometry of stillness, positioning yourself as a formidable contender for a medal at The Brisbane 2032 Games."
+        },
+        {
+          "matched_profile_id": 13,
+          "matched_profile_name": "Edge Carver",
+          "pathway_standing": "Alpine Skiing / Speed Skating",
+          "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+          "scout_verdict": "You have spent years testing your limits on the road and the track, but your physiology suggests you are built for a different kind of speed: the high-stakes, tactical environment of alpine slopes or the frozen oval. With a balanced, solid build of 181.0cm and 83.0kg, you possess the raw power and kinetic awareness to dominate the edge-control mechanics essential for speed sports.\n\nYour hunger for the podium is the catalyst that will turn these technical demands into an art form. The transition from the endurance world to high-speed tactical environments is a natural evolution for a competitor as driven as you. At 28, you are in your prime to master the aggressive turns and weight-transfer intensity required to leave the rest of the field in your wake at The Milano Cortina 2026 Games."
+        }
+      ],
+      "eval_result": {
+        "overall": 6,
+        "summary": "The pipeline effectively personalizes the narrative based on the interview, but struggles with authenticity by matching an endurance racer to precision and speed sports while ignoring the adaptive pathways in the text.",
+        "authenticity": {
+          "score": 5,
+          "reasoning": "Matching an avid long-distance endurance racer to Marksmanship and Alpine Skiing is a significant stretch that ignores the user's primary cardiovascular strengths."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The verdicts explicitly weave the user's answers into the narrative, referencing their history in endurance racing and their desire to chase the podium."
+        },
+        "distinctness": {
+          "score": 4,
+          "reasoning": "Although the two archetypes offer different athletic angles, the narratives completely fail to mention or integrate the adaptive pathways, focusing solely on the standing sports."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The narrator asks logical, progressive questions with meaningfully distinct options that successfully drill down from general activity to specific competitive mindset."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean execution with correct 'The [City] [Year] Games' formatting and no restricted terms."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "persona_id": "04_veteran_endurance_runner",
+      "persona_label": "Veteran ultramarathon runner",
+      "biometrics": {
+        "height_cm": 175,
+        "weight_kg": 70,
+        "birth_year": 1984,
+        "gender": "M"
+      },
+      "conversation_log": [
+        {
+          "role": "narrator",
+          "content": "To kick things off, could you tell me a bit about your current relationship with physical activity and any sports you've been passionate about throughout your life?\nOptions: [I'm currently very active with endurance and strength training | I'm looking to get back into competitive sport after a long break | I've been involved in team sports for most of my life | I'm starting from scratch and looking for a new athletic challenge]"
+        },
+        {
+          "role": "user",
+          "content": "I'm currently very active with endurance and strength training"
+        },
+        {
+          "role": "narrator",
+          "content": "When you look at your current training, what kind of challenges or goals drive you to keep pushing your limits?\nOptions: [I'm looking for a new high-performance competitive challenge | I want to refine my skills to set new personal benchmarks | I'm interested in testing my capabilities in a structured, competitive setting | I'm exploring how my background translates to a specific top-tier athletic pathway]"
+        },
+        {
+          "role": "user",
+          "content": "I want to refine my skills to set new personal benchmarks"
+        },
+        {
+          "role": "narrator",
+          "content": "As you look at the landscape of high-performance sport, are you more drawn to the raw, explosive power of speed and strength, or the tactical endurance and mental fortitude required for long-distance events?\nOptions: [Explosive power and speed | Endurance and tactical precision | A hybrid approach blending both]"
+        },
+        {
+          "role": "user",
+          "content": "Endurance and tactical precision"
+        }
+      ],
+      "scouting_result": [
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+          "scout_verdict": "At 42, your years of dedicated endurance and strength training have forged a physical profile that thrives under the grueling demands of the long haul. Your 175cm, 70kg frame is optimized for sustained power output, acting as a highly efficient engine that does not waste a single watt of energy. When you step onto the course at The Los Angeles 2028 Games, you bring more than just muscle; you bring a seasoned tactical mind that thrives on precision and pacing. In a discipline where the smallest adjustment in strategy can mean the difference between the podium and the pack, your commitment to refining your own benchmarks makes you a formidable force on the road."
+        },
+        {
+          "matched_profile_id": 4,
+          "matched_profile_name": "Block Starter",
+          "pathway_standing": "100m/200m Sprints",
+          "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+          "scout_verdict": "While your heart often leans toward the steady, calculated rhythm of long-distance events, your background in strength training reveals a secondary, dormant potential for explosive, high-intensity speed. Your 175cm frame offers a compact, dense foundation that is uniquely capable of channeling raw power into an immediate, lightning-fast start. At The Brisbane 2032 Games, you would not just be a competitor; you would be a master of the explosive transition. This archetype rewards the very discipline you have cultivated in your training, requiring a rare, refined focus to master the kinetic physics of the sprint, proving that your athletic peak is defined by your intent, not your age."
+        }
+      ],
+      "eval_result": {
+        "overall": 7,
+        "summary": "The report delivers a highly personalized and authentic athletic profile based on the user's endurance background, though it fails to integrate the adaptive pathways into the narrative verdicts.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "The 175cm, 70kg biometric profile perfectly aligns with the 'Road Machine' cycling archetype, representing a highly realistic endurance athlete build."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The scout verdicts specifically weave in the user's age, endurance/strength background, and exact interview phrasing about refining skills for 'personal benchmarks'."
+        },
+        "distinctness": {
+          "score": 4,
+          "reasoning": "While the two archetypes contrast nicely (endurance vs. sprints), the narrative verdicts completely ignore the adaptive pathways, offering no genuine insight beyond adding them to the title fields."
+        },
+        "interview_quality": {
+          "score": 7,
+          "reasoning": "The questions logically progress from general activity level to specific athletic motivators, with the final question about endurance vs. power creating a meaningful fork in the recommendation."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Properly formats 'The Los Angeles 2028 Games' and 'The Brisbane 2032 Games' without triggering any restricted Olympic terminology or NIL violations."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "persona_id": "05_youth_time_travel_2032",
+      "persona_label": "Youth gymnast \u2014 time travel to 2032",
+      "biometrics": {
+        "height_cm": 164,
+        "weight_kg": 55,
+        "birth_year": 2010,
+        "gender": "F"
+      },
+      "conversation_log": [
+        {
+          "role": "narrator",
+          "content": "To kick things off, how would you describe your experience in competitive sport so far?\nOptions: [I have been competing in organized sports for years. | I am relatively new to structured athletics but very active. | I am just starting to explore my true athletic potential.]"
+        },
+        {
+          "role": "user",
+          "content": "I have been competing in organized sports for years."
+        },
+        {
+          "role": "narrator",
+          "content": "What specific types of sports or disciplines have formed the core of your journey in high-performance sport so far?\nOptions: [Mainly individual or technical sports (e.g., gymnastics, swimming, or track) | Largely team-based sports (e.g., basketball, soccer, or volleyball) | A mix of everything\u2014I love exploring new athletic challenges]"
+        },
+        {
+          "role": "user",
+          "content": "Mainly individual or technical sports (e.g., gymnastics, swimming, or track)"
+        },
+        {
+          "role": "narrator",
+          "content": "At 22 during The 2032 Games, you would be entering your elite peak\u2014how do you envision your athletic identity having transformed by the time you reach that stage of your journey?\nOptions: [I will have perfected a single technical discipline to reach the pinnacle of the sport. | I will have expanded my versatility, mastering multiple technical movements to adapt to any challenge. | I will have become a tactical specialist, using my years of experience to out-think the competition.]"
+        },
+        {
+          "role": "user",
+          "content": "I will have perfected a single technical discipline to reach the pinnacle of the sport."
+        }
+      ],
+      "scouting_result": [
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+          "scout_verdict": "You are a technician of motion, built for the singular, relentless pursuit of efficiency. Your history in individual, technical sports has provided the perfect training ground for the high-stakes discipline of cycling or the multi-layered challenge of the triathlon. You have chosen the path of the specialist, and that obsession with perfection is exactly what is needed to master the mechanical and physiological demands of endurance sport.\n\nAt 164cm and 55kg, your frame is naturally optimized for aerodynamic efficiency, allowing you to slice through the air with minimal resistance. By the time you reach The Brisbane 2032 Games at age 22, this commitment to a single discipline will have transformed you from a dedicated athlete into a tactical master of the road. Your journey is no longer just about participation; it is about the cold, calculated refinement of every pedal stroke as you move toward your elite peak."
+        },
+        {
+          "matched_profile_id": 2,
+          "matched_profile_name": "Long Haul",
+          "pathway_standing": "Distance Running",
+          "pathway_adaptive": "Wheelchair Racing (e.g., Women's Marathon T54)",
+          "scout_verdict": "The road to The Brisbane 2032 Games requires more than just raw speed\u2014it demands a unique mental endurance that can only be forged in the solitary heat of individual competition. You have spent years mastering your own movements, and that background in technical, track-oriented disciplines is the foundation of your future as a distance athlete. You don't need a team to push you; you possess the internal drive to maintain peak intensity when the rest of the field begins to falter.\n\nYour 164cm, 55kg build is deceptively light yet resilient, offering the durability needed for the grueling pacing of long-distance events. As you approach your prime at 22, your identity as an athlete will solidify into that of a true specialist, one who treats every training session as a building block toward a singular, crowning performance at The Brisbane 2032 Games. This pathway allows you to convert your years of discipline into a sustained, powerful career defined by stamina, focus, and the unwavering pursuit of your personal best."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A strong, highly tailored scouting report that effectively uses the athlete's biometrics, age context, and interview answers to build a compelling narrative.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "A frame of 164cm and 55kg is highly realistic for the aerobic demands of both distance running and cycling, making both 'Road Machine' and 'Long Haul' highly credible archetypes."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The verdicts weave in specific interview answers effortlessly, such as referencing her history in 'individual, technical sports' and her desire to 'perfect a single technical discipline'."
+        },
+        "distinctness": {
+          "score": 7,
+          "reasoning": "While both pathways focus on endurance, they distinctively separate the aerodynamic/mechanical focus of cycling from the mental pacing and durability of distance running."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "The narrative perfectly captures the 'Elite Peak' stage for a 22-year-old, noting she will be approaching her prime and transitioning from 'a dedicated athlete into a tactical master'."
+        },
+        "interview_quality": {
+          "score": 7,
+          "reasoning": "The questions logically progress from general experience to specific sport types and future mindset, with options that clearly distinguish between a generalist and a specialist."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean compliance pass with correct usage of 'The Brisbane 2032 Games' and appropriately balanced adaptive pathways."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "persona_id": "06_hostile_ex_boxer",
+      "persona_label": "Hostile ex-boxer \u2014 distrusts Olympics and AI",
+      "biometrics": {
+        "height_cm": 183,
+        "weight_kg": 87,
+        "birth_year": 1995,
+        "gender": "M"
+      },
+      "conversation_log": [
+        {
+          "role": "narrator",
+          "content": "To start our journey, how would you describe your relationship with physical training at this stage in your life?\nOptions: [I am a lifelong athlete currently training for competitive events. | I am active but looking to transition into a structured, high-performance pathway. | I am rebuilding my routine and exploring where my natural talents might fit best. | I prefer to share my athletic history in my own words.]"
+        },
+        {
+          "role": "user",
+          "content": "I prefer to share my athletic history in my own words."
+        },
+        {
+          "role": "narrator",
+          "content": "Could you tell me a bit more about the sports or activities that have shaped you over the years? What has been your primary focus or 'playground' in your competitive sporting journey so far?"
+        },
+        {
+          "role": "user",
+          "content": "I spent years boxing until the corrupt Olympic judges stole my future, so now I just train to stay dangerous and avoid your surveillance."
+        },
+        {
+          "role": "narrator",
+          "content": "Given that background in the ring, which physical or mental attributes do you feel are your greatest assets when you are training at your peak?\nOptions: [Explosive power and short-burst speed | Endurance and high-intensity mental grit | Technical coordination and tactical instinct | I prefer to describe my current strengths in my own words]"
+        },
+        {
+          "role": "user",
+          "content": "Explosive power and short-burst speed"
+        },
+        {
+          "role": "narrator",
+          "content": "To get a sense of how we might best channel that intensity, how much time per week are you currently able to dedicate to structured, high-intensity training?\nOptions: [Less than 5 hours a week | 5 to 10 hours a week | 10 to 15 hours a week | 15+ hours (full-time focus)]"
+        },
+        {
+          "role": "user",
+          "content": "15+ hours (full-time focus)"
+        }
+      ],
+      "scouting_result": [
+        {
+          "matched_profile_id": 7,
+          "matched_profile_name": "Swiss Army",
+          "pathway_standing": "Decathlon",
+          "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+          "scout_verdict": "Your history in the ring has forged a level of explosive intensity that few athletes ever reach, and while the path of the boxer is behind you, your capacity to weaponize that power remains your greatest asset. You possess a physical framework perfectly suited to the Decathlon. The same raw, short-burst speed that defined your combat style will now propel you through the sprints, the jumps, and the throws. By dedicating your focus to your craft, you have built the foundation required for the ultimate test of human versatility. The Brisbane 2032 Games are not just a stage for you; they are a venue to prove that a fighter\u2019s grit, when applied to the structure of high-performance athletics, creates a champion who cannot be broken by external circumstances. You are no longer just staying dangerous; you are becoming the most complete athlete on the track."
+        },
+        {
+          "matched_profile_id": 3,
+          "matched_profile_name": "Steady Hand",
+          "pathway_standing": "Marksmanship (Rifle/Pistol)",
+          "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+          "scout_verdict": "The path to greatness is often found not in the loudest explosions, but in the most absolute control. Your boxing background has conditioned you to read an opponent and manage extreme pressure; now, we are redirecting that fire into the clinical precision of Marksmanship. Your commitment provides the necessary discipline to master the microscopic stillness required to hit the center of a target under the world's most intense gaze. At 31, your maturity gives you an edge in the mental game that younger competitors simply cannot replicate. While others are ruled by adrenaline, you will operate with the calculated intent of a veteran. Stepping onto the podium at The Brisbane 2032 Games will be the ultimate validation of your transformation\u2014from a fighter who reacts to the world, to a marksman who commands it with a steady hand and an unbreakable will."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A strong and highly customized scouting report that takes a potentially problematic, hostile user input and channels it into two compelling and distinct athletic pathways.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "At 183cm and 87kg, the user has a solid, powerful build that genuinely suits the explosive demands of the Decathlon, while Marksmanship smartly capitalizes on the mental discipline honed from combat sports."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The verdicts brilliantly incorporate the user's specific (and edgy) mention of boxing and overcoming 'external circumstances' (a nod to the corrupt judges comment) without validating the conspiracy theory."
+        },
+        "distinctness": {
+          "score": 9,
+          "reasoning": "The two pathways offer a perfect dichotomy: one channels the user's explosive physical power (Decathlon), while the other focuses entirely on mental control and pressure management (Marksmanship)."
+        },
+        "interview_quality": {
+          "score": 7,
+          "reasoning": "The interview progressed logically and the Narrator dynamically adapted to the user's custom text input ('background in the ring'), though the multiple-choice options remained fairly standard."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean; appropriately formatted 'The Brisbane 2032 Games' and safely navigated the user's controversial input without repeating non-compliant phrases."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "persona_id": "07_congenitally_blind_goalball",
+      "persona_label": "Congenitally blind \u2014 goalball and tandem cycling",
+      "biometrics": {
+        "height_cm": 165,
+        "weight_kg": 60,
+        "birth_year": 1992,
+        "gender": "F"
+      },
+      "conversation_log": [
+        {
+          "role": "narrator",
+          "content": "To start us off, how would you describe your current relationship with physical activity or competitive sport?\nOptions: [I'm currently very active and compete regularly. | I'm looking to rediscover my athletic side after a break. | I've always been interested in sport but haven't found the right path yet.]"
+        },
+        {
+          "role": "user",
+          "content": "I'm currently very active and compete regularly."
+        },
+        {
+          "role": "narrator",
+          "content": "To help me understand your physical strengths better, which of these best describes your primary focus in your current competitive journey?\nOptions: [Individual endurance (e.g., running, swimming, cycling) | Strength and power-based activities (e.g., lifting, sprints, throwing) | Dynamic team or tactical sports (e.g., court or field sports)]"
+        },
+        {
+          "role": "user",
+          "content": "Dynamic team or tactical sports (e.g., court or field sports)"
+        },
+        {
+          "role": "narrator",
+          "content": "To help me understand your competitive mindset, what would you say has been the most defining moment or realization in your sporting journey thus far?\nOptions: [A specific competition that really tested my limits | The process of mastering a difficult tactical skill | Developing the discipline required for consistent training | Learning how to push through a major setback]"
+        },
+        {
+          "role": "user",
+          "content": "The process of mastering a difficult tactical skill"
+        },
+        {
+          "role": "narrator",
+          "content": "As you consider your next steps in your high-performance athletic journey, what is the core drive that motivates you to push toward your next level of excellence?\nOptions: [Chasing personal bests and constant self-improvement | The thrill of outsmarting opponents in competitive scenarios | Building a legacy and inspiring those who follow in my footsteps]"
+        },
+        {
+          "role": "user",
+          "content": "The thrill of outsmarting opponents in competitive scenarios"
+        }
+      ],
+      "scouting_result": [
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+          "scout_verdict": "Your commitment to mastering the fine details of your sport makes you a formidable presence on the road. At 165cm and 60kg, your build is not just efficient\u2014it is a precision instrument designed for the high-stakes dynamics of the peloton. Your drive to outsmart your opponents turns every race into a high-stakes chess match, a mindset that will be your greatest asset when you step onto the start line at The LA28 Games. You possess the rare combination of steady endurance and the analytical awareness required to dictate the tempo of a race. By leveraging your years of experience, you transform the road into your personal domain, anticipating moves before they unfold and choosing the perfect moment to strike. This is your pathway to a legacy built on intelligence, strategic pacing, and the relentless pursuit of tactical superiority."
+        },
+        {
+          "matched_profile_id": 6,
+          "matched_profile_name": "Mat Technician",
+          "pathway_standing": "Wrestling",
+          "pathway_adaptive": "Powerlifting (e.g., Men's +100 kg)",
+          "scout_verdict": "There is a unique intensity in the way you approach a challenge, viewing every physical encounter as a complex puzzle to be solved. As a Mat Technician, you don't just rely on raw output; you use your compact frame and exceptional leverage to dismantle an opponent's strategy from the inside out. Your success is anchored in the same discipline that has defined your journey thus far\u2014the patient, focused mastery of complex tactical skills. At The LA28 Games, you will be the athlete who brings calm, calculated precision to the pressure-cooker environment of the competition hall. Whether you are finding the perfect angle to gain control or applying force with surgical accuracy, your ability to stay composed under fire makes you a dangerous competitor. Your path is one of grounded mechanical dominance, where the battle is won in the mind long before it is decided on the mat or the platform."
+        }
+      ],
+      "eval_result": {
+        "overall": 4,
+        "summary": "While the narrative incorporates the user's tactical mindset well, assigning a 60kg female athlete to 'Men's +100 kg' Powerlifting and 'Men's Road Race' completely breaks immersion and utility.",
+        "authenticity": {
+          "score": 3,
+          "reasoning": "Although 60kg is a great fit for women's wrestling, recommending 'Men's +100 kg' powerlifting and 'Men's' handcycling for a 60kg female completely shatters the realism of the scouting report."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The narrative effectively weaves the user's stated love for 'mastering difficult tactical skills' and 'outsmarting opponents' into the sport-specific analogies of peloton chess matches and wrestling puzzles."
+        },
+        "distinctness": {
+          "score": 6,
+          "reasoning": "Cycling and Wrestling offer distinct athletic paths, but the adaptive pathways feel tacked on and completely ignore the user's biometric profile."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions offer functionally distinct, meaningful choices that clearly funnel the user toward either an endurance, power, or tactical profile based on their genuine preferences."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean of restricted terms and uses 'The LA28 Games' correctly, though the gender and weight mismatch in the adaptive pathways is a major data flaw."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "persona_id": "08_above_knee_amputee_sprinter",
+      "persona_label": "Above-knee amputee \u2014 para-sprinter",
+      "biometrics": {
+        "height_cm": 175,
+        "weight_kg": 73,
+        "birth_year": 2000,
+        "gender": "M"
+      },
+      "conversation_log": [
+        {
+          "role": "narrator",
+          "content": "To start our journey, how would you describe your history with competitive sport so far?\nOptions: [I\u2019ve spent years in team-based competition. | I lean toward individual endurance and discipline-focused sports. | I\u2019ve focused primarily on strength and explosive power training. | I'm new to the world of competitive sport and looking to find my path.]"
+        },
+        {
+          "role": "user",
+          "content": "I\u2019ve spent years in team-based competition."
+        },
+        {
+          "role": "narrator",
+          "content": "When you look back on your experience in team-based settings, what aspect of the competition did you find the most rewarding?\nOptions: [The strategic depth and working as a tactical unit. | The adrenaline and high-stakes intensity of the game. | The camaraderie and building shared goals with my teammates.]"
+        },
+        {
+          "role": "user",
+          "content": "The adrenaline and high-stakes intensity of the game."
+        },
+        {
+          "role": "narrator",
+          "content": "When you're facing those high-pressure moments, do you find your focus leaning more toward pure physical output and raw intensity, or is it more about the mental chess match of outmaneuvering your opponent?\nOptions: [Pure physical output and raw intensity. | Mental strategy and outmaneuvering opponents. | A perfect balance of both.]"
+        },
+        {
+          "role": "user",
+          "content": "Pure physical output and raw intensity."
+        }
+      ],
+      "scouting_result": [
+        {
+          "matched_profile_id": 4,
+          "matched_profile_name": "Block Starter",
+          "pathway_standing": "100m/200m Sprints",
+          "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+          "scout_verdict": "You are a predator on the track, built to thrive in the split-second world of pure acceleration. Your 175cm, 73kg frame acts as a high-performance engine, optimized for the explosive power-to-weight ratio required to dominate the short-burst discipline. While you cut your teeth in the high-stakes world of team sports, you now find your true calling in the solitary intensity of the sprint, where every millisecond is dictated by your own raw, physical drive.\n\nAt 26, you are entering the prime window for your neuromuscular speed to hit its absolute peak. Standing on the blocks at The 2028 Games, you carry that familiar adrenaline from your team days, but here, it is compressed into a single, kinetic heartbeat. You don't just run; you command the track with the same intensity you once brought to the field, proving that the most explosive unit on the pitch is often the individual who dares to move faster than anyone else."
+        },
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+          "scout_verdict": "Your history of team-based competition taught you the value of tenacity, but the cycling circuit is where your appetite for pure, grueling physical output finds its perfect outlet. With a robust 73kg frame, you possess the structural efficiency to maintain blistering power outputs over long distances. You thrive on the sheer intensity of the race, and this pathway offers the high-stakes battlefield you crave, where the machine and the athlete become a singular, unrelenting force.\n\nWhen you line up for the road race at The 2032 Games, the adrenaline will be palpable\u2014not from the roar of a crowd in a stadium, but from the searing heat in your lungs and the rhythm of your own heart. This discipline demands the same unwavering commitment you brought to your team, requiring you to channel that competitive fire into mechanical output. Here, your drive to outpace the field isn't just about strategy; it's a testament to your ability to sustain peak performance when the physical cost is at its highest."
+        }
+      ],
+      "eval_result": {
+        "overall": 7,
+        "summary": "A highly personalized scouting report that beautifully integrates the user's interview answers, though it falls short in exploring the adaptive pathways.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "A height of 175cm and weight of 73kg provides a strong power-to-weight ratio that realistically supports both explosive sprinting and endurance cycling."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The narratives expertly weave in the user's specific background in team sports and their expressed preference for adrenaline and pure physical output."
+        },
+        "distinctness": {
+          "score": 4,
+          "reasoning": "Although two distinct archetypes are presented, the individual scout verdicts completely ignore the adaptive pathways, offering only a single blended narrative for each."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions progress logically from broad athletic history to specific psychological drivers, offering distinct choices that genuinely help narrow the athletic profile."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean execution; correctly avoids forbidden terminology while using appropriate Games references."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "persona_id": "09_congenital_limb_difference_swimmer",
+      "persona_label": "Congenital limb difference \u2014 adaptive swimmer",
+      "biometrics": {
+        "height_cm": 168,
+        "weight_kg": 63,
+        "birth_year": 1997,
+        "gender": "F"
+      },
+      "conversation_log": [
+        {
+          "role": "narrator",
+          "content": "To get us started, could you share a bit about your current relationship with movement or competitive sport? How do you like to challenge your body?\nOptions: [I am currently active in competitive team sports | I focus on individual endurance, like running or cycling | I thrive on strength and explosive power training | I am looking to get back into a structured athletic routine]"
+        },
+        {
+          "role": "user",
+          "content": "I am currently active in competitive team sports"
+        },
+        {
+          "role": "narrator",
+          "content": "When you are out on the field or court, which aspect of your performance do you feel defines your impact on the team?\nOptions: [I am a tactical playmaker, setting up others for success | I am a defensive anchor, focused on intensity and protection | I am an explosive attacker, looking to break through | I am an endurance runner, covering ground all game long]"
+        },
+        {
+          "role": "user",
+          "content": "I am an explosive attacker, looking to break through"
+        },
+        {
+          "role": "narrator",
+          "content": "To keep that competitive edge sharp, how would you describe your typical training approach when you aren't on the field?\nOptions: [I focus on high-intensity interval training and speed drills | I prioritize heavy resistance and power-based lifting | I rely primarily on my team practice sessions for conditioning | I follow a balanced program of recovery, mobility, and skill-work]"
+        },
+        {
+          "role": "user",
+          "content": "I prioritize heavy resistance and power-based lifting"
+        }
+      ],
+      "scouting_result": [
+        {
+          "matched_profile_id": 13,
+          "matched_profile_name": "Edge Carver",
+          "pathway_standing": "Alpine Skiing / Speed Skating",
+          "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+          "scout_verdict": "Your history as an explosive attacker on the field has primed you for the high-stakes precision required of the Edge Carver. At 168.0cm and 63.0kg, your frame acts as a coiled spring, ready to translate that familiar on-field intensity into the technical velocity of the slopes. At 29, you are at a prime age where your physical maturity meets a refined, strategic mindset\u2014essential traits for navigating the razor-thin margins of a championship course.\n\nImagine the roar of the crowd at The Milano Cortina 2026 Games as you stand at the starting gate. Your background in power-based lifting provides the raw torque needed to hold an edge through icy turns, while your experience as a tactical team player translates into a unique ability to read the terrain under pressure. You don't just race; you dominate the line, carrying the same hunger for the breakthrough that defined your team-sport career."
+        },
+        {
+          "matched_profile_id": 4,
+          "matched_profile_name": "Block Starter",
+          "pathway_standing": "100m/200m Sprints",
+          "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+          "scout_verdict": "The Block Starter archetype is the manifestation of the 'explosive attacker' you describe yourself to be. Your commitment to heavy resistance training has built the precise fast-twitch profile needed to erupt from the blocks with authority. Standing at 168.0cm and 63.0kg, you possess a compact, powerful physiology that allows for immediate acceleration\u2014the kind of movement that wins races in the opening thirty meters.\n\nPicture yourself at The LA28 Games. The stadium is silent, the tension is absolute, and when the gun sounds, your training takes over. You are no longer just an athlete; you are a force of nature, carrying the explosive power from your years of competitive team sports into the singular pursuit of speed. This pathway honors the raw power you have cultivated, offering you the ultimate stage to prove that your ability to break through isn't just a strategy\u2014it's your identity."
+        }
+      ],
+      "eval_result": {
+        "overall": 5,
+        "summary": "The narrative successfully integrates the user's interview answers and suggests physically appropriate sports, but glaringly recommends Men's adaptive events for a female athlete and fails to address the adaptive experience in the text.",
+        "authenticity": {
+          "score": 5,
+          "reasoning": "While the physical mapping of a 168cm/63kg power-lifter to sprinting and skiing is highly plausible, recommending 'Men's' events to a female athlete ruins the authenticity."
+        },
+        "personalization": {
+          "score": 6,
+          "reasoning": "The text does a great job weaving in specific answers like 'explosive attacker' and 'power-based lifting', but fails on basic demographic personalization by ignoring the user's gender."
+        },
+        "distinctness": {
+          "score": 3,
+          "reasoning": "The standing and adaptive pathways are not meaningfully distinct, as the single verdict per archetype relies entirely on able-bodied imagery like 'erupt from the blocks'."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The narrator's questions logically drill down from general sport interest to specific in-game roles and off-field training habits, offering genuinely distinct options at each turn."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Properly uses 'The Milano Cortina 2026 Games' and 'The LA28 Games' formats without triggering any forbidden terms or NIL violations."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "persona_id": "10_early_stage_als",
+      "persona_label": "Early-stage ALS \u2014 former competitive tennis player",
+      "biometrics": {
+        "height_cm": 178,
+        "weight_kg": 78,
+        "birth_year": 1981,
+        "gender": "M"
+      },
+      "conversation_log": [
+        {
+          "role": "narrator",
+          "content": "To start, could you tell me a little about your history with physical activity? Have you always been deeply involved in high-performance sport, or is this a new ambition you are setting for yourself?\nOptions: [I have a lifelong background in competitive athletics. | I\u2019m returning to the field after a significant hiatus. | I am beginning to explore my physical potential now.]"
+        },
+        {
+          "role": "user",
+          "content": "I have a lifelong background in competitive athletics."
+        },
+        {
+          "role": "narrator",
+          "content": "Looking back on that journey, which of these modalities defined your most intense years of training?\nOptions: [Team-based field sports | Endurance and individual disciplines | Strength and explosive power training | A mix of various modalities]"
+        },
+        {
+          "role": "user",
+          "content": "Endurance and individual disciplines"
+        },
+        {
+          "role": "narrator",
+          "content": "As you look toward your next goals in high-performance sport, how would you describe your current training frequency?\nOptions: [Casual/Maintenance (1-2 times a week) | Active Hobbyist (3-4 times a week) | Competitive/Rigorous (5+ times a week) | I am preparing to significantly increase my training load.]"
+        },
+        {
+          "role": "user",
+          "content": "Casual/Maintenance (1-2 times a week)"
+        }
+      ],
+      "scouting_result": [
+        {
+          "matched_profile_id": 13,
+          "matched_profile_name": "Edge Carver",
+          "pathway_standing": "Alpine Skiing / Speed Skating",
+          "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+          "scout_verdict": "At 45, you bring a level of seasoned focus that younger competitors often lack. Your height of 178.0cm and weight of 78.0kg provide a stable, powerful center of gravity ideal for the technical demands of speed disciplines. Drawing on your lifelong commitment to endurance and individual pursuits, you possess the mental fortitude required for the solitary, high-stakes environment found on the slopes.\n\nYour history of intense, self-driven training is the perfect foundation for mastering the precise edge control required at this level of performance. Visualizing your performance at The Milano Cortina 2026 Games, it is clear that your ability to remain calm under pressure while navigating high-velocity turns is a significant asset. You aren't just participating; you are refining a lifelong craft, turning the discipline of your past into a sharp, competitive advantage on the ice and snow."
+        },
+        {
+          "matched_profile_id": 4,
+          "matched_profile_name": "Block Starter",
+          "pathway_standing": "100m/200m Sprints",
+          "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+          "scout_verdict": "While your background is rooted in endurance, your physical build at 178.0cm and 78.0kg reveals a hidden reservoir of explosive potential. The transition from long-distance stamina to short-burst intensity is a challenge that demands a deep well of athletic intelligence\u2014a well you have been filling throughout your years of competitive participation. You possess the structural integrity to handle the extreme forces of the starting blocks.\n\nStepping into the atmosphere of The Brisbane 2032 Games, you would be trading steady, long-form exertion for the singular, blinding speed of the track. This path requires a recalibration of your movement patterns, leaning on your natural biomechanics to generate immediate, high-frequency power. Your past experience has taught you how to train with purpose, and that same mindset will allow you to dismantle the technical barriers of the sprint, proving that your athletic peak is defined not by age, but by the ferocity of your intent."
+        }
+      ],
+      "eval_result": {
+        "overall": 6,
+        "summary": "The report incorporates the user's athletic background effectively, but stretches plausibility by recommending explosive sprints to a 45-year-old with casual endurance habits.",
+        "authenticity": {
+          "score": 6,
+          "reasoning": "While Edge Carver fits the user's physical build well, trying to pivot a 45-year-old casual endurance athlete into an explosive Block Starter stretches real-world scouting plausibility."
+        },
+        "personalization": {
+          "score": 7,
+          "reasoning": "The verdicts accurately reference the user's lifelong endurance background and biometrics, but gloss over their current drop to 'Casual/Maintenance' training."
+        },
+        "distinctness": {
+          "score": 5,
+          "reasoning": "The two archetypes provide vastly different sporting angles, but the narratives completely fail to explore the adaptive pathways beyond listing them in the titles."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The narrator asks a logical progression of questions with genuinely distinct options that effectively narrow down the athlete's history, modality, and current training load."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean compliance with proper Games terminology (e.g., The Milano Cortina 2026 Games) and no restricted trademark violations."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "persona_id": "11_retired_gymnast_time_travel_1984",
+      "persona_label": "Retired gymnastics coach \u2014 time travel to 1984 LA Games",
+      "biometrics": {
+        "height_cm": 162,
+        "weight_kg": 57,
+        "birth_year": 1958,
+        "gender": "F"
+      },
+      "conversation_log": [
+        {
+          "role": "narrator",
+          "content": "Looking back at your sporting journey over the years, what kind of activities or competitive movements have you felt most connected to?\nOptions: [Team-based sports and court games | Endurance, running, or cycling | Strength-focused or bodyweight training | I have mostly enjoyed recreational movement]"
+        },
+        {
+          "role": "user",
+          "content": "Strength-focused or bodyweight training"
+        },
+        {
+          "role": "narrator",
+          "content": "How long have you been incorporating this type of focused strength training into your regular routine?\nOptions: [I have been consistent with it for several decades. | I started later in life to build foundational strength. | I have moved through various phases of intensity over the years.]"
+        },
+        {
+          "role": "user",
+          "content": "I have been consistent with it for several decades."
+        },
+        {
+          "role": "narrator",
+          "content": "Reflecting on that pivotal era of your life\u2014at age 26, when you were hitting your physical peak\u2014what was the primary focus of your training regime?\nOptions: [Pursuing personal bests and maximum physical power | The tactical intensity of competitive sports | Mastering complex movements and body control | Focusing on speed and explosive agility]"
+        },
+        {
+          "role": "user",
+          "content": "Mastering complex movements and body control"
+        }
+      ],
+      "scouting_result": [
+        {
+          "matched_profile_id": 6,
+          "matched_profile_name": "Mat Technician",
+          "pathway_standing": "Wrestling",
+          "pathway_adaptive": "Powerlifting (e.g., Men's +100 kg)",
+          "scout_verdict": "Standing at 162.0cm and weighing 57.0kg, your physique at age 26 was perfectly tuned for the technical demands of the mat. During The 1984 Games, where the atmosphere was electric with the pursuit of absolute physical mastery, your dedication to complex movements and body control would have made you a formidable force. You possessed that rare ability to translate raw intent into precise, leverage-based execution, turning every movement into a calculated chess match against gravity and an opponent.\n\nYour decades of commitment to strength-focused training are the bedrock of this profile. In an era that celebrated the grit of the individual, your focus on mastering the nuances of your own physiology set you apart. Whether through the tactical intensity of a grappling discipline or the singular, grounded power required for heavy lifting, you were an athlete defined by the ability to hold your ground and outmaneuver others through sheer technical superiority."
+        },
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+          "scout_verdict": "As you stood at the threshold of your physical prime during The 1984 Games, your profile shifted toward the relentless, rhythmic pursuit of the road. With your compact, efficient build, you were engineered for the power-to-weight demands that define the world's most enduring cyclists. This era was a turning point for road sport, and your personal history of lifelong, consistent training aligns perfectly with the discipline required to sustain output over long distances, where the mind is as taxed as the muscles.\n\nYour journey is one of endurance, built on a foundation of decades-long consistency. At 26, you possessed the internal drive to push past the wall, a trait that makes you a natural for the long-distance demands of high-performance road racing. Your body was not just a machine of power, but one of resilience; it was a frame built for the long haul, reflecting a deep-seated connection to the movement that only those who have spent a lifetime in motion truly understand."
+        }
+      ],
+      "eval_result": {
+        "overall": 4,
+        "summary": "While the physical biometrics align well with the standing pathways, the adaptive pathway recommendations contain severe gender and weight class mismatches that undermine the entire report.",
+        "authenticity": {
+          "score": 7,
+          "reasoning": "A height of 162cm and weight of 57kg is a perfect biological fit for the 57kg wrestling weight class and makes sense for a compact cyclist."
+        },
+        "personalization": {
+          "score": 8,
+          "reasoning": "The narrative effectively weaves in the user's specific interview answers regarding 'complex movements and body control' and 'strength-focused training'."
+        },
+        "distinctness": {
+          "score": 2,
+          "reasoning": "The adaptive pathways are egregiously mismatched, suggesting 'Men's +100 kg' powerlifting and 'Men's Road Race' for a 57kg female athlete."
+        },
+        "life_stage_coherence": {
+          "score": 6,
+          "reasoning": "The narrative correctly identifies the 26-year-old as being in their 'physical prime', but the repeated references to 'decades of commitment' feels mathematically strained for this age."
+        },
+        "interview_quality": {
+          "score": 4,
+          "reasoning": "The narrator offered 'several decades' of experience as an option to a 26-year-old, indicating a failure to dynamically adjust the interview logic based on the user's age."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean of IP violations, though the gender mismatch in the adaptive sport examples is a notable quality failure."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "persona_id": "12_para_rower_time_travel_2036",
+      "persona_label": "Para-rower with SCI \u2014 time travel to 2036 Games",
+      "biometrics": {
+        "height_cm": 184,
+        "weight_kg": 88,
+        "birth_year": 1988,
+        "gender": "M"
+      },
+      "conversation_log": [
+        {
+          "role": "narrator",
+          "content": "How would you describe your historical engagement with high-performance sport or competitive physical activity?\nOptions: [I have been a lifelong competitive athlete. | I focus primarily on recreational fitness and wellness. | I am looking to rediscover my athletic potential after a hiatus. | I am new to structured athletic training and looking for a path.]"
+        },
+        {
+          "role": "user",
+          "content": "I am looking to rediscover my athletic potential after a hiatus."
+        },
+        {
+          "role": "narrator",
+          "content": "To help me understand where your strengths might lie, what type of competitive activity did you focus on during your earlier years?\nOptions: [Explosive power sports (e.g., sprinting, jumping) | Endurance-based activities (e.g., running, cycling) | Team-based field sports | Strength and conditioning focus]"
+        },
+        {
+          "role": "user",
+          "content": "Endurance-based activities (e.g., running, cycling)"
+        },
+        {
+          "role": "narrator",
+          "content": "When you project yourself to The 2036 Games at age 48, how do you see the nature of your competitive drive shifting compared to your earlier years of endurance training?\nOptions: [Focusing on long-term wellness and movement longevity. | Pushing for a new peak in technical mastery and precision. | Mentoring and contributing to the next generation of competitors. | Seeking a fresh, discipline-specific challenge to redefine my limits.]"
+        },
+        {
+          "role": "user",
+          "content": "Pushing for a new peak in technical mastery and precision."
+        }
+      ],
+      "scouting_result": [
+        {
+          "matched_profile_id": 7,
+          "matched_profile_name": "Swiss Army",
+          "pathway_standing": "Decathlon",
+          "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+          "scout_verdict": "At 184cm and 88kg, you carry the legacy of your endurance history into a new era of technical sophistication. Your journey back from a hiatus isn't just about reclaiming speed; it\u2019s about architecting a more precise, multi-faceted athlete for The 2036 Games. You possess the engine of an endurance competitor, but your refined commitment to technical mastery is what sets you apart as you tackle the complex, varied demands of this multi-discipline event.\n\nThis path represents a true transformation of your competitive spirit. Where you once leaned on the steady, rhythmic grind of distance work, you are now sculpting your body to thrive in the fast-paced, high-stakes environment of an all-around competitor. As you step into The 2036 Games, you are not merely participating; you are executing a masterclass in versatility, leveraging decades of physical intelligence to prove that your current life stage is simply the canvas upon which your ultimate technical peak is painted."
+        },
+        {
+          "matched_profile_id": 10,
+          "matched_profile_name": "Launch Force",
+          "pathway_standing": "Bobsleigh / Push Sports",
+          "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+          "scout_verdict": "Your transition into the Launch Force category represents a bold, exciting departure from the endurance fields of your youth, perfectly aligning with your current shift toward precise, mechanical power. At 48, your 88kg frame serves as an asset of stability and potential energy, ideally suited for the explosive, measured nature of seated throwing disciplines or the high-intensity, kinetic push required for technical team sports. This is your chance to pivot your long-standing athletic drive toward a purely technical, strength-oriented expression.\n\nAt The 2036 Games, you will find that the focus required to hone a perfect release or a clean, powerful transfer of energy is the ultimate validation of your post-hiatus commitment. By trading the continuous endurance grind for the singular, explosive focus of this path, you are redefining what it means to be a legacy competitor. This is more than just a pivot; it is a profound recalibration of your athletic identity, prioritizing mechanical efficiency and the raw, refined intent that you have worked so hard to cultivate."
+        }
+      ],
+      "eval_result": {
+        "overall": 7,
+        "summary": "A highly personalized and narratively cohesive report that excellently incorporates the user's age and interview answers, though recommending Decathlon to a 48-year-old returning from a hiatus stretches real-world plausibility.",
+        "authenticity": {
+          "score": 6,
+          "reasoning": "While the 184cm/88kg frame fits the power aspects of Bobsleigh, suggesting Decathlon to a 48-year-old former endurance athlete returning from a hiatus is highly unrealistic for elite competition."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The verdicts brilliantly integrate the user's specific answers, referencing their 'journey back from a hiatus', 'endurance history', and desire for 'technical mastery and precision'."
+        },
+        "distinctness": {
+          "score": 8,
+          "reasoning": "The two pathways offer a clear contrast between multi-discipline versatility (Decathlon) and singular, explosive technical focus (Seated Throws/Bobsleigh)."
+        },
+        "life_stage_coherence": {
+          "score": 9,
+          "reasoning": "The narrative explicitly acknowledges the user's age ('At 48') and Legacy status, effectively reframing their return to sport around 'decades of physical intelligence' rather than youthful explosiveness."
+        },
+        "interview_quality": {
+          "score": 7,
+          "reasoning": "The questions build logically from past experience to specific disciplines, and the final question offers distinct, age-appropriate pathways that clearly influenced the outcome."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean; correctly uses 'The 2036 Games' and avoids restricted terminology."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "persona_id": "13_wheelchair_racer_paraplegic",
+      "persona_label": "T4 paraplegic \u2014 wheelchair racer and basketball player",
+      "biometrics": {
+        "height_cm": 163,
+        "weight_kg": 55,
+        "birth_year": 2004,
+        "gender": "F"
+      },
+      "conversation_log": [
+        {
+          "role": "narrator",
+          "content": "To start, how would you best describe your current relationship with competitive sport and physical training?\nOptions: [I have a background in competitive team sports. | I am an experienced individual athlete. | I focus mostly on strength and conditioning training. | I am just beginning my journey into high-performance sport.]"
+        },
+        {
+          "role": "user",
+          "content": "I am an experienced individual athlete."
+        },
+        {
+          "role": "narrator",
+          "content": "When you are in the middle of your most intense training sessions, what do you find is the primary goal that keeps you pushing forward?\nOptions: [Refining my technical skills and precision | Increasing my raw power and speed | Pushing my endurance limits | Mental toughness and strategic growth]"
+        },
+        {
+          "role": "user",
+          "content": "Increasing my raw power and speed"
+        },
+        {
+          "role": "narrator",
+          "content": "To keep that power consistently high, how many sessions a week do you typically dedicate specifically to high-intensity training?\nOptions: [1-2 sessions | 3-4 sessions | 5+ sessions | It varies based on my cycle]"
+        },
+        {
+          "role": "user",
+          "content": "5+ sessions"
+        }
+      ],
+      "scouting_result": [
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+          "scout_verdict": "Your history as an experienced individual athlete has clearly honed your ability to thrive in solitary, high-stakes environments. At 22, with your lean 55.0kg build, you possess the perfect foundation to transition your current 5+ session weekly high-intensity regime into the high-cadence, high-torque world of road cycling. Your drive for raw power and speed is the exact fuel needed to turn a climb into a weapon, allowing you to sustain aggressive efforts that leave the competition behind.\n\nImagine yourself at the starting line of The Brisbane 2032 Games. The focus you\u2019ve built training alone, pushing your limits when no one is watching, becomes your greatest asset. You are no longer just training; you are recalibrating your physiology to handle the sustained power output required to break away from the pack. You are entering your prime years, and your dedication to intensity ensures that when the final sprint begins, you will be the one holding the decisive advantage."
+        },
+        {
+          "matched_profile_id": 2,
+          "matched_profile_name": "Long Haul",
+          "pathway_standing": "Distance Running",
+          "pathway_adaptive": "Wheelchair Racing (e.g., Women's Marathon T54)",
+          "scout_verdict": "The marathon distance is the ultimate test of the individual spirit, a discipline that demands the exact level of grit and solitary focus you have cultivated throughout your athletic journey. At 55.0kg, your physical profile offers a significant advantage in terms of kinetic efficiency, minimizing drag and allowing you to translate your explosive power into the rhythmic, relentless motion of the road. Your current regimen of 5+ intense sessions per week provides the metabolic foundation necessary for long-distance dominance.\n\nAs you look toward the horizon of The Los Angeles 2028 Games, you carry the self-discipline of an athlete who has spent years perfecting their craft. The transition from raw, explosive power to the long-duration endurance required for high-performance racing is a natural evolution for someone with your background. In this arena, you aren't just racing against others; you are mastering the art of the long haul, where your ability to sustain speed during the final miles will define your legacy in the sport."
+        }
+      ],
+      "eval_result": {
+        "overall": 6,
+        "summary": "The report shows strong personalization by weaving interview answers into the narrative, but struggles with authenticity as it assigns endurance-heavy sports to an athlete who explicitly prioritized raw power and speed.",
+        "authenticity": {
+          "score": 5,
+          "reasoning": "While the 55kg build fits the assigned sports, suggesting marathon running and road cycling to an athlete who specifically chose 'increasing my raw power and speed' over 'pushing my endurance limits' is a clear mismatch."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The verdicts excellently integrate the user's specific inputs, directly referencing their 5+ weekly sessions, exact weight, and background as an individual athlete focused on power."
+        },
+        "distinctness": {
+          "score": 5,
+          "reasoning": "Although the two sports (cycling and running) are different, the narratives feel functionally similar and completely ignore the adaptive pathways, offering zero insight into handcycling or wheelchair racing."
+        },
+        "interview_quality": {
+          "score": 7,
+          "reasoning": "The questions progress logically from athletic background to training goals and frequency, with the second question offering strong, distinct forks that should have meaningfully guided the archetype selection."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Clean compliance pass with correct Games formatting ('The Brisbane 2032 Games') and no restricted terminology."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "persona_id": "14_deaf_sprinter",
+      "persona_label": "Profoundly deaf \u2014 competitive 400m sprinter",
+      "biometrics": {
+        "height_cm": 178,
+        "weight_kg": 76,
+        "birth_year": 2001,
+        "gender": "M"
+      },
+      "conversation_log": [
+        {
+          "role": "narrator",
+          "content": "To get us started, how would you describe your history in competitive sport? Have you spent your years honing a specific discipline, or has your experience been more about testing your versatility across different activities?\nOptions: [I\u2019ve been hyper-focused on one specific sport for years. | I\u2019ve explored many different activities and enjoy being a generalist. | I am new to the world of high-performance athletics.]"
+        },
+        {
+          "role": "user",
+          "content": "I\u2019ve been hyper-focused on one specific sport for years."
+        },
+        {
+          "role": "narrator",
+          "content": "Looking back on your time within that sport, do you feel you thrive most in the high-pressure environment of individual competition, or do you find your best performance comes from being part of a team?\nOptions: [I thrive in the high-pressure environment of individual competition. | I perform best when part of a team, working toward a shared goal. | I enjoy a blend of both, depending on the training phase.]"
+        },
+        {
+          "role": "user",
+          "content": "I thrive in the high-pressure environment of individual competition."
+        },
+        {
+          "role": "narrator",
+          "content": "As we look at your pathway toward top-tier athletic goals, would you say your primary motivation comes from the internal challenge of constantly pushing your own limits, or are you driven more by the pursuit of podium moments?\nOptions: [The internal challenge of self-improvement. | The pursuit of podiums and external validation. | A balance of both internal growth and external achievement.]"
+        },
+        {
+          "role": "user",
+          "content": "The pursuit of podiums and external validation."
+        }
+      ],
+      "scouting_result": [
+        {
+          "matched_profile_id": 4,
+          "matched_profile_name": "Block Starter",
+          "pathway_standing": "100m/200m Sprints",
+          "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+          "scout_verdict": "At 178.0cm and 76.0kg, you possess the raw, explosive power that defines the sprint archetype. Your years of hyper-focus on a single discipline have forged the mental resilience required for the singular, heart-pounding intensity of the track, where every millisecond determines your legacy. At 25, you are entering the prime of your career, perfectly positioned to channel your pursuit of podiums into the electric atmosphere of The Los Angeles 2028 Games.\n\nThis path is tailor-made for your competitive spirit; it is about the cold, individual pressure you thrive under. Your desire for external validation finds its ultimate home here, where the world is watching for the fastest person on the track. You aren't looking for teammates to share the burden\u2014you seek the glory of the finish line all to yourself, and with your natural build, that glory is well within your reach."
+        },
+        {
+          "matched_profile_id": 14,
+          "matched_profile_name": "Road Machine",
+          "pathway_standing": "Cycling / Triathlon",
+          "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+          "scout_verdict": "Should you seek a transition from the explosive velocity of the track, the world of endurance cycling offers a compelling alternative. Your lean, 76.0kg frame is a precision instrument, perfectly suited for the grueling, methodical demands of long-distance circuits where grit and data merge to create a championship performance. The solitary nature of this pathway rewards your deep-seated drive for self-validation, pitting your internal limits against the clock and the open road.\n\nImagine the focus required to navigate a technical road race at The Brisbane 2032 Games, where your ability to sustain power over long durations will define your standing. This discipline provides a different kind of intensity\u2014one where you are the sole architect of your strategy. Your history of hyper-focus acts as the perfect bedrock for the specialized, data-driven lifestyle of a top-tier cyclist, turning every training session into a calculated step toward your next podium moment."
+        }
+      ],
+      "eval_result": {
+        "overall": 7,
+        "summary": "The scouting report effectively leverages the user's biometrics and interview responses to create tailored, plausible sport recommendations, but entirely fails to integrate the adaptive pathways into the narrative verdicts.",
+        "authenticity": {
+          "score": 8,
+          "reasoning": "At 178cm and 76kg, the user has an appropriate build for both sprint power and endurance cycling, making the athletic recommendations highly credible."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The verdicts brilliantly weave in the user's specific answers regarding 'hyper-focus,' 'individual competition,' and the desire for 'podiums and external validation.'"
+        },
+        "distinctness": {
+          "score": 4,
+          "reasoning": "While the two archetypes (sprints vs. endurance cycling) are distinct from each other, the verdicts completely ignore the adaptive pathways, merely listing them in the headers without providing any narrative insight."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions progressively narrow down the athlete's psychological profile, and the options provided are meaningfully distinct, allowing for a genuine fork in potential recommendations."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "Compliant references to The Los Angeles 2028 Games and The Brisbane 2032 Games with no trademark violations."
+        }
+      },
+      "backend_error": null
+    },
+    {
+      "persona_id": "15_powerlifter_high_bmi",
+      "persona_label": "Competitive powerlifter \u2014 high BMI, elite strength",
+      "biometrics": {
+        "height_cm": 182,
+        "weight_kg": 142,
+        "birth_year": 1991,
+        "gender": "M"
+      },
+      "conversation_log": [
+        {
+          "role": "narrator",
+          "content": "To start our conversation, how would you describe your relationship with physical activity and competitive sport to date?\nOptions: [I have been a competitive athlete throughout my life. | I am looking to build a new foundation and start fresh. | I am returning to a sport I used to love.]"
+        },
+        {
+          "role": "user",
+          "content": "I have been a competitive athlete throughout my life."
+        },
+        {
+          "role": "narrator",
+          "content": "What kind of sporting environments have you thrived in most during your journey\u2014team settings where collaboration is key, or individual pursuits that test your personal limits?\nOptions: [I thrive in team sports. | I prefer individual challenges. | I've enjoyed a mix of both.]"
+        },
+        {
+          "role": "user",
+          "content": "I prefer individual challenges."
+        },
+        {
+          "role": "narrator",
+          "content": "When you look back at the most intense challenges in your sporting journey, have you typically felt more empowered by tests of raw explosive power or tests of long-duration endurance?\nOptions: [Explosive power and strength-based feats. | Endurance and stamina-based challenges. | I thrive when combining elements of both.]"
+        },
+        {
+          "role": "user",
+          "content": "Explosive power and strength-based feats."
+        }
+      ],
+      "scouting_result": [
+        {
+          "matched_profile_id": 12,
+          "matched_profile_name": "Iron Shoulder",
+          "pathway_standing": "Field Athletics (Discus/Shot Put)",
+          "pathway_adaptive": "Seated Shot Put (e.g., Women's Shot Put C3)",
+          "scout_verdict": "Your history as a lifelong competitor has forged a resolve that is perfectly complemented by your current physical profile. Standing at 182cm and weighing in at 142kg, you possess the rare, dense kinetic chain required to dominate in the throwing circle. At 35, you have entered a stage of life where your technical refinement meets your raw, unbridled power\u2014a combination that is nothing short of formidable.\n\nYou have always thrived on individual challenges, where the only thing standing between you and victory is the weight of the implement and your own capacity to produce force. Whether you are envisioning a future standing in the field at The LA28 Games or navigating the technical precision of a seated throw, your frame acts as an immovable anchor, allowing you to channel every ounce of that explosive energy into a singular, devastating movement. You are not just a participant; you are a powerhouse built for the world stage."
+        },
+        {
+          "matched_profile_id": 10,
+          "matched_profile_name": "Launch Force",
+          "pathway_standing": "Bobsleigh / Push Sports",
+          "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+          "scout_verdict": "There is a specific kind of intensity required to move mass with absolute velocity, and you have demonstrated that you possess that capability in abundance. Your massive, stable frame serves as the foundation for the explosive drive-out mechanics required for push sports or the high-output rotational force needed for the discus circle. This is the archetype of someone who does not just compete\u2014they strike.\n\nYour background in individual, strength-based feats confirms that you have the mental fortitude to isolate yourself in the pursuit of perfection. As you look toward the horizon, perhaps considering the high-performance demands of a future multi-discipline event, your 142kg structure gives you a significant advantage in inertia and momentum. You are ready to be the force that turns potential energy into a game-changing performance at the highest level of international competition."
+        }
+      ],
+      "eval_result": {
+        "overall": 8,
+        "summary": "A highly authentic and well-personalized scouting report that correctly identifies heavy-mass, power-based sports for this user, though it contains a noticeable gender-mapping error in the adaptive pathway.",
+        "authenticity": {
+          "score": 9,
+          "reasoning": "At 182cm and 142kg, the user's immense mass and self-reported explosive power perfectly align with real-world shot putters and bobsleigh push athletes as suggested by the 'Iron Shoulder' and 'Launch Force' archetypes."
+        },
+        "personalization": {
+          "score": 9,
+          "reasoning": "The scout verdicts seamlessly weave in the user's exact biometrics alongside their specific interview answers regarding lifelong competition and individual, strength-based feats."
+        },
+        "distinctness": {
+          "score": 6,
+          "reasoning": "While the sports are theoretically distinct, the first profile carelessly recommends 'Women's Shot Put C3' for a male user, and the verdicts rely mostly on the standing sport narrative rather than exploring the adaptive mechanics."
+        },
+        "interview_quality": {
+          "score": 8,
+          "reasoning": "The questions form a logical funnel, successfully narrowing the user's profile from general experience to team vs. individual settings, and finally differentiating between explosive power and endurance."
+        },
+        "compliance": {
+          "passed": true,
+          "note": "No IP violations were found and the correct 'The LA28 Games' format was used, though the gender inaccuracy in the pathway naming is a data quality issue."
+        }
+      },
+      "backend_error": null
+    }
+  ]
+}

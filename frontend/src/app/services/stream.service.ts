@@ -108,6 +108,19 @@ export class StreamService {
   private handleInterview(raw: string): void {
     const data = this.extractJson(raw);
 
+    // ── Era Interview Complete: narrator signals it has enough biographical context ──
+    if (data && data.era_ready_to_scout === true) {
+      this.state.addTrace({
+        type: 'trace',
+        agent: 'system',
+        event: 'EraInterviewComplete',
+        timestamp: new Date().toLocaleTimeString(),
+        detail: 'Narrator has gathered enough era context. Triggering era scout.'
+      });
+      this.state.signalEraReadyToScout(data.era_context_summary || null);
+      return;
+    }
+
     // ── Discriminated Parsing ──
     if (this.looksLikeResult(data)) {
       this.state.addTrace({

@@ -1,0 +1,81 @@
+{
+  "persona_id": "05_youth_time_travel_2032",
+  "persona_label": "Youth gymnast \u2014 time travel to 2032",
+  "biometrics": {
+    "height_cm": 164,
+    "weight_kg": 55,
+    "birth_year": 2010,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you best describe your current relationship with competitive sport and physical movement?\nOptions: [I have been immersed in organized team sports for several years. | I focus primarily on individual skill, technique, and personal benchmarks. | I am exploring my potential and just beginning a formal training routine.]"
+    },
+    {
+      "role": "user",
+      "content": "I focus primarily on individual skill, technique, and personal benchmarks."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are pushing yourself in your training, what is the primary factor that drives your progress?\nOptions: [Pure, explosive power and maximizing my speed in short bursts. | Sustained stamina, pacing, and the ability to outlast the field. | Refining technical form and mastering complex, nuanced movements.]"
+    },
+    {
+      "role": "user",
+      "content": "Refining technical form and mastering complex, nuanced movements."
+    },
+    {
+      "role": "narrator",
+      "content": "You will be 22 at The Brisbane 2032 Games, squarely in your competitive sport pathway peak. As you look toward that horizon, which aspect of your technical development do you feel will have most defined your signature style by then?\nOptions: [Developing a flawless, signature technique that becomes my trademark. | Pushing the boundaries of biomechanical efficiency to reach new levels of precision. | Mastering the mental composure required to execute perfect form under immense pressure.]"
+    },
+    {
+      "role": "user",
+      "content": "Developing a flawless, signature technique that becomes my trademark."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "Standing at 164cm and 55kg, your frame is perfectly calibrated for the sustained aerobic output required of a Road Machine. While you have built your journey on a foundation of individual benchmarks and technical rigor, here those qualities translate into the relentless consistency demanded by elite cycling. You are not just pushing through distance; you are refining your metabolic efficiency to ensure that when you arrive at The Brisbane 2032 Games at 22, you possess the capacity to maintain a devastating pace long after others have reached their limit.\n\nYour history of focusing on personal precision serves you well in this pathway. Where others see a simple road, you see a data-rich environment for continuous improvement. By the time you reach your peak in 2032, your signature style will be defined by an unwavering, metronomic cadence. You will be the athlete who turns the endurance game into a display of absolute, calculated control, using your internal drive to master the interplay between heart rate, gear ratios, and time."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "The Edge Carver profile moves away from the raw duration of the road and into the realm of absolute technical spatial mastery. Your stated ambition to create a signature technique finds its most powerful application here, where every millimeter of movement determines the difference between a high-level performance and a legacy-defining one. At 22, during your appearance at The Brisbane 2032 Games, you will utilize your refined, nuanced motion to navigate the high-stakes, high-speed geometry of the mountain with unmatched focus.\n\nIn this domain, your focus on technical form is not just a training tool; it is your core identity. You will approach every descent with a calm, analytical mind, treating every turn as a complex puzzle of physics to be solved through perfect positioning. By perfecting your signature technique, you transform the slope into an extension of your own intent, leveraging your focus to achieve a level of spatial judgment that is rarely matched. This is the path for the artist of the descent, where your dedication to individual perfection becomes the hallmark of a world-class competitor, ensuring that your trajectory through the technical gates is both efficient and aesthetically precise."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly tailored and personalized report that clearly integrates the user's interview responses into distinct sport pathways, though placing Alpine Skiing at the Brisbane Summer Games is a slight contextual mismatch.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "The user's 164cm and 55kg frame perfectly supports the power-to-weight ratio needed for cycling, and their focus on 'complex, nuanced movements' maps well to alpine skiing."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts explicitly incorporate the user's desire to build a 'signature technique' and their history of focusing on 'individual benchmarks', making the narrative feel highly customized."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The pathways offer a stark, compelling contrast between the sustained aerobic output of endurance cycling and the high-speed spatial precision of adaptive alpine skiing."
+    },
+    "life_stage_coherence": {
+      "score": 8,
+      "reasoning": "The narrative correctly positions the user at their 'Elite Peak', noting that at 22 they will 'reach your peak in 2032' with world-class status, properly reflecting the targeted life stage."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The first two questions meaningfully separate users by athletic driver (power vs. stamina vs. technique), though the third question's options are somewhat convergent variations of technical mastery."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with correct usage of 'The Brisbane 2032 Games' and no unauthorized terms or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

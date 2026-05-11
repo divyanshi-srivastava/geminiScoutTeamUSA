@@ -1,0 +1,78 @@
+{
+  "persona_id": "04_veteran_endurance_runner",
+  "persona_label": "Veteran ultramarathon runner",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 70,
+    "birth_year": 1984,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start building your profile, how would you best describe your primary athletic focus or the physical activities that have defined your life so far?\nOptions: [Sustained endurance and long-distance pacing | Explosive power, speed, and high-intensity bursts | Technical precision, coordination, and tactical skill]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance and long-distance pacing"
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back at your sporting journey, what has been the primary setting where you've spent the most time training?\nOptions: [Individual pursuit (e.g., trail running, road cycling, or swimming) | Team-based environments (e.g., endurance relays or synchronized activity) | Technically controlled environments (e.g., track-based training or structured intervals)]"
+    },
+    {
+      "role": "user",
+      "content": "Individual pursuit (e.g., trail running, road cycling, or swimming)"
+    },
+    {
+      "role": "narrator",
+      "content": "As you look back on your journey in high-performance sport, what has been your primary driver during those long, taxing sessions?\nOptions: [Testing my own limits and constantly lowering my personal bests | The competitive drive of outperforming others in head-to-head encounters | Mastering the technical rhythm and efficiency of my movement]"
+    },
+    {
+      "role": "user",
+      "content": "Mastering the technical rhythm and efficiency of my movement"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "At 175cm and 70kg, your physiology is sculpted for the relentless pursuit of aero-efficiency. You possess the perfect frame for slicing through head-winds on the open road, where your dedication to mastering movement rhythm transforms into pure velocity. As you prepare for the intensity of The Brisbane 2032 Games, your mature approach to training\u2014prioritizing the nuance of cadence over raw, unrefined power\u2014positions you as a tactician of the asphalt, capable of maintaining a blistering pace when the field begins to fade.\n\nIn the adaptive realm, this translates into the H3 classification, designed for athletes who utilize a hand-powered cycle. Here, your drive to find technical efficiency becomes your greatest asset. You are not just pushing a machine; you are extending your body\u2019s natural reach, syncing your upper-body mechanics to the gear ratio of your cycle. It is a harmonious transition of your identity as an endurance specialist, moving from a standard road setup to the intricate, gear-driven world of H3 competition, where every rotation of the crank is an expression of your lifelong commitment to sustained, rhythmic excellence."
+    },
+    {
+      "matched_profile_id": 2,
+      "matched_profile_name": "Long Haul",
+      "pathway_standing": "Distance Running",
+      "pathway_adaptive": "Wheelchair Racing (e.g., Men's Marathon T54)",
+      "scout_verdict": "The marathon course is a theater of attrition, and your focus on solitary, long-duration pacing makes you a natural for the track. You have spent your life fine-tuning your internal engine, learning to read your body\u2019s signals over the course of hours rather than minutes. This endurance mindset provides a bedrock of stability that is rare at the top level of high-performance sport, offering you a unique advantage in the later stages of a race when the mental threshold becomes the primary barrier to victory.\n\nFor your adaptive journey, we move to the T54 classification\u2014a category for athletes who utilize racing wheelchairs. This is a visceral departure from the fluid motion of road cycling; it is a sport defined by raw, rhythmic contact with the wheels and the tactical chess match of pack positioning. By shifting your endurance focus to the upper-body demands of the T54 marathon, you challenge your core and cardiovascular system in an entirely new way. It is a shift from the technical glide of cycling to the repetitive, high-cadence grit required to navigate the track, proving that your capacity for sustained, deep-burn effort is truly agnostic of the vessel you choose to pilot."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly cohesive and realistic scouting report that accurately leverages the user's specific biometric data and interview responses to build two distinct, plausible endurance profiles.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "At 175cm and 70kg, the user's build is exceptionally well-suited for endurance sports, making the 'Road Machine' and 'Long Haul' archetypes highly credible in a real-world scouting context."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative effectively weaves in the user's specific answers, explicitly referencing their drive for 'mastering movement rhythm' and their preference for 'solitary, long-duration pacing'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two adaptive pathways are meaningfully contrasted, distinguishing between the gear-driven 'fluid motion' of handcycling and the 'visceral' high-cadence grit of T54 wheelchair racing."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The interview questions are well-structured, logically narrowing the athlete's profile from broad physiological focus to specific training environments and ultimately to their internal psychological drivers."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Perfectly compliant, correctly utilizing the approved 'The Brisbane 2032 Games' format with no standalone trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

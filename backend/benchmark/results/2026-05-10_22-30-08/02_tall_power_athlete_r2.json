@@ -1,0 +1,78 @@
+{
+  "persona_id": "02_tall_power_athlete",
+  "persona_label": "Tall male power athlete",
+  "biometrics": {
+    "height_cm": 196,
+    "weight_kg": 103,
+    "birth_year": 2002,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how do you most naturally channel your physical energy when you are in the middle of a high-pressure sporting situation?\nOptions: [Explosive bursts and immediate, high-intensity power | Sustained endurance and long-range rhythmic pacing | Calculated, technical precision and tactical strategy]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive bursts and immediate, high-intensity power"
+    },
+    {
+      "role": "narrator",
+      "content": "Looking at your approach to competitive sport, do you find you hit your peak intensity more when working within a team framework or when the weight of the result rests entirely on your own shoulders?\nOptions: [Independent challenges where I am the sole architect of my success | Team-based environments where I thrive on collective momentum]"
+    },
+    {
+      "role": "user",
+      "content": "Team-based environments where I thrive on collective momentum"
+    },
+    {
+      "role": "narrator",
+      "content": "As we look at your trajectory in your sporting journey, what is the primary factor that keeps you disciplined and locked in during the most grueling phases of your training?\nOptions: [The constant pursuit of physical refinement and peak conditioning | Strategic study and outsmarting opponents in live-play scenarios | The shared dedication and accountability found in a high-caliber squad]"
+    },
+    {
+      "role": "user",
+      "content": "The shared dedication and accountability found in a high-caliber squad"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "scout_verdict": "Standing at 196cm and 103kg, you possess the raw verticality and spatial dominance that define a court-based powerhouse. At 24, you are entering your physical peak, where your affinity for explosive movement translates seamlessly into a fast-paced environment. Your commitment to team accountability makes you an ideal anchor for a high-performance squad, where your ability to dictate pace and read the floor becomes the catalyst for the entire team's success during The LA28 Games.\n\nIn the adaptive pathway, Wheelchair Basketball challenges your team-first philosophy through a distinct lens of tactical maneuverability. This sport requires the use of specialized wheelchairs, which become an extension of the athlete\u2019s body. Competitive play is governed by a points-based classification system ensuring fair play across varying degrees of physical impairment. Here, your 'explosive burst' profile is repurposed; you are no longer just jumping, but utilizing rapid-fire acceleration and intricate chair control to maintain team momentum. It is a sport where your internal drive for collective achievement is constantly tested by the speed and intensity of the court transition."
+    },
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+      "scout_verdict": "Where the court requires constant motion, the field demands the perfect, singular expression of power. Your build\u2014a sturdy 103kg frame\u2014provides the ideal fulcrum for the explosive, grounded kinetic energy required in the shot put or discus. You are the sole architect of your trajectory here; your performance is a pure distillation of your physical discipline. As you prepare for The Brisbane 2032 Games, this path offers you a chance to focus entirely on the precision of the throw, where every millimeter of release angle and every ounce of explosive force define your legacy.\n\nIn the adaptive pathway, you step into the Men\u2019s Shot Put C3 classification. This category is designed for athletes with coordination impairments, necessitating that the throw be performed from a fixed, seated position. This shifts the challenge from court-wide navigation to extreme upper-body and core isolation. You must translate your explosive capacity into a vertical kinetic chain, relying on intense core stability to launch the shot without the use of your legs. It is a study in raw, anchored strength\u2014a stark contrast to the team-based dynamics of your other pathway, rewarding your technical precision and individual drive to master the physics of the release."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "The report provides strong, biomechanically accurate sport matches, though the second archetype forces an individualistic narrative that contradicts the user's stated team preference.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The user's biometrics (196cm and 103kg) perfectly suit the raw power and verticality needed for both a basketball forward and a field throws athlete."
+    },
+    "personalization": {
+      "score": 6,
+      "reasoning": "The basketball verdict nicely integrates the user's desire for 'team accountability', but the shot put verdict assigns an individualistic mindset ('sole architect') that actively ignores the user's team-focused interview answers."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The profiles offer an excellent contrast between dynamic, court-based team play and anchored, explosive individual throwing, with strong mechanical descriptions of the adaptive variants."
+    },
+    "interview_quality": {
+      "score": 6,
+      "reasoning": "While the first question effectively probes physical energy systems, the second and third questions redundantly measure the same preference for team versus individual environments."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass with correctly formatted event references like 'The LA28 Games' and no standalone trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

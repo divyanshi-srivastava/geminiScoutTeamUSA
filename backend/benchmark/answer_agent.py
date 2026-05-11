@@ -36,7 +36,17 @@ async def pick_answer(persona: dict, question: dict, conversation_so_far: list) 
     For multi-choice questions, returns one option text verbatim.
     For free-text questions, returns a short natural sentence.
     """
-    options = question.get("options", [])
+    raw_options = question.get("options", [])
+
+    # Normalise options to plain strings — narrator may return {label, value} dicts
+    options: list[str] = []
+    for opt in raw_options:
+        if isinstance(opt, str):
+            options.append(opt)
+        elif isinstance(opt, dict):
+            options.append(
+                opt.get("label") or opt.get("text") or opt.get("value") or str(opt)
+            )
 
     # Last 3 exchanges for context (avoid over-long prompts)
     recent = conversation_so_far[-6:]
@@ -57,7 +67,7 @@ async def pick_answer(persona: dict, question: dict, conversation_so_far: list) 
         f"  Biometrics: {persona['height_cm']}cm, {persona['weight_kg']}kg, "
         f"born {persona['birth_year']}, gender: {persona.get('gender', 'not specified')}\n\n"
         f"RECENT CONVERSATION\n{history_text or '  (none yet)'}\n\n"
-        f"NARRATOR ASKS: {question['question']}"
+        f"NARRATOR ASKS: {question.get('question', '')}"
         f"{options_block}\n\n"
         f"Answer as this persona:"
     )
@@ -78,8 +88,7 @@ async def pick_answer(persona: dict, question: dict, conversation_so_far: list) 
         if options and answer:
             for opt in options:
                 if opt.strip().lower() in answer.lower() or answer.lower() in opt.strip().lower():
-                    return opt  # return the canonical option text
-            # If no match, return first option as safe fallback
+                    return opt
             logger.warning("Answer '%s' didn't match any option — using first option", answer[:60])
             return options[0]
 

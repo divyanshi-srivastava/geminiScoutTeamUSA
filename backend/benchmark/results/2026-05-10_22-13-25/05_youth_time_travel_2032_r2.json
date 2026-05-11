@@ -1,0 +1,82 @@
+{
+  "persona_id": "05_youth_time_travel_2032",
+  "persona_label": "Youth gymnast \u2014 time travel to 2032",
+  "biometrics": {
+    "height_cm": 164,
+    "weight_kg": 55,
+    "birth_year": 2010,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To understand where your natural strengths might lie, tell me how you prefer to engage with physical challenges in your daily life.\nOptions: [I thrive on high-intensity, explosive bursts of power and speed. | I prefer sustained, rhythmic movement that demands deep endurance and mental grit. | I excel in environments that require precise coordination, technical skill, and strategic team play.]"
+    },
+    {
+      "role": "user",
+      "content": "I thrive on high-intensity, explosive bursts of power and speed."
+    },
+    {
+      "role": "narrator",
+      "content": "When you're pushing for that peak power, how do you prefer to channel it: are you more focused on perfecting your own solo mechanics and chasing absolute limits, or do you crave the reactive, head-to-head environment where you are constantly adjusting to an opponent?\nOptions: [Individual refinement: Mastering my own technique and hitting new personal benchmarks. | Head-to-head: Thriving on the pressure of out-maneuvering a direct competitor. | Team synergy: Using my burst to create space and opportunities for my teammates.]"
+    },
+    {
+      "role": "user",
+      "content": "Individual refinement: Mastering my own technique and hitting new personal benchmarks."
+    },
+    {
+      "role": "narrator",
+      "content": "When you imagine stepping onto the track or into the arena at The 2032 Games, how do you see your pursuit of individual perfection evolving from your current focus to meet the demands of that high-performance environment?\nOptions: [Doubling down on pure, record-shattering technical precision. | Integrating advanced, data-driven optimization into my training cycles. | Maintaining my current, intense focus on refining every micro-movement for efficiency.]"
+    },
+    {
+      "role": "user",
+      "content": "Doubling down on pure, record-shattering technical precision."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+      "scout_verdict": "At 22 years old, standing on the track at The Brisbane 2032 Games, you have finally realized the vision you held since you were 16: the pursuit of pure, explosive speed. Your 164 cm frame is a coiled spring, calibrated specifically for the violent, beautiful simplicity of the start. Every micro-movement\u2014the angle of your shin, the tension in your glutes\u2014has been honed through years of obsession with your own mechanics, making you a master of the shortest, fastest distance in high-performance sport.\n\nYou didn't arrive here by chasing the crowd, but by chasing the ghost of your own potential. The drive for individual perfection that defined your training sessions as a teenager now echoes in the silence of the blocks. When the gun fires, your ability to channel raw, high-intensity energy into a singular, record-shattering technical sequence proves that you are not just racing against others, but against the limits of what your body can achieve."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "While your explosive power is immense, the mountain\u2014or the ice\u2014demands a different mastery of your intensity. By the time you reach The Brisbane 2032 Games, you have transitioned your demand for technical perfection from the flat track to the dynamic, shifting geometry of high-speed descent. Here, your focus on individual refinement manifests in the way you carve an edge through a turn, turning the sheer velocity of the mountain into a canvas for your precision.\n\nThis path tests the agility and spatial judgment that have always been hidden within your analytical approach to training. Unlike the linear burst of the sprint, this environment forces you to constantly adapt your center of gravity, reading the terrain with the same intensity you once applied to your form. You have transformed from a pure athlete of power into an athlete of high-velocity technical mastery, finding your rhythm in the razor-thin margin between control and chaos."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "The report delivers highly personalized and age-appropriate narratives that fit the user's biometrics well, though it completely ignores the adaptive pathways in the generated text.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "A height of 164cm and 55kg is highly realistic for a female sprinter (Block Starter), and the user's preference for explosive power aligns perfectly with this archetype."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narrative directly weaves the user's specific interview choices of 'record-shattering technical precision' and 'individual refinement' into the core identity of the athlete."
+    },
+    "distinctness": {
+      "score": 4,
+      "reasoning": "Although the two archetypes (track vs. alpine skiing) contrast nicely, the actual scout verdicts completely fail to address or distinguish the adaptive pathways, writing only a single generalized narrative for each profile."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "Targeting Age 22 (Elite Peak) at The 2032 Games, the text appropriately references 'years of obsession' since age 16, perfectly capturing an athlete stepping into their competitive prime."
+    },
+    "interview_quality": {
+      "score": 6,
+      "reasoning": "The first two questions successfully narrowed the profile, but the final question offered highly convergent options that all led to variations of technical precision rather than creating meaningful forks."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean result; successfully used 'The Brisbane 2032 Games' format and avoided standalone restricted terms."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

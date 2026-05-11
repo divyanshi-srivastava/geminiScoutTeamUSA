@@ -1,0 +1,70 @@
+{
+  "persona_id": "07_congenitally_blind_goalball",
+  "persona_label": "Congenitally blind \u2014 goalball and tandem cycling",
+  "biometrics": {
+    "height_cm": 165,
+    "weight_kg": 60,
+    "birth_year": 1992,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, let\u2019s talk about your relationship with movement. When you have pushed yourself in the past, which of these physical experiences felt the most rewarding to you?\nOptions: [Explosive, high-intensity movements that rely on sudden power and speed. | Sustained, rhythmic endurance efforts that test my ability to push through distance and time. | Disciplined, technical pursuits that require singular focus and precise motor control.]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive, high-intensity movements that rely on sudden power and speed."
+    },
+    {
+      "role": "narrator",
+      "content": "When it comes to applying that intensity, how do you find you achieve your best results?\nOptions: [Individual focus: I prefer to measure my progress through my own personal benchmarks and self-mastery. | Team dynamic: I thrive in environments where the collective energy of a group drives our performance. | Competitive rivalry: I am most energized by direct, head-to-head contests where the outcome is decided in the heat of the moment.]"
+    },
+    {
+      "role": "user",
+      "content": "Team dynamic: I thrive in environments where the collective energy of a group drives our performance."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Your physical profile at 165cm and 60kg provides the compact, low center of gravity required for the Edge Carver archetype. In the standing pathway, your preference for explosive power allows you to master rapid gate-turns and technical ice navigation with high-intensity precision. This pursuit tests your ability to synthesize speed and instinct, turning every friction-filled movement into a demonstration of control at The LA28 Games.\n\nIn the adaptive pathway, you translate this same explosive intensity to sit-ski disciplines. Here, your mastery of edge control and rapid reaction is vital for navigating high-speed courses with a focus on stability and aggressive line choices. Just as in the standing discipline, you are an architect of momentum, using your core strength and explosive power to turn gravity into competitive performance in the same high-stakes environment of The LA28 Games."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "Your lean efficiency and aptitude for team dynamics define the Road Machine, where tactical awareness and shared intensity drive results. In the standing pathway, you channel your power into the collective rhythm of a pack, focusing on drafting and pacing to optimize performance across long-distance efforts. This requires a shift from singular bursts to sustained output, making you a vital strategic asset within the endurance landscape of The LA28 Games.\n\nIn the adaptive pathway, you apply this tactical depth to handcycling, where your high-intensity energy is integrated into the complex demands of road racing. Your focus here is on maximizing propulsion through disciplined, repetitive motor control while navigating the tactical pressures of a multi-athlete field. By balancing your inherent explosive speed with the sustained endurance required for this path, you become an essential contributor to the team-oriented competitive environment of The LA28 Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The report makes a decent attempt to incorporate the user's interview choices, but struggles to reconcile their preference for explosive power with team dynamics, resulting in slightly contradictory or mismatched sport recommendations.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While a 165cm/60kg profile physically fits cycling, the recommendation of an endurance sport ('Road Machine') actively contradicts the user's explicit preference for explosive, high-intensity movements."
+    },
+    "personalization": {
+      "score": 5,
+      "reasoning": "The 'Edge Carver' verdict completely ignores the user's choice of 'team dynamic', while the 'Road Machine' verdict acknowledges team dynamics but awkwardly asks the user to abandon their preferred explosive movement style."
+    },
+    "distinctness": {
+      "score": 6,
+      "reasoning": "The standing and adaptive pathways are standard 1:1 translations (cycling to handcycling, alpine skiing to sit-skiing) and fail to offer genuinely unique angles on the athlete's abilities."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The two questions provide meaningful forks that genuinely differentiate athletic profiles (power vs endurance, individual vs team), but the extreme brevity limits depth."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean output with correct usage of 'The LA28 Games' and no prohibited terminology or specific athlete references."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

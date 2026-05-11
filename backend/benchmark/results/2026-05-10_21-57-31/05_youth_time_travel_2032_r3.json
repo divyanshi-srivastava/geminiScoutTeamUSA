@@ -1,0 +1,82 @@
+{
+  "persona_id": "05_youth_time_travel_2032",
+  "persona_label": "Youth gymnast \u2014 time travel to 2032",
+  "biometrics": {
+    "height_cm": 164,
+    "weight_kg": 55,
+    "birth_year": 2010,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start understanding your natural rhythm in training, what aspect of physical movement brings you the most satisfaction during your sessions?\nOptions: [Explosive power and speed: I love movements that are fast, reactive, and require sudden bursts of effort. | Precision and technical control: I thrive when the focus is on mastering specific, intricate, and refined motions. | Sustained endurance and mental grit: I feel most alive when pushing through long, challenging training blocks that demand focus and rhythm.]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and speed: I love movements that are fast, reactive, and require sudden bursts of effort."
+    },
+    {
+      "role": "narrator",
+      "content": "When you envision your high-performance athletic pathway, do you see yourself thriving more as an individual, or as a component of a high-energy collective?\nOptions: [Individual focus: I prefer the absolute clarity of testing myself against the clock or a set technical measurement. | Direct competition: I love the tension of one-on-one duels, where reading and reacting to an opponent's every move is the key. | Group dynamics: I find my rhythm in a team setting, where we combine our speed to execute complex, coordinated strategies.]"
+    },
+    {
+      "role": "user",
+      "content": "Individual focus: I prefer the absolute clarity of testing myself against the clock or a set technical measurement."
+    },
+    {
+      "role": "narrator",
+      "content": "As you transition from your current training at 16 into your athletic prime at 22, what do you believe is the single most critical quality you need to cultivate to bridge that gap and compete at your absolute best?\nOptions: [Physical conditioning and recovery capacity: Building the durability to handle high-intensity, sustained explosive output. | Refinement of technique and micro-adjustments: Finding those fractional gains in speed and precision. | Mental resilience and performance under pressure: Mastering the nerves that come with the ultimate stage.]"
+    },
+    {
+      "role": "user",
+      "content": "Refinement of technique and micro-adjustments: Finding those fractional gains in speed and precision."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "Standing at 164.0cm and 55.0kg, your body is a testament to aerodynamic efficiency. In the standing pathway, your physiology holds a quiet promise: the ability to sustain high-output rhythm over long, grueling distances. Your frame is perfectly calibrated to convert energy into consistent, relentless momentum, an attribute that separates the contenders from the champions when the terrain gets steep or the race turns into a war of attrition. As you approach The 2032 Games at 22, you are entering the prime window for this level of endurance mastery, where your success relies on calculated discipline and tactical flow.\n\nIn the adaptive pathway, your lean build is equally advantageous for maintaining power across extended efforts. By focusing on mechanical synergy between your upper body and your equipment, you can achieve a level of sustained velocity that challenges the field. At The 2032 Games, this pathway demands the same marathon mindset, requiring you to master the nuances of equipment handling and energy conservation. Your ability to maintain a steady, high-cadence output will allow you to navigate technical courses with precision, ensuring you remain a constant threat to the podium through sheer tactical consistency."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+      "scout_verdict": "Your obsession with explosive velocity and individual technical refinement finds its ultimate expression in the standing sprint pathway. In this domain, every millisecond counts, and your drive for precision\u2014that constant pursuit of micro-adjustments\u2014is the hallmark of an athlete built for speed. You thrive in the vacuum of the lane, where the only thing that matters is your reaction time, your explosive drive off the blocks, and the perfect execution of your acceleration phase as you prepare for The 2032 Games.\n\nIn the adaptive pathway, the requirement for explosive power remains the central pillar of your success. By refining your starting technique and managing your stride frequency, you turn the race into a display of absolute intensity. As you compete at The 2032 Games, you will rely on that same internal drive to command your nervous system to act with instantaneous grace. This pathway rewards the athlete who can unify their physical strength with precise technical execution, ensuring that when the starter's signal fires, you are positioned to outpace the field through pure, reactive force."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "The interview quality was exceptional and heavily influenced the second archetype, but the first archetype was inexplicably an endurance profile despite the user explicitly selecting explosive power.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "While 'Block Starter' is a perfect fit for a 164cm/55kg athlete who loves explosive individual power, 'Road Machine' directly contradicts the user's explicit rejection of endurance options in the interview."
+    },
+    "personalization": {
+      "score": 7,
+      "reasoning": "The second archetype perfectly integrates the user's interview choices ('explosive velocity', 'individual technical refinement', 'micro-adjustments'), though the first relies solely on height/weight."
+    },
+    "distinctness": {
+      "score": 7,
+      "reasoning": "The adaptive pathways offer clear physical distinctions, particularly in the 'Road Machine' profile where it properly contrasts lower-body cycling with upper-body handcycling mechanics."
+    },
+    "life_stage_coherence": {
+      "score": 8,
+      "reasoning": "The narrative correctly frames age 22 at The 2032 Games as the Elite Peak, noting they are 'entering the prime window' for endurance mastery."
+    },
+    "interview_quality": {
+      "score": 9,
+      "reasoning": "The questions are excellent\u2014they offer functionally distinct forks (explosive vs endurance, solo vs team) and the third question brilliantly integrates the user's actual age-to-target-Games math into the prompt."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Fully compliant, using 'The 2032 Games' correctly without standalone trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

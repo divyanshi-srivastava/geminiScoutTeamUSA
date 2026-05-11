@@ -36,10 +36,31 @@ All commands run from the `backend/` directory with the venv active.
 source venv/bin/activate
 ```
 
-### Full run (all 5 personas)
+### Full run — all personas, 1 round each (default)
 
 ```bash
 python -m benchmark.run_benchmark
+```
+
+### Multiple rounds per persona
+
+```bash
+# 3 rounds each — surfaces reliability issues and question variance
+python -m benchmark.run_benchmark --rounds 3
+
+# Single persona, 5 rounds — deep dive on one edge case
+python -m benchmark.run_benchmark --persona 03_adaptive --rounds 5
+```
+
+Each round gets a different narrator question set (LLM is non-deterministic). The report shows average scores and the min–max range per persona, making inconsistency visible.
+
+Output files are named `{persona_id}_r1.json`, `{persona_id}_r2.json`, etc.
+
+### Control concurrency
+
+```bash
+# 3 concurrent runs (default is all at once)
+python -m benchmark.run_benchmark --rounds 3 --parallel 3
 ```
 
 ### Single persona (faster — good for debugging one edge case)

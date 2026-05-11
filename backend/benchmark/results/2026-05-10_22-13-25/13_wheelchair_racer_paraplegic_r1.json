@@ -1,0 +1,78 @@
+{
+  "persona_id": "13_wheelchair_racer_paraplegic",
+  "persona_label": "T4 paraplegic \u2014 wheelchair racer and basketball player",
+  "biometrics": {
+    "height_cm": 163,
+    "weight_kg": 55,
+    "birth_year": 2004,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To help us understand your core athletic identity, how do you typically approach a new physical challenge?\nOptions: [Total intensity: I thrive on explosive bursts of speed and raw power. | Deep focus: I excel at technical precision and calculated, rhythmic movements. | Relentless grit: I prefer sustained efforts that test my endurance and mental stamina.]"
+    },
+    {
+      "role": "user",
+      "content": "Total intensity: I thrive on explosive bursts of speed and raw power."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the middle of a high-intensity session, where do you find your greatest drive?\nOptions: [The adrenaline of competition: I need a rival or a clock to push past my limits. | The pursuit of mastery: I am driven by perfecting the mechanics of a single movement. | The team atmosphere: I thrive when my energy contributes to a collective goal.]"
+    },
+    {
+      "role": "user",
+      "content": "The adrenaline of competition: I need a rival or a clock to push past my limits."
+    },
+    {
+      "role": "narrator",
+      "content": "To round out our understanding of your athletic identity, how do you typically approach your training regimen?\nOptions: [Structured and coach-led: I value a professional program to sharpen my mechanics and edge. | Self-directed and experimental: I prefer carving my own path, testing my limits in my own way. | Social and collaborative: I find my peak performance when pushing alongside others who share the grind.]"
+    },
+    {
+      "role": "user",
+      "content": "Structured and coach-led: I value a professional program to sharpen my mechanics and edge."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Women's -67 kg)",
+      "scout_verdict": "At 163cm and 55kg, you possess the perfect compact architecture for the mat. Your preference for total intensity and explosive bursts finds its ultimate expression here, where a single, perfectly timed movement can dictate the outcome of a match. You engage in a high-stakes tactical battle where your physical power is sharpened by the structured coaching you crave. Imagine the roar of the crowd at The Los Angeles 2028 Games as you step into the arena, where your drive to measure yourself against a direct rival becomes your greatest weapon.\n\nAlternatively, your physiological profile provides a formidable foundation for the technical precision of powerlifting. This pathway demands the same explosive bursts and structured, coach-led training you value, shifting the focus to perfecting the mechanics of your lift. Just as on the mat, you must harness raw strength to move massive weight in a controlled, rhythmic sequence. Whether grappling for position or channeling focus into a single, high-intensity lift, you thrive in environments where every second is a test of will, and your current age places you in a prime window to turn your competitive fire into a legacy of tactical supremacy."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "While your heart beats for explosive intensity, your mind is a precision instrument suited for the disciplined, rhythmic world of road cycling. Transitioning from the sudden snap of power to the sustained, grueling endurance of a long-distance course reveals a different side of your athleticism\u2014one built on grit, data-driven strategy, and the unwavering pursuit of perfection. At The Brisbane 2032 Games, the road stretches out as a canvas for your discipline, where you analyze your output and refine your cadence under a coach who treats every watt as a metric of progress.\n\nYour profile is equally suited for the specialized mechanics of handcycling. This discipline mirrors the road-racing environment, requiring the same deep focus and commitment to technical efficiency. Here, the competition becomes a synergy between your human drive and the mechanical precision of your setup, pushing through the wall of fatigue to redefine what your body can sustain. Just as in the standing cycling pathway, you are a machine of efficiency, thriving in a setting where your ability to maintain a relentless grind transforms your potential into success over the long haul."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "The first archetype is a strong, highly personalized fit for the user's explosive profile, but the second archetype openly contradicts their stated preferences to force an endurance narrative.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While Wrestling perfectly matches the user's 55kg frame and explosive preference, the Cycling archetype completely ignores their choice of 'explosive bursts' in favor of an endurance sport they didn't want."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts effectively weave in all three interview answers, specifically referencing the user's need for structured coaching, direct rivals, and explosive intensity."
+    },
+    "distinctness": {
+      "score": 6,
+      "reasoning": "Wrestling and Powerlifting offer genuinely different athletic applications of power, but Cycling and Handcycling are functionally identical in their narrative descriptions of rhythmic endurance."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asked strong, well-structured questions with distinct options that cleanly separated explosive vs endurance athletes and independent vs coach-led mindsets."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with properly formatted Games references and no violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

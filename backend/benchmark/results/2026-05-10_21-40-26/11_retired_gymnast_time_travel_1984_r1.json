@@ -1,0 +1,82 @@
+{
+  "persona_id": "11_retired_gymnast_time_travel_1984",
+  "persona_label": "Retired gymnastics coach \u2014 time travel to 1984 LA Games",
+  "biometrics": {
+    "height_cm": 162,
+    "weight_kg": 57,
+    "birth_year": 1958,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "Looking back over the years, how would you describe your relationship with physical activity and organized exercise?\nOptions: [I have been consistently active and training throughout my life | I was quite involved in competitive sport in my younger years | I found a passion for movement and fitness later in life | I\u2019ve always enjoyed staying active, though less in a competitive sense]"
+    },
+    {
+      "role": "user",
+      "content": "I was quite involved in competitive sport in my younger years"
+    },
+    {
+      "role": "narrator",
+      "content": "Reflecting on those early competitive days, what was the primary driver that kept you coming back to training: was it the pursuit of personal mastery, the bond with your teammates, or the thrill of testing yourself against others?\nOptions: [The drive for personal improvement and skill mastery | The energy and connection of being part of a team | The thrill of competition and the scoreboard | The pure joy of physical movement and exertion]"
+    },
+    {
+      "role": "user",
+      "content": "The drive for personal improvement and skill mastery"
+    },
+    {
+      "role": "narrator",
+      "content": "As you envision yourself at that 'High-Performance' stage during The Los Angeles 1984 Games, what was the most significant challenge you faced in refining your craft beyond the physical training itself?\nOptions: [Balancing the intensity of training with life outside of sport | The mental discipline required to sustain focus at a high-performance level | Adapting to the specific training techniques and culture of the early 80s | Managing the internal pressure of high-performance expectations]"
+    },
+    {
+      "role": "user",
+      "content": "The mental discipline required to sustain focus at a high-performance level"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's +100 kg)",
+      "scout_verdict": "Standing at 162cm and 57kg, you step onto the mat at The Los Angeles 1984 Games with a quiet, lethal efficiency. Your career has been defined by a relentless drive for personal mastery\u2014a trait that transforms every match into an intricate exercise of physics and leverage. You have spoken of the mental discipline required to hold your focus, and here, in the intense arena of high-performance athletics, that discipline is your most formidable weapon. You process the movement of your opponent before it manifests, adjusting your stance with a precision that speaks to years of solitary, internal labor. At 26, you are operating at the absolute zenith of your physical potential, translating your compact build into a grounded, unstoppable force."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "The road to excellence at The Los Angeles 1984 Games is often a solitary path, but it is precisely that solitude that you have mastered. With an aerobic capacity built on your unwavering commitment to self-improvement, you have become a technician of the long haul. You once noted the difficulty of maintaining mental discipline amidst the daily grind, yet here, that very discipline carries you through the crushing, methodical fatigue of the endurance circuit. At 57kg, your efficient power-to-weight ratio allows you to conquer the climbs that challenge your peers. You are not merely racing against a field of competitors; you are racing to transcend your own limits, one rhythmic, calculated rotation at a time."
+    }
+  ],
+  "eval_result": {
+    "overall": 4,
+    "summary": "While the life stage language and incorporation of interview answers are strong, the report is severely marred by suggesting Men's heavyweight adaptive categories for a 57kg female athlete, and it fails to write distinct adaptive narratives.",
+    "authenticity": {
+      "score": 3,
+      "reasoning": "Although 162cm/57kg suits a lightweight cyclist or wrestler, suggesting 'Men's +100 kg' Powerlifting for a 57kg female is a critical mismatch."
+    },
+    "personalization": {
+      "score": 6,
+      "reasoning": "The verdict nicely integrates the user's interview answers about 'mental discipline' and 'personal mastery', but loses points for misaligning with the user's gender."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "The output provides only a single unified scout verdict per archetype, completely failing to explore or differentiate the adaptive pathway experience."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "Accurately targets age 26 by noting the athlete is operating at the 'absolute zenith of your physical potential', perfectly matching the Elite Peak stage."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions progress logically from athletic background to specific motivations and mental challenges, offering meaningfully distinct options."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Correctly formats 'The Los Angeles 1984 Games' and contains no trademark or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

@@ -1,0 +1,78 @@
+{
+  "persona_id": "03_adaptive_visual_impairment",
+  "persona_label": "Adaptive athlete \u2014 partial visual impairment",
+  "biometrics": {
+    "height_cm": 181,
+    "weight_kg": 83,
+    "birth_year": 1998,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To begin our look at your journey, how would you best describe your historical engagement with training and competitive activity?\nOptions: [I thrive in team environments, focusing on explosive energy and reactive strategy. | I prefer solitary, focused pursuits, testing my limits through long-form endurance and pacing. | I gravitate toward highly technical disciplines where fine-tuned coordination and precision are the primary drivers of success.]"
+    },
+    {
+      "role": "user",
+      "content": "I prefer solitary, focused pursuits, testing my limits through long-form endurance and pacing."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep into those long-form sessions, what do you feel is the primary engine driving your performance?\nOptions: [My raw cardiovascular capacity\u2014pushing the limits of my physical output. | My mental strategy\u2014mastering the art of pacing and sustaining efficiency over long durations. | My recovery and rhythm\u2014focusing on maintaining a steady state without hitting a fatigue wall.]"
+    },
+    {
+      "role": "user",
+      "content": "My mental strategy\u2014mastering the art of pacing and sustaining efficiency over long durations."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking forward at your top-tier athletic pathway, which environment best reflects your ultimate ambition for your sporting journey?\nOptions: [I am driven to compete at the highest level, aiming for podiums and the pinnacle of high-performance sport. | I view my training as a way to integrate peak physical efficiency into a broader, high-performance lifestyle alongside my professional life. | I am motivated by the exploration of human potential, focusing on extreme ultra-endurance challenges and pushing personal boundaries in non-traditional settings.]"
+    },
+    {
+      "role": "user",
+      "content": "I am driven to compete at the highest level, aiming for podiums and the pinnacle of high-performance sport."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "Your 181cm, 83kg frame provides the rock-solid base necessary for the 'Steady Hand' archetype, where your heart rate becomes the deciding factor between a podium finish and a near miss. You have cultivated a mental landscape defined by extreme discipline and pacing, qualities that are the hallmark of high-performance marksmanship. At the 28-year-old mark, you possess the psychological maturity required to maintain absolute composure in the high-pressure environment of The Brisbane 2032 Games, where your ability to silence the external noise will be your greatest asset.\n\nIn the adaptive sphere, your path moves toward the precise discipline of Archery within the FITA Round Open classification. Here, your focus on internal rhythm and mental pacing translates into the repetitive, high-stakes perfection needed to compete at the highest level. You will leverage your physical stability to draw, anchor, and release with total consistency, proving that your capacity for endurance is not just about raw output, but about the sustained precision that separates the masters of the craft from the rest."
+    },
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "If your standing path is defined by a singular moment of calm, the 'Swiss Army' archetype is the kinetic realization of your desire for long-form, multi-disciplinary endurance. Your physique, balanced and resilient at 83kg, is ideally suited for the demands of the Decathlon, where the objective is to sustain physical output across two days of varied intensity. You are not searching for one perfect shot; you are searching for the limits of your entire physiological capacity, ensuring that every movement is calculated for peak energy management.\n\nFor your adaptive pathway, you step into the Men's Pentathlon under the P44 classification\u2014a category for ambulatory athletes with lower-limb impairment who compete standing. This route honors your deep-seated preference for testing your limits through endurance and pacing, requiring you to bridge explosive power and aerobic stamina across five distinct events. By mastering the rhythm required to manage fatigue between disciplines, you transform your athletic journey into an ongoing experiment in human potential, pushing past the barriers of conventional training to define your own legacy on the track."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A solid, highly personalized report that cleverly maps the user's psychological drivers to physical disciplines, though the leap from 'long-form endurance' to Marksmanship requires a bit of narrative gymnastics.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "The user's 181cm/83kg frame is an excellent fit for the Decathlon, but assigning Marksmanship to someone who explicitly prioritizes 'long-form endurance' feels like a slight mismatch, even when bridged by mental pacing."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts successfully integrate the user's specific interview choices, directly addressing their reliance on 'mental strategy' and their drive for podium finishes."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two pathways provide a stark and engaging contrast: the absolute stillness and internal rhythm of target sports versus the kinetic, multi-day attrition of the Decathlon."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions are well-structured, moving logically from broad physical preferences to psychological drivers and finally to ultimate competitive ambitions, with distinctly different options at every step."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean pass; correctly uses 'The Brisbane 2032 Games' and avoids standalone protected terms."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

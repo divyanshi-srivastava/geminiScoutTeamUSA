@@ -1,0 +1,55 @@
+{
+  "forbidden_terms": [
+    "Olympic",
+    "Paralympic",
+    "Olympian",
+    "Paralympian",
+    "IOC",
+    "USOPC",
+    "Olympic rings",
+    "Olympic torch",
+    "Former Olympian",
+    "Past Olympian",
+    "Former Paralympian",
+    "Past Paralympian"
+  ],
+  "eval_criteria": [
+    {
+      "id": "authenticity",
+      "label": "Authenticity",
+      "scale": "1-10",
+      "description": "Does the matched archetype genuinely fit this user's physical and personal profile?"
+    },
+    {
+      "id": "personalization",
+      "label": "Personalization",
+      "scale": "1-10",
+      "description": "Does the narrative feel written for this specific user, incorporating their actual interview answers?"
+    },
+    {
+      "id": "pathway_distinctness",
+      "label": "Pathway Distinctness",
+      "scale": "1-10",
+      "description": "Are the standing and adaptive pathways meaningfully different from each other in athletic angle and narrative?"
+    },
+    {
+      "id": "life_stage_coherence",
+      "label": "Life Stage Coherence",
+      "scale": "1-10",
+      "time_travel_only": true,
+      "description": "Does the archetype and narrative language fit the user's age at the destination Games? Scored only when time travel is active."
+    },
+    {
+      "id": "interview_quality",
+      "label": "Interview Quality",
+      "scale": "1-10",
+      "description": "Did the Narrator ask questions that genuinely differentiated this user's athletic potential? Options must represent real forks."
+    },
+    {
+      "id": "compliance",
+      "label": "Compliance Quality",
+      "scale": "pass/fail",
+      "description": "No forbidden terms used, no NIL violations, equal narrative depth for standing and adaptive pathways."
+    }
+  ]
+}

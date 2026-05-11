@@ -1,0 +1,78 @@
+{
+  "persona_id": "15_powerlifter_high_bmi",
+  "persona_label": "Competitive powerlifter \u2014 high BMI, elite strength",
+  "biometrics": {
+    "height_cm": 182,
+    "weight_kg": 142,
+    "birth_year": 1991,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To help me understand your background better, how would you describe your current relationship with physical training and competitive activity?\nOptions: [I am currently training consistently in a specific sport. | I am a regular at the gym but haven't competed before. | I am looking to rediscover my athletic potential after a break. | I am just starting to explore what my body is capable of.]"
+    },
+    {
+      "role": "user",
+      "content": "I am currently training consistently in a specific sport."
+    },
+    {
+      "role": "narrator",
+      "content": "Since you are already in the thick of a training regimen, could you tell me more about the nature of your chosen sport and how you balance it with your daily life?\nOptions: [It is a high-intensity individual sport. | I focus on team-based competitive dynamics. | I prioritize strength and endurance training over a single discipline. | It is a technical skill-based pursuit.]"
+    },
+    {
+      "role": "user",
+      "content": "It is a high-intensity individual sport."
+    },
+    {
+      "role": "narrator",
+      "content": "When looking at your journey in this high-intensity sport, what is the primary goal or milestone you are currently chasing?\nOptions: [I am aiming for local or regional competitive titles. | I want to refine my technique to reach the next level of elite performance. | I am testing my limits to see how far my potential takes me. | I am focusing on long-term physical longevity and mastery.]"
+    },
+    {
+      "role": "user",
+      "content": "I want to refine my technique to reach the next level of elite performance."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Women's Shot Put C3)",
+      "scout_verdict": "At 35, you stand at the pinnacle of your athletic journey, where raw stature meets deliberate, mental precision. Your current frame of 182.0cm and 142.0kg provides a formidable, immovable foundation\u2014the very bedrock required for the brutal elegance of field throwing. You are no longer just building strength; you are honing the minute mechanical adjustments that separate a good athlete from a great one. This obsessive focus on technique ensures you are perfectly primed for the high-pressure environment of The Los Angeles 2028 Games.\n\nIn this high-intensity individual discipline, your commitment to craft is your greatest asset. You possess the sheer mass to generate immense kinetic energy, but it is your pursuit of refined mastery that will allow you to convert that force into a championship-caliber release. As you continue your climb toward elite performance, your legacy will be defined by the quiet intensity with which you prepare, making you a force of nature when you finally step into the circle."
+    },
+    {
+      "matched_profile_id": 10,
+      "matched_profile_name": "Launch Force",
+      "pathway_standing": "Bobsleigh / Push Sports",
+      "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+      "scout_verdict": "Your relentless pursuit of technical refinement within high-intensity individual sports reveals the internal drive of a world-class kinetic athlete. With your exceptional power-to-mass ratio, you are built for the explosive, fast-twitch requirements of push sports or the heavy-momentum demands of specialized throws. Preparing for the elite stage of The Los Angeles 2028 Games requires the exact blend of strength, discipline, and singular focus you have demonstrated in your current daily training.\n\nYou clearly thrive when the outcome rests entirely on your shoulders, constantly testing your limits to see how far your potential can stretch. Whether it is the lightning-fast, rhythmic intensity required to launch a sled or the focused, explosive power needed for a high-momentum throw, your ability to channel your 142.0kg frame into a singular, decisive moment of force transfer marks you as a genuine contender. At this stage in your journey, you have transitioned from a practitioner of sport into a master of it."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A generally strong scouting report that correctly identifies the user's massive build as ideal for throwing or push sports, though it makes a notable error in gender assignment for one of the adaptive pathways.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While 182cm and 142kg is an exceptional build for Shot Put, suggesting 'Women's Shot Put C3' for a 35-year-old male user is a significant contextual miss."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdict effectively weaves the user's desire to 'refine my technique to reach the next level of elite performance' into the narrative of honing minute mechanical adjustments."
+    },
+    "distinctness": {
+      "score": 7,
+      "reasoning": "Field Athletics and Bobsleigh offer meaningfully different seasonal applications (summer vs. winter) for the user's explosive mass and power."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions build logically from current training status to sport type and finally to competitive goals, with options that clearly separate casual gym-goers from elite-focused athletes."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance with correct usage of 'The Los Angeles 2028 Games', though the gender mismatch in the adaptive pathway is an oddity."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

@@ -1,0 +1,78 @@
+{
+  "persona_id": "01_young_female_swimmer",
+  "persona_label": "Young female swimmer",
+  "biometrics": {
+    "height_cm": 172,
+    "weight_kg": 62,
+    "birth_year": 2009,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "When you reflect on your past or current involvement in sports, what is the environment where you feel most in your element?\nOptions: [Individual pursuit: I thrive on solo challenges, self-reliance, and pushing my own personal limits. | Team dynamics: I find my greatest strength in the synergy, shared goals, and accountability of a group. | Technical mastery: I am drawn to sports that demand extreme precision, focus, and intricate physical control.]"
+    },
+    {
+      "role": "user",
+      "content": "Individual pursuit: I thrive on solo challenges, self-reliance, and pushing my own personal limits."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep in that solo environment, testing your limits, what is the physical nature of the challenge that you find most rewarding to master?\nOptions: [Explosive power and rapid, high-intensity bursts of energy. | Sustained endurance and the mental grit to maintain a steady, punishing pace over distance. | Tactical patience, complex coordination, and high-precision motor control.]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance and the mental grit to maintain a steady, punishing pace over distance."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward developing your pathway in high-performance sport, how do you prefer to measure your ultimate success?\nOptions: [Head-to-head competition: Testing my grit by directly racing against the field. | Environmental mastery: Overcoming unpredictable terrain and external conditions in nature. | Internal optimization: Chasing personal milestones and refining my efficiency through data and technique.]"
+    },
+    {
+      "role": "user",
+      "content": "Internal optimization: Chasing personal milestones and refining my efficiency through data and technique."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 8,
+      "matched_profile_name": "Streamline",
+      "pathway_standing": "Swimming",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Women's 400 m Freestyle S10)",
+      "scout_verdict": "At 172cm and 62kg, you possess a frame built for the long, silent grind of the lane. Your athletic journey is defined by the pursuit of internal optimization\u2014that rare ability to find solace in the rhythm of your own stroke and the repetitive challenge of shaving milliseconds off your personal best. You are a student of hydrodynamics, treating your body as a vessel to be refined rather than just a machine to be driven.\n\nAs you stand at the edge of the pool at The Paris 2024 Games, the world around you fades into a blur of blue. For you, the competition is not merely against the others in the water, but against your own physiological ceiling. You have chosen the path of sustained endurance, where your mental grit becomes just as vital as your physical conditioning. Here, every turn is a tactical decision, and every breath is a calculated investment in the final 50 meters of the race."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Swimming",
+      "pathway_adaptive": "Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "While your swimming career is defined by the steady, rhythmic pulse of endurance, this second path invites you to trade the fluid silence of the water for the sharp, visceral feedback of frozen terrain. Precision is your new North Star here; where swimming rewards your ability to minimize drag, this discipline demands that you master the chaotic, unpredictable variables of the slope. Your focus shifts from internal optimization of a stroke to the absolute technical mastery of every edge-transition on a high-speed descent.\n\nAt The Milano Cortina 2026 Games, you arrive not as a creature of habit, but as an architect of movement. This discipline demands a different kind of focus\u2014an intense, momentary calculation required to navigate complex gates under gravitational pressure. By applying your inherent drive for solitary focus to the technical intricacies of the mountain, you prove that your athletic legacy is not limited to one domain. You are just as comfortable carving a line through the wind as you are cutting through the stillness of the water."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The narrative effectively incorporates the user's interview answers and biometrics, but a data error in the second profile's standing pathway (listing 'Swimming' instead of 'Alpine Skiing') detracts from the overall polish.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While the 172cm/62kg frame suits the 'Streamline' swimming archetype well, the second profile's standing pathway erroneously lists 'Swimming' despite describing a winter sport in the verdict."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The scout verdict successfully weaves in the user's specific desires for 'internal optimization' and 'sustained endurance' to frame their athletic drive."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two sports presented (Swimming and Alpine Skiing) offer a strong contrast between fluid endurance and high-speed gravitational precision."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asked progressively specific questions, successfully narrowing down the user's preferences from general environment to physical challenge to success metrics."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Properly formats Games names ('The Paris 2024 Games', 'The Milano Cortina 2026 Games') and avoids restricted terms."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

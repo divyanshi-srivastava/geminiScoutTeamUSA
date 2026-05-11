@@ -1,0 +1,82 @@
+{
+  "persona_id": "05_youth_time_travel_2032",
+  "persona_label": "Youth gymnast \u2014 time travel to 2032",
+  "biometrics": {
+    "height_cm": 164,
+    "weight_kg": 55,
+    "birth_year": 2010,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, how do you currently prefer to engage with your athletic training and competition?\nOptions: [I thrive in individual, self-reliant challenges where success rests entirely on my own discipline and preparation. | I prefer the collaborative energy and tactical complexity of working toward a shared goal within a team unit. | I gravitate toward technical, precision-based disciplines where split-second reaction and fine motor control define the outcome.]"
+    },
+    {
+      "role": "user",
+      "content": "I gravitate toward technical, precision-based disciplines where split-second reaction and fine motor control define the outcome."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the middle of a high-stakes moment, what kind of competitive environment allows you to reach your peak performance?\nOptions: [A highly controlled, predictable setting where I can repeat my technical movements perfectly and tune out all external variables. | A fluid, reactive environment where I have to adjust my technique instantly to counter an opponent or changing conditions. | An explosive, high-adrenaline setting where the outcome is decided by a single, perfectly executed burst of energy.]"
+    },
+    {
+      "role": "user",
+      "content": "A highly controlled, predictable setting where I can repeat my technical movements perfectly and tune out all external variables."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking toward The Brisbane 2032 Games, how do you see your approach to that perfect, controlled execution evolving as you move from your current training into the intensity of the world's highest competitive stage?\nOptions: [Focusing on biometric refinement\u2014using advanced data to achieve absolute mechanical perfection. | Focusing on mental fortitude\u2014training to silence the noise so the environment feels perfectly still regardless of the stadium atmosphere. | Focusing on long-term consistency\u2014building a training system so reliable that peak execution becomes second nature under the brightest lights.]"
+    },
+    {
+      "role": "user",
+      "content": "Focusing on mental fortitude\u2014training to silence the noise so the environment feels perfectly still regardless of the stadium atmosphere."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Women's FITA Round Open)",
+      "scout_verdict": "At The Brisbane 2032 Games, you stand at the shooting line, a 22-year-old athlete who has turned stillness into an art form. Your 164cm frame offers a natural, low center of gravity that serves as the foundation for your legendary poise. You have spent years refining the mental fortitude required to silence the stadium's roar, allowing you to treat every match as a private conversation between your focus and the target.\n\nIn the adaptive pathway for target precision\u2014a classification for athletes who use specialized equipment to achieve pinpoint accuracy\u2014your background in technical mastery becomes your greatest asset. This category rewards those who can maintain consistent, repetitive mechanical execution under pressure. Your ability to create a perfectly controlled internal environment ensures that whether you are competing in a standing or adaptive discipline, the world around you fades until only the trajectory remains."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "The mountain at The Brisbane 2032 Games demands something entirely different from your precision: it requires the agility to master velocity. Here, you transition from the silence of the range to the roar of the slopes. You use your compact stature to generate maximum leverage, carving lines through the snow with a level of control that feels almost instinctive.\n\nIn the adaptive pathway for alpine skiing\u2014specifically designed for athletes with lower-limb impairments who compete in a sit-ski\u2014your 55kg build becomes a streamlined instrument of speed. Your precision-based mindset allows you to process the terrain in milliseconds, shifting your weight with surgical accuracy to maintain speed through the tightest turns. You are a force of motion, demonstrating how the same focus you once used to find a target now dictates your path to the podium at high velocity."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The narrative is highly personalized and features an excellent interview progression, but suffers from a major situational error by placing Alpine Skiing at the Brisbane 2032 Summer Games.",
+    "authenticity": {
+      "score": 4,
+      "reasoning": "While Marksmanship fits the precision-focused answers perfectly, placing Alpine Skiing ('The mountain at The Brisbane 2032 Games') at a Summer Games in Australia is a glaring geographical and seasonal mismatch."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The scout verdicts specifically incorporate the user's focus on 'mental fortitude' and the desire to 'silence the stadium's roar' directly from the interview."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The two pathways offer a superb contrast between the absolute stillness of target precision and the high-velocity, reactive demands of sit-skiing."
+    },
+    "life_stage_coherence": {
+      "score": 8,
+      "reasoning": "At age 22, framing the user as an athlete who 'has turned stillness into an art form' and has 'spent years refining' their skills perfectly matches the Elite Peak stage."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator's second question offered genuinely distinct psychological environments (controlled vs fluid vs explosive) that successfully narrowed the athlete's specific archetype."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass with correct usage of 'The Brisbane 2032 Games' and zero trademark or NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

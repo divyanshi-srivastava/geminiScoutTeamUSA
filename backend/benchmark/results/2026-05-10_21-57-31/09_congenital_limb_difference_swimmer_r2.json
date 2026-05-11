@@ -1,0 +1,78 @@
+{
+  "persona_id": "09_congenital_limb_difference_swimmer",
+  "persona_label": "Congenital limb difference \u2014 adaptive swimmer",
+  "biometrics": {
+    "height_cm": 168,
+    "weight_kg": 63,
+    "birth_year": 1997,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe your primary focus when you are training or physically challenging yourself?\nOptions: [High-intensity bursts focused on explosive power and speed | Sustained, steady output focused on endurance and pacing | Technical, deliberate movements focused on precision and coordination]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained, steady output focused on endurance and pacing"
+    },
+    {
+      "role": "narrator",
+      "content": "In your journey so far, what has been the primary challenge you've had to navigate to keep your performance at its peak?\nOptions: [Physical resilience: Managing the toll of high-volume repetition on your body. | Strategic discipline: Maintaining unwavering focus within a rigid, long-term training cycle. | Psychological toughness: Pushing through mental barriers when the competitive stakes are at their absolute highest.]"
+    },
+    {
+      "role": "user",
+      "content": "Physical resilience: Managing the toll of high-volume repetition on your body."
+    },
+    {
+      "role": "narrator",
+      "content": "To push your boundaries further in high-performance sport, what type of environment do you find best fuels your dedication?\nOptions: [The solitary pursuit: I thrive on the silence, control, and internal accountability of training largely on my own. | The collaborative engine: I perform best within a close-knit group where we push each other\u2019s limits daily. | The structured mentorship: I excel when following a precise, high-level coach-led program that removes all ambiguity.]"
+    },
+    {
+      "role": "user",
+      "content": "The collaborative engine: I perform best within a close-knit group where we push each other\u2019s limits daily."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Your physical architecture of 168.0cm and 63.0kg provides an ideal center of gravity for the technical demands of standing Alpine disciplines. As you prepare for The 2026 Milano-Cortina Games, your ability to handle G-force and manage high-volume training ensures you can master the precise edge control required to navigate complex course lines. Your collaborative mindset allows you to thrive within a team, turning every practice session into a high-stakes environment where endurance meets explosive technical execution.\n\nSimultaneously, your biometrics are perfectly suited for the adaptive pathways in Para-Alpine sit-skiing. In this discipline, your capacity for sustained output and collaborative training translates into the ability to maintain speed through technical sections where others lose momentum. As you look toward The 2026 Milano-Cortina Games, the structural resilience you have built allows you to master the unique mechanics of the sit-ski, utilizing your core stability to translate power into high-velocity turns. Whether on a standing path or in an adaptive sit-ski, your path is defined by a technician's precision and a partner's spirit."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+      "scout_verdict": "Your biometric profile presents a remarkable power-to-weight ratio, suggesting that your endurance background can be repurposed for the explosive requirements of standing 100m and 200m sprints. As you look toward The 2028 Los Angeles Games, your physical resilience will allow you to maintain form during the final stages of a race when opponents typically experience fatigue. You are shifting from a long-distance mindset to a strategist of explosive force, using your collaborative experience to push your speed limits alongside your peers.\n\nIn the adaptive ambulatory sprint pathways, your frame provides a foundation for the high-impact velocity necessary to compete at the highest level. You will apply the same disciplined focus on high-volume repetition to refine your start mechanics and acceleration phases. As you prepare for The 2028 Los Angeles Games, this transition from steady output to high-intensity burst capacity proves you are a multi-dimensional athlete. Your success is built on the same structural integrity and technical dedication, whether you are lining up in standing competition or ambulatory adaptive sprinting events."
+    }
+  ],
+  "eval_result": {
+    "overall": 5,
+    "summary": "The interview questions were strong, but the archetype matching completely failed to align with the user's stated preference for endurance sports.",
+    "authenticity": {
+      "score": 3,
+      "reasoning": "Recommending 'Block Starter' (100m/200m Sprints) is a direct contradiction of the user's explicit selection of 'sustained, steady output focused on endurance'."
+    },
+    "personalization": {
+      "score": 6,
+      "reasoning": "The narrative successfully incorporates the user's answers regarding collaborative training and high-volume repetition, but awkwardly attempts to rebrand their endurance focus as a foundation for sprinting."
+    },
+    "distinctness": {
+      "score": 6,
+      "reasoning": "The adaptive pathways identify specific classifications (e.g., T44, Sit-Ski), but the narrative descriptions feel like slightly modified versions of the standing verdicts rather than unique sporting contexts."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions provided clear, meaningful forks that differentiated between explosive power, endurance, and technical precision, even if the matching engine failed to use that data correctly."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Compliant formatting used for 'The 2026 Milano-Cortina Games' and 'The 2028 Los Angeles Games'."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

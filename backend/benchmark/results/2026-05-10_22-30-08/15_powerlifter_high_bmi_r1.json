@@ -1,0 +1,86 @@
+{
+  "persona_id": "15_powerlifter_high_bmi",
+  "persona_label": "Competitive powerlifter \u2014 high BMI, elite strength",
+  "biometrics": {
+    "height_cm": 182,
+    "weight_kg": 142,
+    "birth_year": 1991,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To help me understand your sporting journey better, could you tell me how you have primarily utilized that physical presence in your past or current training?\nOptions: [I have a background in heavy contact or strength-based sports. | I am focused on developing explosive power and high-velocity movement. | My training has been centered on raw, functional strength and sustained output.]"
+    },
+    {
+      "role": "user",
+      "content": "I have a background in heavy contact or strength-based sports."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look at your current training habits, how do you primarily structure your weekly commitment to stay at the top of your game?\nOptions: [I follow a rigorous, science-based recovery and maintenance program to optimize my performance. | I prioritize high-intensity, competition-driven sessions to maintain my competitive edge. | I focus on consistent, long-term technical development and functional longevity.]"
+    },
+    {
+      "role": "user",
+      "content": "I prioritize high-intensity, competition-driven sessions to maintain my competitive edge."
+    },
+    {
+      "role": "narrator",
+      "content": "When you step into the arena to test your limits, what is the environment where you truly feel you shine brightest?\nOptions: [Individual testing of my limits, where it's just me against the performance metrics. | Direct, face-to-face tactical combat and physical confrontation. | Strategic team environments where every individual role dictates the final victory.]"
+    },
+    {
+      "role": "user",
+      "content": "Individual testing of my limits, where it's just me against the performance metrics."
+    },
+    {
+      "role": "narrator",
+      "content": "You have provided a fantastic foundation for our analysis; I now have a clear picture of your athletic intensity and your preference for individual mastery."
+    },
+    {
+      "role": "user",
+      "content": "I'm ready to see if your algorithm can actually handle a 300kg squat without trying to put me on a treadmill."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Powerlifting (e.g., Men's +100 kg)",
+      "scout_verdict": "At 182cm and 142kg, you carry the heavy artillery required to dominate the field. Your preference for individual testing shines through in the circle\u2014where the silence of the stadium meets the singular focus of the throw. Here, you aren't just competing against rivals; you are obsessively chasing the metrics of your own kinetic chain.\n\nYou have translated the intensity from your strength-based background into the explosive, high-velocity displacement of the implement. At The Brisbane 2032 Games, you would stand in the arena as a master of pure mass and velocity, utilizing your substantial frame to turn potential energy into a final, record-shattering mark."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Men's +100 kg)",
+      "scout_verdict": "Your history in heavy contact sports has gifted you with a visceral understanding of leverage, torque, and the crushing nature of physical confrontation. In this adaptive pathway, we translate that grit into the technical precision of Powerlifting. This discipline utilizes the specific classification frameworks for athletes competing in the +100kg category, which rewards athletes who possess the exceptional internal bracing and postural control necessary to handle massive weight loads with surgical accuracy.\n\nUnlike the wide-arc explosive nature of the throwing ring, this requires a cold, calculated management of your center of gravity. It is the ultimate individual confrontation\u2014you versus the steel\u2014where your deep-rooted knowledge of human leverage becomes the deciding factor in your quest for the gold at The Brisbane 2032 Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, authentic scouting report that perfectly leverages the user's massive frame for heavy-weight sports, though it misses a prime opportunity to incorporate their custom 300kg squat comment.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "At 182cm and 142kg, Shot Put and +100kg Powerlifting are incredibly accurate, realistic real-world pathways for an athlete with this exceptional mass."
+    },
+    "personalization": {
+      "score": 7,
+      "reasoning": "The verdicts effectively integrate the user's multiple-choice answers about chasing metrics and strength backgrounds, but unfortunately ignore the rich custom input regarding their 300kg squat."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "Excellent contrast between the two pathways, explicitly comparing the 'wide-arc explosive nature of the throwing ring' to the 'cold, calculated management' of powerlifting."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator's questions offer clear, functional forks, successfully differentiating between a combat sport profile and an individual metric-chaser based on the chosen options."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean pass with correct, compliant usage of 'The Brisbane 2032 Games' and no protected terminology violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

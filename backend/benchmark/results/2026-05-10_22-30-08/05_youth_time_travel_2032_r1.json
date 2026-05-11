@@ -1,0 +1,82 @@
+{
+  "persona_id": "05_youth_time_travel_2032",
+  "persona_label": "Youth gymnast \u2014 time travel to 2032",
+  "biometrics": {
+    "height_cm": 164,
+    "weight_kg": 55,
+    "birth_year": 2010,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe your current relationship with physical activity and training?\nOptions: [I thrive in the collaborative, fast-paced environment of team sports. | I prefer the focus, repetition, and technical precision of individual training. | I am most energized by explosive movements, speed, and high-intensity power challenges.]"
+    },
+    {
+      "role": "user",
+      "content": "I am most energized by explosive movements, speed, and high-intensity power challenges."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back at your training experience so far, how would you best characterize your athletic history?\nOptions: [I have been competing in organized settings for years and have a clear vision for my top-tier athletic pathway. | I am relatively new to structured training, but I have always loved the feeling of pushing my body to its absolute limits. | I have spent my time exploring multiple sports and am only just beginning to focus on one specialized area.]"
+    },
+    {
+      "role": "user",
+      "content": "I have been competing in organized settings for years and have a clear vision for my top-tier athletic pathway."
+    },
+    {
+      "role": "narrator",
+      "content": "When you imagine yourself standing at the start line of The Brisbane 2032 Games, having reached your prime, what is the single biggest evolution you expect to have occurred in your approach to high-performance sport?\nOptions: [A refined, calculated mastery of my technical discipline. | A raw, unwavering increase in pure explosive power and intensity. | A deeper tactical and strategic maturity for handling high-pressure moments.]"
+    },
+    {
+      "role": "user",
+      "content": "A refined, calculated mastery of my technical discipline."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+      "scout_verdict": "At 164cm and 55kg, you possess the ideal kinetic profile for the track, where raw, explosive power is the currency of success. By The Brisbane 2032 Games, you will have channeled the fierce intensity you\u2019ve cultivated since your youth into a legacy defined by pure, blistering speed. For you, the starting block is not just a mechanism\u2014it is the point of total synchronization between your vision and your physical output.\n\nIn the T44 classification, which features ambulatory athletes with lower-limb impairments who compete standing, often utilizing carbon-fiber blades, your specific physiology becomes a precision-engineered advantage. Because you have prioritized competitive history and high-intensity power, your adaptation to this classification will be seamless, turning every stride into a masterclass of force production. At 22, standing on the track at The Brisbane 2032 Games, you represent the pinnacle of quick-strike potential."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Where the track demands raw explosion, the slopes demand total mental and physical synchronicity. You have expressed a clear, evolving desire for refined, calculated mastery\u2014a shift from the chaotic burst of power to the surgical precision required to carve an edge through high-speed turns. At 22, heading into The Brisbane 2032 Games, this pathway allows you to transform your competitive discipline into a meditative, high-stakes art form.\n\nWithin the LW12 classification\u2014reserved for sit-skiers with lower-limb impairments who utilize a single mono-ski\u2014your focus on technical mastery will shine. Here, the weight of your frame and your ability to maintain core balance become the primary drivers of your speed. This adaptive pathway offers a sophisticated counterpoint to your sprinting, forcing you to read the terrain with a cerebral intensity that creates a unique, balanced excellence. It is the perfect stage to showcase how your hunger for precision can conquer even the most demanding descent at The Brisbane 2032 Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, highly personalized scouting report that effectively utilizes the time travel constraint to show the athlete's evolution from raw power to technical mastery by age 22.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "At 164cm and 55kg, the user has a compact, powerful build that realistically aligns with the explosive demands of both the Block Starter (sprinting) and Edge Carver (skiing/skating) profiles."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narrative directly weaves the user's interview choices together, explicitly noting her progression from 'high-intensity power' and a long 'competitive history' toward a new goal of 'refined, calculated mastery'."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The ambulatory sprinting (T44) and sit-skiing (LW12) pathways offer vastly different biomechanical paradigms, contrasting raw force production with core balance and terrain reading."
+    },
+    "life_stage_coherence": {
+      "score": 8,
+      "reasoning": "At the Elite Peak age of 22, framing the user at the 'pinnacle of quick-strike potential' perfectly captures the intersection of prime physical power and technical maturity."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions form a logical funnel with distinct options, moving from basic athletic preference to experience level, and finally to a future-focused evolution that clearly influenced the secondary archetype."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean result with proper use of 'The Brisbane 2032 Games' and respectful, detailed adaptive classifications."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

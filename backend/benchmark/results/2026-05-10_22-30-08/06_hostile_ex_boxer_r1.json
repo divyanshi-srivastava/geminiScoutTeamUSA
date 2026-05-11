@@ -1,0 +1,78 @@
+{
+  "persona_id": "06_hostile_ex_boxer",
+  "persona_label": "Hostile ex-boxer \u2014 distrusts Olympics and AI",
+  "biometrics": {
+    "height_cm": 183,
+    "weight_kg": 87,
+    "birth_year": 1995,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, how would you characterize your historical engagement with competitive sport?\nOptions: [Lifetime athlete: I\u2019ve been involved in high-intensity, organized training since I was young. | Specialist: I focused intensely on mastering a single discipline from a young age. | Multidisciplinary: I have thrived by exploring several different sporting worlds and physical modalities.]"
+    },
+    {
+      "role": "user",
+      "content": "Specialist: I focused intensely on mastering a single discipline from a young age."
+    },
+    {
+      "role": "narrator",
+      "content": "When you think back to the height of your training for that discipline, what was the primary element you prioritized to maintain your competitive edge?\nOptions: [Technical precision and biomechanical efficiency | Raw explosive power and muscular development | Strategic mental fortitude and sustained tactical endurance]"
+    },
+    {
+      "role": "user",
+      "content": "Raw explosive power and muscular development"
+    },
+    {
+      "role": "narrator",
+      "content": "Looking toward your potential role in high-performance sport, what drives you most when the pressure is at its peak?\nOptions: [The head-to-head battle: I am built to thrive under the intense pressure of direct competition against an opponent. | The technical challenge: I am driven by the pursuit of absolute precision and mastering the most demanding movements. | The environmental test: I want to see how my physical capabilities hold up across different terrains and high-stakes climates.]"
+    },
+    {
+      "role": "user",
+      "content": "The head-to-head battle: I am built to thrive under the intense pressure of direct competition against an opponent."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 10,
+      "matched_profile_name": "Launch Force",
+      "pathway_standing": "Bobsleigh / Push Sports",
+      "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+      "scout_verdict": "Your history as a specialist athlete, built upon a foundation of raw explosive power, finds its ultimate expression in the high-stakes world of push athletics. At 183cm and 87kg, you possess the ideal kinetic profile to transfer your developed muscularity into a violent, instantaneous launch. Standing at the start line, your preference for head-to-head competition is tested; the difference between victory and defeat is measured in hundredths of a second, demanding total commitment to that singular explosive movement. At The French Alps 2030 Games, your legacy is defined by your ability to dominate the initial phase of the race, carrying your team through the sheer force of your acceleration.\n\nIn your adaptive pathway, that same obsession with power translates to the F56 classification, which focuses on athletes with impaired muscle power or range of movement in the lower limbs who compete from a seated position. Here, the focus shifts to the kinetic chain of the upper body. Your years of specialist training become the engine for the seated discus throw, where the challenge is to manifest your explosive potential through a stabilized, seated platform. Mastery here requires a different kind of precision: coordinating your entire torso to whip that weight through the air, proving that your capacity for power is not limited by your modality, but liberated by it."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "This pathway pivots away from the heavy-load displacement of your primary match, shifting your focus toward high-velocity track mechanics and absolute stride frequency. As a specialist who thrives under the direct pressure of an opponent, the 100m sprint serves as the ultimate distillation of your competitive drive. At The LA28 Games, you are not just an athlete; you are a master of rhythm and acceleration, fine-tuning your mechanics to shave every possible fraction of a second off your reaction time out of the blocks. Your physical development is repurposed here, moving from pushing mass to maintaining a rapid, efficient turnover that keeps you ahead in a tight, high-intensity field.\n\nYour adaptive journey in the T44 classification, which includes ambulatory athletes who compete with a lower-limb impairment, requires a recalibration of your athletic intuition. You are no longer relying on standard mechanical patterns, but instead engaging with the high-tech interface of performance blades or specialized orthotics. While your standing sprinting profile emphasizes the power of the natural stride, the T44 pathway demands a unique coordination between your residual limb mechanics and your explosive output. You must become a student of efficiency, learning how to channel your raw, specialist-honed power through a technical aid to achieve peak velocity, demonstrating that your competitive dominance is a product of your mind as much as your physical stature."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "The scouting report effectively connects the user's biometrics and focus on explosive power to highly suitable archetypes, weaving interview answers naturally into the narrative.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "At 183cm and 87kg, the user has a classic power-to-weight ratio for bobsleigh and sprints, perfectly aligning with their self-reported focus on raw explosive power."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts directly and naturally incorporate the user's answers regarding being a 'specialist' and thriving in 'head-to-head competition'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two standing pathways differ in their application of power (pushing mass vs. high-velocity sprints), and the adaptive pathways (seated throws vs. ambulatory sprints) provide clearly differentiated biomechanical challenges."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions logically narrow down the athlete's profile from training history to physical priority and finally competitive mindset, with distinct and meaningful options at each turn."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Correctly formatted Games references ('The French Alps 2030 Games', 'The LA28 Games') and no unauthorized IP or terms detected."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

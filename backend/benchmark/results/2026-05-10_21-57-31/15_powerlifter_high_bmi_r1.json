@@ -1,0 +1,78 @@
+{
+  "persona_id": "15_powerlifter_high_bmi",
+  "persona_label": "Competitive powerlifter \u2014 high BMI, elite strength",
+  "biometrics": {
+    "height_cm": 182,
+    "weight_kg": 142,
+    "birth_year": 1991,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start building your profile, how would you describe your natural physical rhythm when you are pushing yourself to your absolute limit?\nOptions: [Explosive power, speed, and sudden, high-intensity bursts | Sustained, rhythmic endurance and steady-state pacing | Precision, technical stability, and calculated tactical control]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power, speed, and sudden, high-intensity bursts"
+    },
+    {
+      "role": "narrator",
+      "content": "When you're deep into a high-intensity session, what role do you naturally fall into within your training environment?\nOptions: [The Solo Strategist: I prefer total control over my environment, focusing on individual output and fine-tuning my personal mechanics. | The Team Anchor: I gain strength from the collective energy, using my presence to set the pace and influence the flow of competition. | The Dynamic Pivot: I enjoy reacting to unpredictable environments, making rapid, instinctive adjustments on the fly to exploit gaps.]"
+    },
+    {
+      "role": "user",
+      "content": "The Solo Strategist: I prefer total control over my environment, focusing on individual output and fine-tuning my personal mechanics."
+    },
+    {
+      "role": "narrator",
+      "content": "When you visualize yourself at your absolute peak, what environment allows you to most effectively channel your explosive power and technical precision?\nOptions: [Controlled indoor settings, like a track or arena, where external variables are stripped away, leaving only my raw output. | Dynamic, varied terrain or obstacle-laden courses that demand constant micro-adjustments and raw, unpredictable force. | Specialized technical equipment environments, where the interface between my body and the gear is the primary stage for my strength.]"
+    },
+    {
+      "role": "user",
+      "content": "Specialized technical equipment environments, where the interface between my body and the gear is the primary stage for my strength."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+      "scout_verdict": "Standing within the circle at the [City] [Year] Games, your 182cm frame and 142kg stature provide a base of absolute, unwavering stability. You have spent your career mastering the internal mechanics of power, viewing each throw as a scientific symphony of torque, velocity, and timing. For the Solo Strategist, the environment of field athletics is your sanctuary\u2014a place where the noise of the world is stripped away, leaving only the cold, hard reality of the steel and the distance you can command.\n\nAt 35, you possess the refined coordination that only comes with years of dedicated practice. You don't just rely on raw explosive bursts; you have cultivated an intimate understanding of the interface between your body and the equipment. In the final, pressurized moments of competition, you find your calm within the specialized geometry of the throwing circle, delivering precision-engineered force that turns kinetic energy into a testament of your singular focus and technical mastery."
+    },
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "scout_verdict": "Your journey to the [City] [Year] Games takes a sharp turn from the isolated throwing circle into the high-stakes, shifting geometry of the court. Here, your formidable physical presence is no longer just for individual output\u2014it becomes a strategic tool for spatial dominance. You are the immovable object in a game of constant, unpredictable movement, using your explosive bursts to act as the primary tactical anchor for your team's defensive and offensive structure.\n\nUnlike the solitary focus of field events, this path demands a mastery of tactical control and reactive precision. You have traded the controlled environment of the circle for the chaotic, living landscape of the hardwood. In this arena, your age and experience allow you to read the game with a surgeon\u2019s insight, positioning your weight to block lanes and dictate the flow of play. You are no longer just an athlete performing a task; you are a playmaker, using your physical stature to protect the rim and define the competitive narrative of the match."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "The report effectively utilizes the user's massive biometrics and interview choices to create a highly personalized shot put profile, though it lacks a distinct narrative for the adaptive pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "At 182cm and 142kg, the user has the immense mass and lower center of gravity perfectly suited for a heavy throws archetype like Shot Put."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narrative explicitly cites the user's exact biometrics, age, and seamlessly integrates their interview choices of being a 'Solo Strategist' who relies on 'specialized equipment'."
+    },
+    "distinctness": {
+      "score": 4,
+      "reasoning": "Although the two archetypes are very different, the report fails to provide a separate narrative for the adaptive pathways, completely ignoring the seated or wheelchair-specific elements in the verdicts."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asked strong, logically progressing questions that forced the user to make meaningful choices about their physical rhythm, team dynamics, and ideal environment."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean output that correctly uses the '[City] [Year] Games' placeholder format without trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

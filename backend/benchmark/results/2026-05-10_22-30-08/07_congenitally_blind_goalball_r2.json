@@ -1,0 +1,78 @@
+{
+  "persona_id": "07_congenitally_blind_goalball",
+  "persona_label": "Congenitally blind \u2014 goalball and tandem cycling",
+  "biometrics": {
+    "height_cm": 165,
+    "weight_kg": 60,
+    "birth_year": 1992,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you best describe the athletic foundation you have built over the years?\nOptions: [I thrive in team settings, focusing on coordination and reactive play. | I am drawn to solitary, high-endurance pursuits that test my personal limits. | I gravitate toward technical disciplines that require meticulous precision and control.]"
+    },
+    {
+      "role": "user",
+      "content": "I thrive in team settings, focusing on coordination and reactive play."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep into a competition, what kind of mental or physical challenge do you find most engaging?\nOptions: [The chaotic, fast-paced moments that demand pure, instinctive reaction. | The deep tactical layering where every move is calculated to outsmart the opposition. | The relentless, high-intensity grind where you must sustain your peak output to support the team's success.]"
+    },
+    {
+      "role": "user",
+      "content": "The chaotic, fast-paced moments that demand pure, instinctive reaction."
+    },
+    {
+      "role": "narrator",
+      "content": "Reflecting on your journey in high-performance sport, which of these best captures how you have historically developed your competitive craft?\nOptions: [I grew up honing my skills within a structured club environment where teamwork and shared goals were everything. | My development was more self-directed and trial-by-fire, learning on the fly through high-pressure, real-world competitive scenarios. | I thrived by seeking out diverse sporting environments, constantly adapting my style to fit different team needs and evolving roles.]"
+    },
+    {
+      "role": "user",
+      "content": "I grew up honing my skills within a structured club environment where teamwork and shared goals were everything."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "Your history of team-based play has instilled in you a unique ability to read a pack and sense the tactical flow of a race\u2014a skill that defines the Road Machine. Standing at 165cm and 60kg, you possess an exceptional power-to-weight ratio that allows you to sustain high-cadence outputs, transitioning the instinctive coordination you honed in club environments into a singular, relentless performance. Your background in reactive play serves as the foundation for your mental endurance, allowing you to stay sharp when the pack is at its most chaotic.\n\nIn the adaptive realm of handcycling, specifically the H3 classification for athletes with lower-limb impairments who compete using a hand-cranked cycle, your capacity for steady, high-intensity exertion is paramount. This pathway demands not only physical output but the same strategic team-reading skills you have always relied upon, now applied to the individual pursuit of finding the perfect draft or gap in a peloton. Whether navigating a technical circuit or driving through a long flat, your potential to deliver a breakthrough performance at The Brisbane 2032 Games is anchored in your ability to maintain focus through the most grueling phases of the race."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Women's -67 kg)",
+      "scout_verdict": "The Mat Technician archetype is the mirror to your love for chaos; it thrives on the instinctive, high-stakes reactions that have defined your sporting journey. Where your endurance pathways test your persistence, this profile taps into the explosive, dense physical mechanics you possess. Your compact 165cm, 60kg build acts as a perfectly balanced lever, granting you a distinct advantage in combat and strength scenarios where center of gravity and reactive speed are everything. You are no longer just reacting to team play\u2014you are dictating the physical reality of your opponent.\n\nIn your adaptive pathway of powerlifting, specifically within the -67 kg category where athletes compete based on body weight class, this precision is your greatest asset. You apply the meticulous, rule-driven mindset of a long-time club athlete to the technical execution of the lifts, transforming the 'chaotic' energy of your earlier team years into focused, controlled power. Stepping onto the stage at The LA28 Games, you will be the athlete who brings the tactical mind of a strategist to the raw intensity of the iron, proving that your transition from team environments has made you the most formidable competitor in the room."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The narrative successfully incorporates the user's interview responses and provides highly distinct pathways, but the first archetype selection contradicts the user's explicit rejection of endurance sports.",
+    "authenticity": {
+      "score": 4,
+      "reasoning": "The 'Road Machine' (Cycling) archetype is a poor fit considering the user explicitly bypassed the 'solitary, high-endurance' option in favor of team settings and reactive play."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts specifically weave in the user's exact themes, referencing their 'love for chaos' and background in a 'structured club environment'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "Cycling and Wrestling offer a stark, highly effective contrast between aerobic endurance and explosive, reactive combat."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The narrator provided genuinely distinct athletic forks, such as clearly separating team/reactive traits from solitary/endurance traits, which successfully probed the user's athletic mindset."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean output with properly formatted Games references ('The Brisbane 2032 Games', 'The LA28 Games') and no prohibited terms."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

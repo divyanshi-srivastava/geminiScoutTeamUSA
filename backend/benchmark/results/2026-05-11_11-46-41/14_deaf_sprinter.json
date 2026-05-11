@@ -1,0 +1,86 @@
+{
+  "persona_id": "14_deaf_sprinter",
+  "persona_label": "Profoundly deaf \u2014 competitive 400m sprinter",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 76,
+    "birth_year": 2001,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start building a picture of your sporting journey, how would you describe your typical approach to physical challenges?\nOptions: [Total output: I focus on raw power, explosive movements, and pushing at high intensity. | Methodical persistence: I gravitate toward long-duration efforts where I can find a rhythm and maintain steady pacing. | Technical precision: I prefer activities that demand complex coordination, refined timing, and strategic spatial awareness.]"
+    },
+    {
+      "role": "user",
+      "content": "Total output: I focus on raw power, explosive movements, and pushing at high intensity."
+    },
+    {
+      "role": "narrator",
+      "content": "To help map out your sporting journey further, how does your current training environment best support that need for high-intensity work?\nOptions: [Individual pursuit: I prefer structured gym environments where I can isolate movements and track my explosive gains with precision. | Field and track: I thrive in open-air settings where I can translate that raw power into sprinting, jumping, or reactive speed work. | Dynamic competition: I seek out team-based settings where my explosive energy can directly influence the pace and outcome of a match.]"
+    },
+    {
+      "role": "user",
+      "content": "Field and track: I thrive in open-air settings where I can translate that raw power into sprinting, jumping, or reactive speed work."
+    },
+    {
+      "role": "narrator",
+      "content": "To finalize our look at your sporting journey, how would you describe your background with high-performance athletics?\nOptions: [Lifelong competitor: I have spent years in formal training environments, refining technique through consistent coaching. | Cross-disciplinary enthusiast: I have explored a range of different sports, pulling techniques from various disciplines to build a unique style. | Recent discovery: My focus on high-performance movement is a newer pursuit, driven by a desire to test my physical limits.]"
+    },
+    {
+      "role": "user",
+      "content": "Lifelong competitor: I have spent years in formal training environments, refining technique through consistent coaching."
+    },
+    {
+      "role": "narrator",
+      "content": "With your foundation in structured training and your preference for the field and track, I have enough insight to outline your potential pathway. Shall we move to the final assessment?"
+    },
+    {
+      "role": "user",
+      "content": "Let\u2019s get to it; I\u2019m ready to prove my sub-46 speed belongs at the top level regardless of the starting pistol."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "Your 178cm, 76kg frame is a testament to the classic sprinter\u2019s architecture\u2014compact, efficient, and densely packed with the fast-twitch muscle fibers required to explode from the blocks. At 25 years old, you are entering the prime of your career, and your lifelong commitment to structured field training gives you the tactical maturity to match your impressive baseline speed. As you set your sights on the track at The Brisbane 2032 Games, your path is defined by pure, unadulterated output; your ability to convert raw power into velocity is your greatest competitive asset.\n\nIn the adaptive arena, the T44 classification specifically accommodates athletes with a lower-limb impairment who compete standing, often utilizing high-tech carbon-fiber prosthetics that mimic the elasticity and energy return of human tendons. Your background in high-intensity sprinting translates seamlessly here. Because you already understand the mechanics of force application and track-specific reactivity, transitioning to a T44 pathway isn't about learning to sprint\u2014it is about mastering the unique rhythm of your gear to ensure that your explosive starts result in world-class acceleration."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "While your sprinting history is rooted in the linear pursuit of power, the Edge Carver profile pivots to the complex, high-velocity environment of winter speed disciplines. This is where your focus shifts from sheer output to the art of technical management\u2014navigating the delicate threshold between edge grip and centrifugal force. At The Brisbane 2032 Games, this profile positions you as a tactician of speed, where your lifelong discipline allows you to break down every turn into a precise, calculated movement rather than just a brute-force exertion.\n\nThe LW12 classification is reserved for sit-skiers with lower-limb impairments who demonstrate elite trunk stability and core strength. This is where your secondary athletic dimension emerges; whereas sprinting demands explosive bursts, the sit-ski requires a profound level of core-driven coordination and spatial awareness to maintain balance at high velocities. By applying your existing reactive speed to the icy lines of a Super-G course, you transform your athletic identity from a straight-line powerhouse into a master of momentum, utilizing your core control to carve the mountain with absolute precision."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, highly plausible scouting report that seamlessly integrates the user's biometric data and interview responses into compelling athletic narratives.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "A height of 178cm and weight of 76kg creates an ideal power-to-weight ratio for a 'Block Starter', making the primary sprint recommendation highly authentic."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdict explicitly weaves in the user's self-reported 'lifelong commitment to structured field training' and preference for 'unadulterated output'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways offer genuine mechanical insights, contrasting the lower-limb prosthetic mechanics of T44 sprinting with the core-driven trunk stability required for LW12 sit-skiing."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions progressively narrowed the athlete's profile from broad physical preferences to specific training environments, offering meaningfully distinct forks."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly uses 'The Brisbane 2032 Games' format and avoids restricted terms."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

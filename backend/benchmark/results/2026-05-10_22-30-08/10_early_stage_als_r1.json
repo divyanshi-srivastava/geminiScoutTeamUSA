@@ -1,0 +1,78 @@
+{
+  "persona_id": "10_early_stage_als",
+  "persona_label": "Early-stage ALS \u2014 former competitive tennis player",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 78,
+    "birth_year": 1981,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "Looking back at your history with movement and exercise, which of these areas has historically been your primary focus?\nOptions: [High-intensity team sports and field competition | Endurance-based activities like distance running or cycling | Strength, power, and explosive movement patterns]"
+    },
+    {
+      "role": "user",
+      "content": "Strength, power, and explosive movement patterns"
+    },
+    {
+      "role": "narrator",
+      "content": "As you consider your current approach to your athletic journey, which of these training philosophies resonates most with how you prefer to move today?\nOptions: [Rigorous, structured training protocols focused on measurable performance gains | Community-driven, functional training that emphasizes longevity and social movement | Technical, precision-focused mastery that prioritizes skill and form over sheer volume]"
+    },
+    {
+      "role": "user",
+      "content": "Technical, precision-focused mastery that prioritizes skill and form over sheer volume"
+    },
+    {
+      "role": "narrator",
+      "content": "As you envision your next chapter in your sporting journey, where do you see your energy being directed?\nOptions: [Refining a singular, complex skill set for personal mastery | Leading and strategizing within a collaborative, team-based environment | Testing your physical limits through diverse, multi-disciplinary challenges]"
+    },
+    {
+      "role": "user",
+      "content": "Refining a singular, complex skill set for personal mastery"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "At 45 years of age, you possess the mental discipline required for the technical mastery of the Edge Carver. Your build of 178cm and 78kg offers the stable center of gravity needed for the high-velocity precision of alpine speed events. Your preference for refining a singular, complex skill set aligns perfectly with the nuance of edge control, where millimeters of adjustment dictate the success of a run. You aren't just moving down a slope; you are engaging in a calculated negotiation with gravity and friction, turning the mountain into an analytical playground.\n\nIn the adaptive pathway, you step into the world of the seated classification, which covers athletes with lower-limb impairments who compete in a seated position using a specialized mono-ski. This requires a profound recalibration of your spatial awareness and core strength, as you must pilot the device using your upper body and balance. It is the ultimate expression of the technical mastery you seek, requiring you to translate your structured, analytical approach into a dynamic, gravity-defying performance that demands absolute precision in every turn. This pathway provides a rigorous intellectual and physical challenge, mirroring the complexity of the standing discipline."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "As the Block Starter, you pivot from the calculated precision of your first archetype into the raw, kinetic explosion of the track. Here, your interest in strength and explosive movement patterns becomes the primary engine of your performance. At 178cm, your compact, powerful frame allows for rapid force application into the blocks, transforming your training focus into a pure study of neuromuscular reactivity. This is where your history with strength training finds its zenith, demanding the fast-twitch explosiveness necessary to dominate the opening meters of a race.\n\nThis explosive intensity is matched in the ambulatory adaptive classification, which features athletes with lower-limb impairments who compete while standing. Competitors in this pathway often utilize high-performance carbon-fiber prosthetic components, turning the sprint into a fascinating challenge of kinetic integration and raw power. By entering this pathway, you move beyond mere technique to master the mechanics of high-velocity movement, testing how your strength and explosive capacity can be harnessed to maximize stride length and frequency. It is a bold, high-octane departure from the subtle edges of the track, ensuring your athletic journey remains a multifaceted pursuit of excellence."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly personalized and technically sound scouting report that effectively translates the user's philosophical preferences into distinct sporting disciplines.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "The user's 178cm/78kg frame provides a solid power-to-weight ratio for both alpine skiing and sprinting, though recommending elite explosive sprinting at age 45 strains real-world plausibility slightly."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts explicitly integrate the user's interview selections, tying their desire for 'refining a singular, complex skill set' to edge control and their background in 'explosive movement patterns' to starting blocks."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways offer genuine mechanical insights, contrasting the core strength needed for a mono-ski with the kinetic integration required for ambulatory sprinting with prosthetics."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions present distinct, meaningful forks (e.g., choosing between singular mastery, team leadership, or multi-disciplinary challenges) that effectively shape the resulting archetype."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly avoids standalone protected terms and utilizes appropriate adaptive classification terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

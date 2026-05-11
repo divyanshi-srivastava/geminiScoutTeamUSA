@@ -1,0 +1,82 @@
+{
+  "persona_id": "11_retired_gymnast_time_travel_1984",
+  "persona_label": "Retired gymnastics coach \u2014 time travel to 1984 LA Games",
+  "biometrics": {
+    "height_cm": 162,
+    "weight_kg": 57,
+    "birth_year": 1958,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To help me understand your current physical foundation, which of these areas best defines your primary activity or personal focus?\nOptions: [Functional strength and mobility training | Endurance-based movement and sustained pacing | Technical skill and precision-based coordination]"
+    },
+    {
+      "role": "user",
+      "content": "Technical skill and precision-based coordination"
+    },
+    {
+      "role": "narrator",
+      "content": "Thinking about the environments where you feel most in your element, which of these settings do you find drives your best performance?\nOptions: [Controlled environments like courts or indoor gymnasiums | Outdoor, variable settings that require constant adaptation to the elements | Dynamic team environments where collective strategy defines the success of the group]"
+    },
+    {
+      "role": "user",
+      "content": "Controlled environments like courts or indoor gymnasiums"
+    },
+    {
+      "role": "narrator",
+      "content": "As you stood at the threshold of your elite performance at The Los Angeles 1984 Games, what aspect of your technical discipline would you have considered your defining 'ultimate weapon' in that high-pressure arena?\nOptions: [Executing complex technical sequences with flawless, rhythmic consistency | Adapting your precision to neutralize the unpredictable styles of your opponents | Refining your movement economy to achieve maximum efficiency and poise under tension]"
+    },
+    {
+      "role": "user",
+      "content": "Executing complex technical sequences with flawless, rhythmic consistency"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Women's FITA Round Open)",
+      "scout_verdict": "At 26 years old, stepping into the controlled intensity of The Los Angeles 1984 Games, your physical profile of 162cm and 57kg acts as a natural anchor for the supreme stability required in marksmanship. Your capacity to find profound stillness in high-stakes environments allowed you to treat every match not as a contest of speed, but as a deliberate meditation on control. Within the indoor firing ranges of the era, your focus on internal equilibrium and absolute precision made you a formidable competitor, capable of neutralizing the pressure of the crowd by retreating into the rhythm of your own pulse.\n\nIn the adaptive pathway of Target Precision, this same discipline takes on a new form. Whether drawing a bow in a FITA Round Open or refining your aim, you leverage your natural poise to achieve a high-level consistency that transcends physical output. Your journey is defined by the technical mastery of the micro-movements\u2014each adjustment in your stance and sight picture serving as a testament to your ability to synthesize deep focus into an singular, unerring outcome."
+    },
+    {
+      "matched_profile_id": 1,
+      "matched_profile_name": "Air Sculptor",
+      "pathway_standing": "Artistic Gymnastics",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Women's 100 m Freestyle S6)",
+      "scout_verdict": "During The Los Angeles 1984 Games, you emerged as a master of rhythmic architecture. At 26, your approach to artistic gymnastics was defined by the elegance of your complex technical sequences; you did not merely perform a routine, you conducted the air around you. Your ability to maintain poise under the harsh glare of the competition lights, combined with a frame built for compact, high-efficiency rotation, allowed you to turn every performance into a display of flawless, rhythmic consistency.\n\nYour adaptive pathway leads you to the pool, competing in the S6 class. This classification is designed for athletes with moderate physical impairments or short stature, focusing on the refined control of movement patterns. In this environment, your identity as an 'Air Sculptor' transforms into a mastery of fluid dynamics. Your signature technical sequences now manifest in the water as a perfectly metered stroke rate and an uncanny ability to maintain momentum through each turn. By applying your core strength and gymnastic coordination to the S6 swimming classification, you prove that your ultimate weapon\u2014technical precision\u2014is the defining variable that separates the elite from the field."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, highly tailored scouting report that effectively uses the user's specific answers and biometrics to paint a vivid picture of a 1984-era elite athlete.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The user's smaller frame (162cm, 57kg) naturally supports both the compact strength needed for Artistic Gymnastics and the low center of gravity beneficial for Marksmanship."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts heavily integrate the user's choices, specifically calling out their preference for 'controlled environments' and their 'ultimate weapon' of 'flawless, rhythmic consistency.'"
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The pathways offer two very different expressions of precision: the absolute static stillness of marksmanship versus the dynamic, fluid coordination of artistic gymnastics and adaptive swimming."
+    },
+    "life_stage_coherence": {
+      "score": 8,
+      "reasoning": "The narrative accurately reflects an 'Elite Peak' athlete at age 26, using language like 'emerged as a master' and 'stepping into the controlled intensity' rather than suggesting they are a developing rookie."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions successfully and logically narrowed down the user's athletic profile, with the final question offering excellent, distinct strategic approaches (rhythm vs. adaptation vs. economy)."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with correct 'The Los Angeles 1984 Games' terminology and no IP/NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

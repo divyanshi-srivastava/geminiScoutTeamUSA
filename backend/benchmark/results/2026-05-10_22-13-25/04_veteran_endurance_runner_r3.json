@@ -1,0 +1,78 @@
+{
+  "persona_id": "04_veteran_endurance_runner",
+  "persona_label": "Veteran ultramarathon runner",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 70,
+    "birth_year": 1984,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, how would you describe the core philosophy behind your physical activity over the years? What kind of movement feels most natural to you?\nOptions: [Explosive power and strength training | Sustained endurance and long-range pacing | Complex technical movement and agility]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance and long-range pacing"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are pushing those long-range limits, what kind of setting brings out your best performance?\nOptions: [Solo, meditative environments where I can focus entirely on my internal rhythm and pace. | Large-scale, high-pressure environments where I can feed off the intensity of the competition. | Tactical team environments where strategic collaboration and communication drive the result.]"
+    },
+    {
+      "role": "user",
+      "content": "Solo, meditative environments where I can focus entirely on my internal rhythm and pace."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look back on your journey or plan your next challenge, where do you find your greatest satisfaction when training for those long-duration efforts?\nOptions: [Mastering cardiovascular efficiency to maintain peak output for longer periods. | Refining technical efficiency to maximize energy conservation over immense distances. | Cultivating mental resilience to push through the hardest stages of fatigue.]"
+    },
+    {
+      "role": "user",
+      "content": "Refining technical efficiency to maximize energy conservation over immense distances."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "At 175cm and 70kg, your physical foundation is perfectly tuned for the Road Machine archetype. Your preference for the solitude of the long road\u2014where the rhythm of your own heart becomes the only clock that matters\u2014marks you as a true endurance architect. At 42, you bring a level of focus and mental clarity that many younger competitors lack, viewing every pedal stroke as a calculated investment in efficiency.\n\nWhether competing in standing cycling or adaptive handcycling, you are refining a masterclass in conservation and output. Imagine yourself at The Brisbane 2032 Games, locked into a steady cadence on a challenging climb. In the standing path, you utilize your core and leg power to sustain momentum; in the adaptive path, you employ specialized hand-crank mechanics to achieve that same rhythmic velocity. Both paths demand the same meditative space you cultivate during solo training, transforming the intensity of the struggle into a state of flow. Your journey is one of endurance redefined, where longevity and precision meet the open road."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "Stepping into the world of the Block Starter means trading the endless horizon for the lightning-fast precision of the track. While your heart favors long distances, this archetype demands a pivot to raw, explosive neuromuscular output. Your commitment to technical refinement becomes an urgent necessity\u2014every micro-adjustment in your posture or stride is the difference between peak velocity and stagnation. \n\nAt The LA28 Games, you would treat the start block as a fulcrum, channeling all your disciplined energy into a singular, forceful burst. Whether you are navigating the standing sprint blocks or the specialized adaptive starting systems for athletes with limb differences, the requirement for millisecond-level precision remains constant. Unlike the rhythmic solitude of your endurance training, these high-velocity paths require you to marry your technical expertise with sudden, explosive intensity. It is a striking test of whether you can sharpen your efficiency into a weapon of pure power, proving that the mind which masters endurance can also command the sprint."
+    }
+  ],
+  "eval_result": {
+    "overall": 5,
+    "summary": "The first archetype is an excellent, highly personalized fit for the athlete's biometrics and interview answers, but the second archetype recommendation completely contradicts the user's stated preferences, dragging down the overall quality.",
+    "authenticity": {
+      "score": 3,
+      "reasoning": "While the Road Machine profile fits perfectly, assigning the explosive Block Starter archetype to a 42-year-old athlete who explicitly prefers 'sustained endurance and long-range pacing' is completely illogical for a real scout."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts heavily incorporate the user's specific answers, effectively referencing their preference for solo, meditative environments and technical efficiency."
+    },
+    "distinctness": {
+      "score": 6,
+      "reasoning": "The cycling profile does a solid job contrasting standing leg power with adaptive hand-crank mechanics, though the sprint profile's adaptive distinction is somewhat brief."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions are well-structured and progressive, moving from broad physical philosophy to environmental preferences and specific training motivators, with genuinely distinct options."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass with correctly formatted references to The Brisbane 2032 Games and The LA28 Games."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

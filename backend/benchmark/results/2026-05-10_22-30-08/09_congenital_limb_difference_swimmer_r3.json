@@ -1,0 +1,78 @@
+{
+  "persona_id": "09_congenital_limb_difference_swimmer",
+  "persona_label": "Congenital limb difference \u2014 adaptive swimmer",
+  "biometrics": {
+    "height_cm": 168,
+    "weight_kg": 63,
+    "birth_year": 1997,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "When you think about your ideal approach to physical training and competition, which of these styles resonates most with your natural rhythm?\nOptions: [Explosive power, focusing on rapid, high-intensity movements. | Sustained endurance, prioritizing long-distance pacing and stamina. | Technical precision, emphasizing coordination and complex motor control.]"
+    },
+    {
+      "role": "user",
+      "content": "Technical precision, emphasizing coordination and complex motor control."
+    },
+    {
+      "role": "narrator",
+      "content": "When you think about the environment where you best refine your skills, which setting feels most like home for your athletic journey?\nOptions: [A competitive team environment, thriving on the synergy and shared energy of a group. | A solo-focused training space, prioritizing absolute control and quiet, individual refinement. | Variable or natural terrains, where you must constantly adapt your technique to changing conditions.]"
+    },
+    {
+      "role": "user",
+      "content": "A solo-focused training space, prioritizing absolute control and quiet, individual refinement."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward the next stage of your high-performance sporting journey, what is the ultimate drive behind your dedication to such precise refinement?\nOptions: [Chasing historical benchmarks to set a new standard for excellence. | Pursuing absolute personal mastery, where success is the flawless execution of your own potential. | Treating your body as a system to be optimized for maximum efficiency and longevity.]"
+    },
+    {
+      "role": "user",
+      "content": "Pursuing absolute personal mastery, where success is the flawless execution of your own potential."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Your 168cm and 63kg frame acts as the perfect fulcrum for high-velocity environments. At 29, you possess the refined spatial awareness required to dominate on ice or slope, where the difference between a podium finish and a slight deviation is measured in milliseconds. Your dedication to solo, technical refinement is your greatest asset here; you treat every carve and every turn as an exercise in absolute kinetic control, finding peace in the singular focus of a high-speed line.\n\nIn the adaptive pathway of sit-skiing, your mastery of precision becomes a survival skill. The LW12 classification, designated for athletes who compete in a seated position due to lower-limb impairment, requires an extraordinary degree of core stability and upper-body synchronicity. In this discipline, you are not just carving a path; you are piloting a high-performance machine with your own body as the stabilizer. When you arrive at The French Alps 2030 Games, your ability to remain calm and exact at 100 kilometers per hour will distinguish you as a master of the downhill craft, transforming your need for individual excellence into a powerful display of adaptive, high-speed grace."
+    },
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Women's FITA Round Open)",
+      "scout_verdict": "Where others feel the chaos of competition, you find the stillness that defines the 'Steady Hand' archetype. Your focus on internal system optimization aligns perfectly with the intense discipline of marksmanship, where your 29 years of experience provide the psychological armor needed to maintain a rock-steady pulse under the bright lights of The French Alps 2030 Games. This is the ultimate expression of your personal mastery\u2014where your body, weapon, and intent become a single, fluid unit, unbothered by the external noise of the crowd.\n\nIn the adaptive pathway of Archery, your precision takes on a meditative quality. The FITA Round Open, which allows for various assistive configurations for athletes with physical impairments, rewards the exact rhythm of your breath and the calculated release of the string. While the 'Edge Carver' path relied on explosive environmental adaptation, this path requires a complete inward turn, using your analytical nature to map the subtle variances in wind and tension. By mastering this technical, low-impact environment, you turn every shot into an argument for your own perfection, proving that true athleticism is as much about the silence of the mind as it is about the physical act."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, highly tailored scouting report that effectively bridges the user's focus on technical precision and solo training into two highly distinct sporting pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The 168cm/63kg biometrics are highly plausible for both alpine skiing and marksmanship, and the technical, solo-focused answers align perfectly with these archetypes."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts explicitly incorporate the user's interview choices, specifically weaving their desire for 'solo, technical refinement' and 'personal mastery' into the core narrative of both sports."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two pathways contrast beautifully, juxtaposing the high-velocity, environmental adaptation of sit-skiing against the still, internal, and meditative precision of adaptive archery."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The interview successfully narrows the athlete's profile by moving from physical training style to environment and finally psychological drive, with genuinely distinct options at each turn."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean pass with correct usage of 'The French Alps 2030 Games' and appropriate adaptive classifications without any NIL violations."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

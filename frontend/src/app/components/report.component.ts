@@ -144,22 +144,6 @@ import { map } from 'rxjs/operators';
               </div>
             </ng-template>
 
-            <div class="section-divider"></div>
-
-            <!-- ── PIPELINE FOOTER ── -->
-            <div class="footer-row">
-              <span class="footer-chip">supervisor_agent</span>
-              <span class="footer-arrow">→</span>
-              <span class="footer-chip">scout_agent</span>
-              <span class="footer-arrow">→</span>
-              <span class="footer-chip">narrator_agent</span>
-              <span class="footer-arrow">→</span>
-              <span class="footer-chip">compliance_agent</span>
-              <span class="footer-arrow">→</span>
-              <span class="footer-chip footer-chip-gold">eval_agent</span>
-            </div>
-            <p class="footer-note">Physical profile matched via Euclidean distance across 12 archetype centroids. Agent trace &amp; SSE events logged in Mission Control sidebar.</p>
-
           </div>
         </div>
       </div>

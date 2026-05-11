@@ -1,0 +1,78 @@
+{
+  "persona_id": "13_wheelchair_racer_paraplegic",
+  "persona_label": "T4 paraplegic \u2014 wheelchair racer and basketball player",
+  "biometrics": {
+    "height_cm": 163,
+    "weight_kg": 55,
+    "birth_year": 2004,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start understanding your sporting journey, how would you describe your natural preference for movement when you are at your best?\nOptions: [Explosive power and high-intensity bursts | Endurance, rhythm, and long-distance pacing | Technical precision and controlled coordination]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and high-intensity bursts"
+    },
+    {
+      "role": "narrator",
+      "content": "As you think about applying that intensity in your sporting journey, what environment feels like it allows you to truly excel?\nOptions: [Solely individual disciplines where it's all about your personal clock | Cooperative team dynamics where you synchronize your output with others | Dynamic head-to-head opposition where you react to an opponent's movements]"
+    },
+    {
+      "role": "user",
+      "content": "Dynamic head-to-head opposition where you react to an opponent's movements"
+    },
+    {
+      "role": "narrator",
+      "content": "As you consider your high-performance pathway, what do you feel is the core pillar of your success when the stakes are at their highest?\nOptions: [The relentless pursuit of technical perfection | An unwavering mental fortitude under pressure | The tactical ability to pivot when the situation changes]"
+    },
+    {
+      "role": "user",
+      "content": "The tactical ability to pivot when the situation changes"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Women's -67 kg)",
+      "scout_verdict": "At 163cm and 55kg, you possess the ideal density for the Mat Technician archetype, where every movement is an exercise in applied physics. For the standing pathway, your commitment to high-intensity explosive power perfectly complements the tactical nature of wrestling. You thrive in the chaos of head-to-head combat, using your natural ability to pivot and react to an opponent\u2019s momentum. Whether in training or at The Los Angeles 2028 Games, your success is anchored in your capacity to treat every match as a high-stakes tactical challenge where you out-think the competition in real-time.\n\nIn the adaptive pathway, your profile shifts toward powerlifting, where you harness that same explosive intensity to move maximum weight with precision. This discipline rewards your ability to channel sudden, high-intensity bursts into singular, controlled efforts. Just as you would pivot on a mat, you will here synchronize your breathing, core engagement, and explosive leg drive. Both paths require an intelligence-led approach to movement, and at age 22, you are perfectly positioned to master either the technical nuances of the grapple or the absolute physical demand of the lifting platform as you prepare for the global stage."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+      "scout_verdict": "The Block Starter profile demands a complete commitment to raw, singular focus and immediate, rhythmic velocity. In the standing athletics pathway, you channel your explosive power into the refined mechanics of a sprint, relying on your 22-year-old physical profile to maintain speed under load. Your success is built on the synchronization of reaction time and kinetic output, ensuring that when the signal triggers, you are the fastest across the line at The Brisbane 2032 Games. This path is defined by the quest for linear perfection and the relentless drive to push your own limits.\n\nIn the adaptive athletics pathway, specifically within the T44 classification, you will harness that same explosive burst through exceptional core stability and unilateral drive. T44 competition represents the most refined manifestation of speed for athletes with lower limb differences, and it places a high premium on technical coordination and rhythmic consistency. Your journey here is just as rigorous as the standing path, requiring you to master the interaction between your mechanics and the track surface. Whether competing as a standing athlete or in the T44 category, you are transforming your natural intensity into a precise, high-performance mission to achieve elite results."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A generally strong scouting report that features excellent physical mapping and personalization for the first archetype, though it struggles with aligning the user's interview preferences to the second archetype.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "While 55kg is a perfect real-world fit for women's wrestling, the Block Starter (sprints) archetype fundamentally contradicts the user's explicit preference for reactionary, head-to-head opposition."
+    },
+    "personalization": {
+      "score": 7,
+      "reasoning": "The Mat Technician verdict effectively weaves in all three interview answers (explosive power, reactionary combat, tactical pivoting), but the Block Starter verdict largely ignores the environmental and tactical preferences."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The wrestling and powerlifting pathways offer completely different applications of explosive strength, while the sprint profile provides genuine biomechanical insight into T44 lower-limb mechanics."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions present highly distinct, mutually exclusive options that effectively narrow down the athlete's physical, environmental, and psychological preferences."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with properly formatted Games references (e.g., 'The Los Angeles 2028 Games') and no unauthorized IP usage."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

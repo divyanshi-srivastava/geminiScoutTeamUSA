@@ -1,0 +1,78 @@
+{
+  "persona_id": "01_young_female_swimmer",
+  "persona_label": "Young female swimmer",
+  "biometrics": {
+    "height_cm": 172,
+    "weight_kg": 62,
+    "birth_year": 2009,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "When you step into a competitive environment, what is the core sensation or attribute that defines your movement and style?\nOptions: [Pure speed and explosive power. | Sustained endurance, stamina, and grit. | Precision, coordination, and technical control.]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance, stamina, and grit."
+    },
+    {
+      "role": "narrator",
+      "content": "In your journey through high-performance sport, do you find yourself drawn more toward the quiet, repetitive focus of individual challenges, or the tactical, high-stakes communication of team environments?\nOptions: [The solitary pursuit of beating my personal best. | The collective energy and tactical chess of a team environment. | The unpredictable challenge of multi-disciplinary event structures.]"
+    },
+    {
+      "role": "user",
+      "content": "The solitary pursuit of beating my personal best."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep in the 'solitary pursuit' of your goals, what kind of challenge fuels your fire the most?\nOptions: [Testing my absolute limits in extreme physical or environmental conditions. | Mastering complex, long-term sequences that require unwavering, daily discipline. | Finding the edge through incremental, data-driven refinements in my technical routine.]"
+    },
+    {
+      "role": "user",
+      "content": "Mastering complex, long-term sequences that require unwavering, daily discipline."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 8,
+      "matched_profile_name": "Streamline",
+      "pathway_standing": "Swimming",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Women's 400 m Freestyle S10)",
+      "scout_verdict": "The water has always been your sanctuary, a place where the world fades into the rhythmic cadence of your own breath. At 172cm and 62kg, your frame is perfectly calibrated for the fluid, low-resistance movement required to master the pool. Your affinity for daily discipline and solitary challenges mirrors the life of an athlete who finds peace in the silence of the black line at the bottom of the lane, focusing entirely on incremental technical refinements that shave milliseconds off your personal best.\n\nAs you look toward The 2028 Los Angeles Games, your journey is defined by the steady accumulation of thousands of hours of effort. You are not just swimming laps; you are carving a path of efficiency and endurance. In this arena, your consistency is your greatest weapon, ensuring that when you hit the blocks, the months of isolated focus culminate in a performance of pure, hydrodynamic power."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Women's 100 m T44)",
+      "scout_verdict": "Your commitment to adaptive training mirrors the exact dedication found in the standing pathway, requiring the same intensity and focus on body mechanics. Whether navigating the lanes or the track, your transition from endurance to explosive movement highlights your versatility as a high-performance athlete. Mastering the technical requirements of your adaptive discipline is a journey of precision, where each repetition builds the neural pathways necessary for high-velocity output.\n\nLooking toward The 2032 Brisbane Games, your preparation reflects a rigorous approach to managing unique physical requirements while maintaining a peak competitive edge. By focusing on your specialized training protocols, you turn challenges into opportunities for growth, ensuring that every session is optimized for maximum efficiency. This dedication to your craft ensures that you remain at the forefront of your discipline, ready to showcase your strength and technical mastery on the global stage."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The first verdict effectively captures the user's biometrics and interview answers for a swimming pathway, but the second verdict bafflingly pivots to explosive sprints, contradicting the user's choice of sustained endurance.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While swimming perfectly matches the user's 172cm/62kg frame and endurance preference, the second archetype (Block Starter) directly contradicts their explicit choice of stamina over explosive power."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The swimming verdict explicitly incorporates the user's desire for 'daily discipline' and 'solitary challenges' into the narrative of mastering the pool."
+    },
+    "distinctness": {
+      "score": 5,
+      "reasoning": "The pathways are distinct because they are completely different sports (Swimming vs Sprints), but the adaptive sprint narrative feels disconnected from the user's profile and heavily relies on generic adaptive training tropes."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asked logical, compounding questions that narrowed the athlete's profile from broad movement styles down to specific motivational drivers in individual sports."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Games references use the correct format and no NIL or IOC trademark violations are present."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

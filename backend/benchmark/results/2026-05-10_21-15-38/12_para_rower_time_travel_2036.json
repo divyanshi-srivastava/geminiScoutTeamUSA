@@ -1,0 +1,81 @@
+{
+  "persona_id": "12_para_rower_time_travel_2036",
+  "persona_label": "Para-rower with SCI \u2014 time travel to 2036 Games",
+  "biometrics": {
+    "height_cm": 184,
+    "weight_kg": 88,
+    "birth_year": 1988,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "How would you describe your historical engagement with high-performance sport or competitive physical activity?\nOptions: [I have been a lifelong competitive athlete. | I focus primarily on recreational fitness and wellness. | I am looking to rediscover my athletic potential after a hiatus. | I am new to structured athletic training and looking for a path.]"
+    },
+    {
+      "role": "user",
+      "content": "I am looking to rediscover my athletic potential after a hiatus."
+    },
+    {
+      "role": "narrator",
+      "content": "To help me understand where your strengths might lie, what type of competitive activity did you focus on during your earlier years?\nOptions: [Explosive power sports (e.g., sprinting, jumping) | Endurance-based activities (e.g., running, cycling) | Team-based field sports | Strength and conditioning focus]"
+    },
+    {
+      "role": "user",
+      "content": "Endurance-based activities (e.g., running, cycling)"
+    },
+    {
+      "role": "narrator",
+      "content": "When you project yourself to The 2036 Games at age 48, how do you see the nature of your competitive drive shifting compared to your earlier years of endurance training?\nOptions: [Focusing on long-term wellness and movement longevity. | Pushing for a new peak in technical mastery and precision. | Mentoring and contributing to the next generation of competitors. | Seeking a fresh, discipline-specific challenge to redefine my limits.]"
+    },
+    {
+      "role": "user",
+      "content": "Pushing for a new peak in technical mastery and precision."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "At 184cm and 88kg, you carry the legacy of your endurance history into a new era of technical sophistication. Your journey back from a hiatus isn't just about reclaiming speed; it\u2019s about architecting a more precise, multi-faceted athlete for The 2036 Games. You possess the engine of an endurance competitor, but your refined commitment to technical mastery is what sets you apart as you tackle the complex, varied demands of this multi-discipline event.\n\nThis path represents a true transformation of your competitive spirit. Where you once leaned on the steady, rhythmic grind of distance work, you are now sculpting your body to thrive in the fast-paced, high-stakes environment of an all-around competitor. As you step into The 2036 Games, you are not merely participating; you are executing a masterclass in versatility, leveraging decades of physical intelligence to prove that your current life stage is simply the canvas upon which your ultimate technical peak is painted."
+    },
+    {
+      "matched_profile_id": 10,
+      "matched_profile_name": "Launch Force",
+      "pathway_standing": "Bobsleigh / Push Sports",
+      "pathway_adaptive": "Seated Throws (e.g., Men's Discus Throw F56)",
+      "scout_verdict": "Your transition into the Launch Force category represents a bold, exciting departure from the endurance fields of your youth, perfectly aligning with your current shift toward precise, mechanical power. At 48, your 88kg frame serves as an asset of stability and potential energy, ideally suited for the explosive, measured nature of seated throwing disciplines or the high-intensity, kinetic push required for technical team sports. This is your chance to pivot your long-standing athletic drive toward a purely technical, strength-oriented expression.\n\nAt The 2036 Games, you will find that the focus required to hone a perfect release or a clean, powerful transfer of energy is the ultimate validation of your post-hiatus commitment. By trading the continuous endurance grind for the singular, explosive focus of this path, you are redefining what it means to be a legacy competitor. This is more than just a pivot; it is a profound recalibration of your athletic identity, prioritizing mechanical efficiency and the raw, refined intent that you have worked so hard to cultivate."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A highly personalized and narratively cohesive report that excellently incorporates the user's age and interview answers, though recommending Decathlon to a 48-year-old returning from a hiatus stretches real-world plausibility.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While the 184cm/88kg frame fits the power aspects of Bobsleigh, suggesting Decathlon to a 48-year-old former endurance athlete returning from a hiatus is highly unrealistic for elite competition."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts brilliantly integrate the user's specific answers, referencing their 'journey back from a hiatus', 'endurance history', and desire for 'technical mastery and precision'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two pathways offer a clear contrast between multi-discipline versatility (Decathlon) and singular, explosive technical focus (Seated Throws/Bobsleigh)."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "The narrative explicitly acknowledges the user's age ('At 48') and Legacy status, effectively reframing their return to sport around 'decades of physical intelligence' rather than youthful explosiveness."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions build logically from past experience to specific disciplines, and the final question offers distinct, age-appropriate pathways that clearly influenced the outcome."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean; correctly uses 'The 2036 Games' and avoids restricted terminology."
+    }
+  },
+  "backend_error": null
+}

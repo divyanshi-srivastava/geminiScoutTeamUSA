@@ -1,0 +1,78 @@
+{
+  "persona_id": "03_adaptive_visual_impairment",
+  "persona_label": "Adaptive athlete \u2014 partial visual impairment",
+  "biometrics": {
+    "height_cm": 181,
+    "weight_kg": 83,
+    "birth_year": 1998,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, when you are at your best physically, which mode of movement feels most natural for your body?\nOptions: [Explosive bursts of speed and raw power | Sustained, rhythmic endurance over long durations | Measured, technical precision and tactical control]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained, rhythmic endurance over long durations"
+    },
+    {
+      "role": "narrator",
+      "content": "When you think about the environments where you truly thrive, are you drawn more to the singular focus of a solo challenge, or do you find your edge when working within a group or team dynamic?\nOptions: [A solo endeavor, focusing on surpassing my own limits | A team-based setting where tactical coordination is key | A direct, head-to-head competitive event]"
+    },
+    {
+      "role": "user",
+      "content": "A team-based setting where tactical coordination is key"
+    },
+    {
+      "role": "narrator",
+      "content": "When preparing for your sporting journey, which aspect of the training process do you find most essential to your success?\nOptions: [The disciplined, repetitive conditioning required to build an unbreakable physical foundation. | The analytical study of tactical systems and mastering complex, strategic coordination. | The high-intensity, pressurized environment of championship preparation and peaking.]"
+    },
+    {
+      "role": "user",
+      "content": "The disciplined, repetitive conditioning required to build an unbreakable physical foundation."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 9,
+      "matched_profile_name": "Boat Run",
+      "pathway_standing": "Rowing",
+      "pathway_adaptive": "Adaptive Rowing (e.g., Men's Single Scull ASM1x)",
+      "scout_verdict": "Your 181cm, 83kg frame acts as the engine of a precision-engineered shell, where every repetition is a testament to your disciplined foundation. At 28, you possess the ideal balance of experience and physical resilience to command a crew during The Brisbane 2032 Games. You thrive in the synchronized, rhythmic demand of the water, where your ability to sustain long-duration effort becomes the heartbeat of your team. \n\nIn the adaptive pathway, you step into the ASM1x classification. This category, reserved for athletes who row with primarily upper-body and arm strength, showcases your ability to generate immense, focused power from a stable, seated position. It is here that your dedication to repetitive conditioning transforms into a technical mastery of fluid movement, proving that high-performance sport is as much about psychological flow as it is about physical output."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "scout_verdict": "While your rowing background builds your endurance, the descent of a mountain offers a completely different expression of your capabilities: high-velocity tactical precision. As you approach The Milano Cortina 2026 Games, you trade the rhythmic pull of the oar for the razor-sharp focus of the sit-ski. \n\nThe LW12 classification\u2014which covers sit-skiing athletes with functional trunk control but impairment in the lower limbs\u2014requires a different kind of intensity. Here, your core becomes your anchor against centrifugal force as you carve lines at high speeds. This is not about the grind of endurance, but the composure of technical execution under pressure. Your ability to maintain poise while navigating technical gates at speed turns your athletic journey into a symphony of balance and geometry, representing the high-intensity, technical counterpart to your primary endurance focus."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A very strong scouting report that effectively translates the user's interview preferences into a highly tailored rowing profile, while offering a distinct winter sport alternative.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "Rowing perfectly aligns with the user's preference for rhythmic endurance and team dynamics, though 181cm is slightly on the shorter end for elite open-weight rowers. Alpine Skiing is an interesting pivot, but clashes slightly with the team preference."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts explicitly incorporate the user's focus on disciplined repetitive conditioning and their desire to be the 'heartbeat' of a team."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The contrast between the rhythmic, team-based endurance of rowing and the high-velocity, solo precision of alpine sit-skiing provides two vastly different and compelling athletic pathways."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions successfully drilled down from basic movement preferences to team dynamics and training philosophy, with options that clearly distinguish different athletic mindsets."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean pass with correct Games formatting and respectful, accurate adaptive classifications."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

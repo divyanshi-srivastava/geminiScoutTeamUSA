@@ -1,0 +1,78 @@
+{
+  "persona_id": "10_early_stage_als",
+  "persona_label": "Early-stage ALS \u2014 former competitive tennis player",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 78,
+    "birth_year": 1981,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "When you look back on your involvement in competitive sport, which of these attributes has most consistently been the anchor of your performance?\nOptions: [Pure explosive power and raw speed | Strategic precision and technical mastery | Relentless endurance and mental grit]"
+    },
+    {
+      "role": "user",
+      "content": "Strategic precision and technical mastery"
+    },
+    {
+      "role": "narrator",
+      "content": "As you consider your current approach to high-performance sport, what currently drives your desire to push your limits?\nOptions: [Mastery of a specific, complex skill set that requires total concentration | Outthinking and tactically outmaneuvering opponents in high-stakes environments | Optimizing efficiency and longevity through highly refined, disciplined training]"
+    },
+    {
+      "role": "user",
+      "content": "Optimizing efficiency and longevity through highly refined, disciplined training"
+    },
+    {
+      "role": "narrator",
+      "content": "As you consider your athletic environment, in which type of setting do you feel your technical and efficient approach truly comes to life?\nOptions: [Individual pursuit: I thrive when the outcome rests entirely on my own shoulders, focusing on self-defined benchmarks. | Collaborative dynamics: I excel at integrating my expertise into a team structure where systems and shared objectives define success. | Tactical environment: I prefer settings where adapting to unpredictable conditions and solving immediate situational puzzles is the primary challenge.]"
+    },
+    {
+      "role": "user",
+      "content": "Individual pursuit: I thrive when the outcome rests entirely on my own shoulders, focusing on self-defined benchmarks."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Men's Super-G Sit-Ski)",
+      "scout_verdict": "Standing at 178cm and 78kg, your physical foundation is a masterclass in leverage and center-of-gravity management. You thrive in the cold, quiet isolation of the starting gate, where the only benchmark that matters is the one you set for yourself. Your commitment to optimizing efficiency through disciplined, iterative training transforms the mountain into a laboratory of technical refinement, where every millisecond is a variable to be solved.\n\nAt The Milano Cortina 2026 Games, your focus on individual pursuit sees you carving lines that others miss. You do not just descend; you negotiate the slope with surgical intent. Your preference for methodical, complex skill sets allows you to remain calm under the immense pressure of high-velocity technical disciplines, ensuring that when you hit the icy turns, your composure remains as unwavering as your trajectory.\n\nIn the adaptive pathway, you apply this same commitment to equipment interface and line precision, utilizing specialized seating technology to mimic that same surgical control. This pursuit requires a mastery of gravitational forces and lateral stability that perfectly aligns with your analytical approach. As you prepare for your goals at The Milano Cortina 2026 Games, your ability to integrate technical feedback into your performance ensures that every turn is optimized for maximum efficiency, mirroring the same high-level dedication found in the standing discipline."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Adaptive Ambulatory Sprints (e.g., Men's 100 m)",
+      "scout_verdict": "We pivot here from the sustained, technical grace of the slopes to the raw, visceral explosion of the track. If your first path is one of calculated refinement, this journey is a test of kinetic violence and immediate power. Your 78kg frame, usually utilized for efficient, long-term mastery, is recalibrated here for a singular, explosive burst that demands total neuromuscular recruitment within the blink of an eye.\n\nPreparing for The LA28 Games, you embrace the jarring intensity of the blocks, shifting your mindset from the slow burn of technical precision to the total surrender to fast-twitch speed. This is a deliberate departure from your usual individual benchmarks; it is an exercise in primal timing. By pushing your limits in this high-intensity, short-burst environment, you reveal a different facet of your athlete's soul\u2014one capable of channeling years of disciplined training into a few seconds of pure, unadulterated acceleration.\n\nIn the adaptive track pathway, you translate this explosive potential into a rhythmic mastery of your prosthetic interface, ensuring every phase of your stride cycle is optimized for force distribution. This discipline requires an intense focus on symmetry and starting acceleration, providing a compelling challenge that rewards your disciplined training habits. As you look toward The LA28 Games, you balance the demands of adaptive mechanics with the raw requirement for speed, proving that your capacity for individual excellence is as potent on the track as it is in any other high-performance setting."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A solid, well-personalized report that successfully incorporates the user's interview answers, though the second archetype is a slight physical stretch given the user's stated goals.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "The Edge Carver archetype perfectly aligns with a 178cm/78kg build and a focus on precision, but placing a 45-year-old who values longevity into the explosive Block Starter profile is slightly dissonant."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts effectively weave in specific interview answers like 'optimizing efficiency' and thriving in an 'individual pursuit'."
+    },
+    "distinctness": {
+      "score": 7,
+      "reasoning": "While the adaptive pathways mention specific equipment like sit-skis and prosthetics, they largely mirror the standing narratives rather than offering a completely new perspective on the athlete."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions progress logically and provide strong, mutually exclusive options (e.g., individual vs. team vs. tactical) that genuinely differentiate the athlete's psychological profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean output with proper Games terminology ('The Milano Cortina 2026 Games', 'The LA28 Games') and no trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

@@ -1,0 +1,86 @@
+{
+  "persona_id": "04_veteran_endurance_runner",
+  "persona_label": "Veteran ultramarathon runner",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 70,
+    "birth_year": 1984,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To help me understand your athletic foundation, how would you best describe your relationship with competitive sport at this stage in your life?\nOptions: [A lifelong dedication to competitive sport, always staying active. | Re-engaging with high-performance training after a deliberate hiatus. | A fresh start, exploring a new pathway in high-performance athletics for the first time.]"
+    },
+    {
+      "role": "user",
+      "content": "A lifelong dedication to competitive sport, always staying active."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back at the types of challenges that have defined your athletic journey, which of these physical dimensions feels most like your home turf?\nOptions: [Explosive power and rapid, decisive movements. | Sustained endurance and long-duration aerobic capacity. | Precision, tactical awareness, and refined technical skill.]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance and long-duration aerobic capacity."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look at your next challenge in high-performance athletics, which environment do you feel best channels your energy and allows you to reach your peak potential?\nOptions: [The solitary, meditative focus of individual disciplines. | The collaborative, high-energy pressure of a team environment. | The strategic, data-driven intensity of a technical discipline.]"
+    },
+    {
+      "role": "user",
+      "content": "The solitary, meditative focus of individual disciplines."
+    },
+    {
+      "role": "narrator",
+      "content": "To finalize the scope of your athletic profile, how do you tend to view the pursuit of excellence: as a method of refining your own internal discipline through routine, or as a way to constantly adapt and conquer unpredictable, complex environments?\nOptions: [Refining internal discipline through a consistent, repeatable routine. | Adapting and conquering unpredictable, complex environments.]"
+    },
+    {
+      "role": "user",
+      "content": "Refining internal discipline through a consistent, repeatable routine."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "At 175cm and 70kg, your physiology is engineered for the relentless efficiency required of a Road Machine. You possess an innate capacity for the meditative, rhythmic burn of long-distance effort, finding your greatest clarity in the solitary pursuit of cadence and watt output. As you look toward The Brisbane 2032 Games, this profile transforms your lifelong commitment into a clinical, high-performance discipline where every rotation is a testament to internal order and endurance.\n\nIn the adaptive pathway, your classification\u2014H3\u2014is designed for athletes with moderate trunk impairment, where the mechanics of power generation rely on a sophisticated harmony between shoulder stability and upper-body drive. By navigating this class, you channel your requirement for a repeatable, data-driven routine into the intricate technicality of handcycling. Here, the machine and the athlete become a single unit, perfectly suited for a competitor who views the road not just as a course, but as a space to refine discipline to its absolute limit."
+    },
+    {
+      "matched_profile_id": 2,
+      "matched_profile_name": "Long Haul",
+      "pathway_standing": "Distance Running",
+      "pathway_adaptive": "Wheelchair Racing (e.g., Men's Marathon T54)",
+      "scout_verdict": "The Long Haul profile represents a fundamental shift away from the mechanical focus of the cycle, moving instead into the visceral, full-body demand of endurance racing. This pathway capitalizes on your lifelong athletic endurance by asking you to transform your stride and posture into a perpetual motion machine, testing your grit against the fatigue that eventually breaks others. It is a pursuit of raw, rhythmic stamina that feels perfectly matched to your age and your desire for a quiet, focused environment in which to master your craft.\n\nYour adaptive expression here, the T54 classification, covers athletes with spinal cord injuries who possess full upper-body function but no functional movement in their lower limbs. In this discipline, your primary connection to the road is through the specialized racing wheelchair. Unlike the cycling pathway, this requires a different engagement of your core and shoulders, demanding a higher degree of technical awareness to maintain the perfect line and pace. At The LA28 Games, you would be judged by your ability to sustain this intensity, relying on your established, routine-based discipline to conquer the complex tactical demands of a world-class marathon field."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A highly cohesive and personalized scouting report that accurately translates the user's biometrics and interview responses into two distinct endurance-based pathways.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "At 175cm and 70kg, the user's body composition perfectly matches the typical build for both road cycling and distance running, grounding the 'Road Machine' and 'Long Haul' archetypes in reality."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts explicitly weave in the user's specific answers, such as their 'lifelong commitment' to sport and their preference for a 'meditative' and 'routine-based discipline'."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The adaptive pathways offer a clear contrast, accurately distinguishing the mechanical power generation of H3 Handcycling from the core-and-shoulder pacing dynamics of T54 Wheelchair Racing."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The interview follows a logical funnel, starting with athletic background and successfully narrowing down physical traits, environmental preferences, and psychological drivers with genuinely distinct options."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Correctly utilizes approved event formatting ('The Brisbane 2032 Games', 'The LA28 Games') without any standalone IOC/USOPC trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

@@ -1,0 +1,86 @@
+{
+  "persona_id": "09_congenital_limb_difference_swimmer",
+  "persona_label": "Congenital limb difference \u2014 adaptive swimmer",
+  "biometrics": {
+    "height_cm": 168,
+    "weight_kg": 63,
+    "birth_year": 1997,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To understand the foundation we are building upon, what has been the primary focus of your physical activity over the past few years?\nOptions: [High-intensity explosive training: Focusing on power, speed, and bursts of kinetic energy. | Endurance and stamina: Focusing on long-distance capacity and sustained output. | Precision and technical coordination: Focusing on accuracy, body control, and refined movement patterns.]"
+    },
+    {
+      "role": "user",
+      "content": "Endurance and stamina: Focusing on long-distance capacity and sustained output."
+    },
+    {
+      "role": "narrator",
+      "content": "Reflecting on how you push your limits, what is the environment where you feel most energized and capable of reaching your peak performance?\nOptions: [A solitary, disciplined environment where I focus entirely on my own rhythm and internal pace. | A dynamic team setting where external pressure, communication, and collective intensity fuel my output. | A varied, outdoor landscape that demands constant adaptation to changing terrain and external variables.]"
+    },
+    {
+      "role": "user",
+      "content": "A solitary, disciplined environment where I focus entirely on my own rhythm and internal pace."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in those moments of peak physical exertion, how do you process the challenge mentally?\nOptions: [Analytical and strategic: I rely on data, pacing metrics, and clear mental landmarks to maintain efficiency. | Instinctual and immersive: I focus on entering a 'flow state,' letting my movement become automatic and rhythmic. | Resilient and grit-focused: I thrive on the internal dialogue of pushing through discomfort and testing my absolute ceiling.]"
+    },
+    {
+      "role": "user",
+      "content": "Instinctual and immersive: I focus on entering a 'flow state,' letting my movement become automatic and rhythmic."
+    },
+    {
+      "role": "narrator",
+      "content": "With your journey focused on endurance and a solitary, intuitive rhythm, you have a unique profile. Are you ready to see where this potential could take you in the landscape of high-performance sport?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019ve been training for this my whole life, so let\u2019s see what the data says about my potential."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "At 168cm and 63kg, you possess the ideal physical composition for an athlete defined by efficiency and sustained output. Your journey, deeply rooted in the solitary discipline of long-distance training, mirrors the specific mental requirements of the road circuit. Where others find the silence of a long session daunting, you find your flow, allowing your movement to become an instinctive extension of the road beneath you.\n\nImagine yourself at the starting line of The 2032 Games. The focus is entirely yours; the years of internal, rhythmic cultivation have prepared you to maintain a relentless, calibrated pace that others simply cannot sustain. Your capacity for total immersion in your own cadence is not merely a training preference\u2014it is the very engine of your high-performance athletic pathway, turning you into a persistent force that defines the term 'Road Machine' through sheer, rhythmic willpower."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Adaptive Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "While your endurance base is your natural foundation, your capacity for instinctual, high-speed movement suggests a powerful secondary path of technical brilliance. Where your cycling profile focuses on the sustained grind, the world of the mountain or the rink demands immediate, reflexive response to complex spatial variables. Here, your flow-state training is repurposed into an acute, razor-sharp awareness that allows you to navigate technical courses with surgical precision and sudden, explosive shifts in direction.\n\nAt The 2032 Games, you would stand at the start, where the air is thin and the environment demands total, split-second presence. Your success in this pathway isn't defined by the slow burn of endurance, but by the ability to remain fluid and instinctual in a high-stakes, technical environment. This profile offers a high-performance outlet for that same intensity you bring to your training, requiring a different but equally masterful display of physical and mental alignment."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "The scouting report provides a highly plausible athletic profile based on the user's biometrics and interview, with distinct pathways and strong compliance.",
+    "authenticity": {
+      "score": 9,
+      "reasoning": "A height of 168cm and weight of 63kg is very realistic for an endurance cyclist or triathlete, matching the 'Road Machine' archetype perfectly."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdict explicitly references the user's interview answers, specifically the 'solitary discipline' and entering a 'flow' state."
+    },
+    "distinctness": {
+      "score": 7,
+      "reasoning": "The two pathways contrast well between sustained endurance and high-speed technical response, though the verdicts blend standing and adaptive narratives rather than exploring the adaptive pathway uniquely."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The first three questions provide excellent, distinct forks to narrow the athlete profile, though the final conversational turn is merely a leading confirmation with no real options."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance with correct usage of 'The 2032 Games' and no standalone Olympic/Paralympic violations."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

@@ -1,0 +1,78 @@
+{
+  "persona_id": "14_deaf_sprinter",
+  "persona_label": "Profoundly deaf \u2014 competitive 400m sprinter",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 76,
+    "birth_year": 2001,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you best describe your current relationship with physical activity and training?\nOptions: [Dedicated athlete currently training for specific, structured competitive goals. | Consistent, active individual focused on maintaining high-intensity health and wellness. | Recreational competitor looking to transition into a more disciplined, high-performance training cycle.]"
+    },
+    {
+      "role": "user",
+      "content": "Dedicated athlete currently training for specific, structured competitive goals."
+    },
+    {
+      "role": "narrator",
+      "content": "When you are in the middle of a high-intensity session, which physical quality do you feel defines your performance the most?\nOptions: [Explosive power and raw speed | Sustained endurance and cardiovascular output | Technical precision and reactive agility]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance and cardiovascular output"
+    },
+    {
+      "role": "narrator",
+      "content": "To round out your profile, how would you describe the origin of your athletic drive?\nOptions: [My journey began in team-based sports where communication and situational strategy were key. | I grew up in individual pursuit sports where the focus was entirely on personal metrics and constant self-improvement. | I came from a background of outdoor or technical adventure sports, where adaptability and grit were more important than rigid structure.]"
+    },
+    {
+      "role": "user",
+      "content": "I grew up in individual pursuit sports where the focus was entirely on personal metrics and constant self-improvement."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "At 25 years old, standing 178cm and weighing 76kg, you possess the ideal physiological canvas for a career defined by high-output efficiency. Your history in individual pursuit sports mirrors the solitary, intense focus required to master the road. On the bike, your body acts as a precision instrument, converting every ounce of your sustained endurance into pure velocity. You thrive in the silence of the long training ride, where your performance is measured not just by speed, but by the relentless consistency of your output.\n\nIn the adaptive pathway, you would find yourself in the H3 handcycling classification. This category is for athletes with physical impairments affecting the lower limbs or trunk who compete using a hand-powered cycle. The transition from standing to H3 is a natural evolution for an endurance-focused athlete like you, as it demands the same rhythmic, cardiovascular dominance you already possess, while shifting the mechanical demand toward your upper body and core stability. At The Brisbane 2032 Games, you would be a master of the road, leaning into your drive for personal metric tracking to optimize every turn and climb in a discipline where the machine and the athlete become one."
+    },
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "Your commitment to constant self-improvement makes the multi-discipline pathway your ultimate playground. While your endurance is high, this profile flips the script, demanding that you cultivate raw explosiveness and technical precision across a range of fields. Instead of the singular focus of the road, you are forced to analyze the mechanics of throwing, the geometry of a jump, and the explosive start of a sprint. It is a puzzle of human performance that rewards the analytical, persistent mind you developed during your early athletic years.\n\nYour adaptive pathway, the P44 pentathlon, is the ultimate test of this versatility. The P44 classification is designed for ambulatory athletes who have lower-limb impairments and compete standing, utilizing their unique biomechanics to master diverse track and field disciplines. In this arena, you aren't just an endurance machine; you are an architect of athletic movement, balancing the need for speed, power, and high-level motor coordination. By the time you reach The Ahmedabad 2036 Games, your story will be one of profound adaptability, where the grit you cultivated in individual sports is applied to every unique challenge of the pentathlon, proving that your potential is not defined by a single discipline, but by your ability to conquer any physical barrier you face."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, well-reasoned scouting report that effectively utilizes the user's interview answers to justify two distinct and highly plausible athletic pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "A height of 178cm and weight of 76kg is an excellent fit for the 'Road Machine' (triathlon/cycling) and a solid baseline for a multi-discipline track athlete."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts explicitly incorporate the user's focus on 'sustained endurance' and their background in 'individual pursuit sports' to frame the narrative."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The pathways offer a clear contrast between a pure endurance focus in cycling and a diverse, multi-disciplinary challenge in the decathlon."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions progress logically from training status to physical traits to athletic background, with distinct options that clearly fork the resulting archetype."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with correct Games terminology ('The Brisbane 2032 Games') and no NIL or trademark violations."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

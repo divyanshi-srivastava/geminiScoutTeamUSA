@@ -1,0 +1,82 @@
+{
+  "persona_id": "12_para_rower_time_travel_2036",
+  "persona_label": "Para-rower with SCI \u2014 time travel to 2036 Games",
+  "biometrics": {
+    "height_cm": 184,
+    "weight_kg": 88,
+    "birth_year": 1988,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start building a picture of your sporting journey, how would you describe the way you most enjoy challenging your body?\nOptions: [Explosive, high-intensity power (e.g., short sprints, heavy lifting) | Sustained, rhythmic endurance (e.g., long-distance cycling, rowing) | Technical, tactical coordination (e.g., precision court sports, combat movement)]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained, rhythmic endurance (e.g., long-distance cycling, rowing)"
+    },
+    {
+      "role": "narrator",
+      "content": "When you envision yourself pushing the limits of that endurance, do you feel more connected to the solitary discipline of the craft, or the synchronized energy of a collective team environment?\nOptions: [The singular focus of self-paced, solo competition (e.g., marathon running or long-distance cycling) | The shared, high-stakes pressure of a coordinated team environment (e.g., rowing crew or relay endurance) | Tactical, long-range navigation challenges where strategy is as vital as physical output (e.g., adventure racing or orienteering)]"
+    },
+    {
+      "role": "user",
+      "content": "The shared, high-stakes pressure of a coordinated team environment (e.g., rowing crew or relay endurance)"
+    },
+    {
+      "role": "narrator",
+      "content": "Looking toward The Ahmedabad 2036 Games, you would be 48 years old and entering a phase defined by the wisdom of your experience. As you reflect on your path, how would you imagine your legacy within the team environment at that point in your high-performance sporting journey?\nOptions: [Anchoring the team with seasoned tactical poise and physical consistency | Transitioning into a lead-from-the-bench role, guiding the squad's strategic development | Returning to the core of the action as a veteran specialist, testing the limits of your endurance one last time]"
+    },
+    {
+      "role": "user",
+      "content": "Returning to the core of the action as a veteran specialist, testing the limits of your endurance one last time"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 7,
+      "matched_profile_name": "Swiss Army",
+      "pathway_standing": "Decathlon",
+      "pathway_adaptive": "Multi-Discipline Athletics (e.g., Men's Pentathlon P44)",
+      "scout_verdict": "The decathlon is a testament to the endurance of the soul as much as the body. Standing 184cm and 88kg, you possess a frame built for the grind, a physical foundation that has only sharpened through decades of sustained, rhythmic training. As you arrive at The Ahmedabad 2036 Games at age 48, your path is no longer about chasing the raw, explosive speed of your youth, but about deploying the wide range of your acquired skills. You navigate each event with the seasoned poise of a veteran, turning every transition into a masterclass of pacing and tactical endurance.\n\nYour deep-seated commitment to the team environment finds its ultimate expression here. You are the anchor, the strategist who understands that the true measure of a high-performance athlete is the ability to sustain output when fatigue begins to compromise the field. While others rely on the fleeting sparks of early career energy, you operate with the bedrock of your experience. Returning to the core of the action at 48, you prove that your athletic legacy is not a finite resource, but one that deepens, allowing you to master these complex, multi-sport demands with a clarity and calm that only years of practice can forge."
+    },
+    {
+      "matched_profile_id": 9,
+      "matched_profile_name": "Boat Run",
+      "pathway_standing": "Rowing",
+      "pathway_adaptive": "Adaptive Rowing (e.g., Men's Single Scull ASM1x)",
+      "scout_verdict": "Transitioning your love for rhythmic, high-stakes coordination into the aquatic environment of the 'Boat Run' archetype allows you to focus your endurance with surgical precision. This pathway leads you to the ASM1x classification, an adaptive category for rowers who possess full functional use of their arms and trunk but limited or no use of their legs. In this specialized setting, your physical output is stripped of external variables, forcing a direct, intimate connection between your body\u2019s rhythmic power and the shell\u2019s glide across the water.\n\nAt The Ahmedabad 2036 Games, this category represents the refined evolution of your journey. By shifting your focus from a broader, multi-sport framework to this highly technical discipline, you channel your veteran stamina into a singular, high-pressure objective. Your age is your greatest asset here; you possess the deep-reserve stamina and the tactical intuition to manage the immense physiological demands of the single scull. At 48, you are not just competing; you are conducting a high-stakes performance where every stroke is a testament to your endurance, proving that the most powerful legacies are those built on the mastery of a single, perfect motion."
+    }
+  ],
+  "eval_result": {
+    "overall": 4,
+    "summary": "While the life stage narrative is well-crafted for a 48-year-old athlete, the archetype matches completely ignore the user's explicit preference for a team environment by assigning two solo sports (Decathlon and Single Scull Rowing).",
+    "authenticity": {
+      "score": 3,
+      "reasoning": "Assigning Decathlon and Single Scull Rowing to a user who explicitly selected a 'shared, high-stakes pressure of a coordinated team environment' is a significant athletic mismatch."
+    },
+    "personalization": {
+      "score": 4,
+      "reasoning": "The verdict tries to force the user's team preference into the Decathlon narrative, resulting in an illogical claim that a solo multi-event sport is the 'ultimate expression' of a team commitment."
+    },
+    "distinctness": {
+      "score": 7,
+      "reasoning": "The two pathways offer completely different athletic challenges (standing multi-sport vs adaptive single-discipline water sport), providing good variety."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "Perfectly captures the 'Legacy' stage for a 48-year-old at The Ahmedabad 2036 Games, highlighting 'acquired skills' and 'deep-reserve stamina' over youthful explosiveness."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions progress logically from physical preference to team/solo dynamics, and thoughtfully incorporate the specific 2036 destination to ask about legacy roles."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with appropriate use of 'The Ahmedabad 2036 Games' and no prohibited terms."
+    }
+  },
+  "backend_error": null,
+  "round": 3
+}

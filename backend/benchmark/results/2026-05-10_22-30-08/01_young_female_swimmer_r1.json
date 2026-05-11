@@ -1,0 +1,78 @@
+{
+  "persona_id": "01_young_female_swimmer",
+  "persona_label": "Young female swimmer",
+  "biometrics": {
+    "height_cm": 172,
+    "weight_kg": 62,
+    "birth_year": 2009,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start understanding your athletic identity, what is your primary focus in your current physical training?\nOptions: [Explosive power and sprint speed | Sustained endurance and tactical pacing | Precision, stability, and technical control]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance and tactical pacing"
+    },
+    {
+      "role": "narrator",
+      "content": "How would you best describe your current journey through high-performance sport?\nOptions: [I am a dedicated athlete already competing in endurance-focused sports | I am a team sport player who thrives on conditioning and long-game strategies | I am new to the world of competitive sport and looking to find where my potential fits best]"
+    },
+    {
+      "role": "user",
+      "content": "I am a dedicated athlete already competing in endurance-focused sports"
+    },
+    {
+      "role": "narrator",
+      "content": "As you continue to refine your athletic identity, what core motivation currently drives your progression in your sporting journey?\nOptions: [Chasing competitive results and testing my absolute physical limits against others. | Mastering the technical nuances and refining my efficiency within my chosen discipline. | The long-term development of my capabilities to build a foundation for a future career in high-performance sport.]"
+    },
+    {
+      "role": "user",
+      "content": "Mastering the technical nuances and refining my efficiency within my chosen discipline."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 8,
+      "matched_profile_name": "Streamline",
+      "pathway_standing": "Swimming",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Women's 400 m Freestyle S10)",
+      "scout_verdict": "At 17 years old, your 172cm, 62kg build provides the ideal canvas for the hydrodynamic precision required of the Streamline archetype. Your focus on mastering technical nuances is the secret ingredient for the 400m Freestyle; in this discipline, where every millisecond is dictated by the efficiency of your stroke and your kick, your dedication to refinement is paramount. In the S10 classification\u2014which includes athletes with minimal physical impairment who possess high functionality in the pool\u2014your ability to optimize your body position ensures you slice through the water with effortless speed. By the time you reach The Los Angeles 2028 Games, your commitment to technical mastery will have transformed your training into a fluid, rhythmic extension of your own intent, positioning you as a formidable contender on the world stage."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "If the water is your sanctuary for technical mastery, the open road is where your tactical pacing and sustained endurance evolve into a high-stakes chess match. As a 'Road Machine,' you transition to the H3 handcycling category\u2014a classification for athletes with significant impairment in their lower trunk or legs, requiring them to utilize powerful, synchronized upper-body rotation to drive the cycle. Here, the focus shifts from individual form to the complex art of positioning, drafting, and energy management against a peloton of competitors. At The Brisbane 2032 Games, your 172cm frame will be perfectly contoured in an aerodynamic tuck, allowing you to leverage your stamina to dictate the tempo of the race. Your transition to this pathway is not just about raw power; it is about out-thinking the wind and your opponents, proving that your dedication to endurance can define the outcome of a grueling road race."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, highly personalized report that clearly utilizes the user's biometric data and interview responses to craft two distinct and compelling sporting pathways.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "The 172cm and 62kg biometric profile plausibly supports both the hydrodynamic Streamline swimming archetype and the endurance-focused Road Machine cyclist."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdicts directly reference the user's specific interview choices, integrating 'mastering technical nuances' into the swimming profile and 'tactical pacing and sustained endurance' into the cycling narrative."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "Effectively contrasts the individual technical precision required for S10 swimming with the complex, peloton-based drafting and energy management of H3 handcycling."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The three interview questions provided clear, logically progressing forks that effectively narrowed down the athlete's physical focus, experience level, and psychological motivation without redundant options."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass; correctly uses the required Games naming format (e.g., 'The Los Angeles 2028 Games') and avoids restricted standalone terms."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

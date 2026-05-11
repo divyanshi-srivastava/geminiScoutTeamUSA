@@ -1,0 +1,77 @@
+{
+  "persona_id": "10_early_stage_als",
+  "persona_label": "Early-stage ALS \u2014 former competitive tennis player",
+  "biometrics": {
+    "height_cm": 178,
+    "weight_kg": 78,
+    "birth_year": 1981,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start us off, how would you best describe your current engagement with physical activity and structured training in your daily life?\nOptions: [Dedicated athlete: I follow a rigorous, structured training program several times a week. | Consistent hobbyist: I participate in recreational sports and fitness activities regularly. | Active lifestyle: My physical engagement is woven into my daily routines, work, and movement.]"
+    },
+    {
+      "role": "user",
+      "content": "Active lifestyle: My physical engagement is woven into my daily routines, work, and movement."
+    },
+    {
+      "role": "narrator",
+      "content": "When you choose to challenge yourself physically, which of these attributes do you find most rewarding to test?\nOptions: [Explosive power and rapid speed | Sustained endurance and long-range stamina | Technical precision and nuanced control]"
+    },
+    {
+      "role": "user",
+      "content": "Technical precision and nuanced control"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are fully immersed in a challenge that demands your best, what is the primary motivation that keeps you pushing toward mastery?\nOptions: [Mastery of skill and the perfection of my own craft | Strategic competition and tactical problem-solving | The satisfaction of collaborative, team-based performance]"
+    },
+    {
+      "role": "user",
+      "content": "Mastery of skill and the perfection of my own craft"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Your commitment to technical precision makes you a natural for the Edge Carver archetype. At 178cm and 78kg, your center of gravity provides a stable platform that feels intuitive when navigating the high-stakes turns of alpine circuits. You don't just chase speed; you look to perfect the arc of every maneuver, treating the slope like a canvas for your craft.\n\nAt 45, you bring a level of focus and patience that many others often lack. In the high-performance arena of The 2030 Games, your success is about the thousands of small, deliberate adjustments you make in a fraction of a second. You have spent a lifetime building an active lifestyle, and now, that base serves as the foundation for a master-class in technical efficiency."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "While your heart is drawn to the nuances of precision, the Block Starter archetype challenges you to tap into the explosive kinetic energy held within your frame. Here, the focus shifts from the art of the turn to the raw force of the start. At 78kg, your physique is capable of generating the power to propel yourself from the blocks with absolute, singular intent, forcing a transformation of your athletic identity.\n\nTraining as a Block Starter for The 2030 Games serves as a robust counterpoint to your pursuit of mastery. It is a visceral test of your body\u2019s ability to recruit every muscle fiber for a single, powerful burst. This journey demands that you treat your body as a projectile. It is an invitation to prove that at 45, you can still command the explosive capacity required to compete at the highest level in the opening seconds of the race."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A solid, personalized scouting report that creatively handles a mismatch between user preference and physical archetype, though it misses the strict compliance format for Games references.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "The Edge Carver archetype fits the user's 178cm/78kg build and preference for technical precision well, while the Block Starter relies on acknowledging the mismatch with explosive power."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdict explicitly incorporates the user's age (45), 'active lifestyle' background, and their motivation for 'technical precision' and 'mastery'."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The pathways are highly distinct, contrasting the technical carving of Alpine Skiing with the explosive raw power of Ambulatory Sprints."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions logically progress from baseline activity level to specific physical attributes and psychological drivers, offering genuinely distinct forks for the recommendation engine."
+    },
+    "compliance": {
+      "passed": false,
+      "note": "Failed: The text uses 'The 2030 Games' instead of the strictly required 'The [City] [Year] Games' format."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

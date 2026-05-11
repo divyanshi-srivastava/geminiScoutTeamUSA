@@ -1,0 +1,78 @@
+{
+  "persona_id": "04_veteran_endurance_runner",
+  "persona_label": "Veteran ultramarathon runner",
+  "biometrics": {
+    "height_cm": 175,
+    "weight_kg": 70,
+    "birth_year": 1984,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our look at your sporting journey, which physical quality has been the most defining cornerstone of your training thus far?\nOptions: [Explosive power and short-burst intensity | Sustained endurance and long-distance pacing | Technical precision and nuanced control]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance and long-distance pacing"
+    },
+    {
+      "role": "narrator",
+      "content": "Endurance requires deep focus and mental resilience, often tested in the quietest moments of training. How does your ideal training environment shape that drive?\nOptions: [Deep solitude, refining pace through individual self-reliance | Collaborative team environments, pushing endurance through shared tactical goals | Dynamic, multi-discipline rotations, keeping the body and mind constantly adapting]"
+    },
+    {
+      "role": "user",
+      "content": "Deep solitude, refining pace through individual self-reliance"
+    },
+    {
+      "role": "narrator",
+      "content": "As you look ahead to the next stage of your athletic pathway, what serves as your primary motivation to keep pushing forward?\nOptions: [Chasing personal benchmarks and quantitative performance limits | The pursuit of the 'flow state'\u2014the meditative peace found in long-distance exertion | The strategic mastery of technical refinement and biomechanical efficiency]"
+    },
+    {
+      "role": "user",
+      "content": "The pursuit of the 'flow state'\u2014the meditative peace found in long-distance exertion"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "At 42, you have cultivated an athletic identity built on the bedrock of disciplined silence and relentless efficiency. Your 175cm, 70kg frame is perfectly tuned for the Road Machine archetype, echoing the preference for solitude you carry into every session. By prioritizing the 'flow state'\u2014that rare, meditative connection between breath, gear, and road\u2014you have developed the mental stamina that defines the long-distance competitor. This pathway isn't just about output; it is about the mastery of pacing that allows you to sustain peak performance when others are forced to yield to exhaustion.\n\nAs you look toward the horizon of The Los Angeles 2028 Games, your journey becomes a testament to the power of self-reliance. You do not need the noise of a crowd or the chaos of a team to drive your progress; instead, you rely on the rhythm of your own heart and the precision of your movement. You enter this arena as a seasoned competitor, carrying the calm, focused energy of an athlete who has finally learned that true power is found in the stillness of perfect motion."
+    },
+    {
+      "matched_profile_id": 4,
+      "matched_profile_name": "Block Starter",
+      "pathway_standing": "100m/200m Sprints",
+      "pathway_adaptive": "Ambulatory Sprints (e.g., Men's 100 m T44)",
+      "scout_verdict": "While your heart thrives in the rhythmic endurance of the long road, the Block Starter archetype offers a sharp, necessary departure from your comfort zone. This profile challenges your 42-year-old physiology to transition away from the meditative 'flow state' and toward a state of high-intensity, explosive reactivity. By focusing on short-burst power, you are essentially training your nervous system to fire with an electric speed that acts as the ultimate counterbalance to your distance-focused background. This is not just about running; it is about the radical recalibration of your biomechanics, forcing you to find excellence in the suddenness of the start and the fire of the sprint.\n\nStepping into this space for The Brisbane 2032 Games, you embrace the discomfort of a high-octane sprint environment where every millisecond is contested. This discipline acts as a vital tool for your physical longevity, pushing your neuromuscular output to new heights and building an athletic resilience that distance work alone cannot provide. It is a bold, high-contrast chapter in your journey, proving that even a master of the slow, steady path has the capacity for a sudden, thunderous release of power."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The interview and personalization are excellent, deeply integrating the user's psychological drivers, but the report fails by matching a contradictory second archetype and completely ignoring the adaptive pathways in the narrative.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "While 'Road Machine' perfectly fits the 175cm/70kg frame and endurance answers, assigning 'Block Starter' to an endurance athlete simply to force a 'sharp departure from your comfort zone' defies real-world scouting logic."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The verdict beautifully weaves the user's specific answers about seeking the 'flow state' and training in 'deep solitude' into a compelling, highly tailored athletic narrative."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "Although standing and adaptive pathway labels are provided, the scout verdicts deliver a single unified text block that completely fails to discuss or explore the adaptive experience."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions build on each other effectively, moving from broad physical traits to specific training environments and core motivations, offering genuinely distinct psychological forks."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution; properly uses 'The Los Angeles 2028 Games' and 'The Brisbane 2032 Games' without triggering any restricted terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

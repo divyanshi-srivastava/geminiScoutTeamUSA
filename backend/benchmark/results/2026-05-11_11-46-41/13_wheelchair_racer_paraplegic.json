@@ -1,0 +1,78 @@
+{
+  "persona_id": "13_wheelchair_racer_paraplegic",
+  "persona_label": "T4 paraplegic \u2014 wheelchair racer and basketball player",
+  "biometrics": {
+    "height_cm": 163,
+    "weight_kg": 55,
+    "birth_year": 2004,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start our conversation, how would you describe your primary approach to movement and training in your daily life?\nOptions: [High-intensity, structured training aimed at testing my physical limits | Consistent, rhythmic endurance training for sustained performance and mental clarity | Technical, skill-based practice focused on precision and coordination]"
+    },
+    {
+      "role": "user",
+      "content": "High-intensity, structured training aimed at testing my physical limits"
+    },
+    {
+      "role": "narrator",
+      "content": "When you engage in that level of high-intensity training, what type of environment do you find brings out your best performance?\nOptions: [Individual pursuit: I prefer to rely solely on my own discipline and mental focus. | Team dynamic: I thrive on collaboration, shared goals, and intense communication. | Tactical competition: I enjoy analyzing opponents and executing complex, high-pressure game plans.]"
+    },
+    {
+      "role": "user",
+      "content": "Tactical competition: I enjoy analyzing opponents and executing complex, high-pressure game plans."
+    },
+    {
+      "role": "narrator",
+      "content": "Looking back at your sporting journey so far, where did you first cultivate this ability to deconstruct an opponent's strategy and thrive under pressure?\nOptions: [Field-based team sports: I learned to read the pitch and coordinate tactical shifts with teammates. | Combat sports or martial arts: I developed the ability to analyze an opponent's physical cues and react instantly. | Racket or court sports: I mastered the art of precision and mental pattern-recognition during high-stakes rallies.]"
+    },
+    {
+      "role": "user",
+      "content": "Field-based team sports: I learned to read the pitch and coordinate tactical shifts with teammates."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "Your background in the high-intensity, structured nature of field-based team sports provides the perfect foundation for the Road Machine archetype. At 163cm and 55kg, you possess a power-to-weight ratio that is inherently efficient for long-distance efforts, allowing you to sustain the high-intensity cadence required to break away from a pack. You have learned to channel the chaotic energy of the pitch into a singular, unwavering focus\u2014the kind of discipline that defines a champion at The Games.\n\nWithin the adaptive pathway, the H3 classification specifically serves athletes with an impairment in the lower limbs or trunk who compete using hand-cranked cycles. For a competitor like you, this classification is not merely a technical designation; it is a mechanical extension of your tactical mind. While others might rely solely on raw output, your experience reading the movement of teammates and opponents allows you to navigate the pack with precision, transforming the handcycle into an instrument of pure strategic velocity. You are no longer just running a play; you are dictating the rhythm of the road."
+    },
+    {
+      "matched_profile_id": 6,
+      "matched_profile_name": "Mat Technician",
+      "pathway_standing": "Wrestling",
+      "pathway_adaptive": "Powerlifting (e.g., Women's 67 kg)",
+      "scout_verdict": "The Mat Technician profile is built for the athlete who views competition as a high-stakes chess match played at full speed. Your history in team sports has equipped you with the ability to deconstruct an opponent's positioning in real-time, an invaluable skill when standing on the mat. You don't just react; you anticipate the opening, closing the distance with the same tactical intensity you once used to control the flow of a game. At The Games, where margins are measured in fractions of a second, your ability to remain analytical under extreme pressure becomes your most lethal weapon.\n\nWhen we pivot to the adaptive pathway of powerlifting, we strip away the movement of the field and replace it with the intense, localized force of the platform. Here, the challenge is internal and absolute. While your standing pathway in wrestling focuses on reading the opponent, your adaptive pathway demands a mastery of biomechanical precision and explosive force. You will apply the same tactical deconstruction\u2014previously used to out-maneuver a defender\u2014to your own lifting technique, obsessively refining your form to extract every ounce of potential. This transition allows you to express your competitive nature through a different lens: the brutal, honest, and singular pursuit of peak strength."
+    }
+  ],
+  "eval_result": {
+    "overall": 7,
+    "summary": "A solid scouting report that creatively weaves the user's team-sport background into individual tactical sports, featuring excellent pathway distinctness and deep personalization.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While the 163cm/55kg biometrics fit both cycling and lower-weight-class wrestling well, mapping a 'field-based team sports' background to these purely individual pursuits requires a bit of a narrative stretch."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The narrative directly incorporates the user's specific biometric data and their stated love for tactical deconstruction cultivated in field sports."
+    },
+    "distinctness": {
+      "score": 9,
+      "reasoning": "The adaptive powerlifting pathway is brilliantly contrasted with standing wrestling, explicitly shifting the focus from external tactical reading to internal biomechanical precision."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions offer meaningfully distinct forks, effectively drilling down from general movement style to specific competitive environments and sporting origins."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean report with no banned terminology, correctly avoiding standalone restricted words."
+    }
+  },
+  "backend_error": null,
+  "round": 1
+}

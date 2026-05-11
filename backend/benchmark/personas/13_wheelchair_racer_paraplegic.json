@@ -6,6 +6,6 @@
   "weight_kg": 55,
   "birth_year": 2004,
   "gender": "F",
-  "target_game_year": null,
-  "max_questions": 4
+  "max_questions": 4,
+  "time_travel_hops": [2028, 2036]
 }

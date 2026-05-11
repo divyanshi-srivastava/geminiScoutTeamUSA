@@ -1,0 +1,78 @@
+{
+  "persona_id": "09_congenital_limb_difference_swimmer",
+  "persona_label": "Congenital limb difference \u2014 adaptive swimmer",
+  "biometrics": {
+    "height_cm": 168,
+    "weight_kg": 63,
+    "birth_year": 1997,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, when you reflect on your past experiences with physical challenges, which of these training dimensions did you find the most engaging and rewarding?\nOptions: [Explosive power and short-burst speed | Sustained endurance and rhythmic pacing | High-level technical precision and coordination]"
+    },
+    {
+      "role": "user",
+      "content": "Sustained endurance and rhythmic pacing"
+    },
+    {
+      "role": "narrator",
+      "content": "When you are deep in that zone of endurance, what drives you forward the most?\nOptions: [The solitary pursuit of consistently shattering my own personal bests. | The tactical, psychological battle of positioning against direct competitors. | The collective energy and shared objective of working within a high-performance team.]"
+    },
+    {
+      "role": "user",
+      "content": "The solitary pursuit of consistently shattering my own personal bests."
+    },
+    {
+      "role": "narrator",
+      "content": "As you envision your high-performance sporting journey, which environment do you feel would best allow you to refine those endurance skills and push your physical boundaries?\nOptions: [The vast, open terrain where the elements and landscape are the primary obstacles. | The controlled, consistent environment of a track or specialized course to maximize technical efficiency. | The unpredictable, dynamic conditions that demand constant, rapid mental and physical recalibration.]"
+    },
+    {
+      "role": "user",
+      "content": "The controlled, consistent environment of a track or specialized course to maximize technical efficiency."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Women's Super-G Sit-Ski LW12)",
+      "scout_verdict": "Your biometrics and preference for controlled, technical environments suggest significant potential in both standing and adaptive pathways. In the standing pathway, your stature provides an ideal center of gravity for Alpine skiing or speed skating, allowing you to corner with surgical accuracy and precision. For The Milano 2026 Games, the track serves as a canvas where you can refine every millisecond, focusing on reducing drag and mastering the physics of motion. Simultaneously, the adaptive pathway\u2014specifically Para-Alpine skiing\u2014offers a rigorous parallel track that demands that same high-level technical coordination. In this discipline, your capacity for spatial awareness and seat positioning becomes critical. You will utilize specialized equipment to translate your drive for technical perfection into fluid, rhythmic turns on the slopes. Whether on the track or the mountain, your dedication to internal calibration ensures you remain a formidable presence, constantly striving for mastery in your chosen sport."
+    },
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Handcycling (e.g., Women's Road Race H3)",
+      "scout_verdict": "Your profile highlights a strong synergy between the high-performance standing pathway and the focused intensity of the adaptive pathway. In the standing pathway, Alpine skiing and speed skating utilize your natural capacity for endurance and rhythmic movement, demanding deep psychological focus as you maneuver through technical courses. Your drive to surpass your own personal bests will serve you well at The Brisbane 2032 Games, where consistency and tactical precision are the primary determinants of success. Conversely, the adaptive pathway of handcycling provides an equally demanding environment that requires deep-seated endurance and aerobic efficiency. Here, your focus on sustained rhythmic pacing will be the engine of your development as you refine your technique on the open road. Just as you would master the turns of a rink, you will find satisfaction in the solitary grind of the road. Both tracks require the same mental fortitude, ensuring you stay committed to long-term athletic growth."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The narrative successfully integrates the user's interview responses, but fails to provide distinct standing pathways between the two archetypes.",
+    "authenticity": {
+      "score": 6,
+      "reasoning": "While speed skating aligns well with the user's biometric profile and preference for a controlled track, Alpine Skiing directly contradicts their choice of a consistent, technical environment over unpredictable elements."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts effectively weave in specific interview answers, explicitly referencing the user's desire for 'sustained rhythmic pacing' and 'solitary pursuit' of personal bests."
+    },
+    "distinctness": {
+      "score": 3,
+      "reasoning": "A critical failure in distinctness: both archetypes recommend the exact same standing pathway ('Alpine Skiing / Speed Skating'), making the primary sport recommendation redundant."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asks strong, differentiating questions with genuinely distinct options (e.g., solitary vs. team, open terrain vs. controlled track) that logically narrow the user's profile."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass with correct Games naming conventions (e.g., 'The Brisbane 2032 Games') and no unauthorized Olympic/Paralympic terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

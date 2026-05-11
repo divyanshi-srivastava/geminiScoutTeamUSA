@@ -1,0 +1,9 @@
+{
+  "persona_id": "05_youth_time_travel_2032",
+  "persona_label": "Youth gymnast \u2014 time travel to 2032",
+  "error": "sequence item 0: expected str instance, dict found",
+  "conversation_log": [],
+  "scouting_result": null,
+  "eval_result": null,
+  "round": 1
+}

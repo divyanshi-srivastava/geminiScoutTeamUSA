@@ -1,0 +1,77 @@
+{
+  "persona_id": "03_adaptive_visual_impairment",
+  "persona_label": "Adaptive athlete \u2014 partial visual impairment",
+  "biometrics": {
+    "height_cm": 181,
+    "weight_kg": 83,
+    "birth_year": 1998,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To get us started, how would you describe your current relationship with physical activity and competitive sport?\nOptions: [I have a background in competitive team sports. | I focus primarily on individual endurance and personal discipline. | Strength, power, and gym-based training are my bread and butter. | I am just beginning to explore my potential in a structured athletic journey.]"
+    },
+    {
+      "role": "user",
+      "content": "I focus primarily on individual endurance and personal discipline."
+    },
+    {
+      "role": "narrator",
+      "content": "To better understand your journey so far, how have you primarily challenged your limits\u2014do you lean toward endurance racing, technical personal milestones, or something else entirely?\nOptions: [I focus on long-distance endurance events or racing. | I prioritize hitting specific technical or strength-based milestones. | I prefer a mix of cross-training to build overall athletic capacity. | I am still experimenting with different disciplines to find my niche.]"
+    },
+    {
+      "role": "user",
+      "content": "I focus on long-distance endurance events or racing."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward a high-performance athletic pathway, how do you define success\u2014is it purely about the podium, or is it more about pushing your personal limits to see what you are truly capable of achieving?\nOptions: [I'm chasing the podium and elite-level competition. | I want to see how far I can push my physical boundaries. | It's about the process and the community of fellow athletes. | I'm looking for a mix of both competitive results and personal growth.]"
+    },
+    {
+      "role": "user",
+      "content": "I'm chasing the podium and elite-level competition."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "Your history in endurance racing is not just about the miles covered; it has forged an internal stillness that is rare among athletes. At 28, you stand at the threshold of peak performance, possessing the exact mental discipline required to hold focus when the heart rate threatens to spike. Your 181.0cm, 83.0kg frame provides a stable, grounded platform that is vital for the pursuit of absolute precision.\n\nImagine the quiet tension of the shooting range, where your long-distance training translates into controlled, measured breathing. This is where your pursuit of the podium shifts from explosive movement to the mastery of the moment. By channeling your commitment to discipline, you aren't just competing against others; you are mastering the geometry of stillness, positioning yourself as a formidable contender for a medal at The Brisbane 2032 Games."
+    },
+    {
+      "matched_profile_id": 13,
+      "matched_profile_name": "Edge Carver",
+      "pathway_standing": "Alpine Skiing / Speed Skating",
+      "pathway_adaptive": "Para-Alpine Skiing (e.g., Men's Super-G Sit-Ski LW12)",
+      "scout_verdict": "You have spent years testing your limits on the road and the track, but your physiology suggests you are built for a different kind of speed: the high-stakes, tactical environment of alpine slopes or the frozen oval. With a balanced, solid build of 181.0cm and 83.0kg, you possess the raw power and kinetic awareness to dominate the edge-control mechanics essential for speed sports.\n\nYour hunger for the podium is the catalyst that will turn these technical demands into an art form. The transition from the endurance world to high-speed tactical environments is a natural evolution for a competitor as driven as you. At 28, you are in your prime to master the aggressive turns and weight-transfer intensity required to leave the rest of the field in your wake at The Milano Cortina 2026 Games."
+    }
+  ],
+  "eval_result": {
+    "overall": 6,
+    "summary": "The pipeline effectively personalizes the narrative based on the interview, but struggles with authenticity by matching an endurance racer to precision and speed sports while ignoring the adaptive pathways in the text.",
+    "authenticity": {
+      "score": 5,
+      "reasoning": "Matching an avid long-distance endurance racer to Marksmanship and Alpine Skiing is a significant stretch that ignores the user's primary cardiovascular strengths."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts explicitly weave the user's answers into the narrative, referencing their history in endurance racing and their desire to chase the podium."
+    },
+    "distinctness": {
+      "score": 4,
+      "reasoning": "Although the two archetypes offer different athletic angles, the narratives completely fail to mention or integrate the adaptive pathways, focusing solely on the standing sports."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The narrator asks logical, progressive questions with meaningfully distinct options that successfully drill down from general activity to specific competitive mindset."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean execution with correct 'The [City] [Year] Games' formatting and no restricted terms."
+    }
+  },
+  "backend_error": null
+}

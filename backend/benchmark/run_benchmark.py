@@ -39,6 +39,7 @@ from benchmark.master_evaluator import (                  # noqa: E402
     generate_master_report,
     generate_markdown_report,
     _dim_avg,
+    _dim_avg_tt,
 )
 
 # ── Logging ──
@@ -68,34 +69,37 @@ def _load_personas(personas_dir: str, filter_id: str | None = None) -> list:
     return personas
 
 
-async def _run(backend_url: str, personas: list, results_dir: str, parallel: int = 0) -> str:
+async def _run(backend_url: str, personas: list, results_dir: str, parallel: int = 0, rounds: int = 1) -> str:
     run_ts = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     run_dir = os.path.join(results_dir, run_ts)
     os.makedirs(run_dir, exist_ok=True)
 
-    # 0 means "all at once"
-    concurrency = len(personas) if parallel == 0 else max(1, parallel)
-    mode_label = "all parallel" if concurrency >= len(personas) else f"{concurrency} at a time"
+    # 0 means "all at once"; semaphore is per (persona × round) task
+    total_tasks = len(personas) * rounds
+    concurrency = total_tasks if parallel == 0 else max(1, parallel)
+    mode_label = "all parallel" if concurrency >= total_tasks else f"{concurrency} at a time"
 
     logger.info("")
     logger.info("╔══════════════════════════════════════════════╗")
     logger.info("║  GEMINI SCOUT PIPELINE BENCHMARK             ║")
     logger.info("╚══════════════════════════════════════════════╝")
     logger.info("  Backend     : %s", backend_url)
-    logger.info("  Personas    : %d", len(personas))
+    logger.info("  Personas    : %d  ×  %d round%s  =  %d total runs",
+                len(personas), rounds, "s" if rounds != 1 else "", total_tasks)
     logger.info("  Concurrency : %s", mode_label)
     logger.info("  Output      : %s", run_dir)
     logger.info("")
 
     semaphore = asyncio.Semaphore(concurrency)
 
-    async def _run_one(persona: dict) -> dict:
+    async def _run_one(persona: dict, round_num: int) -> dict:
         async with semaphore:
-            logger.info("━━━ START  %s  (%s) ━━━", persona["id"], persona["label"])
+            round_label = f"r{round_num}/{rounds}" if rounds > 1 else ""
+            logger.info("━━━ START  %s  %s(%s) ━━━", persona["id"], f"[{round_label}] " if round_label else "", persona["label"])
             try:
                 result = await run_persona(persona, backend_url)
             except Exception as exc:
-                logger.error("FAILED  persona=%s  error=%s", persona["id"], exc, exc_info=True)
+                logger.error("FAILED  persona=%s  round=%d  error=%s", persona["id"], round_num, exc, exc_info=True)
                 result = {
                     "persona_id": persona["id"],
                     "persona_label": persona["label"],
@@ -105,13 +109,21 @@ async def _run(backend_url: str, personas: list, results_dir: str, parallel: int
                     "eval_result": None,
                 }
 
-            out_path = os.path.join(run_dir, f"{persona['id']}.json")
+            result["round"] = round_num
+
+            suffix = f"_r{round_num}" if rounds > 1 else ""
+            out_path = os.path.join(run_dir, f"{persona['id']}{suffix}.json")
             with open(out_path, "w") as f:
                 json.dump(result, f, indent=2, default=str)
-            logger.info("━━━ DONE   %s  → wrote %s", persona["id"], out_path)
+            logger.info("━━━ DONE   %s  [r%d]  → wrote %s", persona["id"], round_num, out_path)
             return result
 
-    results = list(await asyncio.gather(*[_run_one(p) for p in personas]))
+    tasks = [
+        _run_one(p, r)
+        for p in personas
+        for r in range(1, rounds + 1)
+    ]
+    results = list(await asyncio.gather(*tasks))
 
     # ── Master report ──
     logger.info("Generating master report…")
@@ -133,6 +145,8 @@ async def _run(backend_url: str, personas: list, results_dir: str, parallel: int
         "run_timestamp": run_ts,
         "backend_url": backend_url,
         "persona_count": len(personas),
+        "rounds": rounds,
+        "total_runs": total_tasks,
         "success_count": len(successful),
         "master": master,
         "results": results,
@@ -151,10 +165,13 @@ async def _run(backend_url: str, personas: list, results_dir: str, parallel: int
         "timestamp": run_ts,
         "pipeline_score": master.get("pipeline_score"),
         "persona_count": len(personas),
+        "rounds": rounds,
+        "total_runs": total_tasks,
         "success_count": len(successful),
     }
     for dim in ["authenticity", "personalization", "interview_quality", "distinctness"]:
         history_entry[dim] = _dim_avg(successful, dim)
+    history_entry["life_stage_coherence_tt"] = _dim_avg_tt(successful, "life_stage_coherence")
 
     history_path = os.path.join(results_dir, "history.jsonl")
     with open(history_path, "a") as f:
@@ -166,7 +183,8 @@ async def _run(backend_url: str, personas: list, results_dir: str, parallel: int
     logger.info("╔══════════════════════════════════════════════╗")
     score_line = f"  Pipeline score: {ps:.1f} / 10" if ps is not None else "  Pipeline score: N/A"
     logger.info("║  %-44s║", score_line)
-    logger.info("║  %-44s║", f"  Personas run:   {len(personas)} ({len(successful)} succeeded)")
+    runs_label = f"{total_tasks} runs ({len(personas)}p × {rounds}r) — {len(successful)} succeeded"
+    logger.info("║  %-44s║", f"  {runs_label}")
     logger.info("╠══════════════════════════════════════════════╣")
     logger.info("║  report.md  → %s", report_path)
     logger.info("║  history    → %s", history_path)
@@ -199,13 +217,17 @@ def main() -> None:
     )
     parser.add_argument(
         "--parallel", type=int, default=0,
-        help="Max personas to run at once. 0 (default) = all in parallel. 1 = sequential.",
+        help="Max concurrent runs. 0 (default) = all in parallel. 1 = sequential.",
+    )
+    parser.add_argument(
+        "--rounds", type=int, default=1,
+        help="How many times to run each persona (default 1). Each round gets different narrator questions.",
     )
     args = parser.parse_args()
 
     os.makedirs(args.results, exist_ok=True)
     personas = _load_personas(args.personas, filter_id=args.persona)
-    asyncio.run(_run(args.url, personas, args.results, parallel=args.parallel))
+    asyncio.run(_run(args.url, personas, args.results, parallel=args.parallel, rounds=args.rounds))
 
 
 if __name__ == "__main__":

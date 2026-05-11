@@ -1,0 +1,9 @@
+{
+  "persona_id": "08_above_knee_amputee_sprinter",
+  "persona_label": "Above-knee amputee \u2014 para-sprinter",
+  "error": "sequence item 0: expected str instance, dict found",
+  "conversation_log": [],
+  "scouting_result": null,
+  "eval_result": null,
+  "round": 1
+}

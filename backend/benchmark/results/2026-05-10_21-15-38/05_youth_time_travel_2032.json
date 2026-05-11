@@ -1,0 +1,81 @@
+{
+  "persona_id": "05_youth_time_travel_2032",
+  "persona_label": "Youth gymnast \u2014 time travel to 2032",
+  "biometrics": {
+    "height_cm": 164,
+    "weight_kg": 55,
+    "birth_year": 2010,
+    "gender": "F"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To kick things off, how would you describe your experience in competitive sport so far?\nOptions: [I have been competing in organized sports for years. | I am relatively new to structured athletics but very active. | I am just starting to explore my true athletic potential.]"
+    },
+    {
+      "role": "user",
+      "content": "I have been competing in organized sports for years."
+    },
+    {
+      "role": "narrator",
+      "content": "What specific types of sports or disciplines have formed the core of your journey in high-performance sport so far?\nOptions: [Mainly individual or technical sports (e.g., gymnastics, swimming, or track) | Largely team-based sports (e.g., basketball, soccer, or volleyball) | A mix of everything\u2014I love exploring new athletic challenges]"
+    },
+    {
+      "role": "user",
+      "content": "Mainly individual or technical sports (e.g., gymnastics, swimming, or track)"
+    },
+    {
+      "role": "narrator",
+      "content": "At 22 during The 2032 Games, you would be entering your elite peak\u2014how do you envision your athletic identity having transformed by the time you reach that stage of your journey?\nOptions: [I will have perfected a single technical discipline to reach the pinnacle of the sport. | I will have expanded my versatility, mastering multiple technical movements to adapt to any challenge. | I will have become a tactical specialist, using my years of experience to out-think the competition.]"
+    },
+    {
+      "role": "user",
+      "content": "I will have perfected a single technical discipline to reach the pinnacle of the sport."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 14,
+      "matched_profile_name": "Road Machine",
+      "pathway_standing": "Cycling / Triathlon",
+      "pathway_adaptive": "Handcycling (e.g., Men's Road Race H3)",
+      "scout_verdict": "You are a technician of motion, built for the singular, relentless pursuit of efficiency. Your history in individual, technical sports has provided the perfect training ground for the high-stakes discipline of cycling or the multi-layered challenge of the triathlon. You have chosen the path of the specialist, and that obsession with perfection is exactly what is needed to master the mechanical and physiological demands of endurance sport.\n\nAt 164cm and 55kg, your frame is naturally optimized for aerodynamic efficiency, allowing you to slice through the air with minimal resistance. By the time you reach The Brisbane 2032 Games at age 22, this commitment to a single discipline will have transformed you from a dedicated athlete into a tactical master of the road. Your journey is no longer just about participation; it is about the cold, calculated refinement of every pedal stroke as you move toward your elite peak."
+    },
+    {
+      "matched_profile_id": 2,
+      "matched_profile_name": "Long Haul",
+      "pathway_standing": "Distance Running",
+      "pathway_adaptive": "Wheelchair Racing (e.g., Women's Marathon T54)",
+      "scout_verdict": "The road to The Brisbane 2032 Games requires more than just raw speed\u2014it demands a unique mental endurance that can only be forged in the solitary heat of individual competition. You have spent years mastering your own movements, and that background in technical, track-oriented disciplines is the foundation of your future as a distance athlete. You don't need a team to push you; you possess the internal drive to maintain peak intensity when the rest of the field begins to falter.\n\nYour 164cm, 55kg build is deceptively light yet resilient, offering the durability needed for the grueling pacing of long-distance events. As you approach your prime at 22, your identity as an athlete will solidify into that of a true specialist, one who treats every training session as a building block toward a singular, crowning performance at The Brisbane 2032 Games. This pathway allows you to convert your years of discipline into a sustained, powerful career defined by stamina, focus, and the unwavering pursuit of your personal best."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong, highly tailored scouting report that effectively uses the athlete's biometrics, age context, and interview answers to build a compelling narrative.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "A frame of 164cm and 55kg is highly realistic for the aerobic demands of both distance running and cycling, making both 'Road Machine' and 'Long Haul' highly credible archetypes."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdicts weave in specific interview answers effortlessly, such as referencing her history in 'individual, technical sports' and her desire to 'perfect a single technical discipline'."
+    },
+    "distinctness": {
+      "score": 7,
+      "reasoning": "While both pathways focus on endurance, they distinctively separate the aerodynamic/mechanical focus of cycling from the mental pacing and durability of distance running."
+    },
+    "life_stage_coherence": {
+      "score": 9,
+      "reasoning": "The narrative perfectly captures the 'Elite Peak' stage for a 22-year-old, noting she will be approaching her prime and transitioning from 'a dedicated athlete into a tactical master'."
+    },
+    "interview_quality": {
+      "score": 7,
+      "reasoning": "The questions logically progress from general experience to specific sport types and future mindset, with options that clearly distinguish between a generalist and a specialist."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean compliance pass with correct usage of 'The Brisbane 2032 Games' and appropriately balanced adaptive pathways."
+    }
+  },
+  "backend_error": null
+}

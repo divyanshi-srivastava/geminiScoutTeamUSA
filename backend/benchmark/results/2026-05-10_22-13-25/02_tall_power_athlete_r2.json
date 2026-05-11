@@ -1,0 +1,78 @@
+{
+  "persona_id": "02_tall_power_athlete",
+  "persona_label": "Tall male power athlete",
+  "biometrics": {
+    "height_cm": 196,
+    "weight_kg": 103,
+    "birth_year": 2002,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "To start, how would you describe the primary physical objective of your current training or the way you move best in the world?\nOptions: [Explosive power and rapid acceleration | Sustained endurance and long-distance output | Technical control and strategic precision]"
+    },
+    {
+      "role": "user",
+      "content": "Explosive power and rapid acceleration"
+    },
+    {
+      "role": "narrator",
+      "content": "Now that we've established your physical engine, where do you feel most comfortable applying that power when the pressure is at its peak?\nOptions: [On a field or court where the landscape is constantly shifting and requires reactive decision-making | On a linear track or fixed course where the objective is pure, unadulterated velocity | In a controlled arena where precise technical mastery dictates the success of my power]"
+    },
+    {
+      "role": "user",
+      "content": "On a field or court where the landscape is constantly shifting and requires reactive decision-making"
+    },
+    {
+      "role": "narrator",
+      "content": "When you think about your ultimate goal in high-performance sport, what provides you with the most satisfaction?\nOptions: [Being the decisive playmaker who changes the momentum of a game in a split second | Mastering a complex, high-stakes system to outmaneuver an opponent's strategy | The relentless pursuit of physically dominating every encounter I face]"
+    },
+    {
+      "role": "user",
+      "content": "Being the decisive playmaker who changes the momentum of a game in a split second"
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 11,
+      "matched_profile_name": "Net Presence",
+      "pathway_standing": "Basketball",
+      "pathway_adaptive": "Wheelchair Basketball (e.g., Men's Tournament)",
+      "scout_verdict": "Your 196cm frame allows you to command the court with an authority that few can match. You are not just moving; you are orchestrating. Every shift in your momentum and every explosive push toward the net is a calculated move to seize control of the game. At 24, you are at the absolute apex of your agility and tactical intelligence, perfectly positioned to be the playmaker who dictates the rhythm of the match.\n\nAs you step onto the court at The LA28 Games, the roar of the crowd fades, replaced by the humming tension of the arena. You are the heartbeat of your squad. Whether you are closing the gap on defense or rising above the pack to deliver a decisive basket, your presence is non-negotiable. You have successfully refined your raw power into the precise, reactive flow that defines a true leader. This is your theater of operations\u2014a space where split-second decisions and physical dominance weave together to create a lasting legacy."
+    },
+    {
+      "matched_profile_id": 12,
+      "matched_profile_name": "Iron Shoulder",
+      "pathway_standing": "Field Athletics (Discus/Shot Put)",
+      "pathway_adaptive": "Seated Shot Put (e.g., Men's Shot Put C3)",
+      "scout_verdict": "While others might focus on the chaos of the shifting court, you find your true calling in the focused, primal release of kinetic energy. At 103kg, you possess the raw hardware to shift mountains, and the Iron Shoulder profile channels that explosive capacity into the purest test of strength. You do not need a shifting landscape to thrive; you create your own seismic impact the moment you initiate your throw.\n\nAt The LA28 Games, when you step into the throwing circle, the world narrows to you, the implement, and the target. This path is the ultimate expression of your explosive nature, prioritizing absolute, singular dominance over the game's reactive flow. You have mastered the art of coiling your muscles and releasing that pent-up tension in a single, thunderous motion. For an athlete who lives for the rush of pure, unadulterated power, this stage offers the perfect arena to test the limits of human capacity."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "A strong scouting report that effectively utilizes the athlete's impressive physical frame and directly incorporates their interview responses into compelling narratives.",
+    "authenticity": {
+      "score": 8,
+      "reasoning": "At 196cm and 103kg, the athlete has a fantastic build for a powerful basketball wing/forward, and while slightly light for elite super-heavyweight throwers, it remains a highly plausible archetype for explosive power."
+    },
+    "personalization": {
+      "score": 8,
+      "reasoning": "The verdict clearly weaves in the user's desire to be a 'decisive playmaker' and their preference for a 'shifting landscape' into the basketball narrative."
+    },
+    "distinctness": {
+      "score": 8,
+      "reasoning": "The two pathways offer a great contrast: the reactive, team-based playmaking of Basketball versus the isolated, singular explosive event of Field Athletics."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions progress logically from physical engine to environment to psychological motivation, with meaningfully distinct options that clearly shaped the dual-archetype result."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Clean result; correctly uses 'The LA28 Games' and avoids restricted terminology."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}

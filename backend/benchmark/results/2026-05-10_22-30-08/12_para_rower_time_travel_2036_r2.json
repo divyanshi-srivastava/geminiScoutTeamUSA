@@ -1,0 +1,82 @@
+{
+  "persona_id": "12_para_rower_time_travel_2036",
+  "persona_label": "Para-rower with SCI \u2014 time travel to 2036 Games",
+  "biometrics": {
+    "height_cm": 184,
+    "weight_kg": 88,
+    "birth_year": 1988,
+    "gender": "M"
+  },
+  "conversation_log": [
+    {
+      "role": "narrator",
+      "content": "Looking back at your sporting journey, what has been the defining characteristic of the way you engage with your training and physical challenges?\nOptions: [Explosive bursts of power and raw, high-intensity speed. | Sustained, rhythmic endurance and long-range cardiovascular capacity. | Calculated, technical precision and high-level strategic control.]"
+    },
+    {
+      "role": "user",
+      "content": "Calculated, technical precision and high-level strategic control."
+    },
+    {
+      "role": "narrator",
+      "content": "To get a better sense of how you\u2019ve developed this analytical approach, what has been the primary environment where your sporting journey has unfolded?\nOptions: [Individual disciplines where total accountability rests solely on my own execution. | Team-based environments where success relies on complex, synchronized coordination. | Wild or uncontrolled environments that demand constant adaptation and reading the terrain.]"
+    },
+    {
+      "role": "user",
+      "content": "Individual disciplines where total accountability rests solely on my own execution."
+    },
+    {
+      "role": "narrator",
+      "content": "As you look toward representing your sport at The Ahmedabad 2036 Games in your legacy years, how do you see the nature of your 'precision' shifting from the pursuit of raw performance to the ultimate mastery of your craft?\nOptions: [Mentoring and refining the complex technical nuances for the next generation of competitors. | Applying decades of deep analytical mastery to push my own personal limits in veteran-focused, high-difficulty formats. | Focusing on the mental architecture and psychological edge required to sustain top-tier performance in an individual discipline for decades.]"
+    },
+    {
+      "role": "user",
+      "content": "Mentoring and refining the complex technical nuances for the next generation of competitors."
+    }
+  ],
+  "scouting_result": [
+    {
+      "matched_profile_id": 3,
+      "matched_profile_name": "Steady Hand",
+      "pathway_standing": "Marksmanship (Rifle/Pistol)",
+      "pathway_adaptive": "Target Precision (e.g., Archery Men's FITA Round Open)",
+      "scout_verdict": "At 48 years old, your 184cm and 88kg build serves as a solid foundation of stability, mirroring the composure you have spent a lifetime refining. As you step onto the range at The Ahmedabad 2036 Games, you carry the weight of years spent in solitary pursuit of technical perfection. Your evolution from a competitor obsessed with the mechanics of the shot to a mentor guiding the next generation is the crowning achievement of your legacy; you now read the environment and manage your internal state with a foresight only decades of experience can provide.\n\nIn the adaptive pathway of Target Precision, such as the Men's FITA Round Open, your commitment to strategic mastery finds a new home. Here, the precision you\u2019ve championed becomes a physical dialogue with the wind and the arc of the bow. By focusing on the mental architecture of the shot, you prove that the ultimate skill is not merely the ability to execute, but the capacity to teach the philosophy of the discipline to those coming up behind you."
+    },
+    {
+      "matched_profile_id": 8,
+      "matched_profile_name": "Streamline",
+      "pathway_adaptive": "Adaptive Swimming (e.g., Men's 400 m Freestyle S10)",
+      "pathway_standing": "Swimming",
+      "scout_verdict": "If your adaptive career was defined by the quiet stillness of precision, your legacy in the water at The Ahmedabad 2036 Games is defined by the relentless, rhythmic pursuit of efficiency. While your initial marksmanship background was about the 'stop,' swimming is about the 'flow.' At 48, your body leverages your natural reach and established strength to carve through the water, turning the pool into a laboratory where you continuously iterate on your own technique. \n\nIn the standing pathway, your journey shifts from strategic calculation to visceral endurance. You are no longer just thinking about the outcome; you are immersed in the hydrodynamic refinement of every stroke. This dimension of your athletic repertoire provides a powerful contrast to your precision work, allowing you to showcase the raw, sustained power of a veteran who has mastered the art of moving through resistance with complete technical economy."
+    }
+  ],
+  "eval_result": {
+    "overall": 8,
+    "summary": "The scouting report provides a highly personalized and age-appropriate narrative that strongly leans into the user's legacy life stage. While the second archetype feels slightly disconnected from the interview answers, the overall profile is compelling and well-tailored.",
+    "authenticity": {
+      "score": 7,
+      "reasoning": "Marksmanship is an excellent fit for a 48-year-old focused on technical precision, though the sudden shift to swimming for the second archetype feels less grounded in the user's specific responses."
+    },
+    "personalization": {
+      "score": 9,
+      "reasoning": "The narrative expertly integrates the user's specific desire to mentor the next generation directly into the core thesis of the Steady Hand verdict."
+    },
+    "distinctness": {
+      "score": 6,
+      "reasoning": "While Archery and Marksmanship offer a nice contrast in the first profile, the second profile barely differentiates between standing and adaptive swimming in the actual text."
+    },
+    "life_stage_coherence": {
+      "score": 10,
+      "reasoning": "At age 48 in the Legacy stage, the text perfectly captures the vibe with phrases like 'evolution from a competitor... to a mentor' and referencing 'decades of experience'."
+    },
+    "interview_quality": {
+      "score": 8,
+      "reasoning": "The questions form a logical funnel, successfully narrowing down from broad physical traits to specific veteran mindsets with meaningfully distinct options."
+    },
+    "compliance": {
+      "passed": true,
+      "note": "Perfectly compliant, correctly using 'The Ahmedabad 2036 Games' format without invoking protected standalone terms."
+    }
+  },
+  "backend_error": null,
+  "round": 2
+}
