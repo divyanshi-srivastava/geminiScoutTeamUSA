@@ -4,7 +4,7 @@
 
 A conversational AI scouting experience powered by Google Gemini and the Agent Development Kit. Built for the Team USA × Google Cloud Hackathon — **submitted for Challenge 5: Choose Your Own Fan-Centric Challenge**.
 
-**Live app:** [gemini-scout.web.app](https://gemini-scout.web.app)
+**Live app:** https://geminiscoutteamusa.web.app/
 
 ---
 
