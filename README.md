@@ -1,10 +1,12 @@
+[![Watch the video](https://img.youtube.com/vi/oLLu-2hwDkg/maxresdefault.jpg)](https://www.youtube.com/watch?v=oLLu-2hwDkg)
+
 # Gemini Scout — The Time-Traveling Talent Scout
 
 > *Where do you fit in the Team USA story — and who could you have been across every era of the Games?*
 
 A conversational AI scouting experience powered by Google Gemini and the Agent Development Kit. Built for the Team USA × Google Cloud Hackathon — **submitted for Challenge 5: Choose Your Own Fan-Centric Challenge**.
 
-**Live app:** https://geminiscoutteamusa.web.app/
+**App was hosted(now discontinued to save cloud credits):** https://geminiscoutteamusa.web.app/
 
 ---
 
